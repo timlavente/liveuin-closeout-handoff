@@ -6,10 +6,11 @@ After the complete technical pack had been uploaded, Ern confirmed **“everyone
 
 - [Public GitHub handoff](https://github.com/timlavente/liveuin-closeout-handoff)
 - [Start here on GitHub](https://github.com/timlavente/liveuin-closeout-handoff/blob/main/docs/p06-review-2026-10-19/START-HERE.md)
+- [Public Drive handoff folder](https://drive.google.com/drive/folders/1UGc8SpmJSZh9Y64xI8HNl8QSF9lSNf6d)
 - [Complete Drive archive](https://drive.google.com/file/d/1bKiVhmmcneLZwJZ1g8SSFs6xchPhnZ3_/view)
 - [Plain-English status](https://drive.google.com/file/d/1d9RfDXMYdOe_mZZe64IK8usCzGXNaPe9/view)
 
-The Drive archive and status file each have **Anyone with the link — Viewer** access. Connector metadata readback confirmed `type=anyone`, `role=reader`, with discovery disabled. The public GitHub repository and its start page returned HTTP 200 to an unauthenticated request; the repository reports `private=false`. Existing private `liveuin-platform` issues and other records were not made public.
+The dated Drive handoff folder and its four files have **Anyone with the link — Viewer** access. Connector metadata readback confirmed `type=anyone`, `role=reader`, with discovery disabled. The public GitHub repository and its start page returned HTTP 200 to an unauthenticated request; the repository reports `private=false`. Existing private `liveuin-platform` issues and other records were not made public.
 
 The public repository is a documentation/evidence copy. It is not a new application, deployment target, identity service or product truth store. The same handoff commit is retained in the existing private Core repository.
 
