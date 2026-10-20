@@ -1,0 +1,131 @@
+{
+  "retention_id": "RETENTION-BROWSER-HANDOFF-07",
+  "retained_at": "2026-10-20T15:32:43.971185+08:00",
+  "scope": "Real synthetic-parent canonical verification and onboarding; further API/browser proof pending",
+  "files": [
+    {
+      "file": "BROWSER-HANDOFF-07.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/BROWSER-HANDOFF-07.md",
+      "source_check": {
+        "bytes": 3643,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "40469bb0f9febeba36861b72c12e84ae749ca31c82b06196852dc12738b623cd",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 3643,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "40469bb0f9febeba36861b72c12e84ae749ca31c82b06196852dc12738b623cd",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "BROWSER-HANDOFF-07.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/BROWSER-HANDOFF-07.json",
+      "source_check": {
+        "bytes": 1419,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "1b964ae7db496130daa3ab3f6e7730ddd113cbb55e6da3e8e866a2c5c51033b5",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 1419,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "1b964ae7db496130daa3ab3f6e7730ddd113cbb55e6da3e8e866a2c5c51033b5",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "parent-lifecycle-through-onboarding-07.jsonl",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/parent-lifecycle-through-onboarding-07.jsonl",
+      "source_check": {
+        "bytes": 1865,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "05f70a90e47af3a00872fc0bc4bf8bb4d0663325b9de3eb3841932f9cc43a4a6",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 1865,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "05f70a90e47af3a00872fc0bc4bf8bb4d0663325b9de3eb3841932f9cc43a4a6",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "parent-email-verification-passed.png",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/screenshots/parent-email-verification-passed.png",
+      "source_check": {
+        "bytes": 34457,
+        "local_blocks": 72,
+        "dataless": false,
+        "sha256": "342def57ff58a3a62564b0f91d2dda86f487fcf5fc1d2959a0c266497701399e",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 34457,
+        "local_blocks": 72,
+        "dataless": false,
+        "sha256": "342def57ff58a3a62564b0f91d2dda86f487fcf5fc1d2959a0c266497701399e",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "VERIFICATION-TRANSPORT-DIAGNOSIS-07.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/VERIFICATION-TRANSPORT-DIAGNOSIS-07.md",
+      "source_check": {
+        "bytes": 1704,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "d4e960e894573e4e6c5bc5e88092a1e58bfc3556593b19fa952fc73faa1fc6e2",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 1704,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "d4e960e894573e4e6c5bc5e88092a1e58bfc3556593b19fa952fc73faa1fc6e2",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    }
+  ],
+  "lifecycle_snapshot_rows": 7,
+  "lifecycle_fields_allowlisted": true,
+  "lifecycle_snapshot_has_no_account_identifiers_or_credentials": true,
+  "screenshot_visually_checked": true,
+  "screenshot_contains_approved_mailbox_instructions_but_no_factor_password_or_session_material": true,
+  "real_factor_or_private_checkpoint_read_by_reviewer": false,
+  "network_requests_in_retention_step": 0,
+  "auth02_passed": false,
+  "frozen_inputs_or_existing_manifests_replaced": false
+}

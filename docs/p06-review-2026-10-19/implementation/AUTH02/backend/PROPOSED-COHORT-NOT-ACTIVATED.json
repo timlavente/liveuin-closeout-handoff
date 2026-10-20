@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "workspace_id": "liveuin-public",
+  "allowed_email_sha256": [
+    "bb6db5842f0eac1b20c5cebcc28e4850464806cf07d25100b131cc729ebf7f2b",
+    "f9ac5d14aebfdde0fa0dbb1796288c84b0230acb6c1f0d4fadb8e68cbb0f2853"
+  ]
+}

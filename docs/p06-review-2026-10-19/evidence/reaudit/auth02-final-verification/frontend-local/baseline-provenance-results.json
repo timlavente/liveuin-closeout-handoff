@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "matched_files": 363,
+  "independent_provenance": "/private/tmp/liveuin-p06-audit-20261019/reaudit/frontend-provenance/production-webroot-provenance.json",
+  "independent_provenance_sha256": "fd2adbee8f8b6e5250257b4faf81b30a43c0564f75194e222c31a115a3fca636",
+  "baseline_manifest_sha256": "3a72d117bbcf597dbc0087ce23c060ed14f99fbd1f9839a82a8b769e1800bc1d"
+}

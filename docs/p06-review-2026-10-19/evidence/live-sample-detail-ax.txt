@@ -1,0 +1,98 @@
+Browser tab: 1, Title: "Stay search | LiveUIN", URL: "https://liveuin.com/stays/cozy-studio-orchard".
+1 AXWebArea Stay search | LiveUIN, URL: liveuin.com/stays/cozy-studio-orchard
+	2 container root
+		3 container Notifications (F8)
+			4 content list
+		5 container Notifications alt+T
+		6 container
+			7 link Description: LiveUIN home, Value: liveuin.com/
+			8 container
+				9 link Description: Stay, Value: liveuin.com/stay
+				10 link Description: Grow, Value: liveuin.com/grow
+				11 link Description: Earn, Value: liveuin.com/earn
+				12 link Description: Explore, Value: liveuin.com/explore
+				13 link Description: How LiveUIN Works, Value: liveuin.com/how-it-works
+				14 link Description: Pricing, Value: liveuin.com/pricing
+				15 link Description: Trust, Value: liveuin.com/trust
+				16 link Description: Resources, Value: liveuin.com/guides
+			17 link Description: Switch language: 中文, Value: liveuin.com/stays/cozy-studio-orchard
+			18 link Description: Log in, Value: liveuin.com/login
+			19 link Description: Get Started, Value: liveuin.com/start
+			20 text SERVICED APARTMENT
+			21 heading Cozy Studio in Orchard, Value: 1
+				22 text Cozy Studio in Orchard
+			23 text Orchard ,  Singapore  ·  $98 / night
+			24 image Cozy Studio in Orchard
+		25 container
+			26 heading Stay overview, Value: 2
+				27 text Stay overview
+			28 text $686 minimum stay estimate · 7+ nights
+			29 text Serviced apartment 7+ nights Self check-in Great location
+			30 text $98 / night
+			31 text Serviced-apartment path for Singapore short stays; not private residential short-term accommodation.
+			32 link Description: Continue to checkout, Value: liveuin.com/checkout/cozy-studio-orchard
+		33 container
+			34 image LiveUIN — Live smarter. Move freely.
+			35 text Live smarter. Move freely. LiveUIN connects Stay, Grow, and Earn through one clear platform, with Trust & Safety guidance before the next step.
+			36 link Description: Community, Value: liveuin.com/community
+			37 link Description: Partner network, Value: liveuin.com/partner
+			38 link Description: Video guides, Value: liveuin.com/guides
+			39 link Description: Support, Value: liveuin.com/help
+			40 link Description: News, Value: liveuin.com/blog
+			41 text Stay
+			42 content list
+				43 link Description: Stay with LiveUIN, Value: liveuin.com/stay
+				44 link Description: Search Homes, Value: liveuin.com/search
+				45 link Description: Stay support, Value: liveuin.com/help/stay
+				46 link Description: How It Works, Value: liveuin.com/how-it-works
+				47 link Description: Safety & Trust, Value: liveuin.com/trust
+				48 link Description: Support Center, Value: liveuin.com/help
+			49 text Grow
+			50 content list
+				51 link Description: Grow with LiveUIN, Value: liveuin.com/grow
+				52 link Description: Host, Value: liveuin.com/host
+				53 link Description: Operate, Value: liveuin.com/operate
+				54 link Description: Partner, Value: liveuin.com/partner
+				55 link Description: Connect, Value: liveuin.com/connect
+				56 link Description: Campus, Value: liveuin.com/campus
+				57 link Description: Enterprise, Value: liveuin.com/enterprise
+				58 link Description: Pricing, Value: liveuin.com/pricing
+			59 text Earn
+			60 content list
+				61 link Description: Earn with LiveUIN, Value: liveuin.com/earn
+				62 link Description: Eligibility, Value: liveuin.com/start?product=earn
+				63 link Description: Earn support, Value: liveuin.com/help/earn
+				64 link Description: Trust, Value: liveuin.com/trust
+				65 link Description: Help, Value: liveuin.com/help
+			66 text Explore
+			67 content list
+				68 link Description: Cities, Value: liveuin.com/explore
+				69 link Description: Cities Index, Value: liveuin.com/cities
+				70 link Description: Deals, Value: liveuin.com/deals
+				71 link Description: Services, Value: liveuin.com/services
+				72 link Description: Promotions, Value: liveuin.com/promotions
+				73 link Description: Community, Value: liveuin.com/community
+				74 link Description: Blog, Value: liveuin.com/blog
+				75 link Description: How It Works, Value: liveuin.com/how-it-works
+			76 text Company
+			77 content list
+				78 link Description: About LiveUIN, Value: liveuin.com/about
+				79 link Description: Careers, Value: liveuin.com/careers
+				80 link Description: News & Media, Value: liveuin.com/newsroom
+				81 link Description: Contact Us, Value: liveuin.com/contact
+				82 link Description: Investor Relations, Value: liveuin.com/investors
+			83 text Resources
+			84 content list
+				85 link Description: Status, Value: liveuin.com/status
+				86 link Description: Developers, Value: liveuin.com/developers
+				87 link Description: Help Center, Value: liveuin.com/help
+				88 link Description: Legal, Value: liveuin.com/legal
+			89 text © 2026 LiveUIN. All rights reserved.
+			90 link Description: Privacy notice status, Value: liveuin.com/legal/privacy
+			91 link Description: Terms status, Value: liveuin.com/legal/terms
+			92 link Description: Data-protection status, Value: liveuin.com/legal/data-protection
+			93 link Description: Cookie notice status, Value: liveuin.com/legal/cookies
+			94 link Description: Help, Value: liveuin.com/help
+			95 link Description: Legal, Value: liveuin.com/legal
+
+The focused UI element is 1 AXWebArea Stay search | LiveUIN, URL: liveuin.com/stays/cozy-studio-orchard

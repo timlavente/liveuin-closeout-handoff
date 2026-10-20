@@ -1,0 +1,6 @@
+{
+  "status": "closed recovery only; existing session resolution preserved; new email-code logins refused",
+  "file": "core_identity_api.py",
+  "baseline_sha256": "fcf8c612f2442ab05a8950523890806af7b89f88e9cbf801fcc5561ec1d6acc4",
+  "candidate_sha256": "aee0ce11a4ffe48242b18dbde4a67463409765d80f43f15a68c6d40facc6e143"
+}

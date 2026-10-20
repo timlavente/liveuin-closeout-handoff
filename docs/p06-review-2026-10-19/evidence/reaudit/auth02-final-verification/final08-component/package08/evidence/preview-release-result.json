@@ -1,0 +1,529 @@
+{
+  "ok": true,
+  "tests": [
+    {
+      "test": "9095_all_other_functions_ast_unchanged",
+      "passed": true,
+      "functions": 54
+    },
+    {
+      "test": "9095_unset_environment_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_unset_environment_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_production_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_production_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_prod_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_prod_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_unknown_environment_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_unknown_environment_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_conflicting_prod_env_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_conflicting_prod_env_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_conflicting_unknown_env_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_conflicting_unknown_env_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_public_host_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_public_host_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_remote_client_forwarded_local_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_remote_client_forwarded_local_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_non_ip_client_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_non_ip_client_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_lookalike_host_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_lookalike_host_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_public_prod_spoofed_payload_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_public_prod_spoofed_payload_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9095_explicit_dev_loopback_create",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9095_explicit_dev_loopback_verify",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9095_explicit_staging_loopback_create",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9095_explicit_staging_loopback_verify",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9095_explicit_test_ipv6_loopback_create",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9095_explicit_test_ipv6_loopback_verify",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9098_browser_auth_request_code_unchanged",
+      "passed": true
+    },
+    {
+      "test": "9098_browser_auth_verify_code_unchanged",
+      "passed": true
+    },
+    {
+      "test": "9098_unset_environment_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_unset_environment_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_unset_environment_compat_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_unset_environment_compat_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_production_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_production_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_production_compat_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_production_compat_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_prod_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_prod_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_prod_compat_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_prod_compat_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_unknown_environment_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_unknown_environment_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_unknown_environment_compat_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_unknown_environment_compat_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_conflicting_prod_env_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_conflicting_prod_env_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_conflicting_prod_env_compat_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_conflicting_prod_env_compat_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_conflicting_unknown_env_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_conflicting_unknown_env_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_conflicting_unknown_env_compat_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_conflicting_unknown_env_compat_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_public_host_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_public_host_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_public_host_compat_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_public_host_compat_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_remote_client_forwarded_local_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_remote_client_forwarded_local_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_remote_client_forwarded_local_compat_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_remote_client_forwarded_local_compat_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_non_ip_client_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_non_ip_client_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_non_ip_client_compat_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_non_ip_client_compat_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_lookalike_host_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_lookalike_host_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_lookalike_host_compat_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_lookalike_host_compat_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_public_prod_spoofed_payload_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_public_prod_spoofed_payload_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_public_prod_spoofed_payload_compat_create",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_public_prod_spoofed_payload_compat_verify",
+      "passed": true,
+      "status": 404,
+      "delegate_reached": false
+    },
+    {
+      "test": "9098_explicit_dev_loopback_create",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9098_explicit_dev_loopback_verify",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9098_explicit_dev_loopback_compat_create",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9098_explicit_dev_loopback_compat_verify",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9098_explicit_staging_loopback_create",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9098_explicit_staging_loopback_verify",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9098_explicit_staging_loopback_compat_create",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9098_explicit_staging_loopback_compat_verify",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9098_explicit_test_ipv6_loopback_create",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9098_explicit_test_ipv6_loopback_verify",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9098_explicit_test_ipv6_loopback_compat_create",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    },
+    {
+      "test": "9098_explicit_test_ipv6_loopback_compat_verify",
+      "passed": true,
+      "status": 200,
+      "delegate_reached": true
+    }
+  ],
+  "scope": "exact HTTP guard and route control-flow only; delegate marker proves call boundary, not OTP/auth success",
+  "production_calls": false,
+  "product_store_imports": false,
+  "files": {
+    "core_identity_api-9095-candidate.py": "a0834b412c06263d1ca593de67cc2514471cf4fdd7a83c860608be998fc65fcb",
+    "core_identity_api.py": "30f6d81466d15fad9451445449682f359969b405e21a641a7cd4523ab863b5fd"
+  }
+}

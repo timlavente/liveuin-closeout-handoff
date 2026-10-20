@@ -1,0 +1,7 @@
+{
+  "helper_sha256": "639299407e9e13ba59c2d839f4100a08c4c784d4cb338e7bb017d34f3972c32b",
+  "cases_passed": 2,
+  "coverage": "decorators/defaults/class-body/call annotations included; function body and __main__ excluded; postponed annotations excluded",
+  "production_sources_read": false,
+  "product_imports": false
+}

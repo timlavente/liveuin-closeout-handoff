@@ -1,0 +1,15 @@
+{
+  "observed_utc": "2026-10-20T06:57:52.142263+00:00",
+  "change": "Local verification form now supports reloading its /verify address.",
+  "source_sha256": "ec0fb91085934693be8fed8188f5312b594282546c92982e7bf158e9b4502707",
+  "local_http_checks": {
+    "/": 200,
+    "/verify": 200
+  },
+  "cache_control_no_store": true,
+  "verification_checkpoint_present": false,
+  "browser_smoke_claimed": false,
+  "product_servers_changed": false,
+  "public_live_charging_changed": false,
+  "imported_tenancies_used_or_emailed": false
+}

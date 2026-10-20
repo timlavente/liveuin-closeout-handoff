@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "manifest_sha256": "ab0eabe75d33b8218792eaa247ea2da6be1bd28d7776125d6928850a7bda9bcf",
+  "checks": [
+    "byte-identical repeat generation",
+    "manifest-tamper rejected before output write",
+    "baseline-tamper rejected before output write",
+    "anchor-mismatch rejected before output write"
+  ]
+}

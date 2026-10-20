@@ -1,0 +1,530 @@
+{
+  "version": "RETENTION-06",
+  "retained_at_utc": "2026-10-19T20:27:39.479147+00:00",
+  "status": "AUTH02-9095 component proven; full AUTH02 remains open",
+  "selected_file_count": 62,
+  "package08_manifest_sha256": "403e97cbc90893402427dfd304358271d619c23babb452a1a20ff2f33aece21b",
+  "prior_retention_manifests_unchanged": {
+    "RETENTION-01.json": "0c4909c6e05480934c756d1cbb533265894073012ea935cdbd042598a7c3976c",
+    "RETENTION-PROBE-03.json": "c5cc6871cc55a0b894e3ebdfe662d4538abb4d0bb61763d9add986aa689f6052",
+    "RETENTION-04.json": "bfa07ed118d2c2dd496ef9641e6d08b4890d8a8008d5487b12b00888c5fd51ee",
+    "RETENTION-05.json": "5d9768cbbddd27327e12c580b1b5e1a333c6e2be0a0b7d6393f7da9fdc78456d",
+    "RETENTION-02.json": "053a746fadd057135ae4062ba154df01d7ba80b02662ce124df3978a23bf8aca",
+    "RETENTION-03.json": "6c282002bffb5e10d1d51f3262e41920da85c8e12aa19b50809edde3c84a0cad"
+  },
+  "related_mutable_document_versions": [
+    {
+      "path": "AUTH02-9095-COMPONENT-PROOF-01.md",
+      "bytes": 8410,
+      "sha256": "28927c406c96eaf7fc1ce3dd03f276bad5523d08b6ec242d03cd6a6c244933bf"
+    },
+    {
+      "path": "R01-WORKING-STATUS-01.md",
+      "bytes": 6761,
+      "sha256": "497517e11aaf4288f47ce4f34bf1c8eadeaf147741fd223646934769191bd7dc"
+    },
+    {
+      "path": "AUTH02-ADMISSION-FINDING-01.md",
+      "bytes": 6949,
+      "sha256": "30f2fef017a986637b1397ddb214c42bf589bb8a064013958f3885dd543487e7"
+    }
+  ],
+  "hydration_check": "all selected inputs and retained copies fully readable with positive local blocks and matching SHA256",
+  "files": [
+    {
+      "path": "final08-component/package08/deployment/activate-9095.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/activate-9095.py",
+      "bytes": 18434,
+      "sha256": "fb39354f610dc6e74db369453945376d37d838c00fc88f098dfae123be0a4b45",
+      "source_local_blocks": 40,
+      "retained_local_blocks": 40
+    },
+    {
+      "path": "final08-component/package08/deployment/preflight-backup.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/preflight-backup.py",
+      "bytes": 17623,
+      "sha256": "25c5d1f8b22dd81fcc4ea07818d784dc52b70cab62170c88a2df94b8d07abb87",
+      "source_local_blocks": 40,
+      "retained_local_blocks": 40
+    },
+    {
+      "path": "final08-component/package08/deployment/preflight-spec.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/preflight-spec.json",
+      "bytes": 9923,
+      "sha256": "b2031d0b9cef4363fdd843b50830c4edea7b7ed45487ab2b2b956c8a4721ec96",
+      "source_local_blocks": 24,
+      "retained_local_blocks": 24
+    },
+    {
+      "path": "final08-component/package08/deployment/classify-restart-config.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/classify-restart-config.py",
+      "bytes": 14398,
+      "sha256": "3ba754475c7ec26516989474ab2f16bf7366e6952268a8863b2525c891fd61a2",
+      "source_local_blocks": 32,
+      "retained_local_blocks": 32
+    },
+    {
+      "path": "final08-component/package08/deployment/prestart-fastpath-probe.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/prestart-fastpath-probe.py",
+      "bytes": 25169,
+      "sha256": "5a58274e32813b467ab498c6f00ab821b774cff10c5d35f5ca9a6594fcce7544",
+      "source_local_blocks": 56,
+      "retained_local_blocks": 56
+    },
+    {
+      "path": "final08-component/package08/deployment/build-startup-verdict.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/build-startup-verdict.py",
+      "bytes": 5977,
+      "sha256": "790a9d54e8afb785697334ae280d3b958abcd777237c62ee20260bb7141131ab",
+      "source_local_blocks": 16,
+      "retained_local_blocks": 16
+    },
+    {
+      "path": "final08-component/package08/deployment/direct-deploy-startup-ast.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/direct-deploy-startup-ast.py",
+      "bytes": 4610,
+      "sha256": "639299407e9e13ba59c2d839f4100a08c4c784d4cb338e7bb017d34f3972c32b",
+      "source_local_blocks": 16,
+      "retained_local_blocks": 16
+    },
+    {
+      "path": "final08-component/package08/deployment/test-prestart-identity-local.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/test-prestart-identity-local.py",
+      "bytes": 4998,
+      "sha256": "04733c682446a9ae57695246e87e6aa25819b3f2e084fc335093b623ea503aa9",
+      "source_local_blocks": 16,
+      "retained_local_blocks": 16
+    },
+    {
+      "path": "final08-component/package08/deployment/RESTART-REVIEW-PROCEDURE-01.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/RESTART-REVIEW-PROCEDURE-01.md",
+      "bytes": 6206,
+      "sha256": "eac5aa6e8021077f4c6a79a7583fd3d4be94680d7cb8dcfc589edadcf41440bb",
+      "source_local_blocks": 16,
+      "retained_local_blocks": 16
+    },
+    {
+      "path": "final08-component/package08/deployment/AUTH02-9095-ACTIVATION-HANDOFF-01.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/AUTH02-9095-ACTIVATION-HANDOFF-01.md",
+      "bytes": 9088,
+      "sha256": "7cffa39ba958aaab37f7394e03d793bc95c5235548f3af2f2e95390078b43fe0",
+      "source_local_blocks": 24,
+      "retained_local_blocks": 24
+    },
+    {
+      "path": "final08-component/package08/candidate-9095/deploy/core_identity_api.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/candidate-9095/deploy/core_identity_api.py",
+      "bytes": 44386,
+      "sha256": "a0834b412c06263d1ca593de67cc2514471cf4fdd7a83c860608be998fc65fcb",
+      "source_local_blocks": 88,
+      "retained_local_blocks": 88
+    },
+    {
+      "path": "final08-component/package08/fallback-9095/deploy/core_identity_api.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/fallback-9095/deploy/core_identity_api.py",
+      "bytes": 33442,
+      "sha256": "aee0ce11a4ffe48242b18dbde4a67463409765d80f43f15a68c6d40facc6e143",
+      "source_local_blocks": 72,
+      "retained_local_blocks": 72
+    },
+    {
+      "path": "final08-component/package08/candidate-9095-manifest.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/candidate-9095-manifest.json",
+      "bytes": 351,
+      "sha256": "8409272a41b5c232f47b2fb9a2e045acb02aa9ba1912ba57425c45bddde4dd01",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/fallback-9095-manifest.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/fallback-9095-manifest.json",
+      "bytes": 322,
+      "sha256": "20ec9579148702bc2bcf54399676cbd7206b8dc8bc86c4e25534ff80b8e69a8b",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/README.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/README.md",
+      "bytes": 9829,
+      "sha256": "92a1e8e23dfe885cd76c035d09e7c1a44f3b35ae340ed2bdaf92ec221b448d02",
+      "source_local_blocks": 24,
+      "retained_local_blocks": 24
+    },
+    {
+      "path": "final08-component/package08/evidence/api-function-scope.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/api-function-scope.json",
+      "bytes": 1211,
+      "sha256": "07f2997554428a22de7286709c987e8626a24f66d3ae29ac4532a7eb15d199b5",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/deployment-tests/test_activation_faults.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment-tests/test_activation_faults.py",
+      "bytes": 18627,
+      "sha256": "a2ed8ebe117c910685a4ae8a9b1e80f4560139f2b4a054a327c5413a36b946fd",
+      "source_local_blocks": 40,
+      "retained_local_blocks": 40
+    },
+    {
+      "path": "final08-component/package08/deployment-tests/activation-fault-results.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment-tests/activation-fault-results.json",
+      "bytes": 9707,
+      "sha256": "cacad03ea8526bb2ccf16c007ba9ecb120fe58f7d8a27e0fd8d244c30af16a5f",
+      "source_local_blocks": 24,
+      "retained_local_blocks": 24
+    },
+    {
+      "path": "final08-component/package08/deployment-tests/test_restart_classifier.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment-tests/test_restart_classifier.py",
+      "bytes": 4707,
+      "sha256": "65bcfedc41a469b698ff4283dd1cd98d00c31b0b42ae8fe300890a1c57225b68",
+      "source_local_blocks": 16,
+      "retained_local_blocks": 16
+    },
+    {
+      "path": "final08-component/package08/deployment-tests/restart-classifier-results.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment-tests/restart-classifier-results.json",
+      "bytes": 1529,
+      "sha256": "405d6de1a144d2b3ee82844eafa6d55ec7a7619c1811362ab99ed3b12ee89fdb",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/restart-env-parser-tests.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/restart-env-parser-tests.json",
+      "bytes": 221,
+      "sha256": "79995f1aabd97336bcdb02c46e69104d422eeb858aab70bfe403d06f7fbfd747",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/restart-unset-tests.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/restart-unset-tests.json",
+      "bytes": 271,
+      "sha256": "2fedf92965c3c68538a84b015dc25dbc45acdd3cb2677a8232cd1ac351a983c6",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/restart-dbus-scalar-shape.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/restart-dbus-scalar-shape.json",
+      "bytes": 346,
+      "sha256": "a72cd37f1a97ffccad59f2f676aec4a7c2ca90e55da1809e457d8b629b1b3a90",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/prestart-probe-identity-tests-04.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/prestart-probe-identity-tests-04.json",
+      "bytes": 2239,
+      "sha256": "fc112765a2c93d1904deaab2e466b9fa884db438e39dcdf96c1f64f505f68449",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/prestart-probe-local-guard-tests.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/prestart-probe-local-guard-tests.json",
+      "bytes": 2997,
+      "sha256": "b53bac8f79ad42825c652329dd123f4668b31be4116b0332b569040df7080f82",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/PRESTART-IDENTITY-REVIEW-04.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/PRESTART-IDENTITY-REVIEW-04.md",
+      "bytes": 2524,
+      "sha256": "01d6c3a21b9cb6dd3e3ac7bd62995a5a26d4e7ac8b1e6d95b9f34044a9b8a869",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/auth02-startup-declarations.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/auth02-startup-declarations.json",
+      "bytes": 940634,
+      "sha256": "8a905e5a7c84cef38fa402bb02fee767757df931f90c3a3622b73ab18f63f123",
+      "source_local_blocks": 1840,
+      "retained_local_blocks": 1840
+    },
+    {
+      "path": "final08-component/package08/evidence/auth02-direct-deploy-startup-ast.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/auth02-direct-deploy-startup-ast.json",
+      "bytes": 221863,
+      "sha256": "6a2036e4899de5a38a19eaeb606f926852b8f77bcc6f7f791c19cf0b8451988a",
+      "source_local_blocks": 440,
+      "retained_local_blocks": 440
+    },
+    {
+      "path": "final08-component/package08/evidence/auth02-concrete-startup-constructors.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/auth02-concrete-startup-constructors.json",
+      "bytes": 3952,
+      "sha256": "6c95d0dd1c9354b78fda59a1303f0d47e6c37594ab915be07857ebf4326252e3",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/auth02-prestart-source.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/auth02-prestart-source.json",
+      "bytes": 31291,
+      "sha256": "84763f40ff475fd108ad200079ff789ba029135d9a41abf2e64d9b342e4b588c",
+      "source_local_blocks": 64,
+      "retained_local_blocks": 64
+    },
+    {
+      "path": "final08-component/package08/evidence/auth02-prestart-mode-v2.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/auth02-prestart-mode-v2.json",
+      "bytes": 15310,
+      "sha256": "2120f3ea47b29fb7febb899aa2dbc035f99bdbcb6d590d88031ff4a723088883",
+      "source_local_blocks": 32,
+      "retained_local_blocks": 32
+    },
+    {
+      "path": "final08-component/package08/evidence/AUTH02-BOUNDED-STARTUP-REVIEW-01.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/AUTH02-BOUNDED-STARTUP-REVIEW-01.md",
+      "bytes": 3485,
+      "sha256": "b022a181621d541330f2063b26698e6d449263a0c65563919607187d2d4d9da7",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/direct-startup-ast-fixture.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/direct-startup-ast-fixture.json",
+      "bytes": 318,
+      "sha256": "648358fd43700862a3b23278996068d4820e71949ed4e8d207befd2c1dbf766e",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/adapter-release-result.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/adapter-release-result.json",
+      "bytes": 11171,
+      "sha256": "c5ff6f29565987ce09b2c4bddeda324f0b07d5921def17935fca3cbf9b71585e",
+      "source_local_blocks": 24,
+      "retained_local_blocks": 24
+    },
+    {
+      "path": "final08-component/package08/evidence/ADAPTER-RELEASE-INDEPENDENT-01.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/ADAPTER-RELEASE-INDEPENDENT-01.md",
+      "bytes": 2299,
+      "sha256": "f2f8bf3a725b0617ab7031fe0fa1c5e31f5e480d40794801c60d3a20a7613ad9",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/preview-release-result.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/preview-release-result.json",
+      "bytes": 12386,
+      "sha256": "9fe9a8f7e4a3914246ec6a06438b12971d342f0d6a2116d3092d09dc704e3fac",
+      "source_local_blocks": 32,
+      "retained_local_blocks": 32
+    },
+    {
+      "path": "final08-component/package08/evidence/resident-87ff864-manifest.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/resident-87ff864-manifest.json",
+      "bytes": 11019,
+      "sha256": "91c3fb25ce80a570507b66aeae30817569fc5b0a5daef43ab17926a570f7c77b",
+      "source_local_blocks": 24,
+      "retained_local_blocks": 24
+    },
+    {
+      "path": "final08-component/package08/evidence/auth02-reconciliation-05-locked.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/auth02-reconciliation-05-locked.json",
+      "bytes": 10200,
+      "sha256": "2bf0204fb778ef069b6116ca45674ce8a763206b2266beeea287cce69198dc11",
+      "source_local_blocks": 24,
+      "retained_local_blocks": 24
+    },
+    {
+      "path": "final08-component/package08/evidence/auth02-startup-declarations-05.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/auth02-startup-declarations-05.json",
+      "bytes": 914067,
+      "sha256": "2b507ca0ff96e7fb4541e8da45d9129b4d8162ff9713d29300295ccdd843a8ad",
+      "source_local_blocks": 1792,
+      "retained_local_blocks": 1792
+    },
+    {
+      "path": "final08-component/package08/evidence/resident-actual-05-startup-ast.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/resident-actual-05-startup-ast.json",
+      "bytes": 18338,
+      "sha256": "d0f92ec7ac6272cc8511b018a6260c1ed9c03a8ad3c1240bbdf6b52d382057fb",
+      "source_local_blocks": 40,
+      "retained_local_blocks": 40
+    },
+    {
+      "path": "final08-component/package08/evidence/resident-webhook-followup-05.diff",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/resident-webhook-followup-05.diff",
+      "bytes": 2144,
+      "sha256": "84927b1c0dda160d9214289bc948573949e464499e297be7ba554a14e8f51e66",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/main-additive-mount-05.diff",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/main-additive-mount-05.diff",
+      "bytes": 516,
+      "sha256": "7f0d2fec3d12f2de927a1f6aa1141d3a9c947030f2ce544382c908b2eba19787",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/RECONCILIATION-SOURCE-REVIEW-05.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/RECONCILIATION-SOURCE-REVIEW-05.md",
+      "bytes": 5050,
+      "sha256": "3166f935aa23b224a5bca761a140d35c91b107c35de93e4450113dbdbbbd2b49",
+      "source_local_blocks": 16,
+      "retained_local_blocks": 16
+    },
+    {
+      "path": "final08-component/package08/deployment/PACKAGE-07-RECONCILIATION-ADDENDUM.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/PACKAGE-07-RECONCILIATION-ADDENDUM.md",
+      "bytes": 1700,
+      "sha256": "c57674178883bcf2f831498afff60e60538868230e63b4808b30225b80bc0ccf",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/deployment/PACKAGE-08-CLOSED-BASELINE-ADDENDUM.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/PACKAGE-08-CLOSED-BASELINE-ADDENDUM.md",
+      "bytes": 2086,
+      "sha256": "73044b6c1299fd3de49016ca5edc408b0584d62991517b3c8c412a5071f9a484",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/activation-9095-result-07.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/activation-9095-result-07.json",
+      "bytes": 732,
+      "sha256": "53a92b85bdcb62bd8fe2e2427532280c0f438cdcb20e5c6e6ae11d176cde0621",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/closed-recovery-result-01.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/closed-recovery-result-01.json",
+      "bytes": 1162,
+      "sha256": "7b0754461a52bff4ee9fd35e4993cf4bc5b95da423047860f2ceea60c1a8bccf",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/recovery-wait-tests-01.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/recovery-wait-tests-01.json",
+      "bytes": 1273,
+      "sha256": "825520d0abfec47a887624b1064e1b6a8a186c2c8cc5570d97779d6db280084b",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/deployment/package-manifest-9095.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/package-manifest-9095.json",
+      "bytes": 8106,
+      "sha256": "403e97cbc90893402427dfd304358271d619c23babb452a1a20ff2f33aece21b",
+      "source_local_blocks": 16,
+      "retained_local_blocks": 16
+    },
+    {
+      "path": "final08-component/package08/deployment/PACKAGE-08-HASHES.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/PACKAGE-08-HASHES.json",
+      "bytes": 1108,
+      "sha256": "4f0fd0c4b6151af3e2ebff1dff1532512517e9009759e3ef1052110d6f66423e",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/deployment/stage-reviewed-package-08.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/stage-reviewed-package-08.py",
+      "bytes": 1434,
+      "sha256": "728f390dbe94081da2ff394db726d7876e2c467e99d770f1148dbdc73065f96f",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/runtime/activation-9095-result-08.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend/evidence/activation-9095-result-08.json",
+      "bytes": 1389,
+      "sha256": "9e8095d0d64ef8e6d05713f30184b4437aa1a8b0212eae16c6439cf93cd9835d",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/runtime/prestart-summary-08.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend/evidence/prestart-summary-08.json",
+      "bytes": 3578,
+      "sha256": "650af95a47c10190e72e0657848d63579175046650b41eec94bb84498742964c",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/runtime/public-denial-after-08.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend/evidence/public-denial-after-08.json",
+      "bytes": 2196,
+      "sha256": "dea69335b31a67146df6a2c55cf9ad6286e28c6417ac221c3b83e7ed44b762d6",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/runtime/payment-lock-after-08.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend/evidence/payment-lock-after-08.json",
+      "bytes": 3698,
+      "sha256": "46050f7334dbcc139764619e75ae223b4ce2bbbe5658c9e9fd502e3b07c89a93",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/runtime/owner-canonical-proof-after-08.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend/evidence/owner-canonical-proof-after-08.json",
+      "bytes": 1804,
+      "sha256": "445ec8c1f575a7c98b99567abd0eabb48e110349a9048e979df086f027f874eb",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/runtime/owner-fresh-signin-after-08.jpg",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend/evidence/owner-fresh-signin-after-08.jpg",
+      "bytes": 86546,
+      "sha256": "dc947fa3fab66857c9209eb37da82c9d9146de80210f938147cdd75344067300",
+      "source_local_blocks": 176,
+      "retained_local_blocks": 176
+    },
+    {
+      "path": "final08-component/owner-proof/owner-proof-readonly-02.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/owner-proof/owner-proof-readonly-02.py",
+      "bytes": 11465,
+      "sha256": "264c126b0e4fb84f59b228b4b0f8c32ddd9a5a464204c7dfe1695848b8853bf6",
+      "source_local_blocks": 24,
+      "retained_local_blocks": 24
+    },
+    {
+      "path": "final08-component/owner-proof/owner-proof-local-tests-02.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/owner-proof/owner-proof-local-tests-02.json",
+      "bytes": 520,
+      "sha256": "1213d6bf006251924e23e6e7c455660261ff67dc3c12e3a8b4f2d98aea2f37f2",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/package08/evidence/RETRY-08-INDEPENDENT-REVIEW.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/evidence/RETRY-08-INDEPENDENT-REVIEW.json",
+      "bytes": 856,
+      "sha256": "342e1ed66afc6858dc4adaab8e4f76f04e4708b3438ebbef86ddf7b9146be696",
+      "source_local_blocks": 8,
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/owner-proof/OWNER-BROWSER-OBSERVATION-08.md",
+      "source": "sanitized root browser observation plus canonical result",
+      "bytes": 1224,
+      "sha256": "370edad18c5620cdb56cccc9d802925a5918b45f3e14f47df5daa9e35458aba2",
+      "retained_local_blocks": 8
+    },
+    {
+      "path": "final08-component/RETENTION06-NOTE.md",
+      "source": "authored retention06 note",
+      "bytes": 2260,
+      "sha256": "3e2d1271bb49349a5c4c959ea5dda463557626831f03a0f6f6b3cb0d479d6f3b",
+      "retained_local_blocks": 8
+    }
+  ],
+  "finalized_at_utc": "2026-10-19T20:28:14.697421+00:00"
+}

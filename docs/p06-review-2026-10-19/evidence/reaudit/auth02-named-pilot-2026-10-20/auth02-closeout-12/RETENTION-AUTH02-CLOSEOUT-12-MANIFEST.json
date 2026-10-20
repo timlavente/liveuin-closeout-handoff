@@ -1,0 +1,107 @@
+{
+  "status": "auth02_frozen_passed_bounded_scope",
+  "recorded_at_singapore": "2026-10-20T16:48:28.662791+08:00",
+  "files": [
+    {
+      "file": "app-browser-pass-11.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/frontend-public-11/app-browser-pass-11.json",
+      "bytes": 7036,
+      "sha256": "92b0ed0380b87ca59bb2443c8aa73c1e24d0a6a176dda077738d87c5ea35fed8",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "activate-public-12.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/frontend-public-12/activate-public-12.py",
+      "bytes": 7627,
+      "sha256": "bc562d1910a6db000f7b6645bb62ae9565ff75640e6d921923c52830158ce932",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "candidate-manifest-return-11.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/frontend-return-11/candidate-manifest.json",
+      "bytes": 140807,
+      "sha256": "5b30d8e31f16395440062cd2dc417bb97b9ec246c5445b70eeaf3f07268b5177",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "return-fix-package-manifest.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/frontend-return-11/return-fix-package-manifest.json",
+      "bytes": 53509,
+      "sha256": "4568371085147c1095d71aa62258e6e4b028df84f1bd4785b855b8cdf2d0e2c0",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "PUBLIC-12-INDEPENDENT-REVIEW.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/frontend-public-12/PUBLIC-12-INDEPENDENT-REVIEW.json",
+      "bytes": 466,
+      "sha256": "004069cbfb58f2f270e56c883b99f44f24aeae74441cb86feae72176922d7d02",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "origin-probe-tests-12.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/frontend-public-12/origin-probe-tests-12.json",
+      "bytes": 911,
+      "sha256": "ec27227c5a08c390a7012ff8a029b141798c01cdcbefef40de94255774c969d7",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "public-parent-account-12.png",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/screenshots/public-parent-account-12.png",
+      "bytes": 37608,
+      "sha256": "ad9371b65d7dd0cd2bb568796d626db05d5fee48afd4f78b4c9f7d5d5b4fad0f",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "public-www-app-handoff-12.png",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/screenshots/public-www-app-handoff-12.png",
+      "bytes": 41967,
+      "sha256": "79a13c0681997e85f7ca3b2de1b7698aa4f52cf6b68d3c46438f388325802a58",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "public-parent-logout-refused-12.png",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/screenshots/public-parent-logout-refused-12.png",
+      "bytes": 55326,
+      "sha256": "78df78edf91788e905e3340cbded4f5c10b6751a08d2ba260676ff73c2e55ea7",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "parent-public-after-logout-12.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-proof-12/parent-public-after-logout-12.json",
+      "bytes": 1013,
+      "sha256": "8c4edfa68447119a5969b5bad1e38e3cd6e165cc7c87162d9c832dc6ee3355a8",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "AUTH02-ACTIVE-VERSIONS-12.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-proof-12/AUTH02-ACTIVE-VERSIONS-12.json",
+      "bytes": 1851,
+      "sha256": "0db6a9818295cc182605e7ee20d44ea172120ef6420eafc9464b438d117fee99",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "PUBLIC-BROWSER-PROOF-12.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-proof-12/PUBLIC-BROWSER-PROOF-12.json",
+      "bytes": 1628,
+      "sha256": "df33122d6760766c970db20240b9ac54bc55c268e96ab77b81daec3ef0561350",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "PUBLIC-BROWSER-PROOF-12.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-proof-12/PUBLIC-BROWSER-PROOF-12.md",
+      "bytes": 2984,
+      "sha256": "1740f8abb2a7163f0bdaf27f972c633a8b207dc740b7ce62c336f9f1c0cc2b1f",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "../../../../FREEZE-ISSUE-AUTH-002.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-proof-12/FREEZE-ISSUE-AUTH-002.md",
+      "bytes": 6516,
+      "sha256": "0891b096bc3bf94a14f42ef219ebf243657d78b3b2fc269a8758b44bd23dfe28",
+      "hydrated_and_identical": true
+    }
+  ],
+  "hydration_check": "All input/output bytes complete and readable, local blocks present, no dataless flags, xattr names checked; retained SHA-256 values match.",
+  "earlier_frozen_or_historical_inputs_replaced": false,
+  "private_credentials_or_customer_records_retained": false
+}

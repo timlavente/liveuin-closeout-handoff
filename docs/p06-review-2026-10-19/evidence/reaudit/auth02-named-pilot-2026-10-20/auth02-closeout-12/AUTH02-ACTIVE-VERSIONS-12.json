@@ -1,0 +1,25 @@
+{
+  "older_identity_api": {
+    "path": "/opt/liveuin/deploy/core_identity_api.py",
+    "sha256": "a0834b412c06263d1ca593de67cc2514471cf4fdd7a83c860608be998fc65fcb",
+    "evidence": "../../../AUTH02-9095-COMPONENT-PROOF-01.md"
+  },
+  "member_sources": {
+    "core_identity_api.py": "30f6d81466d15fad9451445449682f359969b405e21a641a7cd4523ab863b5fd",
+    "core_identity_public.py": "8340f026f68f5048bbe2e5fc4744f17366dcf134730d4349213c549319630019",
+    "core_identity_release_admission.py": "fefc124fb49131510b5daa801d810608ff09e6c1bdccef54ea72bdf07a9b8c62",
+    "core_identity_session.py": "a3f4cedfc79003abebbdaacc12e59eb82086b0b6e5534ed08eb817a54989585c",
+    "core_identity_social.py": "44680d3685415ec4ce209851f2ffa52cbe207f72e487e80543000ef0d920b709"
+  },
+  "member_source_basis": "Exact candidate bytes match all five member source hashes in the installed browser gate; its continuity check passed in actual public12 activation.",
+  "member_actual_runner_sha256": "00ba41f14120b99b07c2658663f2c27d418f42137c80167e336094ec1c07002d",
+  "frontend_namespace": "auth02-34c8511dd5a2a5ad",
+  "app_and_public_entry_sha256": "d64151e0728796b61d396cb8c38d00f7bd8dc9c563975b42aa5caad86b02e268",
+  "app_nginx_sha256": "949256d02fa4e26ba69e013cb717551c2e0fac7b16d9c80151632962b3f39a0b",
+  "public_runner_sha256": "bc562d1910a6db000f7b6645bb62ae9565ff75640e6d921923c52830158ce932",
+  "public_release_controller_sha256": "4bd7d691e3236176a47878f36bc77fb40f77357871afaa1276851008a1ba6a30",
+  "public_frontend_private_recovery_state": "/root/liveuin-closeout-backups/AUTH02-FRONTEND-20261020T080803Z-3752686/state.json",
+  "public_activation_result_sha256": "0b4c21a6f5c48d0e21116023f539df4634bfb5a79fbb4301b2fff9b3abc7c9fb",
+  "public_browser_gate_sha256": "92b0ed0380b87ca59bb2443c8aa73c1e24d0a6a176dda077738d87c5ea35fed8",
+  "no_git_commit_invented": true
+}

@@ -1,0 +1,11 @@
+{
+  "component": "AUTH02-9095",
+  "read_only_configuration_check": true,
+  "service_actions": false,
+  "product_imports": false,
+  "secret_values_output": false,
+  "credential_digests_output": false,
+  "customer_database_opened": false,
+  "status": "stopped_no_review",
+  "failure_code": "unset_environment_requires_review"
+}

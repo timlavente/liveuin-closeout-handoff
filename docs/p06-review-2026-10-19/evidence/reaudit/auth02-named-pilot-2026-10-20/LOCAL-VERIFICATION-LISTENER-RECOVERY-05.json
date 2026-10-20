@@ -1,0 +1,21 @@
+{
+  "observed_utc": "2026-10-20T07:13:58.647058+00:00",
+  "source_sha256": "0feb19cf4f4020f7cb8896528b61b443abb5a791d1235f419494f2f60fb42177",
+  "normal_resend_http": 200,
+  "latest_message_metadata_delivery_time_utc": "2026-10-20T07:10:21Z",
+  "verification_expiry_iso": "2026-10-20T07:25:18Z",
+  "mail_body_or_code_read": false,
+  "loopback_idle_connection_regression_passed": true,
+  "both_local_form_routes_http": 200,
+  "post_verification_serialized": true,
+  "independent_isolated_tests_passed": 13,
+  "test_evidence": {
+    "parent-handoff-compat-tests-05.json": "1d90e87ef9f986cb58b7410d943553595515634c65a1a307c655de88a1577355",
+    "parent-handoff-threading-tests-05.json": "07448263bc693590eca39a560852fe80f1f98e372d4666b3e9ad3edbcec09f12"
+  },
+  "verified_checkpoint_present": false,
+  "browser_auth_pass_claimed": false,
+  "product_servers_changed": false,
+  "public_live_charging_changed": false,
+  "imported_tenancies_used_or_emailed": false
+}

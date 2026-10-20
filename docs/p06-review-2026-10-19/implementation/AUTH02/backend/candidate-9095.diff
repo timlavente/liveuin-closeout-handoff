@@ -1,0 +1,117 @@
+--- baseline-9095/core_identity_api.py
++++ candidate-9095/core_identity_api.py
+@@ -107,7 +107,10 @@
+         or os.getenv("LIVEUIN_ENV")
+         or ""
+     ).strip().lower()
+-    if environment in {"prod", "production"}:
++    environments = {str(os.getenv(name) or "").strip().lower()
++                    for name in ("LIVEUIN_ENVIRONMENT", "ENVIRONMENT", "LIVEUIN_ENV")
++                    if str(os.getenv(name) or "").strip()}
++    if not environments or not environments.issubset({"dev", "development", "test", "testing", "staging"}):
+         return False
+     trusted_hosts = {
+         item.strip().lower()
+@@ -209,6 +212,13 @@
+     request_context: Dict[str, Any] | None = None,
+ ) -> Dict[str, Any]:
+     payload = payload if isinstance(payload, dict) else {}
++    declared_surface = str(payload.get("surface") or "").strip().lower()
++    declared_role = str(payload.get("liveuin_role") or payload.get("role") or "").strip().lower()
++    declared_purpose = str(payload.get("purpose") or "").strip().lower()
++    if not declared_purpose:
++        declared_purpose = "connect_admin" if declared_role in {"agent", "connector_admin"} else "operator_portal"
++    if declared_surface not in {"ops_command", "operator_portal", "host_workspace"} or (declared_surface != "host_workspace" and declared_purpose != "operator_portal"):
++        return {"ok": False, "status_code": 403, "detail": "browser_sign_in_unavailable"}
+     raw_identifier = (
+         payload.get("email")
+         or payload.get("identifier")
+@@ -255,6 +265,10 @@
+         else:
+             purpose = "operator_portal"
+ 
++    # Only existing membership-bound browser flows may issue a production code.
++    # Connect/Partner and caller-selected roles have no admission authority here.
++    if surface not in {"ops_command", "operator_portal", "host_workspace"} or purpose != "operator_portal":
++        return {"ok": False, "status_code": 403, "detail": "browser_sign_in_unavailable"}
+     ops_login_surface = surface in {"ops_command", "operator_portal"}
+     if surface != "host_workspace" and ops_login_surface and purpose == "operator_portal":
+         operator_access = workspace_access.resolve_ops_workspace_access(
+@@ -267,6 +281,9 @@
+         role_context = operator_access.get("role_context") if isinstance(operator_access.get("role_context"), dict) else {}
+         requested_role = str(role_context.get("role") or "").strip().lower()
+         scopes = [str(scope).strip() for scope in role_context.get("scopes") or [] if str(scope).strip()]
++
++    if not workspace_id or not requested_role or not scopes:
++        return {"ok": False, "status_code": 403, "detail": "browser_sign_in_unavailable"}
+ 
+     created = identity_login.create_login_challenge(
+         {
+@@ -341,7 +358,11 @@
+     return_to = google_oauth._safe_return_to(payload.get("return_to") or "/ops/command")
+     challenge = identity_login.store.get_challenge(challenge_id)
+     metadata = challenge.get("metadata") if isinstance(challenge, dict) and isinstance(challenge.get("metadata"), dict) else {}
+-    host_login = str(metadata.get("surface") or "").strip().lower() == "host_workspace"
++    canonical_surface = str(metadata.get("surface") or "").strip().lower()
++    canonical_purpose = str(challenge.get("purpose") or "").strip().lower() if isinstance(challenge, dict) else ""
++    if canonical_surface not in {"ops_command", "operator_portal", "host_workspace"} or canonical_purpose != "operator_portal":
++        return {"ok": False, "status_code": 403, "detail": "browser_sign_in_unavailable"}
++    host_login = canonical_surface == "host_workspace"
+     verification_payload: Dict[str, Any] = {
+         "workspace_id": payload.get("workspace_id") or challenge.get("workspace_id") or identity_login.DEFAULT_WORKSPACE_ID,
+         "verification_code": payload.get("verification_code") or payload.get("code") or "",
+@@ -378,6 +399,8 @@
+         verification_payload["workspace_id"] = challenge_workspace_id
+         trusted_role = str(role_context.get("role") or "").strip().lower()
+         trusted_scopes = [str(scope).strip() for scope in role_context.get("scopes") or [] if str(scope).strip()]
++    if not trusted_role or not trusted_scopes or not verification_payload.get("workspace_id"):
++        return {"ok": False, "status_code": 403, "detail": "browser_sign_in_unavailable"}
+     verification_options = (
+         {"trusted_role": trusted_role, "trusted_scopes": trusted_scopes}
+         if host_login
+@@ -868,11 +891,37 @@
+     )
+ 
+ 
++def _require_local_identity_preview(request: Request) -> None:
++    """Raw challenge endpoints are local development previews, never production login.
++
++    Real Ops/Host adapters retain their existing membership-bound service calls.
++    Neither forwarded headers, the request payload nor an unset environment can
++    enable this HTTP preview door.
++    """
++    import ipaddress
++    environments = {
++        str(os.getenv(name) or "").strip().lower()
++        for name in ("LIVEUIN_ENVIRONMENT", "ENVIRONMENT", "LIVEUIN_ENV")
++        if str(os.getenv(name) or "").strip()
++    }
++    allowed_environments = {"dev", "development", "test", "testing", "staging"}
++    allowed = bool(environments) and environments.issubset(allowed_environments)
++    host = str(request.url.hostname or "").lower()
++    client = str(request.client.host if request.client else "")
++    try:
++        local_client = ipaddress.ip_address(client).is_loopback
++    except ValueError:
++        local_client = False
++    if not (allowed and local_client and host in {"localhost", "127.0.0.1", "::1"}):
++        raise HTTPException(status_code=404, detail="not_found", headers={"Cache-Control": "no-store"})
++
++
+ @router.post("/api/core/identity/login/challenges")
+ def core_identity_login_create(
+     request: Request,
+     payload: Dict[str, Any] = Body(default={}),
+ ) -> Dict[str, Any]:
++    _require_local_identity_preview(request)
+     return _raise_if_error(identity_login.create_login_challenge(payload, _request_meta(request)))
+ 
+ 
+@@ -892,6 +941,7 @@
+     challenge_id: str,
+     payload: Dict[str, Any] = Body(default={}),
+ ) -> Dict[str, Any]:
++    _require_local_identity_preview(request)
+     return _raise_if_error(identity_login.verify_login_challenge(challenge_id, payload, _request_meta(request)))
+ 
+ 

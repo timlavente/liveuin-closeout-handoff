@@ -1,0 +1,62 @@
+{
+  "row": "AUTH-01",
+  "started_at_utc": "2026-10-19T16:34:49.783687+00:00",
+  "script_sent_message": false,
+  "customer_records_read": false,
+  "payment_settings_changed": false,
+  "backup": "/var/backups/liveuin-p06/auth-01-20261020-attempt-01",
+  "before": {
+    "MainPID": "0",
+    "ExecStart": "{ path=/opt/liveuin/otp_service/venv/bin/python ; argv[]=/opt/liveuin/otp_service/venv/bin/python -m uvicorn app:APP --host 127.0.0.1 --port 9094 ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+    "EnvironmentFiles": "/etc/liveuin/otp-prod.env (ignore_errors=no)",
+    "WorkingDirectory": "/opt/liveuin/otp_service",
+    "User": "liveuin",
+    "ActiveState": "inactive",
+    "SubState": "dead",
+    "DropInPaths": "",
+    "UnitFileState": "enabled"
+  },
+  "source_versions_verified": true,
+  "health": {
+    "status": 200,
+    "ok": true,
+    "ready": true,
+    "error": null,
+    "expected_service": true
+  },
+  "verified_service_pid": "3311392",
+  "anonymous_empty_send": {
+    "status": 401,
+    "ok": false,
+    "ready": false,
+    "error": "internal_authentication_required",
+    "expected_service": false
+  },
+  "authenticated_empty_send": {
+    "status": 400,
+    "ok": false,
+    "ready": false,
+    "error": "email_and_challenge_id_required",
+    "expected_service": false
+  },
+  "database_connection_check": {
+    "status": 200,
+    "ok": true,
+    "ready": true,
+    "error": null,
+    "expected_service": true
+  },
+  "after": {
+    "MainPID": "3311392",
+    "ExecStart": "{ path=/opt/liveuin/otp_service/venv/bin/python ; argv[]=/opt/liveuin/otp_service/venv/bin/python -m uvicorn app:APP --host 127.0.0.1 --port 9094 ; ignore_errors=no ; start_time=[Tue 2026-10-20 00:34:49 +08] ; stop_time=[n/a] ; pid=3311392 ; code=(null) ; status=0/0 }",
+    "EnvironmentFiles": "/etc/liveuin/otp-prod.env (ignore_errors=no)",
+    "WorkingDirectory": "/opt/liveuin/otp_service",
+    "User": "liveuin",
+    "ActiveState": "active",
+    "SubState": "running",
+    "DropInPaths": "",
+    "UnitFileState": "enabled"
+  },
+  "result": "restored_ready_actual_delivery_and_signin_still_unproved",
+  "finished_at_utc": "2026-10-19T16:34:50.648842+00:00"
+}

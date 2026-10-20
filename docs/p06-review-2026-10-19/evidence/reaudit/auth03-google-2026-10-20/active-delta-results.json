@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "prior_manifest_sha256": "5b30d8e31f16395440062cd2dc417bb97b9ec246c5445b70eeaf3f07268b5177",
+  "candidate_manifest_sha256": "785bfec58a76aeeea01484814285d6a43a1d7783a0c4a5c0d2156f1d25b57793",
+  "changed_files_vs_passed_auth02": [
+    "assets/RELEASE/auth.sign-in-CQBkq3x9.js",
+    "assets/RELEASE/index-DPZwxwE9.js",
+    "public-entry.html",
+    "app-entry.html"
+  ],
+  "unchanged_files_vs_passed_auth02": 360,
+  "password_return_hydration_logout_bytes_unchanged": true,
+  "backend_native_configuration_touched": false
+}

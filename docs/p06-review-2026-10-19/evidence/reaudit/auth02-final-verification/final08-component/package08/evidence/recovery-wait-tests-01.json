@@ -1,0 +1,44 @@
+{
+  "runner_sha256": "8907ce81c8499f4d0e47652837afe14b245736a4a8ebf3f4fbcfe511b776c8ac",
+  "controller_unchanged_sha256": "af8508ff6057133cdc8d4c6829d18faf07871ec9d6fa5d8726a525afcaa1106b",
+  "exact_behavior_delta": "Retry process_argv_drift within original20-second loop; full process/source/health validation unchanged. All other mismatch errors remain immediate. Closed recover only.",
+  "tests": [
+    {
+      "name": "argv_transition_then_full_pass",
+      "passed": true,
+      "simulated_seconds": 0.5,
+      "full_process_attempts": 2
+    },
+    {
+      "name": "listener_transition_then_full_pass",
+      "passed": true,
+      "simulated_seconds": 0.5,
+      "full_process_attempts": 2
+    },
+    {
+      "name": "argv_never_final",
+      "passed": true,
+      "simulated_seconds": 20.0,
+      "full_process_attempts": 40
+    },
+    {
+      "name": "cwd_mismatch_immediate",
+      "passed": true,
+      "simulated_seconds": 0,
+      "full_process_attempts": 1
+    },
+    {
+      "name": "source_mismatch",
+      "passed": true,
+      "simulated_seconds": 0,
+      "full_process_attempts": 1
+    },
+    {
+      "name": "health_failure",
+      "passed": true,
+      "simulated_seconds": 0,
+      "full_process_attempts": 1
+    }
+  ],
+  "production_actions": false
+}

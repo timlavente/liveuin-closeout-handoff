@@ -1,0 +1,71 @@
+{
+  "source": "/opt/liveuin/deploy/core_identity_session.py",
+  "source_sha256": "11b7ab17300c3a2ea8a0294470f9872496c6e4f8308598edad97f680ea9fefdb",
+  "selected_functions": [
+    {
+      "name": "_as_dict",
+      "line": 142
+    },
+    {
+      "name": "_as_list",
+      "line": 146
+    },
+    {
+      "name": "_clean_id",
+      "line": 168
+    },
+    {
+      "name": "_clean_slug",
+      "line": 172
+    },
+    {
+      "name": "_header",
+      "line": 208
+    },
+    {
+      "name": "_hash",
+      "line": 501
+    },
+    {
+      "name": "_signing_secret",
+      "line": 508
+    },
+    {
+      "name": "_session_max_age_seconds",
+      "line": 512
+    },
+    {
+      "name": "_credential_store_enforcement",
+      "line": 522
+    },
+    {
+      "name": "_signature_payload",
+      "line": 529
+    },
+    {
+      "name": "_session_signature",
+      "line": 546
+    },
+    {
+      "name": "sign_session_headers",
+      "line": 553
+    },
+    {
+      "name": "_session_header_values",
+      "line": 582
+    },
+    {
+      "name": "_session_header_validation",
+      "line": 594
+    },
+    {
+      "name": "_normalized_scope_set",
+      "line": 647
+    },
+    {
+      "name": "_session_store_claim_mismatch",
+      "line": 651
+    }
+  ],
+  "isolated_test_only": true
+}

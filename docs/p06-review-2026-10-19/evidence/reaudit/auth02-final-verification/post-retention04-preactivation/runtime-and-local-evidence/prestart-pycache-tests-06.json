@@ -1,0 +1,58 @@
+{
+  "sha256": "5ab6bbb50a5c3125678fa75c0d0236ce7e8d36645e130ddafddffbdecd38560d",
+  "passed": 12,
+  "total": 12,
+  "checks": [
+    {
+      "name": "system_library_cache",
+      "passed": true
+    },
+    {
+      "name": "venv_library_cache",
+      "passed": true
+    },
+    {
+      "name": "product_cache_denied",
+      "passed": true
+    },
+    {
+      "name": "sibling_venv_prefix_denied",
+      "passed": true
+    },
+    {
+      "name": "outside_cache_denied",
+      "passed": true
+    },
+    {
+      "name": "non_pyc_denied",
+      "passed": true
+    },
+    {
+      "name": "unconfigured_prefix_denied",
+      "passed": true
+    },
+    {
+      "name": "traversal_outside_cache_denied",
+      "passed": true
+    },
+    {
+      "name": "mapped_traversal_to_product_denied",
+      "passed": true
+    },
+    {
+      "name": "library_cache_write_denied",
+      "passed": true
+    },
+    {
+      "name": "mapped_source_symlink_outside_library_denied",
+      "passed": true
+    },
+    {
+      "name": "private_path_not_in_console",
+      "passed": true
+    }
+  ],
+  "probe_executed": false,
+  "production_calls": false,
+  "tests": "AST pure helper and audit calls; Linux path model; no file opens"
+}

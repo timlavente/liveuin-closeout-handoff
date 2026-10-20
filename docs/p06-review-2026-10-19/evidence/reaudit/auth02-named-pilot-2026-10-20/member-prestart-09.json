@@ -1,0 +1,155 @@
+{
+  "mode": "0o750",
+  "path": "/usr/local/sbin/liveuin-identity-public-prod-secret.sh",
+  "source_executed": false,
+  "sha256": "2b13dd29a28af4c4828b3f05cb9d75faee9d4e520546f5fc346acdcb67315b39",
+  "bytes": 670,
+  "line_count": 14,
+  "owner_uid": 0,
+  "structure": [
+    {
+      "line": 4,
+      "assignment_names": [],
+      "variable_references": [],
+      "command_names": [
+        "set"
+      ],
+      "control_words": [],
+      "contains_command_substitution": false,
+      "reviewed_path_literals": []
+    },
+    {
+      "line": 5,
+      "assignment_names": [
+        "SRC"
+      ],
+      "variable_references": [],
+      "command_names": [
+        "env"
+      ],
+      "control_words": [],
+      "contains_command_substitution": false,
+      "reviewed_path_literals": []
+    },
+    {
+      "line": 6,
+      "assignment_names": [
+        "DST_DIR"
+      ],
+      "variable_references": [],
+      "command_names": [],
+      "control_words": [],
+      "contains_command_substitution": false,
+      "reviewed_path_literals": []
+    },
+    {
+      "line": 7,
+      "assignment_names": [
+        "DST"
+      ],
+      "variable_references": [
+        "DST_DIR"
+      ],
+      "command_names": [
+        "env"
+      ],
+      "control_words": [],
+      "contains_command_substitution": false,
+      "reviewed_path_literals": []
+    },
+    {
+      "line": 8,
+      "assignment_names": [],
+      "variable_references": [],
+      "command_names": [
+        "umask"
+      ],
+      "control_words": [],
+      "contains_command_substitution": false,
+      "reviewed_path_literals": []
+    },
+    {
+      "line": 9,
+      "assignment_names": [
+        "line"
+      ],
+      "variable_references": [
+        "SRC"
+      ],
+      "command_names": [
+        "grep"
+      ],
+      "control_words": [],
+      "contains_command_substitution": true,
+      "reviewed_path_literals": []
+    },
+    {
+      "line": 10,
+      "assignment_names": [],
+      "variable_references": [
+        "line"
+      ],
+      "command_names": [
+        "echo"
+      ],
+      "control_words": [],
+      "contains_command_substitution": false,
+      "reviewed_path_literals": []
+    },
+    {
+      "line": 11,
+      "assignment_names": [],
+      "variable_references": [
+        "DST_DIR"
+      ],
+      "command_names": [
+        "mkdir"
+      ],
+      "control_words": [],
+      "contains_command_substitution": false,
+      "reviewed_path_literals": []
+    },
+    {
+      "line": 12,
+      "assignment_names": [],
+      "variable_references": [
+        "DST",
+        "line"
+      ],
+      "command_names": [
+        "printf"
+      ],
+      "control_words": [],
+      "contains_command_substitution": false,
+      "reviewed_path_literals": []
+    },
+    {
+      "line": 13,
+      "assignment_names": [],
+      "variable_references": [
+        "DST"
+      ],
+      "command_names": [
+        "chmod",
+        "chown"
+      ],
+      "control_words": [],
+      "contains_command_substitution": false,
+      "reviewed_path_literals": []
+    },
+    {
+      "line": 14,
+      "assignment_names": [],
+      "variable_references": [
+        "DST"
+      ],
+      "command_names": [
+        "mv"
+      ],
+      "control_words": [],
+      "contains_command_substitution": false,
+      "reviewed_path_literals": []
+    }
+  ],
+  "status": "structure_only_private_manual_review_needed_for_semantics"
+}

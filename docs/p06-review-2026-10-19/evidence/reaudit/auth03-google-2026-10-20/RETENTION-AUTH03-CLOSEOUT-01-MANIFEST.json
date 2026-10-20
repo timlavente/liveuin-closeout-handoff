@@ -1,0 +1,79 @@
+{
+  "status": "auth03_frozen_passed_explicit_unavailability_alternative",
+  "recorded_at_singapore": "2026-10-20T17:39:12.095570+08:00",
+  "files": [
+    {
+      "file": "frontend-auth03-public-activation-01.json",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/evidence/frontend-auth03-public-activation-01.json",
+      "bytes": 1347,
+      "sha256": "36a74ad42c3ff49b9d501c830d1a2a5d288630cbec6ef51416bfc5ba6e28adb2",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "AUTH03-PUBLIC-BROWSER-PROOF-01.json",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/evidence/AUTH03-PUBLIC-BROWSER-PROOF-01.json",
+      "bytes": 1123,
+      "sha256": "41f6660384add03e9782ce556bb37156004c1e11a49aa158d085608eebb91769",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "AUTH03-PUBLIC-BROWSER-PROOF-01.md",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/evidence/AUTH03-PUBLIC-BROWSER-PROOF-01.md",
+      "bytes": 2499,
+      "sha256": "b219556e00dd89c7f01b6ee29f27ed64d2af7a2ca09a92d616fb7dd9acbf25ae",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "public-apex-google-notice-01.png",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/browser-proof/public-apex-google-notice-01.png",
+      "bytes": 40849,
+      "sha256": "d5e4962270f5e721ab8d380c9cd7c069d5ca9c3012055d4f439e10840bb76241",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "public-www-google-notice-01.png",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/browser-proof/public-www-google-notice-01.png",
+      "bytes": 40849,
+      "sha256": "d5e4962270f5e721ab8d380c9cd7c069d5ca9c3012055d4f439e10840bb76241",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "app-browser-pass-auth03-01.json",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/public-gate/app-browser-pass-auth03-01.json",
+      "bytes": 5781,
+      "sha256": "c581c915f9c5c26ac57a2d0f464751692cc2348a2555fc0e3464f17e8a9cb25a",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "auth03-payment-lock-01.json",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/readiness/auth03-payment-lock-01.json",
+      "bytes": 4055,
+      "sha256": "78351e58fc94cc56b1bc8de0e4e507f2d112f780bdda8afe30a8d1ad39fe8844",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "google-web-presence-13.json",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/readiness/google-web-presence-13.json",
+      "bytes": 2753,
+      "sha256": "dcdc7a2c9ce984b0e7e27cfc05dd3738d697c85fdcdf65e4b563192e0f93e677",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "temporary-verification-retired-01.json",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/browser-proof/temporary-verification-retired-01.json",
+      "bytes": 389,
+      "sha256": "8ea5510a8756b9c65964c6a1336e6c63b4dcebbcdd266f56889720c65b43cafe",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "../../../FREEZE-ISSUE-AUTH-003.md",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/evidence/FREEZE-ISSUE-AUTH-003.md",
+      "bytes": 4909,
+      "sha256": "7efb376a591fcd6e68c1868e670ccd809b093a3bdc6858cd8414f270b9799c95",
+      "hydrated_and_identical": true
+    }
+  ],
+  "hydration_check": "Complete readable bytes, local blocks, no dataless flags, xattr names checked, source/destination hashes equal.",
+  "historical_evidence_replaced": false,
+  "private_credentials_retained": false
+}

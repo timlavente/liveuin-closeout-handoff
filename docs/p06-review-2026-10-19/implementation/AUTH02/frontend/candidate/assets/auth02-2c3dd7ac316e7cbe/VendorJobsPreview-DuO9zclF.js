@@ -1,0 +1,1 @@
+import{aT as a,aU as r,j as e,aV as t}from"./index-DPZwxwE9.js";import{L as o}from"./LocalProLegacyRouteRedirect-CO-oQ3Cf.js";function n(){return a()||r()?e.jsx(o,{}):e.jsx(t,{to:"/earn",replace:!0})}export{n as default};

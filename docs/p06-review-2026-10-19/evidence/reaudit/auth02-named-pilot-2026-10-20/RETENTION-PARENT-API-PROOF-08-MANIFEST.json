@@ -1,0 +1,84 @@
+{
+  "retention_id": "RETENTION-PARENT-API-PROOF-08",
+  "retained_at": "2026-10-20T15:37:14.614407+08:00",
+  "files": [
+    {
+      "file": "PARENT-API-PROOF-08.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/PARENT-API-PROOF-08.md",
+      "source_check": {
+        "bytes": 2344,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "6241b8c42d8ac0cdfe67c2e6ed79eca8014b5357b3b71b899f65369d26323883",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 2344,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "6241b8c42d8ac0cdfe67c2e6ed79eca8014b5357b3b71b899f65369d26323883",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "PARENT-API-PROOF-08.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/PARENT-API-PROOF-08.json",
+      "source_check": {
+        "bytes": 1231,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "0fe24bd01adb3e6483df13b946907fdc9f11beac086d399966ab41507ede31e2",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 1231,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "0fe24bd01adb3e6483df13b946907fdc9f11beac086d399966ab41507ede31e2",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "parent-onboarding-logout-08.jsonl",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/parent-onboarding-logout-08.jsonl",
+      "source_check": {
+        "bytes": 541,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "69ae93425224382dba0d175d98ccabb5e75b56ed4edf6b21cdadad36adda2f30",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 541,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "69ae93425224382dba0d175d98ccabb5e75b56ed4edf6b21cdadad36adda2f30",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    }
+  ],
+  "proof_source_hash_matches_supplied_hash": true,
+  "private_checkpoint_read": false,
+  "credentials_factors_headers_and_account_identifiers_excluded": true,
+  "ops_result_http": 401,
+  "ops_policy_403_claimed": false,
+  "r01_pass_claimed": false,
+  "app_browser_pass_claimed": false,
+  "auth02_pass_claimed": false,
+  "existing_evidence_or_manifests_replaced": false
+}

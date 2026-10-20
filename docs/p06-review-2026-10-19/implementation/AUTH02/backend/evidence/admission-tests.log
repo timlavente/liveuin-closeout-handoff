@@ -1,0 +1,30 @@
+test_all_session_issuance_auth_methods_denied_before_any_write (__main__.AdmissionTests.test_all_session_issuance_auth_methods_denied_before_any_write) ... ok
+test_allowed_email_still_requires_password (__main__.AdmissionTests.test_allowed_email_still_requires_password) ... ok
+test_approved_issue_retains_member_and_existing_scopes (__main__.AdmissionTests.test_approved_issue_retains_member_and_existing_scopes) ... ok
+test_bootstrap_binds_account_then_denies_without_profile_read (__main__.AdmissionTests.test_bootstrap_binds_account_then_denies_without_profile_read) ... ok
+test_cohort_cannot_override_canonical_binding (__main__.AdmissionTests.test_cohort_cannot_override_canonical_binding) ... ok
+test_cookie_refresh_logout_uses_same_canonical_parser (__main__.AdmissionTests.test_cookie_refresh_logout_uses_same_canonical_parser) ... ok
+test_existing_pending_registration_cannot_bypass_hold (__main__.AdmissionTests.test_existing_pending_registration_cannot_bypass_hold) ... ok
+test_failed_durable_session_revoke_not_acknowledged (__main__.AdmissionTests.test_failed_durable_session_revoke_not_acknowledged) ... ok
+test_failed_refresh_revoke_not_acknowledged (__main__.AdmissionTests.test_failed_refresh_revoke_not_acknowledged) ... ok
+test_invalid_configuration_always_closed (__main__.AdmissionTests.test_invalid_configuration_always_closed) ... ok
+test_logout_remains_available_with_missing_cohort (__main__.AdmissionTests.test_logout_remains_available_with_missing_cohort) ... ok
+test_no_plus_alias_or_dot_collapsing (__main__.AdmissionTests.test_no_plus_alias_or_dot_collapsing) ... ok
+test_password_denied_before_store_or_verifier (__main__.AdmissionTests.test_password_denied_before_store_or_verifier) ... ok
+test_privacy_account_lookup_not_blanket_disabled (__main__.AdmissionTests.test_privacy_account_lookup_not_blanket_disabled) ... ok
+test_profile_and_onboarding_deny_before_mutation (__main__.AdmissionTests.test_profile_and_onboarding_deny_before_mutation) ... ok
+test_provider_link_denied_before_provider_exchange (__main__.AdmissionTests.test_provider_link_denied_before_provider_exchange) ... ok
+test_readiness_contract_uses_only_mocked_fixture_and_current_acl (__main__.AdmissionTests.test_readiness_contract_uses_only_mocked_fixture_and_current_acl) ... ok
+test_refresh_denied_before_rotation_or_new_session (__main__.AdmissionTests.test_refresh_denied_before_rotation_or_new_session) ... ok
+test_registration_denied_before_store_hash_password_or_mail (__main__.AdmissionTests.test_registration_denied_before_store_hash_password_or_mail) ... ok
+test_social_claim_validation_not_bypassed_by_caller_email (__main__.AdmissionTests.test_social_claim_validation_not_bypassed_by_caller_email) ... ok
+test_social_creation_requires_verified_admitted_claims_before_writes (__main__.AdmissionTests.test_social_creation_requires_verified_admitted_claims_before_writes) ... ok
+test_social_existing_link_uses_canonical_account_not_claim_email (__main__.AdmissionTests.test_social_existing_link_uses_canonical_account_not_claim_email) ... ok
+test_social_unknown_verified_email_denied_before_lookup_or_creation (__main__.AdmissionTests.test_social_unknown_verified_email_denied_before_lookup_or_creation) ... ok
+test_valid_acl_is_not_authentication (__main__.AdmissionTests.test_valid_acl_is_not_authentication) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.015s
+
+OK
+{"tests_run": 24, "failures": 0, "errors": 0, "blocked_io": {"network": 0, "database": 0}}

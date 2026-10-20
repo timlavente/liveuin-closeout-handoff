@@ -1,0 +1,33 @@
+{
+  "mode": "read_only_reconciliation_diagnostic",
+  "service_actions": false,
+  "config_writes": false,
+  "auth_requests": false,
+  "customer_rows_read": false,
+  "ops_before": {
+    "MainPID": "3669871",
+    "ExecMainStartTimestamp": "Tue 2026-10-20 13:15:24 +08",
+    "ActiveState": "active",
+    "SubState": "running",
+    "NeedDaemonReload": "no"
+  },
+  "status": "diagnostic_complete",
+  "reconciler_exit_code": 1,
+  "reconciliation": {
+    "mode": "read_only_ops_pid_reconciliation",
+    "services_changed": false,
+    "configuration_changed": false,
+    "secret_values_output": false,
+    "customer_rows_read": false,
+    "changed_protected_configuration": [],
+    "status": "reconciliation_stopped_no_changes",
+    "failure_code": "unit_configuration_drift"
+  },
+  "ops_after": {
+    "MainPID": "3669871",
+    "ExecMainStartTimestamp": "Tue 2026-10-20 13:15:24 +08",
+    "ActiveState": "active",
+    "SubState": "running",
+    "NeedDaemonReload": "no"
+  }
+}

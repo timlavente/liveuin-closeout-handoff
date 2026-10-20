@@ -1,0 +1,35 @@
+{
+  "status": "retained_additively",
+  "files": [
+    {
+      "file": "frontend-public-activation-11.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-proof-11/frontend-public-activation-11.json",
+      "bytes": 527,
+      "sha256": "36f4d5f2809957d6b92bacdd19b92bb7c5f55d65138ebb5783b30ef275593958",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "public-gate-install-result-11.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-proof-11/public-gate-install-result-11.json",
+      "bytes": 321,
+      "sha256": "1e9bf4e15f96e99fc9691623ec2c1b869415611782cc2c783effb3ed1ddf56e3",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "PUBLIC-ACTIVATION-RECOVERY-11.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-proof-11/PUBLIC-ACTIVATION-RECOVERY-11.md",
+      "bytes": 2463,
+      "sha256": "b6026e3624c05c6a42da6d5775eb498e8251ae79fffa5ffdfb2b0f0db2934816",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "PUBLIC-ACTIVATION-RECOVERY-11.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-proof-11/PUBLIC-ACTIVATION-RECOVERY-11.json",
+      "bytes": 864,
+      "sha256": "4c647c1ca427c1835e446467add6bb3119a47f652d5df93a662ac74ddc82ecf4",
+      "hydrated_and_identical": true
+    }
+  ],
+  "hydration": "All source and destination bytes readable, local blocks present, not dataless, xattr names checked, SHA-256 identical.",
+  "historical_evidence_replaced": false
+}

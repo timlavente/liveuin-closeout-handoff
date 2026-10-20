@@ -1,0 +1,34 @@
+{
+  "component": "AUTH02-member-9098",
+  "public_launch": false,
+  "provider_flags_changed": false,
+  "accounts_or_grants_created": false,
+  "customer_database_restore": false,
+  "previous_pid": 0,
+  "status": "closed_fallback_active",
+  "failure_code": "explicit_closed_recovery_requested",
+  "pid": 3662305,
+  "checks": {
+    "raw_create": {
+      "status": 404,
+      "no_store": true
+    },
+    "raw_verify": {
+      "status": 404,
+      "no_store": true
+    },
+    "outsider_registration": {
+      "status": 403,
+      "no_store": true
+    },
+    "outsider_password": {
+      "status": 403,
+      "no_store": true
+    },
+    "unsigned_resolve": {
+      "status": 403,
+      "no_store": true
+    }
+  },
+  "recovery_required": true
+}

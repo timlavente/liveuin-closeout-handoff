@@ -1,0 +1,1 @@
+const r=["All Articles","Stay","Grow","Earn","Trust & Safety"];function o(t){const e=t.trim().toLowerCase();return/(trust|safety|legal|policy|compliance)/.test(e)?"Trust & Safety":/(earn|service|vendor|task|payout)/.test(e)?"Earn":/(grow|owner|partner|developer|connect|campus|enterprise|operate|property)/.test(e)?"Grow":"Stay"}export{o as c,r as p};

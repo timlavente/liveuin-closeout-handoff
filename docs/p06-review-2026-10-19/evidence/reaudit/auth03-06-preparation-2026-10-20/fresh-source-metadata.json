@@ -1,0 +1,30 @@
+{
+  "observed_at_utc": "2026-10-20T04:37:05.562943+00:00",
+  "scope": "four specified nonsecret source/routing files; no product import/config values/provider or account reads",
+  "files": [
+    {
+      "path": "/opt/liveuin/deploy/core_identity_google_oauth.py",
+      "name": "ops-google-oauth.py",
+      "sha256": "b708f7e27f6dc3991c771d62cff38bbd2c610e2de60ae18694c1e6def0d47156",
+      "bytes": 58470
+    },
+    {
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_google_oauth.py",
+      "name": "member-google-oauth.py",
+      "sha256": "b708f7e27f6dc3991c771d62cff38bbd2c610e2de60ae18694c1e6def0d47156",
+      "bytes": 58470
+    },
+    {
+      "path": "/etc/nginx/conf.d/partner.liveuin.com.conf",
+      "name": "partner-current.conf",
+      "sha256": "51cae8f2eea512ff8d68ff5df8364309da717bcb6ac951234f5d8afb4dbf9ced",
+      "bytes": 3422
+    },
+    {
+      "path": "/etc/nginx/conf.d/app.liveuin.com.conf",
+      "name": "app-current.conf",
+      "sha256": "a98bf4fedbc22a77313f5dadc004afa193795c5d66a77f9540473896d3824b50",
+      "bytes": 15510
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "version": "FREEZE-PLAN-01",
+  "frozen_at_singapore": "2026-10-19T23:35:46+08:00",
+  "hydration_check": "All frozen inputs readable, positive local blocks; no placeholder reconstruction.",
+  "files": [
+    {
+      "path": "FREEZE-PLAN-01.md",
+      "bytes": 23823,
+      "local_blocks": 48,
+      "sha256": "0923c859996ba0a43e67c495111b89e6a1d4ad70c61c3fbefc0540226d05267b"
+    },
+    {
+      "path": "DRAFT-ISSUE-REGISTER-01.md",
+      "bytes": 22727,
+      "local_blocks": 48,
+      "sha256": "ccade9244250c742175f4a6d9054585bf3f7a4b168c0bc215b861636574fdfac"
+    },
+    {
+      "path": "PAYMENT-GATE-AMENDMENT-01.md",
+      "bytes": 3366,
+      "local_blocks": 8,
+      "sha256": "d094aa9a7be047eb60d595ba052b1ca5c753298a7b732cdba619bd2af2c924e5"
+    },
+    {
+      "path": "PAYMENT-PROOF-ENTRY-GATE-01.md",
+      "bytes": 3120,
+      "local_blocks": 8,
+      "sha256": "ccdb477a9a67a20a33b217fa735bf2d3bd92d523da0ee3d7b74d96be02b94c28"
+    },
+    {
+      "path": "PAYMENT-COVERAGE-MATRIX-01.md",
+      "bytes": 6050,
+      "local_blocks": 16,
+      "sha256": "6fe8a98bbe408f8646058225f2181f62de3c4baf3d4ee46464850470bf1088c8"
+    },
+    {
+      "path": "PLAN-GAP-CLOSEOUT-01.md",
+      "bytes": 5804,
+      "local_blocks": 16,
+      "sha256": "712e6be8e7d1563d9954134deb4142f579c5493c1bda21f1ad5035fa8839e6b6"
+    },
+    {
+      "path": "evidence/owner-clarifications-2026-10-19.md",
+      "bytes": 5607,
+      "local_blocks": 16,
+      "sha256": "38d65f9f6103fbcb12a1c12d34fc262a4bbaad5a5c23483fa69c3ea75b0a7828"
+    },
+    {
+      "path": "evidence/reaudit/r01-proposed-protected-routes.json",
+      "bytes": 9515,
+      "local_blocks": 24,
+      "sha256": "fa772759b9f018c4b807c1134bb97ae22ce8e3f483ec4e9f6f6d6ec398273818"
+    },
+    {
+      "path": "evidence/reaudit/r01-source-baseline.json",
+      "bytes": 8022,
+      "local_blocks": 16,
+      "sha256": "35381a0e63213a6075e55359838dc596a21b70cdc710a0a43408eadbc4967350"
+    },
+    {
+      "path": "evidence/reaudit/R01-ENTRY-REAUDIT-01.md",
+      "bytes": 16936,
+      "local_blocks": 40,
+      "sha256": "b89050c9318930761c45a7b584d3c577432a54ad11fc17505373bfb5e8eb9e37"
+    },
+    {
+      "path": "evidence/reaudit/LEGAL-DOCUMENT-ENTRY-CHECK-01.md",
+      "bytes": 3264,
+      "local_blocks": 8,
+      "sha256": "c2684bf752691b96729375e98de0e78040d91f4ea5c88f6b43c1614458a7b795"
+    },
+    {
+      "path": "evidence/reaudit/RE-AUDIT-LIVE-SURFACES.md",
+      "bytes": 8214,
+      "local_blocks": 24,
+      "sha256": "08ad5f5cda6836ff40d62e134f8862ae72a7ce014c727e2a9cba3da625c710f0"
+    }
+  ]
+}

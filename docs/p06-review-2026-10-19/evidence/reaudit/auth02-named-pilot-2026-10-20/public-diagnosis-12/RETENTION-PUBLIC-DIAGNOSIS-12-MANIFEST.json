@@ -1,0 +1,67 @@
+{
+  "status": "retained_additively",
+  "files": [
+    {
+      "file": "laptop-http.json",
+      "sha256": "f813346445a643e08ec30f461d56ea231ea088a7b0949964f4f30831ad07c515",
+      "bytes": 2075,
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-403-readonly/laptop-http.json"
+    },
+    {
+      "file": "server-http.json",
+      "sha256": "7f149398330183a5c6dab1fa9cce883d2c9cae632189a996d5413c352b1d3750",
+      "bytes": 2075,
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-403-readonly/server-http.json"
+    },
+    {
+      "file": "origin-tls-metadata.json",
+      "sha256": "058c2a7ede9dfa14a808d106559814c2b59c59b36c55bcb69f85e870b00cb974",
+      "bytes": 2475,
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-403-readonly/origin-tls-metadata.json"
+    },
+    {
+      "file": "routing-and-file-metadata.txt",
+      "sha256": "58ff849b5cb3d891ea0666c43b66b7f15165ad78c024b5812349ac4279ce5b8d",
+      "bytes": 2661,
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-403-readonly/routing-and-file-metadata.txt"
+    },
+    {
+      "file": "liveuin.com.conf.txt",
+      "sha256": "20016e18d6ba06dc4d24b9985f79329f8bda2b570e53349e517278b40cbe6592",
+      "bytes": 13089,
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-403-readonly/liveuin.com.conf.txt"
+    },
+    {
+      "file": "PUBLIC-403-DIAGNOSIS-01.md",
+      "sha256": "9cf2c9855113f6da8e540c406c25072f6d50b7ca2ae45986d90686c1553977b3",
+      "bytes": 3588,
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-403-readonly/PUBLIC-403-DIAGNOSIS-01.md"
+    },
+    {
+      "file": "SAFE-EVIDENCE-HASHES-01.json",
+      "sha256": "e1477636e8753cdbdf8193d60e83f545ccb384035114ac3029b344607b97ba9f",
+      "bytes": 578,
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-403-readonly/SAFE-EVIDENCE-HASHES-01.json"
+    },
+    {
+      "file": "PUBLIC-STATIC-RECOVERY-12.md",
+      "sha256": "ffae773e8db00fe233463ccfb881f79e33ed6d681a6031c04d5e23d756b676ef",
+      "bytes": 2381,
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/frontend-public-12/PUBLIC-STATIC-RECOVERY-12.md"
+    },
+    {
+      "file": "PUBLIC-EDGE-DIAGNOSIS-12.md",
+      "sha256": "845fe633ef486aae0c44d13af946f0e9479599ad545c5f905f2d22d93c2163a1",
+      "bytes": 2810,
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-403-readonly/PUBLIC-EDGE-DIAGNOSIS-12.md"
+    },
+    {
+      "file": "PUBLIC-EDGE-DIAGNOSIS-12.json",
+      "sha256": "52a7c3403299268b5b7d1978e8022b1912e8adf4b866a498a0c32e5285045159",
+      "bytes": 868,
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-403-readonly/PUBLIC-EDGE-DIAGNOSIS-12.json"
+    }
+  ],
+  "hydration_check": "Readable complete bytes, local blocks, not dataless, xattr names checked, SHA-256 matched source/destination.",
+  "private_credentials_or_customer_records_retained": false
+}

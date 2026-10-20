@@ -1,0 +1,134 @@
+{
+  "version": "R01-STAGED-CANDIDATE-01",
+  "status": "isolated_tests_passed_not_deployed_R01_open",
+  "created_at": "2026-10-19T23:51:44.863407+08:00",
+  "freeze_plan_sha256": "0923c859996ba0a43e67c495111b89e6a1d4ad70c61c3fbefc0540226d05267b",
+  "operation_count": 21,
+  "application_file_count": 2,
+  "test_result": "678 passed, 1 deprecation warning",
+  "local_python": "3.13.3",
+  "production_python": "3.10.12",
+  "hydration": "All packaged input and destination bytes readable, positive local blocks, no dataless flag; execution in /private/tmp only.",
+  "production_mutation": false,
+  "files": [
+    {
+      "path": "R01-POLICY-CORRECTION-01.md",
+      "bytes": 2194,
+      "sha256": "84ad9f22ab27e52631c5f56f6c2401348340ec8864495063a756b1cbdaccf463"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9591,
+      "sha256": "9e68fb2259b507e0c962b32c27694bfcd0023efa1b0a97a260c69d82bce59f46"
+    },
+    {
+      "path": "before/home_api.py",
+      "bytes": 30224,
+      "sha256": "cab022b1055df93e27328fa74813d8ae043bb1cc387562255eed0d9b68471172"
+    },
+    {
+      "path": "before/public_home_gateway.py",
+      "bytes": 15319,
+      "sha256": "67f4befdd7dbccc34bcaa79050b6c990cd3df33349ee4369f7da9838810f6fac"
+    },
+    {
+      "path": "build_candidate.py",
+      "bytes": 3790,
+      "sha256": "47e84fdac3ed829ec0993a25fdae5d594e820365ce6ca7ff1bb33767d46f697d"
+    },
+    {
+      "path": "candidate/home_api.py",
+      "bytes": 42803,
+      "sha256": "d1f0f44278302caf328c623052f4cd0f8c236776c2112098cca0df261873adc2"
+    },
+    {
+      "path": "candidate/public_home_gateway.py",
+      "bytes": 15531,
+      "sha256": "49a57731d9df60e95b67eb3ac578d67f2bd861e1befff5bba7afcdfdeab42c60"
+    },
+    {
+      "path": "evidence/INDEPENDENT-REVIEW-01.md",
+      "bytes": 1576,
+      "sha256": "08a360854914ca3ba6e6062114d0da034d1a472e3bff3f0d5617b476636653e7"
+    },
+    {
+      "path": "evidence/canonical-verifier-provenance.json",
+      "bytes": 1264,
+      "sha256": "b71b723b124426a74e239b7596e5c229788111791b2d58e2c099bad2f38e9ab4"
+    },
+    {
+      "path": "evidence/canonical-verifier-source.py",
+      "bytes": 7740,
+      "sha256": "286c066ac87d2b3fc7a465f2fe9d722e499a5c4b1f5f8b09ff9fd939964a0d64"
+    },
+    {
+      "path": "evidence/home_api.py.diff",
+      "bytes": 22425,
+      "sha256": "bec54c4058555062c07c4b6e725efd9daa47074c04a1281c1d22ecc30ceb2d4d"
+    },
+    {
+      "path": "evidence/protected-routes.json",
+      "bytes": 9515,
+      "sha256": "fa772759b9f018c4b807c1134bb97ae22ce8e3f483ec4e9f6f6d6ec398273818"
+    },
+    {
+      "path": "evidence/public_home_gateway.py.diff",
+      "bytes": 1852,
+      "sha256": "6dfb9f497a748b4f7dabaac1f465527f9450c7c94977918d5e1edd1cbfd94495"
+    },
+    {
+      "path": "evidence/pytest-final.txt",
+      "bytes": 1413,
+      "sha256": "7497c223107f2c59fa419e37d7d8244735f34ccce3c2461f4d96c182b231fb19"
+    },
+    {
+      "path": "evidence/root-python310-compile-final.json",
+      "bytes": 1099,
+      "sha256": "ff20ac3c0272cde27a4f24330f2477dc1c17881d5fba58fd0482ea5a59d2ac9c"
+    },
+    {
+      "path": "evidence/test-environment.txt",
+      "bytes": 314,
+      "sha256": "081ee3f84d687b7dd273b8b68c2f353cc928f6419d3f93270819de8dbf6d3434"
+    },
+    {
+      "path": "fallback/home_api.py",
+      "bytes": 42802,
+      "sha256": "e3f08013e3baf977818fc8033472f823b3874c47ea67816d90054241a3c8fad4"
+    },
+    {
+      "path": "fallback/public_home_gateway.py",
+      "bytes": 15531,
+      "sha256": "49a57731d9df60e95b67eb3ac578d67f2bd861e1befff5bba7afcdfdeab42c60"
+    },
+    {
+      "path": "guard-fragment.py",
+      "bytes": 12258,
+      "sha256": "4425665ca2f77378bc6177eecad7d7d6e758bd0f33b4b804ee8615d1635d77ef"
+    },
+    {
+      "path": "requirements-test.txt",
+      "bytes": 81,
+      "sha256": "204d0afb1349526e085bf2b2a3e26b5ed03b60d127ab8b2ff33a0bf916956fec"
+    },
+    {
+      "path": "tests/test_canonical_verifier.py",
+      "bytes": 3403,
+      "sha256": "f33ebbf566d6fc335d7b48d27bd21b70c630209ae8cd1612f0607099f04ab866"
+    },
+    {
+      "path": "tests/test_r01.py",
+      "bytes": 22623,
+      "sha256": "8a0f0a401cbe326c90e2a19b98ac04fc6b786ab5c29f17e5785a3f2717408bdb"
+    }
+  ],
+  "remaining_gates": [
+    "authenticated service activation and closed recovery access",
+    "permitted production identity allow/refuse evidence",
+    "effective public live-charge denial proof",
+    "exact-runtime/independent final review evidence"
+  ],
+  "reviewed_at": "2026-10-19T23:53:41+08:00",
+  "independent_review": "No concrete remaining code blocker; production proof open",
+  "target_python_compile": "Final candidate and fallback passed Python3.10.12 stdin-only compile"
+}

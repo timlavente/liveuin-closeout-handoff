@@ -1,0 +1,53 @@
+{
+  "time_utc": "2026-10-19T14:47:25.184459+00:00",
+  "source_files": [
+    {
+      "path": "/opt/liveuin/deploy/core_stripe_sandbox_api.py",
+      "sha256": "2eb20cb1dd95e48ce25df0844e838c458a218f0290518657bd8f2c66099f30c6",
+      "bytes": 4448,
+      "local_path": "/Users/Vivian/Documents/Liveuin/deploy/core_stripe_sandbox_api.py",
+      "local_sha256": "2eb20cb1dd95e48ce25df0844e838c458a218f0290518657bd8f2c66099f30c6",
+      "same_as_local": true
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_payment_rail.py",
+      "sha256": "20ca0cb4a6f4325047bb67da5ec7ecb3fe302cee80351f030a27079f71d64c44",
+      "bytes": 6678,
+      "local_path": "/Users/Vivian/Documents/Liveuin/deploy/core_payment_rail.py",
+      "local_sha256": "20ca0cb4a6f4325047bb67da5ec7ecb3fe302cee80351f030a27079f71d64c44",
+      "same_as_local": true
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_payment_service.py",
+      "sha256": "f8611eb165f8b09cca4624aebb7f3369273486244e1bd8c0b004259394469054",
+      "bytes": 191861,
+      "local_path": "/Users/Vivian/Documents/Liveuin/deploy/core_payment_service.py",
+      "local_sha256": "8cea27ff3dc73954b70e4bed33a70d96572f72d6767e2c0d840c38ac150bc1a4",
+      "same_as_local": false
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_payment_provider_edge.py",
+      "sha256": "9b6b36fc0c919bddd7c0557d9ec6543b8247e3f622cf5452cbd5c2f591ef8408",
+      "bytes": 50014,
+      "local_path": "/Users/Vivian/Documents/Liveuin/deploy/core_payment_provider_edge.py",
+      "local_sha256": "9b6b36fc0c919bddd7c0557d9ec6543b8247e3f622cf5452cbd5c2f591ef8408",
+      "same_as_local": true
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_payment_api.py",
+      "sha256": "160343272ba1a1f31b6d22bd1355b685abe3f70b3d978638f79d11d76853ed63",
+      "bytes": 22502,
+      "local_path": "/Users/Vivian/Documents/Liveuin/deploy/core_payment_api.py",
+      "local_sha256": "84e72584a3edae50ed19cde63616bdd2c6aece76a7c937cda52900dd7349e755",
+      "same_as_local": false
+    }
+  ],
+  "pay_unit_names": [
+    "liveuin-laijuzhu-family-payment-receipt-nonprod.service                          disabled enabled",
+    "liveuin-laijuzhu-liveledger-payout-dispatch-preparation-nonprod.service          disabled enabled",
+    "liveuin-laijuzhu-liveledger-payout-instruction-draft-nonprod.service             disabled enabled",
+    "liveuin-laijuzhu-liveledger-payout-instruction-execution-attempt-nonprod.service disabled enabled",
+    "liveuin-laijuzhu-liveledger-payout-obligation-nonprod.service                    disabled enabled",
+    "liveuin-laijuzhu-lz10-payment-state-nonprod.service                              static   -"
+  ]
+}

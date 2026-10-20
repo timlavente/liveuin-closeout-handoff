@@ -1,0 +1,8 @@
+{
+  "row": "AUTH-01",
+  "status": "passed_bounded_delivery_and_owner_signin",
+  "file": "FREEZE-ISSUE-AUTH-001.md",
+  "sha256": "60114a64da742a5d4c64b9184377aab79d69759def2ef4814f04d96093b738f5",
+  "evidence_manifest": "evidence/auth-01-restoration-2026-10-20/manifest.json",
+  "evidence_manifest_sha256": "9ae5e1b67e01de7d70c331245240eb4b414a5e97c5e4b404a782100deac30e64"
+}

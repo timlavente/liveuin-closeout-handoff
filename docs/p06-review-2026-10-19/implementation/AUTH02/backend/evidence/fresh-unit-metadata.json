@@ -1,0 +1,24 @@
+{
+  "liveuin-identity-public-prod.service": {
+    "MainPID": "2662668",
+    "EnvironmentFiles": "/etc/liveuin/identity-public-prod.env (ignore_errors=no) /run/liveuin-identity-public-prod/secrets.env (ignore_errors=yes) /etc/liveuin/identity-public-prod-secrets.env (ignore_errors=no)",
+    "WorkingDirectory": "/opt/liveuin-identity-public/current",
+    "User": "liveuin_ops",
+    "Id": "liveuin-identity-public-prod.service",
+    "ActiveState": "active",
+    "SubState": "running",
+    "FragmentPath": "/etc/systemd/system/liveuin-identity-public-prod.service",
+    "DropInPaths": "/etc/systemd/system/liveuin-identity-public-prod.service.d/zzzz-production-provider-consolidation.conf"
+  },
+  "ops-backend@liveuin.service": {
+    "MainPID": "1298408",
+    "EnvironmentFiles": "/etc/ops-backend@liveuin.env (ignore_errors=yes) /etc/ops-backend@liveuin.api-key-ref.env (ignore_errors=no) /etc/ops-backend@liveuin.smart-inventory.env (ignore_errors=yes) /etc/liveuin/host-workspace.env (ignore_errors=no) /etc/liveuin/liveuin-pass-core.env (ignore_errors=yes) /etc/liveuin/l0-internal-operating-spine.env (ignore_errors=yes) /etc/liveuin/finance-ledger.env (ignore_errors=yes) /etc/liveuin/listing-media-engine.env (ignore_errors=yes) /etc/liveuin/authcore-prod.env (ignore_errors=no) /etc/liveuin/listing-media-engine-candidates/liveuin-listing-media-engine-phase1-rc3-20260822-production.env (ignore_errors=yes)",
+    "WorkingDirectory": "/opt/liveuin/ops_backend",
+    "User": "liveuin_ops",
+    "Id": "ops-backend@liveuin.service",
+    "ActiveState": "active",
+    "SubState": "running",
+    "FragmentPath": "/etc/systemd/system/ops-backend@liveuin.service",
+    "DropInPaths": "/etc/systemd/system/ops-backend@liveuin.service.d/20-liveuin-secret-credentials.conf /etc/systemd/system/ops-backend@liveuin.service.d/20-smart-inventory-state.conf /etc/systemd/system/ops-backend@liveuin.service.d/30-runtime-user-liveuin-ops.conf /etc/systemd/system/ops-backend@liveuin.service.d/30-service-api-key-credential.conf /etc/systemd/system/ops-backend@liveuin.service.d/35-media-document-credentials.conf /etc/systemd/system/ops-backend@liveuin.service.d/40-inventory-api-key-credential.conf /etc/systemd/system/ops-backend@liveuin.service.d/40-smart-inventory-push-token.conf /etc/systemd/system/ops-backend@liveuin.service.d/50-host-workspace.conf /etc/systemd/system/ops-backend@liveuin.service.d/50-liveuin-pass-core.conf /etc/systemd/system/ops-backend@liveuin.service.d/50-provenance-review-read-projection.conf /etc/systemd/system/ops-backend@liveuin.service.d/60-l0-internal-operating-spine.conf /etc/systemd/system/ops-backend@liveuin.service.d/70-liveuin-connector-adapter.conf /etc/systemd/system/ops-backend@liveuin.service.d/70-liveuin-core-pass-data.conf /etc/systemd/system/ops-backend@liveuin.service.d/71-liveuin-core-srv-state.conf /etc/systemd/system/ops-backend@liveuin.service.d/72-finance-ledger-workbench.conf /etc/systemd/system/ops-backend@liveuin.service.d/73-liveuin-core-demand-data.conf /etc/systemd/system/ops-backend@liveuin.service.d/75-stripe-sandbox-webhook.conf /etc/systemd/system/ops-backend@liveuin.service.d/76-stripe-sandbox-api-key.conf /etc/systemd/system/ops-backend@liveuin.service.d/77-liveuin-core-vendor-data.conf /etc/systemd/system/ops-backend@liveuin.service.d/80-ai-provider-credentials.conf /etc/systemd/system/ops-backend@liveuin.service.d/80-listing-media-engine-preflight.conf /etc/systemd/system/ops-backend@liveuin.service.d/81-listing-media-connector-identity.conf /etc/systemd/system/ops-backend@liveuin.service.d/82-ai-provider-egress-proxy.conf /etc/systemd/system/ops-backend@liveuin.service.d/82-identity-otp-gateway.conf /etc/systemd/system/ops-backend@liveuin.service.d/90-listing-media-engine-rc3-dark-runtime.conf /etc/systemd/system/ops-backend@liveuin.service.d/91-listing-media-l1-guard-runtime.conf /etc/systemd/system/ops-backend@liveuin.service.d/95-liveuin-dsn-credential.conf /etc/systemd/system/ops-backend@liveuin.service.d/96-country-context-credential.conf /etc/systemd/system/ops-backend@liveuin.service.d/97-account-deletion-identity.conf"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "evidence_id": "APP-BROWSER-LOGOUT-11",
+  "date_sgt": "2026-10-20",
+  "body_control": {
+    "before_utc": "2026-10-20T07:50:49.657616+00:00",
+    "after_utc": "2026-10-20T07:51:25.943292+00:00",
+    "canonical_active": [1, 0],
+    "refresh_active": [1, 0],
+    "canonical_revoked_with_timestamp": [3, 4],
+    "refresh_revoked_with_timestamp": [3, 4],
+    "canonical_total": [4, 4],
+    "refresh_total": [4, 4],
+    "browser_returned_to_welcome": true,
+    "private_account_reopen_refused": true
+  },
+  "menu_control": {
+    "before_utc": "2026-10-20T07:54:43.095556+00:00",
+    "after_utc": "2026-10-20T07:55:17.974631+00:00",
+    "canonical_active": [1, 0],
+    "refresh_active": [1, 0],
+    "canonical_revoked_with_timestamp": [4, 5],
+    "refresh_revoked_with_timestamp": [4, 5],
+    "canonical_total": [5, 5],
+    "refresh_total": [5, 5],
+    "browser_returned_to_welcome": true,
+    "private_account_reopen_refused": true
+  },
+  "initial_probe_failure_is_product_failure": false,
+  "initial_probe_wrong_account_status": "active",
+  "correct_canonical_account_status": "tenant_active",
+  "corrected_helper_sha256": "16408ac30682cd72b04e621da15c2f60b4262b3a92b501c57e979cf2163a3d42",
+  "corrected_isolated_tests_passed": 10,
+  "hidden_browser_tokens_read": false,
+  "token_password_metadata_or_customer_columns_read": false,
+  "active_auth02_gap": "Welcome sign-in links lose the allowed account return destination",
+  "return_fix_deployed": false,
+  "public_frontend_activation_claimed": false,
+  "auth02_passed": false
+}

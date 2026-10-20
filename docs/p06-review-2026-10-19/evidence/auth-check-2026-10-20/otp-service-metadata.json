@@ -1,0 +1,75 @@
+{
+  "checked_at": "2026-10-20T00:16:17.680385+08:00",
+  "scope": "read-only service metadata, source AST, file fingerprints and no-payload loopback TCP; no process environment or secret values inspected by this collector",
+  "gateway_service": {
+    "Id": "otp-gateway.service",
+    "LoadState": "loaded",
+    "ActiveState": "inactive",
+    "SubState": "dead",
+    "Result": "success",
+    "MainPID": "0",
+    "ExecMainCode": "2",
+    "ExecMainStatus": "15",
+    "ExecMainExitTimestamp": "Fri 2026-10-09 00:06:05 +08",
+    "WorkingDirectory": "/opt/liveuin/otp_service",
+    "ExecStart_executable": "/opt/liveuin/otp_service/venv/bin/python",
+    "module": "app:APP",
+    "port": "9094",
+    "EnvironmentFiles": "/etc/liveuin/otp-prod.env"
+  },
+  "ops_service": {
+    "Id": "ops-backend@liveuin.service",
+    "ActiveState": "active",
+    "SubState": "running",
+    "MainPID": "1298408",
+    "User": "liveuin_ops",
+    "WorkingDirectory": "/opt/liveuin/ops_backend"
+  },
+  "ops_otp_dropin": {
+    "path": "/etc/systemd/system/ops-backend@liveuin.service.d/82-identity-otp-gateway.conf",
+    "EnvironmentFile": "/etc/liveuin/authcore-prod.env",
+    "sha256": "6746a5b8da9cf9965ae1730ee67ba3fc5cbdd1fe4d32af5ccfc962534a9a9609"
+  },
+  "loopback_9094": "ConnectionRefusedError",
+  "fingerprints": [
+    {
+      "path": "/etc/systemd/system/otp-gateway.service",
+      "bytes": 501,
+      "sha256": "d2ecd65e7581c6aa019a56e637fdded337ffd4f720c826479371a85ff80bc272"
+    },
+    {
+      "path": "/etc/systemd/system/otp-gateway-staging.service",
+      "bytes": 331,
+      "sha256": "d94f471fa88c70e3752bada2f38398a0f69fe7af2029868b58d3dcd118eb791f"
+    },
+    {
+      "path": "/opt/liveuin/otp_service/app.py",
+      "sha256": "24542a1052dda9723591e1e068c0a446183b643768cf6ccda134a4f2f8e7fe87"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_identity_api.py",
+      "sha256": "fcf8c612f2442ab05a8950523890806af7b89f88e9cbf801fcc5561ec1d6acc4"
+    }
+  ],
+  "source_health_contract": {
+    "healthz": {
+      "line": 81,
+      "method": "GET",
+      "behavior": "fixed ok/ready service projection; does not test SMTP"
+    },
+    "readyz": {
+      "line": 86,
+      "method": "GET",
+      "behavior": "runs SELECT 1; not called by this audit"
+    }
+  },
+  "leading_cause": "stopped/unreachable configured gateway, conditional on effective Ops OTP_GATEWAY_URL resolving to loopback9094",
+  "unproved": [
+    "effective Ops OTP_GATEWAY_URL",
+    "effective internal-token presence",
+    "specific collapsed error branch for the prior browser request",
+    "SMTP delivery success",
+    "reason the legacy gateway was stopped",
+    "public/member login route parity"
+  ]
+}

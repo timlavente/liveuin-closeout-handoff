@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-21",
+  "method": "read-only retrieval of previously staged archive from authorized LiveUIN server",
+  "archive_sha256": "05acc4864c473220bf540a6c9deecafbaa05a5a1dc3f32dd3e6a4d9b4c429219",
+  "expected_hash_source": "recorded AUTH03 activation package",
+  "manifest_sha256": "3d20846d5c80e253cf6f60b6a499b12dfeb30a60bfedd8b2a1ea11282b5d3ce3",
+  "verified_files": 392,
+  "all_match": true,
+  "production_mutations": false,
+  "warning": "Historical activation scripts contain old source/config pins. Do not run against current server without new reconciliation."
+}

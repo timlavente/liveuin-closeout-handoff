@@ -1,0 +1,67 @@
+{
+  "at_utc": "2026-10-19T16:29:17.627381+00:00",
+  "files": [
+    {
+      "path": "/var/www/liveuin-public-releases/.liveuin-public-root",
+      "exists": true,
+      "realpath": "/var/www/liveuin-public-releases/liveuin-lovable-20260915-01fe27bb",
+      "symlink": true,
+      "source_build_metadata": {
+        ".git": false,
+        "package.json": false,
+        "src": false,
+        "manifest.json": false,
+        "release.json": false,
+        "build-manifest.json": false
+      }
+    },
+    {
+      "path": "/var/www/liveuin-public-releases/.liveuin-public-root/index.html",
+      "exists": true,
+      "realpath": "/var/www/liveuin-public-releases/liveuin-lovable-20260915-01fe27bb/index.html",
+      "symlink": false,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "/var/www/liveuin-public-releases/.liveuin-public-root/assets/index-DPZwxwE9.js",
+      "exists": true,
+      "realpath": "/var/www/liveuin-public-releases/liveuin-lovable-20260915-01fe27bb/assets/index-DPZwxwE9.js",
+      "symlink": false,
+      "sha256": "2db8bfcb0aeecd9a975dde8192ca612f0d3f056d6c70e04173f5b4d27f4102fa"
+    },
+    {
+      "path": "/var/www/liveuin/index.html",
+      "exists": true,
+      "realpath": "/var/www/liveuin/index.html",
+      "symlink": false,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "/var/www/liveuin/assets/index-DPZwxwE9.js",
+      "exists": true,
+      "realpath": "/var/www/liveuin/assets/index-DPZwxwE9.js",
+      "symlink": false,
+      "sha256": "2db8bfcb0aeecd9a975dde8192ca612f0d3f056d6c70e04173f5b4d27f4102fa"
+    },
+    {
+      "path": "/opt/liveuin/www-lovable/src/lib/auth-context.tsx",
+      "exists": false,
+      "realpath": "/opt/liveuin/www-lovable/src/lib/auth-context.tsx",
+      "symlink": false
+    },
+    {
+      "path": "/opt/liveuin/www-lovable/src/App.tsx",
+      "exists": true,
+      "realpath": "/opt/liveuin/www-lovable/src/App.tsx",
+      "symlink": false,
+      "sha256": "1cd940c9c519b675f9d67faf6caae1ef6dc518d9ab025efac937b73a4248d247"
+    },
+    {
+      "path": "/opt/liveuin/www-lovable/dist/index.html",
+      "exists": true,
+      "realpath": "/opt/liveuin/www-lovable/dist/index.html",
+      "symlink": false,
+      "sha256": "d5847422433bcf93f1bbe12cb38b6b499efdbf071d35124d5b8e76cac30a71b7"
+    }
+  ]
+}

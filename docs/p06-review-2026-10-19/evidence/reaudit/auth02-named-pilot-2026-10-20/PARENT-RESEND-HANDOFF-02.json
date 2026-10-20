@@ -1,0 +1,18 @@
+{
+  "observed_utc": "2026-10-20T06:56:10.225972+00:00",
+  "same_named_synthetic_registration": true,
+  "normal_resend_http": 200,
+  "delivery_subject": "Verify your LiveUIN email",
+  "delivery_time_utc": "2026-10-20T06:54:12Z",
+  "verification_expiry_iso": "2026-10-20T07:09:10Z",
+  "message_metadata_delivery_confirmed": true,
+  "mail_body_or_code_read": false,
+  "mailbox_alias_explained_to_owner": true,
+  "handoff_source_sha256": "af3d155ac229a397ce384edf75a87dc4ea483e6ba53bdf7f0b099a64443a9399",
+  "local_handoff_url": "http://127.0.0.1:56383/",
+  "browser_refresh_blocked_by_url_protocol_policy": true,
+  "browser_workaround_attempted": false,
+  "parent_verified": false,
+  "public_live_charging_unchanged_off": true,
+  "imported_tenancies_used_or_emailed": false
+}

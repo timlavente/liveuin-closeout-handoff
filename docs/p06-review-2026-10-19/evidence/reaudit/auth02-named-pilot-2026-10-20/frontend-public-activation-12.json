@@ -1,0 +1,41 @@
+{
+  "result": {
+    "status": "public_entry_active_browser_smoke_required",
+    "public_access_or_payment_switch_changed": false
+  },
+  "events": [
+    {
+      "stage": "locked_backend_continuity",
+      "passed": true
+    },
+    {
+      "stage": "public_origin_static_entry",
+      "verification_scope": "origin_only",
+      "url": "https://liveuin.com/index.html",
+      "http": 200,
+      "tls_certificate_verified": true,
+      "remote_ip": "127.0.0.1",
+      "bytes": 2332,
+      "sha256": "d64151e0728796b61d396cb8c38d00f7bd8dc9c563975b42aa5caad86b02e268",
+      "expected_sha256": "d64151e0728796b61d396cb8c38d00f7bd8dc9c563975b42aa5caad86b02e268"
+    },
+    {
+      "stage": "public_origin_static_entry",
+      "verification_scope": "origin_only",
+      "url": "https://www.liveuin.com/index.html",
+      "http": 200,
+      "tls_certificate_verified": true,
+      "remote_ip": "127.0.0.1",
+      "bytes": 2332,
+      "sha256": "d64151e0728796b61d396cb8c38d00f7bd8dc9c563975b42aa5caad86b02e268",
+      "expected_sha256": "d64151e0728796b61d396cb8c38d00f7bd8dc9c563975b42aa5caad86b02e268"
+    }
+  ],
+  "normal_public_browser_handoff_still_required": true,
+  "normal_browser_hosts_required": [
+    "liveuin.com",
+    "www.liveuin.com"
+  ],
+  "automated_verification_scope": "origin_only",
+  "public_access_or_payment_switch_changed": false
+}

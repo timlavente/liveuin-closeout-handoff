@@ -1,0 +1,22 @@
+{
+  "status": "isolated_checks_passed",
+  "checks": 10,
+  "tests": [
+    "source_compiles_and_original_helper_unchanged",
+    "only_exact_old_entry_retries_then_new_hash_and_no_store_pass",
+    "persistent_old_entry_stops_at_eight_seconds",
+    "unexpected_body_status_or_missing_no_store_fails_immediately",
+    "redirect_http_error_and_tls_failure_never_retry",
+    "changed_alias_configuration_stops_before_request",
+    "late_expected_response_cannot_pass",
+    "exception_context_preserved_without_urls_bodies_or_config",
+    "original_activation_and_recovery_still_called",
+    "real_alarm_interrupts_stalled_request_and_restores_handler"
+  ],
+  "wrapper_sha256": "2a315995126a16c6308c0faf8353c7d95ddbbda9c6cfb6ce6eb237224895bfe8",
+  "release_sha256": "599c047e4bc8650bae0556da7c98bfa354123a90d9f5143923f5a3ec93caaa19",
+  "production_execution": false,
+  "network_blocked": true,
+  "readiness_limit_seconds": 8,
+  "retry_only_exact_reviewed_old_hash": true
+}

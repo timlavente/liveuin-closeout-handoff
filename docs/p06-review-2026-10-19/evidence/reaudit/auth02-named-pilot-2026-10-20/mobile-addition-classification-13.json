@@ -1,0 +1,43 @@
+{
+  "mode": "read_only_mobile_addition_classification",
+  "services_changed": false,
+  "configuration_changed": false,
+  "customer_rows_read": false,
+  "secret_values_output": false,
+  "status": "exact_mobile_addition_classified",
+  "ops_pid": 3669871,
+  "only_exact_mobile_addition": true,
+  "existing_dropins_envfiles_preserved_in_order": true,
+  "prior_credential_bindings_preserved": true,
+  "configured_credentials_count": 14,
+  "mobile_keys": [
+    "LIVEUIN_CUSTOMER_CARDS_SANDBOX_ENABLED",
+    "LIVEUIN_CUSTOMER_CARDS_STRIPE_ACCOUNT_ID",
+    "LIVEUIN_CUSTOMER_CARDS_STRIPE_PUBLISHABLE_KEY",
+    "LIVEUIN_CUSTOMER_CARDS_WEBHOOK_SECRET_REF",
+    "LIVEUIN_CUSTOMER_CARDS_WORKSPACE_ID"
+  ],
+  "sandbox_enabled": true,
+  "workspace_is_liveuin_public": true,
+  "publishable_key_is_test": true,
+  "webhook_reference_matches_reviewed_helper": true,
+  "selected_file_runtime_values_equal": true,
+  "auth_store_signer_keys_absent_from_added_file": true,
+  "credential_contents_read": false,
+  "new_configuration_file_versions": {
+    "/etc/systemd/system/ops-backend@liveuin.service.d/98-resident-test-cards.conf": [
+      64514,
+      134966,
+      187,
+      1792473315219361707,
+      1792473315219361707
+    ],
+    "/etc/liveuin/resident-test-cards.env": [
+      64514,
+      826974,
+      387,
+      1792473319091320827,
+      1792473319091320827
+    ]
+  }
+}

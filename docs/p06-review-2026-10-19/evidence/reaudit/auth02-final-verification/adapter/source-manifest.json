@@ -1,0 +1,169 @@
+{
+  "at_utc": "2026-10-19T16:35:23.809221+00:00",
+  "source": "read-only exact deployed /opt/liveuin/deploy; no service or product imports on server",
+  "files": [
+    {
+      "name": "core_identity_api.py",
+      "path": "/private/tmp/liveuin-p06-auth02-20261020/backend/candidate-9095/deploy/core_identity_api.py",
+      "resolved": "/opt/liveuin/deploy/core_identity_api.py",
+      "sha256": "a0834b412c06263d1ca593de67cc2514471cf4fdd7a83c860608be998fc65fcb",
+      "imports": [
+        "",
+        "__future__",
+        "collections",
+        "fastapi",
+        "fastapi.responses",
+        "typing",
+        "urllib"
+      ],
+      "size": 44386
+    },
+    {
+      "name": "core_identity_login.py",
+      "path": "/opt/liveuin/deploy/core_identity_login.py",
+      "resolved": "/opt/liveuin/deploy/core_identity_login.py",
+      "sha256": "f7f3d8b6fe5c52d4e6401afebda4f238b851261e64c83c129cb36095883c36fd",
+      "imports": [
+        "",
+        "__future__",
+        "typing"
+      ]
+    },
+    {
+      "name": "core_identity_login_store.py",
+      "path": "/opt/liveuin/deploy/core_identity_login_store.py",
+      "resolved": "/opt/liveuin/deploy/core_identity_login_store.py",
+      "sha256": "e8b369634c1875519e7883f439388f5b02a062849569fbb1a4663160baf95d94",
+      "imports": [
+        "__future__",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "name": "core_identity_service.py",
+      "path": "/opt/liveuin/deploy/core_identity_service.py",
+      "resolved": "/opt/liveuin/deploy/core_identity_service.py",
+      "sha256": "8280891cd0d843124d7f6d4b71ed9d5655916d109f6c61630d8ba901310bd94a",
+      "imports": [
+        "",
+        "__future__",
+        "typing"
+      ]
+    },
+    {
+      "name": "core_identity_store.py",
+      "path": "/opt/liveuin/deploy/core_identity_store.py",
+      "resolved": "/opt/liveuin/deploy/core_identity_store.py",
+      "sha256": "8435560b88230df6737ff3dca8dc52bafd881dd7ebb01c3b961356ae9cf04f36",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "name": "core_identity_session.py",
+      "path": "/opt/liveuin/deploy/core_identity_session.py",
+      "resolved": "/opt/liveuin/deploy/core_identity_session.py",
+      "sha256": "11b7ab17300c3a2ea8a0294470f9872496c6e4f8308598edad97f680ea9fefdb",
+      "imports": [
+        "",
+        "__future__",
+        "http.cookies",
+        "typing"
+      ]
+    },
+    {
+      "name": "core_identity_session_store.py",
+      "path": "/opt/liveuin/deploy/core_identity_session_store.py",
+      "resolved": "/opt/liveuin/deploy/core_identity_session_store.py",
+      "sha256": "c0f2a07b7778aef761deee03b32adc61bfa257cb1edeae933416438508a265c3",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "name": "core_identity_workspace_access.py",
+      "path": "/opt/liveuin/deploy/core_identity_workspace_access.py",
+      "resolved": "/opt/liveuin/deploy/core_identity_workspace_access.py",
+      "sha256": "729531a7a562dd0fc7d53f300b2664d462593024163264230e188aba4ab6493d",
+      "imports": [
+        "",
+        "__future__",
+        "db",
+        "psycopg2.extras",
+        "typing"
+      ]
+    },
+    {
+      "name": "core_identity_google_oauth.py",
+      "path": "/opt/liveuin/deploy/core_identity_google_oauth.py",
+      "resolved": "/opt/liveuin/deploy/core_identity_google_oauth.py",
+      "sha256": "b708f7e27f6dc3991c771d62cff38bbd2c610e2de60ae18694c1e6def0d47156",
+      "imports": [
+        "",
+        "__future__",
+        "http.cookies",
+        "pathlib",
+        "typing",
+        "urllib.error",
+        "urllib.parse",
+        "urllib.request"
+      ]
+    },
+    {
+      "name": "core_identity_auth_policy.py",
+      "path": "/opt/liveuin/deploy/core_identity_auth_policy.py",
+      "resolved": "/opt/liveuin/deploy/core_identity_auth_policy.py",
+      "sha256": "e5cc47ff7c1f117c39c4abb30c6b20ba8347d0253f91e1d28d9e3c5f1fd7826c",
+      "imports": [
+        "",
+        "__future__",
+        "typing",
+        "urllib.parse"
+      ]
+    },
+    {
+      "name": "core_service_secret_resolver.py",
+      "path": "/opt/liveuin/deploy/core_service_secret_resolver.py",
+      "resolved": "/opt/liveuin/deploy/core_service_secret_resolver.py",
+      "sha256": "bc4e858df0b42f47fc28019ba86d6d08ae5ed73002c0452b47fc53893e3c69ff",
+      "imports": [
+        "",
+        "__future__",
+        "typing"
+      ]
+    },
+    {
+      "name": "core_access_service.py",
+      "path": "/opt/liveuin/deploy/core_access_service.py",
+      "resolved": "/opt/liveuin/deploy/core_access_service.py",
+      "sha256": "2afcc7539c68ab7c66ab2ccee2786b77e82561eabb8e92e47fb5cea8cdaee777"
+    },
+    {
+      "name": "core_access_store.py",
+      "path": "/opt/liveuin/deploy/core_access_store.py",
+      "resolved": "/opt/liveuin/deploy/core_access_store.py",
+      "sha256": "6f5913db1768885444061d582bbbeef66d173ec80d9dbc3e517d3c97d935f170"
+    },
+    {
+      "name": "core_adapter_replay_store.py",
+      "path": "/opt/liveuin/deploy/core_adapter_replay_store.py",
+      "resolved": "/opt/liveuin/deploy/core_adapter_replay_store.py",
+      "sha256": "d20920edb46c9569d900fbb5ec250afc1bdd8c8397368f5f33ad1f89f01cce97"
+    },
+    {
+      "name": "core_adapter_secret_registry.py",
+      "path": "/opt/liveuin/deploy/core_adapter_secret_registry.py",
+      "resolved": "/opt/liveuin/deploy/core_adapter_secret_registry.py",
+      "sha256": "1d39dec2b75b07f70841ef6f57993fa697f47b1683502ffcc76dc8815c30736d"
+    }
+  ],
+  "additional_source_at_utc": "2026-10-19T16:36:33.371979+00:00",
+  "candidate_manifest_sha256": "8409272a41b5c232f47b2fb9a2e045acb02aa9ba1912ba57425c45bddde4dd01"
+}

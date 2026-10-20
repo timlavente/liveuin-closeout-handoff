@@ -1,0 +1,1 @@
+import{aT as e,aU as s,j as a,aV as t}from"./index-DPZwxwE9.js";import{L as o}from"./LocalProLegacyRouteRedirect-CO-oQ3Cf.js";const p=()=>e()||s()?a.jsx(o,{}):a.jsx(t,{to:"/earn",replace:!0});export{p as default};

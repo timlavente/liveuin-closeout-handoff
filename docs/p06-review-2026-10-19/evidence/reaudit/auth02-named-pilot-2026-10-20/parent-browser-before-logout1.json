@@ -1,0 +1,10 @@
+{
+  "read_only": true,
+  "synthetic_parent_only": true,
+  "token_password_metadata_or_body_columns_read": false,
+  "customer_records_read": false,
+  "product_imports": false,
+  "account_or_session_mutations": false,
+  "status": "snapshot_stopped",
+  "failure_code": "synthetic_parent_not_verified_active"
+}

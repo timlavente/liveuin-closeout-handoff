@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-19T16:27:12.061653+00:00",
+  "files": [
+    {
+      "source": "/opt/liveuin/otp_service/app.py",
+      "copy": "app.py",
+      "bytes": 5632,
+      "sha256": "24542a1052dda9723591e1e068c0a446183b643768cf6ccda134a4f2f8e7fe87"
+    },
+    {
+      "source": "/etc/systemd/system/otp-gateway.service",
+      "copy": "otp-gateway.service",
+      "bytes": 501,
+      "sha256": "d2ecd65e7581c6aa019a56e637fdded337ffd4f720c826479371a85ff80bc272"
+    },
+    {
+      "source": "/etc/systemd/system/otp-gateway-staging.service",
+      "copy": "otp-gateway-staging.service",
+      "bytes": 331,
+      "sha256": "d94f471fa88c70e3752bada2f38398a0f69fe7af2029868b58d3dcd118eb791f"
+    },
+    {
+      "source": "/etc/systemd/system/ops-backend@liveuin.service.d/82-identity-otp-gateway.conf",
+      "copy": "82-identity-otp-gateway.conf",
+      "bytes": 136,
+      "sha256": "6746a5b8da9cf9965ae1730ee67ba3fc5cbdd1fe4d32af5ccfc962534a9a9609"
+    }
+  ]
+}

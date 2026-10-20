@@ -1,0 +1,81 @@
+# AUTH-REPAIR-MAPPING-01
+
+Read-only preparation, 20 October 2026, 00:24–00:30 Singapore. D1 email delivery remains the parent's active fix. This report does not start or close a second repair, change the frozen sequence, or authorize public access.
+
+**Reuse the existing production Identity service for member password sign-in, recovery and revoking logout. Do not upload the current local application wholesale, and do not expose Partner's existing code adapter merely by adding a proxy.** The bounded repair needs a verified source package for the affected screen, a safe App handoff and controlled session compatibility proof. No new account/session truth store is needed or proposed.
+
+## Production and source provenance
+
+| Item | What is established now | Limit |
+| --- | --- | --- |
+| Member/public deployed UI | Shared `index-DPZwxwE9.js`, SHA256 `2db8bfcb0aeecd9a975dde8192ca612f0d3f056d6c70e04173f5b4d27f4102fa`. App and Partner use `/var/www/liveuin`. Apex/www root resolves to `/var/www/liveuin-public-releases/liveuin-lovable-20260915-01fe27bb`; its same index asset matches. | The directory suffix is a release label. Fresh checks found no `.git`, `src`, `package.json` or named build/release manifest in that active release. No exact source-to-build commit is established. |
+| Local UI repository | `/Users/Vivian/Documents/Liveuin/www-lovable`, branch `main`, HEAD `e389b10a1809df380e181ff91415e7f7ccf075ca`; configured origin is the existing `git.chatgpt-team.site` project repository. HEAD's `src/lib/auth-context.tsx` has the same preview challenge pattern as the deployed bundle. | There are 141 tracked modified files, in addition to untracked work. The current working auth context uses real password endpoints, but is not the deployed bundle or a proven rebuild baseline. No whole-folder promotion. |
+| GitHub resident source | Fresh read of `timlavente/liveuin-resident-app`, `main` at `16bafa745c9b6821796a7ed45e742699669f838e`. Its committed auth context has password/reset/logout integration. Its WorkspaceSignIn matches the local working file byte for byte. | The three inspected member auth files differ from the local working files. This repository is a concrete committed repair source, but it is not proved to reproduce the current deployed public bundle. Use a narrow dependency-reviewed change/package, not a full replacement website. |
+| Production Identity on9098 | `liveuin-identity-public-prod.service`, PID2662668 at observation; current release `/opt/liveuin-identity-public/releases/20261016-1e9dca6`. Fresh loopback `GET /version` returned200, production, version `1e9dca6-prod-20261016`; `GET /health` returned200. | A version string and healthy process do not prove login or provider readiness. `prod_app.py` SHA256 is `6311c28a8b20d2a30423a9e299d97f114670f6a106d6aa9f1888617a9a157f11`. No production Git metadata. |
+| Local backend source | `/Users/Vivian/Documents/Liveuin/p2a-1-identity-security-foundation-staging-20260808-123538`, branch `p2a-1-identity-security-foundation`, existing commit `1e9dca6141337096d44b21604c4a5091d84e114f`; no configured remote. | Four of eight inspected deployed modules match this commit: social, session store, browser auth, route contract. Public-account and session modules match modified local working files but not HEAD. Deployed API and public store match neither inspected HEAD nor working copies. The full production release is therefore not exactly that Git commit. |
+| Sparse server UI source | `/opt/liveuin/www-lovable/src/App.tsx` exists, but the corresponding `src/lib/auth-context.tsx` is absent. Its dist index differs from the active index. | It is not the complete source for this production repair. |
+
+The old September lineage audit already recorded failed candidate rebuild matches. Fresh evidence confirms the same active bundle; it does not adopt that old document's permission instructions as new owner requirements. Current authorization permits engineering to prepare a narrow, reviewable source package. Pin actual deployed bytes, preserve rollback, and prove the exact changed routes; do not call an unrelated full build the original release.
+
+Safe reuse candidates from the committed resident source are `src/lib/auth-context.tsx`, `src/lib/residentLogout.ts`, the recovery route components, and their session/error helpers. Review their imports and browser behaviour individually. They include native-only paths and broader onboarding changes, so copying the whole auth tree is not automatically a minimal fix. `src/pages/Login.tsx` supplies the existing component boundary; `src/App.tsx` and welcome/navigation retain the role and destination handoff.
+
+## Existing production9098 contract
+
+These are deployed-source contracts and existing nginx routes, not completed account tests. Prefix below: `/api/core/identity` on **app.liveuin.com**. App's exact route blocks proxy them to9098. The remaining Identity prefix, including legacy login challenges, proxies to9095. Apex/www and Partner currently lack these exact production routes.
+
+| Operation | Request and successful response contract | Relevant guard / repair consequence |
+| --- | --- | --- |
+| Password | `POST /sessions/password`, JSON `email`, `password`. Success includes `status=authenticated`, `profile_state`, `next_action`, `authorized_profiles`, `one_time_credential.session_id/session_headers/expires_at`, and a refresh credential. | Workspace comes from server `LIVEUIN_PUBLIC_WORKSPACE_ID`, not the submitted workspace/role. Checks password hash, email verification, disabled/deletion states and rate limits. UI must use returned profiles and next action; no unconditional tenant+LocalPro grants. |
+| Recovery request | `POST /password-resets/request`, email and idempotency key. Public route declares202. Response has an opaque reset ID and expiry with the same generic response for eligible/ineligible accounts. | Uses the existing Identity notification delivery path, distinct from9095's Ops OTP gateway. A D1 Ops email success alone does not prove member recovery delivery. No request was submitted here. |
+| Recovery verification | `POST /password-resets/{reset_id}/verify`, `verification_code` (or `code`). Success returns a one-time `reset_token`. | Checks pending state, expiry, code and attempt outcome. Recovery UI must retain the opaque reset ID without using it as account authority. |
+| Recovery completion | `POST /password-resets/complete`, `reset_token`, `new_password`. Returns `password_reset_completed`, next action sign_in. | Minimum12 characters, letter and number in this deployed policy. Revokes refresh credentials and the account's active workspace sessions. The presently404 recovery screen can reuse this server contract. |
+| Session refresh | `POST /sessions/refresh` using its refresh-token contract. | Keep refresh credentials private; use the existing rotation/revocation path. Do not add a second browser session database. |
+| Resolve | `POST /session/resolve` with signed session headers/cookies; empty body is supported. | Requires verified identity. Resolves canonical account/person and approved profile projection; profile/workspace choices cannot confer grants. |
+| Logout | `POST /logout` with the current session headers/cookies. Response comes from `logout_session`, includes `public_refresh_credentials_revoked`; clears session cookies. | The browser must wait for server acknowledgement before reporting secure sign-out, then clear its local copy/cache. Current public provider only clears local state. The committed resident logout helper is the relevant reuse candidate. |
+| Google exchange | `POST /providers/google/exchange`, a provider-issued `id_token` or authorization code, plus nonce; state applies to authorization-code flow and terms are required for relevant account creation. `/providers/google/link` requires the current verified account. | The route exists, but configured browser Google readiness is **unproved**. It must not be replaced by an unconditional error button or by automatic role/account linkage. Public enablement remains separate from configuration presence. |
+
+Authoritative source lines: retained `core_identity_public.py` password1208–1245; session issuance854–913; recovery1413–1525; refresh1596 onwards. Retained `core_identity_api.py` password792, recovery810/850/860, refresh869, resolve905, logout973, provider exchange368. Error responses use an `error` object with `code/message/field/recoverable/next_action`, plus request ID; the old generic handler's `detail`-only handling is insufficient.
+
+## Google: what can and cannot be reused
+
+Both the modified local and committed GitHub `residentSocialAuth.ts` implement a Capacitor native Google flow. Their WebPlugin throws `provider_unavailable`; `beginNativeSocialSignIn` refuses a non-native browser. Copying that implementation to the public browser therefore does **not** repair browser Google login.
+
+The deployed9098 backend supports native ID-token and authorization-code configurations. Its Google readiness checks include a client ID; native token readiness **or** validated token exchange/callback flags plus redirect and secret reference; provider subject pepper, public workspace and terms configuration. Public enablement is another flag. None is inferred from a visible button.
+
+App also has legacy `/api/ops/auth/google` and callback proxy exceptions to9095. Those are a separate operator-oriented OAuth flow; do not redirect the public member button there just because a callback exists. They require a verified origin, workspace, return path, membership and session compatibility assessment before reuse as a member entry.
+
+Minimal honest browser option if Google is not configured: present supported email/password and recovery, with Google unavailable/absent, until the existing provider contract is configured and proven in its own frozen scope. This is not permission to turn public provider registration or access on. If browser Google is required by the accepted auth dependency, complete that existing provider integration before claiming it repaired.
+
+## 9098 to9095 session compatibility gate
+
+Both deployed services use the `liveuin_session` envelope and the same signed header names: workspace, actor, role, scopes, session ID, issued-at, auth method and signature. Validation checks the signing secret, signature age and an active hashed session in the configured canonical credential store. Equal field names do not establish that the two running services use the same signer/store.
+
+There is also a real source-version difference. The9098 session module explicitly recognizes `auth_method=public_*` or metadata `public_account_id`, and preserves that canonical account reference. The retained9095 module's `_session_identity_record` only reads metadata `person_id/account_id` and otherwise falls back to actor ID; it does not contain the public-account mapping. A member could therefore authenticate correctly on9098 while a later9095 projection or case entitlement still fails. No such account request was attempted.
+
+Before member proof: establish effective session-store binding and signer compatibility without exposing keys; then use the named isolated test identity to prove the issued session resolves through the actual member/case routes, retains the correct person/account/workspace and cannot access another case. Correct only the necessary mapping on the executing source if the proof requires it. Do not relax role/store enforcement, create a parallel credential store, merge account databases or grant broad member scopes to make a screen load.
+
+`runtime-nonsecret.json` records that ordinary SSH cannot read `/proc/2662668/environ` or `/proc/1298408/environ`. This is an access limitation, not evidence that flags are unset or stores differ. The existing owner-authorized root session can collect the selected nonsecret fields with `auth-runtime-classify.py` when the parent reaches this dependency. Its output contains allowlisted modes/paths, configured/not-configured booleans and version/health only; no key values or key hashes. Presence is not proof that signer secrets match. No provider-status or ready call was made: the deployed provider-status implementation reads identity-link records and can fetch JWKS, beyond this source/config-only task.
+
+## Partner: the proxy is not the whole repair
+
+Current `WorkspaceSignIn` contains a Partner branch that posts to9095's `/api/ops/auth/request_code` and `/verify-code`, with `agent`, `connect_admin`, `partner_workspace`. The failed-access link drops that branch's role/return query; Partner nginx also lacks the route.
+
+**Do not expose it with only a proxy fix.** Deployed9095 `browser_auth_request_code` resolves approved existing membership for Host and Ops, but the Partner/connect branch retains supplied role/workspace and passes them into the generic challenge creator. The verify adapter likewise rechecks trusted role/scopes for Host/Ops only. The generic challenge code can carry requested role/scopes. These are bounded source findings, not a demonstrated escalation; no email/challenge/login was requested.
+
+R07 needs a server-bound approved agent membership and least allowed scope at request and verification, or an already-proven canonical member-to-agent entitlement continuation. The membership/account model must remain Core Identity. Keep the general `/api/ops/` block; expose only the exact needed adapter/session paths once their guards are proven. Preserve role and destination for every error/unauthenticated handoff. One approved test agent must not gain staff switches or another agent's data. Expanding Partner OS, Connect or advice permissions is outside this fix.
+
+## Minimal execution shape after D1
+
+1. Keep the active D1 delivery change isolated and freeze its proof before changing member/Partner code.
+2. In the accepted auth dependency, use the verified deployed artifact as the rollback baseline and pin a narrow source/package. Public `/login` can hand off to the member App origin; retain an allowlisted destination and existing role selection. Do not add a broad public Identity/ops proxy to compensate for the old form.
+3. Reuse9098 password/recovery/logout contracts in the bounded member login/recovery screen. Preserve case return, consume server profiles/next action, and label only actually supported browser methods. A route-specific auth package can be built from pinned source without replacing unrelated public pages, but its session bridge and navigation must be proven against the existing deployed member bundle before release.
+4. Resolve the9098/9095 compatibility gate and controlled preview-challenge production concern as part of the accepted auth dependency. No arbitrary public challenge test or real-family probe is required.
+5. Repair Partner's trusted membership and exact handoff/routing only within R07's minimum journey. Test allowed/refused role scope and revoking sign-out in R05–R09. R16 closes remaining navigation parity; it cannot postpone essential auth.
+
+No step above was implemented in this preparation. No account, email/reset/OTP request, database, credential, provider callback, payment or public switch was changed. The only LiveUIN application HTTP requests in this new preparation were local service `/version` and `/health`; source files and GitHub were read. No actual-money test is proposed under the accepted Stripe readiness gate.
+
+## Evidence
+
+All new evidence is under `reaudit/auth-repair-map/`: deployed source modules with `9098-source-metadata.json`; `prod-source-metadata.json`; `runtime-nonsecret.json`; `deployed-ui-lineage.json`; `local-source-lineage.json`; `backend-git-lineage.json`; and `github-resident-lineage.json` with four exact committed source copies. Earlier routed bundle and nginx evidence remains under `auth-audit/`. Source files used locally had allocated blocks and no dataless availability failure; no placeholder was overwritten or reconstructed.
+
+Ecosystem boundary checked: public UI/private App/Host/Ops/Partner are LiveUIN surfaces; canonical Identity/Core/Trust/Ops retain account, entitlement, case and session authority. No Laijuzhu, IGEMA, WeChat, WordPress connector/theme or imported-tenancy change; no imported record was read or contacted.

@@ -1,0 +1,40 @@
+--- passed-AUTH02/activate-public-12.py
++++ AUTH03/activate-public.py
+@@ -1,5 +1,6 @@
+ #!/usr/bin/env python3
+ """Invoke only the pinned public-entry phase after the actual App browser gate."""
++import argparse
+ import contextlib
+ import hashlib
+ import importlib.util
+@@ -14,12 +15,9 @@
+ import urllib.error
+ import urllib.request
+ 
+-ROOT = Path("/root/liveuin-auth02-frontend-20261020-11")
+-GATE = ROOT / "app-browser-pass-11.json"
+-GATE_SHA = "92b0ed0380b87ca59bb2443c8aa73c1e24d0a6a176dda077738d87c5ea35fed8"
+-RELEASE_SHA = "4bd7d691e3236176a47878f36bc77fb40f77357871afaa1276851008a1ba6a30"
+-STATE = "/root/liveuin-closeout-backups/AUTH02-FRONTEND-20261020T080803Z-3752686/state.json"
+-OUTPUT = Path("/tmp/liveuin-r01-access-check-20261020/frontend-public-activation-12.json")
++ROOT = Path("/root/liveuin-auth03-frontend-20261020-01")
++RELEASE_SHA = '599c047e4bc8650bae0556da7c98bfa354123a90d9f5143923f5a3ec93caaa19'
++OUTPUT = Path("/tmp/liveuin-r01-access-check-20261020/frontend-auth03-public-activation-01.json")
+ 
+ 
+ def need(condition, code):
+@@ -111,6 +109,14 @@
+ 
+ 
+ def main():
++    global GATE, GATE_SHA, STATE
++    parser = argparse.ArgumentParser()
++    parser.add_argument("--state", required=True)
++    parser.add_argument("--gate", required=True)
++    parser.add_argument("--gate-sha256", required=True)
++    args = parser.parse_args()
++    need(re.fullmatch(r"[0-9a-f]{64}", args.gate_sha256), "invalid_gate_hash")
++    GATE, GATE_SHA, STATE = Path(args.gate), args.gate_sha256, args.state
+     need(os.geteuid() == 0, "root_required")
+     need(hashlib.sha256((ROOT / "release.py").read_bytes()).hexdigest() == RELEASE_SHA,
+          "release_helper_changed")

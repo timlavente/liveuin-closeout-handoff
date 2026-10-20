@@ -1,0 +1,118 @@
+Browser tab: 1, Title: "Service status | LiveUIN", URL: "https://liveuin.com/status".
+1 AXWebArea Service status | LiveUIN, URL: liveuin.com/status
+	2 container root
+		3 container Notifications (F8)
+			4 content list
+		5 container Notifications alt+T
+		6 container
+			7 link Description: LiveUIN home, Value: liveuin.com/
+			8 container
+				9 link Description: Stay, Value: liveuin.com/stay
+				10 link Description: Grow, Value: liveuin.com/grow
+				11 link Description: Earn, Value: liveuin.com/earn
+				12 link Description: Explore, Value: liveuin.com/explore
+				13 link Description: How LiveUIN Works, Value: liveuin.com/how-it-works
+				14 link Description: Pricing, Value: liveuin.com/pricing
+				15 link Description: Trust, Value: liveuin.com/trust
+				16 link Description: Resources, Value: liveuin.com/guides
+			17 link Description: Switch language: 中文, Value: liveuin.com/cn/status
+			18 link Description: Log in, Value: liveuin.com/login
+			19 link Description: Get Started, Value: liveuin.com/start
+			20 text Service status
+			21 heading LiveUIN service updates., Value: 1
+				22 text LiveUIN service updates.
+			23 text Current notices will appear here when they are published. If you have an account or journey-specific problem, use Help so the right team can review it. Published notices Maintenance information Known issues Help path
+			24 link Description: Browse help topics, Value: liveuin.com/help
+			25 link Description: Report a problem, Value: liveuin.com/contact?topic=status
+			26 text STATUS INFORMATION, WITHOUT GUESSWORK No notice on this page should be read as a promise that every feature or location is available.
+			27 image Status information, without guesswork
+		28 container
+			29 text WHAT YOU GET
+			30 heading A clear place to start, Value: 2
+				31 text A clear place to start
+			32 text Review the essentials, understand any conditions, and choose the next step that fits you.
+			33 container
+				34 image
+				35 heading Understand your options, Value: 3
+					36 text Understand your options
+				37 text Check published service notices and find the right help path if something is not working.
+			38 container
+				39 image
+				40 heading Know what happens next, Value: 3
+					41 text Know what happens next
+				42 text No notice on this page should be read as a promise that every feature or location is available.
+			43 container
+				44 image
+				45 heading Ask when you are unsure, Value: 3
+					46 text Ask when you are unsure
+				47 text Tell LiveUIN what you are trying to do, and we will point you to the closest next step.
+			48 heading What would you like to do next?, Value: 2
+				49 text What would you like to do next?
+			50 text Start with the option that best matches your situation.
+			51 link Description: Browse help topics, Value: liveuin.com/help
+			52 link Description: Report a problem, Value: liveuin.com/contact?topic=status
+		53 container
+			54 image LiveUIN — Live smarter. Move freely.
+			55 text Live smarter. Move freely. LiveUIN connects Stay, Grow, and Earn through one clear platform, with Trust & Safety guidance before the next step.
+			56 link Description: Community, Value: liveuin.com/community
+			57 link Description: Partner network, Value: liveuin.com/partner
+			58 link Description: Video guides, Value: liveuin.com/guides
+			59 link Description: Support, Value: liveuin.com/help
+			60 link Description: News, Value: liveuin.com/blog
+			61 text Stay
+			62 content list
+				63 link Description: Stay with LiveUIN, Value: liveuin.com/stay
+				64 link Description: Search Homes, Value: liveuin.com/search
+				65 link Description: Stay support, Value: liveuin.com/help/stay
+				66 link Description: How It Works, Value: liveuin.com/how-it-works
+				67 link Description: Safety & Trust, Value: liveuin.com/trust
+				68 link Description: Support Center, Value: liveuin.com/help
+			69 text Grow
+			70 content list
+				71 link Description: Grow with LiveUIN, Value: liveuin.com/grow
+				72 link Description: Host, Value: liveuin.com/host
+				73 link Description: Operate, Value: liveuin.com/operate
+				74 link Description: Partner, Value: liveuin.com/partner
+				75 link Description: Connect, Value: liveuin.com/connect
+				76 link Description: Campus, Value: liveuin.com/campus
+				77 link Description: Enterprise, Value: liveuin.com/enterprise
+				78 link Description: Pricing, Value: liveuin.com/pricing
+			79 text Earn
+			80 content list
+				81 link Description: Earn with LiveUIN, Value: liveuin.com/earn
+				82 link Description: Eligibility, Value: liveuin.com/start?product=earn
+				83 link Description: Earn support, Value: liveuin.com/help/earn
+				84 link Description: Trust, Value: liveuin.com/trust
+				85 link Description: Help, Value: liveuin.com/help
+			86 text Explore
+			87 content list
+				88 link Description: Cities, Value: liveuin.com/explore
+				89 link Description: Cities Index, Value: liveuin.com/cities
+				90 link Description: Deals, Value: liveuin.com/deals
+				91 link Description: Services, Value: liveuin.com/services
+				92 link Description: Promotions, Value: liveuin.com/promotions
+				93 link Description: Community, Value: liveuin.com/community
+				94 link Description: Blog, Value: liveuin.com/blog
+				95 link Description: How It Works, Value: liveuin.com/how-it-works
+			96 text Company
+			97 content list
+				98 link Description: About LiveUIN, Value: liveuin.com/about
+				99 link Description: Careers, Value: liveuin.com/careers
+				100 link Description: News & Media, Value: liveuin.com/newsroom
+				101 link Description: Contact Us, Value: liveuin.com/contact
+				102 link Description: Investor Relations, Value: liveuin.com/investors
+			103 text Resources
+			104 content list
+				105 link Description: Status, Value: liveuin.com/status
+				106 link Description: Developers, Value: liveuin.com/developers
+				107 link Description: Help Center, Value: liveuin.com/help
+				108 link Description: Legal, Value: liveuin.com/legal
+			109 text © 2026 LiveUIN. All rights reserved.
+			110 link Description: Privacy notice status, Value: liveuin.com/legal/privacy
+			111 link Description: Terms status, Value: liveuin.com/legal/terms
+			112 link Description: Data-protection status, Value: liveuin.com/legal/data-protection
+			113 link Description: Cookie notice status, Value: liveuin.com/legal/cookies
+			114 link Description: Help, Value: liveuin.com/help
+			115 link Description: Legal, Value: liveuin.com/legal
+
+The focused UI element is 1 AXWebArea Service status | LiveUIN, URL: liveuin.com/status

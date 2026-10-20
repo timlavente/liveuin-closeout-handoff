@@ -1,0 +1,14 @@
+{
+  "version": "FREEZE-AUTH-REPAIR-01",
+  "owner_authorization": "ok resolve them",
+  "created_at_singapore": "2026-10-20T00:25:48.074597+08:00",
+  "source_plan_sha256": "0923c859996ba0a43e67c495111b89e6a1d4ad70c61c3fbefc0540226d05267b",
+  "files": [
+    {
+      "path": "FREEZE-AUTH-REPAIR-01.md",
+      "bytes": 6381,
+      "local_blocks": 16,
+      "sha256": "6247d807760bf5a1943f04e4ec3b537ea6c5bf650526cd988b283a93ce445f92"
+    }
+  ]
+}

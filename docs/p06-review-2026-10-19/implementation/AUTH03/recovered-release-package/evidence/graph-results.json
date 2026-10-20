@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "release_id": "auth03-d542aefd993107da",
+  "parsed_javascript": 301,
+  "static_imports": 3094,
+  "dynamic_imports": 146,
+  "shared_index_imports": 293,
+  "unchanged_files": 357,
+  "changed_javascript": [
+    "AppAccount-HBgL4SnG.js",
+    "ResidentAppShell-CQOxnRFw.js",
+    "auth.sign-in-CQBkq3x9.js",
+    "index-DPZwxwE9.js",
+    "welcome-BD_1iI7g.js"
+  ]
+}

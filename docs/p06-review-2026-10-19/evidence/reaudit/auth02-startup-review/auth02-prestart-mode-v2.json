@@ -1,0 +1,753 @@
+{
+  "mode": "source_and_whitelisted_nonsecret_process_metadata_only",
+  "source_sha256": "bbbb3c5c44d6db48b26ca3f11972c4557d9eabe038573e12e4e6cfee56c50c4e",
+  "pid": 1298408,
+  "selected_source": [
+    {
+      "line": 37,
+      "source": "log() { printf '%s\\n' \"<literal-redacted>\"; }"
+    },
+    {
+      "line": 38,
+      "source": "die() { printf '%s\\n' \"<literal-redacted>\" >&2; exit 1; }"
+    },
+    {
+      "line": 39,
+      "source": ""
+    },
+    {
+      "line": 40,
+      "source": "have() { command -v \"$1\" >/dev/null 2>&1; }"
+    },
+    {
+      "line": 41,
+      "source": ""
+    },
+    {
+      "line": 43,
+      "source": "SCRIPT_DIR=$(CDPATH= cd -- \"<literal-redacted>\"$0\"<literal-redacted>\" && pwd) || die \"<literal-redacted>\""
+    },
+    {
+      "line": 44,
+      "source": "BACKEND_DIR=${BACKEND_DIR:-$(CDPATH= cd -- \"$SCRIPT_DIR/..\" && pwd)} || die \"<literal-redacted>\""
+    },
+    {
+      "line": 45,
+      "source": ""
+    },
+    {
+      "line": 46,
+      "source": "VENV_DIR=${VENV_DIR:-\"<literal-redacted>\"}"
+    },
+    {
+      "line": 47,
+      "source": "REQ_FILE=${REQ_FILE:-\"<literal-redacted>\"}"
+    },
+    {
+      "line": 48,
+      "source": "PY_SYS=${PY_SYS:-/usr/bin/python3}"
+    },
+    {
+      "line": 49,
+      "source": ""
+    },
+    {
+      "line": 50,
+      "source": "REBUILD_MODE=${ENSURE_VENV_REBUILD:-auto}"
+    },
+    {
+      "line": 51,
+      "source": "LOCK_DIR=${ENSURE_VENV_LOCK_DIR:-/var/cache/ops-backend}"
+    },
+    {
+      "line": 52,
+      "source": "FALLBACK_LOCK_DIR=${ENSURE_VENV_FALLBACK_LOCK_DIR:-\"<literal-redacted>\"}"
+    },
+    {
+      "line": 53,
+      "source": "LOCK_NAME=${ENSURE_VENV_LOCK_NAME:-ops_backend_ensure_venv.lock}"
+    },
+    {
+      "line": 54,
+      "source": "LOCK_PATH=\"$LOCK_DIR/$LOCK_NAME\""
+    },
+    {
+      "line": 55,
+      "source": ""
+    },
+    {
+      "line": 56,
+      "source": "PIP_DEFAULT_TIMEOUT=${PIP_DEFAULT_TIMEOUT:-45}"
+    },
+    {
+      "line": 57,
+      "source": "PIP_RETRIES=${PIP_RETRIES:-3}"
+    },
+    {
+      "line": 58,
+      "source": "PIP_NO_CACHE_DIR=${PIP_NO_CACHE_DIR:-}"
+    },
+    {
+      "line": 59,
+      "source": ""
+    },
+    {
+      "line": 64,
+      "source": "WRITE_FREEZE=${ENSURE_VENV_WRITE_FREEZE:-0}"
+    },
+    {
+      "line": 65,
+      "source": "COMPILEALL=${ENSURE_VENV_COMPILEALL:-1}"
+    },
+    {
+      "line": 66,
+      "source": ""
+    },
+    {
+      "line": 68,
+      "source": "DEFAULT_IMPORTS=\"fastapi httpx psycopg psycopg2 pydantic uvicorn email_validator\""
+    },
+    {
+      "line": 69,
+      "source": "IMPORTS=${ENSURE_VENV_IMPORTS:-$DEFAULT_IMPORTS}"
+    },
+    {
+      "line": 70,
+      "source": ""
+    },
+    {
+      "line": 71,
+      "source": "APP_IMPORT_MODE=${ENSURE_VENV_APP_IMPORT:-auto}"
+    },
+    {
+      "line": 72,
+      "source": "DSN_VARS=${ENSURE_VENV_DSN_VARS:-\"LIVEUIN_DB_DSN OPS_DB_DSN DATABASE_URL\"}"
+    },
+    {
+      "line": 73,
+      "source": ""
+    },
+    {
+      "line": 74,
+      "source": "[ -d \"$BACKEND_DIR\" ] || die \"<literal-redacted>\""
+    },
+    {
+      "line": 75,
+      "source": "[ -f \"$REQ_FILE\" ] || die \"<literal-redacted>\""
+    },
+    {
+      "line": 76,
+      "source": "[ -x \"$PY_SYS\" ] || die \"<literal-redacted>\""
+    },
+    {
+      "line": 93,
+      "source": "sha256_file() {"
+    },
+    {
+      "line": 94,
+      "source": "  f=\"$1\""
+    },
+    {
+      "line": 95,
+      "source": "  if have sha256sum; then"
+    },
+    {
+      "line": 96,
+      "source": "    sha256sum \"$f\" | awk \"<literal-redacted>\""
+    },
+    {
+      "line": 97,
+      "source": "    return 0"
+    },
+    {
+      "line": 98,
+      "source": "  fi"
+    },
+    {
+      "line": 100,
+      "source": "  \"$PY_SYS\" -c \"<literal-redacted><unterminated-on-this-line>"
+    },
+    {
+      "line": 101,
+      "source": "p=sys.argv[1]; \\"
+    },
+    {
+      "line": 102,
+      "source": "f=open(p,'rb'); \\"
+    },
+    {
+      "line": 103,
+      "source": "b=f.read(1024*1024); \\"
+    },
+    {
+      "line": 104,
+      "source": "while b: h.update(b); b=f.read(1024*1024); \\"
+    },
+    {
+      "line": 105,
+      "source": "f.close(); \\"
+    },
+    {
+      "line": 106,
+      "source": "print(h.hexdigest())\" \"$f\"<literal-redacted><unterminated-on-this-line>"
+    },
+    {
+      "line": 107,
+      "source": "}"
+    },
+    {
+      "line": 108,
+      "source": ""
+    },
+    {
+      "line": 109,
+      "source": "venv_python=\"$VENV_DIR/bin/python\""
+    },
+    {
+      "line": 110,
+      "source": "hash_file=\"$VENV_DIR/.requirements.sha256\""
+    },
+    {
+      "line": 111,
+      "source": "want_hash=\"<literal-redacted>\"$REQ_FILE\"<literal-redacted>\""
+    },
+    {
+      "line": 126,
+      "source": "import_check() {"
+    },
+    {
+      "line": 127,
+      "source": "  py=\"$1\""
+    },
+    {
+      "line": 128,
+      "source": "  cd \"$BACKEND_DIR\" || return 1"
+    },
+    {
+      "line": 129,
+      "source": "  PYTHONPATH=\"$BACKEND_DIR\" export PYTHONPATH"
+    },
+    {
+      "line": 130,
+      "source": ""
+    },
+    {
+      "line": 132,
+      "source": "  for m in $IMPORTS; do"
+    },
+    {
+      "line": 133,
+      "source": "    \"$py\" -c \"import $m\" >/dev/null 2>&1 || return 1"
+    },
+    {
+      "line": 134,
+      "source": "  done"
+    },
+    {
+      "line": 135,
+      "source": ""
+    },
+    {
+      "line": 137,
+      "source": "  if [ \"$APP_IMPORT_MODE\" = \"never\" ]; then"
+    },
+    {
+      "line": 138,
+      "source": "    return 0"
+    },
+    {
+      "line": 139,
+      "source": "  fi"
+    },
+    {
+      "line": 140,
+      "source": ""
+    },
+    {
+      "line": 141,
+      "source": "  if [ \"$APP_IMPORT_MODE\" = \"always\" ]; then"
+    },
+    {
+      "line": 142,
+      "source": "    \"$py\" -c \"import app\" >/dev/null 2>&1 || return 1"
+    },
+    {
+      "line": 143,
+      "source": "    return 0"
+    },
+    {
+      "line": 144,
+      "source": "  fi"
+    },
+    {
+      "line": 145,
+      "source": ""
+    },
+    {
+      "line": 147,
+      "source": "  found_dsn=0"
+    },
+    {
+      "line": 148,
+      "source": "  for v in $DSN_VARS; do"
+    },
+    {
+      "line": 149,
+      "source": "    eval \"val=\\${$v-}\""
+    },
+    {
+      "line": 150,
+      "source": "    if [ -n \"${val:-}\" ]; then found_dsn=1; break; fi"
+    },
+    {
+      "line": 151,
+      "source": "  done"
+    },
+    {
+      "line": 152,
+      "source": ""
+    },
+    {
+      "line": 153,
+      "source": "  if [ \"$found_dsn\" -eq 1 ]; then"
+    },
+    {
+      "line": 154,
+      "source": "    \"$py\" -c \"import app\" >/dev/null 2>&1 || return 1"
+    },
+    {
+      "line": 155,
+      "source": "  else"
+    },
+    {
+      "line": 156,
+      "source": "    log \"<literal-redacted>\""
+    },
+    {
+      "line": 157,
+      "source": "  fi"
+    },
+    {
+      "line": 158,
+      "source": ""
+    },
+    {
+      "line": 159,
+      "source": "  return 0"
+    },
+    {
+      "line": 160,
+      "source": "}"
+    },
+    {
+      "line": 161,
+      "source": ""
+    },
+    {
+      "line": 163,
+      "source": "venv_ok=0"
+    },
+    {
+      "line": 164,
+      "source": "hash_ok=0"
+    },
+    {
+      "line": 165,
+      "source": "imports_ok=0"
+    },
+    {
+      "line": 166,
+      "source": ""
+    },
+    {
+      "line": 167,
+      "source": "[ -x \"$venv_python\" ] && venv_ok=1"
+    },
+    {
+      "line": 168,
+      "source": ""
+    },
+    {
+      "line": 169,
+      "source": "if [ -f \"$hash_file\" ]; then"
+    },
+    {
+      "line": 170,
+      "source": "  old_hash=\"<literal-redacted>\"$hash_file\"<literal-redacted>\""
+    },
+    {
+      "line": 171,
+      "source": "  [ \"$old_hash\" = \"$want_hash\" ] && hash_ok=1"
+    },
+    {
+      "line": 172,
+      "source": "fi"
+    },
+    {
+      "line": 173,
+      "source": ""
+    },
+    {
+      "line": 174,
+      "source": "if [ \"$venv_ok\" -eq 1 ] && [ \"$hash_ok\" -eq 1 ]; then"
+    },
+    {
+      "line": 175,
+      "source": "  if import_check \"$venv_python\"; then imports_ok=1; fi"
+    },
+    {
+      "line": 176,
+      "source": "fi"
+    },
+    {
+      "line": 177,
+      "source": ""
+    },
+    {
+      "line": 178,
+      "source": "if [ \"$REBUILD_MODE\" = \"never\" ] && [ \"$venv_ok\" -eq 1 ]; then"
+    },
+    {
+      "line": 180,
+      "source": "  if [ \"$imports_ok\" -eq 1 ]; then"
+    },
+    {
+      "line": 181,
+      "source": "    log \"<literal-redacted>\""
+    },
+    {
+      "line": 182,
+      "source": "    exit 0"
+    },
+    {
+      "line": 183,
+      "source": "  fi"
+    },
+    {
+      "line": 184,
+      "source": "  die \"<literal-redacted>\""
+    },
+    {
+      "line": 185,
+      "source": "fi"
+    },
+    {
+      "line": 186,
+      "source": ""
+    },
+    {
+      "line": 187,
+      "source": "if [ \"$REBUILD_MODE\" != \"always\" ] && [ \"$venv_ok\" -eq 1 ] && [ \"$hash_ok\" -eq 1 ] && [ \"$imports_ok\" -eq 1 ]; then"
+    },
+    {
+      "line": 188,
+      "source": "  log \"<literal-redacted>\""
+    },
+    {
+      "line": 189,
+      "source": "  exit 0"
+    },
+    {
+      "line": 227,
+      "source": "venv_ok=0; hash_ok=0; imports_ok=0"
+    },
+    {
+      "line": 228,
+      "source": "[ -x \"$venv_python\" ] && venv_ok=1"
+    },
+    {
+      "line": 229,
+      "source": "if [ -f \"$hash_file\" ]; then"
+    },
+    {
+      "line": 230,
+      "source": "  old_hash=\"<literal-redacted>\"$hash_file\"<literal-redacted>\""
+    },
+    {
+      "line": 231,
+      "source": "  [ \"$old_hash\" = \"$want_hash\" ] && hash_ok=1"
+    },
+    {
+      "line": 232,
+      "source": "fi"
+    },
+    {
+      "line": 233,
+      "source": "if [ \"$venv_ok\" -eq 1 ] && [ \"$hash_ok\" -eq 1 ]; then"
+    },
+    {
+      "line": 234,
+      "source": "  if import_check \"$venv_python\"; then imports_ok=1; fi"
+    },
+    {
+      "line": 235,
+      "source": "fi"
+    },
+    {
+      "line": 236,
+      "source": "if [ \"$REBUILD_MODE\" != \"always\" ] && [ \"$venv_ok\" -eq 1 ] && [ \"$hash_ok\" -eq 1 ] && [ \"$imports_ok\" -eq 1 ]; then"
+    },
+    {
+      "line": 237,
+      "source": "  log \"<literal-redacted>\""
+    },
+    {
+      "line": 238,
+      "source": "  exit 0"
+    },
+    {
+      "line": 239,
+      "source": "fi"
+    },
+    {
+      "line": 240,
+      "source": ""
+    },
+    {
+      "line": 250,
+      "source": ""
+    },
+    {
+      "line": 251,
+      "source": "pip_env"
+    },
+    {
+      "line": 252,
+      "source": ""
+    },
+    {
+      "line": 253,
+      "source": "clean_rebuild=0"
+    },
+    {
+      "line": 254,
+      "source": "if [ \"$REBUILD_MODE\" = \"always\" ]; then clean_rebuild=1; fi"
+    },
+    {
+      "line": 255,
+      "source": ""
+    },
+    {
+      "line": 256,
+      "source": "if [ \"$venv_ok\" -eq 0 ]; then"
+    },
+    {
+      "line": 257,
+      "source": "  clean_rebuild=1"
+    },
+    {
+      "line": 258,
+      "source": "fi"
+    },
+    {
+      "line": 259,
+      "source": ""
+    },
+    {
+      "line": 260,
+      "source": "if [ \"$clean_rebuild\" -eq 1 ]; then"
+    },
+    {
+      "line": 261,
+      "source": "  if [ -d \"$VENV_DIR\" ]; then"
+    },
+    {
+      "line": 262,
+      "source": "    log \"<literal-redacted>\""
+    },
+    {
+      "line": 263,
+      "source": "    rm -rf \"$VENV_DIR\""
+    },
+    {
+      "line": 264,
+      "source": "  fi"
+    },
+    {
+      "line": 265,
+      "source": "  log \"<literal-redacted>\""
+    },
+    {
+      "line": 266,
+      "source": "  \"$PY_SYS\" -m venv \"$VENV_DIR\""
+    },
+    {
+      "line": 267,
+      "source": "fi"
+    },
+    {
+      "line": 284,
+      "source": "if [ \"$COMPILEALL\" = \"1\" ]; then"
+    },
+    {
+      "line": 285,
+      "source": "  \"$venv_python\" -m compileall -q \"$BACKEND_DIR\" >/dev/null 2>&1 || true"
+    },
+    {
+      "line": 286,
+      "source": "fi"
+    },
+    {
+      "line": 287,
+      "source": ""
+    },
+    {
+      "line": 289,
+      "source": "if import_check \"$venv_python\"; then"
+    },
+    {
+      "line": 290,
+      "source": "  :"
+    },
+    {
+      "line": 291,
+      "source": "else"
+    },
+    {
+      "line": 292,
+      "source": "  if [ \"$REBUILD_MODE\" = \"auto\" ]; then"
+    },
+    {
+      "line": 293,
+      "source": "    log \"<literal-redacted>\""
+    },
+    {
+      "line": 294,
+      "source": "    rm -rf \"$VENV_DIR\""
+    },
+    {
+      "line": 295,
+      "source": "    \"$PY_SYS\" -m venv \"$VENV_DIR\""
+    },
+    {
+      "line": 296,
+      "source": "    \"$venv_python\" -m pip install --upgrade pip setuptools wheel"
+    },
+    {
+      "line": 298,
+      "source": "    \"$venv_python\" -m pip install $pip_args -r \"$REQ_FILE\""
+    },
+    {
+      "line": 299,
+      "source": "    printf '%s\\n' \"$want_hash\" > \"$hash_file\" || true"
+    },
+    {
+      "line": 300,
+      "source": "    if ! import_check \"$venv_python\"; then"
+    },
+    {
+      "line": 301,
+      "source": "      die \"<literal-redacted>\""
+    },
+    {
+      "line": 302,
+      "source": "    fi"
+    },
+    {
+      "line": 303,
+      "source": "  else"
+    },
+    {
+      "line": 304,
+      "source": "    die \"<literal-redacted>\""
+    },
+    {
+      "line": 305,
+      "source": "  fi"
+    },
+    {
+      "line": 306,
+      "source": "fi"
+    },
+    {
+      "line": 307,
+      "source": ""
+    },
+    {
+      "line": 309,
+      "source": "if [ \"$WRITE_FREEZE\" = \"1\" ]; then"
+    },
+    {
+      "line": 310,
+      "source": "  freeze_file=\"<literal-redacted>\""
+    },
+    {
+      "line": 311,
+      "source": "  \"$venv_python\" -m pip freeze --all > \"$freeze_file\" || true"
+    },
+    {
+      "line": 312,
+      "source": "  chmod 0644 \"$freeze_file\" >/dev/null 2>&1 || true"
+    },
+    {
+      "line": 313,
+      "source": "  log \"<literal-redacted>\""
+    },
+    {
+      "line": 314,
+      "source": "fi"
+    },
+    {
+      "line": 315,
+      "source": ""
+    },
+    {
+      "line": 316,
+      "source": "log \"<literal-redacted>\""
+    },
+    {
+      "line": 317,
+      "source": "exit 0"
+    }
+  ],
+  "process_nonsecret_flags": {
+    "ENSURE_VENV_REBUILD": {
+      "present": false,
+      "classification": "unset"
+    },
+    "ENSURE_VENV_APP_IMPORT": {
+      "present": false,
+      "classification": "unset"
+    },
+    "ENSURE_VENV_WRITE_FREEZE": {
+      "present": false,
+      "classification": "unset"
+    },
+    "ENSURE_VENV_COMPILEALL": {
+      "present": false,
+      "classification": "unset"
+    },
+    "ENSURE_VENV_IMPORTS": {
+      "present": false,
+      "whitelisted_name_list": null
+    },
+    "ENSURE_VENV_DSN_VARS": {
+      "present": false,
+      "whitelisted_name_list": null
+    }
+  },
+  "expected_path_bindings": {
+    "BACKEND_DIR": {
+      "override_present": false,
+      "matches_expected_or_unset": true
+    },
+    "VENV_DIR": {
+      "override_present": false,
+      "matches_expected_or_unset": true
+    },
+    "REQ_FILE": {
+      "override_present": false,
+      "matches_expected_or_unset": true
+    }
+  },
+  "fixed_path_checks": {
+    "expected_path_bindings": true,
+    "venv_python_exists": true,
+    "venv_python_executable": true,
+    "requirements_exists": true,
+    "requirements_marker_exists": true,
+    "marker_is_sha256": true,
+    "requirements_hash_matches_marker": true
+  },
+  "limitation": "Running process environment is not proof of newly loaded systemd prestart environment. Auto mode can still rebuild if its import checks fail; this tool executes no import checks."
+}

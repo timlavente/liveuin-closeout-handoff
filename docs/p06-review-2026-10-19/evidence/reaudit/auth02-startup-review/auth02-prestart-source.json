@@ -1,0 +1,1277 @@
+{
+  "mode": "fixed_source_read_only_no_execution_no_env",
+  "path": "/opt/liveuin/ops_backend/bin/ensure_venv.sh",
+  "sha256": "bbbb3c5c44d6db48b26ca3f11972c4557d9eabe038573e12e4e6cfee56c50c4e",
+  "shell_listing": [
+    {
+      "line": 1,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 2,
+      "source_structure": "set -eu"
+    },
+    {
+      "line": 3,
+      "source_structure": ""
+    },
+    {
+      "line": 4,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 5,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 6,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 7,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 8,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 9,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 10,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 11,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 12,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 13,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 14,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 15,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 16,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 17,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 18,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 19,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 20,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 21,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 22,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 23,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 24,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 25,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 26,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 27,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 28,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 29,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 30,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 31,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 32,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 33,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 34,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 35,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 36,
+      "source_structure": ""
+    },
+    {
+      "line": 37,
+      "source_structure": "log ( ) { printf ' % <literal> \\ <literal> ' \" [ ensure_venv ] $ * \" ; }"
+    },
+    {
+      "line": 38,
+      "source_structure": "die ( ) { printf ' % <literal> \\ <literal> ' \" <literal> <literal-punctuation> $ * \" > & <number> ; exit <number> ; }"
+    },
+    {
+      "line": 39,
+      "source_structure": ""
+    },
+    {
+      "line": 40,
+      "source_structure": "<literal> ( ) { command -v \" $ <number> \" > <literal-punctuation> <literal> <literal-punctuation> <literal> <number> > & <number> ; }"
+    },
+    {
+      "line": 41,
+      "source_structure": ""
+    },
+    {
+      "line": 42,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 43,
+      "source_structure": "SCRIPT_DIR = $ ( CDPATH = <literal> - - \" $ ( dirname - - \" $ <number> \" ) \" & & <literal> ) | | die \" <literal> <literal> SCRIPT_DIR \""
+    },
+    {
+      "line": 44,
+      "source_structure": "BACKEND_DIR = ${BACKEND_DIR:<redacted-expansion>} | | die \" <literal> <literal> BACKEND_DIR \""
+    },
+    {
+      "line": 45,
+      "source_structure": ""
+    },
+    {
+      "line": 46,
+      "source_structure": "VENV_DIR = ${VENV_DIR:<redacted-expansion>}"
+    },
+    {
+      "line": 47,
+      "source_structure": "REQ_FILE = ${REQ_FILE:<redacted-expansion>}"
+    },
+    {
+      "line": 48,
+      "source_structure": "PY_SYS = ${PY_SYS:<redacted-expansion>}"
+    },
+    {
+      "line": 49,
+      "source_structure": ""
+    },
+    {
+      "line": 50,
+      "source_structure": "REBUILD_MODE = ${ENSURE_VENV_REBUILD:<redacted-expansion>}"
+    },
+    {
+      "line": 51,
+      "source_structure": "LOCK_DIR = ${ENSURE_VENV_LOCK_DIR:<redacted-expansion>}"
+    },
+    {
+      "line": 52,
+      "source_structure": "FALLBACK_LOCK_DIR = ${ENSURE_VENV_FALLBACK_LOCK_DIR:<redacted-expansion>}"
+    },
+    {
+      "line": 53,
+      "source_structure": "LOCK_NAME = ${ENSURE_VENV_LOCK_NAME:<redacted-expansion>}"
+    },
+    {
+      "line": 54,
+      "source_structure": "LOCK_PATH = \" $LOCK_DIR <literal-punctuation> $LOCK_NAME \""
+    },
+    {
+      "line": 55,
+      "source_structure": ""
+    },
+    {
+      "line": 56,
+      "source_structure": "PIP_DEFAULT_TIMEOUT = ${PIP_DEFAULT_TIMEOUT:<redacted-expansion>}"
+    },
+    {
+      "line": 57,
+      "source_structure": "PIP_RETRIES = ${PIP_RETRIES:<redacted-expansion>}"
+    },
+    {
+      "line": 58,
+      "source_structure": "PIP_NO_CACHE_DIR = ${PIP_NO_CACHE_DIR:<redacted-expansion>}"
+    },
+    {
+      "line": 59,
+      "source_structure": ""
+    },
+    {
+      "line": 60,
+      "source_structure": "PIP_INDEX_URL = ${PIP_INDEX_URL:<redacted-expansion>}"
+    },
+    {
+      "line": 61,
+      "source_structure": "PIP_EXTRA_INDEX_URL = ${PIP_EXTRA_INDEX_URL:<redacted-expansion>}"
+    },
+    {
+      "line": 62,
+      "source_structure": "PIP_TRUSTED_HOST = ${PIP_TRUSTED_HOST:<redacted-expansion>}"
+    },
+    {
+      "line": 63,
+      "source_structure": ""
+    },
+    {
+      "line": 64,
+      "source_structure": "WRITE_FREEZE = ${ENSURE_VENV_WRITE_FREEZE:<redacted-expansion>}"
+    },
+    {
+      "line": 65,
+      "source_structure": "COMPILEALL = ${ENSURE_VENV_COMPILEALL:<redacted-expansion>}"
+    },
+    {
+      "line": 66,
+      "source_structure": ""
+    },
+    {
+      "line": 67,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 68,
+      "source_structure": "DEFAULT_IMPORTS = \" <literal> <literal> <literal> <literal> <literal> uvicorn <literal> \""
+    },
+    {
+      "line": 69,
+      "source_structure": "IMPORTS = ${ENSURE_VENV_IMPORTS:<redacted-expansion>}"
+    },
+    {
+      "line": 70,
+      "source_structure": ""
+    },
+    {
+      "line": 71,
+      "source_structure": "APP_IMPORT_MODE = ${ENSURE_VENV_APP_IMPORT:<redacted-expansion>}"
+    },
+    {
+      "line": 72,
+      "source_structure": "DSN_VARS = ${ENSURE_VENV_DSN_VARS:<redacted-expansion>}"
+    },
+    {
+      "line": 73,
+      "source_structure": ""
+    },
+    {
+      "line": 74,
+      "source_structure": "[ -d \" $BACKEND_DIR \" ] | | die \" <literal> <literal> <literal> <literal-punctuation> $BACKEND_DIR \""
+    },
+    {
+      "line": 75,
+      "source_structure": "[ -f \" $REQ_FILE \" ] | | die \" requirements <literal-punctuation> <literal> <literal> <literal> <literal-punctuation> $REQ_FILE \""
+    },
+    {
+      "line": 76,
+      "source_structure": "[ -x \" $PY_SYS \" ] | | die \" <literal> python <literal> <literal-punctuation> <literal> <literal> <literal-punctuation> $PY_SYS \""
+    },
+    {
+      "line": 77,
+      "source_structure": ""
+    },
+    {
+      "line": 78,
+      "source_structure": "<literal> ( ) {"
+    },
+    {
+      "line": 79,
+      "source_structure": "d = \" $ <number> \""
+    },
+    {
+      "line": 80,
+      "source_structure": "if mkdir -p \" $d \" > <literal-punctuation> <literal> <literal-punctuation> <literal> <number> > & <number> & & [ -w \" $d \" ] ; then"
+    },
+    {
+      "line": 81,
+      "source_structure": "printf ' % <literal> \\ <literal> ' \" $d \""
+    },
+    {
+      "line": 82,
+      "source_structure": "return <number>"
+    },
+    {
+      "line": 83,
+      "source_structure": "fi"
+    },
+    {
+      "line": 84,
+      "source_structure": "mkdir -p \" $FALLBACK_LOCK_DIR \" > <literal-punctuation> <literal> <literal-punctuation> <literal> <number> > & <number> | | true"
+    },
+    {
+      "line": 85,
+      "source_structure": "if [ -w \" $FALLBACK_LOCK_DIR \" ] ; then"
+    },
+    {
+      "line": 86,
+      "source_structure": "log \" <literal> <literal-punctuation> <literal> <literal> <literal> <literal> <literal-punctuation> $d ; <literal> <literal> <literal-punctuation> $FALLBACK_LOCK_DIR \""
+    },
+    {
+      "line": 87,
+      "source_structure": "printf ' % <literal> \\ <literal> ' \" $FALLBACK_LOCK_DIR \""
+    },
+    {
+      "line": 88,
+      "source_structure": "return <number>"
+    },
+    {
+      "line": 89,
+      "source_structure": "fi"
+    },
+    {
+      "line": 90,
+      "source_structure": "return <number>"
+    },
+    {
+      "line": 91,
+      "source_structure": "}"
+    },
+    {
+      "line": 92,
+      "source_structure": ""
+    },
+    {
+      "line": 93,
+      "source_structure": "<literal> ( ) {"
+    },
+    {
+      "line": 94,
+      "source_structure": "f = \" $ <number> \""
+    },
+    {
+      "line": 95,
+      "source_structure": "if <literal> <literal> ; then"
+    },
+    {
+      "line": 96,
+      "source_structure": "<literal> \" $f \" | awk \" { print \\ $ <number> } \""
+    },
+    {
+      "line": 97,
+      "source_structure": "return <number>"
+    },
+    {
+      "line": 98,
+      "source_structure": "fi"
+    },
+    {
+      "line": 99,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 100,
+      "source_structure": "\" $PY_SYS \" -c \" import hashlib , sys ; h = hashlib <literal-punctuation> <literal> ( ) ; \\"
+    },
+    {
+      "line": 101,
+      "source_structure": "p = sys <literal-punctuation> <literal> [ <number> ] ; \\"
+    },
+    {
+      "line": 102,
+      "source_structure": "f = open ( <literal> , ' <literal> ' ) ; \\"
+    },
+    {
+      "line": 103,
+      "source_structure": "b = <literal> <literal-punctuation> read ( <number> <number> <number> <number> * <number> <number> <number> <number> ) ; \\"
+    },
+    {
+      "line": 104,
+      "source_structure": "while b <literal-punctuation> <literal> <literal-punctuation> <literal> ( b ) ; b = <literal> <literal-punctuation> read ( <number> <number> <number> <number> * <number> <number> <number> <number> ) ; \\"
+    },
+    {
+      "line": 105,
+      "source_structure": "<literal> <literal-punctuation> <literal> ( ) ; \\"
+    },
+    {
+      "line": 106,
+      "source_structure": "print ( <literal> <literal-punctuation> <literal> ( ) ) \" \" $f \""
+    },
+    {
+      "line": 107,
+      "source_structure": "}"
+    },
+    {
+      "line": 108,
+      "source_structure": ""
+    },
+    {
+      "line": 109,
+      "source_structure": "venv_python = \" $VENV_DIR <literal-punctuation> <literal> <literal-punctuation> python \""
+    },
+    {
+      "line": 110,
+      "source_structure": "hash_file = \" $VENV_DIR <literal-punctuation> <literal-punctuation> requirements <literal-punctuation> <literal> \""
+    },
+    {
+      "line": 111,
+      "source_structure": "want_hash = \" $ ( <literal> \" $REQ_FILE \" ) \""
+    },
+    {
+      "line": 112,
+      "source_structure": ""
+    },
+    {
+      "line": 113,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 114,
+      "source_structure": "pip_args = \" \""
+    },
+    {
+      "line": 115,
+      "source_structure": "[ -n \" $PIP_INDEX_URL \" ] & & pip_args = \" $pip_args --index-url $PIP_INDEX_URL \""
+    },
+    {
+      "line": 116,
+      "source_structure": "[ -n \" $PIP_EXTRA_INDEX_URL \" ] & & pip_args = \" $pip_args --extra-index-url $PIP_EXTRA_INDEX_URL \""
+    },
+    {
+      "line": 117,
+      "source_structure": "[ -n \" $PIP_TRUSTED_HOST \" ] & & pip_args = \" $pip_args --trusted-host $PIP_TRUSTED_HOST \""
+    },
+    {
+      "line": 118,
+      "source_structure": "[ -n \" $PIP_NO_CACHE_DIR \" ] & & pip_args = \" $pip_args --no-cache-dir \""
+    },
+    {
+      "line": 119,
+      "source_structure": ""
+    },
+    {
+      "line": 120,
+      "source_structure": "<literal> ( ) {"
+    },
+    {
+      "line": 121,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 122,
+      "source_structure": "PIP_DEFAULT_TIMEOUT = \" $PIP_DEFAULT_TIMEOUT \" export PIP_DEFAULT_TIMEOUT"
+    },
+    {
+      "line": 123,
+      "source_structure": "PIP_RETRIES = \" $PIP_RETRIES \" export PIP_RETRIES"
+    },
+    {
+      "line": 124,
+      "source_structure": "}"
+    },
+    {
+      "line": 125,
+      "source_structure": ""
+    },
+    {
+      "line": 126,
+      "source_structure": "<literal> ( ) {"
+    },
+    {
+      "line": 127,
+      "source_structure": "py = \" $ <number> \""
+    },
+    {
+      "line": 128,
+      "source_structure": "<literal> \" $BACKEND_DIR \" | | return <number>"
+    },
+    {
+      "line": 129,
+      "source_structure": "PYTHONPATH = \" $BACKEND_DIR \" export PYTHONPATH"
+    },
+    {
+      "line": 130,
+      "source_structure": ""
+    },
+    {
+      "line": 131,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 132,
+      "source_structure": "for <literal> in $IMPORTS ; do"
+    },
+    {
+      "line": 133,
+      "source_structure": "\" $py \" -c \" import $m \" > <literal-punctuation> <literal> <literal-punctuation> <literal> <number> > & <number> | | return <number>"
+    },
+    {
+      "line": 134,
+      "source_structure": "done"
+    },
+    {
+      "line": 135,
+      "source_structure": ""
+    },
+    {
+      "line": 136,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 137,
+      "source_structure": "if [ \" $APP_IMPORT_MODE \" = \" <literal> \" ] ; then"
+    },
+    {
+      "line": 138,
+      "source_structure": "return <number>"
+    },
+    {
+      "line": 139,
+      "source_structure": "fi"
+    },
+    {
+      "line": 140,
+      "source_structure": ""
+    },
+    {
+      "line": 141,
+      "source_structure": "if [ \" $APP_IMPORT_MODE \" = \" <literal> \" ] ; then"
+    },
+    {
+      "line": 142,
+      "source_structure": "\" $py \" -c \" import <literal> \" > <literal-punctuation> <literal> <literal-punctuation> <literal> <number> > & <number> | | return <number>"
+    },
+    {
+      "line": 143,
+      "source_structure": "return <number>"
+    },
+    {
+      "line": 144,
+      "source_structure": "fi"
+    },
+    {
+      "line": 145,
+      "source_structure": ""
+    },
+    {
+      "line": 146,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 147,
+      "source_structure": "found_dsn = <number>"
+    },
+    {
+      "line": 148,
+      "source_structure": "for <literal> in $DSN_VARS ; do"
+    },
+    {
+      "line": 149,
+      "source_structure": "eval \" val = \\ ${v:<redacted-expansion>} \""
+    },
+    {
+      "line": 150,
+      "source_structure": "if [ -n \" ${val:<redacted-expansion>} \" ] ; then found_dsn = <number> ; <literal> ; fi"
+    },
+    {
+      "line": 151,
+      "source_structure": "done"
+    },
+    {
+      "line": 152,
+      "source_structure": ""
+    },
+    {
+      "line": 153,
+      "source_structure": "if [ \" $found_dsn \" -eq <number> ] ; then"
+    },
+    {
+      "line": 154,
+      "source_structure": "\" $py \" -c \" import <literal> \" > <literal-punctuation> <literal> <literal-punctuation> <literal> <number> > & <number> | | return <number>"
+    },
+    {
+      "line": 155,
+      "source_structure": "else"
+    },
+    {
+      "line": 156,
+      "source_structure": "log \" <literal> <literal-punctuation> <literal> <literal> import <literal> ( <literal> <literal> <literal> set ) <literal-punctuation> <literal> ENSURE_VENV_APP_IMPORT = <literal> <literal> <literal> <literal-punctuation> \""
+    },
+    {
+      "line": 157,
+      "source_structure": "fi"
+    },
+    {
+      "line": 158,
+      "source_structure": ""
+    },
+    {
+      "line": 159,
+      "source_structure": "return <number>"
+    },
+    {
+      "line": 160,
+      "source_structure": "}"
+    },
+    {
+      "line": 161,
+      "source_structure": ""
+    },
+    {
+      "line": 162,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 163,
+      "source_structure": "venv_ok = <number>"
+    },
+    {
+      "line": 164,
+      "source_structure": "hash_ok = <number>"
+    },
+    {
+      "line": 165,
+      "source_structure": "imports_ok = <number>"
+    },
+    {
+      "line": 166,
+      "source_structure": ""
+    },
+    {
+      "line": 167,
+      "source_structure": "[ -x \" $venv_python \" ] & & venv_ok = <number>"
+    },
+    {
+      "line": 168,
+      "source_structure": ""
+    },
+    {
+      "line": 169,
+      "source_structure": "if [ -f \" $hash_file \" ] ; then"
+    },
+    {
+      "line": 170,
+      "source_structure": "old_hash = \" $ ( cat \" $hash_file \" <number> > <literal-punctuation> <literal> <literal-punctuation> <literal> | | true ) \""
+    },
+    {
+      "line": 171,
+      "source_structure": "[ \" $old_hash \" = \" $want_hash \" ] & & hash_ok = <number>"
+    },
+    {
+      "line": 172,
+      "source_structure": "fi"
+    },
+    {
+      "line": 173,
+      "source_structure": ""
+    },
+    {
+      "line": 174,
+      "source_structure": "if [ \" $venv_ok \" -eq <number> ] & & [ \" $hash_ok \" -eq <number> ] ; then"
+    },
+    {
+      "line": 175,
+      "source_structure": "if <literal> \" $venv_python \" ; then imports_ok = <number> ; fi"
+    },
+    {
+      "line": 176,
+      "source_structure": "fi"
+    },
+    {
+      "line": 177,
+      "source_structure": ""
+    },
+    {
+      "line": 178,
+      "source_structure": "if [ \" $REBUILD_MODE \" = \" <literal> \" ] & & [ \" $venv_ok \" -eq <number> ] ; then"
+    },
+    {
+      "line": 179,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 180,
+      "source_structure": "if [ \" $imports_ok \" -eq <number> ] ; then"
+    },
+    {
+      "line": 181,
+      "source_structure": "log \" venv <literal> ( rebuild = <literal> ) \""
+    },
+    {
+      "line": 182,
+      "source_structure": "exit <number>"
+    },
+    {
+      "line": 183,
+      "source_structure": "fi"
+    },
+    {
+      "line": 184,
+      "source_structure": "die \" rebuild = <literal> <literal> import <literal> <literal> ; <literal> <literal> <literal> venv \""
+    },
+    {
+      "line": 185,
+      "source_structure": "fi"
+    },
+    {
+      "line": 186,
+      "source_structure": ""
+    },
+    {
+      "line": 187,
+      "source_structure": "if [ \" $REBUILD_MODE \" ! = \" <literal> \" ] & & [ \" $venv_ok \" -eq <number> ] & & [ \" $hash_ok \" -eq <number> ] & & [ \" $imports_ok \" -eq <number> ] ; then"
+    },
+    {
+      "line": 188,
+      "source_structure": "log \" venv <literal> ( requirements <literal> + <literal> <literal> ) \""
+    },
+    {
+      "line": 189,
+      "source_structure": "exit <number>"
+    },
+    {
+      "line": 190,
+      "source_structure": "fi"
+    },
+    {
+      "line": 191,
+      "source_structure": ""
+    },
+    {
+      "line": 192,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 193,
+      "source_structure": "LOCK_DIR = \" $ ( <literal> \" $LOCK_DIR \" ) \" | | die \" <literal> <literal> <literal> <literal> <literal-punctuation> <literal> $LOCK_PATH <literal> <literal> $FALLBACK_LOCK_DIR \""
+    },
+    {
+      "line": 194,
+      "source_structure": "LOCK_PATH = \" $LOCK_DIR <literal-punctuation> $LOCK_NAME \""
+    },
+    {
+      "line": 195,
+      "source_structure": ""
+    },
+    {
+      "line": 196,
+      "source_structure": "<literal> ( ) {"
+    },
+    {
+      "line": 197,
+      "source_structure": "if <literal> flock ; then"
+    },
+    {
+      "line": 198,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 199,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 200,
+      "source_structure": "exec <number> > \" $LOCK_PATH \" | | die \" <literal> open <literal> <literal> <literal-punctuation> $LOCK_PATH \""
+    },
+    {
+      "line": 201,
+      "source_structure": "flock <number>"
+    },
+    {
+      "line": 202,
+      "source_structure": "return <number>"
+    },
+    {
+      "line": 203,
+      "source_structure": "fi"
+    },
+    {
+      "line": 204,
+      "source_structure": ""
+    },
+    {
+      "line": 205,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 206,
+      "source_structure": "d = \" $LOCK_PATH <literal-punctuation> d \""
+    },
+    {
+      "line": 207,
+      "source_structure": "i = <number>"
+    },
+    {
+      "line": 208,
+      "source_structure": "while ! mkdir \" $d \" <number> > <literal-punctuation> <literal> <literal-punctuation> <literal> ; do"
+    },
+    {
+      "line": 209,
+      "source_structure": "i = $ ( ( i + <number> ) )"
+    },
+    {
+      "line": 210,
+      "source_structure": "if [ \" $i \" -ge <number> <number> ] ; then"
+    },
+    {
+      "line": 211,
+      "source_structure": "die \" <literal> <literal> <literal> <literal> <literal> <number> <number> <literal> <literal-punctuation> $d \""
+    },
+    {
+      "line": 212,
+      "source_structure": "fi"
+    },
+    {
+      "line": 213,
+      "source_structure": "sleep <number>"
+    },
+    {
+      "line": 214,
+      "source_structure": "done"
+    },
+    {
+      "line": 215,
+      "source_structure": "<literal> ' <literal> \" $d \" <number> > <literal-punctuation> <literal> <literal-punctuation> <literal> | | true ' <literal> <literal> <literal>"
+    },
+    {
+      "line": 216,
+      "source_structure": "}"
+    },
+    {
+      "line": 217,
+      "source_structure": ""
+    },
+    {
+      "line": 218,
+      "source_structure": "log \" venv <literal> <literal> <literal-punctuation> venv_ok = $venv_ok hash_ok = $hash_ok imports_ok = $imports_ok rebuild = $REBUILD_MODE \""
+    },
+    {
+      "line": 219,
+      "source_structure": "log \" BACKEND_DIR = $BACKEND_DIR \""
+    },
+    {
+      "line": 220,
+      "source_structure": "log \" VENV_DIR = $VENV_DIR \""
+    },
+    {
+      "line": 221,
+      "source_structure": "log \" REQ_FILE = $REQ_FILE \""
+    },
+    {
+      "line": 222,
+      "source_structure": "log \" LOCK_PATH = $LOCK_PATH \""
+    },
+    {
+      "line": 223,
+      "source_structure": ""
+    },
+    {
+      "line": 224,
+      "source_structure": "<literal>"
+    },
+    {
+      "line": 225,
+      "source_structure": ""
+    },
+    {
+      "line": 226,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 227,
+      "source_structure": "venv_ok = <number> ; hash_ok = <number> ; imports_ok = <number>"
+    },
+    {
+      "line": 228,
+      "source_structure": "[ -x \" $venv_python \" ] & & venv_ok = <number>"
+    },
+    {
+      "line": 229,
+      "source_structure": "if [ -f \" $hash_file \" ] ; then"
+    },
+    {
+      "line": 230,
+      "source_structure": "old_hash = \" $ ( cat \" $hash_file \" <number> > <literal-punctuation> <literal> <literal-punctuation> <literal> | | true ) \""
+    },
+    {
+      "line": 231,
+      "source_structure": "[ \" $old_hash \" = \" $want_hash \" ] & & hash_ok = <number>"
+    },
+    {
+      "line": 232,
+      "source_structure": "fi"
+    },
+    {
+      "line": 233,
+      "source_structure": "if [ \" $venv_ok \" -eq <number> ] & & [ \" $hash_ok \" -eq <number> ] ; then"
+    },
+    {
+      "line": 234,
+      "source_structure": "if <literal> \" $venv_python \" ; then imports_ok = <number> ; fi"
+    },
+    {
+      "line": 235,
+      "source_structure": "fi"
+    },
+    {
+      "line": 236,
+      "source_structure": "if [ \" $REBUILD_MODE \" ! = \" <literal> \" ] & & [ \" $venv_ok \" -eq <number> ] & & [ \" $hash_ok \" -eq <number> ] & & [ \" $imports_ok \" -eq <number> ] ; then"
+    },
+    {
+      "line": 237,
+      "source_structure": "log \" venv <literal> <literal> while <literal> for <literal> \""
+    },
+    {
+      "line": 238,
+      "source_structure": "exit <number>"
+    },
+    {
+      "line": 239,
+      "source_structure": "fi"
+    },
+    {
+      "line": 240,
+      "source_structure": ""
+    },
+    {
+      "line": 241,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 242,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 243,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 244,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 245,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 246,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 247,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 248,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 249,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 250,
+      "source_structure": ""
+    },
+    {
+      "line": 251,
+      "source_structure": "<literal>"
+    },
+    {
+      "line": 252,
+      "source_structure": ""
+    },
+    {
+      "line": 253,
+      "source_structure": "clean_rebuild = <number>"
+    },
+    {
+      "line": 254,
+      "source_structure": "if [ \" $REBUILD_MODE \" = \" <literal> \" ] ; then clean_rebuild = <number> ; fi"
+    },
+    {
+      "line": 255,
+      "source_structure": ""
+    },
+    {
+      "line": 256,
+      "source_structure": "if [ \" $venv_ok \" -eq <number> ] ; then"
+    },
+    {
+      "line": 257,
+      "source_structure": "clean_rebuild = <number>"
+    },
+    {
+      "line": 258,
+      "source_structure": "fi"
+    },
+    {
+      "line": 259,
+      "source_structure": ""
+    },
+    {
+      "line": 260,
+      "source_structure": "if [ \" $clean_rebuild \" -eq <number> ] ; then"
+    },
+    {
+      "line": 261,
+      "source_structure": "if [ -d \" $VENV_DIR \" ] ; then"
+    },
+    {
+      "line": 262,
+      "source_structure": "log \" <literal> venv for <literal> <literal> <literal-punctuation> $VENV_DIR \""
+    },
+    {
+      "line": 263,
+      "source_structure": "rm -rf \" $VENV_DIR \""
+    },
+    {
+      "line": 264,
+      "source_structure": "fi"
+    },
+    {
+      "line": 265,
+      "source_structure": "log \" <literal> venv with $PY_SYS \""
+    },
+    {
+      "line": 266,
+      "source_structure": "\" $PY_SYS \" -m venv \" $VENV_DIR \""
+    },
+    {
+      "line": 267,
+      "source_structure": "fi"
+    },
+    {
+      "line": 268,
+      "source_structure": ""
+    },
+    {
+      "line": 269,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 270,
+      "source_structure": "[ -x \" $venv_python \" ] | | die \" venv python <literal> <literal> venv <literal> <literal-punctuation> $venv_python \""
+    },
+    {
+      "line": 271,
+      "source_structure": ""
+    },
+    {
+      "line": 272,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 273,
+      "source_structure": "\" $venv_python \" -m pip install --upgrade pip <literal> wheel"
+    },
+    {
+      "line": 274,
+      "source_structure": ""
+    },
+    {
+      "line": 275,
+      "source_structure": "log \" <literal> requirements \""
+    },
+    {
+      "line": 276,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 277,
+      "source_structure": "\" $venv_python \" -m pip install $pip_args -r \" $REQ_FILE \""
+    },
+    {
+      "line": 278,
+      "source_structure": ""
+    },
+    {
+      "line": 279,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 280,
+      "source_structure": "printf ' % <literal> \\ <literal> ' \" $want_hash \" > \" $hash_file \" | | die \" <literal> <literal> <literal> $hash_file \""
+    },
+    {
+      "line": 281,
+      "source_structure": "chmod <number> <number> <number> <number> \" $hash_file \" > <literal-punctuation> <literal> <literal-punctuation> <literal> <number> > & <number> | | true"
+    },
+    {
+      "line": 282,
+      "source_structure": ""
+    },
+    {
+      "line": 283,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 284,
+      "source_structure": "if [ \" $COMPILEALL \" = \" <number> \" ] ; then"
+    },
+    {
+      "line": 285,
+      "source_structure": "\" $venv_python \" -m <literal> -q \" $BACKEND_DIR \" > <literal-punctuation> <literal> <literal-punctuation> <literal> <number> > & <number> | | true"
+    },
+    {
+      "line": 286,
+      "source_structure": "fi"
+    },
+    {
+      "line": 287,
+      "source_structure": ""
+    },
+    {
+      "line": 288,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 289,
+      "source_structure": "if <literal> \" $venv_python \" ; then"
+    },
+    {
+      "line": 290,
+      "source_structure": "<literal-punctuation>"
+    },
+    {
+      "line": 291,
+      "source_structure": "else"
+    },
+    {
+      "line": 292,
+      "source_structure": "if [ \" $REBUILD_MODE \" = \" <literal> \" ] ; then"
+    },
+    {
+      "line": 293,
+      "source_structure": "log \" <literal> <literal> <literal> install ; <literal> <literal> <literal> <literal> \""
+    },
+    {
+      "line": 294,
+      "source_structure": "rm -rf \" $VENV_DIR \""
+    },
+    {
+      "line": 295,
+      "source_structure": "\" $PY_SYS \" -m venv \" $VENV_DIR \""
+    },
+    {
+      "line": 296,
+      "source_structure": "\" $venv_python \" -m pip install --upgrade pip <literal> wheel"
+    },
+    {
+      "line": 297,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 298,
+      "source_structure": "\" $venv_python \" -m pip install $pip_args -r \" $REQ_FILE \""
+    },
+    {
+      "line": 299,
+      "source_structure": "printf ' % <literal> \\ <literal> ' \" $want_hash \" > \" $hash_file \" | | true"
+    },
+    {
+      "line": 300,
+      "source_structure": "if ! <literal> \" $venv_python \" ; then"
+    },
+    {
+      "line": 301,
+      "source_structure": "die \" <literal> <literal> <literal> <literal> <literal> <literal> <literal-punctuation> <literal> requirements + <literal> <literal-punctuation> <literal> <literal> <literal-punctuation> \""
+    },
+    {
+      "line": 302,
+      "source_structure": "fi"
+    },
+    {
+      "line": 303,
+      "source_structure": "else"
+    },
+    {
+      "line": 304,
+      "source_structure": "die \" <literal> <literal> <literal> <literal-punctuation> <literal> requirements + <literal> <literal-punctuation> <literal> <literal> <literal-punctuation> \""
+    },
+    {
+      "line": 305,
+      "source_structure": "fi"
+    },
+    {
+      "line": 306,
+      "source_structure": "fi"
+    },
+    {
+      "line": 307,
+      "source_structure": ""
+    },
+    {
+      "line": 308,
+      "source_structure": "<comment>"
+    },
+    {
+      "line": 309,
+      "source_structure": "if [ \" $WRITE_FREEZE \" = \" <number> \" ] ; then"
+    },
+    {
+      "line": 310,
+      "source_structure": "freeze_file = \" $VENV_DIR <literal-punctuation> requirements <literal-punctuation> <literal> <literal-punctuation> <literal> \""
+    },
+    {
+      "line": 311,
+      "source_structure": "\" $venv_python \" -m pip <literal> --all > \" $freeze_file \" | | true"
+    },
+    {
+      "line": 312,
+      "source_structure": "chmod <number> <number> <number> <number> \" $freeze_file \" > <literal-punctuation> <literal> <literal-punctuation> <literal> <number> > & <number> | | true"
+    },
+    {
+      "line": 313,
+      "source_structure": "log \" <literal> <literal> <literal-punctuation> $freeze_file \""
+    },
+    {
+      "line": 314,
+      "source_structure": "fi"
+    },
+    {
+      "line": 315,
+      "source_structure": ""
+    },
+    {
+      "line": 316,
+      "source_structure": "log \" venv <literal> \""
+    },
+    {
+      "line": 317,
+      "source_structure": "exit <number>"
+    }
+  ],
+  "heredocs": [],
+  "limitation": "Shell token listing is a literal-redacted aid, not a shell parser. Python bodies are exact AST structure with constants removed; no body or shell was executed."
+}

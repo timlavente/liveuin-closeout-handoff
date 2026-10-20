@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#143042" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="LiveUIN" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>LiveUIN | Housing and living, made clearer</title>
+    <meta name="description" content="Explore housing, property, partnership, and living-service journeys with clearer information and next steps." />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:site_name" content="LiveUIN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="LiveUIN | Housing and living, made clearer" />
+    <meta property="og:description" content="Explore housing, property, partnership, and living-service journeys with clearer information and next steps." />
+    <meta property="og:url" content="https://liveuin.com/" />
+    <meta property="og:image" content="https://liveuin.com/liveuin-social-card-5def9837.png" />
+    <meta property="og:image:alt" content="LiveUIN" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="LiveUIN | Housing and living, made clearer" />
+    <meta name="twitter:description" content="Explore housing, property, partnership, and living-service journeys with clearer information and next steps." />
+    <meta name="twitter:image" content="https://liveuin.com/liveuin-social-card-5def9837.png" />
+    <meta name="twitter:image:alt" content="LiveUIN" />
+    <link rel="canonical" href="https://liveuin.com/" />
+    <link rel="manifest" href="/liveuin-resident.webmanifest" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <script type="module" crossorigin src="/assets/index-Cxfe6mRB.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-dNXnMxAW.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

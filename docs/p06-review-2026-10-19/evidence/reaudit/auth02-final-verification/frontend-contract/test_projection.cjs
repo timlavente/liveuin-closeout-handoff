@@ -1,0 +1,26 @@
+const fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto'),path=require('node:path');
+const root=__dirname;
+const code=fs.readFileSync(path.join(root,'frontend-auth02-runtime-reviewed.js'),'utf8');
+const original=JSON.parse(fs.readFileSync(path.join(root,'actual-tenant-projection.json'),'utf8'));
+const ctx={URL,URLSearchParams,Date};vm.createContext(ctx);vm.runInContext(code,ctx);
+const clone=()=>JSON.parse(JSON.stringify(original));
+const results=[];
+function test(name,mutate,shouldOpen){const p=clone();if(mutate)mutate(p);ctx.payload=p;const projected=vm.runInContext('auth02Project(payload)',ctx);const open=projected.identityVerified===true&&projected.authRequired===false;results.push({test:name,passed:open===shouldOpen,expected_open:shouldOpen,actual_open:open,reason:projected.reasonCode,role:projected.role,scopes:projected.scopes});}
+test('actual_canonical_onboarded_parent_projection_opens',null,true);
+test('wrong_account_binding_closed',p=>p.actor.account_id='unrelated-fixture-account',false);
+test('wrong_person_binding_closed',p=>p.actor.person_id='unrelated-fixture-person',false);
+test('public_profile_workspace_mismatch_closed',p=>p.authorized_profiles[0].workspace_id='unrelated-fixture-workspace',false);
+test('rich_profile_account_mismatch_closed',p=>p.profile_entitlements[0].account_id='unrelated-fixture-account',false);
+test('suspended_rich_profile_closed',p=>p.profile_entitlements[0].status='suspended',false);
+test('expired_rich_profile_closed',p=>p.profile_entitlements[0].effective_to=Math.floor(Date.now()/1000)-1,false);
+test('wrong_profile_continuation_closed',p=>p.next_action='localpro_home',false);
+test('missing_tenant_actor_scope_closed',p=>p.actor.scopes=[],false);
+test('wrong_actor_scope_closed',p=>p.actor.scopes=['localpro'],false);
+test('elevated_actor_scope_closed',p=>p.actor.scopes=['identity.admin'],false);
+test('elevated_actor_role_closed',p=>p.actor.role='super_admin',false);
+test('rich_profile_wrong_permissions_closed',p=>{p.profile_entitlements[0].permissions=['localpro'];p.profile_entitlements[0].allowed_actions=['localpro'];},false);
+test('public_profile_wrong_permissions_closed',p=>p.authorized_profiles[0].permissions=['localpro'],false);
+test('wrong_active_profile_closed',p=>p.actor.active_profile_key='localpro',false);
+test('wrong_active_workspace_closed',p=>p.actor.active_workspace_id='unrelated-fixture-workspace',false);
+test('state_continuation_mismatch_closed',p=>p.profile_state='localpro_approved',false);
+const out={ok:results.every(r=>r.passed),source_sha256:crypto.createHash('sha256').update(code).digest('hex'),projection_source:'actual checksum-pinned 9098 candidate ASGI result after real fixture registration/code verification/profile/onboarding; no hand-authored base projection',tests:results};fs.writeFileSync(path.join(root,'frontend-cross-contract-result.json'),JSON.stringify(out,null,2)+'\n');console.log(JSON.stringify(out));process.exitCode=out.ok?0:1;

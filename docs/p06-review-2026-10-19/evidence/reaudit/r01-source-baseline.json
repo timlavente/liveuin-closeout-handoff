@@ -1,0 +1,172 @@
+{
+  "observed_at_utc": "2026-10-19T15:25:48.716698+00:00",
+  "files": [
+    {
+      "remote_path": "/opt/liveuin/deploy/home_api.py",
+      "local_evidence_copy": "/private/tmp/liveuin-p06-audit-20261019/reaudit/source/home_api.py",
+      "sha256": "cab022b1055df93e27328fa74813d8ae043bb1cc387562255eed0d9b68471172",
+      "bytes": 30224,
+      "prior_baseline_sha256": "cab022b1055df93e27328fa74813d8ae043bb1cc387562255eed0d9b68471172",
+      "same_as_prior_baseline": true,
+      "local_source": "/Users/Vivian/Documents/Liveuin/deploy/home_api.py",
+      "local_blocks": 64,
+      "local_sha256": "f7bf3536bed2fc5f3b4a187f2c771e168d5ca855ebf8ace7027baf6f225a3dee",
+      "same_as_local": false
+    },
+    {
+      "remote_path": "/opt/liveuin/deploy/core_identity_session.py",
+      "local_evidence_copy": "/private/tmp/liveuin-p06-audit-20261019/reaudit/source/core_identity_session.py",
+      "sha256": "11b7ab17300c3a2ea8a0294470f9872496c6e4f8308598edad97f680ea9fefdb",
+      "bytes": 71723,
+      "prior_baseline_sha256": null,
+      "same_as_prior_baseline": null,
+      "local_source": "/Users/Vivian/Documents/Liveuin/deploy/core_identity_session.py",
+      "local_blocks": 144,
+      "local_sha256": "11b7ab17300c3a2ea8a0294470f9872496c6e4f8308598edad97f680ea9fefdb",
+      "same_as_local": true
+    },
+    {
+      "remote_path": "/opt/liveuin/deploy/core_identity_session_store.py",
+      "local_evidence_copy": "/private/tmp/liveuin-p06-audit-20261019/reaudit/source/core_identity_session_store.py",
+      "sha256": "c0f2a07b7778aef761deee03b32adc61bfa257cb1edeae933416438508a265c3",
+      "bytes": 33212,
+      "prior_baseline_sha256": null,
+      "same_as_prior_baseline": null,
+      "local_source": "/Users/Vivian/Documents/Liveuin/deploy/core_identity_session_store.py",
+      "local_blocks": 72,
+      "local_sha256": "c0f2a07b7778aef761deee03b32adc61bfa257cb1edeae933416438508a265c3",
+      "same_as_local": true
+    },
+    {
+      "remote_path": "/opt/liveuin/deploy/core_access_service.py",
+      "local_evidence_copy": "/private/tmp/liveuin-p06-audit-20261019/reaudit/source/core_access_service.py",
+      "sha256": "2afcc7539c68ab7c66ab2ccee2786b77e82561eabb8e92e47fb5cea8cdaee777",
+      "bytes": 126386,
+      "prior_baseline_sha256": null,
+      "same_as_prior_baseline": null,
+      "local_source": "/Users/Vivian/Documents/Liveuin/deploy/core_access_service.py",
+      "local_blocks": 264,
+      "local_sha256": "865e8793ba99270a20dc811640e079815af827be18da75a00bcca5aad75681f3",
+      "same_as_local": false
+    },
+    {
+      "remote_path": "/opt/liveuin/deploy/public_home_gateway.py",
+      "local_evidence_copy": "/private/tmp/liveuin-p06-audit-20261019/reaudit/source/public_home_gateway.py",
+      "sha256": "67f4befdd7dbccc34bcaa79050b6c990cd3df33349ee4369f7da9838810f6fac",
+      "bytes": 15319,
+      "prior_baseline_sha256": "67f4befdd7dbccc34bcaa79050b6c990cd3df33349ee4369f7da9838810f6fac",
+      "same_as_prior_baseline": true,
+      "local_source": "/Users/Vivian/Documents/Liveuin/deploy/public_home_gateway.py",
+      "local_blocks": 32,
+      "local_sha256": "b52fe97a8aad7519f7e043256f13baf5ae95e7b7ba3a0df3ea380f97c0f80bd5",
+      "same_as_local": false
+    },
+    {
+      "remote_path": "/opt/liveuin/ops_backend/app.py",
+      "local_evidence_copy": "/private/tmp/liveuin-p06-audit-20261019/reaudit/source/app.py",
+      "sha256": "fcecabe419ce5aa080155f0e29e34eee79596d05f3838a6180dad2ce9795bbf2",
+      "bytes": 414964,
+      "prior_baseline_sha256": "fcecabe419ce5aa080155f0e29e34eee79596d05f3838a6180dad2ce9795bbf2",
+      "same_as_prior_baseline": true
+    },
+    {
+      "remote_path": "/opt/liveuin/ops_backend/auth_api.py",
+      "local_evidence_copy": "/private/tmp/liveuin-p06-audit-20261019/reaudit/source/auth_api.py",
+      "sha256": "160bb208fbd4681eaa5d6d6ab514a67e236019ac48d52efc68eafe5b6f4a3584",
+      "bytes": 53767,
+      "prior_baseline_sha256": null,
+      "same_as_prior_baseline": null
+    },
+    {
+      "remote_path": "/opt/liveuin/deploy/core_contract_template_api.py",
+      "local_evidence_copy": "/private/tmp/liveuin-p06-audit-20261019/reaudit/source/core_contract_template_api.py",
+      "sha256": "f98988555a221c3f1513dca59d1ce7d0d65379c1d93675e367eb728f514855ef",
+      "bytes": 6391,
+      "prior_baseline_sha256": null,
+      "same_as_prior_baseline": null,
+      "local_source": "/Users/Vivian/Documents/Liveuin/deploy/core_contract_template_api.py",
+      "local_blocks": 24,
+      "local_sha256": "b73940834e364c3aca010d25f9237b19c60c77ccf03b82f0b2809fd7e689c7ae",
+      "same_as_local": false
+    },
+    {
+      "remote_path": "/opt/ops-authgate/app.py",
+      "local_evidence_copy": "/private/tmp/liveuin-p06-audit-20261019/reaudit/source/ops-authgate-app.py",
+      "sha256": "65179b733a537bdb3173c161bcdf5c16336ac34bd1f94b1937b4570273c9a24f",
+      "bytes": 5301,
+      "prior_baseline_sha256": null,
+      "same_as_prior_baseline": null,
+      "local_source": "/Users/Vivian/Documents/Liveuin/deploy/ops_authgate_app.py",
+      "local_blocks": 16,
+      "local_sha256": "65179b733a537bdb3173c161bcdf5c16336ac34bd1f94b1937b4570273c9a24f",
+      "same_as_local": true
+    },
+    {
+      "remote_path": "/etc/nginx/conf.d/api.liveuin.com.conf",
+      "local_evidence_copy": "/private/tmp/liveuin-p06-audit-20261019/reaudit/source/api.liveuin.com.conf",
+      "sha256": "c088f9a2150268557db7732da0e0f6a6b3e41212ad370b8a9c2931ef07c2b677",
+      "bytes": 2545,
+      "prior_baseline_sha256": "c088f9a2150268557db7732da0e0f6a6b3e41212ad370b8a9c2931ef07c2b677",
+      "same_as_prior_baseline": true
+    },
+    {
+      "remote_path": "/etc/nginx/conf.d/ops.liveuin.com.conf",
+      "local_evidence_copy": "/private/tmp/liveuin-p06-audit-20261019/reaudit/source/ops.liveuin.com.conf",
+      "sha256": "6bc41b661ff66ea3918194171dd1f3b9ab7dcf0f4cb93d7a1d272bd9979bc708",
+      "bytes": 31554,
+      "prior_baseline_sha256": "6bc41b661ff66ea3918194171dd1f3b9ab7dcf0f4cb93d7a1d272bd9979bc708",
+      "same_as_prior_baseline": true
+    }
+  ],
+  "boundary_inputs": [
+    {
+      "path": "/Users/Vivian/Documents/AGENTS.md",
+      "bytes": 2093,
+      "blocks": 8,
+      "sha256": "17d9bdd18c0d253fd431978a98da3a7e95b926de74953e9d8a547751969a83b0"
+    },
+    {
+      "path": "/Users/Vivian/Documents/Liveuin/AGENTS.md",
+      "bytes": 3875,
+      "blocks": 8,
+      "sha256": "ff1238659309a04bebd00838f82d88622bceaf7fb2dddae10ee78afbbfab0b4d"
+    },
+    {
+      "path": "/Users/Vivian/Documents/Liveuin/README.md",
+      "bytes": 85539,
+      "blocks": 168,
+      "sha256": "5f7a243ca40c894d508dcbe3f8e3ebe1ee2cce5ba655bd33a507c6d47f189e14"
+    },
+    {
+      "path": "/Users/Vivian/Documents/Liveuin/docs/LIVEUIN-SITEMAP-DOMAIN-HANDOFF.md",
+      "bytes": 21748,
+      "blocks": 48,
+      "sha256": "2ca047f9e55a68ef3abebfeafced51c75f94d06d2aa2e227aabb7e5febd46b1e"
+    },
+    {
+      "path": "/Users/Vivian/Documents/Liveuin/docs/LIVEUIN-MODULE-FEATURE-TRACKER.md",
+      "bytes": 516423,
+      "blocks": 1016,
+      "sha256": "364f71caa1e825c11a02ac14c087c18d1e882f7b664ee2d3997d634c3cb7c29c"
+    },
+    {
+      "path": "/Users/Vivian/Documents/Liveuin/docs/LIVEUIN-PERSONA-ENTITLEMENT-UI-CONSISTENCY-AUDIT-2026-05-28.md",
+      "bytes": 20591,
+      "blocks": 48,
+      "sha256": "42a51aed9be81345909607b7e19b7004e3a99141d03b6adbbed43cb8afec5df8"
+    },
+    {
+      "path": "/Users/Vivian/Documents/Laijuzhu/LAIJUZHU-BLUEPRINT.md",
+      "bytes": 127458,
+      "blocks": 256,
+      "sha256": "94adc2911b748ed351ca90acf5feedb80eb9c75f509d4e24a1682f2695ba88dc"
+    },
+    {
+      "path": "/Users/Vivian/Documents/Laijuzhu/docs/liveuin-ecosystem/LIVEUIN_ECOSYSTEM_SETUP_AND_BOUNDARY_AUDIT_2026-05-27.md",
+      "bytes": 17321,
+      "blocks": 40,
+      "sha256": "6ca3323ea747768c7560c2c96ea3fd07723d8963c8bd63c78d84f5cee0782fb8"
+    }
+  ],
+  "static_test_result": "Existing AST-only ops_authgate_canonical_session_smoke passed seven checks against exact deployed gate/app/auth_api copies. No imports of product runtime or database access."
+}

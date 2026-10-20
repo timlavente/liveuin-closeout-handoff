@@ -1,0 +1,715 @@
+[
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 142,
+    "path": "/api/core/payments/status",
+    "method": "router.get",
+    "function": "core_payment_status",
+    "calls": [
+      "router.get",
+      "Query",
+      "_raise_if_error",
+      "svc.payment_status",
+      "_payment_read_scope"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 151,
+    "path": "/api/core/payments/provider-edge/status",
+    "method": "router.get",
+    "function": "core_payment_provider_edge_status",
+    "calls": [
+      "router.get",
+      "_raise_if_error",
+      "provider_edge.status",
+      "_payment_read_scope"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 157,
+    "path": "/api/core/payments/rails",
+    "method": "router.get",
+    "function": "core_payment_rails",
+    "calls": [
+      "router.get",
+      "_raise_if_error",
+      "svc._envelope",
+      "_payment_read_scope",
+      "svc.payment_rail.rail_catalog"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 163,
+    "path": "/api/core/payments/price-books",
+    "method": "router.get",
+    "function": "core_payment_price_book_list",
+    "calls": [
+      "router.get",
+      "Query",
+      "_raise_if_error",
+      "_raise_if_error",
+      "_payment_read_scope",
+      "svc.list_price_books"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 172,
+    "path": "/api/core/payments/price-books",
+    "method": "router.post",
+    "function": "core_payment_price_book_create",
+    "calls": [
+      "router.post",
+      "Body",
+      "_raise_if_error",
+      "access_gateway.guarded_mutation",
+      "svc.create_price_book"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 182,
+    "path": "/api/core/payments/validation-overrides",
+    "method": "router.get",
+    "function": "core_payment_validation_override_list",
+    "calls": [
+      "router.get",
+      "Query",
+      "Query",
+      "_raise_if_error",
+      "_raise_if_error",
+      "_payment_read_scope",
+      "svc.list_validation_overrides"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 192,
+    "path": "/api/core/payments/validation-overrides",
+    "method": "router.post",
+    "function": "core_payment_validation_override_create",
+    "calls": [
+      "router.post",
+      "Body",
+      "_raise_if_error",
+      "access_gateway.guarded_mutation",
+      "svc.create_validation_override"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 202,
+    "path": "/api/core/payments/validation-records",
+    "method": "router.get",
+    "function": "core_payment_validation_record_list",
+    "calls": [
+      "router.get",
+      "Query",
+      "_raise_if_error",
+      "_raise_if_error",
+      "_payment_read_scope",
+      "svc.list_validation_records"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 211,
+    "path": "/api/core/payments/validation-records/{validation_id}/reconcile",
+    "method": "router.post",
+    "function": "core_payment_validation_reconcile",
+    "calls": [
+      "router.post",
+      "Body",
+      "_raise_if_error",
+      "access_gateway.guarded_mutation",
+      "svc.reconcile_validation_record"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 225,
+    "path": "/api/core/payments/provider-webhooks/stripe",
+    "method": "router.post",
+    "function": "core_payment_stripe_webhook",
+    "calls": [
+      "router.post",
+      "_raise_if_error",
+      "_raise_if_error",
+      "request.body",
+      "provider_edge.normalize_provider_webhook",
+      "svc.record_verified_provider_webhook",
+      "dict",
+      "_request_meta",
+      "_provider_secret_ref_id"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 232,
+    "path": "/api/core/payments/provider-webhooks/hitpay",
+    "method": "router.post",
+    "function": "core_payment_hitpay_webhook",
+    "calls": [
+      "router.post",
+      "_raise_if_error",
+      "_raise_if_error",
+      "request.body",
+      "provider_edge.normalize_provider_webhook",
+      "svc.record_verified_provider_webhook",
+      "dict",
+      "_request_meta",
+      "_provider_secret_ref_id"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 246,
+    "path": "/api/core/payments/provider-webhooks/wechat-pay",
+    "method": "router.post",
+    "function": "core_payment_wechat_pay_webhook",
+    "calls": [
+      "router.post",
+      "_raise_if_error",
+      "_raise_if_error",
+      "request.body",
+      "provider_edge.normalize_provider_webhook",
+      "svc.record_verified_provider_webhook",
+      "dict",
+      "_request_meta",
+      "_provider_secret_ref_id"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 260,
+    "path": "/api/core/payments/provider-webhooks/alipay",
+    "method": "router.post",
+    "function": "core_payment_alipay_webhook",
+    "calls": [
+      "router.post",
+      "_raise_if_error",
+      "_raise_if_error",
+      "request.body",
+      "provider_edge.normalize_provider_webhook",
+      "svc.record_verified_provider_webhook",
+      "dict",
+      "_request_meta",
+      "_provider_secret_ref_id"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 274,
+    "path": "/api/core/payments/payers",
+    "method": "router.post",
+    "function": "core_payment_payer_create",
+    "calls": [
+      "router.post",
+      "Body",
+      "_raise_if_error",
+      "access_gateway.guarded_mutation",
+      "svc.create_payer_profile"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 290,
+    "path": "/api/core/payments/bills",
+    "method": "router.post",
+    "function": "core_payment_bill_create",
+    "calls": [
+      "router.post",
+      "Body",
+      "_raise_if_error",
+      "access_gateway.guarded_mutation",
+      "svc.create_bill"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 306,
+    "path": "/api/core/payments/bills",
+    "method": "router.get",
+    "function": "core_payment_bill_list",
+    "calls": [
+      "router.get",
+      "Query",
+      "Query",
+      "Query",
+      "_raise_if_error",
+      "_raise_if_error",
+      "_payment_read_scope",
+      "svc.list_bills"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 317,
+    "path": "/api/core/payments/bills/{bill_id}",
+    "method": "router.get",
+    "function": "core_payment_bill_get",
+    "calls": [
+      "router.get",
+      "Query",
+      "_raise_if_error",
+      "_raise_if_error",
+      "_payment_read_scope",
+      "svc.get_bill"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 327,
+    "path": "/api/core/payments/intents",
+    "method": "router.post",
+    "function": "core_payment_intent_create",
+    "calls": [
+      "router.post",
+      "Body",
+      "_raise_if_error",
+      "access_gateway.guarded_mutation",
+      "svc.create_payment_intent"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 343,
+    "path": "/api/core/payments/intents/{intent_id}/provider-event",
+    "method": "router.post",
+    "function": "core_payment_provider_event",
+    "calls": [
+      "router.post",
+      "Body",
+      "_raise_if_error",
+      "access_gateway.guarded_mutation",
+      "svc.record_provider_event"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 362,
+    "path": "/api/core/payments/intents/{intent_id}/stripe/sandbox-payment-intent",
+    "method": "router.post",
+    "function": "core_payment_stripe_sandbox_intent",
+    "calls": [
+      "router.post",
+      "_raise_if_error",
+      "access_gateway.guarded_mutation",
+      "svc.create_stripe_sandbox_payment_intent",
+      "str",
+      "meta.get"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 373,
+    "path": "/api/core/payments/stripe/sandbox/igema-account",
+    "method": "router.post",
+    "function": "core_payment_igema_sandbox_account",
+    "calls": [
+      "router.post",
+      "Body",
+      "_raise_if_error",
+      "_raise_if_error",
+      "_payment_read_scope",
+      "access_gateway.guarded_mutation",
+      "svc.create_igema_stripe_sandbox_account"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 380,
+    "path": "/api/core/payments/stripe/sandbox/provider-accounts",
+    "method": "router.get",
+    "function": "core_payment_stripe_sandbox_provider_accounts",
+    "calls": [
+      "router.get",
+      "Query",
+      "_raise_if_error",
+      "_raise_if_error",
+      "_payment_read_scope",
+      "svc.list_provider_accounts"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 389,
+    "path": "/api/core/payments/refunds",
+    "method": "router.get",
+    "function": "core_payment_refund_list",
+    "calls": [
+      "router.get",
+      "Query",
+      "Query",
+      "Query",
+      "Query",
+      "Query",
+      "_raise_if_error",
+      "_raise_if_error",
+      "_payment_read_scope",
+      "_raise_if_error",
+      "svc.list_refunds",
+      "_viewer_role_for_actor",
+      "svc.case_svc.authorize_pass_case_access"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 413,
+    "path": "/api/core/payments/refunds",
+    "method": "router.post",
+    "function": "core_payment_refund_request",
+    "calls": [
+      "router.post",
+      "Body",
+      "_raise_if_error",
+      "access_gateway.guarded_mutation",
+      "svc.request_refund"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 429,
+    "path": "/api/core/payments/refunds/{refund_id}/transition",
+    "method": "router.post",
+    "function": "core_payment_refund_transition",
+    "calls": [
+      "router.post",
+      "Body",
+      "_raise_if_error",
+      "access_gateway.guarded_mutation",
+      "svc.transition_refund"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 446,
+    "path": "/api/core/payments/risk/cases/{case_id}",
+    "method": "router.get",
+    "function": "core_payment_risk_case",
+    "calls": [
+      "router.get",
+      "Query",
+      "Query",
+      "_raise_if_error",
+      "_raise_if_error",
+      "_payment_read_scope",
+      "svc.case_payment_risk"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 457,
+    "path": "/api/core/payments/risk/signals",
+    "method": "router.post",
+    "function": "core_payment_risk_signal",
+    "calls": [
+      "router.post",
+      "Body",
+      "_raise_if_error",
+      "access_gateway.guarded_mutation",
+      "svc.record_payment_risk"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 473,
+    "path": "/api/core/payments/risk/{risk_id}/review",
+    "method": "router.post",
+    "function": "core_payment_risk_review",
+    "calls": [
+      "router.post",
+      "Body",
+      "_raise_if_error",
+      "access_gateway.guarded_mutation",
+      "svc.review_payment_risk"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 490,
+    "path": "/api/core/payments/cases/{case_id}",
+    "method": "router.get",
+    "function": "core_payment_case_status",
+    "calls": [
+      "router.get",
+      "Query",
+      "Query",
+      "_raise_if_error",
+      "_raise_if_error",
+      "_payment_case_scope",
+      "svc.case_payment_status"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 501,
+    "path": "/api/core/payments/properties/{property_id}",
+    "method": "router.get",
+    "function": "core_payment_property_status",
+    "calls": [
+      "router.get",
+      "Query",
+      "Query",
+      "Query",
+      "Query",
+      "_raise_if_error",
+      "_viewer_role_for_actor",
+      "_raise_if_error",
+      "_payment_read_scope",
+      "_raise_if_error",
+      "svc.property_payment_status",
+      "svc.case_svc.authorize_pass_case_access"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 525,
+    "path": "/api/core/payments/properties/{property_id}/documents",
+    "method": "router.get",
+    "function": "core_payment_property_documents",
+    "calls": [
+      "router.get",
+      "Query",
+      "Query",
+      "Query",
+      "Query",
+      "_raise_if_error",
+      "_viewer_role_for_actor",
+      "_raise_if_error",
+      "_payment_read_scope",
+      "_raise_if_error",
+      "svc.property_documents",
+      "svc.case_svc.authorize_pass_case_access"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 549,
+    "path": "/api/core/payments/properties/{property_id}/receipts",
+    "method": "router.get",
+    "function": "core_payment_property_receipts",
+    "calls": [
+      "router.get",
+      "Query",
+      "Query",
+      "Query",
+      "Query",
+      "_raise_if_error",
+      "_viewer_role_for_actor",
+      "_raise_if_error",
+      "_payment_read_scope",
+      "_raise_if_error",
+      "svc.property_receipts",
+      "svc.case_svc.authorize_pass_case_access"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 573,
+    "path": "/api/core/payments/properties/{property_id}/refunds",
+    "method": "router.get",
+    "function": "core_payment_property_refunds",
+    "calls": [
+      "router.get",
+      "Query",
+      "Query",
+      "Query",
+      "Query",
+      "_raise_if_error",
+      "_viewer_role_for_actor",
+      "_raise_if_error",
+      "_payment_read_scope",
+      "_raise_if_error",
+      "svc.property_refunds",
+      "svc.case_svc.authorize_pass_case_access"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/deploy/core_payment_api.py",
+    "line": 597,
+    "path": "/api/core/payments/exceptions",
+    "method": "router.get",
+    "function": "core_payment_exceptions",
+    "calls": [
+      "router.get",
+      "Query",
+      "Query",
+      "Query",
+      "_raise_if_error",
+      "_raise_if_error",
+      "_payment_read_scope",
+      "svc.list_exceptions"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/ops_backend/app.py",
+    "line": 6661,
+    "path": "/connect/checkout/sessions",
+    "method": "app.post",
+    "function": "liveuin_connect_checkout_sessions",
+    "calls": [
+      "app.post",
+      "Body",
+      "_liveuin_connect_public_payload",
+      "str",
+      "_liveuin_connector_tier_policy",
+      "_liveuin_connector_read_registry",
+      "_liveuin_connect_upsert_provisional_site",
+      "_liveuin_connect_checkout_url",
+      "registry.setdefault",
+      "record.update",
+      "str",
+      "site_metadata.update",
+      "int",
+      "_liveuin_connector_slug",
+      "_liveuin_connect_db_upsert_site",
+      "_liveuin_connector_write_registry",
+      "_liveuin_connect_append_jsonl",
+      "HTTPException",
+      "isinstance",
+      "_liveuin_connect_workspace_id",
+      "_smart_inv_now_iso",
+      "_liveuin_connect_create_provider_checkout",
+      "isinstance",
+      "site.get",
+      "time.time",
+      "str",
+      "registry.setdefault",
+      "isinstance",
+      "str(payload.get('self_serve') or '').lower",
+      "_liveuin_connect_sandbox_checkout_enabled",
+      "str",
+      "policy.get",
+      "policy.get",
+      "policy.get",
+      "_liveuin_connect_billing_provider",
+      "_liveuin_connect_provider_summary",
+      "_liveuin_connect_append_jsonl",
+      "_liveuin_connect_provider_checkout_strict",
+      "str",
+      "str",
+      "str",
+      "str",
+      "site.get",
+      "uuid.uuid4",
+      "uuid.uuid4",
+      "policy.get",
+      "policy.get",
+      "str(exc).split",
+      "HTTPException",
+      "isinstance",
+      "provider_checkout.get",
+      "site.get",
+      "str",
+      "policy.get",
+      "_liveuin_connect_sandbox_checkout_enabled",
+      "_liveuin_connect_provider_checkout_strict",
+      "_smart_inv_now_iso",
+      "_smart_inv_request_meta",
+      "provider_checkout.get",
+      "provider_checkout.get",
+      "provider_checkout.get",
+      "_liveuin_connect_billing_provider",
+      "provider_checkout.get",
+      "provider_checkout.get",
+      "str",
+      "payload.get",
+      "uuid.uuid4"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/ops_backend/app.py",
+    "line": 6981,
+    "path": "/checkout/session/{checkout_id}",
+    "method": "app.get",
+    "function": "liveuin_connect_sandbox_checkout_page",
+    "calls": [
+      "app.get",
+      "Query",
+      "_liveuin_connect_sandbox_session",
+      "Response",
+      "_liveuin_connect_sandbox_checkout_enabled",
+      "HTTPException",
+      "_liveuin_connect_sandbox_checkout_html"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/ops_backend/app.py",
+    "line": 6997,
+    "path": "/checkout/session/{checkout_id}/simulate/{outcome}",
+    "method": "app.post",
+    "function": "liveuin_connect_sandbox_checkout_simulate",
+    "calls": [
+      "app.post",
+      "str(outcome or '').strip().lower",
+      "_liveuin_connect_sandbox_session",
+      "_liveuin_connect_apply_billing_webhook",
+      "RedirectResponse",
+      "_liveuin_connect_sandbox_checkout_enabled",
+      "HTTPException",
+      "HTTPException",
+      "str",
+      "JSONResponse",
+      "result.get",
+      "str",
+      "str(outcome or '').strip",
+      "request.headers.get",
+      "result.get",
+      "str",
+      "uuid.uuid4",
+      "_liveuin_connector_slug"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/ops_backend/app.py",
+    "line": 7253,
+    "path": "/connect/billing/webhooks",
+    "method": "app.post",
+    "function": "liveuin_connect_billing_webhooks",
+    "calls": [
+      "app.post",
+      "_liveuin_connect_billing_webhook_verification",
+      "str(request.headers.get('hitpay-event-type') or '').strip().lower",
+      "str(request.headers.get('hitpay-event-object') or '').strip().lower",
+      "_liveuin_connect_apply_billing_webhook",
+      "request.body",
+      "HTTPException",
+      "json.loads",
+      "isinstance",
+      "HTTPException",
+      "'.'.join",
+      "HTTPException",
+      "payload.get",
+      "str(request.headers.get('hitpay-event-type') or '').strip",
+      "str(request.headers.get('hitpay-event-object') or '').strip",
+      "payload.get",
+      "raw_body.decode",
+      "str",
+      "str",
+      "request.headers.get",
+      "request.headers.get"
+    ]
+  },
+  {
+    "source": "/opt/liveuin/ops_backend/app.py",
+    "line": 8282,
+    "path": "/connect/payment/status",
+    "method": "app.get",
+    "function": "liveuin_connect_payment_status",
+    "calls": [
+      "app.get",
+      "Query",
+      "_liveuin_connect_authorized_site",
+      "_liveuin_connect_policy",
+      "str",
+      "_liveuin_connect_workspace_id",
+      "policy.get",
+      "_liveuin_connect_base_url().rstrip",
+      "_liveuin_connect_base_url"
+    ]
+  }
+]

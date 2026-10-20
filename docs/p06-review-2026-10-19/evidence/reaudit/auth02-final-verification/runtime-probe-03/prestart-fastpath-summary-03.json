@@ -1,0 +1,1 @@
+{"status": "stopped", "modules_passed": 0, "last_module_attempted": null, "module_checks": [], "failure_code": "alternate_prestart_identity_mode", "private_evidence_written": true, "no_product_import": true, "no_dependency_install": true, "secret_values_output": false}

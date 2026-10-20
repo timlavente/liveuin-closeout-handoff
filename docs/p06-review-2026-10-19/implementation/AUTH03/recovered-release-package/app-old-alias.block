@@ -1,0 +1,11 @@
+    # AUTH02 App entry only; the shared Partner index remains unchanged.
+    location = /index.html {
+        alias /var/www/liveuin-auth02-releases/auth02-34c8511dd5a2a5ad/app-entry.html;
+        default_type text/html;
+        add_header X-LiveUin-Layer "app_member_site" always;
+        add_header X-LiveUin-Service "liveuin-app-ui" always;
+        add_header X-Content-Type-Options "nosniff" always;
+        include /etc/nginx/snippets/liveuin_public_static_security_headers.conf;
+        add_header Cache-Control "no-store" always;
+    }
+

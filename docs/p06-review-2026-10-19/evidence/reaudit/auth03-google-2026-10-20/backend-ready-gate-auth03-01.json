@@ -1,0 +1,76 @@
+{
+  "approved_named_account_ready": true,
+  "auth02_frozen": true,
+  "backend_candidate_verified": true,
+  "candidate_manifest_sha256": "785bfec58a76aeeea01484814285d6a43a1d7783a0c4a5c0d2156f1d25b57793",
+  "continuity_observed_utc": "2026-10-20T08:56:16.323135+00:00",
+  "continuity_services": {
+    "liveuin-identity-public-prod.service": {
+      "pid": 3675726,
+      "start_monotonic": "3288788779292"
+    },
+    "liveuin-public-api.service": {
+      "pid": 296370,
+      "start_monotonic": "2290397558094"
+    },
+    "liveuin-public-preview-ui.service": {
+      "pid": 1041,
+      "start_monotonic": "10572259"
+    },
+    "ops-backend@liveuin.service": {
+      "pid": 3774019,
+      "start_monotonic": "3301015560491"
+    }
+  },
+  "continuity_sources": {
+    "/opt/liveuin-identity-public/current/deploy/core_identity_api.py": "30f6d81466d15fad9451445449682f359969b405e21a641a7cd4523ab863b5fd",
+    "/opt/liveuin-identity-public/current/deploy/core_identity_google_oauth.py": "b708f7e27f6dc3991c771d62cff38bbd2c610e2de60ae18694c1e6def0d47156",
+    "/opt/liveuin-identity-public/current/deploy/core_identity_public.py": "8340f026f68f5048bbe2e5fc4744f17366dcf134730d4349213c549319630019",
+    "/opt/liveuin-identity-public/current/deploy/core_identity_release_admission.py": "fefc124fb49131510b5daa801d810608ff09e6c1bdccef54ea72bdf07a9b8c62",
+    "/opt/liveuin-identity-public/current/deploy/core_identity_session.py": "a3f4cedfc79003abebbdaacc12e59eb82086b0b6e5534ed08eb817a54989585c",
+    "/opt/liveuin-identity-public/current/deploy/core_identity_social.py": "44680d3685415ec4ce209851f2ffa52cbe207f72e487e80543000ef0d920b709",
+    "/opt/liveuin-identity-public/current/prod_app.py": "6311c28a8b20d2a30423a9e299d97f114670f6a106d6aa9f1888617a9a157f11",
+    "/opt/liveuin/deploy/core_customer_card_api.py": "cb04159dd5d6e5ddc13e19f1a2e9c7f41d0eff15591d1b61bb68d67d3a4efb91",
+    "/opt/liveuin/deploy/core_customer_card_contract.py": "7684c0a0ba9edacc51fb15df245e628e579f1c69ac30604ea31be21c8bd53d83",
+    "/opt/liveuin/deploy/core_customer_card_provider.py": "a2034f5d0990719d39cbf378c92a87e7b72011b31a99483ccb75cecab06ba2dc",
+    "/opt/liveuin/deploy/core_customer_card_service.py": "def3ce375d9d3adc769dc6501d5f5ce51bc081127ff875859b0d8a4abe190983",
+    "/opt/liveuin/deploy/core_customer_card_store.py": "b479055e65c9a571b2a3f86d4e893d1bc5c9fdc940929bd13597ff8d2339b175",
+    "/opt/liveuin/deploy/core_payment_rail.py": "20ca0cb4a6f4325047bb67da5ec7ecb3fe302cee80351f030a27079f71d64c44",
+    "/opt/liveuin/deploy/core_resident_bills_api.py": "97e3ff343daa1b5dcd977edb02b0cfe6049cbf3aefef81351880ffcb919a6c72",
+    "/opt/liveuin/deploy/core_resident_customer_scope.py": "da3049098f62c53faa134e5c24cc230e72ef69d7a6276688b7611d21d951e4fe",
+    "/opt/liveuin/deploy/core_resident_gateway.py": "676d3de8f87b3929ab13cd03759e58748419e4fb5548ca1209e4ce2069348210",
+    "/opt/liveuin/deploy/core_stripe_sandbox_api.py": "2eb20cb1dd95e48ce25df0844e838c458a218f0290518657bd8f2c66099f30c6",
+    "/opt/liveuin/ops_backend/app.py": "fcecabe419ce5aa080155f0e29e34eee79596d05f3838a6180dad2ce9795bbf2",
+    "/opt/liveuin/ops_backend/app/main.py": "b8f00791b71b11e93c72980ad31fa0eac3d18d0b03a0e4e4dd5f172620c85c2a",
+    "/opt/liveuin/public-home-preview.py": "e523924bac421433ad34ea6587353b0448bd42aeba950e27029d654ffb063099"
+  },
+  "evidence_sha256": {
+    "FREEZE-ISSUE-AUTH-002.md": "0891b096bc3bf94a14f42ef219ebf243657d78b3b2fc269a8758b44bd23dfe28",
+    "auth03-payment-lock-01.json": "78351e58fc94cc56b1bc8de0e4e507f2d112f780bdda8afe30a8d1ad39fe8844",
+    "continuity-observed-auth03-01.json": "c16cc366986710b1d961d99c31685806a696a653fbdf0c7012668f7bb7f0dac2",
+    "google-web-presence-13.json": "dcdc7a2c9ce984b0e7e27cfc05dd3738d697c85fdcdf65e4b563192e0f93e677",
+    "member-admission-proof-13.json": "cb62d430b02497c92ca144778167de3d858927d7f4dcbbbd35bc91e7280ad218",
+    "parent-api-proof-08.json": "0fe24bd01adb3e6483df13b946907fdc9f11beac086d399966ab41507ede31e2",
+    "provider-change-classification-15.json": "61d72da40c53c4e92b3a6b9613ed1e8eac1858a9f428d09069208240815143c9",
+    "provider-change-review-15.md": "0a7bbe66c2f52fc14eb293ae6ddd570d2b00beb18adfedccb443e2a2645684c0"
+  },
+  "evidence_summary": {
+    "auth02": "Passed freeze0891b096 retains actual canonical parent password, role refusal, allowed return, reload, both logout controls and public handoffs. This browser-only candidate preserves that auth code byte-for-byte.",
+    "browser_scope_limit": "App activation only; new notice/no-active-Google browser proof is required before public pointer activation. No Google provider round trip is claimed.",
+    "current_source": "19fresh normalSSH hashes match plus protectedmain confirmed by current root classifier; four active services and start times recorded. Installer and activation runner recheck these current bindings.",
+    "google": "The same member process and Google source versions remain active as selected configuration observation05:30:25Z. Native mode is configured; browser redirect and secret inputs are absent. No provider call or new protected configuration read is claimed. FrozenAUTH03 explicitly allows unavailable browser notice without active button.",
+    "payment": "Fresh root read08:55:59Z classifies Ops3774019 and two public processes. All13reviewed source pins match; all four live rail flags are disabled; Core key is test-only and legacy dispatch is reference/no external provider. Customer-card sandbox setup remains enabled.",
+    "payment_scope_limit": "Reviewed LiveUIN routes and process-startup settings only. No in-process introspection, universal Pay readiness, checkout, charge or refund proof."
+  },
+  "google_browser_unavailable_approved": true,
+  "imported_tenancies_used_or_contacted": false,
+  "logout_revocation_proven": true,
+  "member_pid": 3675726,
+  "ops_pid": 3774019,
+  "phase": "backend_ready_for_app",
+  "pilot_admission_closed": true,
+  "prepared_utc": "2026-10-20T09:08:41.548462+00:00",
+  "public_access_switch_changed": false,
+  "public_live_charging_off": true,
+  "row_id": "AUTH-03"
+}

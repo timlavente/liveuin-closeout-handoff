@@ -1,0 +1,178 @@
+{
+  "purpose": "AUTH02 staged backend source and bounded metadata; not a deployment or pass claim",
+  "retained_at": "2026-10-19T18:58:32.186893+00:00",
+  "excluded": "deployment controller still under review; no database or credential files",
+  "hydration_check": "all copied inputs and existing targets readable, full-size and positive blocks when nonempty",
+  "files": [
+    {
+      "path": "PROPOSED-COHORT-NOT-ACTIVATED.json",
+      "bytes": 238,
+      "sha256": "5c3a34e7678cef3d90917d17069180247f1592c92786372f20807a198c9a3eb1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8064,
+      "sha256": "f5a2f64ebb12146cd1c18947c1c3920ad50a6cba94db0b1f3e5fe09c43fbc0bd"
+    },
+    {
+      "path": "baseline/core_identity_api.py",
+      "bytes": 39837,
+      "sha256": "35cb1b2ed434eec9bce941eb0f4a6642d28a88ffb005cbec8cd4d4662f436132"
+    },
+    {
+      "path": "baseline/core_identity_public.py",
+      "bytes": 83871,
+      "sha256": "11077e9fed401168683d5c8c31117dd2a57bd5f403ed6cfa379f58ad55f8a1b8"
+    },
+    {
+      "path": "baseline/core_identity_session.py",
+      "bytes": 75655,
+      "sha256": "cfaf971913f6a49960f5cc54c8877641cc5db1b00de4c42fa8259c673cc82f7e"
+    },
+    {
+      "path": "baseline/core_identity_social.py",
+      "bytes": 45917,
+      "sha256": "d181bcadd104229ca04eb941fb745a7dab209387bfefebfea3009d7b88994903"
+    },
+    {
+      "path": "baseline-9095/core_identity_api.py",
+      "bytes": 41141,
+      "sha256": "fcf8c612f2442ab05a8950523890806af7b89f88e9cbf801fcc5561ec1d6acc4"
+    },
+    {
+      "path": "build_candidate.py",
+      "bytes": 16697,
+      "sha256": "a13223b7d6aac5869c7388e7473a9a6f801d8b90157e0c459f13d7b9bec23e11"
+    },
+    {
+      "path": "candidate/deploy/core_identity_api.py",
+      "bytes": 41286,
+      "sha256": "30f6d81466d15fad9451445449682f359969b405e21a641a7cd4523ab863b5fd"
+    },
+    {
+      "path": "candidate/deploy/core_identity_public.py",
+      "bytes": 86537,
+      "sha256": "8340f026f68f5048bbe2e5fc4744f17366dcf134730d4349213c549319630019"
+    },
+    {
+      "path": "candidate/deploy/core_identity_release_admission.py",
+      "bytes": 2776,
+      "sha256": "fefc124fb49131510b5daa801d810608ff09e6c1bdccef54ea72bdf07a9b8c62"
+    },
+    {
+      "path": "candidate/deploy/core_identity_session.py",
+      "bytes": 76041,
+      "sha256": "a3f4cedfc79003abebbdaacc12e59eb82086b0b6e5534ed08eb817a54989585c"
+    },
+    {
+      "path": "candidate/deploy/core_identity_social.py",
+      "bytes": 46508,
+      "sha256": "44680d3685415ec4ce209851f2ffa52cbe207f72e487e80543000ef0d920b709"
+    },
+    {
+      "path": "candidate-9095/deploy/core_identity_api.py",
+      "bytes": 44386,
+      "sha256": "a0834b412c06263d1ca593de67cc2514471cf4fdd7a83c860608be998fc65fcb"
+    },
+    {
+      "path": "candidate-9095-manifest.json",
+      "bytes": 351,
+      "sha256": "8409272a41b5c232f47b2fb9a2e045acb02aa9ba1912ba57425c45bddde4dd01"
+    },
+    {
+      "path": "candidate-9095.diff",
+      "bytes": 6307,
+      "sha256": "518b31424a6b7a49a9a5ba0cc14fba43681432a76c60e9914d65d7aaf0e3fea2"
+    },
+    {
+      "path": "candidate-manifest.json",
+      "bytes": 1265,
+      "sha256": "7886c2a9f64da19465a0825860975487f9609385711a915f3c8623cba6617e41"
+    },
+    {
+      "path": "candidate.diff",
+      "bytes": 19273,
+      "sha256": "348e7f3f7e991bf5ad864c5f10bf19f4f1d4b84efd2bcdc8505e858e07667a4f"
+    },
+    {
+      "path": "evidence/admission-tests.log",
+      "bytes": 3520,
+      "sha256": "d3dcb02eb339976fba7d88525a3747915b4a48c1a3d8af95d10d5a97affce09b"
+    },
+    {
+      "path": "evidence/api-function-scope.json",
+      "bytes": 670,
+      "sha256": "a7fc56bb1f2742aac20651082cb86da10590eb76ca332a816acdfaeb208b34c4"
+    },
+    {
+      "path": "evidence/auth02-startup-declarations.json",
+      "bytes": 940634,
+      "sha256": "8a905e5a7c84cef38fa402bb02fee767757df931f90c3a3622b73ab18f63f123"
+    },
+    {
+      "path": "evidence/auth02-startup-metadata.json",
+      "bytes": 6709,
+      "sha256": "072f5588d130bd3f894d386dbc2471bbf26e591221c7dabbe8832c41a96994ed"
+    },
+    {
+      "path": "evidence/fresh-credential-binding-metadata.json",
+      "bytes": 3516,
+      "sha256": "b5904da98da37baa650568d3afb928589f553f713cea9b8eb726f4435ad78585"
+    },
+    {
+      "path": "evidence/fresh-unit-metadata.json",
+      "bytes": 4122,
+      "sha256": "cd86474e98d10aad402fd6ea03f88847768d51e93c74df017c976244a50fbc0a"
+    },
+    {
+      "path": "evidence/legacy-preview-route-map.json",
+      "bytes": 1404,
+      "sha256": "5baa637facd44171331778d67110fde3ee55aa18850764f5e1bf07f6f67d41e8"
+    },
+    {
+      "path": "evidence/prior-candidate-manifest.json",
+      "bytes": 1265,
+      "sha256": "7dc042f81ce4801b5fa7aa463806538c7b9595e25bf4d2339b7330c2d2b987d4"
+    },
+    {
+      "path": "evidence/prior-compatibility-9095-manifest.json",
+      "bytes": 351,
+      "sha256": "c236e1989e91754b59b0983ccdedd4587c226ceef1a434a5fca9a8bed4fca4b7"
+    },
+    {
+      "path": "evidence/prior-raw-preview-9095-manifest.json",
+      "bytes": 314,
+      "sha256": "d2ca2cae1a63119270ae0d84d873f17134ccc9f06788889e09602fc8201a8d85"
+    },
+    {
+      "path": "evidence/prior-raw-preview-candidate-manifest.json",
+      "bytes": 1265,
+      "sha256": "eb32d7e13dc5b84a2cedd97e36a644f5e5de1d0437bade5c74500763073b2ce3"
+    },
+    {
+      "path": "fallback-9095/deploy/core_identity_api.py",
+      "bytes": 33442,
+      "sha256": "aee0ce11a4ffe48242b18dbde4a67463409765d80f43f15a68c6d40facc6e143"
+    },
+    {
+      "path": "fallback-9095-manifest.json",
+      "bytes": 322,
+      "sha256": "20ec9579148702bc2bcf54399676cbd7206b8dc8bc86c4e25534ff80b8e69a8b"
+    },
+    {
+      "path": "source/core_identity_release_admission.py",
+      "bytes": 2776,
+      "sha256": "fefc124fb49131510b5daa801d810608ff09e6c1bdccef54ea72bdf07a9b8c62"
+    },
+    {
+      "path": "source/preview_route_guard.txt",
+      "bytes": 1166,
+      "sha256": "c0c213ce84cda657be9d2b4edf7299afb894f0b24b236385c42bdd2d70b13184"
+    },
+    {
+      "path": "tests/test_admission.py",
+      "bytes": 14671,
+      "sha256": "6b598dfd25d62d4c0b95a6c6ab910412ee70d579587095f5c57f65c06b230691"
+    }
+  ]
+}

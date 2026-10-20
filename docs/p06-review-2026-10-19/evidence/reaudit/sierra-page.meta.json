@@ -1,0 +1,14 @@
+{
+  "observed_at_sgt": "2026-10-19T23:15:48+08:00",
+  "method": "GET",
+  "url": "https://www.liveuin.com/stays/listing_ef55a13993724d8e8d1201cb",
+  "status": 200,
+  "effective_url": "https://www.liveuin.com/stays/listing_ef55a13993724d8e8d1201cb",
+  "tls_verify_result": "0",
+  "redirects": "0",
+  "curl_exit": 0,
+  "error": "",
+  "body_sha256": "f30c71379be2c6e799c634bfdfce8e737b401887b40e351ba23d3be0150fefe8",
+  "body_bytes": 638,
+  "body_saved": true
+}

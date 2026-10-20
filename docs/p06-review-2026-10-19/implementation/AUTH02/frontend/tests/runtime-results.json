@@ -1,0 +1,86 @@
+{
+  "suite": "AUTH02 local synthetic contract tests; no live account or API calls",
+  "passed": 20,
+  "results": [
+    {
+      "name": "canonical active and authorized profiles pass without invented roles",
+      "status": "pass"
+    },
+    {
+      "name": "empty or conflicting canonical projections stay closed",
+      "status": "pass"
+    },
+    {
+      "name": "unverified, preview, blocked and incomplete identities stay closed",
+      "status": "pass"
+    },
+    {
+      "name": "expired/future/malformed entitlement bounds stay closed",
+      "status": "pass"
+    },
+    {
+      "name": "selected actor and per-entitlement permissions must agree",
+      "status": "pass"
+    },
+    {
+      "name": "legitimate dual-profile actor retains independent grants and canonical active selection",
+      "status": "pass"
+    },
+    {
+      "name": "safe continuation rejects open redirects, controls, role switches and nested URLs",
+      "status": "pass"
+    },
+    {
+      "name": "real password contract uses only email/password then strict resolve",
+      "status": "pass"
+    },
+    {
+      "name": "invalid password never stores credential or calls preview challenge",
+      "status": "pass"
+    },
+    {
+      "name": "old account is revoked before a new password attempt and cannot rehydrate on failure",
+      "status": "pass"
+    },
+    {
+      "name": "failed old-account revocation preserves retry credential and prevents new password exchange",
+      "status": "pass"
+    },
+    {
+      "name": "credential storage failure revokes the issued credential using its explicit headers",
+      "status": "pass"
+    },
+    {
+      "name": "malformed credential or ambiguous response cannot authenticate",
+      "status": "pass"
+    },
+    {
+      "name": "incomplete profile revokes newly issued session before clearing locally",
+      "status": "pass"
+    },
+    {
+      "name": "acknowledged server logout clears bridge, selection and all private caches",
+      "status": "pass"
+    },
+    {
+      "name": "ambiguous logout keeps credentials for retry but closes cache and reload bootstrap",
+      "status": "pass"
+    },
+    {
+      "name": "post-password revocation failure remains closed and retryable",
+      "status": "pass"
+    },
+    {
+      "name": "logout serializes pending password exchange and prevents late session hydration",
+      "status": "pass"
+    },
+    {
+      "name": "old bootstrap response cannot reopen a logged-out UI",
+      "status": "pass"
+    },
+    {
+      "name": "public host never posts password or attempts resident resolution",
+      "status": "pass"
+    }
+  ]
+}

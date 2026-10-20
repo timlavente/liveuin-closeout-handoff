@@ -1,0 +1,1 @@
+import{j as s}from"./index-DPZwxwE9.js";import{O as m,P as x}from"./PageHeader-D_rnAg2S.js";const i=({children:e,eyebrow:p,title:r,subtitle:o,actions:a,meta:l,contextLabel:t,role:n})=>s.jsxs(m,{navPreset:"ops",contextLabel:t,role:n??{label:"Ops",scope:"Internal workspace"},children:[s.jsx(x,{eyebrow:p,title:r,subtitle:o,actions:a,meta:l}),e]});export{i as O};

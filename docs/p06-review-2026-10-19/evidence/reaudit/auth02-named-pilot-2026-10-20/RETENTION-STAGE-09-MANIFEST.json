@@ -1,0 +1,62 @@
+{
+  "retained_at_utc": "2026-10-20T05:22:29.230344+00:00",
+  "scope": "six sanitized result JSON files plus additive note; earlier evidence unchanged",
+  "issue_status": "AUTH02 active; member closed fallback and inert frontend stage; no issue pass",
+  "hydration_check": "All retained inputs fully read, positive local blocks, sizes and SHA-256 verified",
+  "files": [
+    {
+      "path": "frontend-stage-09.json",
+      "bytes": 195,
+      "sha256": "dd70f13751423879bbf1e788b7a661cba109e9081817c1efea7f7bacd8eb4e5e",
+      "source_host": "liveuin-hk",
+      "source_path": "/tmp/liveuin-r01-access-check-20261020/frontend-stage-09.json",
+      "source_checksum_verified_during_retrieval": true
+    },
+    {
+      "path": "member-closed-recovery-09.json",
+      "bytes": 737,
+      "sha256": "191cb1a39f3affb101543411b749c8ff70fc57bba465a55f72554228525ef638",
+      "source_host": "liveuin-hk",
+      "source_path": "/tmp/liveuin-r01-access-check-20261020/member-closed-recovery-09.json",
+      "source_checksum_verified_during_retrieval": true
+    },
+    {
+      "path": "member-retry-10.json",
+      "bytes": 275,
+      "sha256": "cb51991d143fab3452278e4e29088f51760f2487d226d647cea0b155a92bf625",
+      "source_host": "liveuin-hk",
+      "source_path": "/tmp/liveuin-r01-access-check-20261020/member-retry-10.json",
+      "source_checksum_verified_during_retrieval": true
+    },
+    {
+      "path": "member-retry-11.json",
+      "bytes": 270,
+      "sha256": "6cc5241ec1546df92f1593c6caa3c198324398651c07c991fe1641fa359eaa0c",
+      "source_host": "liveuin-hk",
+      "source_path": "/tmp/liveuin-r01-access-check-20261020/member-retry-11.json",
+      "source_checksum_verified_during_retrieval": true
+    },
+    {
+      "path": "member-retry-12.json",
+      "bytes": 270,
+      "sha256": "6cc5241ec1546df92f1593c6caa3c198324398651c07c991fe1641fa359eaa0c",
+      "source_host": "liveuin-hk",
+      "source_path": "/tmp/liveuin-r01-access-check-20261020/member-retry-12.json",
+      "source_checksum_verified_during_retrieval": true
+    },
+    {
+      "path": "member-reconcile-diagnostic-12.json",
+      "bytes": 967,
+      "sha256": "26f872c09f74b942424e7aa5ae99dfbeb741c811eaac2cb1ac9d8781b20b95ec",
+      "source_host": "liveuin-hk",
+      "source_path": "/tmp/liveuin-r01-access-check-20261020/member-reconcile-diagnostic-12.json",
+      "source_checksum_verified_during_retrieval": true
+    },
+    {
+      "path": "NAMED-PILOT-WORKING-EVIDENCE-01.md",
+      "bytes": 3557,
+      "sha256": "90e9761b317313953bf3ce94da7298d864951f777cc9e26ba4db4da658610dc5",
+      "source": "new additive working evidence note"
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+[
+  {
+    "hostname": "liveuin.com",
+    "addresses": [
+      "104.21.78.8",
+      "172.67.214.105"
+    ],
+    "tls_version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Google Trust Services"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "WE1"
+        ]
+      ]
+    ],
+    "valid_from": "Aug 26 05:50:18 2026 GMT",
+    "valid_until": "Nov 24 06:50:06 2026 GMT",
+    "SAN": [
+      [
+        "DNS",
+        "liveuin.com"
+      ],
+      [
+        "DNS",
+        "*.liveuin.com"
+      ]
+    ],
+    "verification": "verified using host CA store"
+  },
+  {
+    "hostname": "www.liveuin.com",
+    "addresses": [
+      "104.21.78.8",
+      "172.67.214.105"
+    ],
+    "tls_version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Google Trust Services"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "WE1"
+        ]
+      ]
+    ],
+    "valid_from": "Aug 26 05:50:18 2026 GMT",
+    "valid_until": "Nov 24 06:50:06 2026 GMT",
+    "SAN": [
+      [
+        "DNS",
+        "liveuin.com"
+      ],
+      [
+        "DNS",
+        "*.liveuin.com"
+      ]
+    ],
+    "verification": "verified using host CA store"
+  },
+  {
+    "hostname": "app.liveuin.com",
+    "addresses": [
+      "129.226.123.206"
+    ],
+    "tls_version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Let's Encrypt"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "YR1"
+        ]
+      ]
+    ],
+    "valid_from": "Aug 30 19:44:27 2026 GMT",
+    "valid_until": "Nov 28 19:44:26 2026 GMT",
+    "SAN": [
+      [
+        "DNS",
+        "app.liveuin.com"
+      ]
+    ],
+    "verification": "verified using host CA store"
+  },
+  {
+    "hostname": "host.liveuin.com",
+    "addresses": [
+      "129.226.123.206"
+    ],
+    "tls_version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Let's Encrypt"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "YR1"
+        ]
+      ]
+    ],
+    "valid_from": "Aug 30 19:44:36 2026 GMT",
+    "valid_until": "Nov 28 19:44:35 2026 GMT",
+    "SAN": [
+      [
+        "DNS",
+        "host.liveuin.com"
+      ]
+    ],
+    "verification": "verified using host CA store"
+  },
+  {
+    "hostname": "ops.liveuin.com",
+    "addresses": [
+      "129.226.123.206"
+    ],
+    "tls_version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Let's Encrypt"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "YR2"
+        ]
+      ]
+    ],
+    "valid_from": "Sep 22 16:18:28 2026 GMT",
+    "valid_until": "Dec 21 16:18:27 2026 GMT",
+    "SAN": [
+      [
+        "DNS",
+        "ops.liveuin.com"
+      ]
+    ],
+    "verification": "verified using host CA store"
+  },
+  {
+    "hostname": "api.liveuin.com",
+    "addresses": [
+      "129.226.123.206"
+    ],
+    "tls_version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Let's Encrypt"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "YR1"
+        ]
+      ]
+    ],
+    "valid_from": "Aug 28 08:03:57 2026 GMT",
+    "valid_until": "Nov 26 08:03:56 2026 GMT",
+    "SAN": [
+      [
+        "DNS",
+        "api.liveuin.com"
+      ]
+    ],
+    "verification": "verified using host CA store"
+  },
+  {
+    "hostname": "pay.igema.space",
+    "addresses": [
+      "35.193.223.149"
+    ],
+    "tls_version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Let's Encrypt"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "YE2"
+        ]
+      ]
+    ],
+    "valid_from": "Oct  8 01:24:28 2026 GMT",
+    "valid_until": "Jan  6 01:24:27 2027 GMT",
+    "SAN": [
+      [
+        "DNS",
+        "pay.igema.space"
+      ]
+    ],
+    "verification": "verified using host CA store"
+  },
+  {
+    "hostname": "core-staging.liveuin.com",
+    "error": "[Errno 8] nodename nor servname provided, or not known"
+  }
+]

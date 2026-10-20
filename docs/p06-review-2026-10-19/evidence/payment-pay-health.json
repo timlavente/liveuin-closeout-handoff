@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-10-19T14:48:16.492364+00:00",
+  "url": "https://pay.igema.space/healthz",
+  "method": "GET",
+  "http_status": 200,
+  "public_health": {
+    "ok": true,
+    "version": "0.9.0-staging",
+    "stripe_mode": "test",
+    "live_enabled": false,
+    "refund_executor_enabled": false,
+    "db_backend": "sqlite",
+    "airwallex": {
+      "mode": "demo",
+      "routing_enabled": false,
+      "live_enabled": false,
+      "webhook_secret_set": true
+    }
+  }
+}

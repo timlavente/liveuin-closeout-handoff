@@ -1,0 +1,60 @@
+{
+  "status": "local_mock_checks_passed",
+  "checks": 13,
+  "release_script_sha256": "599c047e4bc8650bae0556da7c98bfa354123a90d9f5143923f5a3ec93caaa19",
+  "production_execution": false,
+  "tests": [
+    {
+      "name": "source compiles without executing main",
+      "passed": true
+    },
+    {
+      "name": "spec and manifest pins",
+      "passed": true
+    },
+    {
+      "name": "exact 364 candidate artifacts",
+      "passed": true
+    },
+    {
+      "name": "current App alias replaced exactly; mobile additions and mode retained",
+      "passed": true
+    },
+    {
+      "name": "App explicit recovery restores the prior AUTH02 alias",
+      "passed": true
+    },
+    {
+      "name": "other nginx drift stops before mutation",
+      "passed": true
+    },
+    {
+      "name": "failed App static smoke restores prior AUTH02 alias and reloads baseline",
+      "passed": true
+    },
+    {
+      "name": "post-edit nginx syntax failure restores prior alias before testing recovery",
+      "passed": true
+    },
+    {
+      "name": "failure after first atomic write still recovers",
+      "passed": true
+    },
+    {
+      "name": "recovery never reloads unrelated changed config",
+      "passed": true
+    },
+    {
+      "name": "atomic public pointer and exact original restoration",
+      "passed": true
+    },
+    {
+      "name": "public recovery refuses someone else's pointer",
+      "passed": true
+    },
+    {
+      "name": "incomplete browser proof cannot activate public pointer",
+      "passed": true
+    }
+  ]
+}

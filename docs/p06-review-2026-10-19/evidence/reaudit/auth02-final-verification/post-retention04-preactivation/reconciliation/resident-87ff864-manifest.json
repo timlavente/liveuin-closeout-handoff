@@ -1,0 +1,134 @@
+{
+  "schema_version": "resident_core_candidate_v1",
+  "baseline": {
+    "app.liveuin.com.conf": "dd2a557bd58adc7dc2bb823fa083f748a608039d9c7077d517e1283c9bf4013b",
+    "core_access_gateway.py": "0c1414470b63e844a106577abe68153282cf53ceeceff92bfaa9a12b625a9bfd",
+    "core_access_service.py": "2afcc7539c68ab7c66ab2ccee2786b77e82561eabb8e92e47fb5cea8cdaee777",
+    "core_access_store.py": "6f5913db1768885444061d582bbbeef66d173ec80d9dbc3e517d3c97d935f170",
+    "core_adapter_replay_store.py": "d20920edb46c9569d900fbb5ec250afc1bdd8c8397368f5f33ad1f89f01cce97",
+    "core_adapter_secret_registry.py": "1d39dec2b75b07f70841ef6f57993fa697f47b1683502ffcc76dc8815c30736d",
+    "core_adapter_signature.py": "a805d393b282082cfbf79a62e9e7893d7704db039da3c09af17437a694c941a7",
+    "core_agreement_runtime_service.py": "b6a7ea796d06edc1d4c3b09ce2f123d095efe98058f140349d107c091ad30409",
+    "core_api_gateway.py": "73a5b3aff55e6498ddf9355dd1a182e3e7ca13a9745ca43eeefe8c14b77645a5",
+    "core_booking_service.py": "9d433b9de5de52a7d73716b07610f775effc5f25597f742bd686d170d499e693",
+    "core_booking_store.py": "c9c62bcdade5a66c26c1c91354f70433d21c96d7125537050f4ded916a571459",
+    "core_case_api.py": "7df17a7a919ac4e87d1e6519838abe5ef29e30e3bd35e4a7a1c9568d3deecb8c",
+    "core_case_service.py": "8406fae85543a34acce17f56c9c6c59889b0dbb68b414d3292ca602d86344342",
+    "core_case_store.py": "2eaeb52ad5cedda5c9bc013ac7fe41564c81395a929b6e33ffbcd8a03b401ade",
+    "core_community_service.py": "de8445bdd7603172309fd1d8160b178738d47772892ec45d279c64fe0323c380",
+    "core_community_store.py": "f94906dff38897cdf1cddb530f4b4edbebcfd8926bf83c5e558f705bde9d47ed",
+    "core_compliance_service.py": "e5575aa2ade542aaee4068f4d8cde890e7d6bb19179e98086ab09cdcbc0db0a5",
+    "core_compliance_store.py": "c07183c16d8cfb0f450886bcabe00ab38b14961a9cfa28cef76dedcb4d23e1bf",
+    "core_contract_template_service.py": "c57c628ecc113bbf68328099c0069761d53f22499a5d393847c900a3c1a3877d",
+    "core_contract_template_store.py": "e958ec9bae520f3de570e8b9747ffd98405200047254a0bda621a82a2642ca39",
+    "core_country_rules_service.py": "aae0f6c4faf914ce0dceec01662dcdc14bf3c35eb2e81dca80176d7b6b7788ba",
+    "core_country_rules_store.py": "4bb5c42a359ffbc3ade9ddc5476d6bd7b2f5b39d48b076a0b953141d7f726551",
+    "core_demand_rental_offer_workflow.py": "ab80bf8d778b69d78a989d16503350b54715105b75a4e11ca3c1359adc206458",
+    "core_demand_store.py": "6712721c219aaff276da3b81cbc04126a4e55f252d9e89f6e051985118f5c3be",
+    "core_document_center_api.py": "8b4be0566f06fe7be98e9c61d509be84e1dafe332442c985c626ad0bcca55618",
+    "core_document_center_service.py": "8be0c939d378688c7c2a625a54363307964591d7b930a4e839f77d05f3730253",
+    "core_finance_runtime_service.py": "6a73d600aa7aef3aaf48a94bd5c8f3792c7a97c95ff00b09fb9cf2dcda2c0f1c",
+    "core_g11_revocation_enforcement.py": "261adb8be62d171577b4538d0e8b0700e7db0501155cfa8ecfa63a0092b4a2e1",
+    "core_identity_login_store.py": "e8b369634c1875519e7883f439388f5b02a062849569fbb1a4663160baf95d94",
+    "core_identity_profile_authorization.py": "684a4480885becddc6e505f6f0c02dfe27ea9b82198259c6934fd47d3a7820da",
+    "core_identity_service.py": "8280891cd0d843124d7f6d4b71ed9d5655916d109f6c61630d8ba901310bd94a",
+    "core_identity_session.py": "11b7ab17300c3a2ea8a0294470f9872496c6e4f8308598edad97f680ea9fefdb",
+    "core_identity_session_store.py": "c0f2a07b7778aef761deee03b32adc61bfa257cb1edeae933416438508a265c3",
+    "core_identity_store.py": "8435560b88230df6737ff3dca8dc52bafd881dd7ebb01c3b961356ae9cf04f36",
+    "core_identity_workspace_access.py": "729531a7a562dd0fc7d53f300b2664d462593024163264230e188aba4ab6493d",
+    "core_inventory_api.py": "683910b8357554d67317f98b85509b12b5a1f0ca185d51f454eca516f2f48f89",
+    "core_inventory_marketing_workflow.py": "d9c0083f2f8b803a33f3b08afee7e442df776cdfd0f58e70a0d4f85bfaae7363",
+    "core_inventory_service.py": "6ea2214fa4be06c67d19d55c77cea124fb6e274ee0d696e11030c2c13fa0b31e",
+    "core_inventory_store.py": "7426dc1aa1b0a24c6eea95638f355070f6676088ff3fe5ed4c6261c98addadb6",
+    "core_ledger_service.py": "5625253849170077d9c996c03cc5a6c9bc441d62fa5a40b2a23084dc402f52ed",
+    "core_ledger_store.py": "391d1d443bd7d56d0809c5f16732c24a61b6ab90d5a73f50f542af9995eab3d5",
+    "core_lifecycle_service.py": "1fcb24ce081b69b06016ddc8ca92b253e0cdec0379c58196cd70e4ee23cf2540",
+    "core_lifecycle_store.py": "581ef8fb6deee51b6fbd2b2efae644e93832e35d38c2c6800e1335bcc4262d83",
+    "core_marketing_offer_api.py": "9fd192f7a44ba3520d6d24849a080ab359580ae3d7aced89bf0785f518e3dd1c",
+    "core_marketing_offer_identity.py": "5dda16c62ae76120c7fb1d0ad27b75e181171e8d69a9fbd5f728af6a1a2ed563",
+    "core_marketing_publication_runtime.py": "0383e287e3e925b1ce8d2366ed348ef29b2ccc8cab6224b1834e9d49803e6026",
+    "core_media_capture_store.py": "7c983a4da081ac86a0dc92c3700ee8ba0a1120ccbc04fd5a58bab840986389de",
+    "core_media_document_secret_resolver.py": "77b205c0f9cdc8d2a281fe313579cf38771777e49f9d72fc61171eb6590cf919",
+    "core_media_service.py": "c55be09e67e7dc12a32fdee31fee876722e6724e9812aa6d7162b66465952e4c",
+    "core_media_solo_review_service.py": "3cd2ab2c1c969237614d4ab1af28e77e1ff570c8c4739fc88e74469629581fe6",
+    "core_media_store.py": "1b92f76793b2a9ffc2a1c377331bd535582d33427bdc5e33fc70f602b1efa748",
+    "core_movein_service.py": "5d0cbcd06fcddb5b495b8a995ddac2a57bac0f15d08117859d27db41097a2c2c",
+    "core_movein_store.py": "356d5f22378855085112f7ceae85878ed31660822008431da3b1b25507eee62c",
+    "core_ops_task_service.py": "bb00f36ae3e3114d355f4b83205b62137a11d4f2b2e890c591124f67afa3b63d",
+    "core_ops_task_store.py": "ca43da3b02cc389088e57b856f45f77c41362f27c00c0669e9ef2eaed11aabd3",
+    "core_ops_ticket_service.py": "5617c68c764f6a8aa23c74afb7be193ec37d5abdf8ff4c1177a3cb0b0bf080c6",
+    "core_ops_ticket_store.py": "641bf0c1cfa3235f4a7282335cd3c72a956fa06416dbdc3f42d1c3435415e9cb",
+    "core_pass_service.py": "6179f96771ff104a9a05ac35476730d32885af925b0b73d768c557d3373849ff",
+    "core_pass_store.py": "fde3dba62c6c18f43c411bd3d7b72baedaa623d12718e52d7c60ea0cec76f9ca",
+    "core_payment_api.py": "160343272ba1a1f31b6d22bd1355b685abe3f70b3d978638f79d11d76853ed63",
+    "core_payment_provider_adapter.py": "5417205e70b1ac806eea5a381325aec4a10f27a03e77db6d80337839f27705a9",
+    "core_payment_provider_edge.py": "9b6b36fc0c919bddd7c0557d9ec6543b8247e3f622cf5452cbd5c2f591ef8408",
+    "core_payment_rail.py": "20ca0cb4a6f4325047bb67da5ec7ecb3fe302cee80351f030a27079f71d64c44",
+    "core_payment_service.py": "f8611eb165f8b09cca4624aebb7f3369273486244e1bd8c0b004259394469054",
+    "core_payment_store.py": "0d00439e6337b56203d7e7989aecb9713162047ad0eda4022706d777393d8ba2",
+    "core_resolution_service.py": "5026c881bde6ee97364099d03b8e2061c61d6298b28acc2cf2d7bd7f99a7b73b",
+    "core_resolution_store.py": "aee143da965c31e811b99fbc4701f93cecfe8a71ef9efb50c43881679c6a0869",
+    "core_runtime_store.py": "a727a9d051a7cdfcb7a0f03b9318d4ca525eb9f13d75b0e0bce7b776612f7895",
+    "core_stripe_sandbox_api.py": "2eb20cb1dd95e48ce25df0844e838c458a218f0290518657bd8f2c66099f30c6",
+    "core_trust_service.py": "4c65ceeea2fc6ffc83b657e3694549c607b36559fb9e96e5526810df13f1d27b",
+    "core_trust_store.py": "f89a9bbbc3b2b63a98d803f9e1b4d935e46ef70b7bcc66162d2d1fa51a04b4f6",
+    "core_verification_service.py": "50b99771888d6da61befad92cb2d132fc35a571bb53e23832da04a943b5da29d",
+    "core_verification_store.py": "c27549a397e6ee024f086a10339b16fe476dfef89eb3ae8d1d4b5a89f0955d46",
+    "core_viewing_service.py": "57ce76c815a1b2e63c6d6426e9055416ea8712cf4a61a0b5c840c8f0a0d34a8e",
+    "core_viewing_store.py": "f97a4e62a66aa348f86cb91d33d36c1d6ba0b61efe9132c4a93c378a98ef2cd8",
+    "founder_test_mode_mobile_browser_audit.py": "4254561881705770c9bbce6a9b963c0d317c38bd19f62e9548b2835b51d32a01"
+  },
+  "runtime_baseline": {
+    "core_app_main.py": {
+      "path": "/opt/liveuin/ops_backend/app/main.py",
+      "sha256": "e843d45640ddfc58e8a2957ea50726c17fe8be4056b9023f2c887648493423da"
+    },
+    "identity_prod_app.py": {
+      "path": "/opt/liveuin-identity-public/current/prod_app.py",
+      "sha256": "6311c28a8b20d2a30423a9e299d97f114670f6a106d6aa9f1888617a9a157f11"
+    },
+    "identity_core_identity_public.py": {
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_public.py",
+      "sha256": "11077e9fed401168683d5c8c31117dd2a57bd5f403ed6cfa379f58ad55f8a1b8"
+    },
+    "identity_core_identity_api.py": {
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_api.py",
+      "sha256": "35cb1b2ed434eec9bce941eb0f4a6642d28a88ffb005cbec8cd4d4662f436132"
+    },
+    "identity_core_identity_session.py": {
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_session.py",
+      "sha256": "cfaf971913f6a49960f5cc54c8877641cc5db1b00de4c42fa8259c673cc82f7e"
+    },
+    "identity_core_identity_profile_authorization.py": {
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_profile_authorization.py",
+      "sha256": "9f3c63025ace07bbe94abe58e141112c06ecb8dc13510c9145d6086e5363ef3b"
+    },
+    "identity_core_identity_store.py": {
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_store.py",
+      "sha256": "e9556e964c6e7a1a5dc07d199a2a2f12cdf2034e491a28f7d70399bb908764c5"
+    },
+    "core_root_app.py": {
+      "path": "/opt/liveuin/ops_backend/app.py",
+      "sha256": "fcecabe419ce5aa080155f0e29e34eee79596d05f3838a6180dad2ce9795bbf2"
+    }
+  },
+  "payload": {
+    "core_customer_card_api.py": "82f3e57356ee4a32f3979262279d7fb75c3efeba54d38efd7a023489a3743953",
+    "core_customer_card_contract.py": "7684c0a0ba9edacc51fb15df245e628e579f1c69ac30604ea31be21c8bd53d83",
+    "core_customer_card_provider.py": "5945fd77f52036844b5921b71b07f44cc652f77e67ce40bd25f77ebd90d4dd87",
+    "core_customer_card_service.py": "def3ce375d9d3adc769dc6501d5f5ce51bc081127ff875859b0d8a4abe190983",
+    "core_customer_card_store.py": "b479055e65c9a571b2a3f86d4e893d1bc5c9fdc940929bd13597ff8d2339b175",
+    "core_demand_rental_offer_workflow.py": "2710df828727b624f8206f90dab1e2a1314ce839eda7091d2620a006e7a98711",
+    "core_resident_bills_api.py": "97e3ff343daa1b5dcd977edb02b0cfe6049cbf3aefef81351880ffcb919a6c72",
+    "core_resident_customer_scope.py": "da3049098f62c53faa134e5c24cc230e72ef69d7a6276688b7611d21d951e4fe",
+    "core_resident_documents_api.py": "cb9436cda43d9396544da5053a7460902bbbabbba818d8a0088f759afdcff890",
+    "core_resident_gateway.py": "676d3de8f87b3929ab13cd03759e58748419e4fb5548ca1209e4ce2069348210",
+    "core_resident_home_updates_api.py": "9ae93d5f746d169bb1e4729b0f2834cb1eedae1dc02e7ebe25b27347a69e3ac7",
+    "core_resident_inventory_api.py": "ee25c53d2871d307766c64c969742bc27273f42f95f698dfd4d1474541f1a83d",
+    "core_resident_rental_request_api.py": "5201cdd9afc862cf5aeac6537ff0ada8025383bcdbacf4fbf1ae1ed2623466e8",
+    "core_resident_publication_catalog.py": "06435290bedf7c9af5ad3226fa4ad725d715bf5fa52caa446647e42499d9542d"
+  },
+  "replacements": [
+    "core_demand_rental_offer_workflow.py"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "read_only": true,
+  "synthetic_parent_only": true,
+  "token_password_metadata_or_body_columns_read": false,
+  "customer_records_read": false,
+  "product_imports": false,
+  "account_or_session_mutations": false,
+  "status": "synthetic_parent_session_counts",
+  "observed_at_utc": "2026-10-20T08:19:08.765505+00:00",
+  "as_of_epoch_seconds": 1792484348,
+  "member_pid": 3675726,
+  "account_verified_active": true,
+  "canonical_sessions": {
+    "total": 6,
+    "active_unexpired": 0,
+    "revoked": 6,
+    "revoked_with_timestamp": 6,
+    "expired": 0,
+    "rotated": 0,
+    "other_status": 0
+  },
+  "refresh_credentials": {
+    "total": 6,
+    "active_unexpired": 0,
+    "revoked": 6,
+    "revoked_with_timestamp": 6,
+    "expired": 0,
+    "rotated": 0,
+    "other_status": 0
+  },
+  "limitations": "Counts require visible browser sign-in/sign-out evidence and before/after comparison. A zero-to-zero snapshot alone proves no logout; multiple concurrent sessions prevent attributing a change to one control."
+}

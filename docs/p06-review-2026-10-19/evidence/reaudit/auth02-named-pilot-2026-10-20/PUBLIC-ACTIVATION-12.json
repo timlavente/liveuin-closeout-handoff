@@ -1,0 +1,21 @@
+{
+  "status": "public_origin_activation_passed_browser_proof_in_progress_auth02_open",
+  "activation_result_sha256": "0b4c21a6f5c48d0e21116023f539df4634bfb5a79fbb4301b2fff9b3abc7c9fb",
+  "origin_hosts": [
+    "liveuin.com",
+    "www.liveuin.com"
+  ],
+  "origin_http": 200,
+  "tls_certificate_verified": true,
+  "entry_sha256": "d64151e0728796b61d396cb8c38d00f7bd8dc9c563975b42aa5caad86b02e268",
+  "normal_apex_header_login_reached": "https://app.liveuin.com/auth/sign-in",
+  "browser_navigation_observer": "coordinating agent",
+  "screenshot_independently_viewed": true,
+  "full_public_parent_journey_passed": false,
+  "www_browser_handoff_passed": false,
+  "browser_tool_timeout_after_execution": true,
+  "actual_saved_result_checked_before_retry": true,
+  "duplicate_activation_reported": false,
+  "public_access_or_payment_switch_changed": false,
+  "auth02_frozen": false
+}

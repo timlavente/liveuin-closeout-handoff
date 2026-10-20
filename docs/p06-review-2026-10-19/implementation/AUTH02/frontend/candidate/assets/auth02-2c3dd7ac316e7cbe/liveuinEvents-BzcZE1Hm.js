@@ -1,0 +1,1 @@
+const n="liveuin:open-profile-switcher",e="liveuin:open-menu-drawer";function i(){typeof window>"u"||window.dispatchEvent(new CustomEvent(n))}function o(){typeof window>"u"||window.dispatchEvent(new CustomEvent(e))}export{e as O,o as a,n as b,i as o};

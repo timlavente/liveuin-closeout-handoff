@@ -1,0 +1,126 @@
+Checked UTC 2026-10-19T11:24:18.715343+00:00
+Read-only. No credentials, customer records, or secrets requested.
+MainPID=296370
+ExecStart={ path=/usr/bin/python3 ; argv[]=/usr/bin/python3 -m uvicorn deploy.public_home_gateway:app --host 127.0.0.1 --port 9080 --proxy-headers --app-dir /opt/liveuin ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }
+WorkingDirectory=/opt/liveuin
+Id=liveuin-public-api.service
+ActiveState=active
+SubState=running
+FragmentPath=/etc/systemd/system/liveuin-public-api.service
+
+MainPID=1298408
+ExecStart={ path=/usr/local/sbin/liveuin-ops-backend-with-dsn-credential ; argv[]=/usr/local/sbin/liveuin-ops-backend-with-dsn-credential ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }
+WorkingDirectory=/opt/liveuin/ops_backend
+Id=ops-backend@liveuin.service
+ActiveState=active
+SubState=running
+FragmentPath=/etc/systemd/system/ops-backend@liveuin.service
+
+MainPID=296387
+ExecStart={ path=/opt/liveuin/ops_backend/.venv/bin/python ; argv[]=/opt/liveuin/ops_backend/.venv/bin/python -m uvicorn deploy.ops_command_gateway:app --host 127.0.0.1 --port 9083 --proxy-headers ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }
+WorkingDirectory=/opt/liveuin
+Id=liveuin-ops-command.service
+ActiveState=active
+SubState=running
+FragmentPath=/etc/systemd/system/liveuin-ops-command.service
+
+MainPID=2662668
+ExecStart={ path=/opt/liveuin-identity-public/current/.venv/bin/python ; argv[]=/opt/liveuin-identity-public/current/.venv/bin/python -m uvicorn prod_app:app --host 127.0.0.1 --port 9098 --proxy-headers --forwarded-allow-ips=127.0.0.1 --timeout-keep-alive 30 ; ignore_errors=no ; start_time=[Mon 2026-10-19 00:36:13 +08] ; stop_time=[n/a] ; pid=2662668 ; code=(null) ; status=0/0 }
+WorkingDirectory=/opt/liveuin-identity-public/current
+Id=liveuin-identity-public-prod.service
+ActiveState=active
+SubState=running
+FragmentPath=/etc/systemd/system/liveuin-identity-public-prod.service
+
+MainPID=2229828
+ExecStart={ path=/opt/liveuin/ops_backend/.venv/bin/python ; argv[]=/opt/liveuin/ops_backend/.venv/bin/python /opt/liveuin-live-staging/run_backend.py ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }
+WorkingDirectory=/opt/liveuin-live-staging/ops_backend
+Id=liveuin-ops-backend-staging.service
+ActiveState=active
+SubState=running
+FragmentPath=/etc/systemd/system/liveuin-ops-backend-staging.service
+67f4befdd7dbccc34bcaa79050b6c990cd3df33349ee4369f7da9838810f6fac  /opt/liveuin/deploy/public_home_gateway.py
+9fe7c3cad3efae914853bd8f3891474f81f1b8931a3d74151edcd6efb036207b  /opt/liveuin/deploy/public_home_service.py
+a1f9cc984a52c987e6f9e2ceab3f1a5ece5d97b5e6db42c37f00ed5b5cffa7d2  /opt/liveuin/deploy/public_status_service.py
+f9e45c0525c954a54594f1179d6803ef606436d551d3fce3bdd72c4175ca1d94  /opt/liveuin/deploy/admin_control_service.py
+cab022b1055df93e27328fa74813d8ae043bb1cc387562255eed0d9b68471172  /opt/liveuin/deploy/home_api.py
+0383e287e3e925b1ce8d2366ed348ef29b2ccc8cab6224b1834e9d49803e6026  /opt/liveuin/deploy/core_marketing_publication_runtime.py
+2eaeb52ad5cedda5c9bc013ac7fe41564c81395a929b6e33ffbcd8a03b401ade  /opt/liveuin/deploy/core_case_store.py
+7df17a7a919ac4e87d1e6519838abe5ef29e30e3bd35e4a7a1c9568d3deecb8c  /opt/liveuin/deploy/core_case_api.py
+8406fae85543a34acce17f56c9c6c59889b0dbb68b414d3292ca602d86344342  /opt/liveuin/deploy/core_case_service.py
+fcecabe419ce5aa080155f0e29e34eee79596d05f3838a6180dad2ce9795bbf2  /opt/liveuin/ops_backend/app.py
+  File "/opt/liveuin/deploy/core_adapter_replay_postgres_store.py", line 322, in stats
+  File "/opt/liveuin/deploy/core_adapter_replay_postgres_store.py", line 72, in connection
+psycopg.OperationalError: connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "liveuin_ops"
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "liveuin_ops"
+  File "/opt/liveuin/deploy/home_api.py", line 732, in admin_control_summary
+  File "/opt/liveuin/deploy/admin_control_service.py", line 585, in admin_control_summary
+  File "/opt/liveuin/deploy/core_audit_log_service.py", line 292, in audit_status
+  File "/opt/liveuin/deploy/core_access_service.py", line 2959, in access_status
+  File "/opt/liveuin/deploy/core_adapter_replay_store.py", line 169, in stats
+  File "/opt/liveuin/deploy/core_adapter_replay_postgres_store.py", line 322, in stats
+  File "/opt/liveuin/deploy/core_adapter_replay_postgres_store.py", line 72, in connection
+psycopg.OperationalError: connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "liveuin_ops"
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "liveuin_ops"
+  File "/opt/liveuin/deploy/home_api.py", line 844, in public_search
+  File "/opt/liveuin/deploy/public_home_service.py", line 2301, in public_search
+  File "/opt/liveuin/deploy/public_home_service.py", line 1295, in rate_limit
+  File "/opt/liveuin/deploy/public_home_store.py", line 250, in check_rate_limit
+  File "/opt/liveuin/deploy/public_home_postgres_store.py", line 79, in check_rate_limit
+  File "/opt/liveuin/deploy/public_home_postgres_store.py", line 54, in connection
+psycopg.OperationalError: connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "liveuin_ops"
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "liveuin_ops"
+  File "/opt/liveuin/deploy/home_api.py", line 602, in public_status_summary
+  File "/opt/liveuin/deploy/public_status_service.py", line 357, in public_status_summary
+  File "/opt/liveuin/deploy/public_status_service.py", line 213, in _component_sources
+  File "/opt/liveuin/deploy/core_access_service.py", line 2959, in access_status
+  File "/opt/liveuin/deploy/core_adapter_replay_store.py", line 169, in stats
+  File "/opt/liveuin/deploy/core_adapter_replay_postgres_store.py", line 322, in stats
+  File "/opt/liveuin/deploy/core_adapter_replay_postgres_store.py", line 72, in connection
+psycopg.OperationalError: connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "liveuin_ops"
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "liveuin_ops"
+   598	@router.get("/api/public/status")
+   599	def public_status_summary(
+   600	    workspace_id: str = Query(status_svc.DEFAULT_WORKSPACE_ID, max_length=96),
+   601	) -> Dict[str, Any]:
+   602	    return status_svc.public_status_summary(workspace_id=workspace_id)
+   603	
+   728	@router.get("/api/core/admin/control-center")
+   729	def admin_control_summary(
+   730	    workspace_id: str = Query(admin_svc.DEFAULT_WORKSPACE_ID, max_length=96),
+   731	) -> Dict[str, Any]:
+   732	    return admin_svc.admin_control_summary(workspace_id=workspace_id)
+   733	
+   734	
+   735	@router.get("/api/core/admin/control-center/users")
+   736	def admin_control_users(
+   737	    workspace_id: str = Query(admin_svc.DEFAULT_WORKSPACE_ID, max_length=96),
+   738	) -> Dict[str, Any]:
+   739	    return admin_svc.admin_control_users(workspace_id=workspace_id)
+   740	
+   741	
+   742	@router.get("/api/core/admin/control-center/roles")
+   743	def admin_control_roles(
+   744	    workspace_id: str = Query(admin_svc.DEFAULT_WORKSPACE_ID, max_length=96),
+   745	) -> Dict[str, Any]:
+   746	    return admin_svc.admin_control_roles(workspace_id=workspace_id)
+   839	@router.post("/api/public/search")
+   840	def public_search(
+   841	    request: Request,
+   842	    payload: Dict[str, Any] = Body(default={}),
+   843	) -> Dict[str, Any]:
+   844	    return _raise_if_error(svc.public_search(payload, _request_meta(request)))
+   252	    app = FastAPI(
+   253	        title="LiveUin Public Home API",
+   254	        version=svc.SCHEMA_VERSION,
+   255	        description="Public homepage bootstrap, discovery, deal, search, and intake contract.",
+   256	    )
+   257	    app.add_middleware(
+   258	        CORSMiddleware,
+   259	        allow_origins=allowed_origins(),
+   260	        allow_credentials=False,
+   261	        allow_methods=["GET", "POST", "OPTIONS"],
+   262	        allow_headers=["Content-Type", "X-Request-ID", "X-LiveUin-Api-Key", "X-LiveUIN-API-Key"],
+   263	    )
+   264	    app.include_router(public_home_router)
+   265	    app.include_router(public_marketplace_router)

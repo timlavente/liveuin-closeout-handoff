@@ -1,0 +1,207 @@
+Browser tab: 1, Title: "Stay search | LiveUIN", URL: "https://liveuin.com/checkout/cozy-studio-orchard".
+1 AXWebArea Stay search | LiveUIN, URL: liveuin.com/checkout/cozy-studio-orchard
+	2 container root
+		3 container Notifications (F8)
+			4 content list
+		5 container Notifications alt+T
+		6 container
+			7 link Description: LiveUIN home, Value: liveuin.com/
+			8 link Description: Stay, Value: liveuin.com/stay
+			9 link Description: Grow, Value: liveuin.com/grow
+			10 link Description: Earn, Value: liveuin.com/earn
+			11 link Description: Explore, Value: liveuin.com/explore
+			12 link Description: How LiveUIN Works, Value: liveuin.com/how-it-works
+			13 link Description: Pricing, Value: liveuin.com/pricing
+			14 link Description: Trust, Value: liveuin.com/trust
+			15 link Description: Resources, Value: liveuin.com/guides
+			16 link Description: Switch language: 中文, Value: liveuin.com/checkout/cozy-studio-orchard
+			17 link Description: Log in, Value: liveuin.com/login
+			18 link Description: Get Started, Value: liveuin.com/start
+		19 container
+			20 image
+			21 text Stay details 2 Checkout 3 Confirmation
+			22 container
+				23 heading Checkout, Value: 1
+					24 text Checkout
+				25 text Review your details and choose how this stay is documented.
+			26 container
+				27 heading Contact information, Value: 2
+					28 text Contact information
+				29 button Edit
+				30 text Full name
+				31 text field (settable) Full name, Value: [prefilled name]
+				32 text Email address
+				33 text field (settable) Email address, Value: <redacted>
+				34 text Phone number
+				35 text field (settable) Phone number, Value: [prefilled phone]
+				36 checkbox (settable, integer) Description: Save this information for faster bookings, Value: 1
+			37 container
+				38 heading Guest and stay information, Value: 2
+					39 text Guest and stay information
+				40 text Guest name
+				41 text field (settable) Guest name, Value: [prefilled name]
+				42 text Nationality
+				43 pop up button (collapsed, settable) Nationality, Value: Singapore, Secondary Actions: Expand
+					44 menu
+						45 (selected) Singapore
+						46 Malaysia
+						47 Australia
+						48 United Kingdom
+				49 text Guests
+				50 pop up button (collapsed, settable) Guests, Value: 2, Secondary Actions: Expand
+					51 menu
+						52 1
+						53 (selected) 2
+						54 3
+						55 4
+				56 button Serviced / short stay · 7+ nights Booking-style flow for serviced-apartment or hotel-like inventory. Singapore private residential short stays stay blocked.
+					57 text Serviced / short stay · 7+ nights
+					58 image
+					59 text Booking-style flow for serviced-apartment or hotel-like inventory. Singapore private residential short stays stay blocked.
+				60 button (disabled) Residential tenancy · 3+ months Monthly rent flow with TA, inventory schedule, and landlord/operator document checks.
+					61 text Residential tenancy · 3+ months
+					62 text Monthly rent flow with TA, inventory schedule, and landlord/operator document checks.
+			63 container
+				64 heading Document structure, Value: 2
+					65 text Document structure
+				66 text Serviced-apartment path for Singapore short stays; not private residential short-term accommodation.  Agreement generation, e-signing, jurisdiction rules, and operator authority checks continue in the document step.
+				67 image
+				68 text Booking confirmation
+				69 image
+				70 text House rules
+				71 image
+				72 text Cancellation terms
+				73 image
+				74 text Deposit and payment schedule
+			75 container
+				76 heading Payment method, Value: 2
+					77 text Payment method
+				78 radio button (settable, integer) Description: Credit / Debit Card, Value: 1
+				79 image
+				80 text Credit / Debit Card
+				81 radio button (settable, integer) Description: PayPal, Value: 0
+				82 image
+				83 text PayPal
+				84 radio button (settable, integer) Description: Apple Pay, Value: 0
+				85 image
+				86 text Apple Pay
+				87 radio button (settable, integer) Description: Pay later after review, Value: 0
+				88 image
+				89 text Pay later after review
+				90 image
+				91 text No payment is collected here until you continue to the approved payment step.
+			92 container
+				93 heading Promo code or voucher, Value: 2
+					94 text Promo code or voucher
+				95 text field (settable)
+				96 button Apply
+			97 image
+			98 text Cancellation terms
+			99 text Review the specific terms before continuing
+			100 image
+			101 text Payment status
+			102 text Availability and payee must be confirmed
+			103 image
+			104 text Price details
+			105 text Review the specific price and included scope
+			106 image
+			107 text Support conditions
+			108 text Availability depends on the service and agreement
+			109 button Complete booking $791.17
+				110 image
+				111 text Complete 
+				112 text booking
+				113 text $791.17
+			114 container
+				115 text By continuing, you agree to the 
+				116 link Description: Terms, Value: liveuin.com/legal/terms
+				117 text  and 
+				118 link Description: Privacy Policy, Value: liveuin.com/legal/privacy
+				119 text .
+			120 container
+				121 text VERIFIED OPERATOR
+				122 heading Cozy Studio in Orchard, Value: 2
+					123 text Cozy Studio in Orchard
+				124 image
+				125 text Orchard ,  Singapore Check-in Jul 1, 2026 Check-out Jul 7, 2026 Guests 2  guests Length 7 nights $98 / night × 7 nights $686 Cleaning / setup fee $40 Service fee $27.44 Estimated taxes & fees $37.73 Total $791.17
+				126 image
+				127 text You won’t be charged yet. This stores a booking state only.
+			128 container
+				129 heading Policies and house rules, Value: 2
+					130 text Policies and house rules
+				131 content list
+					132 text • Cancellation terms are shown before final confirmation.
+					133 text • No smoking, no parties, quiet hours apply unless stated otherwise.
+					134 text • Long-term stays require operator/landlord document approval.
+				135 link Description: View legal policies, Value: liveuin.com/legal
+			136 container
+				137 image
+				138 heading Need help?, Value: 2
+					139 text Need help?
+				140 text Our support team can help review booking or tenancy questions.
+				141 link Description: Contact support, Value: liveuin.com/contact
+		142 container
+			143 image LiveUIN — Live smarter. Move freely.
+			144 text Live smarter. Move freely. LiveUIN connects Stay, Grow, and Earn through one clear platform, with Trust & Safety guidance before the next step.
+			145 link Description: Community, Value: liveuin.com/community
+			146 link Description: Partner network, Value: liveuin.com/partner
+			147 link Description: Video guides, Value: liveuin.com/guides
+			148 link Description: Support, Value: liveuin.com/help
+			149 link Description: News, Value: liveuin.com/blog
+			150 text Stay
+			151 content list
+				152 link Description: Stay with LiveUIN, Value: liveuin.com/stay
+				153 link Description: Search Homes, Value: liveuin.com/search
+				154 link Description: Stay support, Value: liveuin.com/help/stay
+				155 link Description: How It Works, Value: liveuin.com/how-it-works
+				156 link Description: Safety & Trust, Value: liveuin.com/trust
+				157 link Description: Support Center, Value: liveuin.com/help
+			158 text Grow
+			159 content list
+				160 link Description: Grow with LiveUIN, Value: liveuin.com/grow
+				161 link Description: Host, Value: liveuin.com/host
+				162 link Description: Operate, Value: liveuin.com/operate
+				163 link Description: Partner, Value: liveuin.com/partner
+				164 link Description: Connect, Value: liveuin.com/connect
+				165 link Description: Campus, Value: liveuin.com/campus
+				166 link Description: Enterprise, Value: liveuin.com/enterprise
+				167 link Description: Pricing, Value: liveuin.com/pricing
+			168 text Earn
+			169 content list
+				170 link Description: Earn with LiveUIN, Value: liveuin.com/earn
+				171 link Description: Eligibility, Value: liveuin.com/start?product=earn
+				172 link Description: Earn support, Value: liveuin.com/help/earn
+				173 link Description: Trust, Value: liveuin.com/trust
+				174 link Description: Help, Value: liveuin.com/help
+			175 text Explore
+			176 content list
+				177 link Description: Cities, Value: liveuin.com/explore
+				178 link Description: Cities Index, Value: liveuin.com/cities
+				179 link Description: Deals, Value: liveuin.com/deals
+				180 link Description: Services, Value: liveuin.com/services
+				181 link Description: Promotions, Value: liveuin.com/promotions
+				182 link Description: Community, Value: liveuin.com/community
+				183 link Description: Blog, Value: liveuin.com/blog
+				184 link Description: How It Works, Value: liveuin.com/how-it-works
+			185 text Company
+			186 content list
+				187 link Description: About LiveUIN, Value: liveuin.com/about
+				188 link Description: Careers, Value: liveuin.com/careers
+				189 link Description: News & Media, Value: liveuin.com/newsroom
+				190 link Description: Contact Us, Value: liveuin.com/contact
+				191 link Description: Investor Relations, Value: liveuin.com/investors
+			192 text Resources
+			193 content list
+				194 link Description: Status, Value: liveuin.com/status
+				195 link Description: Developers, Value: liveuin.com/developers
+				196 link Description: Help Center, Value: liveuin.com/help
+				197 link Description: Legal, Value: liveuin.com/legal
+			198 text © 2026 LiveUIN. All rights reserved.
+			199 link Description: Privacy notice status, Value: liveuin.com/legal/privacy
+			200 link Description: Terms status, Value: liveuin.com/legal/terms
+			201 link Description: Data-protection status, Value: liveuin.com/legal/data-protection
+			202 link Description: Cookie notice status, Value: liveuin.com/legal/cookies
+			203 link Description: Help, Value: liveuin.com/help
+			204 link Description: Legal, Value: liveuin.com/legal
+
+The focused UI element is 1 AXWebArea Stay search | LiveUIN, URL: liveuin.com/checkout/cozy-studio-orchard

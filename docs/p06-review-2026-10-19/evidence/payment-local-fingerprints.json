@@ -1,0 +1,62 @@
+[
+  {
+    "path": "/Users/Vivian/Documents/Liveuin/deploy/core_stripe_sandbox_api.py",
+    "bytes": 4448,
+    "blocks": 16,
+    "sha256": "2eb20cb1dd95e48ce25df0844e838c458a218f0290518657bd8f2c66099f30c6"
+  },
+  {
+    "path": "/Users/Vivian/Documents/Liveuin/deploy/core_payment_rail.py",
+    "bytes": 6678,
+    "blocks": 16,
+    "sha256": "20ca0cb4a6f4325047bb67da5ec7ecb3fe302cee80351f030a27079f71d64c44"
+  },
+  {
+    "path": "/Users/Vivian/Documents/Liveuin/deploy/core_payment_provider_edge.py",
+    "bytes": 50014,
+    "blocks": 104,
+    "sha256": "9b6b36fc0c919bddd7c0557d9ec6543b8247e3f622cf5452cbd5c2f591ef8408"
+  },
+  {
+    "path": "/Users/Vivian/Documents/Liveuin/deploy/core_stripe_sandbox_payment_flow_smoke.py",
+    "bytes": 6549,
+    "blocks": 16,
+    "sha256": "75452b91fe474e99ec0752ea90739028871f810d5818bd76e88de9b8ac40ccbb"
+  },
+  {
+    "path": "/Users/Vivian/Documents/Liveuin/deploy/core_payment_provider_edge_smoke.py",
+    "bytes": 20274,
+    "blocks": 40,
+    "sha256": "40e9d077b9fbc3d3a6b01c941febccfe78f1ba7a1c69ac91b69b5d5920a06a30"
+  },
+  {
+    "path": "/Users/Vivian/Documents/Liveuin/deploy/core_payment_provider_handoff_smoke.py",
+    "bytes": 9513,
+    "blocks": 24,
+    "sha256": "79224665af010e458346f1b9c554b95093af21713be2fd5c8fdf1f6b5423e2bf"
+  },
+  {
+    "path": "/Users/Vivian/Documents/Liveuin/deploy/core_payment_api_auth_smoke.py",
+    "bytes": 8277,
+    "blocks": 24,
+    "sha256": "eb43e75bc95deb0430fa0c15f0276515ea9d550a4038adc4cda3b42bfdcf463e"
+  },
+  {
+    "path": "/Users/Vivian/Documents/Liveuin/deploy/core_g39_refund_lifecycle_http_smoke.py",
+    "bytes": 23434,
+    "blocks": 48,
+    "sha256": "b1d274931c620970139805054659e5f0486bc9bfd956d481993fa54d65efe6e3"
+  },
+  {
+    "path": "/Users/Vivian/Documents/Liveuin/docs/LIVEUIN-PAYMENTS-HUB-SG-FIRST-SPEC.md",
+    "bytes": 16479,
+    "blocks": 40,
+    "sha256": "f648879a7bbb6fc301f157fca38cab49bed013dbadd8a2d2ec4d6c6347166f50"
+  },
+  {
+    "path": "/Users/Vivian/Documents/Liveuin/www-lovable/src/pages/Checkout.tsx",
+    "bytes": 5631,
+    "blocks": 16,
+    "sha256": "f57e95b7512d152695fdf01e0caa8330f3b923fcd340ac73a2b9bc31c4375398"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "path": "/opt/liveuin/deploy/public_pass_gateway.py",
+  "sha256": "d3f9cf05bfd4707ecb8d22c2e7e1d6cf7997c02b737522e6e74a2af5c33ebcc1",
+  "bytes": 27003,
+  "selected_source": [
+    {
+      "function": "build_router",
+      "line": 566,
+      "source": "def build_router(require_api_key: Callable[..., Dict[str, Any]]) -> Any:\n    \"\"\"Build the read-only public gateway router.\n\n    The hardened public API app injects its own API-key verifier here. This\n    module deliberately exposes no write/mutation routes and creates no product\n    truth; it only reads the canonical LiveUIN Pass aggregate.\n    \"\"\"\n    from fastapi import APIRouter, Depends, Header, HTTPException, Query\n    router = APIRouter()\n\n    def _require_read_key(request: Any=None, x_liveuin_api_key: str | None=Header(default=None, alias='X-LiveUin-Api-Key')) -> Dict[str, Any]:\n        return require_api_key(api_key=x_liveuin_api_key, required_scope=READ_SCOPE, request=request)\n\n    @router.get('/api/pass/status', dependencies=[Depends(_require_read_key)])\n    def _status() -> Dict[str, Any]:\n        response = public_pass_status()\n        if response.get('ok') is False:\n            raise HTTPException(status_code=int(response.get('status_code') or 500), detail=str(response.get('detail') or 'public_pass_status_error'))\n        return response\n\n    @router.get('/api/pass/{case_id}', dependencies=[Depends(_require_read_key)])\n    def _get_pass(case_id: str, workspace_id: str=Query(pass_svc.DEFAULT_WORKSPACE_ID, max_length=96), grant_id: str=Query('', max_length=140), participant_id: str=Query('', max_length=120)) -> Dict[str, Any]:\n        response = public_pass_payload(case_id, workspace_id, grant_id=grant_id, participant_id=participant_id)\n        if response.get('ok') is False:\n            raise HTTPException(status_code=int(response.get('status_code') or 404), detail=str(response.get('detail') or 'public_pass_read_error'))\n        return response\n    return router"
+    },
+    {
+      "function": "mount_public_pass_routes",
+      "line": 609,
+      "source": "def mount_public_pass_routes(app: Any, require_api_key: Callable[..., Dict[str, Any]]) -> None:\n    app.include_router(build_router(require_api_key))"
+    }
+  ],
+  "local_sha256": "d3f9cf05bfd4707ecb8d22c2e7e1d6cf7997c02b737522e6e74a2af5c33ebcc1",
+  "same_as_local": true
+}

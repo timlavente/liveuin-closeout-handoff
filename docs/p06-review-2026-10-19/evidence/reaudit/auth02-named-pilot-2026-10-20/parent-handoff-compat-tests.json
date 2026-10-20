@@ -1,0 +1,51 @@
+{
+  "source_sha256": "817889aa9d967eed7dc158a7cbfe93e3cb8959986bfbeac05d2da73a3ee95f51",
+  "passed": 10,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "valid form verifies once and completed replay stops",
+      "passed": true
+    },
+    {
+      "name": "null origin stops before body",
+      "passed": true
+    },
+    {
+      "name": "cross origin stops before body",
+      "passed": true
+    },
+    {
+      "name": "missing origin stops before body",
+      "passed": true
+    },
+    {
+      "name": "stale csrf never calls verification",
+      "passed": true
+    },
+    {
+      "name": "expired checkpoint stops before body",
+      "passed": true
+    },
+    {
+      "name": "wrong host stops before body",
+      "passed": true
+    },
+    {
+      "name": "wrong route never calls verification",
+      "passed": true
+    },
+    {
+      "name": "changed registration never calls verification",
+      "passed": true
+    },
+    {
+      "name": "invalid length never calls verification",
+      "passed": true
+    }
+  ],
+  "network_blocked": true,
+  "product_imports": false,
+  "private_checkpoint_read": false,
+  "real_factor_used": false
+}

@@ -1,0 +1,190 @@
+{
+  "ok": true,
+  "schema_version": "liveuin-core-identity-session-v1",
+  "phase": "phase27-identity-credential-issuer-contract",
+  "status": "identity_session_resolved",
+  "canonical_owner": "LiveUIN Identity",
+  "workspace_id": "auth02-isolated-public",
+  "actor": {
+    "actor_id": "per_d2369fd7d16b48a6",
+    "role": "tenant",
+    "scopes": [
+      "tenant"
+    ],
+    "active_profile_key": "tenant",
+    "active_workspace_id": "auth02-isolated-public",
+    "account_id": "acct_53e6de4fce67436f93b1",
+    "person_id": "per_d2369fd7d16b48a6",
+    "display_name": "test.parent \u2014 synthetic fixture"
+  },
+  "display_name": "test.parent \u2014 synthetic fixture",
+  "account_id": "acct_53e6de4fce67436f93b1",
+  "person_id": "per_d2369fd7d16b48a6",
+  "profile_entitlements": [
+    {
+      "entitlement_id": "ent_tenant_acct_53e6de4fce67436f93b1",
+      "account_id": "acct_53e6de4fce67436f93b1",
+      "person_id": "per_d2369fd7d16b48a6",
+      "profile_key": "tenant",
+      "workspace_id": "auth02-isolated-public",
+      "workspace_label": "auth02-isolated-public",
+      "workspace_type": "workspace",
+      "status": "active",
+      "subject_id": "per_d2369fd7d16b48a6",
+      "subject_role": "tenant",
+      "allowed_actions": [
+        "tenant"
+      ],
+      "default_route": "/app/member",
+      "route_restrictions": [],
+      "effective_from": 0,
+      "effective_to": 0,
+      "expires_at": "",
+      "is_default": true,
+      "metadata": {
+        "localpro_authorization_issued": false,
+        "source": "public_onboarding"
+      }
+    }
+  ],
+  "source_family": "liveuin_core",
+  "idempotency_key": "",
+  "identity_session": {
+    "resolved": true,
+    "credential_kind": "liveuin_session",
+    "credential_hint": "lus_7...d7a8",
+    "credential_hash": "224f40a38c9820654fe010fc763f6e33e51b25c30d0ac154b2057f8abcc42e4a",
+    "credential_validation": "signed_session_verified_store_active",
+    "verified": true,
+    "credential_store_status": "active",
+    "credential_key_id": "",
+    "credential_policy_version": "",
+    "public_identity_session": true,
+    "public_account_id": "acct_53e6de4fce67436f93b1",
+    "bridge_only": false,
+    "safe_headers": {
+      "x-liveuin-workspace-id": "auth02-isolated-public",
+      "x-liveuin-actor-id": "per_d2369fd7d16b48a6",
+      "x-liveuin-role": "member",
+      "x-liveuin-scopes": "identity.session,tenant",
+      "x-liveuin-session-id": "[redacted]",
+      "x-liveuin-session-issued-at": "1792433857",
+      "x-liveuin-auth-method": "public_tenant_onboarding",
+      "x-liveuin-session-signature": "[redacted]"
+    },
+    "raw_secret_echoed": false
+  },
+  "access": {
+    "workspace_id": "auth02-isolated-public",
+    "actor": {
+      "actor_id": "per_d2369fd7d16b48a6",
+      "role": "tenant",
+      "scopes": [
+        "tenant"
+      ],
+      "active_profile_key": "tenant",
+      "active_workspace_id": "auth02-isolated-public",
+      "account_id": "acct_53e6de4fce67436f93b1",
+      "person_id": "per_d2369fd7d16b48a6",
+      "display_name": "test.parent \u2014 synthetic fixture"
+    },
+    "scopes": [
+      "tenant"
+    ],
+    "account_id": "acct_53e6de4fce67436f93b1",
+    "person_id": "per_d2369fd7d16b48a6",
+    "profile_entitlements": [
+      {
+        "entitlement_id": "ent_tenant_acct_53e6de4fce67436f93b1",
+        "account_id": "acct_53e6de4fce67436f93b1",
+        "person_id": "per_d2369fd7d16b48a6",
+        "profile_key": "tenant",
+        "workspace_id": "auth02-isolated-public",
+        "workspace_label": "auth02-isolated-public",
+        "workspace_type": "workspace",
+        "status": "active",
+        "subject_id": "per_d2369fd7d16b48a6",
+        "subject_role": "tenant",
+        "allowed_actions": [
+          "tenant"
+        ],
+        "default_route": "/app/member",
+        "route_restrictions": [],
+        "effective_from": 0,
+        "effective_to": 0,
+        "expires_at": "",
+        "is_default": true,
+        "metadata": {
+          "localpro_authorization_issued": false,
+          "source": "public_onboarding"
+        }
+      }
+    ],
+    "default_profile_key": "tenant",
+    "default_workspace_id": "auth02-isolated-public",
+    "active_profile_key": "tenant",
+    "active_workspace_id": "auth02-isolated-public",
+    "source_family": "liveuin_core",
+    "idempotency_key": "",
+    "context": {
+      "identity_session_schema": "liveuin-core-identity-session-v1",
+      "identity_session_phase": "phase27-identity-credential-issuer-contract",
+      "identity_resolved_at": "2026-10-19T18:17:37Z",
+      "credential_kind": "liveuin_session",
+      "credential_hash": "224f40a38c9820654fe010fc763f6e33e51b25c30d0ac154b2057f8abcc42e4a",
+      "credential_hint": "lus_7...d7a8",
+      "credential_validation": "signed_session_verified_store_active",
+      "credential_verified": true,
+      "credential_store_status": "active",
+      "credential_key_id": "",
+      "credential_policy_version": "",
+      "public_identity_session": true,
+      "public_account_id": "acct_53e6de4fce67436f93b1",
+      "bridge_only": false,
+      "channel_role": "",
+      "method": "POST",
+      "route": "/api/core/identity/session/resolve",
+      "request_ip": "127.0.0.1"
+    }
+  },
+  "boundary": {
+    "surface": "Core API gateway, Admin, Connect handoff, channel bridge, and adapter request context",
+    "layer": "identity/session context resolver",
+    "owner": "LiveUIN Identity",
+    "access_role": "Normalizes actor, role, scopes, workspace, source family, and idempotency context before Core Access policy evaluation.",
+    "wechat_role": "Identity/OAuth/message-delivery bridge only; WeChat context does not grant product-write authority.",
+    "connector_role": "Connector API keys identify handoff transport; connector records do not become product truth.",
+    "secret_policy": "Raw sessions, API keys, bearer tokens, openids, and unionids are never echoed; only hashes/hints are returned."
+  },
+  "profile_state": "tenant_active",
+  "account_state": "tenant_active",
+  "email_verification_state": "verified",
+  "profile_completion_state": "complete",
+  "tenant_entitlement_state": "active",
+  "localpro_application_state": "not_started",
+  "localpro_authorization_state": "not_issued",
+  "authorized_profiles": [
+    {
+      "entitlement_id": "ent_tenant_acct_53e6de4fce67436f93b1",
+      "workspace_id": "auth02-isolated-public",
+      "account_id": "acct_53e6de4fce67436f93b1",
+      "person_id": "per_d2369fd7d16b48a6",
+      "profile_key": "tenant",
+      "subject_id": "per_d2369fd7d16b48a6",
+      "subject_role": "tenant",
+      "status": "active",
+      "is_default": true,
+      "permissions": [
+        "tenant"
+      ],
+      "route_restrictions": []
+    }
+  ],
+  "next_action": "tenant_home",
+  "continuation": {
+    "state": "tenant_active",
+    "next_action": "tenant_home",
+    "route": "/tenant/home",
+    "label": "Continue to LiveUIN"
+  }
+}

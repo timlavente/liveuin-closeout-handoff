@@ -1,0 +1,1 @@
+import{j as o}from"./index-DPZwxwE9.js";import{P as a}from"./PublicCmsRoutePage-4lpeGkXx.js";import{g as s}from"./publicCmsRoutePresets-DxNltXgQ.js";function n(e,t="inner"){const r=s(e);return function(){return o.jsx(a,{path:e,fallback:r,navVariant:t})}}export{n as c};

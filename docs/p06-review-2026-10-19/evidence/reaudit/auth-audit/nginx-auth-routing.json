@@ -1,0 +1,2229 @@
+{
+  "observed_at_utc": "2026-10-19T16:15:52.300451+00:00",
+  "files": [
+    {
+      "path": "/etc/nginx/conf.d/api.liveuin.com.conf",
+      "sha256": "c088f9a2150268557db7732da0e0f6a6b3e41212ad370b8a9c2931ef07c2b677",
+      "routing": [
+        {
+          "line": 17,
+          "directive": "listen 80;"
+        },
+        {
+          "line": 18,
+          "directive": "listen [::]:80;"
+        },
+        {
+          "line": 19,
+          "directive": "server_name api.liveuin.com;"
+        },
+        {
+          "line": 21,
+          "directive": "location ^~ /.well-known/acme-challenge/ {"
+        },
+        {
+          "line": 22,
+          "directive": "root /var/www/letsencrypt;"
+        },
+        {
+          "line": 26,
+          "directive": "location / {"
+        },
+        {
+          "line": 27,
+          "directive": "return 301 https://$host$request_uri;"
+        },
+        {
+          "line": 32,
+          "directive": "listen 443 ssl http2;"
+        },
+        {
+          "line": 33,
+          "directive": "listen [::]:443 ssl http2;"
+        },
+        {
+          "line": 34,
+          "directive": "server_name api.liveuin.com;"
+        },
+        {
+          "line": 38,
+          "directive": "include /etc/letsencrypt/options-ssl-nginx.conf;"
+        },
+        {
+          "line": 46,
+          "directive": "location ^~ /api/ops/ {"
+        },
+        {
+          "line": 47,
+          "directive": "return 404;"
+        },
+        {
+          "line": 50,
+          "directive": "location = /api/studio/prod/pricing {"
+        },
+        {
+          "line": 51,
+          "directive": "proxy_pass http://127.0.0.1:9091;"
+        },
+        {
+          "line": 60,
+          "directive": "location ^~ /api/studio/ {"
+        },
+        {
+          "line": 61,
+          "directive": "return 404;"
+        },
+        {
+          "line": 64,
+          "directive": "location ^~ /api/autopilot/ {"
+        },
+        {
+          "line": 65,
+          "directive": "return 404;"
+        },
+        {
+          "line": 68,
+          "directive": "location ^~ /autopilot/ {"
+        },
+        {
+          "line": 69,
+          "directive": "return 404;"
+        },
+        {
+          "line": 72,
+          "directive": "location ^~ /internal/ {"
+        },
+        {
+          "line": 73,
+          "directive": "return 404;"
+        },
+        {
+          "line": 76,
+          "directive": "location ^~ /registry/ {"
+        },
+        {
+          "line": 77,
+          "directive": "return 404;"
+        },
+        {
+          "line": 80,
+          "directive": "location ^~ /admin/ {"
+        },
+        {
+          "line": 81,
+          "directive": "return 404;"
+        },
+        {
+          "line": 84,
+          "directive": "location / {"
+        },
+        {
+          "line": 85,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        }
+      ]
+    },
+    {
+      "path": "/etc/nginx/conf.d/liveuin.com.conf",
+      "sha256": "fd56cd248bfc7354b0d86c6dbe2f76a181e27e80090dd96b1822cda603eb1d34",
+      "routing": [
+        {
+          "line": 10,
+          "directive": "listen 80;"
+        },
+        {
+          "line": 11,
+          "directive": "listen [::]:80;"
+        },
+        {
+          "line": 13,
+          "directive": "location = / {"
+        },
+        {
+          "line": 14,
+          "directive": "return 301 https://$host/;"
+        },
+        {
+          "line": 16,
+          "directive": "server_name liveuin.com www.liveuin.com;"
+        },
+        {
+          "line": 18,
+          "directive": "location ^~ /.well-known/acme-challenge/ {"
+        },
+        {
+          "line": 19,
+          "directive": "root /var/www/letsencrypt;"
+        },
+        {
+          "line": 23,
+          "directive": "location / {"
+        },
+        {
+          "line": 24,
+          "directive": "return 301 https://$host$request_uri;"
+        },
+        {
+          "line": 29,
+          "directive": "listen 443 ssl http2;"
+        },
+        {
+          "line": 30,
+          "directive": "listen [::]:443 ssl http2;"
+        },
+        {
+          "line": 31,
+          "directive": "server_name liveuin.com www.liveuin.com;"
+        },
+        {
+          "line": 35,
+          "directive": "include /etc/letsencrypt/options-ssl-nginx.conf;"
+        },
+        {
+          "line": 39,
+          "directive": "location ^~ /__liveuin_marketing__/design-v2/ {"
+        },
+        {
+          "line": 40,
+          "directive": "alias /opt/liveuin/releases/liveuin-publication-lovable-20261002T075644Z/;"
+        },
+        {
+          "line": 48,
+          "directive": "location ^~ /__liveuin_marketing__/design-v3/ {"
+        },
+        {
+          "line": 49,
+          "directive": "alias /opt/liveuin/releases/liveuin-publication-lovable-20261002T090259Z/;"
+        },
+        {
+          "line": 56,
+          "directive": "location ^~ /__liveuin_marketing__/ {"
+        },
+        {
+          "line": 58,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 68,
+          "directive": "location ^~ /api/core/inventory/marketing- {"
+        },
+        {
+          "line": 70,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 80,
+          "directive": "location ^~ /api/core/demand/rental- {"
+        },
+        {
+          "line": 82,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 92,
+          "directive": "location ^~ /stays/listing_ {"
+        },
+        {
+          "line": 94,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 104,
+          "directive": "location = /api/core/demand/rental-auth/request {"
+        },
+        {
+          "line": 106,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 116,
+          "directive": "location = /api/core/demand/rental-auth/verify {"
+        },
+        {
+          "line": 118,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 130,
+          "directive": "root /var/www/liveuin-public-releases/.liveuin-public-root;"
+        },
+        {
+          "line": 136,
+          "directive": "include /etc/nginx/snippets/liveuin_public_static_security_headers.conf;"
+        },
+        {
+          "line": 137,
+          "directive": "include /etc/nginx/snippets/liveuin_public_static_route_semantics.conf;"
+        },
+        {
+          "line": 139,
+          "directive": "location ^~ /api/ops/ { return 404; }"
+        },
+        {
+          "line": 140,
+          "directive": "location ^~ /api/studio/ { return 404; }"
+        },
+        {
+          "line": 141,
+          "directive": "location ^~ /api/autopilot/ { return 404; }"
+        },
+        {
+          "line": 142,
+          "directive": "location ^~ /internal/ { return 404; }"
+        },
+        {
+          "line": 143,
+          "directive": "location ^~ /registry/ { return 404; }"
+        },
+        {
+          "line": 147,
+          "directive": "location ^~ /api/public/ {"
+        },
+        {
+          "line": 148,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 163,
+          "directive": "location = /api/core/public-theme {"
+        },
+        {
+          "line": 164,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 178,
+          "directive": "location ^~ /api/core/public-theme/ {"
+        },
+        {
+          "line": 179,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 193,
+          "directive": "location ^~ /api/core/public-cms/ {"
+        },
+        {
+          "line": 194,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 210,
+          "directive": "location ^~ /api/core/marketplace/ {"
+        },
+        {
+          "line": 211,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 225,
+          "directive": "location ^~ /api/core/ops/marketplace/ {"
+        },
+        {
+          "line": 226,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 240,
+          "directive": "location ^~ /api/core/partner/offers {"
+        },
+        {
+          "line": 241,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 257,
+          "directive": "location ^~ /liveuin-d1-assets/ {"
+        },
+        {
+          "line": 258,
+          "directive": "proxy_pass http://127.0.0.1:3111;"
+        },
+        {
+          "line": 269,
+          "directive": "location = /preview-next-pr11 {"
+        },
+        {
+          "line": 270,
+          "directive": "return 301 /preview-next-pr11/;"
+        },
+        {
+          "line": 273,
+          "directive": "location ^~ /preview-next-pr11/ {"
+        },
+        {
+          "line": 274,
+          "directive": "proxy_pass http://127.0.0.1:3111/;"
+        },
+        {
+          "line": 286,
+          "directive": "location ^~ /_next/ {"
+        },
+        {
+          "line": 287,
+          "directive": "proxy_pass http://127.0.0.1:3111/_next/;"
+        },
+        {
+          "line": 297,
+          "directive": "location ^~ /legal/ {"
+        },
+        {
+          "line": 298,
+          "directive": "root /var/www/liveuin-legal;"
+        },
+        {
+          "line": 300,
+          "directive": "try_files $uri $uri/index.html =404;"
+        },
+        {
+          "line": 306,
+          "directive": "include /etc/nginx/snippets/liveuin_public_static_security_headers.conf;"
+        },
+        {
+          "line": 310,
+          "directive": "location = /pass {"
+        },
+        {
+          "line": 311,
+          "directive": "try_files /index.html =404;"
+        },
+        {
+          "line": 314,
+          "directive": "location = /pass/ {"
+        },
+        {
+          "line": 315,
+          "directive": "try_files /index.html =404;"
+        },
+        {
+          "line": 318,
+          "directive": "location ~ ^/(admin(?:/.*)?|admin-control-center\\.html|infra(?:/.*)?|infra-control-center\\.html|ops/(theme|settings|control-panel|liveuin-control-panel|login|ai|operator-control-tower)(/|\\.html)?|operator-control-tower\\.html|l0-internal-operating-spine\\.html|inventory-operator-board\\.html|finance-ledger-workbench\\.html|checkout(?:/.*)?|pass(?:/.*)?|connect/sites(?:/.*)?|control-panel(/|\\.html)?|liveuin-control-panel(/|\\.html)?|public-theme\\.js|liveuin-control-panel\\.(css|js)|liveuin-theme-studio\\.html|ops-command\\.css|ops-auth-shell\\.(html|css|js))$ {"
+        },
+        {
+          "line": 319,
+          "directive": "proxy_pass http://127.0.0.1:9081;"
+        },
+        {
+          "line": 334,
+          "directive": "location ~ ^/(marketplace(?:/.*)?|app/marketplace(?:/.*)?|ops/marketplace(?:/.*)?|partners/offers/new/?)$ {"
+        },
+        {
+          "line": 335,
+          "directive": "try_files $uri $uri/ /marketplace-ui-index.html;"
+        },
+        {
+          "line": 338,
+          "directive": "location /ui/ {"
+        },
+        {
+          "line": 339,
+          "directive": "return 301 https://$host/;"
+        },
+        {
+          "line": 342,
+          "directive": "location / {"
+        },
+        {
+          "line": 343,
+          "directive": "try_files $uri $uri/ /index.html;"
+        }
+      ]
+    },
+    {
+      "path": "/etc/nginx/conf.d/app.liveuin.com.conf",
+      "sha256": "dd2a557bd58adc7dc2bb823fa083f748a608039d9c7077d517e1283c9bf4013b",
+      "routing": [
+        {
+          "line": 2,
+          "directive": "listen 80;"
+        },
+        {
+          "line": 3,
+          "directive": "listen [::]:80;"
+        },
+        {
+          "line": 4,
+          "directive": "server_name app.liveuin.com;"
+        },
+        {
+          "line": 6,
+          "directive": "location ^~ /.well-known/acme-challenge/ {"
+        },
+        {
+          "line": 7,
+          "directive": "root /var/www/letsencrypt;"
+        },
+        {
+          "line": 11,
+          "directive": "location = / {"
+        },
+        {
+          "line": 12,
+          "directive": "return 302 https://$host/app/member;"
+        },
+        {
+          "line": 15,
+          "directive": "location / {"
+        },
+        {
+          "line": 16,
+          "directive": "return 301 https://$host$request_uri;"
+        },
+        {
+          "line": 21,
+          "directive": "listen 443 ssl http2;"
+        },
+        {
+          "line": 22,
+          "directive": "listen [::]:443 ssl http2;"
+        },
+        {
+          "line": 23,
+          "directive": "server_name app.liveuin.com;"
+        },
+        {
+          "line": 27,
+          "directive": "include /etc/letsencrypt/options-ssl-nginx.conf;"
+        },
+        {
+          "line": 29,
+          "directive": "root /var/www/liveuin;"
+        },
+        {
+          "line": 35,
+          "directive": "include /etc/nginx/snippets/liveuin_public_static_security_headers.conf;"
+        },
+        {
+          "line": 37,
+          "directive": "location = / {"
+        },
+        {
+          "line": 38,
+          "directive": "return 302 /app/member;"
+        },
+        {
+          "line": 42,
+          "directive": "location = /api/core/identity/providers/apple/notifications { return 404; }"
+        },
+        {
+          "line": 44,
+          "directive": "location = /api/core/identity/sessions/password {"
+        },
+        {
+          "line": 47,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 50,
+          "directive": "location = /api/core/identity/registrations {"
+        },
+        {
+          "line": 53,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 56,
+          "directive": "location ^~ /api/core/identity/registrations/ {"
+        },
+        {
+          "line": 59,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 62,
+          "directive": "location = /api/core/identity/password-resets/request {"
+        },
+        {
+          "line": 65,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 68,
+          "directive": "location ^~ /api/core/identity/password-resets/ {"
+        },
+        {
+          "line": 71,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 74,
+          "directive": "location = /api/core/identity/providers/status {"
+        },
+        {
+          "line": 77,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 80,
+          "directive": "location ^~ /api/core/identity/providers/ {"
+        },
+        {
+          "line": 83,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 86,
+          "directive": "location = /api/core/identity/onboarding/status {"
+        },
+        {
+          "line": 87,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 90,
+          "directive": "location = /api/core/identity/onboarding/complete {"
+        },
+        {
+          "line": 91,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 94,
+          "directive": "location = /api/core/identity/profile {"
+        },
+        {
+          "line": 95,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 99,
+          "directive": "location = /api/core/identity/logout {"
+        },
+        {
+          "line": 102,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 105,
+          "directive": "location = /api/core/identity/sessions/refresh {"
+        },
+        {
+          "line": 108,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 111,
+          "directive": "location = /api/core/identity/account-deletion/cancel {"
+        },
+        {
+          "line": 114,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 117,
+          "directive": "location = /api/core/identity/account-deletion/status {"
+        },
+        {
+          "line": 120,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 129,
+          "directive": "location = /api/core/identity/session/resolve {"
+        },
+        {
+          "line": 130,
+          "directive": "include /etc/nginx/snippets/liveuin-app-identity-proxy.conf;"
+        },
+        {
+          "line": 133,
+          "directive": "location ^~ /api/core/identity/ {"
+        },
+        {
+          "line": 134,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 147,
+          "directive": "location = /api/ops/auth/google {"
+        },
+        {
+          "line": 148,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 161,
+          "directive": "location ^~ /api/ops/auth/google/ {"
+        },
+        {
+          "line": 162,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 175,
+          "directive": "location ^~ /api/core/vendor/ {"
+        },
+        {
+          "line": 176,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 189,
+          "directive": "location ^~ /api/ops/ { return 404; }"
+        },
+        {
+          "line": 190,
+          "directive": "location ^~ /api/studio/ { return 404; }"
+        },
+        {
+          "line": 191,
+          "directive": "location ^~ /api/autopilot/ { return 404; }"
+        },
+        {
+          "line": 192,
+          "directive": "location ^~ /internal/ { return 404; }"
+        },
+        {
+          "line": 193,
+          "directive": "location ^~ /registry/ { return 404; }"
+        },
+        {
+          "line": 194,
+          "directive": "location ^~ /admin/ { return 404; }"
+        },
+        {
+          "line": 196,
+          "directive": "location ^~ /api/public/ {"
+        },
+        {
+          "line": 197,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 209,
+          "directive": "location = /api/core/public-theme {"
+        },
+        {
+          "line": 210,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 222,
+          "directive": "location ^~ /api/core/public-theme/ {"
+        },
+        {
+          "line": 223,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 235,
+          "directive": "location ^~ /api/core/public-cms/ {"
+        },
+        {
+          "line": 236,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 249,
+          "directive": "location = /.well-known/apple-app-site-association {"
+        },
+        {
+          "line": 251,
+          "directive": "try_files $uri =404;"
+        },
+        {
+          "line": 254,
+          "directive": "location = /.well-known/assetlinks.json {"
+        },
+        {
+          "line": 256,
+          "directive": "try_files $uri =404;"
+        },
+        {
+          "line": 259,
+          "directive": "location ^~ /assets/ {"
+        },
+        {
+          "line": 260,
+          "directive": "try_files $uri =404;"
+        },
+        {
+          "line": 263,
+          "directive": "location / {"
+        },
+        {
+          "line": 264,
+          "directive": "try_files $uri $uri/ /index.html;"
+        }
+      ]
+    },
+    {
+      "path": "/etc/nginx/conf.d/host.liveuin.com.conf",
+      "sha256": "a79914852204b7507eaf88885ca882a09296701ce6ff31763d386964bbceba77",
+      "routing": [
+        {
+          "line": 2,
+          "directive": "listen 80;"
+        },
+        {
+          "line": 3,
+          "directive": "listen [::]:80;"
+        },
+        {
+          "line": 4,
+          "directive": "server_name host.liveuin.com;"
+        },
+        {
+          "line": 6,
+          "directive": "location ^~ /.well-known/acme-challenge/ {"
+        },
+        {
+          "line": 7,
+          "directive": "root /var/www/letsencrypt;"
+        },
+        {
+          "line": 11,
+          "directive": "location = / {"
+        },
+        {
+          "line": 12,
+          "directive": "return 302 https://$host/host/onboarding;"
+        },
+        {
+          "line": 15,
+          "directive": "location / {"
+        },
+        {
+          "line": 16,
+          "directive": "return 301 https://$host$request_uri;"
+        },
+        {
+          "line": 21,
+          "directive": "listen 443 ssl http2;"
+        },
+        {
+          "line": 22,
+          "directive": "listen [::]:443 ssl http2;"
+        },
+        {
+          "line": 23,
+          "directive": "server_name host.liveuin.com;"
+        },
+        {
+          "line": 27,
+          "directive": "include /etc/letsencrypt/options-ssl-nginx.conf;"
+        },
+        {
+          "line": 31,
+          "directive": "location ^~ /__liveuin_marketing__/design-v2/ {"
+        },
+        {
+          "line": 32,
+          "directive": "alias /opt/liveuin/releases/liveuin-publication-lovable-20261002T075644Z/;"
+        },
+        {
+          "line": 40,
+          "directive": "location ^~ /__liveuin_marketing__/design-v3/ {"
+        },
+        {
+          "line": 41,
+          "directive": "alias /opt/liveuin/releases/liveuin-publication-lovable-20261002T090259Z/;"
+        },
+        {
+          "line": 48,
+          "directive": "location ^~ /__liveuin_marketing__/ {"
+        },
+        {
+          "line": 50,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 60,
+          "directive": "location ^~ /api/core/inventory/marketing- {"
+        },
+        {
+          "line": 62,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 72,
+          "directive": "location ^~ /api/core/demand/rental- {"
+        },
+        {
+          "line": 74,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 84,
+          "directive": "location = /host/listing-publication {"
+        },
+        {
+          "line": 86,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 98,
+          "directive": "root /opt/liveuin/releases/liveuin-host-20260928T052333Z-before;"
+        },
+        {
+          "line": 104,
+          "directive": "include /etc/nginx/snippets/liveuin_public_static_security_headers.conf;"
+        },
+        {
+          "line": 106,
+          "directive": "location = / {"
+        },
+        {
+          "line": 107,
+          "directive": "return 302 /host/onboarding;"
+        },
+        {
+          "line": 110,
+          "directive": "include /etc/nginx/snippets/liveuin-host-identity-auth-routes.conf;"
+        },
+        {
+          "line": 111,
+          "directive": "location ^~ /api/ops/ { return 404; }"
+        },
+        {
+          "line": 112,
+          "directive": "location ^~ /api/studio/ { return 404; }"
+        },
+        {
+          "line": 113,
+          "directive": "location ^~ /api/autopilot/ { return 404; }"
+        },
+        {
+          "line": 114,
+          "directive": "location ^~ /internal/ { return 404; }"
+        },
+        {
+          "line": 115,
+          "directive": "location ^~ /registry/ { return 404; }"
+        },
+        {
+          "line": 116,
+          "directive": "location ^~ /admin/ { return 404; }"
+        },
+        {
+          "line": 119,
+          "directive": "location ^~ /api/core/identity/ {"
+        },
+        {
+          "line": 120,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 134,
+          "directive": "location ^~ /api/core/media/ {"
+        },
+        {
+          "line": 135,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 150,
+          "directive": "location ^~ /api/public/ {"
+        },
+        {
+          "line": 151,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 163,
+          "directive": "location = /api/core/public-theme {"
+        },
+        {
+          "line": 164,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 176,
+          "directive": "location ^~ /api/core/public-theme/ {"
+        },
+        {
+          "line": 177,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 189,
+          "directive": "location ^~ /api/core/public-cms/ {"
+        },
+        {
+          "line": 190,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 203,
+          "directive": "location = /host/properties/new {"
+        },
+        {
+          "line": 206,
+          "directive": "alias /opt/liveuin/releases/liveuin-host-listing-candidate-responsive-20260930T121200Z/index.html;"
+        },
+        {
+          "line": 208,
+          "directive": "location = /host/properties/new/ {"
+        },
+        {
+          "line": 210,
+          "directive": "return 301 /host/properties/new;"
+        },
+        {
+          "line": 212,
+          "directive": "location ^~ /__liveuin_listing_page__/ {"
+        },
+        {
+          "line": 213,
+          "directive": "alias /opt/liveuin/releases/liveuin-host-listing-candidate-responsive-20260930T121200Z/;"
+        },
+        {
+          "line": 215,
+          "directive": "location ^~ /assets/ {"
+        },
+        {
+          "line": 216,
+          "directive": "try_files $uri =404;"
+        },
+        {
+          "line": 219,
+          "directive": "location / {"
+        },
+        {
+          "line": 220,
+          "directive": "try_files $uri $uri/ /index.html;"
+        }
+      ]
+    },
+    {
+      "path": "/etc/nginx/conf.d/ops.liveuin.com.conf",
+      "sha256": "6bc41b661ff66ea3918194171dd1f3b9ab7dcf0f4cb93d7a1d272bd9979bc708",
+      "routing": [
+        {
+          "line": 3,
+          "directive": "listen 80;"
+        },
+        {
+          "line": 4,
+          "directive": "listen [::]:80;"
+        },
+        {
+          "line": 5,
+          "directive": "server_name ops.liveuin.com;"
+        },
+        {
+          "line": 6,
+          "directive": "return 308 https://$host$request_uri;"
+        },
+        {
+          "line": 11,
+          "directive": "listen 443 ssl http2;"
+        },
+        {
+          "line": 12,
+          "directive": "listen [::]:443 ssl http2;"
+        },
+        {
+          "line": 13,
+          "directive": "server_name ops.liveuin.com;"
+        },
+        {
+          "line": 19,
+          "directive": "include /etc/letsencrypt/options-ssl-nginx.conf;"
+        },
+        {
+          "line": 26,
+          "directive": "root /var/www/ops_ui;"
+        },
+        {
+          "line": 27,
+          "directive": "include /etc/nginx/snippets/liveuin_admin_routes.conf;"
+        },
+        {
+          "line": 28,
+          "directive": "include /etc/nginx/snippets/liveuin_ops_canonical_login.conf;"
+        },
+        {
+          "line": 29,
+          "directive": "include /etc/nginx/snippets/liveuin_private_preview_alias_gate.conf;"
+        },
+        {
+          "line": 34,
+          "directive": "location = /studio { return 308 /studio/; }"
+        },
+        {
+          "line": 36,
+          "directive": "location = /studio/ {"
+        },
+        {
+          "line": 37,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 39,
+          "directive": "alias /opt/liveuin/releases/liveuin-ai-studio-20260915T120600Z-country-readiness/studio-ui/;"
+        },
+        {
+          "line": 45,
+          "directive": "location ^~ /studio/assets/ {"
+        },
+        {
+          "line": 46,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 48,
+          "directive": "alias /opt/liveuin/releases/liveuin-ai-studio-20260915T120600Z-country-readiness/studio-ui/assets/;"
+        },
+        {
+          "line": 53,
+          "directive": "location = /studio/favicon.ico {"
+        },
+        {
+          "line": 54,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 56,
+          "directive": "alias /opt/liveuin/releases/liveuin-ai-studio-20260915T120600Z-country-readiness/studio-ui/favicon.ico;"
+        },
+        {
+          "line": 61,
+          "directive": "location ^~ /studio/ {"
+        },
+        {
+          "line": 62,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 64,
+          "directive": "alias /opt/liveuin/releases/liveuin-ai-studio-20260915T120600Z-country-readiness/studio-ui/;"
+        },
+        {
+          "line": 65,
+          "directive": "try_files $uri $uri/ /studio/index.html;"
+        },
+        {
+          "line": 71,
+          "directive": "location = /api/studio/connectors/catalog {"
+        },
+        {
+          "line": 72,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 74,
+          "directive": "proxy_pass http://unix:/run/ai-infer/uvicorn.sock:;"
+        },
+        {
+          "line": 85,
+          "directive": "location ^~ /api/studio/ { return 404; }"
+        },
+        {
+          "line": 88,
+          "directive": "location = /healthz {"
+        },
+        {
+          "line": 91,
+          "directive": "return 200 \"ok\\n\";"
+        },
+        {
+          "line": 95,
+          "directive": "location = /api/ops/healthz {"
+        },
+        {
+          "line": 96,
+          "directive": "proxy_pass http://127.0.0.1:9095/api/ops/healthz;"
+        },
+        {
+          "line": 105,
+          "directive": "location = /__ops_auth_gate {"
+        },
+        {
+          "line": 107,
+          "directive": "proxy_pass http://127.0.0.1:9097/gate;"
+        },
+        {
+          "line": 124,
+          "directive": "location @ops_staff_login {"
+        },
+        {
+          "line": 125,
+          "directive": "return 302 /ops/login?return_to=$request_uri;"
+        },
+        {
+          "line": 131,
+          "directive": "location = /autopilot  { return 301 /autopilot/ui/; }"
+        },
+        {
+          "line": 132,
+          "directive": "location = /autopilot/ { return 301 /autopilot/ui/; }"
+        },
+        {
+          "line": 134,
+          "directive": "location ^~ /autopilot/ui/ {"
+        },
+        {
+          "line": 135,
+          "directive": "alias /opt/autopilot_orchestrator/ui/;"
+        },
+        {
+          "line": 138,
+          "directive": "try_files $uri $uri/ autopilot.html;"
+        },
+        {
+          "line": 149,
+          "directive": "location ^~ /autopilot/staging/ops_ui/ {"
+        },
+        {
+          "line": 150,
+          "directive": "alias /opt/autopilot_orchestrator/worktrees/ops/staging/ops_ui/;"
+        },
+        {
+          "line": 157,
+          "directive": "location ^~ /autopilot/staging/ops_backend/ {"
+        },
+        {
+          "line": 158,
+          "directive": "alias /opt/autopilot_orchestrator/worktrees/ops/staging/ops_backend/;"
+        },
+        {
+          "line": 168,
+          "directive": "location ^~ /staging-api/ {"
+        },
+        {
+          "line": 169,
+          "directive": "proxy_pass http://127.0.0.1:9096/;"
+        },
+        {
+          "line": 181,
+          "directive": "location = /staging-ui { return 308 /staging-ui/; }"
+        },
+        {
+          "line": 183,
+          "directive": "location ^~ /staging-ui/ {"
+        },
+        {
+          "line": 184,
+          "directive": "alias /opt/autopilot_orchestrator/worktrees/ops/staging/ops_ui/;"
+        },
+        {
+          "line": 188,
+          "directive": "try_files $uri $uri/ index.html;"
+        },
+        {
+          "line": 203,
+          "directive": "location = /autopilot-preview { return 308 /autopilot-preview/; }"
+        },
+        {
+          "line": 205,
+          "directive": "location ^~ /autopilot-preview/api/ {"
+        },
+        {
+          "line": 206,
+          "directive": "proxy_pass http://127.0.0.1:9096/;"
+        },
+        {
+          "line": 217,
+          "directive": "location ^~ /autopilot-preview/autopilot_generated/ {"
+        },
+        {
+          "line": 218,
+          "directive": "alias /opt/autopilot_orchestrator/worktrees/ops/staging/ops_ui/autopilot_generated/;"
+        },
+        {
+          "line": 220,
+          "directive": "try_files $uri =404;"
+        },
+        {
+          "line": 223,
+          "directive": "location ^~ /autopilot-preview/ {"
+        },
+        {
+          "line": 224,
+          "directive": "alias /opt/autopilot_orchestrator/worktrees/ops/staging/ops_ui/;"
+        },
+        {
+          "line": 228,
+          "directive": "try_files $uri $uri/ index.html;"
+        },
+        {
+          "line": 243,
+          "directive": "location ^~ /api/autopilot/ {"
+        },
+        {
+          "line": 244,
+          "directive": "proxy_pass http://127.0.0.1:9555/api/autopilot/;"
+        },
+        {
+          "line": 245,
+          "directive": "include /etc/nginx/snippets/autopilot_orchestrator_proxy.conf;"
+        },
+        {
+          "line": 249,
+          "directive": "location ^~ /autopilot/api/ {"
+        },
+        {
+          "line": 258,
+          "directive": "proxy_pass http://127.0.0.1:9555/api/autopilot/;"
+        },
+        {
+          "line": 268,
+          "directive": "location ^~ /auth/ {"
+        },
+        {
+          "line": 271,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 285,
+          "directive": "location ^~ /feature/ {"
+        },
+        {
+          "line": 286,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 301,
+          "directive": "location = /api/ops/auth/request_code {"
+        },
+        {
+          "line": 303,
+          "directive": "return 403;"
+        },
+        {
+          "line": 306,
+          "directive": "proxy_pass http://127.0.0.1:9095/api/ops/auth/request_code;"
+        },
+        {
+          "line": 318,
+          "directive": "location ~ ^/(ops/payments|host/finance|finance/settlements|finance/exports)(/|$) {"
+        },
+        {
+          "line": 319,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 321,
+          "directive": "try_files /finance-ledger-workbench.html =404;"
+        },
+        {
+          "line": 324,
+          "directive": "location ~ ^/(wallet|app/wallet)(/receipts)?/?$ {"
+        },
+        {
+          "line": 325,
+          "directive": "try_files /finance-ledger-workbench.html =404;"
+        },
+        {
+          "line": 328,
+          "directive": "location ~ ^/pass/[^/]+/payments/?$ {"
+        },
+        {
+          "line": 329,
+          "directive": "try_files /finance-ledger-workbench.html =404;"
+        },
+        {
+          "line": 332,
+          "directive": "location = /finance-ledger-workbench.html {"
+        },
+        {
+          "line": 333,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 335,
+          "directive": "try_files /finance-ledger-workbench.html =404;"
+        },
+        {
+          "line": 338,
+          "directive": "location = /finance-ledger-workbench.css {"
+        },
+        {
+          "line": 339,
+          "directive": "try_files /finance-ledger-workbench.css =404;"
+        },
+        {
+          "line": 342,
+          "directive": "location = /finance-ledger-workbench.js {"
+        },
+        {
+          "line": 343,
+          "directive": "try_files /finance-ledger-workbench.js =404;"
+        },
+        {
+          "line": 349,
+          "directive": "location ~ ^/(app/verification|ops/verification/kyc|trust/verified-properties)(/[^/?#]+)?/?$ {"
+        },
+        {
+          "line": 350,
+          "directive": "rewrite ^ /trust-verification-workbench.html last;"
+        },
+        {
+          "line": 353,
+          "directive": "location = /trust-verification-workbench.html {"
+        },
+        {
+          "line": 354,
+          "directive": "alias /opt/liveuin/trust-verification-workbench.html;"
+        },
+        {
+          "line": 357,
+          "directive": "location = /trust-verification-workbench.css {"
+        },
+        {
+          "line": 358,
+          "directive": "alias /opt/liveuin/trust-verification-workbench.css;"
+        },
+        {
+          "line": 361,
+          "directive": "location = /trust-verification-workbench.js {"
+        },
+        {
+          "line": 362,
+          "directive": "alias /opt/liveuin/trust-verification-workbench.js;"
+        },
+        {
+          "line": 367,
+          "directive": "location ~ ^/(app/move-in|pass/move-in|ops/check-in|ops/lifecycle)(/[^/?#]+)?/?$ {"
+        },
+        {
+          "line": 368,
+          "directive": "rewrite ^ /movein-lifecycle-workbench.html last;"
+        },
+        {
+          "line": 371,
+          "directive": "location = /movein-lifecycle-workbench.html {"
+        },
+        {
+          "line": 372,
+          "directive": "alias /opt/liveuin/movein-lifecycle-workbench.html;"
+        },
+        {
+          "line": 375,
+          "directive": "location = /movein-lifecycle-workbench.css {"
+        },
+        {
+          "line": 376,
+          "directive": "alias /opt/liveuin/movein-lifecycle-workbench.css;"
+        },
+        {
+          "line": 379,
+          "directive": "location = /movein-lifecycle-workbench.js {"
+        },
+        {
+          "line": 380,
+          "directive": "alias /opt/liveuin/movein-lifecycle-workbench.js;"
+        },
+        {
+          "line": 385,
+          "directive": "location ~ ^/(ops/demand-intelligence|ops/demand-review|connect/insights|reports/demand)(/[^/?#]+)?/?$ {"
+        },
+        {
+          "line": 386,
+          "directive": "rewrite ^ /demand-intelligence-workbench.html last;"
+        },
+        {
+          "line": 389,
+          "directive": "location = /demand-intelligence-workbench.html {"
+        },
+        {
+          "line": 390,
+          "directive": "alias /opt/liveuin/demand-intelligence-workbench.html;"
+        },
+        {
+          "line": 393,
+          "directive": "location = /demand-intelligence-workbench.css {"
+        },
+        {
+          "line": 394,
+          "directive": "alias /opt/liveuin/demand-intelligence-workbench.css;"
+        },
+        {
+          "line": 397,
+          "directive": "location = /demand-intelligence-workbench.js {"
+        },
+        {
+          "line": 398,
+          "directive": "alias /opt/liveuin/demand-intelligence-workbench.js;"
+        },
+        {
+          "line": 403,
+          "directive": "location = /ops/control-tower {"
+        },
+        {
+          "line": 404,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 406,
+          "directive": "try_files $uri $uri/ /index.html;"
+        },
+        {
+          "line": 411,
+          "directive": "location = /ops/inventory {"
+        },
+        {
+          "line": 412,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 414,
+          "directive": "alias /opt/liveuin/inventory-operator-board.html;"
+        },
+        {
+          "line": 420,
+          "directive": "location ~ ^/(ops/control-tower|ops/operator-control-tower|ops/daily-control-tower)(/|$) {"
+        },
+        {
+          "line": 421,
+          "directive": "rewrite ^ /operator-control-tower.html last;"
+        },
+        {
+          "line": 424,
+          "directive": "location = /operator-control-tower.html {"
+        },
+        {
+          "line": 425,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 427,
+          "directive": "alias /opt/liveuin/operator-control-tower.html;"
+        },
+        {
+          "line": 430,
+          "directive": "location = /operator-control-tower.css {"
+        },
+        {
+          "line": 431,
+          "directive": "alias /opt/liveuin/operator-control-tower.css;"
+        },
+        {
+          "line": 434,
+          "directive": "location = /operator-control-tower.js {"
+        },
+        {
+          "line": 435,
+          "directive": "alias /opt/liveuin/operator-control-tower.js;"
+        },
+        {
+          "line": 440,
+          "directive": "location ~ ^/(ops/command)(/|$) {"
+        },
+        {
+          "line": 441,
+          "directive": "rewrite ^ /ops-command.html last;"
+        },
+        {
+          "line": 444,
+          "directive": "location = /ops-command.html {"
+        },
+        {
+          "line": 445,
+          "directive": "alias /opt/liveuin/ops-command.html;"
+        },
+        {
+          "line": 448,
+          "directive": "location = /ops-command.css {"
+        },
+        {
+          "line": 449,
+          "directive": "alias /opt/liveuin/ops-command.css;"
+        },
+        {
+          "line": 452,
+          "directive": "location = /ops-command.js {"
+        },
+        {
+          "line": 453,
+          "directive": "alias /opt/liveuin/ops-command.js;"
+        },
+        {
+          "line": 458,
+          "directive": "location ~ ^/(ops/marketplace/governance)(/|$) {"
+        },
+        {
+          "line": 459,
+          "directive": "rewrite ^ /marketplace-governance.html last;"
+        },
+        {
+          "line": 462,
+          "directive": "location = /marketplace-governance.html {"
+        },
+        {
+          "line": 463,
+          "directive": "alias /opt/liveuin/marketplace-governance.html;"
+        },
+        {
+          "line": 466,
+          "directive": "location = /marketplace-governance.css {"
+        },
+        {
+          "line": 467,
+          "directive": "alias /opt/liveuin/marketplace-governance.css;"
+        },
+        {
+          "line": 470,
+          "directive": "location = /marketplace-governance.js {"
+        },
+        {
+          "line": 471,
+          "directive": "alias /opt/liveuin/marketplace-governance.js;"
+        },
+        {
+          "line": 476,
+          "directive": "location ~ ^/(ops/inventory|ops/smart-inventory|host/inventory|host/properties|ops/ui/listings\\.html|smart-inventory\\.html|add-inventory\\.html)$ {"
+        },
+        {
+          "line": 477,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 479,
+          "directive": "root /opt/liveuin;"
+        },
+        {
+          "line": 480,
+          "directive": "try_files /inventory-operator-board.html =404;"
+        },
+        {
+          "line": 483,
+          "directive": "location = /inventory-operator-board.html {"
+        },
+        {
+          "line": 484,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 486,
+          "directive": "alias /opt/liveuin/inventory-operator-board.html;"
+        },
+        {
+          "line": 489,
+          "directive": "location = /inventory-operator-board.css {"
+        },
+        {
+          "line": 490,
+          "directive": "alias /opt/liveuin/inventory-operator-board.css;"
+        },
+        {
+          "line": 493,
+          "directive": "location = /inventory-operator-board.js {"
+        },
+        {
+          "line": 494,
+          "directive": "alias /opt/liveuin/inventory-operator-board.js;"
+        },
+        {
+          "line": 501,
+          "directive": "location = /v1/health {"
+        },
+        {
+          "line": 502,
+          "directive": "proxy_pass http://127.0.0.1:9083/v1/health;"
+        },
+        {
+          "line": 514,
+          "directive": "location ^~ /api/ops/command/ {"
+        },
+        {
+          "line": 515,
+          "directive": "proxy_pass http://127.0.0.1:9083;"
+        },
+        {
+          "line": 532,
+          "directive": "location ^~ /api/core/ops/liveuintest-rollout-status {"
+        },
+        {
+          "line": 533,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 544,
+          "directive": "location ^~ /api/core/ops/marketplace/ {"
+        },
+        {
+          "line": 545,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 558,
+          "directive": "location ^~ /api/core/compliance/shared-housing-governance/ {"
+        },
+        {
+          "line": 559,
+          "directive": "proxy_pass http://127.0.0.1:9081;"
+        },
+        {
+          "line": 572,
+          "directive": "location ^~ /api/core/ai/ {"
+        },
+        {
+          "line": 573,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 574,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 588,
+          "directive": "location ^~ /api/core/identity/ {"
+        },
+        {
+          "line": 589,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 603,
+          "directive": "location ^~ /ops-candidate-preview-20260818/ {"
+        },
+        {
+          "line": 604,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 606,
+          "directive": "alias /opt/liveuin/ops-candidate-preview-20260818/;"
+        },
+        {
+          "line": 608,
+          "directive": "try_files $uri $uri/ index.html;"
+        },
+        {
+          "line": 611,
+          "directive": "location = /ops-auth-preview-20260820/ {"
+        },
+        {
+          "line": 612,
+          "directive": "return 308 /ops-auth-preview-20260820$is_args$args;"
+        },
+        {
+          "line": 615,
+          "directive": "location = /ops-auth-preview-20260820 {"
+        },
+        {
+          "line": 616,
+          "directive": "alias /opt/liveuin/production-ui-auth/ops-auth-shell.html;"
+        },
+        {
+          "line": 621,
+          "directive": "location = /ops-auth-shell.css {"
+        },
+        {
+          "line": 622,
+          "directive": "alias /opt/liveuin/production-ui-auth/ops-auth-shell.css;"
+        },
+        {
+          "line": 626,
+          "directive": "location = /ops-auth-shell.js {"
+        },
+        {
+          "line": 627,
+          "directive": "alias /opt/liveuin/production-ui-auth/ops-auth-shell.js;"
+        },
+        {
+          "line": 631,
+          "directive": "location ^~ /ops-auth-preview-assets/ {"
+        },
+        {
+          "line": 632,
+          "directive": "alias /opt/liveuin/assets/;"
+        },
+        {
+          "line": 636,
+          "directive": "location = /ops-lovable-preview-20260821 {"
+        },
+        {
+          "line": 637,
+          "directive": "return 308 /ops-lovable-preview-20260821-control-tower-live-20260826/;"
+        },
+        {
+          "line": 640,
+          "directive": "location ~ ^/ops-lovable-preview-20260821/(.*)$ {"
+        },
+        {
+          "line": 641,
+          "directive": "return 308 /ops-lovable-preview-20260821-control-tower-live-20260826/$1;"
+        },
+        {
+          "line": 644,
+          "directive": "location = /ops-lovable-preview-20260821-control-tower-live-20260826 {"
+        },
+        {
+          "line": 645,
+          "directive": "return 308 /ops-lovable-preview-20260821-control-tower-live-20260826/;"
+        },
+        {
+          "line": 648,
+          "directive": "location = /ops-lovable-preview-20260821-control-tower-live-20260826/ops/preview-sign-in {"
+        },
+        {
+          "line": 649,
+          "directive": "alias /opt/liveuin/ops-lovable-preview-20260821-control-tower-live-20260826/index.html;"
+        },
+        {
+          "line": 655,
+          "directive": "location ^~ /ops-lovable-preview-20260821-control-tower-live-20260826/assets/ {"
+        },
+        {
+          "line": 656,
+          "directive": "alias /opt/liveuin/ops-lovable-preview-20260821-control-tower-live-20260826/assets/;"
+        },
+        {
+          "line": 661,
+          "directive": "location ^~ /ops-lovable-preview-20260821-control-tower-live-20260826/ {"
+        },
+        {
+          "line": 662,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 664,
+          "directive": "alias /opt/liveuin/ops-lovable-preview-20260821-control-tower-live-20260826/;"
+        },
+        {
+          "line": 666,
+          "directive": "try_files $uri $uri/ /ops-lovable-preview-20260821-control-tower-live-20260826/index.html;"
+        },
+        {
+          "line": 670,
+          "directive": "location = /ops-m1-intake-preview-20260831 {"
+        },
+        {
+          "line": 671,
+          "directive": "return 308 /ops-m1-intake-preview-20260831/;"
+        },
+        {
+          "line": 674,
+          "directive": "location = /ops-m1-intake-preview-20260831/favicon.ico {"
+        },
+        {
+          "line": 675,
+          "directive": "alias /opt/liveuin/ops-m1-intake-preview-20260831/www-lovable/dist/favicon.ico;"
+        },
+        {
+          "line": 681,
+          "directive": "location = /ops-m1-intake-preview-20260831/liveuin-resident.webmanifest {"
+        },
+        {
+          "line": 682,
+          "directive": "alias /opt/liveuin/ops-m1-intake-preview-20260831/www-lovable/dist/liveuin-resident.webmanifest;"
+        },
+        {
+          "line": 688,
+          "directive": "location = /ops-m1-intake-preview-20260831/ops/preview-sign-in {"
+        },
+        {
+          "line": 689,
+          "directive": "alias /opt/liveuin/ops-m1-intake-preview-20260831/www-lovable/dist/index.html;"
+        },
+        {
+          "line": 695,
+          "directive": "location ^~ /ops-m1-intake-preview-20260831/assets/ {"
+        },
+        {
+          "line": 696,
+          "directive": "alias /opt/liveuin/ops-m1-intake-preview-20260831/www-lovable/dist/assets/;"
+        },
+        {
+          "line": 701,
+          "directive": "location ^~ /ops-m1-intake-preview-20260831/api/ {"
+        },
+        {
+          "line": 702,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 704,
+          "directive": "rewrite ^/ops-m1-intake-preview-20260831/api/(.*)$ /api/$1 break;"
+        },
+        {
+          "line": 705,
+          "directive": "proxy_pass http://127.0.0.1:4917;"
+        },
+        {
+          "line": 717,
+          "directive": "location ^~ /ops-m1-intake-preview-20260831/ {"
+        },
+        {
+          "line": 718,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 720,
+          "directive": "alias /opt/liveuin/ops-m1-intake-preview-20260831/www-lovable/dist/;"
+        },
+        {
+          "line": 722,
+          "directive": "try_files $uri $uri/ /ops-m1-intake-preview-20260831/index.html;"
+        },
+        {
+          "line": 726,
+          "directive": "location = /ops-m1-intake-preview-20260931 {"
+        },
+        {
+          "line": 727,
+          "directive": "return 308 /ops-m1-intake-preview-20260931/;"
+        },
+        {
+          "line": 730,
+          "directive": "location = /ops-m1-intake-preview-20260931/favicon.ico {"
+        },
+        {
+          "line": 731,
+          "directive": "alias /opt/liveuin/ops-m1-intake-preview-20260931/www-lovable/dist/favicon.ico;"
+        },
+        {
+          "line": 737,
+          "directive": "location = /ops-m1-intake-preview-20260931/liveuin-resident.webmanifest {"
+        },
+        {
+          "line": 738,
+          "directive": "alias /opt/liveuin/ops-m1-intake-preview-20260931/www-lovable/dist/liveuin-resident.webmanifest;"
+        },
+        {
+          "line": 744,
+          "directive": "location = /ops-m1-intake-preview-20260931/ops/preview-sign-in {"
+        },
+        {
+          "line": 745,
+          "directive": "alias /opt/liveuin/ops-m1-intake-preview-20260931/www-lovable/dist/index.html;"
+        },
+        {
+          "line": 751,
+          "directive": "location ^~ /ops-m1-intake-preview-20260931/assets/ {"
+        },
+        {
+          "line": 752,
+          "directive": "alias /opt/liveuin/ops-m1-intake-preview-20260931/www-lovable/dist/assets/;"
+        },
+        {
+          "line": 757,
+          "directive": "location ^~ /ops-m1-intake-preview-20260931/api/ {"
+        },
+        {
+          "line": 758,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 760,
+          "directive": "rewrite ^/ops-m1-intake-preview-20260931/api/(.*)$ /api/$1 break;"
+        },
+        {
+          "line": 761,
+          "directive": "proxy_pass http://127.0.0.1:4917;"
+        },
+        {
+          "line": 773,
+          "directive": "location ^~ /ops-m1-intake-preview-20260931/ {"
+        },
+        {
+          "line": 774,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 776,
+          "directive": "alias /opt/liveuin/ops-m1-intake-preview-20260931/www-lovable/dist/;"
+        },
+        {
+          "line": 778,
+          "directive": "try_files $uri $uri/ /ops-m1-intake-preview-20260931/index.html;"
+        },
+        {
+          "line": 782,
+          "directive": "location ^~ /api/ {"
+        },
+        {
+          "line": 783,
+          "directive": "proxy_pass http://127.0.0.1:9095;"
+        },
+        {
+          "line": 797,
+          "directive": "location ^~ /static/ {"
+        },
+        {
+          "line": 798,
+          "directive": "alias /var/www/ops_ui/static/;"
+        },
+        {
+          "line": 802,
+          "directive": "include /etc/nginx/snippets/liveuin_ops_auth_routes.conf;"
+        },
+        {
+          "line": 805,
+          "directive": "location / {"
+        },
+        {
+          "line": 806,
+          "directive": "try_files $uri $uri/ /index.html;"
+        }
+      ]
+    },
+    {
+      "path": "/etc/nginx/conf.d/partner.liveuin.com.conf",
+      "sha256": "51cae8f2eea512ff8d68ff5df8364309da717bcb6ac951234f5d8afb4dbf9ced",
+      "routing": [
+        {
+          "line": 2,
+          "directive": "listen 80;"
+        },
+        {
+          "line": 3,
+          "directive": "listen [::]:80;"
+        },
+        {
+          "line": 4,
+          "directive": "server_name partner.liveuin.com;"
+        },
+        {
+          "line": 6,
+          "directive": "location ^~ /.well-known/acme-challenge/ {"
+        },
+        {
+          "line": 7,
+          "directive": "root /var/www/letsencrypt;"
+        },
+        {
+          "line": 11,
+          "directive": "location = / {"
+        },
+        {
+          "line": 12,
+          "directive": "return 302 https://$host/partner/dashboard;"
+        },
+        {
+          "line": 15,
+          "directive": "location / {"
+        },
+        {
+          "line": 16,
+          "directive": "return 301 https://$host$request_uri;"
+        },
+        {
+          "line": 21,
+          "directive": "listen 443 ssl http2;"
+        },
+        {
+          "line": 22,
+          "directive": "listen [::]:443 ssl http2;"
+        },
+        {
+          "line": 23,
+          "directive": "server_name partner.liveuin.com;"
+        },
+        {
+          "line": 27,
+          "directive": "include /etc/letsencrypt/options-ssl-nginx.conf;"
+        },
+        {
+          "line": 29,
+          "directive": "root /var/www/liveuin;"
+        },
+        {
+          "line": 35,
+          "directive": "include /etc/nginx/snippets/liveuin_public_static_security_headers.conf;"
+        },
+        {
+          "line": 37,
+          "directive": "location = / {"
+        },
+        {
+          "line": 38,
+          "directive": "return 302 /partner/dashboard;"
+        },
+        {
+          "line": 41,
+          "directive": "location ^~ /api/ops/ { return 404; }"
+        },
+        {
+          "line": 42,
+          "directive": "location ^~ /api/studio/ { return 404; }"
+        },
+        {
+          "line": 43,
+          "directive": "location ^~ /api/autopilot/ { return 404; }"
+        },
+        {
+          "line": 44,
+          "directive": "location ^~ /internal/ { return 404; }"
+        },
+        {
+          "line": 45,
+          "directive": "location ^~ /registry/ { return 404; }"
+        },
+        {
+          "line": 46,
+          "directive": "location ^~ /admin/ { return 404; }"
+        },
+        {
+          "line": 48,
+          "directive": "location ^~ /api/public/ {"
+        },
+        {
+          "line": 49,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 61,
+          "directive": "location = /api/core/public-theme {"
+        },
+        {
+          "line": 62,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 74,
+          "directive": "location ^~ /api/core/public-theme/ {"
+        },
+        {
+          "line": 75,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 87,
+          "directive": "location ^~ /api/core/public-cms/ {"
+        },
+        {
+          "line": 88,
+          "directive": "proxy_pass http://127.0.0.1:9080;"
+        },
+        {
+          "line": 100,
+          "directive": "location ^~ /assets/ {"
+        },
+        {
+          "line": 101,
+          "directive": "try_files $uri =404;"
+        },
+        {
+          "line": 104,
+          "directive": "location / {"
+        },
+        {
+          "line": 105,
+          "directive": "try_files $uri $uri/ /index.html;"
+        }
+      ]
+    },
+    {
+      "path": "/etc/nginx/snippets/liveuin-app-identity-proxy.conf",
+      "sha256": "e76e186470e3c215c74cc1b89e8f0e9e0736c8d493cdf7380eb91898ef464902",
+      "routing": [
+        {
+          "line": 2,
+          "directive": "proxy_pass http://127.0.0.1:9098;"
+        }
+      ]
+    },
+    {
+      "path": "/etc/nginx/snippets/liveuin-host-identity-auth-routes.conf",
+      "sha256": "c740bd27bd8d4de84aa85b3f7fb9066ba5a267170b772b11485a21234bb19c0e",
+      "routing": [
+        {
+          "line": 6,
+          "directive": "location = /api/ops/auth/request_code {"
+        },
+        {
+          "line": 9,
+          "directive": "return 403;"
+        },
+        {
+          "line": 12,
+          "directive": "proxy_pass http://127.0.0.1:9095/api/ops/auth/request_code;"
+        },
+        {
+          "line": 26,
+          "directive": "location = /api/ops/auth/verify-code {"
+        },
+        {
+          "line": 27,
+          "directive": "proxy_pass http://127.0.0.1:9095/api/ops/auth/verify-code;"
+        }
+      ]
+    },
+    {
+      "path": "/etc/nginx/snippets/liveuin_ops_auth_routes.conf",
+      "sha256": "5b83171c3c0e962c86b26d8836435736f6c19fa4cb7c0e357809879eee1faf88",
+      "routing": [
+        {
+          "line": 3,
+          "directive": "location = /ops/login {"
+        },
+        {
+          "line": 4,
+          "directive": "alias /opt/liveuin/production-ui-auth/ops-auth-shell.html;"
+        },
+        {
+          "line": 10,
+          "directive": "location = /ops/login/ {"
+        },
+        {
+          "line": 11,
+          "directive": "return 308 /ops/login;"
+        },
+        {
+          "line": 14,
+          "directive": "location ^~ /ops/login/assets/ {"
+        },
+        {
+          "line": 15,
+          "directive": "alias /opt/liveuin/releases/liveuin-auth-20260917T052635Z-ops-gate/auth-ui/assets/;"
+        },
+        {
+          "line": 19,
+          "directive": "location = /ops/login/favicon.ico {"
+        },
+        {
+          "line": 20,
+          "directive": "alias /opt/liveuin/releases/liveuin-auth-20260917T052635Z-ops-gate/auth-ui/favicon.ico;"
+        },
+        {
+          "line": 24,
+          "directive": "location = /ops/login/liveuin-resident.webmanifest {"
+        },
+        {
+          "line": 25,
+          "directive": "alias /opt/liveuin/releases/liveuin-auth-20260917T052635Z-ops-gate/auth-ui/liveuin-resident.webmanifest;"
+        },
+        {
+          "line": 29,
+          "directive": "location = /ops/auth-pending {"
+        },
+        {
+          "line": 30,
+          "directive": "try_files /auth-pending.html =404;"
+        },
+        {
+          "line": 34,
+          "directive": "location = /ops/auth-pending/ {"
+        },
+        {
+          "line": 35,
+          "directive": "return 308 /ops/auth-pending;"
+        }
+      ]
+    },
+    {
+      "path": "/etc/nginx/snippets/liveuin_ops_canonical_login.conf",
+      "sha256": "48dbef9867ff25e9e148cd5c34c1fc4070c22be3f3641d1f91309150e8de7490",
+      "routing": [
+        {
+          "line": 2,
+          "directive": "location = / { return 302 /ops/login; }"
+        },
+        {
+          "line": 3,
+          "directive": "location = /login { return 302 /ops/login; }"
+        },
+        {
+          "line": 4,
+          "directive": "location = /login.html { return 302 /ops/login; }"
+        },
+        {
+          "line": 5,
+          "directive": "location = /ui/login.html { return 302 /ops/login; }"
+        },
+        {
+          "line": 7,
+          "directive": "location = /ui/otp.html {"
+        },
+        {
+          "line": 8,
+          "directive": "return 302 /ops/login?return_to=%2Fops%2Fcommand;"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "at_utc": "2026-10-19T16:29:03.561717+00:00",
+  "repository": "timlavente/liveuin-resident-app",
+  "ref": "main",
+  "commit": "16bafa745c9b6821796a7ed45e742699669f838e",
+  "files": [
+    {
+      "file": "src/lib/auth-context.tsx",
+      "git_blob": "c0ea8a49d428823be41511c8b7e05e922e2d8ed6",
+      "sha256": "296a61fb02180be8e2604252fee55a7fba071969eef8bad2ab7dac67c038a21b",
+      "local_working_equal": false
+    },
+    {
+      "file": "src/native-lovable/routes/auth.sign-in.tsx",
+      "git_blob": "b275615bee79c28dbae902587b420815af094fca",
+      "sha256": "fbe4feb865033c016b52656979ddf03a054ef91f6a18ddd394444e760a86ce15",
+      "local_working_equal": false
+    },
+    {
+      "file": "src/lib/residentSocialAuth.ts",
+      "git_blob": "2320dd8e0dd2d6214bccf75e5dc943ed16fbe020",
+      "sha256": "b01890782d9201832b9c40b934ad3359f10b3a85dffdf9fa14b85c20ffa7f7ac",
+      "local_working_equal": false
+    },
+    {
+      "file": "src/pages/WorkspaceSignIn.tsx",
+      "git_blob": "8a7cd9f3e4de8a24c6103f2b4d97b69a6357e30b",
+      "sha256": "4d922648a4468367ae3e2097e8afe94677b094abe4af0b1678602f327fa33757",
+      "local_working_equal": true
+    }
+  ]
+}

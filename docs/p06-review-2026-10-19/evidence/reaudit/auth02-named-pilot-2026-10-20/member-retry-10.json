@@ -1,0 +1,9 @@
+{
+  "component": "AUTH02-member-one-file-retry",
+  "public_launch": false,
+  "provider_flags_changed": false,
+  "accounts_or_grants_created": false,
+  "database_restore": false,
+  "status": "one_file_retry_stopped",
+  "failure_code": "baseline_pid_changed_reconcile_first"
+}

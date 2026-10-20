@@ -1,0 +1,32 @@
+{
+  "appId": "com.liveuin.resident",
+  "appName": "LiveUIN",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "hostname": "app.liveuin.com",
+    "androidScheme": "https",
+    "iosScheme": "capacitor"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1200,
+      "launchAutoHide": false,
+      "backgroundColor": "#143042",
+      "showSpinner": false
+    },
+    "StatusBar": {
+      "style": "LIGHT",
+      "backgroundColor": "#050820",
+      "overlaysWebView": true
+    }
+  },
+  "packageClassList": [
+    "AppPlugin",
+    "GeolocationPlugin",
+    "ResidentLaunchBridgePlugin",
+    "App.ResidentLaunchBridgePlugin",
+    "SplashScreenPlugin",
+    "StatusBarPlugin"
+  ]
+}

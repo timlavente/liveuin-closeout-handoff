@@ -1,0 +1,48 @@
+# LiveUIN public static route semantics.
+# Include these exact locations in the liveuin.com/www.liveuin.com HTTPS server
+# block before the generic SPA fallback. This file is a deployment candidate;
+# it does not authorize or perform a server change.
+
+location = /sitemap.xml {
+    default_type application/xml;
+    try_files /sitemap.xml =404;
+}
+
+location = /robots.txt {
+    default_type text/plain;
+    try_files /robots.txt =404;
+}
+
+location = /liveuin-social-card.png {
+    default_type image/png;
+    try_files /liveuin-social-card.png =404;
+}
+
+# www.liveuin.com is a static public UI, not the Core API health origin.
+# Returning a real JSON 404 prevents the SPA index from masquerading as health.
+location = /api/health {
+    default_type application/json;
+    add_header Cache-Control "no-store" always;
+    return 404 '{"ok":false,"detail":"not_found"}';
+}
+
+# Missing hashed assets must never fall back to index.html.
+location ^~ /assets/ {
+    try_files $uri =404;
+    access_log off;
+    expires 1y;
+    add_header Cache-Control "public, max-age=31536000, immutable";
+}
+# LiveUIN public static-site security headers.
+# Include these in the HTTPS server block for liveuin.com / www.liveuin.com.
+add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+add_header X-Frame-Options "SAMEORIGIN" always;
+add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+add_header Permissions-Policy "accelerometer=(), autoplay=(), camera=(), clipboard-write=(self), display-capture=(), encrypted-media=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()" always;
+add_header Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self' https://api.liveuin.com https://cloudflareinsights.com; form-action 'self'; upgrade-insecure-requests" always;
+755 root root /var/www/liveuin-public-releases/liveuin-lovable-20260915-01fe27bb
+644 root root /var/www/liveuin-public-releases/liveuin-lovable-20260915-01fe27bb/index.html
+755 root root /var/www/liveuin-public-releases/liveuin-auth02-34c8511dd5a2a5ad
+644 root root /var/www/liveuin-public-releases/liveuin-auth02-34c8511dd5a2a5ad/index.html
+415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e  /var/www/liveuin-public-releases/liveuin-lovable-20260915-01fe27bb/index.html
+d64151e0728796b61d396cb8c38d00f7bd8dc9c563975b42aa5caad86b02e268  /var/www/liveuin-public-releases/liveuin-auth02-34c8511dd5a2a5ad/index.html

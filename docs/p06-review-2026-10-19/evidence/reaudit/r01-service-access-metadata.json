@@ -1,0 +1,97 @@
+{
+  "auth_unit_names": [
+    "ops-auth-heal.service        static   -",
+    "ops-authcore-staging.service disabled enabled",
+    "ops-authcore.service         enabled  enabled",
+    "ops-authgate.service         enabled  enabled",
+    "vgauth.service               enabled  enabled",
+    "ops-auth-heal.timer          enabled  enabled"
+  ],
+  "sudo_allowed_lines": [
+    "    (root) NOPASSWD: /usr/local/bin/model_switch.sh, /usr/local/bin/model_promote_latest.sh, /usr/local/bin/model_rollback.sh, /usr/local/bin/autopromote_on.sh, /usr/local/bin/autopromote_off.sh",
+    "    (root) NOPASSWD: /usr/bin/rsync",
+    "    (root) NOPASSWD: /usr/local/bin/train_start.sh",
+    "    (root) NOPASSWD: /usr/bin/systemctl restart ollama, /usr/bin/systemctl status ollama, /usr/bin/journalctl -u ollama *",
+    "    (root) NOPASSWD: /usr/local/sbin/prod-promote, /usr/local/sbin/prod-canary, /usr/local/sbin/prod-show, /bin/systemctl restart liveuin-prodrouter.service",
+    "    (root) NOPASSWD: /usr/local/sbin/render-ok.sh, /usr/local/sbin/health-now.sh, /usr/local/sbin/system-ok.sh"
+  ],
+  "services": [
+    {
+      "MainPID": "296370",
+      "ExecStart": "{ path=/usr/bin/python3 ; argv[]=/usr/bin/python3 -m uvicorn deploy.public_home_gateway:app --host 127.0.0.1 --port 9080 --proxy-headers --app-dir /opt/liveuin ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+      "EnvironmentFiles": "/etc/liveuin/public-home.env (ignore_errors=no)",
+      "WorkingDirectory": "/opt/liveuin",
+      "User": "liveuin",
+      "Id": "liveuin-public-api.service",
+      "LoadState": "loaded",
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/liveuin-public-api.service",
+      "DropInPaths": "/etc/systemd/system/liveuin-public-api.service.d/35-media-document-credentials.conf /etc/systemd/system/liveuin-public-api.service.d/50-liveuin-pass-core.conf /etc/systemd/system/liveuin-public-api.service.d/99-deploy-public-home.conf /etc/systemd/system/liveuin-public-api.service.d/public-home.conf"
+    },
+    {
+      "MainPID": "1298408",
+      "ExecStart": "{ path=/usr/local/sbin/liveuin-ops-backend-with-dsn-credential ; argv[]=/usr/local/sbin/liveuin-ops-backend-with-dsn-credential ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+      "EnvironmentFiles": "/etc/liveuin/listing-media-engine-candidates/liveuin-listing-media-engine-phase1-rc3-20260822-production.env (ignore_errors=yes)",
+      "WorkingDirectory": "/opt/liveuin/ops_backend",
+      "User": "liveuin_ops",
+      "Id": "ops-backend@liveuin.service",
+      "LoadState": "loaded",
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/ops-backend@liveuin.service",
+      "DropInPaths": "/etc/systemd/system/ops-backend@liveuin.service.d/20-liveuin-secret-credentials.conf /etc/systemd/system/ops-backend@liveuin.service.d/20-smart-inventory-state.conf /etc/systemd/system/ops-backend@liveuin.service.d/30-runtime-user-liveuin-ops.conf /etc/systemd/system/ops-backend@liveuin.service.d/30-service-api-key-credential.conf /etc/systemd/system/ops-backend@liveuin.service.d/35-media-document-credentials.conf /etc/systemd/system/ops-backend@liveuin.service.d/40-inventory-api-key-credential.conf /etc/systemd/system/ops-backend@liveuin.service.d/40-smart-inventory-push-token.conf /etc/systemd/system/ops-backend@liveuin.service.d/50-host-workspace.conf /etc/systemd/system/ops-backend@liveuin.service.d/50-liveuin-pass-core.conf /etc/systemd/system/ops-backend@liveuin.service.d/50-provenance-review-read-projection.conf /etc/systemd/system/ops-backend@liveuin.service.d/60-l0-internal-operating-spine.conf /etc/systemd/system/ops-backend@liveuin.service.d/70-liveuin-connector-adapter.conf /etc/systemd/system/ops-backend@liveuin.service.d/70-liveuin-core-pass-data.conf /etc/systemd/system/ops-backend@liveuin.service.d/71-liveuin-core-srv-state.conf /etc/systemd/system/ops-backend@liveuin.service.d/72-finance-ledger-workbench.conf /etc/systemd/system/ops-backend@liveuin.service.d/73-liveuin-core-demand-data.conf /etc/systemd/system/ops-backend@liveuin.service.d/75-stripe-sandbox-webhook.conf /etc/systemd/system/ops-backend@liveuin.service.d/76-stripe-sandbox-api-key.conf /etc/systemd/system/ops-backend@liveuin.service.d/77-liveuin-core-vendor-data.conf /etc/systemd/system/ops-backend@liveuin.service.d/80-ai-provider-credentials.conf /etc/systemd/system/ops-backend@liveuin.service.d/80-listing-media-engine-preflight.conf /etc/systemd/system/ops-backend@liveuin.service.d/81-listing-media-connector-identity.conf /etc/systemd/system/ops-backend@liveuin.service.d/82-ai-provider-egress-proxy.conf /etc/systemd/system/ops-backend@liveuin.service.d/82-identity-otp-gateway.conf /etc/systemd/system/ops-backend@liveuin.service.d/90-listing-media-engine-rc3-dark-runtime.conf /etc/systemd/system/ops-backend@liveuin.service.d/91-listing-media-l1-guard-runtime.conf /etc/systemd/system/ops-backend@liveuin.service.d/95-liveuin-dsn-credential.conf /etc/systemd/system/ops-backend@liveuin.service.d/96-country-context-credential.conf /etc/systemd/system/ops-backend@liveuin.service.d/97-account-deletion-identity.conf"
+    },
+    {
+      "MainPID": "471725",
+      "ExecStart": "{ path=/opt/ops-authgate/venv/bin/uvicorn ; argv[]=/opt/ops-authgate/venv/bin/uvicorn app:app --host 127.0.0.1 --port 9097 --workers 1 ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+      "WorkingDirectory": "/opt/ops-authgate",
+      "User": "root",
+      "Id": "ops-authgate.service",
+      "LoadState": "loaded",
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/ops-authgate.service",
+      "DropInPaths": ""
+    },
+    {
+      "MainPID": "0",
+      "WorkingDirectory": "",
+      "User": "",
+      "Id": "liveuin-ops-authgate.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "FragmentPath": "",
+      "DropInPaths": ""
+    }
+  ],
+  "path_metadata": [
+    {
+      "path": "/opt/liveuin/deploy/home_api.py",
+      "mode": "0o100644",
+      "uid": 501,
+      "gid": 50
+    },
+    {
+      "path": "/opt/liveuin/deploy/public_home_gateway.py",
+      "mode": "0o100644",
+      "uid": 501,
+      "gid": 50
+    },
+    {
+      "path": "/etc/nginx/conf.d/api.liveuin.com.conf",
+      "mode": "0o100644",
+      "uid": 0,
+      "gid": 0
+    },
+    {
+      "path": "/opt/liveuin/deploy",
+      "mode": "0o40755",
+      "uid": 501,
+      "gid": 50
+    },
+    {
+      "path": "/etc/nginx/conf.d",
+      "mode": "0o40755",
+      "uid": 0,
+      "gid": 0
+    }
+  ]
+}

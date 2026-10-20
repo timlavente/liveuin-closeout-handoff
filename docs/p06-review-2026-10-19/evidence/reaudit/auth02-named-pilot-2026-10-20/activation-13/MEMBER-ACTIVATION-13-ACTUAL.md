@@ -1,0 +1,11 @@
+# Member activation 13 — actual execution and recovery boundary
+
+Root executed retry13 SHA `00ba41f14120b99b07c2658663f2c27d418f42137c80167e336094ec1c07002d`. Its exact source was read back and retained as `evidence/actual-executed-retry-member-admission-13.py`. The result is `evidence/member-retry-13-actual-00ba41.json`: the intended member candidate is active at PID 3675726, the observed Ops process remained PID 3669871, and the independently deployed mobile TEST-card configuration was preserved.
+
+Five safe denials passed: raw challenge create and verify returned404; outside-cohort registration and password returned403; unsigned resolve returned403. All included no-store. This proves those denial paths, not normal owner/parent sign-in, role isolation, a payment, a case or AUTH02 completion. Normal browser proof remains pending. No account/grant/provider flag or customer database was changed by this runner.
+
+The actual execution finished successfully and did not enter its recovery branch. A peer then identified that its emergency stop, following a failed nested recovery, needed to reacquire the shared lock. The corrected retry SHA `f39fb816bed0cc8904ce46916c3beaf027d1f53cd356d3a56d25ae98d540f8d2` passed16 local cases and was not executed. It must not be described as the actual activation, nor rerun against the old fallback PID.
+
+The separate `deployment/recover-active-member-13.py` is an explicit candidate-to-closed-fallback contingency. It requires the exact current candidate PID/state/source, observes the current Ops instance only inside the original controller's lock, and preserves the reviewed mobile addition and every original identity/storage/signing gate. It invokes the unchanged controller's existing recover action with the proven runtime-file hook; all mutations stay inside that controller-owned lock. It neither reactivates the candidate nor restores databases. If its entry checks fail, it reports failure without changing the service; it does not invent a successful fallback. This recovery helper has not been run in production.
+
+Boundary check: this change belongs to LiveUIN private-app Identity admission. Core Identity/session remains authoritative. No sibling theme, imported tenancy or third-party family record was touched or contacted.

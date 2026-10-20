@@ -1,0 +1,60 @@
+{
+  "fixture": true,
+  "deployable": false,
+  "active_sessions": 0,
+  "revoked_sessions": 2,
+  "events": [
+    {
+      "action": "resolve",
+      "status": 401
+    },
+    {
+      "action": "password",
+      "status": 401
+    },
+    {
+      "action": "password",
+      "status": 200
+    },
+    {
+      "action": "resolve",
+      "status": 200
+    },
+    {
+      "action": "resolve",
+      "status": 200
+    },
+    {
+      "action": "resolve",
+      "status": 200
+    },
+    {
+      "action": "resolve",
+      "status": 200
+    },
+    {
+      "action": "logout",
+      "status": 200
+    },
+    {
+      "action": "resolve",
+      "status": 401
+    },
+    {
+      "action": "password",
+      "status": 200
+    },
+    {
+      "action": "resolve",
+      "status": 200
+    },
+    {
+      "action": "logout",
+      "status": 200
+    },
+    {
+      "action": "resolve",
+      "status": 401
+    }
+  ]
+}

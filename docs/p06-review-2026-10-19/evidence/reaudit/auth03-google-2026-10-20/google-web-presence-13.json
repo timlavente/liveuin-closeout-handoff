@@ -1,0 +1,63 @@
+{
+  "status": "selected_google_configuration_classified",
+  "observed_at_utc": "2026-10-20T05:30:25.202103+00:00",
+  "unit": "liveuin-identity-public-prod.service",
+  "pid": 3675726,
+  "source_sha256": {
+    "prod_app.py": "6311c28a8b20d2a30423a9e299d97f114670f6a106d6aa9f1888617a9a157f11",
+    "deploy/core_identity_api.py": "30f6d81466d15fad9451445449682f359969b405e21a641a7cd4523ab863b5fd",
+    "deploy/core_identity_social.py": "44680d3685415ec4ce209851f2ffa52cbe207f72e487e80543000ef0d920b709",
+    "deploy/core_identity_google_oauth.py": "b708f7e27f6dc3991c771d62cff38bbd2c610e2de60ae18694c1e6def0d47156"
+  },
+  "flags": {
+    "LIVEUIN_GOOGLE_NATIVE_ID_TOKEN_READY": true,
+    "LIVEUIN_PUBLIC_GOOGLE_IDENTITY_ENABLED": true,
+    "LIVEUIN_GOOGLE_OIDC_TOKEN_EXCHANGE_READY": false,
+    "LIVEUIN_GOOGLE_OIDC_CALLBACK_VALIDATION_READY": false,
+    "LIVEUIN_AUTH_GOOGLE_READY": false,
+    "LIVEUIN_AUTH_REAL_IDP_ADAPTERS_READY": false,
+    "LIVEUIN_GOOGLE_ACCOUNT_POLICY_READY": false,
+    "LIVEUIN_GOOGLE_ALLOW_ANY_VERIFIED_EMAIL_FOR_LOGIN": false
+  },
+  "existing_ops_flow_flag_interpretation": {
+    "LIVEUIN_GOOGLE_OIDC_TOKEN_EXCHANGE_READY": false,
+    "LIVEUIN_GOOGLE_OIDC_CALLBACK_VALIDATION_READY": false,
+    "LIVEUIN_AUTH_GOOGLE_READY": false,
+    "LIVEUIN_AUTH_REAL_IDP_ADAPTERS_READY": false,
+    "LIVEUIN_GOOGLE_ACCOUNT_POLICY_READY": false,
+    "LIVEUIN_GOOGLE_ALLOW_ANY_VERIFIED_EMAIL_FOR_LOGIN": false
+  },
+  "configured_presence": {
+    "LIVEUIN_GOOGLE_CLIENT_ID": true,
+    "LIVEUIN_GOOGLE_REDIRECT_URI": false,
+    "LIVEUIN_GOOGLE_CLIENT_SECRET_REF": false,
+    "LIVEUIN_GOOGLE_STATE_SECRET_REF": false,
+    "GOOGLE_CLIENT_ID": false,
+    "GOOGLE_REDIRECT_URI": false,
+    "GOOGLE_CLIENT_SECRET_REF": false,
+    "GOOGLE_STATE_SECRET_REF": false,
+    "LIVEUIN_GOOGLE_CLIENT_SECRET": false,
+    "GOOGLE_CLIENT_SECRET": false,
+    "LIVEUIN_IDENTITY_PROVIDER_SUBJECT_PEPPER_REF": true,
+    "LIVEUIN_PUBLIC_WORKSPACE_ID": true,
+    "LIVEUIN_PUBLIC_TERMS_VERSION": true,
+    "LIVEUIN_IDENTITY_SESSION_SIGNING_SECRET_REF": true,
+    "LIVEUIN_IDENTITY_SESSION_SIGNING_SECRET": true,
+    "LIVEUIN_GOOGLE_ALLOWED_EMAILS": false,
+    "LIVEUIN_GOOGLE_ALLOWED_EMAIL_DOMAINS": false
+  },
+  "local_shape_only": {
+    "member_client_id_has_google_suffix": true,
+    "member_redirect_is_https_with_host": false,
+    "member_redirect_matches_existing_ops_callback_path": false,
+    "member_source_selects_native_mode": true,
+    "member_web_inputs_present": false
+  },
+  "configuration_presence_only": true,
+  "provider_ready_or_login_pass_claim": false,
+  "provider_requests_made": false,
+  "application_imports_made": false,
+  "secret_references_resolved": false,
+  "customer_or_identity_records_read": false,
+  "production_mutations_made": false
+}

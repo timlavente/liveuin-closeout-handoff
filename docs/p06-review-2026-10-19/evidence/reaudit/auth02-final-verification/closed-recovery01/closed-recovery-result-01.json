@@ -1,0 +1,49 @@
+{
+  "component": "AUTH02-9095",
+  "started_at_utc": "2026-10-19T20:18:08.709680+00:00",
+  "accounts_created": false,
+  "emails_requested": false,
+  "flags_changed": false,
+  "database_restored": false,
+  "public_access_opened": false,
+  "status": "closed_fallback_active_new_sign_in_held",
+  "failure_code": "explicit_closed_recovery_requested",
+  "fallback_prestart_probe": {
+    "passed": true,
+    "no_product_import": true,
+    "no_dependency_install": true
+  },
+  "closed_recovery_checks": {
+    "healthz": {
+      "status": 200,
+      "ok": true,
+      "detail": null,
+      "no_store": false
+    },
+    "raw_create": {
+      "status": 404,
+      "ok": false,
+      "detail": "not_found",
+      "no_store": true
+    },
+    "raw_verify": {
+      "status": 404,
+      "ok": false,
+      "detail": "not_found",
+      "no_store": true
+    },
+    "empty_request": {
+      "status": 503,
+      "ok": false,
+      "detail": "browser_sign_in_temporarily_locked",
+      "no_store": false
+    },
+    "empty_verify": {
+      "status": 503,
+      "ok": false,
+      "detail": "browser_sign_in_temporarily_locked",
+      "no_store": false
+    }
+  },
+  "pid": 3424573
+}

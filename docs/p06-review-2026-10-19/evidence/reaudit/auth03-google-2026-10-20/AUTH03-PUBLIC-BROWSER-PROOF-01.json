@@ -1,0 +1,22 @@
+{
+  "status": "actual_public_browser_google_unavailable_alternative_passed",
+  "row": "AUTH-03",
+  "date_singapore": "2026-10-20",
+  "observer": "coordinating agent through normal in-app browser; resulting screenshots independently viewed by retention agent",
+  "candidate_manifest_sha256": "785bfec58a76aeeea01484814285d6a43a1d7783a0c4a5c0d2156f1d25b57793",
+  "checks": {
+    "normal_apex_homepage_loaded": true,
+    "apex_visible_header_login_reached_app": true,
+    "normal_www_homepage_loaded": true,
+    "www_visible_header_login_reached_app": true,
+    "truthful_notice_visible_on_both": true,
+    "no_active_google_control_on_both": true
+  },
+  "destination": "https://app.liveuin.com/auth/sign-in",
+  "notice": "Google sign-in is not available on this website yet. Use your email and password.",
+  "automated_activation_scope": "Exact static origin bytes and verified TLS; normal browser observations separately prove edge handoff.",
+  "public_access_or_payment_switch_changed": false,
+  "google_provider_success_claim": false,
+  "native_google_changed": false,
+  "case_role_matrix_or_p6_completion_claim": false
+}

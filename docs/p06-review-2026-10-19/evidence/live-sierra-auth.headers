@@ -1,0 +1,22 @@
+HTTP/2 401 
+date: Mon, 19 Oct 2026 11:23:14 GMT
+content-type: application/json
+content-length: 36
+server: cloudflare
+cache-control: no-store
+x-content-type-options: nosniff
+x-content-type-options: nosniff
+referrer-policy: no-referrer
+referrer-policy: strict-origin-when-cross-origin
+x-liveuin-layer: public_static_site
+x-liveuin-service: liveuin-public-ui
+strict-transport-security: max-age=31536000; includeSubDomains
+x-frame-options: SAMEORIGIN
+permissions-policy: accelerometer=(), autoplay=(), camera=(), clipboard-write=(self), display-capture=(), encrypted-media=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
+content-security-policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self' https://api.liveuin.com https://cloudflareinsights.com; form-action 'self'; upgrade-insecure-requests
+cf-cache-status: DYNAMIC
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9cC2xgtZtOBiYqGag%2BtnFGJjHkFWJ%2BrqIdNntRa5LV9UzPQ5PePli7fhh%2BpFOkzUHO2fR2AM6a9q1aLcSxrFAVDG5REaXWJVUTinhkxhZtni1SbV9p78SEYToagjniJ97o0%3D"}]}
+cf-ray: a4cf68d99b36fdcf-SIN
+alt-svc: h3=":443"; ma=86400
+

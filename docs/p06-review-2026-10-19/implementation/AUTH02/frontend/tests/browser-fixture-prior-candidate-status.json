@@ -1,0 +1,82 @@
+{
+  "fixture": {
+    "deployable": false,
+    "purpose": "Local synthetic React/router/browser smoke only",
+    "candidate_manifest_sha256": "c37ffe59eb8baae4915ff4203b42068007e1fc7cacd9e0f549607521b0a4fea3",
+    "candidate_index_sha256": "135f7097282e24ad2743a93a5870bfded11c5635a73006096138642e0d67d82b",
+    "fixture_index_sha256": "1d9797e2f51884e024e1eab1b51f30e2746bb11ddffba16ba6fd04931033c71a",
+    "javascript_deltas": [
+      "auth02IsApp accepts HTTP 127.0.0.1 instead of HTTPS app.liveuin.com",
+      "legacy host classifier reports App in the loopback fixture; avoids local preview fallback"
+    ],
+    "real_accounts_or_network_proxy": false,
+    "url": "http://127.0.0.1:52541/auth/sign-in?returnTo=%2Ftenant%2Fhome",
+    "status_url": "http://127.0.0.1:52541/__fixture/status",
+    "email": "test.parent@auth02.invalid",
+    "password": "Auth02-fixture-only!"
+  },
+  "status": {
+    "fixture": true,
+    "deployable": false,
+    "active_sessions": 0,
+    "revoked_sessions": 2,
+    "events": [
+      {
+        "action": "resolve",
+        "status": 401
+      },
+      {
+        "action": "password",
+        "status": 401
+      },
+      {
+        "action": "password",
+        "status": 200
+      },
+      {
+        "action": "resolve",
+        "status": 200
+      },
+      {
+        "action": "resolve",
+        "status": 200
+      },
+      {
+        "action": "resolve",
+        "status": 200
+      },
+      {
+        "action": "resolve",
+        "status": 200
+      },
+      {
+        "action": "resolve",
+        "status": 200
+      },
+      {
+        "action": "logout",
+        "status": 200
+      },
+      {
+        "action": "resolve",
+        "status": 401
+      },
+      {
+        "action": "password",
+        "status": 200
+      },
+      {
+        "action": "resolve",
+        "status": 200
+      },
+      {
+        "action": "logout",
+        "status": 200
+      },
+      {
+        "action": "resolve",
+        "status": 401
+      }
+    ]
+  }
+}

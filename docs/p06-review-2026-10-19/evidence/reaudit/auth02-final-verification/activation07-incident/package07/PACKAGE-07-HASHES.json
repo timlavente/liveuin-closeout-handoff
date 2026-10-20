@@ -1,0 +1,15 @@
+{
+  "archive": "/private/tmp/liveuin-p06-auth02-20261020/backend-07/deployment/auth02-9095-reviewed-07.tar",
+  "archive_sha256": "c80640af3068dba06656238125674ea7bf86f4b48d311c55b42ed240a4e2df09",
+  "archive_bytes": 2498560,
+  "manifest_sha256": "8019023d6f981118c622fb9ee6839e29480b8b9fcd183078838f3b119336fc86",
+  "staging_helper": "/private/tmp/liveuin-p06-auth02-20261020/backend-07/deployment/stage-reviewed-package-07.py",
+  "staging_helper_sha256": "6d95bc3838cbdcaa43d56f54bb8bcc1a34aceccd9b33b5de6574d6b886b51e4a",
+  "probe_sha256": "5a534ffae6f10edd348ff8d24b6ac7cf4212336fa066578f5bdda7e8711a3846",
+  "packaged_file_count": 44,
+  "changed_existing_payload_paths_vs06": [
+    "deployment/prestart-fastpath-probe.py"
+  ],
+  "added_file": "deployment/PACKAGE-07-RECONCILIATION-ADDENDUM.md",
+  "no_production_changes_by_author": true
+}

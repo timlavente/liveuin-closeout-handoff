@@ -1,0 +1,12 @@
+HTTP/1.1 301 Moved Permanently
+Date: Mon, 19 Oct 2026 11:24:38 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Location: https://liveuin.com/
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=05YqjMyOFTuc1j9%2FD0P8t7ZdkE5JbIEUURguilX3jxtyxBwgJ9wc0MWjAe6ORtHU68IHdOitzJGqPGid8jdDlGxmAz5sruFEfyLixV8FZbIJiJo0Mj3B6LKtgeqYAg%3D%3D"}]}
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Server: cloudflare
+CF-RAY: a4cf6ae76b0b4021-SIN
+alt-svc: h3=":443"; ma=86400
+

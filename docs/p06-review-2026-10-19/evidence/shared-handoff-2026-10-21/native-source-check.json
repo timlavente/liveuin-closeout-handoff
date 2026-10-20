@@ -1,0 +1,274 @@
+{
+  "date": "2026-10-21",
+  "accepted_auth_commit": "47f648baa35af2c8e320b4677f0a25ad69117cbd",
+  "checkout_head": "76f1e883a2f6163b7bd80ee63fdea2bb993ca6a0",
+  "scope": "source reference only; not a release or generated bundle",
+  "full_file_hashes_matched": 34,
+  "source_freeze_guard": "AUTH FREEZE: PRESERVED",
+  "recovery_component_tests": {
+    "command": "npm run test -- src/native-lovable/routes/auth.forgot-password.test.tsx",
+    "passed": 5,
+    "failed": 0,
+    "production_browser_proof": false
+  },
+  "files": [
+    {
+      "path": "src/main.native.tsx",
+      "bytes": 2574,
+      "sha256": "0c529d36f54871d3a1a6d7078273620f2be7711a1364d18b9191ecc476ecdcac",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/components/liveuin/AuthShell.tsx",
+      "bytes": 4531,
+      "sha256": "347980a97eb131163cb6059c0fdf3f2c9b82bf74e7441274c2fe798ddd592545",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/components/liveuin/AuthFeedback.tsx",
+      "bytes": 713,
+      "sha256": "de0fd23e5d157b345e8de45d5a44876750edf068aa3670dd81d62def6dfc0ebb",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/components/resident/ResidentAppContext.tsx",
+      "bytes": 29621,
+      "sha256": "e690cf71f875e6a9188cd5852337634a43ac96bfd9749def80af1b3f51546f53",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/components/resident/ResidentNativeEntryBridge.tsx",
+      "bytes": 7194,
+      "sha256": "9a0c677b3058cfebc78a1a179b379ca1195be4dacf09a752121b4a76a47e9b65",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/components/resident/ResidentNativeRouteGate.tsx",
+      "bytes": 781,
+      "sha256": "33ae67772c85c3681ee729ea16f59f0bacd0c09b1513e014b501e646aaf8a0c4",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/auth-context.tsx",
+      "bytes": 23851,
+      "sha256": "0212f8ee18f42ee6f2be9508fcbeef00931a872bde7e72c742d945c4c57189ea",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/nativeAuthLanding.ts",
+      "bytes": 2451,
+      "sha256": "572140da5d5d77e0420b32d52f9f54f0bcd938ff4ba0602037b88eb7edd7b8eb",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/nativeFieldFocus.ts",
+      "bytes": 1767,
+      "sha256": "49cdfeb6619c5b1a3e7a36fe253c16095b46651b8e8d07392e1e21b48170b474",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/mobileProfileScope.ts",
+      "bytes": 11242,
+      "sha256": "dadba990afeda26b3cfc2ae9fafcce926dbc3451d952490371790fa1554d501e",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/profile-context.tsx",
+      "bytes": 2525,
+      "sha256": "fceaaa0b69db0cda7d6318a36094b752cf03cbbdfaccdf546b47e9f27e3eb109",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/residentAuthBootstrap.ts",
+      "bytes": 1239,
+      "sha256": "db59c31fd59c611ccaa32f01ac13e97dea136c8321a268db10a866d7e8e0d2f8",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/residentAuthRedirect.ts",
+      "bytes": 2521,
+      "sha256": "5ca83136fc6b6e85d71a24fc1fa4b658a0c86292523bcf300cab907431e9b3f5",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/residentLogout.ts",
+      "bytes": 3868,
+      "sha256": "07f9fad8e64a550d3b689f59233f787241b9bbda41f51b9e1ba2727338080378",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/residentNativeHttp.ts",
+      "bytes": 14549,
+      "sha256": "ebdd9f66da052e06c6b11116243c67d00d4384b71687f7c3c69589c6f3ddf5f1",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/residentNativeLaunch.ts",
+      "bytes": 1266,
+      "sha256": "f295ef388d814b7d1d76ef10c9d21bf36b705a3e15fd3d659f2b1d959a2aeea4",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/residentPasswordRules.ts",
+      "bytes": 558,
+      "sha256": "8812038f1ba1d4b36f8d7edc744ef18c401a5ff37208649b8edd72ee86674ad0",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/residentProfileAuthorization.ts",
+      "bytes": 5502,
+      "sha256": "893cfe8bf198de05c4df580b2237c4e19bdd7757308a1523d11a24918f040c3c",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/residentSessionBridge.ts",
+      "bytes": 7733,
+      "sha256": "50879603949b9a8b0004b1b1edcc4af0dc060915b9cdb3278523f08131d83d9a",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/residentSessionLifecycle.ts",
+      "bytes": 731,
+      "sha256": "f28b9a6cc8b6bf3e5a1e3633d7c1e8b4e1e93855c6822cc6f174917b86b7c448",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/residentSocialAuth.ts",
+      "bytes": 6362,
+      "sha256": "1c9d1043339865e4e4548a8f49742d23e54d3195326186867a7829da5f87f366",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/residentSocialContinuation.ts",
+      "bytes": 450,
+      "sha256": "9d58f8317273fa8546dbabc63d3f02eef1148c15db48cb46cd3bc63082b6ef32",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/lib/runtimeHost.ts",
+      "bytes": 12387,
+      "sha256": "f92c56f95413693b9c8acd35531d57c2851676fbe3324b8c0badd9359e9bd4bf",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/native-lovable/components/CompleteProfileForm.tsx",
+      "bytes": 1722,
+      "sha256": "f8bf738c60811733b99806facf3d94766d86c90af7dddb790caab3c5352abd4e",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/native-lovable/routes/auth.cancel-deletion.tsx",
+      "bytes": 5350,
+      "sha256": "d8d13d153f4fb97e2c2af18dddd4cd7c4e747d19eb5685613bc32103b6ccd26d",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/native-lovable/routes/auth.complete-profile.tsx",
+      "bytes": 1753,
+      "sha256": "a15c8f22276ba4eb5ba13f437d321ead692caa57506fa136e8d9450f0329330f",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/native-lovable/routes/auth.continue-tenant.tsx",
+      "bytes": 1921,
+      "sha256": "5360a8d396081940f168c59219533c6dca5b351af19975fcb13a5f0c266601e4",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/native-lovable/routes/auth.forgot-password.tsx",
+      "bytes": 8538,
+      "sha256": "a30880772f0441a10a3966147dd7400b9fdd4dad22990e3de3fc12a6d363141d",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/native-lovable/routes/auth.sign-in.tsx",
+      "bytes": 13141,
+      "sha256": "89b96405f3dab59adc2a53e04f6e88dbaf4f7878107cd8b7269010eb18ab9648",
+      "accepted_full_file": true
+    },
+    {
+      "path": "src/native-lovable/routes/auth.sign-up.tsx",
+      "bytes": 15976,
+      "sha256": "b32e8e85eb8b47326f39419fb150e05fccc8d84820127b2aa68dee394a3c8bac",
+      "accepted_full_file": true
+    },
+    {
+      "path": "capacitor.config.json",
+      "bytes": 708,
+      "sha256": "71c8d86320048e2a9f0cda95bd9a195e410735e6ce8f9deb9e3666fbc907fb79",
+      "accepted_full_file": true
+    },
+    {
+      "path": "ios/App/App/AppDelegate.swift",
+      "bytes": 25233,
+      "sha256": "e8022f79e10291edf2ec963349775da4c6a000619ad37f9dc3756add3b8999b3",
+      "accepted_full_file": true
+    },
+    {
+      "path": "ios/App/App/Info.plist",
+      "bytes": 2731,
+      "sha256": "0b9628e25f938916b08bab3a30810cc220a0fa7760a5b965ce99f6fa38cbd14d",
+      "accepted_full_file": true
+    },
+    {
+      "path": "ios/App/App/App.entitlements",
+      "bytes": 392,
+      "sha256": "fd542fdd3e2bfdb0c0cb030699d10a0cdfab87dbda3536e4235f29d1cb3ea63e",
+      "accepted_full_file": true
+    },
+    {
+      "path": "docs/LIVEUIN-RESIDENT-AUTH-FREEZE-20261019.json",
+      "bytes": 24311,
+      "sha256": "2a27b00c675397c0c82e2b4468238aa38c366ea06eb929c56c809cddc49942a8",
+      "accepted_full_file": false
+    },
+    {
+      "path": "docs/APP-LOGIN-COORDINATION-20261021.md",
+      "bytes": 3970,
+      "sha256": "b2f05e9468e7ad4faab65d90f43b56d62e648d25f3fffb99746a584296878f3e",
+      "accepted_full_file": false
+    },
+    {
+      "path": "src/App.tsx",
+      "bytes": 84391,
+      "sha256": "f62e6634648353c4d2e3ed70009cd36f75a0ab62f2c4e32094fc020bd52e506e",
+      "accepted_full_file": false
+    },
+    {
+      "path": "src/NativeApp.tsx",
+      "bytes": 10159,
+      "sha256": "a82aa8ad88a122376169fe081a00d748fe0bc0c90042b92a3c6a5cb7069c9b2e",
+      "accepted_full_file": false
+    },
+    {
+      "path": "src/native-lovable/routeRegistry.tsx",
+      "bytes": 25824,
+      "sha256": "c6c52a6a0ebf62e091207ddeaab8679cebdc05f9d5820e2c2e57507068447bc6",
+      "accepted_full_file": false
+    },
+    {
+      "path": "src/native-lovable/routes/auth.forgot-password.test.tsx",
+      "bytes": 6293,
+      "sha256": "af23d66dfcb8527cf9b2ed66e937345c0bceeb6cc7faa1931351c4bb52ff8ece",
+      "accepted_full_file": false
+    },
+    {
+      "path": "src/native-lovable/router.tsx",
+      "bytes": 2841,
+      "sha256": "4b151757127c5d8e17b06a9e39d5efd1644fb15a322b5a3a98d8965ca8c7dd5e",
+      "accepted_full_file": false
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 8565,
+      "sha256": "04b8cc9a16f4dbbe52ed9c6698126bb47f7131c671b285d84476de8168b4ed8e",
+      "accepted_full_file": false
+    },
+    {
+      "path": "scripts/check-resident-auth-freeze.mjs",
+      "bytes": 14363,
+      "sha256": "08390d267355b268b22cd8bdb5385f99170fe4b02467b9047b0703f11d91fb9e",
+      "accepted_full_file": false
+    }
+  ]
+}

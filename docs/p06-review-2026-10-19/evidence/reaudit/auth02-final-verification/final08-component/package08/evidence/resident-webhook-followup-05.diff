@@ -1,0 +1,28 @@
+--- 87ff864
++++ actual-cb04159
+@@ -20,6 +20,7 @@
+ HEADERS = {"Cache-Control": "private, no-store, max-age=0", "Pragma": "no-cache", "Expires": "0",
+     "Vary": "Authorization, Cookie, X-LiveUIN-Session-Id, X-LiveUIN-Session-Signature, X-LiveUIN-Requested-Profile-Key, X-LiveUIN-Requested-Workspace-Id, X-LiveUIN-Expected-Account-Id, X-LiveUIN-Expected-Person-Id"}
+ PREFIX = "/api/core/payments/customer/sandbox"
++WEBHOOK_PURPOSE = "stripe_customer_setup_webhook_signature"
+ 
+ def configuration():
+     if os.getenv("LIVEUIN_CUSTOMER_CARDS_SANDBOX_ENABLED") != "true":
+@@ -118,8 +119,15 @@
+         import core_payment_provider_edge as edge
+     # Explicit configured reference only. Never trust caller-selected workspace/ref,
+     # and never fall back to a global webhook secret when registry lookup fails.
+-    resolved = registry.resolve_provider_edge_secret("stripe", "stripe_webhook_signature", workspace_id=workspace, secret_ref_id=secret_ref)
+-    if resolved.get("ok") is not True or not resolved.get("secret"):
++    # A distinct registry purpose keeps this destination out of generic payment
++    # webhook lookup. Explicit-ref lookup itself does not validate purpose/provider.
++    resolved = registry.resolve_provider_edge_secret("stripe", WEBHOOK_PURPOSE, workspace_id=workspace, secret_ref_id=secret_ref)
++    context = resolved.get("secret_context")
++    if (resolved.get("ok") is not True or not resolved.get("secret") or not isinstance(context, dict)
++            or any(context.get(key) != value for key, value in {
++                "provider": "stripe", "purpose": WEBHOOK_PURPOSE, "workspace_id": workspace,
++                "secret_ref_id": secret_ref, "status": "active"}.items())
++            or context.get("secret_source") not in {"registered_systemd_credential", "registered_secret_environment", "registered_secret_reference"}):
+         raise CardError("test_webhook_unavailable", 503)
+     verified = edge.verify_stripe_signature(raw, signature, resolved["secret"], workspace_id=workspace, secret_ref_id=secret_ref)
+     if verified.get("ok") is not True or verified.get("transport_signature_verified") is not True:

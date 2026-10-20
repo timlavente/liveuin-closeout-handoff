@@ -1,0 +1,12 @@
+{
+  "source_commit": "87ff864",
+  "status": "read_only_source_review_pending_actual_server_hash_comparison",
+  "main_before_sha256": "e843d45640ddfc58e8a2957ea50726c17fe8be4056b9023f2c887648493423da",
+  "main_after_sha256": "b8f00791b71b11e93c72980ad31fa0eac3d18d0b03a0e4e4dd5f172620c85c2a",
+  "main_existing_AST_preserved": true,
+  "added_statement": "try: import install_resident_customer_routes; invoke once; raise explicit mount error on failure",
+  "payload_count": 14,
+  "payload_manifest_sha256": "91c3fb25ce80a570507b66aeae30817569fc5b0a5daef43ab17926a570f7c77b",
+  "product_imported": false,
+  "records_or_credentials_read": false
+}

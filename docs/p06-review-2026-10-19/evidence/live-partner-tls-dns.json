@@ -1,0 +1,15 @@
+{
+  "hostname": "partner.liveuin.com",
+  "addresses": [
+    "129.226.123.206"
+  ],
+  "tls_version": "TLSv1.3",
+  "valid_until": "Dec  5 10:46:47 2026 GMT",
+  "SAN": [
+    [
+      "DNS",
+      "partner.liveuin.com"
+    ]
+  ],
+  "verified": true
+}

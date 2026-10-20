@@ -1,0 +1,13 @@
+--- reviewed-5945/core_customer_card_provider.py
++++ actual-a203/core_customer_card_provider.py
+@@ -79,7 +79,9 @@
+ 
+     def create_setup(self, customer, setup_id, key):
+         return self._request("POST", "/setup_intents", {"customer": identifier(customer, "cus_"),
+-            "usage": "on_session", "payment_method_types[]": "card",
++            # Endive accepts an allowlist; payment_method_types is response-only.
++            # Keep the service's exact returned ["card"] validation unchanged.
++            "usage": "on_session", "allowed_payment_method_types[]": "card",
+             "metadata[liveuin_setup_id]": setup_id, "metadata[liveuin_environment]": "sandbox"}, key)
+ 
+     def setup(self, ref):

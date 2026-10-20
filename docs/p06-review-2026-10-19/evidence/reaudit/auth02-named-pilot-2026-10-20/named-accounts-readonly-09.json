@@ -1,0 +1,226 @@
+{
+  "component": "AUTH02-named-pilot-identity-map",
+  "observed_at_utc": "2026-10-20T04:47:37.874585+00:00",
+  "status": "named_identity_metadata_read",
+  "read_only": true,
+  "product_imports": false,
+  "account_grants_or_changes": false,
+  "customer_or_case_records_queried": false,
+  "credential_values_or_hashes_output": false,
+  "unrelated_accounts_queried": false,
+  "source_versions_match": {
+    "/opt/liveuin/deploy/core_identity_store.py": true,
+    "/opt/liveuin/deploy/core_identity_workspace_access.py": true,
+    "/opt/liveuin-identity-public/current/deploy/core_identity_store.py": true,
+    "/opt/liveuin-identity-public/current/deploy/core_identity_public_store.py": true,
+    "/opt/liveuin-identity-public/current/deploy/core_identity_public_schema.py": true
+  },
+  "configured_host_workspace": "host_9f74df3469a1466781432d546f56f4c6",
+  "named_accounts": [
+    {
+      "email": "timlavente@gmail.com",
+      "is_synthetic_test_address": false,
+      "public_password_account_found": true,
+      "public_accounts": [
+        {
+          "workspace_id": "liveuin-public",
+          "status": "tenant_active",
+          "profile_completion_state": "complete",
+          "tenant_entitlement_state": "active",
+          "localpro_application_state": "not_started",
+          "localpro_authorization_state": "not_issued",
+          "deletion_status": "not_requested",
+          "email_verified": true,
+          "password_provisioned": true,
+          "person_bound": true
+        }
+      ],
+      "canonical_identity_stores": {
+        "ops_identity": {
+          "memberships": [
+            {
+              "workspace_id": "liveuin_first_party",
+              "workspace_role": "owner",
+              "access_role": "connector_admin",
+              "status": "active",
+              "elevated_approval_required": false,
+              "approval_recorded": true,
+              "person_bound": true,
+              "matches_configured_host_workspace": false,
+              "workspace_product_line": "connect",
+              "workspace_status": "active"
+            },
+            {
+              "workspace_id": "host_9f74df3469a1466781432d546f56f4c6",
+              "workspace_role": "owner",
+              "access_role": "owner",
+              "status": "active",
+              "elevated_approval_required": false,
+              "approval_recorded": false,
+              "person_bound": false,
+              "matches_configured_host_workspace": true,
+              "workspace_product_line": "host",
+              "workspace_status": "active"
+            },
+            {
+              "workspace_id": "liveuin",
+              "workspace_role": "member",
+              "access_role": "ops",
+              "status": "active",
+              "elevated_approval_required": true,
+              "approval_recorded": true,
+              "person_bound": false,
+              "matches_configured_host_workspace": false,
+              "workspace_product_line": "core_access",
+              "workspace_status": "active"
+            }
+          ],
+          "persons": [
+            {
+              "workspace_id": "liveuin_first_party",
+              "descriptive_role_flags": [
+                "connector_admin"
+              ],
+              "role_flags_are_not_grant_proof": true
+            }
+          ],
+          "profiles": []
+        },
+        "public_identity": {
+          "memberships": [],
+          "persons": [
+            {
+              "workspace_id": "liveuin-public",
+              "descriptive_role_flags": [
+                "tenant"
+              ],
+              "role_flags_are_not_grant_proof": true
+            }
+          ],
+          "profiles": [
+            {
+              "workspace_id": "liveuin-public",
+              "profile_key": "tenant",
+              "subject_role": "tenant",
+              "status": "active",
+              "is_default": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "email": "operator@liveuin.com",
+      "is_synthetic_test_address": false,
+      "public_password_account_found": true,
+      "public_accounts": [
+        {
+          "workspace_id": "liveuin-public",
+          "status": "authenticated",
+          "profile_completion_state": "incomplete",
+          "tenant_entitlement_state": "not_issued",
+          "localpro_application_state": "not_started",
+          "localpro_authorization_state": "not_issued",
+          "deletion_status": "not_requested",
+          "email_verified": true,
+          "password_provisioned": true,
+          "person_bound": true
+        }
+      ],
+      "canonical_identity_stores": {
+        "ops_identity": {
+          "memberships": [
+            {
+              "workspace_id": "liveuin",
+              "workspace_role": "operator",
+              "access_role": "operator",
+              "status": "active",
+              "elevated_approval_required": true,
+              "approval_recorded": true,
+              "person_bound": false,
+              "matches_configured_host_workspace": false,
+              "workspace_product_line": "core_access",
+              "workspace_status": "active"
+            }
+          ],
+          "persons": [],
+          "profiles": []
+        },
+        "public_identity": {
+          "memberships": [],
+          "persons": [
+            {
+              "workspace_id": "liveuin-public",
+              "descriptive_role_flags": [
+                "tenant"
+              ],
+              "role_flags_are_not_grant_proof": true
+            }
+          ],
+          "profiles": []
+        }
+      }
+    },
+    {
+      "email": "admin@liveuin.com",
+      "is_synthetic_test_address": false,
+      "public_password_account_found": false,
+      "public_accounts": [],
+      "canonical_identity_stores": {
+        "ops_identity": {
+          "memberships": [],
+          "persons": [],
+          "profiles": []
+        },
+        "public_identity": {
+          "memberships": [],
+          "persons": [],
+          "profiles": []
+        }
+      }
+    },
+    {
+      "email": "timlavente+liveuin-test-parent@gmail.com",
+      "is_synthetic_test_address": true,
+      "public_password_account_found": false,
+      "public_accounts": [],
+      "canonical_identity_stores": {
+        "ops_identity": {
+          "memberships": [],
+          "persons": [],
+          "profiles": []
+        },
+        "public_identity": {
+          "memberships": [],
+          "persons": [],
+          "profiles": []
+        }
+      }
+    },
+    {
+      "email": "timlavente+liveuin-test-agent@gmail.com",
+      "is_synthetic_test_address": true,
+      "public_password_account_found": false,
+      "public_accounts": [],
+      "canonical_identity_stores": {
+        "ops_identity": {
+          "memberships": [],
+          "persons": [],
+          "profiles": []
+        },
+        "public_identity": {
+          "memberships": [],
+          "persons": [],
+          "profiles": []
+        }
+      }
+    }
+  ],
+  "pids": {
+    "ops": 3427360,
+    "public": 2662668
+  },
+  "runtime_store_bindings_verified": true,
+  "host_sole_owner_gate_not_queried": true,
+  "limitations": "Metadata is not sign-in or case-isolation proof. Host sole-owner count is deliberately unqueried. Ops membership and Host profile remain separate; no owner access is removed or treated as synthetic."
+}

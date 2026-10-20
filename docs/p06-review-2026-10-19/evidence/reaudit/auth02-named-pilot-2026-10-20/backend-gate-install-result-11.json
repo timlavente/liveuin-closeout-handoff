@@ -1,0 +1,1 @@
+{"status": "backend_readiness_gate_installed", "path": "/root/liveuin-auth02-frontend-20261020-11/backend-ready-gate-11.json", "sha256": "bf0096fe1f94e039eea13c907138958c38cb8e85d85cc36a3d20b8e971f08022", "reviewed_source_matches": 18, "service_continuity_matches": 4, "production_configuration_or_services_changed": false}

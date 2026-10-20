@@ -1,0 +1,27 @@
+{
+  "component": "AUTH02-9095",
+  "started_at_utc": "2026-10-19T20:14:35.895325+00:00",
+  "accounts_created": false,
+  "emails_requested": false,
+  "flags_changed": false,
+  "database_restored": false,
+  "public_access_opened": false,
+  "entry_prestart_probe": {
+    "passed": true,
+    "no_product_import": true,
+    "no_dependency_install": true
+  },
+  "candidate_prestart_probe": {
+    "passed": true,
+    "no_product_import": true,
+    "no_dependency_install": true
+  },
+  "status": "service_stopped_for_closed_recovery",
+  "failure_code": "process_argv_drift",
+  "fallback_prestart_probe": {
+    "passed": true,
+    "no_product_import": true,
+    "no_dependency_install": true
+  },
+  "recovery_failure": "process_argv_drift"
+}

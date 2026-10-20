@@ -1,0 +1,11 @@
+HTTP/2 302 
+server: nginx/1.18.0 (Ubuntu)
+date: Mon, 19 Oct 2026 15:23:02 GMT
+content-type: text/html
+location: https://ops.liveuin.com/ops/login
+
+HTTP/2 200 
+server: nginx/1.18.0 (Ubuntu)
+date: Mon, 19 Oct 2026 15:23:02 GMT
+content-type: text/html
+cache-control: no-store

@@ -1,0 +1,70 @@
+{
+  "status": "retained_additively",
+  "hydration_check": "All source and destination files have local blocks, are not dataless, have readable complete bytes and matching SHA-256; xattr names checked.",
+  "private_state_excluded": true,
+  "files": [
+    {
+      "file": "frontend-stage-return-11.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/return-proof-11/frontend-stage-return-11.json",
+      "bytes": 195,
+      "sha256": "9f14e1849597d90c7c1f51ad9b90b2923de1b2c825b934e217bf9289d0dd8a50",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "backend-gate-install-result-11.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/return-proof-11/backend-gate-install-result-11.json",
+      "bytes": 324,
+      "sha256": "7e28425e1726ff86bd2c02eef59251e9488252ac5110aa3487526a27378675d3",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "frontend-app-return-11.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/return-proof-11/frontend-app-return-11.json",
+      "bytes": 2531,
+      "sha256": "1ccfe98dea9456cc9028153d12e36905816cf52980b017d5db7d7dbbc0ca1f54",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "parent-return-before-logout-11.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/return-proof-11/parent-return-before-logout-11.json",
+      "bytes": 1013,
+      "sha256": "9ed45974fe77df1ae88a79816f272b38732045dc90c785b3c75fae59afe97b3a",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "parent-return-after-logout-11.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/return-proof-11/parent-return-after-logout-11.json",
+      "bytes": 1013,
+      "sha256": "40aa6ee2622021408c1131d487f3b7aa10657324fb49339b376635b864b72ee3",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "app-return-destination-passed-11.png",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/screenshots/app-return-destination-passed-11.png",
+      "bytes": 37608,
+      "sha256": "ad9371b65d7dd0cd2bb568796d626db05d5fee48afd4f78b4c9f7d5d5b4fad0f",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "app-return-logout-refused-11.png",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/screenshots/app-return-logout-refused-11.png",
+      "bytes": 55208,
+      "sha256": "4289fb839ee50ad82d08868f15a555e831b97831368cbb63d93ed1f7127d864f",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "APP-RETURN-CONTINUATION-11.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/return-proof-11/APP-RETURN-CONTINUATION-11.json",
+      "bytes": 2087,
+      "sha256": "445f7f5f5aa0c59c334c126d1bd6675b0802ede62aca22e4cb84af0ecbc6bc47",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "APP-RETURN-CONTINUATION-11.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/return-proof-11/APP-RETURN-CONTINUATION-11.md",
+      "bytes": 3628,
+      "sha256": "32dcafc403cd4a1c0799c05f00f202afb39a2d9c453a7e0a95b9a1682fd36370",
+      "hydrated_and_identical": true
+    }
+  ]
+}

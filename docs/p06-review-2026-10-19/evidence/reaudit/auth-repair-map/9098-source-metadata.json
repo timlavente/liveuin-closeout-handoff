@@ -1,0 +1,53 @@
+{
+  "at_utc": "2026-10-19T16:25:13.908043+00:00",
+  "files": [
+    {
+      "name": "core_identity_api.py",
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_api.py",
+      "realpath": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_api.py",
+      "sha256": "35cb1b2ed434eec9bce941eb0f4a6642d28a88ffb005cbec8cd4d4662f436132"
+    },
+    {
+      "name": "core_identity_public.py",
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_public.py",
+      "realpath": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_public.py",
+      "sha256": "11077e9fed401168683d5c8c31117dd2a57bd5f403ed6cfa379f58ad55f8a1b8"
+    },
+    {
+      "name": "core_identity_social.py",
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_social.py",
+      "realpath": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_social.py",
+      "sha256": "d181bcadd104229ca04eb941fb745a7dab209387bfefebfea3009d7b88994903"
+    },
+    {
+      "name": "core_identity_session.py",
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_session.py",
+      "realpath": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_session.py",
+      "sha256": "cfaf971913f6a49960f5cc54c8877641cc5db1b00de4c42fa8259c673cc82f7e"
+    },
+    {
+      "name": "core_identity_session_store.py",
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_session_store.py",
+      "realpath": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_session_store.py",
+      "sha256": "c0f2a07b7778aef761deee03b32adc61bfa257cb1edeae933416438508a265c3"
+    },
+    {
+      "name": "core_identity_public_store.py",
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_public_store.py",
+      "realpath": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_public_store.py",
+      "sha256": "98414fa04c72281edca3f399a40c1c2e731e1a367f7a74b794fcf09d60b908d4"
+    },
+    {
+      "name": "core_identity_browser_auth.py",
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_browser_auth.py",
+      "realpath": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_browser_auth.py",
+      "sha256": "c63fd51c97785be51aa9c8dda8dd2af42ea59bcf80862dc6f57e63a20b7b36ce"
+    },
+    {
+      "name": "p2a1_identity_route_contract.py",
+      "path": "/opt/liveuin-identity-public/current/deploy/p2a1_identity_route_contract.py",
+      "realpath": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/p2a1_identity_route_contract.py",
+      "sha256": "0baa131a29739067ae479d6fa5c9f3fb0d5e816c920bf33548b8aa27e2ab6b3a"
+    }
+  ]
+}

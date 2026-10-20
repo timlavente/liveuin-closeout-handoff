@@ -1,0 +1,46 @@
+{
+  "candidate_manifest_sha256": "785bfec58a76aeeea01484814285d6a43a1d7783a0c4a5c0d2156f1d25b57793",
+  "observer": "root agent operating the normal browser",
+  "recorded_utc": "2026-10-20T09:15:34.119499+00:00",
+  "observation_time_limit_utc": "2026-10-20T09:14:49Z",
+  "timestamp_note": "Root corrected its earlier17:16SGT estimate; no guessed exact observation minute is claimed. Screenshot file timestamps are recorded separately.",
+  "checks": {
+    "google_notice_visible": true,
+    "no_active_google_control": true,
+    "named_account_signed_in": true,
+    "allowed_screen_passed": true,
+    "allowed_return_preserved": true,
+    "canonical_profile_reload_passed": true,
+    "sign_out_navigation_observed": true,
+    "private_reopen_refused": true
+  },
+  "actual_browser_observations": [
+    "Normal Welcome to sign-in retains tenant/account return; truthful Google-unavailable notice and no active Google button.",
+    "Correct named-parent password opens /tenant/account.",
+    "Full reload retains canonical Tenant and one profile.",
+    "Body Sign out returns Welcome.",
+    "Reopening /tenant/account returns Welcome with allowed-return guard.",
+    "Direct /login also shows truthful Google notice without Google button."
+  ],
+  "carried_forward_only": [
+    "AUTH02 wrong-password and wrong-role refusal",
+    "AUTH02 both logout controls and canonical server revocation",
+    "AUTH02 stale signed-session and refresh-credential refusal"
+  ],
+  "carry_forward_basis": "Exact candidate delta retains password/return/hydration/logout bytes. These carried-forward checks were not rerun for AUTH03.",
+  "public_browser_still_pending": true,
+  "screenshots": {
+    "/private/tmp/liveuin-p06-auth03-20261020/browser-proof/app-google-unavailable-01.png": {
+      "sha256": "d5e4962270f5e721ab8d380c9cd7c069d5ca9c3012055d4f439e10840bb76241",
+      "file_mtime_utc": "2026-10-20T09:12:20.261485+00:00"
+    },
+    "/private/tmp/liveuin-p06-auth03-20261020/browser-proof/app-parent-return-reload-01.png": {
+      "sha256": "ad9371b65d7dd0cd2bb568796d626db05d5fee48afd4f78b4c9f7d5d5b4fad0f",
+      "file_mtime_utc": "2026-10-20T09:12:58.516231+00:00"
+    },
+    "/private/tmp/liveuin-p06-auth03-20261020/browser-proof/app-logout-refused-01.png": {
+      "sha256": "307b5fdd51b73745d44a5937978dc0d2ff4d0047289d181ca09c61487ba6981c",
+      "file_mtime_utc": "2026-10-20T09:13:14.487760+00:00"
+    }
+  }
+}

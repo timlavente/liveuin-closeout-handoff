@@ -1,0 +1,21 @@
+{
+  "checked_at_singapore": "2026-10-19T23:38:35+08:00",
+  "host_alias": "liveuin-hk",
+  "checks": [
+    {
+      "command": "sudo -n -ll",
+      "result": "Account has general sudo subject to authentication. Passwordless commands include rsync and a different prodrouter restart; public API restart is not listed passwordless."
+    },
+    {
+      "command": "sudo -n -l /bin/systemctl restart liveuin-public-api.service",
+      "exit_code": 0,
+      "result": "Command is permitted by general sudo policy; this listing does not establish noninteractive authentication."
+    },
+    {
+      "command": "sudo -n /usr/bin/true",
+      "exit_code": 1,
+      "result": "sudo: a password is required"
+    }
+  ],
+  "conclusion": "Public API activation/recovery needs an authenticated administrative session or a scoped authorized deployment path. No restart, production write, permission change or workaround attempted."
+}

@@ -1,0 +1,6 @@
+{
+  "status": "local candidate only; two HTTP preview routes guarded; approved adapters unchanged",
+  "file": "core_identity_api.py",
+  "baseline_sha256": "fcf8c612f2442ab05a8950523890806af7b89f88e9cbf801fcc5561ec1d6acc4",
+  "candidate_sha256": "7d094778771cef3c4c9baa6b85f151bccda99c9c2c3d4b7ed0706fde3f2cd54f"
+}

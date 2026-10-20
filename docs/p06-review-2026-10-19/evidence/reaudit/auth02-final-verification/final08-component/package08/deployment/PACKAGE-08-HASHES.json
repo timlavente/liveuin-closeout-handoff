@@ -1,0 +1,17 @@
+{
+  "archive": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/auth02-9095-reviewed-08.tar",
+  "archive_sha256": "1fe1bf8f4e310f8a66577115001fab17d62d2ec4b9fde1199733e524942e869d",
+  "archive_bytes": 2508800,
+  "manifest_sha256": "403e97cbc90893402427dfd304358271d619c23babb452a1a20ff2f33aece21b",
+  "staging_helper": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/stage-reviewed-package-08.py",
+  "staging_helper_sha256": "728f390dbe94081da2ff394db726d7876e2c467e99d770f1148dbdc73065f96f",
+  "packaged_file_count": 48,
+  "controller_sha256": "fb39354f610dc6e74db369453945376d37d838c00fc88f098dfae123be0a4b45",
+  "spec_sha256": "b2031d0b9cef4363fdd843b50830c4edea7b7ed45487ab2b2b956c8a4721ec96",
+  "classifier_sha256": "3ba754475c7ec26516989474ab2f16bf7366e6952268a8863b2525c891fd61a2",
+  "probe_sha256": "5a58274e32813b467ab498c6f00ab821b774cff10c5d35f5ca9a6594fcce7544",
+  "fault_tests": "30/30",
+  "current_baseline_pid": 3424573,
+  "current_baseline_sha256": "aee0ce11a4ffe48242b18dbde4a67463409765d80f43f15a68c6d40facc6e143",
+  "no_production_changes_by_author": true
+}

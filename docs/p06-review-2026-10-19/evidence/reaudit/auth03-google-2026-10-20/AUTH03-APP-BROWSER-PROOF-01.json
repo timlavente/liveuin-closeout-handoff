@@ -1,0 +1,28 @@
+{
+  "status": "actual_app_browser_checks_passed_public_pending",
+  "candidate_manifest_sha256": "785bfec58a76aeeea01484814285d6a43a1d7783a0c4a5c0d2156f1d25b57793",
+  "observation_date_singapore": "2026-10-20",
+  "observed_before_utc": "2026-10-20T09:14:49Z",
+  "observer": "coordinating agent through actual normal browser; screenshots independently reviewed by retention agent",
+  "checks": {
+    "google_notice_visible": true,
+    "no_active_google_control": true,
+    "named_account_signed_in": true,
+    "allowed_screen_passed": true,
+    "allowed_return_preserved": true,
+    "canonical_profile_reload_passed": true,
+    "sign_out_navigation_observed": true,
+    "private_reopen_refused": true
+  },
+  "actual_scope": "Truthful Google notice without active control; named parent normal password, allowed account return, full canonical reload, body-button Sign out to Welcome, private reopening refused.",
+  "carried_forward": "AUTH02 wrong-password/wrong-role checks, both logout controls, server revocation and stale session/refresh refusal are not newly rerun; unchanged corresponding code is separately hash-checked.",
+  "native_google_changed": false,
+  "google_provider_roundtrip_proven": false,
+  "public_browsers_passed": false,
+  "auth03_frozen": false,
+  "screenshots": {
+    "app-google-unavailable-01.png": "d5e4962270f5e721ab8d380c9cd7c069d5ca9c3012055d4f439e10840bb76241",
+    "app-parent-return-reload-01.png": "ad9371b65d7dd0cd2bb568796d626db05d5fee48afd4f78b4c9f7d5d5b4fad0f",
+    "app-logout-refused-01.png": "307b5fdd51b73745d44a5937978dc0d2ff4d0047289d181ca09c61487ba6981c"
+  }
+}

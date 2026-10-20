@@ -1,0 +1,23 @@
+[Unit]
+Description=LiveUIN OTP Gateway
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=exec
+User=liveuin
+Group=liveuin
+WorkingDirectory=/opt/liveuin/otp_service
+EnvironmentFile=/etc/liveuin/otp-prod.env
+ExecStart=/opt/liveuin/otp_service/venv/bin/python -m uvicorn app:APP --host 127.0.0.1 --port 9094
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectHome=yes
+UMask=0077
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,236 @@
+{
+  "selected_config_bindings": [
+    {
+      "unit": "liveuin-public-api.service",
+      "source": "/etc/liveuin/liveuin-pass-core.env",
+      "line": 1,
+      "name": "LIVEUIN_CORE_CASE_DATA_DIR",
+      "value": "/var/lib/liveuin/core-case-data",
+      "evidence_level": "configured EnvironmentFile; effective process environment not inspected"
+    },
+    {
+      "unit": "liveuin-public-api.service",
+      "source": "/etc/liveuin/liveuin-pass-core.env",
+      "line": 2,
+      "name": "LIVEUIN_CORE_IDENTITY_DATA_DIR",
+      "value": "/var/lib/liveuin/core-identity-data",
+      "evidence_level": "configured EnvironmentFile; effective process environment not inspected"
+    },
+    {
+      "unit": "liveuin-public-api.service",
+      "source": "/etc/liveuin/liveuin-pass-core.env",
+      "line": 3,
+      "name": "LIVEUIN_CORE_INVENTORY_DATA_DIR",
+      "value": "/var/lib/liveuin/core-inventory-data",
+      "evidence_level": "configured EnvironmentFile; effective process environment not inspected"
+    },
+    {
+      "unit": "liveuin-public-api.service",
+      "source": "/etc/liveuin/liveuin-pass-core.env",
+      "line": 40,
+      "name": "LIVEUIN_CORE_DEMAND_DATA_DIR",
+      "value": "/srv/liveuin/core-demand-data",
+      "evidence_level": "configured EnvironmentFile; effective process environment not inspected"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "source": "/etc/liveuin/liveuin-pass-core.env",
+      "line": 1,
+      "name": "LIVEUIN_CORE_CASE_DATA_DIR",
+      "value": "/var/lib/liveuin/core-case-data",
+      "evidence_level": "configured EnvironmentFile; effective process environment not inspected"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "source": "/etc/liveuin/liveuin-pass-core.env",
+      "line": 2,
+      "name": "LIVEUIN_CORE_IDENTITY_DATA_DIR",
+      "value": "/var/lib/liveuin/core-identity-data",
+      "evidence_level": "configured EnvironmentFile; effective process environment not inspected"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "source": "/etc/liveuin/liveuin-pass-core.env",
+      "line": 3,
+      "name": "LIVEUIN_CORE_INVENTORY_DATA_DIR",
+      "value": "/var/lib/liveuin/core-inventory-data",
+      "evidence_level": "configured EnvironmentFile; effective process environment not inspected"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "source": "/etc/liveuin/liveuin-pass-core.env",
+      "line": 40,
+      "name": "LIVEUIN_CORE_DEMAND_DATA_DIR",
+      "value": "/srv/liveuin/core-demand-data",
+      "evidence_level": "configured EnvironmentFile; effective process environment not inspected"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "source": "/etc/liveuin/l0-internal-operating-spine.env",
+      "line": 2,
+      "name": "LIVEUIN_CORE_CASE_DATA_DIR",
+      "value": "/srv/liveuin/core-case-data",
+      "evidence_level": "configured EnvironmentFile; effective process environment not inspected"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "source": "/etc/liveuin/l0-internal-operating-spine.env",
+      "line": 3,
+      "name": "LIVEUIN_CORE_IDENTITY_DATA_DIR",
+      "value": "/srv/liveuin/core-identity-data",
+      "evidence_level": "configured EnvironmentFile; effective process environment not inspected"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "source": "/etc/liveuin/l0-internal-operating-spine.env",
+      "line": 4,
+      "name": "LIVEUIN_CORE_INVENTORY_DATA_DIR",
+      "value": "/srv/liveuin/core-inventory-data",
+      "evidence_level": "configured EnvironmentFile; effective process environment not inspected"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "source": "/etc/liveuin/l0-internal-operating-spine.env",
+      "line": 18,
+      "name": "LIVEUIN_CORE_DEMAND_DATA_DIR",
+      "value": "/srv/liveuin/core-demand-data",
+      "evidence_level": "configured EnvironmentFile; effective process environment not inspected"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "source": "/etc/liveuin/l0-internal-operating-spine.env",
+      "line": 31,
+      "name": "LIVEUIN_CORE_INVENTORY_SQLITE_PATH",
+      "value": "/srv/liveuin/core-inventory-data/liveuin-core-inventory.sqlite3",
+      "evidence_level": "configured EnvironmentFile; effective process environment not inspected"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "source": "/etc/liveuin/finance-ledger.env",
+      "line": 4,
+      "name": "LIVEUIN_CORE_CASE_DATA_DIR",
+      "value": "/srv/liveuin/core-case-data",
+      "evidence_level": "configured EnvironmentFile; effective process environment not inspected"
+    }
+  ],
+  "config_read_limits": [
+    {
+      "unit": "liveuin-public-api.service",
+      "path": "/etc/liveuin/public-home.env",
+      "status": "PermissionError"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "path": "/etc/ops-backend@liveuin.env",
+      "status": "PermissionError"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "path": "/etc/ops-backend@liveuin.api-key-ref.env",
+      "status": "intentionally excluded credential/provider configuration"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "path": "/etc/ops-backend@liveuin.smart-inventory.env",
+      "status": "PermissionError"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "path": "/etc/liveuin/host-workspace.env",
+      "status": "PermissionError"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "path": "/etc/liveuin/listing-media-engine.env",
+      "status": "PermissionError"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "path": "/etc/liveuin/authcore-prod.env",
+      "status": "intentionally excluded credential/provider configuration"
+    },
+    {
+      "unit": "ops-backend@liveuin.service",
+      "path": "/etc/liveuin/listing-media-engine-candidates/liveuin-listing-media-engine-phase1-rc3-20260822-production.env",
+      "status": "intentionally excluded credential/provider configuration"
+    },
+    {
+      "unit": "liveuin-ops-command.service",
+      "path": "/etc/liveuin/ops-command.env",
+      "status": "PermissionError"
+    },
+    {
+      "unit": "liveuin-identity-public-prod.service",
+      "path": "/etc/liveuin/identity-public-prod.env",
+      "status": "PermissionError"
+    },
+    {
+      "unit": "liveuin-identity-public-prod.service",
+      "path": "/run/liveuin-identity-public-prod/secrets.env",
+      "status": "intentionally excluded credential/provider configuration"
+    },
+    {
+      "unit": "liveuin-identity-public-prod.service",
+      "path": "/etc/liveuin/identity-public-prod-secrets.env",
+      "status": "intentionally excluded credential/provider configuration"
+    }
+  ],
+  "identity_entry_selected_source": [
+    {
+      "line": 28,
+      "text": "app = FastAPI(title=\"LiveUIN Identity public (production)\", version=COMMIT, docs_url=None, redoc_url=None, openapi_url=None)"
+    },
+    {
+      "line": 107,
+      "text": "app.include_router(identity_router)"
+    },
+    {
+      "line": 108,
+      "text": "app.include_router(notification_router)  # internal identity-email delivery route; token-gated, not exposed by nginx"
+    }
+  ],
+  "identity_dependencies": [
+    {
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_api.py",
+      "resolved_path": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_api.py",
+      "bytes": 39837,
+      "sha256": "35cb1b2ed434eec9bce941eb0f4a6642d28a88ffb005cbec8cd4d4662f436132"
+    },
+    {
+      "path": "/opt/liveuin-identity-public/current/deploy/core_notification_api.py",
+      "resolved_path": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_notification_api.py",
+      "bytes": 5574,
+      "sha256": "d86f8bf03ab6356c6e15ea5b2569e92a6f3f7fb4f1a1963515b4c9ca04710134"
+    },
+    {
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_social.py",
+      "resolved_path": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_social.py",
+      "bytes": 45917,
+      "sha256": "d181bcadd104229ca04eb941fb745a7dab209387bfefebfea3009d7b88994903"
+    },
+    {
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_account_deletion.py",
+      "resolved_path": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_account_deletion.py",
+      "bytes": 41128,
+      "sha256": "10a52038233506c9910dd660f81b5fb6dafb430dc8486c77e1d86ce8d426adda"
+    },
+    {
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_public.py",
+      "resolved_path": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_public.py",
+      "bytes": 83871,
+      "sha256": "11077e9fed401168683d5c8c31117dd2a57bd5f403ed6cfa379f58ad55f8a1b8"
+    },
+    {
+      "path": "/opt/liveuin-identity-public/current/deploy/p2a1_identity_route_contract.py",
+      "resolved_path": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/p2a1_identity_route_contract.py",
+      "bytes": 5760,
+      "sha256": "0baa131a29739067ae479d6fa5c9f3fb0d5e816c920bf33548b8aa27e2ab6b3a"
+    },
+    {
+      "path": "/opt/liveuin-identity-public/current/deploy/core_identity_store.py",
+      "resolved_path": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_store.py",
+      "bytes": 56157,
+      "sha256": "e9556e964c6e7a1a5dc07d199a2a2f12cdf2034e491a28f7d70399bb908764c5"
+    }
+  ]
+}

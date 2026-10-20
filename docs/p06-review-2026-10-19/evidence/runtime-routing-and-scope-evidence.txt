@@ -1,0 +1,213 @@
+    40	    client_max_body_size 10m;
+    41	
+    42	    add_header X-LiveUin-Layer "public_gateway" always;
+    43	    add_header X-LiveUin-Service "liveuin-public-api" always;
+    44	    add_header X-Content-Type-Options "nosniff" always;
+    45	
+    46	    location ^~ /api/ops/ {
+    47	        return 404;
+    48	    }
+    49	
+    50	    location = /api/studio/prod/pricing {
+    51	        proxy_pass http://127.0.0.1:9091;
+    52	        proxy_http_version 1.1;
+    53	
+    54	        proxy_set_header Host $host;
+    55	        proxy_set_header X-Real-IP $remote_addr;
+    56	        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    57	        proxy_set_header X-Forwarded-Proto https;
+    58	    }
+    59	
+    60	    location ^~ /api/studio/ {
+    61	        return 404;
+    62	    }
+    63	
+    64	    location ^~ /api/autopilot/ {
+    65	        return 404;
+    66	    }
+    67	
+    68	    location ^~ /autopilot/ {
+    69	        return 404;
+    70	    }
+    71	
+    72	    location ^~ /internal/ {
+    73	        return 404;
+    74	    }
+    75	
+    76	    location ^~ /registry/ {
+    77	        return 404;
+    78	    }
+    79	
+    80	    location ^~ /admin/ {
+    81	        return 404;
+    82	    }
+    83	
+    84	    location / {
+    85	        proxy_pass http://127.0.0.1:9080;
+    86	        proxy_http_version 1.1;
+    87	
+    88	        proxy_set_header Host $host;
+    89	        proxy_set_header X-Real-IP $remote_addr;
+    90	        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    91	        proxy_set_header X-Forwarded-Proto https;
+    92	
+    93	        proxy_connect_timeout 5s;
+    94	        proxy_send_timeout 30s;
+    95	        proxy_read_timeout 30s;
+    56	    location ^~ /__liveuin_marketing__/ {
+    57	        
+    58	        proxy_pass http://127.0.0.1:9095;
+    59	        proxy_http_version 1.1;
+    60	        proxy_set_header Host $host;
+    61	        proxy_set_header X-Real-IP $remote_addr;
+    62	        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    63	        proxy_set_header X-Forwarded-Proto https;
+    64	        client_max_body_size 16k;
+    65	        proxy_connect_timeout 5s;
+    66	        proxy_read_timeout 30s;
+    67	    }
+    68	    location ^~ /api/core/inventory/marketing- {
+    69	        
+    70	        proxy_pass http://127.0.0.1:9095;
+    71	        proxy_http_version 1.1;
+    72	        proxy_set_header Host $host;
+    73	        proxy_set_header X-Real-IP $remote_addr;
+    74	        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    75	        proxy_set_header X-Forwarded-Proto https;
+    76	        client_max_body_size 16k;
+    77	        proxy_connect_timeout 5s;
+    78	        proxy_read_timeout 30s;
+    79	    }
+    80	    location ^~ /api/core/demand/rental- {
+    81	        
+    82	        proxy_pass http://127.0.0.1:9095;
+    83	        proxy_http_version 1.1;
+    84	        proxy_set_header Host $host;
+    85	        proxy_set_header X-Real-IP $remote_addr;
+    86	        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    87	        proxy_set_header X-Forwarded-Proto https;
+    88	        client_max_body_size 16k;
+    89	        proxy_connect_timeout 5s;
+    90	        proxy_read_timeout 30s;
+    91	    }
+    92	    location ^~ /stays/listing_ {
+    93	        
+    94	        proxy_pass http://127.0.0.1:9095;
+    95	        proxy_http_version 1.1;
+    96	        proxy_set_header Host $host;
+    97	        proxy_set_header X-Real-IP $remote_addr;
+    98	        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    99	        proxy_set_header X-Forwarded-Proto https;
+   100	        client_max_body_size 16k;
+    60	    location ^~ /api/core/inventory/marketing- {
+    61	        
+    62	        proxy_pass http://127.0.0.1:9095;
+    63	        proxy_http_version 1.1;
+    64	        proxy_set_header Host $host;
+    65	        proxy_set_header X-Real-IP $remote_addr;
+    66	        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    67	        proxy_set_header X-Forwarded-Proto https;
+    68	        client_max_body_size 16k;
+    69	        proxy_connect_timeout 5s;
+    70	        proxy_read_timeout 30s;
+    71	    }
+    72	    location ^~ /api/core/demand/rental- {
+    73	        
+    74	        proxy_pass http://127.0.0.1:9095;
+    75	        proxy_http_version 1.1;
+    76	        proxy_set_header Host $host;
+    77	        proxy_set_header X-Real-IP $remote_addr;
+    78	        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    79	        proxy_set_header X-Forwarded-Proto https;
+    80	        client_max_body_size 16k;
+    81	        proxy_connect_timeout 5s;
+    82	        proxy_read_timeout 30s;
+    83	    }
+    84	    location = /host/listing-publication {
+    85	        
+    86	        proxy_pass http://127.0.0.1:9095;
+    87	        proxy_http_version 1.1;
+    16	def build_router(marketing, offers, publisher_identity, applicant_identity, reader_identity, *, allowed_origins):
+    17	    origins=frozenset(allowed_origins)
+    18	    if not origins:
+    19	        raise ValueError("Explicit trusted origins are required")
+    20	    router=APIRouter()
+    21	
+    22	    def same_origin(request):
+    23	        if request.headers.get("origin") not in origins:
+    24	            raise HTTPException(403,"marketing_same_origin_required",headers=PRIVATE_HEADERS)
+    25	
+    26	    def response(call):
+    27	        try:
+    28	            return JSONResponse(call(),headers=PRIVATE_HEADERS)
+    29	        except WorkflowError as exc:
+    30	            raise HTTPException(exc.status,exc.detail,headers=PRIVATE_HEADERS) from None
+    31	
+    32	    @router.post('/api/core/inventory/marketing-publications')
+    33	    def publish(request:Request,payload:dict=Body(...),actor:dict=Depends(publisher_identity)):
+    34	        same_origin(request)
+    35	        def invoke():
+    36	            require(payload.keys()=={"submission_id","terms","public_media_ids"},"publication_fields_invalid",422)
+    37	            return marketing.publish(actor,payload['submission_id'],payload['terms'],payload['public_media_ids'])
+    38	        return response(invoke)
+    39	
+    40	    @router.get('/api/core/inventory/marketing-publications/{listing_id}')
+    41	    def listing(listing_id:str):
+    42	        return response(lambda:marketing.get_public(listing_id))
+    43	
+    44	    @router.post('/api/core/inventory/marketing-publications/{listing_id}/pause')
+    45	    def pause(request:Request,listing_id:str,payload:dict=Body(...),actor:dict=Depends(publisher_identity)):
+    46	        same_origin(request)
+    47	        def invoke():
+    48	            require(payload.keys()=={"version"},"publication_fields_invalid",422)
+    49	            return marketing.pause(actor,listing_id,payload['version'])
+    50	        return response(invoke)
+    51	
+    52	    @router.post('/api/core/demand/rental-offers')
+    53	    def submit(request:Request,payload:dict=Body(...),actor:dict=Depends(applicant_identity)):
+    54	        same_origin(request)
+    55	        def invoke():
+    56	            require(payload.keys()=={"listing_id","offer"},"offer_fields_invalid",422)
+    57	            return offers.submit(actor,payload['listing_id'],payload['offer'])
+    58	        return response(invoke)
+    59	
+    60	    @router.get('/api/core/demand/rental-offers')
+    61	    def inbox(listing_id:str,limit:int=Query(50,ge=1,le=100),offset:int=Query(0,ge=0,le=1000000),actor:dict=Depends(publisher_identity)):
+    62	        return response(lambda:offers.owner_inbox(actor,listing_id,limit=limit,offset=offset))
+    63	
+    64	    @router.get('/api/core/demand/rental-offers/{lead_id}')
+    65	    def read_offer(lead_id:str,actor:dict=Depends(reader_identity)):
+   792	def authorize_pass_case_access(
+   793	    case_id: str,
+   794	    workspace_id: str,
+   795	    actor_id: str,
+   796	    actor_role: str,
+   797	) -> Dict[str, Any]:
+   798	    """Authorize non-public Pass projections against the canonical case binding."""
+   799	    case_id = _clean_id(case_id)
+   800	    workspace_id = _clean_id(workspace_id, 96) or DEFAULT_WORKSPACE_ID
+   801	    actor_id = _clean_id(actor_id, 96)
+   802	    actor_role = _clean_string(actor_role, 80).lower()
+   803	    if not case_id or not actor_id:
+   804	        return error("pass_case_identity_required", 403)
+   805	
+   806	    record = store.get_case(case_id, workspace_id)
+   807	    if not record:
+   808	        return error("case_not_found", 404)
+   809	
+   810	    # Workspace-scoped operational review stays in LiveUIN Ops; it is not a family role.
+   811	    if actor_role in {"admin", "ops", "ops_manager", "super_admin", "support_reviewer", "trust_reviewer"}:
+   812	        return {"ok": True, "case_id": case_id, "workspace_id": workspace_id, "record": record}
+   813	
+   814	    metadata = _as_dict(record.get("metadata"))
+   815	    bindings = _case_access_bindings({}, _as_dict(record.get("family")), metadata)
+   816	    if actor_role in {"parent", "guardian", "student", "tenant", "member"}:
+   817	        allowed_ids = bindings["participant_ids"]
+   818	    elif actor_role == "operator":
+   819	        allowed_ids = bindings["assigned_operator_ids"]
+   820	    else:
+   821	        return error("pass_case_role_not_permitted", 403)
+   822	
+   823	    if actor_id not in allowed_ids:
+   824	        return error("pass_case_membership_required", 403)
+   825	    return {"ok": True, "case_id": case_id, "workspace_id": workspace_id, "record": record}

@@ -1,0 +1,11 @@
+{
+  "host_alias": "liveuin-hk",
+  "runtime": "/usr/bin/python3",
+  "method": "importlib.metadata only, no product modules imported",
+  "versions": {
+    "fastapi": "0.116.1",
+    "starlette": "0.47.3",
+    "pydantic": "1.10.24",
+    "uvicorn": "0.35.0"
+  }
+}

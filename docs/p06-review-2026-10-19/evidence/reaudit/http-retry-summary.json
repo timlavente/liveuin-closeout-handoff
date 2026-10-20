@@ -1,0 +1,151 @@
+[
+  {
+    "url": "https://www.liveuin.com/api/core/inventory/marketing-publications/listing_ef55a13993724d8e8d1201cb",
+    "method": "GET",
+    "observed_at_sgt": "2026-10-19T23:23:01+08:00",
+    "status": 200,
+    "effective_url": "https://www.liveuin.com/api/core/inventory/marketing-publications/listing_ef55a13993724d8e8d1201cb",
+    "curl_exit": 0,
+    "error": "",
+    "body_bytes": 1685,
+    "body_sha256": "4e3cf86554d79598bc18890780ab8675229867619b9b5051ed1a491d2e2c0387",
+    "values": {
+      "listing_id": "listing_ef55a13993724d8e8d1201cb",
+      "version": 1,
+      "state": "accepting_offers",
+      "terms": {
+        "asking_rent": 6400,
+        "available_from": "2027-09-16",
+        "bathrooms": 2,
+        "bedrooms": 3,
+        "currency": "SGD",
+        "description": "A furnished whole-home rental at The Sierra, with 3 bedrooms and 2 bathrooms. Available from 16 September 2027. Request to book at the asking rent, or privately propose different terms for the owner's consideration. One year is preferred; two\u2013three-year and other lawful lease proposals are welcome. Applications are reviewed by the owner, not automatically accepted. No payment is required to submit a request.",
+        "furnishing": "Furnished",
+        "minimum_lease_months": 12,
+        "occupancy_text": "Tell the owner your proposed household size. Occupancy and intended residential use must be checked before any tenancy is accepted.",
+        "price_period": "month",
+        "public_location": "Mount Sinai Drive, Singapore",
+        "scope": "whole_premises",
+        "title": "The Sierra \u00b7 Furnished 3-bedroom home"
+      },
+      "public_media_ids": [
+        "video_frame_c17bf1c3286a4f510e",
+        "video_frame_902a38dcd36f997031",
+        "video_frame_267165d13f22c7385f",
+        "video_frame_0dd1b137be0b2b6715",
+        "video_frame_92fda96105354ef3f6",
+        "video_frame_343a69bd745c5b6692",
+        "video_frame_ca24b154836a480696",
+        "video_frame_0005f9ad443ee7dda6"
+      ],
+      "trust_label": "Owner-provided listing; not independently verified",
+      "offer_submission_enabled": true,
+      "instant_booking_enabled": false,
+      "payment_enabled": false,
+      "hold_enabled": false,
+      "independently_verified": false,
+      "canonical_unit_id": "unit_743083f741e8a925904a172b",
+      "canonical_property_id": "property_d7ec630f707adb4039836fdd",
+      "offer_notice": "Submitting an offer does not reserve the home or confirm a tenancy.",
+      "marketing_closes_at": null
+    }
+  },
+  {
+    "url": "https://host.liveuin.com",
+    "method": "GET",
+    "observed_at_sgt": "2026-10-19T23:23:01+08:00",
+    "status": 200,
+    "effective_url": "https://host.liveuin.com/host/onboarding",
+    "curl_exit": 0,
+    "error": "",
+    "body_bytes": 2284,
+    "body_sha256": "510c86fddc95be8b3431d1be2531ccef91b0d85a9e0c42fb6709da97c2fca237"
+  },
+  {
+    "url": "https://ops.liveuin.com",
+    "method": "GET",
+    "observed_at_sgt": "2026-10-19T23:23:01+08:00",
+    "status": 200,
+    "effective_url": "https://ops.liveuin.com/ops/login",
+    "curl_exit": 0,
+    "error": "",
+    "body_bytes": 2334,
+    "body_sha256": "38a252d874a4118bda87230534b7b7c36b89cefd9822e10f920bb887565b5a5d"
+  },
+  {
+    "url": "https://api.liveuin.com/v1/health",
+    "method": "GET",
+    "observed_at_sgt": "2026-10-19T23:23:02+08:00",
+    "status": 200,
+    "effective_url": "https://api.liveuin.com/v1/health",
+    "curl_exit": 0,
+    "error": "",
+    "body_bytes": 103,
+    "body_sha256": "a59e5997237cd2b211327a0c33ca097569e9ffbcd4e223669f3083eb1c544c47",
+    "values": {
+      "ok": true,
+      "service": "liveuin-public-home",
+      "schema_version": "liveuin-public-home-v4",
+      "time": 1792423382
+    }
+  },
+  {
+    "url": "https://api.liveuin.com/api/public/search",
+    "method": "POST",
+    "observed_at_sgt": "2026-10-19T23:23:02+08:00",
+    "status": 500,
+    "effective_url": "https://api.liveuin.com/api/public/search",
+    "curl_exit": 0,
+    "error": "",
+    "body_bytes": 21,
+    "body_sha256": "e41656eb2ba6c6293bf6dd928e5a88cdbc50535cab661c1969e0f598e497ed62",
+    "error_body": "Internal Server Error"
+  },
+  {
+    "url": "https://api.liveuin.com/api/public/status",
+    "method": "GET",
+    "observed_at_sgt": "2026-10-19T23:23:02+08:00",
+    "status": 500,
+    "effective_url": "https://api.liveuin.com/api/public/status",
+    "curl_exit": 0,
+    "error": "",
+    "body_bytes": 21,
+    "body_sha256": "e41656eb2ba6c6293bf6dd928e5a88cdbc50535cab661c1969e0f598e497ed62",
+    "error_body": "Internal Server Error"
+  },
+  {
+    "url": "https://api.liveuin.com/api/core/admin/control-center",
+    "method": "GET",
+    "observed_at_sgt": "2026-10-19T23:23:02+08:00",
+    "status": 500,
+    "effective_url": "https://api.liveuin.com/api/core/admin/control-center",
+    "curl_exit": 0,
+    "error": "",
+    "body_bytes": 21,
+    "body_sha256": "e41656eb2ba6c6293bf6dd928e5a88cdbc50535cab661c1969e0f598e497ed62",
+    "error_body": "Internal Server Error"
+  },
+  {
+    "url": "https://pay.igema.space/healthz",
+    "method": "GET",
+    "observed_at_sgt": "2026-10-19T23:23:02+08:00",
+    "status": 200,
+    "effective_url": "https://pay.igema.space/healthz",
+    "curl_exit": 0,
+    "error": "",
+    "body_bytes": 371,
+    "body_sha256": "37300733374d27b1d6db14f15b8471bd0d143df71d2792c06fdc17af7abb01fb",
+    "values": {
+      "ok": true,
+      "version": "0.9.0-staging",
+      "stripe_mode": "test",
+      "live_enabled": false,
+      "refund_executor_enabled": false,
+      "db_ok": true,
+      "db_backend": "sqlite",
+      "schema_version": 18,
+      "schema_latest": 18,
+      "warning": "TEST MODE ONLY (Stripe test keys; live mode locked off)."
+    }
+  }
+]

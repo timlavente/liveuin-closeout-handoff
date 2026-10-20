@@ -1,0 +1,117 @@
+{
+  "at_utc": "2026-10-19T16:26:40.913970+00:00",
+  "repo": "/Users/Vivian/Documents/Liveuin/www-lovable",
+  "head": "e389b10a1809df380e181ff91415e7f7ccf075ca",
+  "branch": "main",
+  "tracked_modified_count": 141,
+  "files": [
+    {
+      "file": "src/lib/auth-context.tsx",
+      "exists": true,
+      "bytes": 22265,
+      "blocks": 48,
+      "flags": 64,
+      "working_sha256": "1a04caa95e818c3480207ba84a0cdf898c61edec93d169fe87148ee492f26317",
+      "head_sha256": "d4b57748b825e371ab3741ecc0e10d8741301564bf662a36d0b41f91773027a4",
+      "matches_head": false
+    },
+    {
+      "file": "src/native-lovable/routes/auth.sign-in.tsx",
+      "exists": true,
+      "bytes": 9316,
+      "blocks": 24,
+      "flags": 64,
+      "working_sha256": "8a176288ab84404375d736bd7d9c20ea698368b82622b1f1d7bfe45bb8a9e545",
+      "head_sha256": "f626206184bbcc8edb61dcc4e8444b9b1953c9bba0d4e915f8bbe079e58175ff",
+      "matches_head": false
+    },
+    {
+      "file": "src/native-lovable/routes/welcome.tsx",
+      "exists": true,
+      "bytes": 7523,
+      "blocks": 16,
+      "flags": 64,
+      "working_sha256": "a75d93155c29698c8508eac6eade01208f472203018daee78798e96d02d933a7",
+      "head_sha256": "a75d93155c29698c8508eac6eade01208f472203018daee78798e96d02d933a7",
+      "matches_head": true
+    },
+    {
+      "file": "src/pages/Login.tsx",
+      "exists": true,
+      "bytes": 719,
+      "blocks": 8,
+      "flags": 64,
+      "working_sha256": "72bc90b7e57bec9d61cb4e4cbb43052d32b115099763f34f257b9f44bf966195",
+      "head_sha256": "72bc90b7e57bec9d61cb4e4cbb43052d32b115099763f34f257b9f44bf966195",
+      "matches_head": true
+    },
+    {
+      "file": "src/pages/WorkspaceSignIn.tsx",
+      "exists": true,
+      "bytes": 6724,
+      "blocks": 16,
+      "flags": 64,
+      "working_sha256": "4d922648a4468367ae3e2097e8afe94677b094abe4af0b1678602f327fa33757"
+    },
+    {
+      "file": "src/components/WorkspaceAuthGate.tsx",
+      "exists": false
+    },
+    {
+      "file": "src/lib/residentSocialAuth.ts",
+      "exists": true,
+      "bytes": 6043,
+      "blocks": 16,
+      "flags": 64,
+      "working_sha256": "2677e164d9741b969cc87444bdc74219e4f9007b8c6a01a5c0b4c36435e74fd8"
+    },
+    {
+      "file": "src/lib/residentLogout.ts",
+      "exists": true,
+      "bytes": 3868,
+      "blocks": 8,
+      "flags": 64,
+      "working_sha256": "07f9fad8e64a550d3b689f59233f787241b9bbda41f51b9e1ba2727338080378"
+    },
+    {
+      "file": "src/App.tsx",
+      "exists": true,
+      "bytes": 84391,
+      "blocks": 168,
+      "flags": 64,
+      "working_sha256": "f62e6634648353c4d2e3ed70009cd36f75a0ab62f2c4e32094fc020bd52e506e",
+      "head_sha256": "58f1e701cabfa6cc0c720970f45710a6a813b40a0117f5a724c61e2d9109a360",
+      "matches_head": false
+    },
+    {
+      "file": "package.json",
+      "exists": true,
+      "bytes": 4940,
+      "blocks": 16,
+      "flags": 64,
+      "working_sha256": "c6754162173f157b6959e97c6ea2b5371a59c371e72ee704987179fd04bc4802",
+      "head_sha256": "6ae2a85da9554c54b51f644492cdf56c920ac59c7a412f058e5a66028efc6582",
+      "matches_head": false
+    },
+    {
+      "file": "bun.lockb",
+      "exists": true,
+      "bytes": 245395,
+      "blocks": 480,
+      "flags": 64,
+      "working_sha256": "987b8cf2f5b19342e0975dae000633b7fce3bb4a78308d81533d986a7473f2f9",
+      "head_sha256": "987b8cf2f5b19342e0975dae000633b7fce3bb4a78308d81533d986a7473f2f9",
+      "matches_head": true
+    },
+    {
+      "file": "package-lock.json",
+      "exists": true,
+      "bytes": 326935,
+      "blocks": 640,
+      "flags": 64,
+      "working_sha256": "74ea5b3dad7dede5f7f1092c7584b84ba68bf9c29582ef08cd483233885aaad1",
+      "head_sha256": "74ea5b3dad7dede5f7f1092c7584b84ba68bf9c29582ef08cd483233885aaad1",
+      "matches_head": true
+    }
+  ]
+}

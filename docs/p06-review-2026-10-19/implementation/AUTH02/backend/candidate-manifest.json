@@ -1,0 +1,30 @@
+{
+  "status": "local candidate only; activation held pending confirmed approved cohort and proofs",
+  "files": [
+    {
+      "file": "core_identity_public.py",
+      "baseline_sha256": "11077e9fed401168683d5c8c31117dd2a57bd5f403ed6cfa379f58ad55f8a1b8",
+      "candidate_sha256": "8340f026f68f5048bbe2e5fc4744f17366dcf134730d4349213c549319630019"
+    },
+    {
+      "file": "core_identity_social.py",
+      "baseline_sha256": "d181bcadd104229ca04eb941fb745a7dab209387bfefebfea3009d7b88994903",
+      "candidate_sha256": "44680d3685415ec4ce209851f2ffa52cbe207f72e487e80543000ef0d920b709"
+    },
+    {
+      "file": "core_identity_api.py",
+      "baseline_sha256": "35cb1b2ed434eec9bce941eb0f4a6642d28a88ffb005cbec8cd4d4662f436132",
+      "candidate_sha256": "30f6d81466d15fad9451445449682f359969b405e21a641a7cd4523ab863b5fd"
+    },
+    {
+      "file": "core_identity_session.py",
+      "baseline_sha256": "cfaf971913f6a49960f5cc54c8877641cc5db1b00de4c42fa8259c673cc82f7e",
+      "candidate_sha256": "a3f4cedfc79003abebbdaacc12e59eb82086b0b6e5534ed08eb817a54989585c"
+    },
+    {
+      "file": "core_identity_release_admission.py",
+      "baseline_sha256": null,
+      "candidate_sha256": "fefc124fb49131510b5daa801d810608ff09e6c1bdccef54ea72bdf07a9b8c62"
+    }
+  ]
+}

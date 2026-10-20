@@ -1,0 +1,23 @@
+{
+  "status": "diagnosis_only_auth02_open",
+  "automated_edge": {
+    "client": "default Python",
+    "requests": 8,
+    "http": 403,
+    "body_bytes": 17,
+    "body_sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
+    "exact_public_error_text_reported_by_coordinator": "error code: 1010\n"
+  },
+  "official_source": "https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/",
+  "configured_cloudflare_rule_inspected": false,
+  "normal_browser_restored_home_worked_reported_by_coordinator": true,
+  "strict_origin": {
+    "requests": 4,
+    "http": 200,
+    "ssl_verify_result": 0,
+    "original_entry_sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+  },
+  "security_settings_changed": false,
+  "new_public_handoff_passed": false,
+  "auth02_frozen": false
+}

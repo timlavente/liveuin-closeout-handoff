@@ -1,0 +1,354 @@
+{
+  "checked_at_utc": "2026-10-19 15:19:43 UTC",
+  "checks": [
+    {
+      "url": "https://api.github.com/repos/timlavente/liveuin-platform/contents",
+      "default_branch_entries": [
+        {
+          "path": "README.md",
+          "type": "file",
+          "sha": "754d5f53da45246aba9aeb30e44a2ad8e930f27a",
+          "size": 36
+        }
+      ]
+    },
+    {
+      "url": "https://api.github.com/repos/timlavente/liveuin-platform/branches?per_page=100",
+      "branch_count": 74,
+      "branches": [
+        {
+          "name": "chatgpt/m0-collector-repair-20260928",
+          "sha": "1b33039ea4471d706dda7749637e46b18001a152"
+        },
+        {
+          "name": "chatgpt/m2-audit-hardening-20260929",
+          "sha": "6355fed469ad2e636632fd48d36b36f3d01259f4"
+        },
+        {
+          "name": "chatgpt/m2-canonical-canary-20261001",
+          "sha": "096a6a5b7d996f42c4a443d4b31fb89fd8a0c7ba"
+        },
+        {
+          "name": "chatgpt/m2-joined-core-20260930",
+          "sha": "be4498daf32c93acd2ebab8a7d1289f5b531bd6d"
+        },
+        {
+          "name": "chatgpt/m2-joined-read-audit-20260930",
+          "sha": "de92a2b6927abfa0cd0a45a849b896d61f2beddd"
+        },
+        {
+          "name": "chatgpt/m2-member-read-01-20260928",
+          "sha": "85590598fc54df30479e06940cc2efc25d6decb5"
+        },
+        {
+          "name": "chatgpt/m2-real-access-integration-20260929",
+          "sha": "7c2f4c4db545dc85e245736707af157fd36a21b3"
+        },
+        {
+          "name": "chatgpt/m2-real-core-20260930",
+          "sha": "c457ab14b18019f706e0851a770c8739e3452382"
+        },
+        {
+          "name": "chatgpt/m2-real-core-integration-20260930",
+          "sha": "bddef1cbed92339e747b6c64f4d3c73e18a57b90"
+        },
+        {
+          "name": "chatgpt/m2-source-export-20260929",
+          "sha": "bc0ad9e37c6767aefe53ce8a25ea42e2a812558e"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage",
+          "sha": "6a94e190a2c031c9fb101f45df7283e0c2b4634e"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-0ej3bs",
+          "sha": "a4c09d258c1cf2dae0acb46318e84c20bc71669a"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-2t95yp",
+          "sha": "cc60ff1cc6def834890079a6c17ddd025c9e2b30"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-5mdnyd",
+          "sha": "a2290f70b2102d414366edf51b11062c628f8dbc"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-7ad68w",
+          "sha": "a949a8b766842e8521c72a3afd156e4dcfe876dc"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-7fp4m4",
+          "sha": "f064f13b74e61561aa39e8831cb7da6e60dc104a"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-8aw2fh",
+          "sha": "410d3b910fa42c84a3afe2e71561b06d593e918a"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-8b87va",
+          "sha": "d5278d13897b8f1cded8762a853c04d48bc4111f"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-bizm9p",
+          "sha": "027359bacd7fb99cfeafd6380eb98e857d2d6a14"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-boo4k8",
+          "sha": "d74df8c8eb88fd8ef49fac3d0f1c2a077a7f1b86"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-c2pu6k",
+          "sha": "67d1a08e215463ddd43e716ca1fa25e48f17ed8b"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-k5mhwk",
+          "sha": "053fc18d3bc59d48d00b1b7298592a88929ceea1"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-pr1wlk",
+          "sha": "ff67ec2226176c4f8000c86b7eee6bcc2b68e486"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-ps6j0d",
+          "sha": "36d1cf2767071e0a91c0414b9e2b6e838b6d2617"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-rj3xd0",
+          "sha": "1fd0d449f08469f41c008e84bbea9bec4b29768c"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-slexjw",
+          "sha": "c7f182e9da040260c511430c6fa917b4e6445ff0"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-u7oiar",
+          "sha": "3bbbdf315513507dec8310e8648f9231389a645e"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-v47y3l",
+          "sha": "f833700dfeaea59cf8c2f8669a7f97aabd400b11"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-xzsls7",
+          "sha": "e2c55c59c20be41cb0fc513e77974231c3aebcde"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-yctit5",
+          "sha": "9d3431b8ce479f8ab9f55d2550d7c229948fbd4a"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-yrlsjs",
+          "sha": "cff09f0ecebe9d5c8ea05ffe2f2ccd9b371911fb"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-z1g4pm",
+          "sha": "349218792ec55ca81631f14965460bf0875f7bca"
+        },
+        {
+          "name": "codex/create-public-liveuin-ui-homepage-zjxo1a",
+          "sha": "3569e1ae642ccfc4cdfc6a61e7127a7a9f7a3df9"
+        },
+        {
+          "name": "codex/find-next-steps-for-mvp-and-gtm",
+          "sha": "bd9821733c937aeb968e092bf78564dd7e86c9ef"
+        },
+        {
+          "name": "liveuin-initial-export",
+          "sha": "d8d18335981d8652ab5b0baedeb2b3df11e880b5"
+        },
+        {
+          "name": "main",
+          "sha": "0edb58d9f8ab111bc71bb99944aea16a87e1d2d9"
+        },
+        {
+          "name": "recovery/p0-runtime-unblock-20260727",
+          "sha": "69f46795bb0d3b1ec2bcd7e7d827cd8daaa56e5f"
+        },
+        {
+          "name": "resolve-arch-ui-nextjs-01-foundation",
+          "sha": "41f6c97b9b30398753fba37f096952a990b518ac"
+        },
+        {
+          "name": "resolve-phase03-next-core-routes",
+          "sha": "391313e748f783ad71816b05131860cc94f6419c"
+        },
+        {
+          "name": "resolve-phase04-next-extended-routes",
+          "sha": "234b2b5985a4e88f8fa069e36a800206d89d9521"
+        },
+        {
+          "name": "resolve-phase05-next-hardening-a11y-metadata",
+          "sha": "1b4bddaaffa3c898058c28df20102831e09b04dd"
+        },
+        {
+          "name": "resolve-phase06-next-safety-cutover",
+          "sha": "eb728c6fbc7c6367d5bb1ffb58cb89e397907807"
+        },
+        {
+          "name": "resolve-phase07-next-mobile-nav",
+          "sha": "bedc0014c4401b3e106f42a05a2fcee222609c79"
+        },
+        {
+          "name": "resolve-phase08-next-cutover-smoke-hypercare",
+          "sha": "94180b202da2fdcfc311adc2351de7d4a5552cce"
+        },
+        {
+          "name": "resolve-phase09-next-first-consolidation",
+          "sha": "ff966362e88bc93faaa02ff9832e990cbfc56bdd"
+        },
+        {
+          "name": "resolve-phase10-next-optimization-growth",
+          "sha": "a4fe91b51167c3b6b75933498b6ca4c47a61c42b"
+        },
+        {
+          "name": "resolve-phase11-ui-ci-production-assurance",
+          "sha": "6a7028f609df4abbdfebe6659424fbfd04902964"
+        },
+        {
+          "name": "resolve-phase11b-ui-ci-readiness-diagnostics",
+          "sha": "0cf437c351e0da354290e38a0cc9221af4177353"
+        },
+        {
+          "name": "resolve-phase12a-next-preview-systemd-runbook",
+          "sha": "11e3871c1e6ba86a4c47a303990bd3d1a1ea2643"
+        },
+        {
+          "name": "resolve-phase12g-d1-desktop-asset-pass3-server-review",
+          "sha": "eeda91a8bb029e2d1fca07625492e5936587a5f8"
+        },
+        {
+          "name": "resolve-phase12g-d1-desktop-density-pass7-server-review",
+          "sha": "6879daf7c2e86511e020099a869c1216313918ce"
+        },
+        {
+          "name": "resolve-phase12g-d1-desktop-exact-code-pass6-server-review",
+          "sha": "736533e6dfbfcdb0cadfd3b1b9cede79d816c257"
+        },
+        {
+          "name": "resolve-phase12g-d1-desktop-exact-pass5-server-review",
+          "sha": "2616eb14c681caee25b00a2e8dcefe9331a95e3d"
+        },
+        {
+          "name": "resolve-phase12g-d1-desktop-geometry-surface-pass10-server-recovery",
+          "sha": "753e9313fdbb382514c2c77cf939871aaa6a2d79"
+        },
+        {
+          "name": "resolve-phase12g-d1-desktop-parity-pass2-server-review",
+          "sha": "0af6254dd86661a1a04c60d4f3a80c353aa4e933"
+        },
+        {
+          "name": "resolve-phase12g-d1-evidence-honest-checkpoint",
+          "sha": "098311dbb7f95e0f4179ff8e00025443ff7342bd"
+        },
+        {
+          "name": "resolve-phase12g-d1-m2-pixel-parity-server-review",
+          "sha": "7e3fabffdf4bc8dcda5bed226f1b6d76279d0dd2"
+        },
+        {
+          "name": "resolve-phase12g-d1-pass10b-review-fixes",
+          "sha": "141799197e0fa4b76d99f1a1fd61256fee5a3d0e"
+        },
+        {
+          "name": "resolve-phase12g-d1-pass11-safe-micro-parity",
+          "sha": "06e39915c774cf586ba297c647037c6b0f6182c2"
+        },
+        {
+          "name": "resolve-phase12g-d1-real-asset-wiring-pass8b-fix-server-review",
+          "sha": "d3f16b572a034b6fe1a8139f7fd2c72fbf6f994b"
+        },
+        {
+          "name": "resolve-phase12g-d1-real-assets-pass8a-server-review",
+          "sha": "fbf4c526609a59ba0b7cf183d74c0f566e197ed0"
+        },
+        {
+          "name": "resolve-phase12g-d1-visual-surface-pass9-server-recovery",
+          "sha": "9269faff25001786086e8fe38ab7844344136c4e"
+        },
+        {
+          "name": "resolve-phase12g-home-ui-accuracy-pass",
+          "sha": "1c572ff8d465056e0777449af93c275698127217"
+        },
+        {
+          "name": "resolve-phase12h-blueprint-responsive-rebuild-v1",
+          "sha": "4cea846f749f41826f5d9e66cbbd05cb87e1f052"
+        },
+        {
+          "name": "resolve-phase12h-v2-homepage-blueprint-route-map",
+          "sha": "29b020901df8e35a1824e478e53da481c0ad9ea5"
+        },
+        {
+          "name": "resolve-phase14j-public-home-normalized-apply-closeout",
+          "sha": "49731c3e86aa0156aa2166cde85c15fb3afdd674"
+        },
+        {
+          "name": "resolve-pr11-next-home-route",
+          "sha": "fbe738951c0c994c1a7e3b3efe0453eebe2b991b"
+        },
+        {
+          "name": "resolve-pr-2-full-static-ui",
+          "sha": "7840d024f0349d5347a1df75669e8ba2128fdef1"
+        },
+        {
+          "name": "resolve-pr-2-ui-final",
+          "sha": "7ea8a39402d9276be3d378a4729bbd5d148d1f5b"
+        },
+        {
+          "name": "resolve-ui-04-configurable-branding",
+          "sha": "295d1162085dce174cd3470e7ba4bfa596f6cd1f"
+        },
+        {
+          "name": "resolve-ui-05-selected-gtm",
+          "sha": "cfc8e4148571bcd1661c176fc8226fc0a3d3f914"
+        },
+        {
+          "name": "resolve-ui-06b-homepage-refine",
+          "sha": "4c31fe10e0a375c513597ffdae38a6b22e9b7150"
+        },
+        {
+          "name": "resolve-ui-07-core-flow-parity",
+          "sha": "3a842f8d2e386f4ee434504707c9baed76340e97"
+        },
+        {
+          "name": "resolve-ui-08-homepage-parity",
+          "sha": "7b1a65badb08bb22734bdec4715ee9dc5c2238aa"
+        }
+      ]
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=repo:timlavente/liveuin-platform+is:issue+is:open&per_page=1",
+      "count": 1,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 93,
+          "title": "P0 external runtime closure: staging, identity, backup and rollback",
+          "url": "https://github.com/timlavente/liveuin-platform/issues/93",
+          "updated_at": "2026-07-27T06:30:47Z"
+        }
+      ]
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=repo:timlavente/liveuin-platform+is:pr+is:open&per_page=1",
+      "count": 32,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 103,
+          "title": "M2 canonical canary: member/family auth boundary and Lovable UI source lock",
+          "url": "https://github.com/timlavente/liveuin-platform/pull/103",
+          "updated_at": "2026-10-13T09:52:20Z"
+        }
+      ]
+    },
+    {
+      "url": "https://api.github.com/repos/timlavente/liveuin-resident-app",
+      "status": "access_not_established",
+      "error_code": "NOT_FOUND"
+    },
+    {
+      "url": "https://api.github.com/repos/timlavente/liveuin-visual-playground",
+      "status": "access_not_established",
+      "error_code": "NOT_FOUND"
+    }
+  ]
+}

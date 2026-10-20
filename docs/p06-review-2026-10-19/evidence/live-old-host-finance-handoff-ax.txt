@@ -1,0 +1,19 @@
+Browser tab: 1, Title: "LiveUIN | Housing and living, made clearer", URL: "https://host.liveuin.com/login?returnTo=%2Fhost%2Ffinance&role=host&surface=host".
+1 AXWebArea LiveUIN | Housing and living, made clearer, URL: host.liveuin.com/login?returnTo=%2Fhost%2Ffinance&role=host&surface=host
+	2 container root
+		3 container Notifications (F8)
+			4 content list
+		5 container Notifications alt+T
+		6 container
+			7 text LIVEUIN IDENTITY
+			8 heading Sign in to your Host workspace, Value: 1
+				9 text Sign in to your  Host  workspace
+			10 text Identity verifies your workspace role, scope, and records before the private surface opens.
+			11 text Host workspace
+			12 text · Role:  Host Approved workspace email
+			13 text field (settable) Approved workspace email
+			14 button Send verification code
+			15 text Use the email connected to your approved LiveUIN workspace.
+			16 link Description: Return to LiveUIN, Value: host.liveuin.com/
+
+The focused UI element is 1 AXWebArea LiveUIN | Housing and living, made clearer, URL: host.liveuin.com/login?returnTo=%2Fhost%2Ffinance&role=host&surface=host

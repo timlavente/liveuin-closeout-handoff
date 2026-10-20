@@ -1,0 +1,71 @@
+{
+  "challenge": {
+    "issued_at_utc": "2026-10-19T16:34:56+00:00",
+    "status": "verified",
+    "verified_at_utc": "2026-10-19T16:35:25+00:00",
+    "verified_in_browser_window": true
+  },
+  "credential_values_or_hashes_output": false,
+  "exact_challenge_match": true,
+  "membership": {
+    "status": "active",
+    "trusted_role": "ops",
+    "workspace": "liveuin"
+  },
+  "observed_at_utc": "2026-10-19T16:42:25+00:00",
+  "owner_email_match": true,
+  "passed": true,
+  "pid": 1298408,
+  "pid_and_start_stable": true,
+  "product_modules_imported": false,
+  "read_only": true,
+  "role_matches_membership": true,
+  "scope": "one named owner and exact delivered-factor challenge; role/workspace/status only",
+  "scopes_match_existing_role": true,
+  "selected_runtime_store_bindings": {
+    "identity": "/srv/liveuin/core-identity-data/liveuin-core-identity.sqlite3",
+    "login": "/var/lib/liveuin/core-identity-login-data/liveuin-core-identity-login.sqlite3",
+    "session": "/var/lib/liveuin/core-identity-session-data/liveuin-core-identity-session.sqlite3"
+  },
+  "service": "ops-backend@liveuin.service",
+  "session": {
+    "active": true,
+    "expires_at_utc": "2026-10-20T16:35:25+00:00",
+    "issued_at_utc": "2026-10-19T16:35:25+00:00",
+    "role": "ops",
+    "scopes": [
+      "booking.write",
+      "connect.case.handoff",
+      "contract.draft.write",
+      "contract.execution.write",
+      "contract.template.write",
+      "demand.assignment.write",
+      "intelligence.event.write",
+      "inventory.hold.write",
+      "living.application.write",
+      "mail.readiness.read",
+      "ops.task.proof.review",
+      "ops.task.proof.write",
+      "ops.task.write",
+      "ops.ticket.write",
+      "pass.case.read",
+      "support.profile.write",
+      "support.request.write",
+      "team.note.write",
+      "viewing.reservation.write"
+    ],
+    "status": "active",
+    "workspace": "liveuin"
+  },
+  "source_versions_match": {
+    "core_identity_api.py": true,
+    "core_identity_login.py": true,
+    "core_identity_login_store.py": true,
+    "core_identity_session.py": true,
+    "core_identity_session_store.py": true,
+    "core_identity_store.py": true,
+    "core_identity_workspace_access.py": true
+  },
+  "source_versions_unchanged": true,
+  "unrelated_rows_output": false
+}

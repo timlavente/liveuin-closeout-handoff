@@ -1,0 +1,35 @@
+{
+  "observed_at_utc": "2026-10-19T18:45:04.959262+00:00",
+  "files": [
+    {
+      "remote_path": "/etc/nginx/conf.d/app.liveuin.com.conf",
+      "local_file": "app.baseline.conf",
+      "bytes": 9302,
+      "sha256": "dd2a557bd58adc7dc2bb823fa083f748a608039d9c7077d517e1283c9bf4013b"
+    },
+    {
+      "remote_path": "/etc/nginx/conf.d/partner.liveuin.com.conf",
+      "local_file": "partner.baseline.conf",
+      "bytes": 3422,
+      "sha256": "51cae8f2eea512ff8d68ff5df8364309da717bcb6ac951234f5d8afb4dbf9ced"
+    },
+    {
+      "remote_path": "/etc/nginx/conf.d/liveuin.com.conf",
+      "local_file": "public.baseline.conf",
+      "bytes": 12988,
+      "sha256": "fd56cd248bfc7354b0d86c6dbe2f76a181e27e80090dd96b1822cda603eb1d34"
+    },
+    {
+      "remote_path": "/etc/nginx/snippets/liveuin_public_static_security_headers.conf",
+      "local_file": "security-headers.baseline.conf",
+      "bytes": 952,
+      "sha256": "e60a9d103102ae74a9f587fcb588f90b71467008299a647647a2af11eaf2dbb5"
+    },
+    {
+      "remote_path": "/etc/nginx/snippets/liveuin_public_static_route_semantics.conf",
+      "local_file": "public-route-semantics.baseline.conf",
+      "bytes": 1081,
+      "sha256": "357702aafe4d937d58c802db0b552c83a3615c8c77318e22e18eb15eb39d2031"
+    }
+  ]
+}

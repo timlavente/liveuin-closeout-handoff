@@ -1,0 +1,99 @@
+[
+  {
+    "name": "app-rendered",
+    "source_url": "https://app.liveuin.com",
+    "effective_url": "https://app.liveuin.com/welcome?role=member&returnTo=https%3A%2F%2Fapp.liveuin.com%2Ftenant%2Fhome",
+    "status": 200,
+    "scrape_id": "01a154c1-38ed-71ee-9aee-3d7c7fff933f",
+    "contains_example_notice": false,
+    "verification_badges": [],
+    "contains_sierra": false,
+    "contains_amount": false,
+    "public_checkout_links": [],
+    "private_desk_links": []
+  },
+  {
+    "name": "host-rendered",
+    "source_url": "https://host.liveuin.com",
+    "effective_url": "https://host.liveuin.com/login?returnTo=%2Fhost%2Fonboarding&role=host&surface=host",
+    "status": 200,
+    "scrape_id": "01a154c1-5580-72df-8f5e-5eaa1cad2193",
+    "contains_example_notice": false,
+    "verification_badges": [],
+    "contains_sierra": false,
+    "contains_amount": false,
+    "public_checkout_links": [],
+    "private_desk_links": []
+  },
+  {
+    "name": "ops-rendered",
+    "source_url": "https://ops.liveuin.com",
+    "effective_url": "https://ops.liveuin.com/ops/login",
+    "status": 200,
+    "scrape_id": "01a154c1-8a9b-76ef-8378-b483a878ee61",
+    "contains_example_notice": false,
+    "verification_badges": [],
+    "contains_sierra": false,
+    "contains_amount": false,
+    "public_checkout_links": [],
+    "private_desk_links": []
+  },
+  {
+    "name": "pricing-rendered",
+    "source_url": "https://liveuin.com/pricing",
+    "effective_url": "https://liveuin.com/pricing",
+    "status": 200,
+    "scrape_id": "01a154c0-ea89-778f-a223-86c7dd077ac7",
+    "contains_example_notice": false,
+    "verification_badges": [],
+    "contains_sierra": false,
+    "contains_amount": false,
+    "public_checkout_links": [],
+    "private_desk_links": []
+  },
+  {
+    "name": "sample-detail-rendered",
+    "source_url": "https://liveuin.com/stays/cozy-studio-orchard",
+    "effective_url": "https://liveuin.com/stays/cozy-studio-orchard",
+    "status": 200,
+    "scrape_id": "01a154c1-15d6-7400-8dda-5b50b8a48a8d",
+    "contains_example_notice": false,
+    "verification_badges": [],
+    "contains_sierra": false,
+    "contains_amount": true,
+    "public_checkout_links": [
+      "https://liveuin.com/checkout/cozy-studio-orchard"
+    ],
+    "private_desk_links": []
+  },
+  {
+    "name": "search-rendered",
+    "source_url": "https://liveuin.com/search",
+    "effective_url": "https://liveuin.com/search",
+    "status": 200,
+    "scrape_id": "01a154c1-00fd-73de-bf29-f4138e7de61b",
+    "contains_example_notice": true,
+    "verification_badges": [
+      "VERIFIED OPERATOR",
+      "VERIFIED LANDLORD",
+      "FAST BOOK"
+    ],
+    "contains_sierra": false,
+    "contains_amount": true,
+    "public_checkout_links": [],
+    "private_desk_links": []
+  },
+  {
+    "name": "sierra-rendered",
+    "source_url": "https://www.liveuin.com/stays/listing_ef55a13993724d8e8d1201cb",
+    "effective_url": "https://www.liveuin.com/stays/listing_ef55a13993724d8e8d1201cb",
+    "status": 200,
+    "scrape_id": "01a154c1-6e47-758c-9805-db0cbfafc092",
+    "contains_example_notice": false,
+    "verification_badges": [],
+    "contains_sierra": true,
+    "contains_amount": true,
+    "public_checkout_links": [],
+    "private_desk_links": []
+  }
+]

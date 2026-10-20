@@ -1,0 +1,44 @@
+[
+  {
+    "url": "http://liveuin.com",
+    "http_code": 301,
+    "redirect_url": "https://liveuin.com/",
+    "error": ""
+  },
+  {
+    "url": "http://www.liveuin.com",
+    "http_code": 301,
+    "redirect_url": "https://www.liveuin.com/",
+    "error": ""
+  },
+  {
+    "url": "http://app.liveuin.com",
+    "http_code": 302,
+    "redirect_url": "https://app.liveuin.com/app/member",
+    "error": ""
+  },
+  {
+    "url": "http://host.liveuin.com",
+    "http_code": 302,
+    "redirect_url": "https://host.liveuin.com/host/onboarding",
+    "error": ""
+  },
+  {
+    "url": "http://ops.liveuin.com",
+    "http_code": 308,
+    "redirect_url": "https://ops.liveuin.com/",
+    "error": ""
+  },
+  {
+    "url": "http://api.liveuin.com",
+    "http_code": 301,
+    "redirect_url": "https://api.liveuin.com/",
+    "error": ""
+  },
+  {
+    "url": "http://pay.igema.space",
+    "http_code": 301,
+    "redirect_url": "https://pay.igema.space/",
+    "error": ""
+  }
+]

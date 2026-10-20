@@ -1,0 +1,47 @@
+{
+  "runner_sha256": "bc562d1910a6db000f7b6645bb62ae9565ff75640e6d921923c52830158ce932",
+  "network_calls": 0,
+  "checks_passed": 10,
+  "checks": [
+    {
+      "name": "exact_origin_entry",
+      "passed": true
+    },
+    {
+      "name": "http_403_refused",
+      "passed": true
+    },
+    {
+      "name": "unexpected_entry_refused",
+      "passed": true
+    },
+    {
+      "name": "invalid_certificate_refused",
+      "passed": true
+    },
+    {
+      "name": "unexpected_remote_refused",
+      "passed": true
+    },
+    {
+      "name": "redirect_refused",
+      "passed": true
+    },
+    {
+      "name": "transport_error_refused",
+      "passed": true
+    },
+    {
+      "name": "timeout_refused",
+      "passed": true
+    },
+    {
+      "name": "oversize_refused",
+      "passed": true
+    },
+    {
+      "name": "unchanged_gate_continuity_and_original_recovery_delegation",
+      "passed": true
+    }
+  ]
+}

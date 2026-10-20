@@ -1,0 +1,14 @@
+{
+  "retained_at_utc": "2026-10-19T19:24:23.667399+00:00",
+  "scope": "Root-executed read-only package03 probe stopped before library imports; no startup or activation pass. Existing manifests unchanged.",
+  "probe_sha256": "7df0f745dd874b19b30f535f01d46c4db4771248be9eac1cab504eabcf59d21a",
+  "files": [
+    {
+      "file": "runtime-probe-03/prestart-fastpath-summary-03.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend/evidence/prestart-fastpath-summary-03.json",
+      "bytes": 270,
+      "blocks": 8,
+      "sha256": "4730cad34573e6fa066fffd009bd793108afde7fd7fc62131b10cdfaf5ca6d53"
+    }
+  ]
+}

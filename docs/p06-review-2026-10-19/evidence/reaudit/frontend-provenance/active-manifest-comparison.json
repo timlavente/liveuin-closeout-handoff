@@ -1,0 +1,9 @@
+{
+  "old_manifest_path": "/Users/Vivian/Documents/Liveuin/outputs/liveuin-public-checkout-handoff-2026-09-16/ACTIVE-381-FILES-20260915.sha256",
+  "old_manifest_sha256": "da6a02ffc78eeabdc94a1e48745757e6d9fe8f11e0e27ac90937d8597fb80cee",
+  "old_count": 381,
+  "fresh_count": 381,
+  "exact_same_paths_and_hashes": true,
+  "changed": [],
+  "new_paths": []
+}

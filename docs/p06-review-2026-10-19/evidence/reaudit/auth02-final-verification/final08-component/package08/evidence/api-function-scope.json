@@ -1,0 +1,35 @@
+[
+  {
+    "service": "9095",
+    "unchanged_existing_functions": 54,
+    "changed_existing_functions": [
+      "_local_preview_request",
+      "browser_auth_request_code",
+      "browser_auth_verify_code",
+      "core_identity_login_create",
+      "core_identity_login_verify"
+    ],
+    "new_functions": [
+      "_require_local_identity_preview"
+    ],
+    "existing_session_resolution_AST_unchanged": true,
+    "scope_note": "9095 browser request/verify guards changed; canonical membership functions and grants unchanged. 9098 older compatibility aliases local-preview-only."
+  },
+  {
+    "service": "9098",
+    "unchanged_existing_functions": 71,
+    "changed_existing_functions": [
+      "ops_auth_request_code_compat",
+      "ops_auth_verify_code_compat",
+      "core_identity_login_create",
+      "core_identity_login_verify",
+      "core_identity_session_resolve",
+      "core_identity_logout"
+    ],
+    "new_functions": [
+      "_require_local_identity_preview"
+    ],
+    "existing_session_resolution_AST_unchanged": false,
+    "scope_note": "9095 browser request/verify guards changed; canonical membership functions and grants unchanged. 9098 older compatibility aliases local-preview-only."
+  }
+]

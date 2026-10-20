@@ -1,0 +1,65 @@
+[
+  {
+    "file": "auth.sign-in-CQBkq3x9.js",
+    "label": "approved-signin-continuation",
+    "old": "const f=(await n(r,t)).roles[0]??\"tenant\";i(f),await l({to:f===\"tenant\"?\"/tenant/home\":\"/localpro/home\"})",
+    "new": "const f=await n(r,t);i(f.profile),await l({to:f.destination})",
+    "count": 1
+  },
+  {
+    "file": "AppAccount-HBgL4SnG.js",
+    "label": "account-server-logout",
+    "old": "function W(){L(),typeof window<\"u\"&&window.location.assign(\"/welcome\")}",
+    "new": "function W(){return auth02LogoutFromControl()}",
+    "count": 1
+  },
+  {
+    "file": "ResidentAppShell-CQOxnRFw.js",
+    "label": "profile-menu-server-logout",
+    "old": "onSignOut:()=>{window.location.assign(\"/welcome\")}",
+    "new": "onSignOut:()=>auth02LogoutFromControl()",
+    "count": 1
+  },
+  {
+    "file": "welcome-BD_1iI7g.js",
+    "label": "safe-welcome-continuation",
+    "old": "to:\"/auth/sign-in\"",
+    "new": "to:auth02LoginHref()",
+    "count": 2
+  },
+  {
+    "file": "auth.sign-in-CQBkq3x9.js",
+    "label": "logout-retry-initial-state",
+    "old": "[p,c]=o.useState(null)",
+    "new": "[p,c]=o.useState(auth02HasLogoutLock()?\"Sign out was not confirmed. Please retry before signing in.\":null)",
+    "count": 1
+  },
+  {
+    "file": "auth.sign-in-CQBkq3x9.js",
+    "label": "logout-retry-control",
+    "old": "p?e.jsx(\"p\",{className:\"text-xs text-red-600\",children:p}):null",
+    "new": "p?e.jsxs(\"div\",{role:\"alert\",children:[e.jsx(\"p\",{className:\"text-xs text-red-600\",children:p}),auth02HasLogoutLock()?e.jsx(\"button\",{type:\"button\",onClick:auth02LogoutFromControl,className:\"text-sm font-semibold underline\",children:\"Retry sign out\"}):null]}):null",
+    "count": 1
+  },
+  {
+    "file": "auth.sign-in-CQBkq3x9.js",
+    "label": "remove-browser-google-binding",
+    "old": "const{signIn:n,signInWithGoogle:a}=L()",
+    "new": "const{signIn:n}=L()",
+    "count": 1
+  },
+  {
+    "file": "auth.sign-in-CQBkq3x9.js",
+    "label": "remove-dead-browser-google-handler",
+    "old": ",y=async()=>{c(null),d(!0);try{const s=await a(\"tenant\");i(s.roles[0]??\"tenant\"),await l({to:\"/tenant/home\"})}catch(s){c(s instanceof Error?s.message:\"Google sign-in is available only for Google accounts already connected to LiveUIN.\")}finally{d(!1)}}",
+    "new": "",
+    "count": 1
+  },
+  {
+    "file": "auth.sign-in-CQBkq3x9.js",
+    "label": "honest-browser-google-unavailable-notice",
+    "old": "e.jsxs(\"div\",{className:\"flex items-center gap-3 py-2\",children:[e.jsx(\"div\",{className:\"h-px bg-slate-200 flex-1\"}),e.jsx(\"span\",{className:\"text-[11px] uppercase tracking-wide text-slate-400 font-semibold\",children:\"or\"}),e.jsx(\"div\",{className:\"h-px bg-slate-200 flex-1\"})]}),e.jsxs(\"button\",{type:\"button\",onClick:y,disabled:h,className:\"w-full h-12 rounded-2xl border border-slate-200 bg-white text-sm font-semibold text-slate-800 flex items-center justify-center gap-2 hover:bg-slate-50 active:scale-[0.99] transition\",children:[e.jsx(O,{}),\"Continue with Google\"]})",
+    "new": "e.jsx(\"p\",{className:\"text-xs leading-relaxed text-slate-600\",children:\"Google sign-in is not available on this website yet. Use your email and password.\"})",
+    "count": 1
+  }
+]

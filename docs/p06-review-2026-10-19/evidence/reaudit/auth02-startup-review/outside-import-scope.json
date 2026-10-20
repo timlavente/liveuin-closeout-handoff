@@ -1,0 +1,467 @@
+{
+  "scope": "Unreviewed import-time execution outside prior20-file AST traversal; no product execution",
+  "deploy_imports": [
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 176,
+      "module": "deploy.core_ai_ops_route_adapter",
+      "source_file": "/opt/liveuin/deploy/core_ai_ops_route_adapter.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_ai_ops_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 188,
+      "module": "deploy.core_ops_spine_api",
+      "source_file": "/opt/liveuin/deploy/core_ops_spine_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_ops_spine_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 338,
+      "module": "deploy.connect_api",
+      "source_file": "/opt/liveuin/deploy/connect_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_pass_connect_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 399,
+      "module": "deploy.connect_api",
+      "source_file": "/opt/liveuin/deploy/connect_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_connect_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 400,
+      "module": "deploy.core_access_api",
+      "source_file": "/opt/liveuin/deploy/core_access_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_access_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 401,
+      "module": "deploy.core_case_api",
+      "source_file": "/opt/liveuin/deploy/core_case_api.py",
+      "names": [
+        {
+          "name": "safe_router",
+          "asname": "liveuin_core_case_safe_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 402,
+      "module": "deploy.core_identity_api",
+      "source_file": "/opt/liveuin/deploy/core_identity_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_identity_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 403,
+      "module": "deploy.core_inventory_api",
+      "source_file": "/opt/liveuin/deploy/core_inventory_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_inventory_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 405,
+      "module": "deploy.core_intelligence_api",
+      "source_file": "/opt/liveuin/deploy/core_intelligence_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_intelligence_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 406,
+      "module": "deploy.core_trust_api",
+      "source_file": "/opt/liveuin/deploy/core_trust_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_trust_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 407,
+      "module": "deploy.core_media_api",
+      "source_file": "/opt/liveuin/deploy/core_media_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_media_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 408,
+      "module": "deploy.core_ai_provider_api",
+      "source_file": "/opt/liveuin/deploy/core_ai_provider_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_ai_provider_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 409,
+      "module": "deploy.core_country_context_api",
+      "source_file": "/opt/liveuin/deploy/core_country_context_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_country_context_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 410,
+      "module": "deploy.core_viewing_api",
+      "source_file": "/opt/liveuin/deploy/core_viewing_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_viewing_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 411,
+      "module": "deploy.core_booking_api",
+      "source_file": "/opt/liveuin/deploy/core_booking_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_booking_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 412,
+      "module": "deploy.core_payment_api",
+      "source_file": "/opt/liveuin/deploy/core_payment_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_payment_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 413,
+      "module": "deploy.core_ledger_api",
+      "source_file": "/opt/liveuin/deploy/core_ledger_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_ledger_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 414,
+      "module": "deploy.core_verification_api",
+      "source_file": "/opt/liveuin/deploy/core_verification_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_verification_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 415,
+      "module": "deploy.core_ops_ticket_api",
+      "source_file": "/opt/liveuin/deploy/core_ops_ticket_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_ops_ticket_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 416,
+      "module": "deploy.core_support_api",
+      "source_file": "/opt/liveuin/deploy/core_support_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_support_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 417,
+      "module": "deploy.core_account_deletion_api",
+      "source_file": "/opt/liveuin/deploy/core_account_deletion_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_account_deletion_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 418,
+      "module": "deploy.core_ops_task_api",
+      "source_file": "/opt/liveuin/deploy/core_ops_task_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_ops_task_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 419,
+      "module": "deploy.core_resolution_api",
+      "source_file": "/opt/liveuin/deploy/core_resolution_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_resolution_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 420,
+      "module": "deploy.core_movein_api",
+      "source_file": "/opt/liveuin/deploy/core_movein_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_movein_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 421,
+      "module": "deploy.core_lifecycle_api",
+      "source_file": "/opt/liveuin/deploy/core_lifecycle_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_lifecycle_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 422,
+      "module": "deploy.core_improvement_api",
+      "source_file": "/opt/liveuin/deploy/core_improvement_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_improvement_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 423,
+      "module": "deploy.core_remediation_api",
+      "source_file": "/opt/liveuin/deploy/core_remediation_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_remediation_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 424,
+      "module": "deploy.core_analytics_api",
+      "source_file": "/opt/liveuin/deploy/core_analytics_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_analytics_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 425,
+      "module": "deploy.core_demand_api",
+      "source_file": "/opt/liveuin/deploy/core_demand_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_demand_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 426,
+      "module": "deploy.core_vendor_api",
+      "source_file": "/opt/liveuin/deploy/core_vendor_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_core_vendor_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 521,
+      "module": "deploy.core_inventory_api",
+      "source_file": "/opt/liveuin/deploy/core_inventory_api.py",
+      "names": [
+        {
+          "name": "core_inventory_provenance_review_list",
+          "asname": null
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 590,
+      "module": "deploy.core_mail_readiness_api",
+      "source_file": "/opt/liveuin/deploy/core_mail_readiness_api.py",
+      "names": [
+        {
+          "name": "router",
+          "asname": "liveuin_mail_readiness_router"
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "line": 598,
+      "module": "deploy.core_marketing_publication_runtime",
+      "source_file": "/opt/liveuin/deploy/core_marketing_publication_runtime.py",
+      "names": [
+        {
+          "name": "build_production_router",
+          "asname": null
+        }
+      ],
+      "review_status": "not part of the 20-file Ops-root AST traversal"
+    }
+  ],
+  "function_scoped_startup_imports": [
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app.py",
+      "function": "_wire_api_aliases",
+      "line": 221,
+      "module": "api_aliases",
+      "names": [
+        {
+          "name": "register_alias_routers",
+          "asname": null
+        }
+      ]
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app.py",
+      "function": "_wire_autopilot_generated",
+      "line": 315,
+      "module": "autopilot_generated",
+      "names": []
+    },
+    {
+      "importing_file": "/opt/liveuin/ops_backend/app/main.py",
+      "function": "_include_connect_admin_router",
+      "line": 213,
+      "module": "app.connect_admin",
+      "names": [
+        {
+          "name": "router",
+          "asname": "connect_admin_router"
+        }
+      ]
+    }
+  ]
+}

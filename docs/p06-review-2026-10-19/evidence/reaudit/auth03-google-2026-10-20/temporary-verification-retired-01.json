@@ -1,0 +1,10 @@
+{
+  "observed_utc": "2026-10-20T09:37:35.512272+00:00",
+  "temporary_page_final_state": "The LiveUIN test parent is verified. Verification is complete.",
+  "original_iab_tab": 2,
+  "replacement_url": "https://app.liveuin.com/auth/sign-in",
+  "replacement_visible": true,
+  "local_helper_stopped": true,
+  "further_code_requested": false,
+  "credentials_or_account_grants_changed": false
+}

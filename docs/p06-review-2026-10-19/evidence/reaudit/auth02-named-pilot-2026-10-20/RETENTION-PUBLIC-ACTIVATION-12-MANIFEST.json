@@ -1,0 +1,35 @@
+{
+  "status": "retained_additively",
+  "files": [
+    {
+      "file": "frontend-public-activation-12.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-proof-12/frontend-public-activation-12.json",
+      "bytes": 1347,
+      "sha256": "0b4c21a6f5c48d0e21116023f539df4634bfb5a79fbb4301b2fff9b3abc7c9fb",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "public-apex-app-handoff-12.png",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/screenshots/public-apex-app-handoff-12.png",
+      "bytes": 41967,
+      "sha256": "79a13c0681997e85f7ca3b2de1b7698aa4f52cf6b68d3c46438f388325802a58",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "PUBLIC-ACTIVATION-12.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-proof-12/PUBLIC-ACTIVATION-12.md",
+      "bytes": 2579,
+      "sha256": "bd9d5bef24be17bbbbdedc87e28ddeba43195f37f0b37bc466b6947b6d12ea1b",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "PUBLIC-ACTIVATION-12.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/public-proof-12/PUBLIC-ACTIVATION-12.json",
+      "bytes": 877,
+      "sha256": "81c97260ae8718f8568c3dc15d7ac2255b0b5f2ecfbe39da3709a6d4725e96fc",
+      "hydrated_and_identical": true
+    }
+  ],
+  "hydration_check": "Complete readable bytes, local blocks, not dataless, xattr names checked and matching SHA-256.",
+  "private_credentials_retained": false
+}

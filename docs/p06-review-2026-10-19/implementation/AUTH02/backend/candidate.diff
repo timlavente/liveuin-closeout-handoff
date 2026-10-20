@@ -1,0 +1,385 @@
+--- baseline/core_identity_public.py
++++ candidate/core_identity_public.py
+@@ -20,12 +20,14 @@
+     bcrypt = None
+ 
+ try:
++    from . import core_identity_release_admission as release_admission
+     from . import core_identity_service as identity_svc
+     from . import core_identity_session as identity_session
+     from . import core_identity_store as identity_store
+     from . import core_identity_public_store as store
+     from . import core_service_secret_resolver as service_secrets
+ except ImportError:  # pragma: no cover - direct app-folder deployment
++    import core_identity_release_admission as release_admission
+     import core_identity_service as identity_svc
+     import core_identity_session as identity_session
+     import core_identity_store as identity_store
+@@ -599,6 +601,8 @@
+         or _clean_id(account.get("workspace_id"), 96) != workspace_id
+     ):
+         return {"ok": False, "detail": "session_public_account_projection_unavailable", "status_code": 403}
++    if _admission_for_account(account):
++        return {"ok": False, "detail": "pilot_admission_required", "status_code": 403}
+     person = identity_store.get_person(person_id, workspace_id)
+     if (
+         not person
+@@ -627,10 +631,14 @@
+     """Run the non-mutating session/public-account contract gate used by /ready."""
+     from unittest.mock import patch
+ 
++    cohort_workspace, cohort_hashes = release_admission.policy()
++    if not cohort_hashes or cohort_workspace != str(os.getenv(PUBLIC_WORKSPACE_ENV) or "").strip():
++        return False
+     account = {
+         "account_id": "acct_contract",
+         "person_id": "per_contract",
+-        "workspace_id": "workspace_contract",
++        "workspace_id": cohort_workspace,
++        "email_hash": sorted(cohort_hashes)[0],
+         "status": "profile_incomplete",
+         "email_verified_at": 1,
+         "profile_completion_state": "incomplete",
+@@ -851,6 +859,20 @@
+     return True
+ 
+ 
++def _admission_failure(request_meta=None):
++    return error("pilot_admission_required", 403,
++                 "LiveUIN access is limited to approved pilot accounts.",
++                 request_meta=request_meta, next_action="contact_support")
++
++
++def _admission_for_hash(email_hash, workspace_id, request_meta=None):
++    return {} if release_admission.permits_email_hash(email_hash, workspace_id) else _admission_failure(request_meta)
++
++
++def _admission_for_account(account, request_meta=None):
++    return {} if release_admission.permits_account(account) else _admission_failure(request_meta)
++
++
+ def _issue_session(
+     account: Dict[str, Any],
+     request_meta: Mapping[str, Any] | None,
+@@ -858,6 +880,9 @@
+     *,
+     persist_refresh: bool = True,
+ ) -> Dict[str, Any]:
++    admission_failure = _admission_for_account(account, request_meta)
++    if admission_failure:
++        return admission_failure
+     scopes = ["identity.session"]
+     if account.get("tenant_entitlement_state") == "active" and _has_active_profile(_public_profile_entitlements(account), PUBLIC_PROFILE_KEY):
+         scopes.append("tenant")
+@@ -913,7 +938,7 @@
+     }
+ 
+ 
+-def _session_account(headers: Mapping[str, str] | None, request_meta: Mapping[str, Any] | None) -> tuple[Dict[str, Any], Dict[str, Any]]:
++def _session_account(headers: Mapping[str, str] | None, request_meta: Mapping[str, Any] | None, *, require_admission: bool = False) -> tuple[Dict[str, Any], Dict[str, Any]]:
+     configured_workspace, workspace_failure = _configured_workspace(request_meta)
+     if workspace_failure:
+         return {}, workspace_failure
+@@ -932,6 +957,10 @@
+         return {}, error("session_account_not_found", 401, "Sign in to continue.", request_meta=request_meta, next_action="sign_in")
+     if _state(account) in {"account_disabled", "deletion_pending", "account_deleted"}:
+         return {}, error("account_unavailable", 403, "This account is not available.", request_meta=request_meta, next_action="contact_support")
++    if require_admission:
++        admission_failure = _admission_for_account(account, request_meta)
++        if admission_failure:
++            return {}, admission_failure
+     return account, {}
+ 
+ 
+@@ -1005,6 +1034,9 @@
+     if _clean(payload.get("requested_default_profile") or PUBLIC_PROFILE_KEY, 40).lower() != PUBLIC_PROFILE_KEY:
+         return error("default_profile_invalid", 400, "New public accounts start with the Tenant profile.", request_meta=request_meta, field="requested_default_profile", next_action="use_tenant_profile")
+     email_hash = _email_hash(email)
++    admission_failure = _admission_for_hash(email_hash, workspace_id, request_meta)
++    if admission_failure:
++        return admission_failure
+     idempotency_hash = store.hash_value(_idempotency_key(payload, request_meta))
+     ip = _clean(request_meta.get("ip"), 120)
+     existing_by_key = store.get_registration_by_idempotency(idempotency_hash)
+@@ -1103,6 +1135,9 @@
+         return error("registration_not_found", 404, "That registration could not be found.", request_meta=request_meta, next_action="start_registration")
+     if registration.get("workspace_id") != workspace_id:
+         return error("registration_not_found", 404, "That registration could not be found.", request_meta=request_meta, next_action="start_registration")
++    admission_failure = _admission_for_hash(registration.get("email_hash"), workspace_id, request_meta)
++    if admission_failure:
++        return admission_failure
+     if registration.get("status") == "locked":
+         return error("verification_locked", 423, "Too many verification attempts. Start again.", request_meta=request_meta, next_action="start_registration")
+     if registration.get("status") != "email_verification_pending":
+@@ -1179,6 +1214,9 @@
+     registration = store.get_registration(registration_id)
+     if not registration or registration.get("workspace_id") != workspace_id:
+         return error("registration_not_found", 404, "That registration could not be found.", request_meta=request_meta, next_action="start_registration")
++    admission_failure = _admission_for_hash(registration.get("email_hash"), workspace_id, request_meta)
++    if admission_failure:
++        return admission_failure
+     if registration.get("status") not in {"email_verification_pending", "delivery_failed"}:
+         return error("verification_not_pending", 409, "That verification is no longer pending.", request_meta=request_meta, next_action="sign_in")
+     if not store.allow_rate("verification_resend", registration_id, limit=MAX_RESENDS, window_seconds=RESEND_WINDOW_SECONDS):
+@@ -1218,6 +1256,9 @@
+     if not password:
+         return error("credentials_required", 400, "Enter your email and password.", request_meta=request_meta, field="password", next_action="edit_password")
+     email_hash = _email_hash(email)
++    admission_failure = _admission_for_hash(email_hash, workspace_id, request_meta)
++    if admission_failure:
++        return admission_failure
+     ip = _clean(request_meta.get("ip"), 120)
+     if not store.allow_rate("sign_in_ip", ip or "unknown", limit=30, window_seconds=900) or not store.allow_rate("sign_in_email", email_hash, limit=12, window_seconds=900):
+         return error("rate_limited", 429, "Too many sign-in attempts. Try again later.", request_meta=request_meta, next_action="try_again_later")
+@@ -1526,14 +1567,14 @@
+ 
+ 
+ def onboarding_status(headers: Mapping[str, str] | None, request_meta: Mapping[str, Any] | None = None) -> Dict[str, Any]:
+-    account, failure = _session_account(headers, request_meta)
++    account, failure = _session_account(headers, request_meta, require_admission=True)
+     if failure:
+         return failure
+     return {"ok": True, "schema_version": SCHEMA_VERSION, "phase": PHASE, "status": "onboarding_status", "canonical_owner": "LiveUIN Identity", **_account_payload(account)}
+ 
+ 
+ def update_profile(headers: Mapping[str, str] | None, payload: Dict[str, Any] | None, request_meta: Mapping[str, Any] | None = None) -> Dict[str, Any]:
+-    account, failure = _session_account(headers, request_meta)
++    account, failure = _session_account(headers, request_meta, require_admission=True)
+     if failure:
+         return failure
+     payload = _as_dict(payload)
+@@ -1554,7 +1595,7 @@
+ 
+ 
+ def complete_onboarding(headers: Mapping[str, str] | None, request_meta: Mapping[str, Any] | None = None) -> Dict[str, Any]:
+-    account, failure = _session_account(headers, request_meta)
++    account, failure = _session_account(headers, request_meta, require_admission=True)
+     if failure:
+         return failure
+     if account.get("profile_completion_state") != "complete":
+@@ -1635,6 +1676,19 @@
+ 
+ 
+ def revoke_current_session(headers: Mapping[str, str] | None) -> int:
+-    values = {str(key).lower(): str(value) for key, value in (headers or {}).items()}
++    effective_headers = identity_session._headers_with_cookie_session(headers)
++    values = {str(key).lower(): str(value) for key, value in effective_headers.items()}
+     session_id = values.get("x-liveuin-session-id", "")
+-    return store.revoke_refresh_for_session(store.hash_value(session_id), "logout") if session_id else 0
++    if not session_id:
++        return 0
++    session_hash = store.hash_value(session_id)
++    revoked = store.revoke_refresh_for_session(session_hash, "logout")
++    # Exact current-session check only; do not acknowledge a partial durable logout.
++    with store.connection() as conn:
++        remaining = conn.execute(
++            "SELECT 1 FROM identity_public_refresh_credentials WHERE session_id_hash = ? AND status = 'active' LIMIT 1",
++            (session_hash,),
++        ).fetchone()
++    if remaining:
++        raise RuntimeError("identity_refresh_logout_incomplete")
++    return revoked
+--- baseline/core_identity_social.py
++++ candidate/core_identity_social.py
+@@ -686,6 +686,9 @@
+ 
+ 
+ def _new_social_account(provider: str, claims: Dict[str, Any], workspace_id: str, payload: Mapping[str, Any], request_meta: Mapping[str, Any] | None) -> Dict[str, Any]:
++    admission_failure = public_identity._admission_for_hash(claims.get("verified_email_hash") if claims.get("email_verified") is True else None, workspace_id, request_meta)
++    if admission_failure:
++        return admission_failure
+     terms = _clean(payload.get("accepted_terms_version"), 80)
+     approved_terms = _clean(os.getenv("LIVEUIN_PUBLIC_TERMS_VERSION"), 80)
+     if not terms or terms != approved_terms:
+@@ -781,6 +784,9 @@
+         account = store.get_account(linked.get("account_id", ""))
+         if not account:
+             return _error("account_unavailable", 403, "This account is not available.", request_meta, next_action="contact_support")
++        admission_failure = public_identity._admission_for_account(account, request_meta)
++        if admission_failure:
++            return admission_failure
+         graph = _identity_graph_check(provider, account, linked)
+         if graph.get("ok") is not True:
+             return _graph_error(request_meta)
+@@ -790,6 +796,9 @@
+         return _account_result(provider, account, request_meta, provider_linked=True, provider_identity=linked)
+     if not claims.get("email_verified") or not claims.get("verified_email_hash"):
+         return _error("provider_email_required", 400, "The provider did not return a verified email for this sign-in.", request_meta, next_action="try_again")
++    admission_failure = public_identity._admission_for_hash(claims["verified_email_hash"], workspace_id, request_meta)
++    if admission_failure:
++        return admission_failure
+     existing = store.get_account_by_email_hash(claims["verified_email_hash"], workspace_id)
+     if existing:
+         return _error(
+@@ -805,7 +814,7 @@
+ 
+ 
+ def _recent_authenticated_account(headers: Mapping[str, Any] | None, request_meta: Mapping[str, Any] | None) -> tuple[Dict[str, Any], Dict[str, Any]]:
+-    account, failure = public_identity._session_account(headers, request_meta)
++    account, failure = public_identity._session_account(headers, request_meta, require_admission=True)
+     if failure:
+         return {}, failure
+     issued_raw = ""
+--- baseline/core_identity_api.py
++++ candidate/core_identity_api.py
+@@ -588,6 +588,7 @@
+     request: Request,
+     payload: Dict[str, Any] = Body(default={}),
+ ) -> Dict[str, Any]:
++    _require_local_identity_preview(request)
+     return _raise_if_error(browser_auth_request_code(payload, _request_meta(request), _request_context(request)))
+ 
+ 
+@@ -597,6 +598,7 @@
+     response: Response,
+     payload: Dict[str, Any] = Body(default={}),
+ ) -> Dict[str, Any]:
++    _require_local_identity_preview(request)
+     result = _raise_if_error(browser_auth_verify_code(payload, _request_meta(request), _request_context(request)))
+     for cookie_header in result.get("set_cookie_headers") or []:
+         cookie_value = str(cookie_header or "").strip()
+@@ -722,11 +724,37 @@
+     )
+ 
+ 
++def _require_local_identity_preview(request: Request) -> None:
++    """Raw challenge endpoints are local development previews, never production login.
++
++    Real Ops/Host adapters retain their existing membership-bound service calls.
++    Neither forwarded headers, the request payload nor an unset environment can
++    enable this HTTP preview door.
++    """
++    import ipaddress
++    environments = {
++        str(os.getenv(name) or "").strip().lower()
++        for name in ("LIVEUIN_ENVIRONMENT", "ENVIRONMENT", "LIVEUIN_ENV")
++        if str(os.getenv(name) or "").strip()
++    }
++    allowed_environments = {"dev", "development", "test", "testing", "staging"}
++    allowed = bool(environments) and environments.issubset(allowed_environments)
++    host = str(request.url.hostname or "").lower()
++    client = str(request.client.host if request.client else "")
++    try:
++        local_client = ipaddress.ip_address(client).is_loopback
++    except ValueError:
++        local_client = False
++    if not (allowed and local_client and host in {"localhost", "127.0.0.1", "::1"}):
++        raise HTTPException(status_code=404, detail="not_found", headers={"Cache-Control": "no-store"})
++
++
+ @router.post("/api/core/identity/login/challenges")
+ def core_identity_login_create(
+     request: Request,
+     payload: Dict[str, Any] = Body(default={}),
+ ) -> Dict[str, Any]:
++    _require_local_identity_preview(request)
+     return _raise_if_error(identity_login.create_login_challenge(payload, _request_meta(request)))
+ 
+ 
+@@ -748,6 +776,7 @@
+     challenge_id: str,
+     payload: Dict[str, Any] = Body(default={}),
+ ) -> Dict[str, Any]:
++    _require_local_identity_preview(request)
+     return _raise_if_error(identity_login.verify_login_challenge(challenge_id, payload, _request_meta(request)))
+ 
+ 
+@@ -931,6 +960,7 @@
+                     public_identity.error(
+                         str(projection_result.get("detail") or "session_public_account_projection_unavailable"),
+                         int(projection_result.get("status_code") or 403),
++                        "Sign in with an approved LiveUIN pilot account.",
+                         workspace_id=resolved.get("workspace_id") or "",
+                         identity_session={
+                             **identity,
+@@ -980,6 +1010,7 @@
+         request_context=_request_context(request),
+         request_meta=_request_meta(request),
+     )
++    _raise_if_error(result)
+     result["public_refresh_credentials_revoked"] = public_identity.revoke_current_session(request.headers)
+     for cookie_header in result.get("set_cookie_headers") or []:
+         response.headers.append("set-cookie", str(cookie_header))
+--- baseline/core_identity_session.py
++++ candidate/core_identity_session.py
+@@ -1535,6 +1535,11 @@
+             {"session_id": session_id, "reason": "logout"},
+             request_meta,
+         )
++        # Read back the current credential only. Unknown/already inactive logout
++        # remains idempotent, while failed durable revocation cannot report success.
++        validation = credential_store.validate_session_hash(credential_store.hash_secret(session_id))
++        if validation.get("active") is not False:
++            return error("identity_session_logout_incomplete", 503)
+         revoked = bool(result.get("ok"))
+ 
+     host = str(_as_dict(request_context).get("host") or "").split(":", 1)[0].strip().lower()
+--- baseline/core_identity_release_admission.py
++++ candidate/core_identity_release_admission.py
+@@ -0,0 +1,66 @@
++"""AUTH02 closed-pilot admission ACL. No identities, roles or grants are created here.
++
++The deployment supplies exact SHA256 hashes of approved canonical email identifiers.
++Missing, malformed, empty or mismatched configuration fails closed. Existing Identity
++records and normal authentication remain authoritative after this release gate.
++"""
++from __future__ import annotations
++import json
++import os
++import re
++from typing import Any, Mapping
++
++COHORT_ENV = "LIVEUIN_PUBLIC_ADMISSION_COHORT_JSON"
++_HASH = re.compile(r"[0-9a-f]{64}\Z")
++_WORKSPACE = re.compile(r"[A-Za-z0-9_.:-]{1,96}\Z")
++
++
++def _unique_object(pairs):
++    result = {}
++    for key, value in pairs:
++        if key in result:
++            raise ValueError("duplicate admission configuration key")
++        result[key] = value
++    return result
++
++
++def policy() -> tuple[str, frozenset[str]]:
++    raw = os.getenv(COHORT_ENV, "")
++    if not raw or len(raw) > 131072:
++        return "", frozenset()
++    try:
++        value = json.loads(raw, object_pairs_hook=_unique_object)
++        if not isinstance(value, dict) or set(value) != {"schema_version", "workspace_id", "allowed_email_sha256"}:
++            return "", frozenset()
++        workspace = value["workspace_id"]
++        hashes = value["allowed_email_sha256"]
++        if type(value["schema_version"]) is not int or value["schema_version"] != 1:
++            return "", frozenset()
++        if not isinstance(workspace, str) or not _WORKSPACE.fullmatch(workspace):
++            return "", frozenset()
++        if not isinstance(hashes, list) or not 1 <= len(hashes) <= 1000:
++            return "", frozenset()
++        if any(not isinstance(item, str) or not _HASH.fullmatch(item) for item in hashes):
++            return "", frozenset()
++        if len(set(hashes)) != len(hashes):
++            return "", frozenset()
++        return workspace, frozenset(hashes)
++    except (ValueError, TypeError, RecursionError):
++        return "", frozenset()
++
++
++def permits_email_hash(email_hash: Any, workspace_id: Any) -> bool:
++    configured_workspace = os.getenv("LIVEUIN_PUBLIC_WORKSPACE_ID", "").strip()
++    workspace, hashes = policy()
++    return bool(workspace and workspace == configured_workspace == workspace_id
++                and isinstance(email_hash, str) and email_hash in hashes)
++
++
++def permits_account(account: Mapping[str, Any]) -> bool:
++    if not isinstance(account, Mapping):
++        return False
++    verified = account.get("email_verified_at")
++    return bool(type(verified) is int and verified > 0
++                and isinstance(account.get("account_id"), str) and account["account_id"]
++                and isinstance(account.get("person_id"), str) and account["person_id"]
++                and permits_email_hash(account.get("email_hash"), account.get("workspace_id")))

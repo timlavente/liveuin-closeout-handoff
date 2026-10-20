@@ -1,0 +1,1 @@
+import{an as t}from"./index-DPZwxwE9.js";const a=(e={})=>{const s=new Headers(e.headers);for(const[n,r]of Object.entries(t()))s.set(n,r);return{...e,credentials:"include",cache:"no-store",headers:s}};export{a as w};

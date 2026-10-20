@@ -1,0 +1,12 @@
+{
+  "deployable": false,
+  "purpose": "Local synthetic React/router/browser smoke only",
+  "candidate_manifest_sha256": "ab0eabe75d33b8218792eaa247ea2da6be1bd28d7776125d6928850a7bda9bcf",
+  "candidate_index_sha256": "d09a0fa762e580d1029b51c53ee4cd6c5bc7f3fb858045fea7a145be849f41e4",
+  "fixture_index_sha256": "dbf650b5b02cdee890c26ce42600aa25997ddbc695b158c553822aa9928a8c7a",
+  "javascript_deltas": [
+    "auth02IsApp accepts HTTP 127.0.0.1 instead of HTTPS app.liveuin.com",
+    "legacy host classifier reports App in the loopback fixture; avoids local preview fallback"
+  ],
+  "real_accounts_or_network_proxy": false
+}

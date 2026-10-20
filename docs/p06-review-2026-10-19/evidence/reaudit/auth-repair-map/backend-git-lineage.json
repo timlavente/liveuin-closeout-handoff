@@ -1,0 +1,89 @@
+{
+  "at_utc": "2026-10-19T16:28:49.442546+00:00",
+  "repo": "/Users/Vivian/Documents/Liveuin/p2a-1-identity-security-foundation-staging-20260808-123538",
+  "head": "1e9dca6141337096d44b21604c4a5091d84e114f",
+  "branch": "p2a-1-identity-security-foundation",
+  "remote": "",
+  "files": [
+    {
+      "file": "deploy/core_identity_api.py",
+      "deployed_sha256": "35cb1b2ed434eec9bce941eb0f4a6642d28a88ffb005cbec8cd4d4662f436132",
+      "git_head_sha256": "42f68a27334ef25fb93f54682b335880fb29f5fba382386ab64f4722853c8f56",
+      "deployed_matches_git_head": false,
+      "blocks": 80,
+      "flags": 64,
+      "working_sha256": "c69ea5830ef310b8480a4d429b55bf4e49163b14e01a4e88b0586803d9c9003e",
+      "deployed_matches_working": false
+    },
+    {
+      "file": "deploy/core_identity_public.py",
+      "deployed_sha256": "11077e9fed401168683d5c8c31117dd2a57bd5f403ed6cfa379f58ad55f8a1b8",
+      "git_head_sha256": "e88676e378b0be4db2da590e0ec2b6fd4d25f8f8713fd675bac0efea1a2c9e12",
+      "deployed_matches_git_head": false,
+      "blocks": 168,
+      "flags": 64,
+      "working_sha256": "11077e9fed401168683d5c8c31117dd2a57bd5f403ed6cfa379f58ad55f8a1b8",
+      "deployed_matches_working": true
+    },
+    {
+      "file": "deploy/core_identity_social.py",
+      "deployed_sha256": "d181bcadd104229ca04eb941fb745a7dab209387bfefebfea3009d7b88994903",
+      "git_head_sha256": "d181bcadd104229ca04eb941fb745a7dab209387bfefebfea3009d7b88994903",
+      "deployed_matches_git_head": true,
+      "blocks": 96,
+      "flags": 64,
+      "working_sha256": "d181bcadd104229ca04eb941fb745a7dab209387bfefebfea3009d7b88994903",
+      "deployed_matches_working": true
+    },
+    {
+      "file": "deploy/core_identity_session.py",
+      "deployed_sha256": "cfaf971913f6a49960f5cc54c8877641cc5db1b00de4c42fa8259c673cc82f7e",
+      "git_head_sha256": "60a2a5a129f2a199378b4d6df52e3677cc9631e0304698e9dd312eae7eb9fb85",
+      "deployed_matches_git_head": false,
+      "blocks": 152,
+      "flags": 64,
+      "working_sha256": "cfaf971913f6a49960f5cc54c8877641cc5db1b00de4c42fa8259c673cc82f7e",
+      "deployed_matches_working": true
+    },
+    {
+      "file": "deploy/core_identity_session_store.py",
+      "deployed_sha256": "c0f2a07b7778aef761deee03b32adc61bfa257cb1edeae933416438508a265c3",
+      "git_head_sha256": "c0f2a07b7778aef761deee03b32adc61bfa257cb1edeae933416438508a265c3",
+      "deployed_matches_git_head": true,
+      "blocks": 72,
+      "flags": 64,
+      "working_sha256": "c0f2a07b7778aef761deee03b32adc61bfa257cb1edeae933416438508a265c3",
+      "deployed_matches_working": true
+    },
+    {
+      "file": "deploy/core_identity_public_store.py",
+      "deployed_sha256": "98414fa04c72281edca3f399a40c1c2e731e1a367f7a74b794fcf09d60b908d4",
+      "git_head_sha256": "4888497447a54b4cc170439eabe54f65da909375b71dcdb180aab29107eacc8f",
+      "deployed_matches_git_head": false,
+      "blocks": 152,
+      "flags": 64,
+      "working_sha256": "d4e7d40ce3d9722db62863cbdae9ab1679e952ccb9da1c8689d2fe2b7103dcfc",
+      "deployed_matches_working": false
+    },
+    {
+      "file": "deploy/core_identity_browser_auth.py",
+      "deployed_sha256": "c63fd51c97785be51aa9c8dda8dd2af42ea59bcf80862dc6f57e63a20b7b36ce",
+      "git_head_sha256": "c63fd51c97785be51aa9c8dda8dd2af42ea59bcf80862dc6f57e63a20b7b36ce",
+      "deployed_matches_git_head": true,
+      "blocks": 16,
+      "flags": 64,
+      "working_sha256": "c63fd51c97785be51aa9c8dda8dd2af42ea59bcf80862dc6f57e63a20b7b36ce",
+      "deployed_matches_working": true
+    },
+    {
+      "file": "deploy/p2a1_identity_route_contract.py",
+      "deployed_sha256": "0baa131a29739067ae479d6fa5c9f3fb0d5e816c920bf33548b8aa27e2ab6b3a",
+      "git_head_sha256": "0baa131a29739067ae479d6fa5c9f3fb0d5e816c920bf33548b8aa27e2ab6b3a",
+      "deployed_matches_git_head": true,
+      "blocks": 16,
+      "flags": 64,
+      "working_sha256": "0baa131a29739067ae479d6fa5c9f3fb0d5e816c920bf33548b8aa27e2ab6b3a",
+      "deployed_matches_working": true
+    }
+  ]
+}

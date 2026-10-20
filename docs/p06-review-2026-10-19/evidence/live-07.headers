@@ -1,0 +1,19 @@
+HTTP/2 302 
+server: nginx/1.18.0 (Ubuntu)
+date: Mon, 19 Oct 2026 11:20:04 GMT
+content-type: text/html
+content-length: 154
+location: https://ops.liveuin.com/ops/login
+strict-transport-security: max-age=31536000; includeSubDomains
+
+HTTP/2 200 
+server: nginx/1.18.0 (Ubuntu)
+date: Mon, 19 Oct 2026 11:20:04 GMT
+content-type: text/html
+content-length: 2334
+last-modified: Tue, 22 Sep 2026 11:48:19 GMT
+etag: "6ab26b03-91e"
+cache-control: no-store
+x-robots-tag: noindex, nofollow
+accept-ranges: bytes
+

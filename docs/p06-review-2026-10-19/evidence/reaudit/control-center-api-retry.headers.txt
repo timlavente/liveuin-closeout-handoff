@@ -1,0 +1,6 @@
+HTTP/2 500 
+server: nginx/1.18.0 (Ubuntu)
+date: Mon, 19 Oct 2026 15:23:02 GMT
+content-type: text/plain; charset=utf-8
+x-liveuin-layer: public_gateway
+x-liveuin-service: liveuin-public-api

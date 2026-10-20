@@ -1,0 +1,23 @@
+{
+  "status": "public_activation_stopped_original_pointer_recovered_auth02_open",
+  "date_singapore": "2026-10-20",
+  "gate": {
+    "source_matches": 18,
+    "service_matches": 4,
+    "sha256": "92b0ed0380b87ca59bb2443c8aa73c1e24d0a6a176dda077738d87c5ea35fed8"
+  },
+  "activation_http_error": 403,
+  "activation_stop_reason": "public_activation_failed_old_pointer_restored",
+  "original_public_pointer_recovery_passed": true,
+  "app_return11_preserved_reported_by_coordinating_agent": true,
+  "cause_proven": false,
+  "public_handoff_passed": false,
+  "auth02_frozen": false,
+  "administrator_connection_context": {
+    "source": "coordinating agent observation",
+    "initial_installer_result_confirmed_absent": true,
+    "normal_existing_tailscale_google_session_reauthentication": true,
+    "grant_changed": false
+  },
+  "private_credentials_retained": false
+}

@@ -1,0 +1,8 @@
+{
+  "scope": "Evidence-path metadata only; frozen files, hashes and acceptance unchanged",
+  "artifact": "AUTH02-ACTIVE-VERSIONS-12.json",
+  "field": "older_identity_api.evidence",
+  "recorded_relative_path": "../../../AUTH02-9095-COMPONENT-PROOF-01.md",
+  "correct_relative_path": "../../../../AUTH02-9095-COMPONENT-PROOF-01.md",
+  "correct_absolute_path": "/Users/Vivian/Documents/Liveuin/docs/p06-review-2026-10-19/AUTH02-9095-COMPONENT-PROOF-01.md"
+}

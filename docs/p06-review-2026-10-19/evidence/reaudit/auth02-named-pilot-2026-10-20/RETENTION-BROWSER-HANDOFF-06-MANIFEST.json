@@ -1,0 +1,88 @@
+{
+  "retention_id": "RETENTION-BROWSER-HANDOFF-06",
+  "retained_at": "2026-10-20T15:25:28.207766+08:00",
+  "scope": "Additive safe browser-diagnostic evidence only",
+  "files": [
+    {
+      "file": "BROWSER-HANDOFF-06.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/BROWSER-HANDOFF-06.md",
+      "source_check": {
+        "bytes": 3177,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "f8a1ad239358b8dadfc287de7a626b55d3cd70c57b64d32e1420bfcd00ee0051",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 3177,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "f8a1ad239358b8dadfc287de7a626b55d3cd70c57b64d32e1420bfcd00ee0051",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "BROWSER-HANDOFF-06.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/BROWSER-HANDOFF-06.json",
+      "source_check": {
+        "bytes": 936,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "d4f069e1ac7377acdea8900037ca7407535d417c9ba07bb7aeb09b58bc28afbe",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 936,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "d4f069e1ac7377acdea8900037ca7407535d417c9ba07bb7aeb09b58bc28afbe",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "browser-form-diagnostic-passed.png",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/account-map/screenshots/browser-form-diagnostic-passed.png",
+      "source_check": {
+        "bytes": 34842,
+        "local_blocks": 72,
+        "dataless": false,
+        "sha256": "382cec5ff215108ecec490115c8fee82c1c0ee4143248e378cdb25da17aad22f",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 34842,
+        "local_blocks": 72,
+        "dataless": false,
+        "sha256": "382cec5ff215108ecec490115c8fee82c1c0ee4143248e378cdb25da17aad22f",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    }
+  ],
+  "screenshot_visually_checked": true,
+  "screenshot_contains_only_dummy_code_and_diagnostic_copy": true,
+  "screenshot_caption": "Dummy-code browser compatibility test only; no real parent verification or production API call.",
+  "fresh_delivery_reported_by_coordinating_agent": {
+    "mail_metadata_confirmed_at": "2026-10-20T15:22:56+08:00",
+    "verification_expires_at": "2026-10-20T15:37:54+08:00",
+    "same_registration": true,
+    "password_unchanged": true,
+    "real_factor_read_by_reviewer": false,
+    "real_parent_verification_proven": false
+  },
+  "frozen_inputs_or_existing_manifests_replaced": false
+}

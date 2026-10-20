@@ -1,0 +1,220 @@
+{
+  "extracted_unchanged_functions": [
+    {
+      "ast_sha256": "06e223164f12dffb8e50b870a385ae2f582110399681159d1feecd791ec0d827",
+      "end_line": 85,
+      "file": "core_identity_google_oauth.py",
+      "function": "_now",
+      "start_line": 84
+    },
+    {
+      "ast_sha256": "4df8c104f1a41bb6b3066361047d1c8062e75b0505444da465fc055c74fbfa88",
+      "end_line": 106,
+      "file": "core_identity_google_oauth.py",
+      "function": "_env_bool",
+      "start_line": 102
+    },
+    {
+      "ast_sha256": "56fef9d2cb3f76d16baaa7e74bb592df088cdc11b15106d7900cd824bff63dec",
+      "end_line": 160,
+      "file": "core_identity_google_oauth.py",
+      "function": "_as_dict",
+      "start_line": 159
+    },
+    {
+      "ast_sha256": "6225d3eeab2d949a9704987113de25cddf72e545b205e37d90931805a89ddc4c",
+      "end_line": 474,
+      "file": "core_identity_google_oauth.py",
+      "function": "_safe_return_to",
+      "start_line": 441
+    },
+    {
+      "ast_sha256": "bc69905c4d0635f3f840af3198ee82c552d2c53bbd86ab426b4326463b8acaeb",
+      "end_line": 984,
+      "file": "core_identity_google_oauth.py",
+      "function": "_claim_int",
+      "start_line": 980
+    },
+    {
+      "ast_sha256": "04cafe8f458c403f2126c46fcbc9eaee770d2f75bca4334ed5a1f15791ecd335",
+      "end_line": 1200,
+      "file": "core_identity_google_oauth.py",
+      "function": "_cookie_header",
+      "start_line": 1188
+    },
+    {
+      "ast_sha256": "5a20e766d752cd7e0aca3a7f5a43a47d015bd8d2002436525b158918f6ce55e7",
+      "end_line": 1214,
+      "file": "core_identity_google_oauth.py",
+      "function": "_session_cookie_domain",
+      "start_line": 1203
+    },
+    {
+      "ast_sha256": "06ad0777cd77ce2780b2004c9e26e1a97ec94282e8773bcb6791509bd155f4ab",
+      "end_line": 1234,
+      "file": "core_identity_google_oauth.py",
+      "function": "_session_cookie_headers",
+      "start_line": 1217
+    },
+    {
+      "ast_sha256": "29f9797ff1451d5f4c1b45f46fe36bf5811d0d0e4a07325fd7d074d8f5f7af50",
+      "end_line": 94,
+      "file": "core_identity_api.py",
+      "function": "_clean_email",
+      "start_line": 93
+    },
+    {
+      "ast_sha256": "79934a7537f81e1df0cdaf0245e776bd9588751d804a2fdaa52076fbbbef4ce7",
+      "end_line": 98,
+      "file": "core_identity_api.py",
+      "function": "_looks_like_email",
+      "start_line": 97
+    },
+    {
+      "ast_sha256": "39c8ee173ac7f82e52879615fc3a4c0d8407c26fe6f704c856ddf2403f850815",
+      "end_line": 118,
+      "file": "core_identity_api.py",
+      "function": "_local_preview_request",
+      "start_line": 101
+    },
+    {
+      "ast_sha256": "842d4d80e6bb619a284f7dd9a2ef08d3cfa21a52181214443f327eb0d5a37770",
+      "end_line": 152,
+      "file": "core_identity_api.py",
+      "function": "_otp_gateway_deliver",
+      "start_line": 121
+    },
+    {
+      "ast_sha256": "aff887d48f6d0bbd985b6c6a5590dfc0fc8d09c3cdd9b200c2238b249e13081b",
+      "end_line": 168,
+      "file": "core_identity_api.py",
+      "function": "_host_workspace_request_context",
+      "start_line": 155
+    },
+    {
+      "ast_sha256": "a33e8784f35727e460c011658822e180a790d0cbdb8d844933fc0c07b97e8899",
+      "end_line": 203,
+      "file": "core_identity_api.py",
+      "function": "_host_membership_access",
+      "start_line": 171
+    },
+    {
+      "ast_sha256": "39d29806b885d1d49a49bb005b4db2feaa13d4007dcf047cb81e8e264c7cf6ae",
+      "end_line": 324,
+      "file": "core_identity_api.py",
+      "function": "browser_auth_request_code",
+      "start_line": 206
+    },
+    {
+      "ast_sha256": "928c04074fd897dfaebbe2f020695b2bf0bdd8881aaebb071d3d8683e635739a",
+      "end_line": 410,
+      "file": "core_identity_api.py",
+      "function": "browser_auth_verify_code",
+      "start_line": 327
+    }
+  ],
+  "failure": null,
+  "harness_sha256": "1dfe82f03baa1df3a1cebb994d021264376299945c7966db995bc1254795af0c",
+  "isolation": {
+    "blocked_external_files": 0,
+    "database_paths": [
+      "/private/tmp/liveuin-p06-audit-20261019/reaudit/auth01-negative-tests/auth01-fixture-jpk4yk9q/identity.sqlite3",
+      "/private/tmp/liveuin-p06-audit-20261019/reaudit/auth01-negative-tests/auth01-fixture-jpk4yk9q/login.sqlite3",
+      "/private/tmp/liveuin-p06-audit-20261019/reaudit/auth01-negative-tests/auth01-fixture-jpk4yk9q/session.sqlite3"
+    ],
+    "email_sent": false,
+    "fixture_only": true,
+    "network_attempts": 0,
+    "production_records_used": false,
+    "sqlite_connections": 67
+  },
+  "ok": true,
+  "python": "3.13.3",
+  "run_at_utc": "2026-10-19T16:39:19Z",
+  "scope": "isolated deployed canonical browser-code adapter, verifier, signed sessions and Ops membership; no live HTTP/email",
+  "source_manifest_sha256": "eb26b8d6df2511cdea9a9d6e8e96c83d2b660de56ba168a3876a3a3c5db039ad",
+  "tests": [
+    {
+      "detail": "ops_workspace_membership_required",
+      "passed": true,
+      "test": "unapproved_fixture_email_denied"
+    },
+    {
+      "issued_role": "ops_manager",
+      "issued_workspace": "auth01_isolated_ops",
+      "passed": true,
+      "test": "requested_super_admin_cannot_override_membership"
+    },
+    {
+      "detail": "identity_login_challenge_invalid_code",
+      "passed": true,
+      "session_count_unchanged": true,
+      "status_code": 403,
+      "test": "invalid_code_refused"
+    },
+    {
+      "passed": true,
+      "test": "invalid_attempt_recorded_without_consuming_valid_code"
+    },
+    {
+      "detail": "identity_login_challenge_expired",
+      "passed": true,
+      "session_count_unchanged": true,
+      "status_code": 410,
+      "test": "expired_code_refused"
+    },
+    {
+      "passed": true,
+      "test": "expired_state_recorded"
+    },
+    {
+      "issued_role": "ops_manager",
+      "issued_workspace": "auth01_isolated_ops",
+      "passed": true,
+      "requested_foreign_workspace_ignored": true,
+      "test": "valid_control_uses_existing_role_workspace_scopes"
+    },
+    {
+      "credential_validation": "signed_session_verified_store_active",
+      "detail": null,
+      "passed": true,
+      "resolved_role": "ops_manager",
+      "resolved_workspace": "auth01_isolated_ops",
+      "test": "issued_session_canonically_resolves_without_claim_escalation"
+    },
+    {
+      "detail": "identity_session_workspace_mismatch",
+      "passed": true,
+      "refused": true,
+      "test": "foreign_workspace_or_role_payload_cannot_escalate"
+    },
+    {
+      "detail": "identity_session_signature_invalid",
+      "passed": true,
+      "test": "forged_role_header_refused"
+    },
+    {
+      "detail": "identity_login_challenge_not_pending",
+      "passed": true,
+      "session_count_unchanged": true,
+      "status_code": 409,
+      "test": "reused_code_refused"
+    },
+    {
+      "detail": "ops_workspace_membership_required",
+      "passed": true,
+      "test": "unapproved_workspace_request_refused"
+    },
+    {
+      "detail": "ops_workspace_membership_required",
+      "passed": true,
+      "session_count_unchanged": true,
+      "status_code": 403,
+      "test": "membership_revoked_after_request_refused"
+    },
+    {
+      "passed": true,
+      "test": "no_network_or_outside_file_access"
+    }
+  ]
+}

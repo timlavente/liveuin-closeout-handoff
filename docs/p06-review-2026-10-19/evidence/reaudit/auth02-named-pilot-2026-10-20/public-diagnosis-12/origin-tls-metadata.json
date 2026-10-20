@@ -1,0 +1,78 @@
+{
+  "observed_utc": "2026-10-20T08:34:34.016557+00:00",
+  "purpose": "Owner-authorized origin readiness only; not public edge proof",
+  "rows": [
+    {
+      "url": "https://liveuin.com/",
+      "loopback_origin": true,
+      "exit_code": 0,
+      "tls_verification_disabled": false,
+      "follow_redirects": false,
+      "http": 200,
+      "ssl_verify_result": 0,
+      "remote_ip": "127.0.0.1",
+      "bytes": 2284,
+      "body_sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e",
+      "headers": {
+        "server": "nginx/1.18.0 (Ubuntu)",
+        "content-type": "text/html",
+        "x-liveuin-layer": "public_static_site",
+        "x-liveuin-service": "liveuin-public-ui"
+      }
+    },
+    {
+      "url": "https://liveuin.com/index.html",
+      "loopback_origin": true,
+      "exit_code": 0,
+      "tls_verification_disabled": false,
+      "follow_redirects": false,
+      "http": 200,
+      "ssl_verify_result": 0,
+      "remote_ip": "127.0.0.1",
+      "bytes": 2284,
+      "body_sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e",
+      "headers": {
+        "server": "nginx/1.18.0 (Ubuntu)",
+        "content-type": "text/html",
+        "x-liveuin-layer": "public_static_site",
+        "x-liveuin-service": "liveuin-public-ui"
+      }
+    },
+    {
+      "url": "https://www.liveuin.com/",
+      "loopback_origin": true,
+      "exit_code": 0,
+      "tls_verification_disabled": false,
+      "follow_redirects": false,
+      "http": 200,
+      "ssl_verify_result": 0,
+      "remote_ip": "127.0.0.1",
+      "bytes": 2284,
+      "body_sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e",
+      "headers": {
+        "server": "nginx/1.18.0 (Ubuntu)",
+        "content-type": "text/html",
+        "x-liveuin-layer": "public_static_site",
+        "x-liveuin-service": "liveuin-public-ui"
+      }
+    },
+    {
+      "url": "https://www.liveuin.com/index.html",
+      "loopback_origin": true,
+      "exit_code": 0,
+      "tls_verification_disabled": false,
+      "follow_redirects": false,
+      "http": 200,
+      "ssl_verify_result": 0,
+      "remote_ip": "127.0.0.1",
+      "bytes": 2284,
+      "body_sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e",
+      "headers": {
+        "server": "nginx/1.18.0 (Ubuntu)",
+        "content-type": "text/html",
+        "x-liveuin-layer": "public_static_site",
+        "x-liveuin-service": "liveuin-public-ui"
+      }
+    }
+  ]
+}

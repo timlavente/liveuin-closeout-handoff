@@ -1,0 +1,366 @@
+{
+  "controller_path": "/private/tmp/liveuin-p06-auth02-20261020/backend-08/deployment/activate-9095.py",
+  "controller_sha256": "fb39354f610dc6e74db369453945376d37d838c00fc88f098dfae123be0a4b45",
+  "test_script_sha256": "a2ed8ebe117c910685a4ae8a9b1e80f4560139f2b4a054a327c5413a36b946fd",
+  "scope": "local disposable source files; fake service/process/HTTP/backup; no production operations",
+  "root_fixture_adaptations": [
+    "UID/root-directory checks adapted for unprivileged fixture",
+    "file ownership check uses fixture owner",
+    "one startup-source path maps to temporary file"
+  ],
+  "test_count": 30,
+  "passed_count": 30,
+  "cases": [
+    {
+      "name": "happy",
+      "passed": true,
+      "result_status": "candidate_negative_checks_passed_owner_proof_pending",
+      "replacements": 1,
+      "service_actions": [
+        "restart"
+      ],
+      "mock_http_requests": 6,
+      "process_checks": 3,
+      "mock_startup_probes": 2
+    },
+    {
+      "name": "bad_review",
+      "passed": true,
+      "result_status": "stopped_before_change",
+      "replacements": 0,
+      "service_actions": [],
+      "mock_http_requests": 0,
+      "process_checks": 0,
+      "mock_startup_probes": 0
+    },
+    {
+      "name": "bad_helper_pin",
+      "passed": true,
+      "result_status": "stopped_before_change",
+      "replacements": 0,
+      "service_actions": [],
+      "mock_http_requests": 0,
+      "process_checks": 0,
+      "mock_startup_probes": 0
+    },
+    {
+      "name": "bad_spec_pin",
+      "passed": true,
+      "result_status": "stopped_before_change",
+      "replacements": 0,
+      "service_actions": [],
+      "mock_http_requests": 0,
+      "process_checks": 0,
+      "mock_startup_probes": 0
+    },
+    {
+      "name": "backup_failure",
+      "passed": true,
+      "result_status": "stopped_before_change",
+      "replacements": 0,
+      "service_actions": [],
+      "mock_http_requests": 0,
+      "process_checks": 0,
+      "mock_startup_probes": 0
+    },
+    {
+      "name": "baseline_drift",
+      "passed": true,
+      "result_status": "stopped_before_change",
+      "replacements": 0,
+      "service_actions": [],
+      "mock_http_requests": 0,
+      "process_checks": 1,
+      "mock_startup_probes": 0
+    },
+    {
+      "name": "restart_failure",
+      "passed": true,
+      "result_status": "closed_fallback_active_new_sign_in_held",
+      "replacements": 2,
+      "service_actions": [
+        "restart",
+        "restart"
+      ],
+      "mock_http_requests": 6,
+      "process_checks": 3,
+      "mock_startup_probes": 3
+    },
+    {
+      "name": "negative_failure",
+      "passed": true,
+      "result_status": "closed_fallback_active_new_sign_in_held",
+      "replacements": 2,
+      "service_actions": [
+        "restart",
+        "restart"
+      ],
+      "mock_http_requests": 7,
+      "process_checks": 4,
+      "mock_startup_probes": 3
+    },
+    {
+      "name": "config_drift_after_write",
+      "passed": true,
+      "result_status": "service_stopped_for_closed_recovery",
+      "replacements": 2,
+      "service_actions": [
+        "stop"
+      ],
+      "mock_http_requests": 0,
+      "process_checks": 2,
+      "mock_startup_probes": 1
+    },
+    {
+      "name": "startup_drift_after_write",
+      "passed": true,
+      "result_status": "service_stopped_for_closed_recovery",
+      "replacements": 2,
+      "service_actions": [
+        "stop"
+      ],
+      "mock_http_requests": 0,
+      "process_checks": 2,
+      "mock_startup_probes": 1
+    },
+    {
+      "name": "target_drift_after_write",
+      "passed": true,
+      "result_status": "service_stopped_for_closed_recovery",
+      "replacements": 1,
+      "service_actions": [
+        "stop"
+      ],
+      "mock_http_requests": 0,
+      "process_checks": 2,
+      "mock_startup_probes": 2
+    },
+    {
+      "name": "fallback_write_failure",
+      "passed": true,
+      "result_status": "service_stopped_for_closed_recovery",
+      "replacements": 1,
+      "service_actions": [
+        "restart",
+        "stop"
+      ],
+      "mock_http_requests": 1,
+      "process_checks": 3,
+      "mock_startup_probes": 2
+    },
+    {
+      "name": "fallback_checks_failure",
+      "passed": true,
+      "result_status": "service_stopped_for_closed_recovery",
+      "replacements": 2,
+      "service_actions": [
+        "restart",
+        "restart",
+        "stop"
+      ],
+      "mock_http_requests": 2,
+      "process_checks": 4,
+      "mock_startup_probes": 3
+    },
+    {
+      "name": "term_after_write",
+      "passed": true,
+      "result_status": "closed_fallback_active_new_sign_in_held",
+      "replacements": 2,
+      "service_actions": [
+        "restart"
+      ],
+      "mock_http_requests": 6,
+      "process_checks": 3,
+      "mock_startup_probes": 2
+    },
+    {
+      "name": "hup_after_write",
+      "passed": true,
+      "result_status": "closed_fallback_active_new_sign_in_held",
+      "replacements": 2,
+      "service_actions": [
+        "restart"
+      ],
+      "mock_http_requests": 6,
+      "process_checks": 3,
+      "mock_startup_probes": 2
+    },
+    {
+      "name": "owner_pending_recovery",
+      "passed": true,
+      "result_status": "closed_fallback_active_new_sign_in_held",
+      "replacements": 2,
+      "service_actions": [
+        "restart",
+        "restart"
+      ],
+      "mock_http_requests": 12,
+      "process_checks": 4,
+      "mock_startup_probes": 3
+    },
+    {
+      "name": "delayed_listener",
+      "passed": true,
+      "result_status": "candidate_negative_checks_passed_owner_proof_pending",
+      "replacements": 1,
+      "service_actions": [
+        "restart"
+      ],
+      "mock_http_requests": 6,
+      "process_checks": 6,
+      "mock_startup_probes": 2
+    },
+    {
+      "name": "never_listens",
+      "passed": true,
+      "result_status": "closed_fallback_active_new_sign_in_held",
+      "replacements": 2,
+      "service_actions": [
+        "restart",
+        "restart"
+      ],
+      "mock_http_requests": 6,
+      "process_checks": 30,
+      "mock_startup_probes": 3
+    },
+    {
+      "name": "argv_drift_after_restart",
+      "passed": true,
+      "result_status": "closed_fallback_active_new_sign_in_held",
+      "replacements": 2,
+      "service_actions": [
+        "restart",
+        "restart"
+      ],
+      "mock_http_requests": 6,
+      "process_checks": 30,
+      "mock_startup_probes": 3
+    },
+    {
+      "name": "delayed_health",
+      "passed": true,
+      "result_status": "candidate_negative_checks_passed_owner_proof_pending",
+      "replacements": 1,
+      "service_actions": [
+        "restart"
+      ],
+      "mock_http_requests": 8,
+      "process_checks": 5,
+      "mock_startup_probes": 2
+    },
+    {
+      "name": "action_runtime_metadata_changes",
+      "passed": true,
+      "result_status": "candidate_negative_checks_passed_owner_proof_pending",
+      "replacements": 1,
+      "service_actions": [
+        "restart"
+      ],
+      "mock_http_requests": 6,
+      "process_checks": 3,
+      "mock_startup_probes": 2
+    },
+    {
+      "name": "action_command_drift_after_write",
+      "passed": true,
+      "result_status": "service_stopped_for_closed_recovery",
+      "replacements": 2,
+      "service_actions": [
+        "stop"
+      ],
+      "mock_http_requests": 0,
+      "process_checks": 2,
+      "mock_startup_probes": 1
+    },
+    {
+      "name": "stop_command_drift_after_write",
+      "passed": true,
+      "result_status": "recovery_failed_manual_root_action_required",
+      "replacements": 2,
+      "service_actions": [],
+      "mock_http_requests": 0,
+      "process_checks": 2,
+      "mock_startup_probes": 1
+    },
+    {
+      "name": "credential_rotation_after_write",
+      "passed": true,
+      "result_status": "service_stopped_for_closed_recovery",
+      "replacements": 2,
+      "service_actions": [
+        "stop"
+      ],
+      "mock_http_requests": 0,
+      "process_checks": 2,
+      "mock_startup_probes": 1
+    },
+    {
+      "name": "manager_environment_drift_after_write",
+      "passed": true,
+      "result_status": "service_stopped_for_closed_recovery",
+      "replacements": 2,
+      "service_actions": [
+        "stop"
+      ],
+      "mock_http_requests": 0,
+      "process_checks": 2,
+      "mock_startup_probes": 1
+    },
+    {
+      "name": "entry_startup_probe_failure",
+      "passed": true,
+      "result_status": "stopped_before_change",
+      "replacements": 0,
+      "service_actions": [],
+      "mock_http_requests": 0,
+      "process_checks": 1,
+      "mock_startup_probes": 1
+    },
+    {
+      "name": "postwrite_startup_probe_failure",
+      "passed": true,
+      "result_status": "service_stopped_for_closed_recovery",
+      "replacements": 2,
+      "service_actions": [
+        "stop"
+      ],
+      "mock_http_requests": 0,
+      "process_checks": 2,
+      "mock_startup_probes": 3
+    },
+    {
+      "name": "fallback_startup_probe_failure",
+      "passed": true,
+      "result_status": "service_stopped_for_closed_recovery",
+      "replacements": 2,
+      "service_actions": [
+        "restart",
+        "stop"
+      ],
+      "mock_http_requests": 1,
+      "process_checks": 3,
+      "mock_startup_probes": 3
+    },
+    {
+      "name": "startup_probe_missing_safety_claim",
+      "passed": true,
+      "result_status": "stopped_before_change",
+      "replacements": 0,
+      "service_actions": [],
+      "mock_http_requests": 0,
+      "process_checks": 1,
+      "mock_startup_probes": 1
+    },
+    {
+      "name": "startup_probe_malformed_reply",
+      "passed": true,
+      "result_status": "stopped_before_change",
+      "replacements": 0,
+      "service_actions": [],
+      "mock_http_requests": 0,
+      "process_checks": 1,
+      "mock_startup_probes": 1
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "candidate_manifest_sha256": "7886c2a9f64da19465a0825860975487f9609385711a915f3c8623cba6617e41",
+  "files": [
+    {
+      "name": "core_access_service.py",
+      "sha256": "f93b7c18c774293169e71d5f80b27d99b7de71853c1dc3454150b0a29eaa0d3e"
+    },
+    {
+      "name": "core_access_store.py",
+      "sha256": "6f5913db1768885444061d582bbbeef66d173ec80d9dbc3e517d3c97d935f170"
+    },
+    {
+      "name": "core_adapter_replay_store.py",
+      "sha256": "d20920edb46c9569d900fbb5ec250afc1bdd8c8397368f5f33ad1f89f01cce97"
+    },
+    {
+      "name": "core_adapter_secret_registry.py",
+      "sha256": "1d39dec2b75b07f70841ef6f57993fa697f47b1683502ffcc76dc8815c30736d"
+    },
+    {
+      "name": "core_exceptional_authority_store.py",
+      "sha256": "7380256bf700c1a528f876f3ecf48120b81c35637b6030a37af61585acd619c1"
+    },
+    {
+      "name": "core_identity_api.py",
+      "sha256": "30f6d81466d15fad9451445449682f359969b405e21a641a7cd4523ab863b5fd"
+    },
+    {
+      "name": "core_identity_login_store.py",
+      "sha256": "e8b369634c1875519e7883f439388f5b02a062849569fbb1a4663160baf95d94"
+    },
+    {
+      "name": "core_identity_provider_credentials.py",
+      "sha256": "a75967c9a81064aa02b6f9f35c186bf10b603cc57e90f7821ffb1a33b54a1ebd"
+    },
+    {
+      "name": "core_identity_public.py",
+      "sha256": "8340f026f68f5048bbe2e5fc4744f17366dcf134730d4349213c549319630019"
+    },
+    {
+      "name": "core_identity_public_schema.py",
+      "sha256": "ea82232ef0229076e73e6bdd372465da9b4a0ef420f0e2e251877ba7711186ea"
+    },
+    {
+      "name": "core_identity_public_store.py",
+      "sha256": "98414fa04c72281edca3f399a40c1c2e731e1a367f7a74b794fcf09d60b908d4"
+    },
+    {
+      "name": "core_identity_release_admission.py",
+      "sha256": "fefc124fb49131510b5daa801d810608ff09e6c1bdccef54ea72bdf07a9b8c62"
+    },
+    {
+      "name": "core_identity_service.py",
+      "sha256": "6c0865796e14d659c888c453ceae791bdf68346a9a2f0cebe9419868878354ae"
+    },
+    {
+      "name": "core_identity_session.py",
+      "sha256": "a3f4cedfc79003abebbdaacc12e59eb82086b0b6e5534ed08eb817a54989585c"
+    },
+    {
+      "name": "core_identity_session_store.py",
+      "sha256": "c0f2a07b7778aef761deee03b32adc61bfa257cb1edeae933416438508a265c3"
+    },
+    {
+      "name": "core_identity_social.py",
+      "sha256": "44680d3685415ec4ce209851f2ffa52cbe207f72e487e80543000ef0d920b709"
+    },
+    {
+      "name": "core_identity_store.py",
+      "sha256": "e9556e964c6e7a1a5dc07d199a2a2f12cdf2034e491a28f7d70399bb908764c5"
+    },
+    {
+      "name": "core_service_secret_resolver.py",
+      "sha256": "e0140a67b57ff9d072737e8185ee95c86f790804983e04f5e19e03a3dcb2aade"
+    }
+  ]
+}

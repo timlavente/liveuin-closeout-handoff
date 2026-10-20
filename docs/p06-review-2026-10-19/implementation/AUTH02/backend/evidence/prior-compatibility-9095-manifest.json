@@ -1,0 +1,6 @@
+{
+  "status": "local candidate only; raw HTTP preview guarded; browser adapters restricted to existing membership-bound Ops/Host paths",
+  "file": "core_identity_api.py",
+  "baseline_sha256": "fcf8c612f2442ab05a8950523890806af7b89f88e9cbf801fcc5561ec1d6acc4",
+  "candidate_sha256": "13cf7324b14d4f905ef511537b26825e9ee70817435128ce49096949c16addd6"
+}

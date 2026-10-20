@@ -1,0 +1,28 @@
+{
+  "python": "3.10.12",
+  "files": [
+    {
+      "name": "candidate/home_api.py",
+      "sha256": "d1f0f44278302caf328c623052f4cd0f8c236776c2112098cca0df261873adc2",
+      "compile": "passed"
+    },
+    {
+      "name": "candidate/public_home_gateway.py",
+      "sha256": "49a57731d9df60e95b67eb3ac578d67f2bd861e1befff5bba7afcdfdeab42c60",
+      "compile": "passed"
+    },
+    {
+      "name": "fallback/home_api.py",
+      "sha256": "e3f08013e3baf977818fc8033472f823b3874c47ea67816d90054241a3c8fad4",
+      "compile": "passed"
+    },
+    {
+      "name": "fallback/public_home_gateway.py",
+      "sha256": "49a57731d9df60e95b67eb3ac578d67f2bd861e1befff5bba7afcdfdeab42c60",
+      "compile": "passed"
+    }
+  ],
+  "method": "Final source via stdin to compile only; no product imports/execution, file/pyc writes, restart, credentials or database access.",
+  "checked_at_singapore": "2026-10-19T23:52:08+08:00",
+  "supersedes": "Earlier root Python3.10 compile for candidate home 9d31f3e21e1d1889fee980eb65aacb111cf32d70724535b23f70099d5b5c84b6 is not proof for the policy-corrected final candidate."
+}

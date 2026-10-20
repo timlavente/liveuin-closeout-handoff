@@ -1,0 +1,30 @@
+{
+  "mode": "member_metadata_and_private_backup",
+  "service_actions": false,
+  "secret_values_output": false,
+  "customer_rows_queried": false,
+  "status": "metadata_pass_ready_for_reviewed_activation",
+  "public_settings": {
+    "terms_version": "liveuin-terms-2026-10-16",
+    "email_delivery_mode": "approved_http",
+    "email_ready": true,
+    "public_workspace": "liveuin-public"
+  },
+  "pid": 2662668,
+  "configured_environment_names_equal": 70,
+  "configured_credentials_equal_loaded": 7,
+  "prestart_sha256": "2b13dd29a28af4c4828b3f05cb9d75faee9d4e520546f5fc346acdcb67315b39",
+  "backup": {
+    "completed": true,
+    "source_files": 4,
+    "protected_config_files": 5,
+    "sqlite_backups": 3,
+    "server_only": true,
+    "cross_database_snapshot": false,
+    "encryption_claimed": false
+  },
+  "backup_directory": "/root/liveuin-closeout-backups/AUTH02-20261020T045310Z-3657105",
+  "private_review_file": "/root/liveuin-auth02-member-20261020-09-review/runtime-review-09.json",
+  "direct_signer_present_and_equal": true,
+  "store_bindings_match": true
+}

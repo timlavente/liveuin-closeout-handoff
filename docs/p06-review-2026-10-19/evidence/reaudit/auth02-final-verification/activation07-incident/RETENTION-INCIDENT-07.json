@@ -1,0 +1,94 @@
+{
+  "version": "activation07-incident-staging01",
+  "created_at_utc": "2026-10-19T20:17:26.174367+00:00",
+  "status": "failed activation; closed fallback installed and service stopped; awaiting recovery",
+  "prior_staging_manifest_sha256": "ab658eb022b6a82ad09f02e591b2c2cd9807e11c8dbdc5a961096a4518e71d31",
+  "selected_file_count": 11,
+  "files": [
+    {
+      "path": "activation-9095-result-07.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend/evidence/activation-9095-result-07.json",
+      "bytes": 732,
+      "sha256": "53a92b85bdcb62bd8fe2e2427532280c0f438cdcb20e5c6e6ae11d176cde0621",
+      "local_blocks": 8
+    },
+    {
+      "path": "package07/PACKAGE-07-HASHES.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-07/deployment/PACKAGE-07-HASHES.json",
+      "bytes": 843,
+      "sha256": "af7cf8706a778e0cb2005ee656de7659a369180991a82acc1893805adb78a148",
+      "local_blocks": 8
+    },
+    {
+      "path": "package07/package-manifest-9095.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-07/deployment/package-manifest-9095.json",
+      "bytes": 7442,
+      "sha256": "8019023d6f981118c622fb9ee6839e29480b8b9fcd183078838f3b119336fc86",
+      "local_blocks": 16
+    },
+    {
+      "path": "package07/PACKAGE-07-RECONCILIATION-ADDENDUM.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-07/deployment/PACKAGE-07-RECONCILIATION-ADDENDUM.md",
+      "bytes": 1700,
+      "sha256": "c57674178883bcf2f831498afff60e60538868230e63b4808b30225b80bc0ccf",
+      "local_blocks": 8
+    },
+    {
+      "path": "package07/activate-9095.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-07/deployment/activate-9095.py",
+      "bytes": 18405,
+      "sha256": "af8508ff6057133cdc8d4c6829d18faf07871ec9d6fa5d8726a525afcaa1106b",
+      "local_blocks": 40
+    },
+    {
+      "path": "package07/stage-reviewed-package-07.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-07/deployment/stage-reviewed-package-07.py",
+      "bytes": 1434,
+      "sha256": "6d95bc3838cbdcaa43d56f54bb8bcc1a34aceccd9b33b5de6574d6b886b51e4a",
+      "local_blocks": 8
+    },
+    {
+      "path": "package07/prestart-fastpath-probe.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-07/deployment/prestart-fastpath-probe.py",
+      "bytes": 25169,
+      "sha256": "5a534ffae6f10edd348ff8d24b6ac7cf4212336fa066578f5bdda7e8711a3846",
+      "local_blocks": 56
+    },
+    {
+      "path": "package07/preflight-spec.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-07/deployment/preflight-spec.json",
+      "bytes": 9923,
+      "sha256": "ccd910464d2b7d5135d4a0c3ca26bc4ea7e46d394f145996106cecc93dae91c8",
+      "local_blocks": 24
+    },
+    {
+      "path": "package07/candidate-9095-manifest.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-07/candidate-9095-manifest.json",
+      "bytes": 351,
+      "sha256": "8409272a41b5c232f47b2fb9a2e045acb02aa9ba1912ba57425c45bddde4dd01",
+      "local_blocks": 8
+    },
+    {
+      "path": "package07/fallback-9095-manifest.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend-07/fallback-9095-manifest.json",
+      "bytes": 322,
+      "sha256": "20ec9579148702bc2bcf54399676cbd7206b8dc8bc86c4e25534ff80b8e69a8b",
+      "local_blocks": 8
+    },
+    {
+      "path": "INCIDENT-STAGING-NOTE.md",
+      "source": "authored incident staging note",
+      "bytes": 2674,
+      "sha256": "517b208505c3b5a906a69934c56085733ee5306e7a837d4e4e8f3e54fb3ca728",
+      "local_blocks": 8
+    }
+  ],
+  "excluded": [
+    "tar archives",
+    "private full config/probe output",
+    "credential values or fingerprints",
+    "databases",
+    "customer records",
+    "caches"
+  ]
+}

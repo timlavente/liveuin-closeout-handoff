@@ -1,0 +1,25 @@
+{
+  "helper_sha256": "264c126b0e4fb84f59b228b4b0f8c32ddd9a5a464204c7dfe1695848b8853bf6",
+  "python310_source_parse": true,
+  "tests": [
+    {
+      "name": "exact_selected_row_read",
+      "pass": true
+    },
+    {
+      "name": "write_refused",
+      "pass": true
+    },
+    {
+      "name": "unrelated_table_refused",
+      "pass": true
+    },
+    {
+      "name": "schema_write_refused",
+      "pass": true
+    }
+  ],
+  "only_fictional_local_database": true,
+  "product_imports": false,
+  "production_actions": false
+}

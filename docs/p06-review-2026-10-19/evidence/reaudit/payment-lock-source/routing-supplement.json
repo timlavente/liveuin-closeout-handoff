@@ -1,0 +1,347 @@
+{
+  "observed_at_utc": "2026-10-19T15:37:46.199493+00:00",
+  "files": [
+    {
+      "path": "/etc/nginx/conf.d/api.liveuin.com.conf",
+      "routing": []
+    },
+    {
+      "path": "/etc/nginx/conf.d/app.liveuin.com.conf",
+      "routing": []
+    },
+    {
+      "path": "/etc/nginx/conf.d/host.liveuin.com.conf",
+      "routing": []
+    },
+    {
+      "path": "/etc/nginx/conf.d/liveuin.com.conf",
+      "routing": []
+    },
+    {
+      "path": "/etc/nginx/conf.d/ops.liveuin.com.conf",
+      "routing": [
+        {
+          "line": 38,
+          "directive": "error_page 401 = @ops_staff_login;"
+        },
+        {
+          "line": 47,
+          "directive": "error_page 401 = @ops_staff_login;"
+        },
+        {
+          "line": 55,
+          "directive": "error_page 401 = @ops_staff_login;"
+        },
+        {
+          "line": 63,
+          "directive": "error_page 401 = @ops_staff_login;"
+        },
+        {
+          "line": 73,
+          "directive": "error_page 401 = @ops_staff_login;"
+        },
+        {
+          "line": 250,
+          "directive": "limit_except GET HEAD OPTIONS { deny all; }"
+        },
+        {
+          "line": 269,
+          "directive": "limit_except GET HEAD OPTIONS { deny all; }"
+        },
+        {
+          "line": 320,
+          "directive": "error_page 401 = @ops_staff_login;"
+        },
+        {
+          "line": 334,
+          "directive": "error_page 401 = @ops_staff_login;"
+        },
+        {
+          "line": 350,
+          "directive": "rewrite ^ /trust-verification-workbench.html last;"
+        },
+        {
+          "line": 368,
+          "directive": "rewrite ^ /movein-lifecycle-workbench.html last;"
+        },
+        {
+          "line": 386,
+          "directive": "rewrite ^ /demand-intelligence-workbench.html last;"
+        },
+        {
+          "line": 405,
+          "directive": "error_page 401 = @ops_staff_login;"
+        },
+        {
+          "line": 413,
+          "directive": "error_page 401 = @ops_staff_login;"
+        },
+        {
+          "line": 421,
+          "directive": "rewrite ^ /operator-control-tower.html last;"
+        },
+        {
+          "line": 426,
+          "directive": "error_page 401 = @ops_staff_login;"
+        },
+        {
+          "line": 441,
+          "directive": "rewrite ^ /ops-command.html last;"
+        },
+        {
+          "line": 459,
+          "directive": "rewrite ^ /marketplace-governance.html last;"
+        },
+        {
+          "line": 478,
+          "directive": "error_page 401 = @ops_staff_login;"
+        },
+        {
+          "line": 485,
+          "directive": "error_page 401 = @ops_staff_login;"
+        },
+        {
+          "line": 605,
+          "directive": "error_page 401 = @ops_staff_login;"
+        },
+        {
+          "line": 663,
+          "directive": "error_page 401 =302 /ops-lovable-preview-20260821-control-tower-live-20260826/ops/preview-sign-in?return_to=$request_uri;"
+        },
+        {
+          "line": 703,
+          "directive": "error_page 401 =302 /ops-m1-intake-preview-20260831/ops/preview-sign-in?return_to=$request_uri;"
+        },
+        {
+          "line": 704,
+          "directive": "rewrite ^/ops-m1-intake-preview-20260831/api/(.*)$ /api/$1 break;"
+        },
+        {
+          "line": 719,
+          "directive": "error_page 401 =302 /ops-m1-intake-preview-20260831/ops/preview-sign-in?return_to=$request_uri;"
+        },
+        {
+          "line": 759,
+          "directive": "error_page 401 =302 /ops-m1-intake-preview-20260931/ops/preview-sign-in?return_to=$request_uri;"
+        },
+        {
+          "line": 760,
+          "directive": "rewrite ^/ops-m1-intake-preview-20260931/api/(.*)$ /api/$1 break;"
+        },
+        {
+          "line": 775,
+          "directive": "error_page 401 =302 /ops-m1-intake-preview-20260931/ops/preview-sign-in?return_to=$request_uri;"
+        }
+      ]
+    },
+    {
+      "path": "/etc/nginx/conf.d/partner.liveuin.com.conf",
+      "routing": []
+    },
+    {
+      "path": "/etc/nginx/snippets/liveuin_admin_routes.conf",
+      "routing": [
+        {
+          "line": 1,
+          "directive": "location = /admin {"
+        },
+        {
+          "line": 2,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 4,
+          "directive": "rewrite ^ /admin-control-center.html last;"
+        },
+        {
+          "line": 6,
+          "directive": "location = /admin/ {"
+        },
+        {
+          "line": 7,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 9,
+          "directive": "rewrite ^ /admin-control-center.html last;"
+        },
+        {
+          "line": 11,
+          "directive": "location ~ ^/admin/(users|roles|audit-logs|cms|templates|impersonation|billing|data-retention|settings|brands|workspace-settings|onboarding)(/|$) {"
+        },
+        {
+          "line": 12,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 14,
+          "directive": "rewrite ^ /admin-control-center.html last;"
+        },
+        {
+          "line": 16,
+          "directive": "location = /admin-control-center.html {"
+        },
+        {
+          "line": 17,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 21,
+          "directive": "location = /admin-control-center.css { alias /opt/liveuin/admin-control-center.css; }"
+        },
+        {
+          "line": 22,
+          "directive": "location = /admin-control-center.js { alias /opt/liveuin/admin-control-center.js; }"
+        },
+        {
+          "line": 23,
+          "directive": "location = /backend-workspace-shell.css { alias /opt/liveuin/backend-workspace-shell.css; }"
+        },
+        {
+          "line": 24,
+          "directive": "location = /backend-workspace-shell.js { alias /opt/liveuin/backend-workspace-shell.js; }"
+        },
+        {
+          "line": 25,
+          "directive": "location = /platform-workspace-shell.css { alias /opt/liveuin/platform-workspace-shell.css; }"
+        }
+      ]
+    },
+    {
+      "path": "/etc/nginx/snippets/liveuin_ops_canonical_login.conf",
+      "routing": [
+        {
+          "line": 2,
+          "directive": "location = / { return 302 /ops/login; }"
+        },
+        {
+          "line": 3,
+          "directive": "location = /login { return 302 /ops/login; }"
+        },
+        {
+          "line": 4,
+          "directive": "location = /login.html { return 302 /ops/login; }"
+        },
+        {
+          "line": 5,
+          "directive": "location = /ui/login.html { return 302 /ops/login; }"
+        },
+        {
+          "line": 7,
+          "directive": "location = /ui/otp.html {"
+        },
+        {
+          "line": 8,
+          "directive": "return 302 /ops/login?return_to=%2Fops%2Fcommand;"
+        }
+      ]
+    },
+    {
+      "path": "/etc/nginx/snippets/liveuin_private_preview_alias_gate.conf",
+      "routing": [
+        {
+          "line": 3,
+          "directive": "location ~ ^/(infra/?|infra-control-center\\.html|ops/(control-panel|settings|theme|ai)/?|operator-control-tower\\.html|l0-internal-operating-spine\\.html|inventory-operator-board\\.html|finance-ledger-workbench\\.html|checkout(?:/private-preview)?/?|pass/private-preview/?|connect/sites/?)$ {"
+        },
+        {
+          "line": 4,
+          "directive": "auth_request /__ops_auth_gate;"
+        },
+        {
+          "line": 6,
+          "directive": "try_files $uri $uri/ /index.html;"
+        }
+      ]
+    },
+    {
+      "path": "/etc/nginx/snippets/liveuin_public_static_route_semantics.conf",
+      "routing": [
+        {
+          "line": 6,
+          "directive": "location = /sitemap.xml {"
+        },
+        {
+          "line": 8,
+          "directive": "try_files /sitemap.xml =404;"
+        },
+        {
+          "line": 11,
+          "directive": "location = /robots.txt {"
+        },
+        {
+          "line": 13,
+          "directive": "try_files /robots.txt =404;"
+        },
+        {
+          "line": 16,
+          "directive": "location = /liveuin-social-card.png {"
+        },
+        {
+          "line": 18,
+          "directive": "try_files /liveuin-social-card.png =404;"
+        },
+        {
+          "line": 23,
+          "directive": "location = /api/health {"
+        },
+        {
+          "line": 26,
+          "directive": "return 404 '{\"ok\":false,\"detail\":\"not_found\"}';"
+        },
+        {
+          "line": 30,
+          "directive": "location ^~ /assets/ {"
+        },
+        {
+          "line": 31,
+          "directive": "try_files $uri =404;"
+        }
+      ]
+    },
+    {
+      "path": "/etc/nginx/snippets/liveuin_ops_auth_routes.conf",
+      "routing": [
+        {
+          "line": 3,
+          "directive": "location = /ops/login {"
+        },
+        {
+          "line": 10,
+          "directive": "location = /ops/login/ {"
+        },
+        {
+          "line": 11,
+          "directive": "return 308 /ops/login;"
+        },
+        {
+          "line": 14,
+          "directive": "location ^~ /ops/login/assets/ {"
+        },
+        {
+          "line": 19,
+          "directive": "location = /ops/login/favicon.ico {"
+        },
+        {
+          "line": 24,
+          "directive": "location = /ops/login/liveuin-resident.webmanifest {"
+        },
+        {
+          "line": 29,
+          "directive": "location = /ops/auth-pending {"
+        },
+        {
+          "line": 30,
+          "directive": "try_files /auth-pending.html =404;"
+        },
+        {
+          "line": 34,
+          "directive": "location = /ops/auth-pending/ {"
+        },
+        {
+          "line": 35,
+          "directive": "return 308 /ops/auth-pending;"
+        }
+      ]
+    }
+  ]
+}

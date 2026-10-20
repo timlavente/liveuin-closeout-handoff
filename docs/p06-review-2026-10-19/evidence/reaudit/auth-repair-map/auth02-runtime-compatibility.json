@@ -1,0 +1,230 @@
+{
+  "checked_at_utc": "2026-10-19T16:45:03.811906+00:00",
+  "mode": "read_only_metadata_no_http_no_database_import_or_customer_record",
+  "services": {
+    "identity_9098": {
+      "unit": "liveuin-identity-public-prod.service",
+      "pid": 2662668,
+      "process_and_source_verified": true,
+      "cwd": "/opt/liveuin-identity-public/releases/20261016-1e9dca6",
+      "source_files": [
+        {
+          "path": "/opt/liveuin-identity-public/current/deploy/core_identity_session.py",
+          "resolved_path": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_session.py",
+          "sha256": "cfaf971913f6a49960f5cc54c8877641cc5db1b00de4c42fa8259c673cc82f7e"
+        },
+        {
+          "path": "/opt/liveuin-identity-public/current/deploy/core_identity_session_store.py",
+          "resolved_path": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_session_store.py",
+          "sha256": "c0f2a07b7778aef761deee03b32adc61bfa257cb1edeae933416438508a265c3"
+        },
+        {
+          "path": "/opt/liveuin-identity-public/current/deploy/core_identity_store.py",
+          "resolved_path": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_store.py",
+          "sha256": "e9556e964c6e7a1a5dc07d199a2a2f12cdf2034e491a28f7d70399bb908764c5"
+        },
+        {
+          "path": "/opt/liveuin-identity-public/current/deploy/core_identity_public_store.py",
+          "resolved_path": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/deploy/core_identity_public_store.py",
+          "sha256": "98414fa04c72281edca3f399a40c1c2e731e1a367f7a74b794fcf09d60b908d4"
+        }
+      ],
+      "nonsecret": {
+        "LIVEUIN_DEPLOYED_COMMIT": "1e9dca6-prod-20261016",
+        "LIVEUIN_ENVIRONMENT": "production",
+        "LIVEUIN_PUBLIC_WORKSPACE_ID": "liveuin-public",
+        "LIVEUIN_IDENTITY_EMAIL_DELIVERY_MODE": "approved_http"
+      },
+      "configured": {
+        "LIVEUIN_GOOGLE_CLIENT_ID": true,
+        "LIVEUIN_GOOGLE_REDIRECT_URI": false,
+        "LIVEUIN_GOOGLE_CLIENT_SECRET_REF": false,
+        "LIVEUIN_IDENTITY_PROVIDER_SUBJECT_PEPPER_REF": true,
+        "LIVEUIN_IDENTITY_SESSION_SIGNING_SECRET_REF": true,
+        "LIVEUIN_PUBLIC_TERMS_VERSION": true
+      },
+      "flags": {
+        "LIVEUIN_PUBLIC_REGISTRATION_ENABLED": {
+          "present": true,
+          "normalized": "true"
+        },
+        "LIVEUIN_IDENTITY_EMAIL_READY": {
+          "present": true,
+          "normalized": "true"
+        },
+        "LIVEUIN_GOOGLE_NATIVE_ID_TOKEN_READY": {
+          "present": true,
+          "normalized": "true"
+        },
+        "LIVEUIN_GOOGLE_OIDC_TOKEN_EXCHANGE_READY": {
+          "present": false,
+          "normalized": ""
+        },
+        "LIVEUIN_GOOGLE_OIDC_CALLBACK_VALIDATION_READY": {
+          "present": false,
+          "normalized": ""
+        },
+        "LIVEUIN_PUBLIC_GOOGLE_IDENTITY_ENABLED": {
+          "present": true,
+          "normalized": "true"
+        }
+      },
+      "direct_signing_secret_present": true,
+      "credential_store_enforcement": {
+        "configured": true,
+        "effective": true
+      },
+      "session_max_age_setting": "86400",
+      "stores": {
+        "session": {
+          "binding_source": "LIVEUIN_CORE_IDENTITY_SESSION_SQLITE_PATH",
+          "logical_path": "/var/lib/liveuin/core-identity-session-data/liveuin-core-identity-session.sqlite3",
+          "host_realpath": "/var/lib/liveuin/core-identity-session-data/liveuin-core-identity-session.sqlite3",
+          "contents_opened": false,
+          "exists_in_process_root": true,
+          "device": 64514,
+          "inode": 1641069,
+          "regular_file": true,
+          "host_and_process_target_same": true
+        },
+        "identity": {
+          "binding_source": "LIVEUIN_CORE_IDENTITY_SQLITE_PATH",
+          "logical_path": "/var/lib/liveuin/identity-public-prod/core-identity.sqlite3",
+          "host_realpath": "/var/lib/liveuin/identity-public-prod/core-identity.sqlite3",
+          "contents_opened": false,
+          "exists_in_process_root": true,
+          "device": 64514,
+          "inode": 2229456,
+          "regular_file": true,
+          "host_and_process_target_same": true
+        },
+        "public_account": {
+          "binding_source": "LIVEUIN_CORE_IDENTITY_PUBLIC_SQLITE_PATH",
+          "logical_path": "/var/lib/liveuin/identity-public-prod/liveuin-core-identity-public.sqlite3",
+          "host_realpath": "/var/lib/liveuin/identity-public-prod/liveuin-core-identity-public.sqlite3",
+          "contents_opened": false,
+          "exists_in_process_root": true,
+          "device": 64514,
+          "inode": 2233294,
+          "regular_file": true,
+          "host_and_process_target_same": true
+        }
+      }
+    },
+    "ops_9095": {
+      "unit": "ops-backend@liveuin.service",
+      "pid": 1298408,
+      "process_and_source_verified": true,
+      "cwd": "/opt/liveuin/ops_backend",
+      "source_files": [
+        {
+          "path": "/opt/liveuin/deploy/core_identity_session.py",
+          "resolved_path": "/opt/liveuin/deploy/core_identity_session.py",
+          "sha256": "11b7ab17300c3a2ea8a0294470f9872496c6e4f8308598edad97f680ea9fefdb"
+        },
+        {
+          "path": "/opt/liveuin/deploy/core_identity_session_store.py",
+          "resolved_path": "/opt/liveuin/deploy/core_identity_session_store.py",
+          "sha256": "c0f2a07b7778aef761deee03b32adc61bfa257cb1edeae933416438508a265c3"
+        },
+        {
+          "path": "/opt/liveuin/deploy/core_identity_store.py",
+          "resolved_path": "/opt/liveuin/deploy/core_identity_store.py",
+          "sha256": "8435560b88230df6737ff3dca8dc52bafd881dd7ebb01c3b961356ae9cf04f36"
+        }
+      ],
+      "nonsecret": {
+        "LIVEUIN_DEPLOYED_COMMIT": "",
+        "LIVEUIN_ENVIRONMENT": "",
+        "LIVEUIN_PUBLIC_WORKSPACE_ID": "",
+        "LIVEUIN_IDENTITY_EMAIL_DELIVERY_MODE": ""
+      },
+      "configured": {
+        "LIVEUIN_GOOGLE_CLIENT_ID": true,
+        "LIVEUIN_GOOGLE_REDIRECT_URI": true,
+        "LIVEUIN_GOOGLE_CLIENT_SECRET_REF": true,
+        "LIVEUIN_IDENTITY_PROVIDER_SUBJECT_PEPPER_REF": false,
+        "LIVEUIN_IDENTITY_SESSION_SIGNING_SECRET_REF": false,
+        "LIVEUIN_PUBLIC_TERMS_VERSION": false
+      },
+      "flags": {
+        "LIVEUIN_PUBLIC_REGISTRATION_ENABLED": {
+          "present": false,
+          "normalized": ""
+        },
+        "LIVEUIN_IDENTITY_EMAIL_READY": {
+          "present": false,
+          "normalized": ""
+        },
+        "LIVEUIN_GOOGLE_NATIVE_ID_TOKEN_READY": {
+          "present": false,
+          "normalized": ""
+        },
+        "LIVEUIN_GOOGLE_OIDC_TOKEN_EXCHANGE_READY": {
+          "present": true,
+          "normalized": "true"
+        },
+        "LIVEUIN_GOOGLE_OIDC_CALLBACK_VALIDATION_READY": {
+          "present": true,
+          "normalized": "true"
+        },
+        "LIVEUIN_PUBLIC_GOOGLE_IDENTITY_ENABLED": {
+          "present": false,
+          "normalized": ""
+        }
+      },
+      "direct_signing_secret_present": true,
+      "credential_store_enforcement": {
+        "configured": true,
+        "effective": true
+      },
+      "session_max_age_setting": "",
+      "stores": {
+        "session": {
+          "binding_source": "LIVEUIN_CORE_IDENTITY_SESSION_SQLITE_PATH",
+          "logical_path": "/var/lib/liveuin/core-identity-session-data/liveuin-core-identity-session.sqlite3",
+          "host_realpath": "/var/lib/liveuin/core-identity-session-data/liveuin-core-identity-session.sqlite3",
+          "contents_opened": false,
+          "exists_in_process_root": true,
+          "device": 64514,
+          "inode": 1641069,
+          "regular_file": true,
+          "host_and_process_target_same": true
+        },
+        "identity": {
+          "binding_source": "LIVEUIN_CORE_IDENTITY_SQLITE_PATH",
+          "logical_path": "/srv/liveuin/core-identity-data/liveuin-core-identity.sqlite3",
+          "host_realpath": "/srv/liveuin/core-identity-data/liveuin-core-identity.sqlite3",
+          "contents_opened": false,
+          "exists_in_process_root": true,
+          "device": 64514,
+          "inode": 44843,
+          "regular_file": true,
+          "host_and_process_target_same": true
+        }
+      },
+      "public_account_projection": "legacy session module has no public_account_id mapping; store unification is not inferred"
+    }
+  },
+  "comparison": {
+    "pid_and_selected_environment_stable": true,
+    "both_direct_signers_present": true,
+    "direct_signers_equal_after_source_normalization": true,
+    "session_store": {
+      "same_host_realpath": true,
+      "both_exist": true,
+      "same_process_root_file_identity": true
+    },
+    "identity_store": {
+      "same_host_realpath": false,
+      "both_exist": true,
+      "same_process_root_file_identity": false
+    }
+  },
+  "result": "metadata_classified_not_session_compatibility_proof",
+  "limits": [
+    "On-disk source fingerprints plus active process environment do not inspect loaded Python objects.",
+    "Same signer/store cannot prove correct account/profile mapping, case authorization, revocation or browser behaviour.",
+    "No password, OTP, logout, reset, ready or provider-status operation was called."
+  ]
+}

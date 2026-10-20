@@ -1,0 +1,57 @@
+{
+  "classifier_sha256": "0241740015c2bf6121fdca17c2d279f4b1f2a977ed22cd0bf7bf764b874b43e0",
+  "test_script_sha256": "65bcfedc41a469b698ff4283dd1cd98d00c31b0b42ae8fe300890a1c57225b68",
+  "scope": "Exact classifier pure helpers; synthetic temporary EnvironmentFiles and D-Bus property fixtures only; no production or real secret reads",
+  "test_count": 12,
+  "passed_count": 12,
+  "cases": [
+    {
+      "name": "exact_unset_rejects_stale_different_running_value",
+      "passed": true
+    },
+    {
+      "name": "exact_unset_rejects_stale_equal_running_value",
+      "passed": true
+    },
+    {
+      "name": "exact_unset_accepts_actual_absence",
+      "passed": true
+    },
+    {
+      "name": "nonmatching_exact_unset_preserves_value",
+      "passed": true
+    },
+    {
+      "name": "bare_unset_rejects_any_old_presence",
+      "passed": true
+    },
+    {
+      "name": "empty_exact_assignment_is_specific",
+      "passed": true
+    },
+    {
+      "name": "wrapper_reintroduction_is_compared_after_unset",
+      "passed": true
+    },
+    {
+      "name": "wrapper_reintroduction_still_rejects_wrong_value",
+      "passed": true
+    },
+    {
+      "name": "manager_unit_files_unset_precedence_and_literal_grammar",
+      "passed": true
+    },
+    {
+      "name": "PassEnvironment_requires_separate_review",
+      "passed": true
+    },
+    {
+      "name": "PAM_environment_requires_separate_review",
+      "passed": true
+    },
+    {
+      "name": "unsupported_complex_env_grammar_fails_closed",
+      "passed": true
+    }
+  ]
+}

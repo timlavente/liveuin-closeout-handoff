@@ -1,0 +1,751 @@
+{
+  "scope": "14 actual resident payloads;87ff864 plus exact source-hash-matched customer webhook purpose follow-up",
+  "product_imported": false,
+  "files": [
+    {
+      "path": "/opt/liveuin/deploy/core_customer_card_api.py",
+      "sha256": "cb04159dd5d6e5ddc13e19f1a2e9c7f41d0eff15591d1b61bb68d67d3a4efb91",
+      "bytes": 8041,
+      "module_or_definition_time_calls": [
+        {
+          "line": 19,
+          "function": "APIRouter",
+          "keyword_names": []
+        },
+        {
+          "line": 70,
+          "function": "router.post",
+          "keyword_names": []
+        },
+        {
+          "line": 88,
+          "function": "router.get",
+          "keyword_names": []
+        },
+        {
+          "line": 95,
+          "function": "router.get",
+          "keyword_names": []
+        },
+        {
+          "line": 102,
+          "function": "router.delete",
+          "keyword_names": []
+        },
+        {
+          "line": 136,
+          "function": "router.post",
+          "keyword_names": []
+        }
+      ],
+      "import_names_only": [
+        {
+          "line": 2,
+          "module": "json"
+        },
+        {
+          "line": 3,
+          "module": "os"
+        },
+        {
+          "line": 4,
+          "module": "re"
+        },
+        {
+          "line": 5,
+          "module": "fastapi",
+          "level": 0
+        },
+        {
+          "line": 6,
+          "module": "fastapi.responses",
+          "level": 0
+        },
+        {
+          "line": 7,
+          "module": "starlette.concurrency",
+          "level": 0
+        },
+        {
+          "line": 9,
+          "module": "core_resident_customer_scope",
+          "level": 1
+        },
+        {
+          "line": 10,
+          "module": "core_customer_card_contract",
+          "level": 1
+        },
+        {
+          "line": 11,
+          "module": "core_customer_card_provider",
+          "level": 1
+        },
+        {
+          "line": 12,
+          "module": "core_customer_card_service",
+          "level": 1
+        },
+        {
+          "line": 14,
+          "module": "core_resident_customer_scope",
+          "level": 0
+        },
+        {
+          "line": 15,
+          "module": "core_customer_card_contract",
+          "level": 0
+        },
+        {
+          "line": 16,
+          "module": "core_customer_card_provider",
+          "level": 0
+        },
+        {
+          "line": 17,
+          "module": "core_customer_card_service",
+          "level": 0
+        }
+      ],
+      "excluded_main_guards": [],
+      "provenance": "Local exact source bytes matched locked root metadata2026-10-20; AST only, no product import."
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_customer_card_contract.py",
+      "sha256": "7684c0a0ba9edacc51fb15df245e628e579f1c69ac30604ea31be21c8bd53d83",
+      "bytes": 1205,
+      "module_or_definition_time_calls": [],
+      "import_names_only": [
+        {
+          "line": 2,
+          "module": "dataclasses",
+          "level": 0
+        },
+        {
+          "line": 3,
+          "module": "hashlib"
+        },
+        {
+          "line": 4,
+          "module": "json"
+        },
+        {
+          "line": 5,
+          "module": "re"
+        },
+        {
+          "line": 6,
+          "module": "time"
+        },
+        {
+          "line": 32,
+          "module": "core_resident_customer_scope",
+          "level": 1
+        },
+        {
+          "line": 34,
+          "module": "core_resident_customer_scope",
+          "level": 0
+        }
+      ],
+      "excluded_main_guards": [],
+      "provenance": "Local exact source bytes matched locked root metadata2026-10-20; AST only, no product import."
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_customer_card_provider.py",
+      "sha256": "5945fd77f52036844b5921b71b07f44cc652f77e67ce40bd25f77ebd90d4dd87",
+      "bytes": 4566,
+      "module_or_definition_time_calls": [],
+      "import_names_only": [
+        {
+          "line": 2,
+          "module": "json"
+        },
+        {
+          "line": 3,
+          "module": "re"
+        },
+        {
+          "line": 4,
+          "module": "time"
+        },
+        {
+          "line": 5,
+          "module": "urllib.parse",
+          "level": 0
+        },
+        {
+          "line": 6,
+          "module": "urllib.request",
+          "level": 0
+        },
+        {
+          "line": 8,
+          "module": "core_customer_card_contract",
+          "level": 1
+        },
+        {
+          "line": 9,
+          "module": "core_stripe_sandbox_api",
+          "level": 1
+        },
+        {
+          "line": 11,
+          "module": "core_customer_card_contract",
+          "level": 0
+        },
+        {
+          "line": 12,
+          "module": "core_stripe_sandbox_api",
+          "level": 0
+        }
+      ],
+      "excluded_main_guards": [],
+      "provenance": "Local exact source bytes matched locked root metadata2026-10-20; AST only, no product import."
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_customer_card_service.py",
+      "sha256": "def3ce375d9d3adc769dc6501d5f5ce51bc081127ff875859b0d8a4abe190983",
+      "bytes": 18608,
+      "module_or_definition_time_calls": [],
+      "import_names_only": [
+        {
+          "line": 2,
+          "module": "json"
+        },
+        {
+          "line": 3,
+          "module": "re"
+        },
+        {
+          "line": 4,
+          "module": "sqlite3"
+        },
+        {
+          "line": 5,
+          "module": "time"
+        },
+        {
+          "line": 6,
+          "module": "uuid"
+        },
+        {
+          "line": 8,
+          "module": null,
+          "level": 1
+        },
+        {
+          "line": 9,
+          "module": "core_customer_card_contract",
+          "level": 1
+        },
+        {
+          "line": 11,
+          "module": "core_customer_card_store"
+        },
+        {
+          "line": 12,
+          "module": "core_customer_card_contract",
+          "level": 0
+        }
+      ],
+      "excluded_main_guards": [],
+      "provenance": "Local exact source bytes matched locked root metadata2026-10-20; AST only, no product import."
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_customer_card_store.py",
+      "sha256": "b479055e65c9a571b2a3f86d4e893d1bc5c9fdc940929bd13597ff8d2339b175",
+      "bytes": 3255,
+      "module_or_definition_time_calls": [],
+      "import_names_only": [
+        {
+          "line": 2,
+          "module": "contextlib",
+          "level": 0
+        },
+        {
+          "line": 3,
+          "module": "sqlite3"
+        },
+        {
+          "line": 4,
+          "module": "time"
+        },
+        {
+          "line": 6,
+          "module": null,
+          "level": 1
+        },
+        {
+          "line": 8,
+          "module": "core_payment_store"
+        }
+      ],
+      "excluded_main_guards": [],
+      "provenance": "Local exact source bytes matched locked root metadata2026-10-20; AST only, no product import."
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_demand_rental_offer_workflow.py",
+      "sha256": "2710df828727b624f8206f90dab1e2a1314ce839eda7091d2620a006e7a98711",
+      "bytes": 18002,
+      "module_or_definition_time_calls": [],
+      "import_names_only": [
+        {
+          "line": 7,
+          "module": "__future__",
+          "level": 0
+        },
+        {
+          "line": 8,
+          "module": "contextlib",
+          "level": 0
+        },
+        {
+          "line": 9,
+          "module": "json"
+        },
+        {
+          "line": 10,
+          "module": "pathlib",
+          "level": 0
+        },
+        {
+          "line": 11,
+          "module": "sqlite3"
+        },
+        {
+          "line": 12,
+          "module": "time"
+        },
+        {
+          "line": 13,
+          "module": "uuid"
+        },
+        {
+          "line": 15,
+          "module": "core_inventory_marketing_workflow",
+          "level": 1
+        },
+        {
+          "line": 17,
+          "module": "core_inventory_marketing_workflow",
+          "level": 0
+        }
+      ],
+      "excluded_main_guards": [],
+      "provenance": "Local exact source bytes matched locked root metadata2026-10-20; AST only, no product import."
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_resident_bills_api.py",
+      "sha256": "97e3ff343daa1b5dcd977edb02b0cfe6049cbf3aefef81351880ffcb919a6c72",
+      "bytes": 4764,
+      "module_or_definition_time_calls": [
+        {
+          "line": 14,
+          "function": "APIRouter",
+          "keyword_names": []
+        },
+        {
+          "line": 17,
+          "function": "dict.fromkeys",
+          "keyword_names": []
+        },
+        {
+          "line": 17,
+          "function": "dict.fromkeys",
+          "keyword_names": []
+        },
+        {
+          "line": 55,
+          "function": "router.get",
+          "keyword_names": []
+        },
+        {
+          "line": 56,
+          "function": "Query",
+          "keyword_names": [
+            "ge",
+            "le"
+          ]
+        }
+      ],
+      "import_names_only": [
+        {
+          "line": 2,
+          "module": "datetime",
+          "level": 0
+        },
+        {
+          "line": 3,
+          "module": "re"
+        },
+        {
+          "line": 4,
+          "module": "fastapi",
+          "level": 0
+        },
+        {
+          "line": 6,
+          "module": "core_resident_customer_scope",
+          "level": 1
+        },
+        {
+          "line": 7,
+          "module": null,
+          "level": 1
+        },
+        {
+          "line": 8,
+          "module": null,
+          "level": 1
+        },
+        {
+          "line": 10,
+          "module": "core_resident_customer_scope",
+          "level": 0
+        },
+        {
+          "line": 11,
+          "module": "core_case_service"
+        },
+        {
+          "line": 12,
+          "module": "core_payment_store"
+        }
+      ],
+      "excluded_main_guards": [],
+      "provenance": "Local exact source bytes matched locked root metadata2026-10-20; AST only, no product import."
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_resident_customer_scope.py",
+      "sha256": "da3049098f62c53faa134e5c24cc230e72ef69d7a6276688b7611d21d951e4fe",
+      "bytes": 8938,
+      "module_or_definition_time_calls": [
+        {
+          "line": 23,
+          "function": "dataclass",
+          "keyword_names": [
+            "frozen"
+          ]
+        }
+      ],
+      "import_names_only": [
+        {
+          "line": 2,
+          "module": "dataclasses",
+          "level": 0
+        },
+        {
+          "line": 3,
+          "module": "hashlib"
+        },
+        {
+          "line": 4,
+          "module": "json"
+        },
+        {
+          "line": 5,
+          "module": "re"
+        },
+        {
+          "line": 6,
+          "module": "time"
+        },
+        {
+          "line": 7,
+          "module": "urllib.error",
+          "level": 0
+        },
+        {
+          "line": 8,
+          "module": "urllib.request",
+          "level": 0
+        }
+      ],
+      "excluded_main_guards": [],
+      "provenance": "Local exact source bytes matched locked root metadata2026-10-20; AST only, no product import."
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_resident_documents_api.py",
+      "sha256": "cb9436cda43d9396544da5053a7460902bbbabbba818d8a0088f759afdcff890",
+      "bytes": 6078,
+      "module_or_definition_time_calls": [
+        {
+          "line": 15,
+          "function": "APIRouter",
+          "keyword_names": []
+        },
+        {
+          "line": 65,
+          "function": "router.get",
+          "keyword_names": []
+        },
+        {
+          "line": 66,
+          "function": "Query",
+          "keyword_names": [
+            "pattern"
+          ]
+        }
+      ],
+      "import_names_only": [
+        {
+          "line": 2,
+          "module": "re"
+        },
+        {
+          "line": 3,
+          "module": "fastapi",
+          "level": 0
+        },
+        {
+          "line": 4,
+          "module": "fastapi.responses",
+          "level": 0
+        },
+        {
+          "line": 7,
+          "module": "core_resident_customer_scope",
+          "level": 1
+        },
+        {
+          "line": 8,
+          "module": null,
+          "level": 1
+        },
+        {
+          "line": 10,
+          "module": "core_resident_customer_scope",
+          "level": 0
+        },
+        {
+          "line": 11,
+          "module": "core_document_center_service"
+        },
+        {
+          "line": 12,
+          "module": "core_case_service"
+        },
+        {
+          "line": 13,
+          "module": "core_access_service"
+        }
+      ],
+      "excluded_main_guards": [],
+      "provenance": "Local exact source bytes matched locked root metadata2026-10-20; AST only, no product import."
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_resident_gateway.py",
+      "sha256": "676d3de8f87b3929ab13cd03759e58748419e4fb5548ca1209e4ce2069348210",
+      "bytes": 1211,
+      "module_or_definition_time_calls": [],
+      "import_names_only": [],
+      "excluded_main_guards": [],
+      "provenance": "Local exact source bytes matched locked root metadata2026-10-20; AST only, no product import."
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_resident_home_updates_api.py",
+      "sha256": "9ae93d5f746d169bb1e4729b0f2834cb1eedae1dc02e7ebe25b27347a69e3ac7",
+      "bytes": 5388,
+      "module_or_definition_time_calls": [
+        {
+          "line": 16,
+          "function": "APIRouter",
+          "keyword_names": []
+        },
+        {
+          "line": 67,
+          "function": "router.get",
+          "keyword_names": []
+        }
+      ],
+      "import_names_only": [
+        {
+          "line": 2,
+          "module": "hashlib"
+        },
+        {
+          "line": 3,
+          "module": "json"
+        },
+        {
+          "line": 4,
+          "module": "re"
+        },
+        {
+          "line": 5,
+          "module": "datetime",
+          "level": 0
+        },
+        {
+          "line": 6,
+          "module": "fastapi",
+          "level": 0
+        },
+        {
+          "line": 7,
+          "module": "fastapi.responses",
+          "level": 0
+        },
+        {
+          "line": 10,
+          "module": "core_resident_customer_scope",
+          "level": 1
+        },
+        {
+          "line": 11,
+          "module": null,
+          "level": 1
+        },
+        {
+          "line": 13,
+          "module": "core_resident_customer_scope",
+          "level": 0
+        },
+        {
+          "line": 14,
+          "module": "core_case_api"
+        }
+      ],
+      "excluded_main_guards": [],
+      "provenance": "Local exact source bytes matched locked root metadata2026-10-20; AST only, no product import."
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_resident_inventory_api.py",
+      "sha256": "ee25c53d2871d307766c64c969742bc27273f42f95f698dfd4d1474541f1a83d",
+      "bytes": 6885,
+      "module_or_definition_time_calls": [],
+      "import_names_only": [
+        {
+          "line": 8,
+          "module": "__future__",
+          "level": 0
+        },
+        {
+          "line": 10,
+          "module": "datetime",
+          "level": 0
+        },
+        {
+          "line": 11,
+          "module": "math"
+        },
+        {
+          "line": 12,
+          "module": "re"
+        }
+      ],
+      "excluded_main_guards": [],
+      "provenance": "Local exact source bytes matched locked root metadata2026-10-20; AST only, no product import."
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_resident_rental_request_api.py",
+      "sha256": "5201cdd9afc862cf5aeac6537ff0ada8025383bcdbacf4fbf1ae1ed2623466e8",
+      "bytes": 9734,
+      "module_or_definition_time_calls": [],
+      "import_names_only": [
+        {
+          "line": 7,
+          "module": "fastapi",
+          "level": 0
+        },
+        {
+          "line": 8,
+          "module": "fastapi.responses",
+          "level": 0
+        },
+        {
+          "line": 10,
+          "module": "core_resident_customer_scope",
+          "level": 1
+        },
+        {
+          "line": 11,
+          "module": "core_resident_inventory_api",
+          "level": 1
+        },
+        {
+          "line": 12,
+          "module": "core_resident_publication_catalog",
+          "level": 1
+        },
+        {
+          "line": 13,
+          "module": "core_inventory_marketing_workflow",
+          "level": 1
+        },
+        {
+          "line": 15,
+          "module": "core_resident_customer_scope",
+          "level": 0
+        },
+        {
+          "line": 16,
+          "module": "core_resident_inventory_api",
+          "level": 0
+        },
+        {
+          "line": 17,
+          "module": "core_resident_publication_catalog",
+          "level": 0
+        },
+        {
+          "line": 18,
+          "module": "core_inventory_marketing_workflow",
+          "level": 0
+        }
+      ],
+      "excluded_main_guards": [],
+      "provenance": "Local exact source bytes matched locked root metadata2026-10-20; AST only, no product import."
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_resident_publication_catalog.py",
+      "sha256": "06435290bedf7c9af5ad3226fa4ad725d715bf5fa52caa446647e42499d9542d",
+      "bytes": 9289,
+      "module_or_definition_time_calls": [],
+      "import_names_only": [
+        {
+          "line": 7,
+          "module": "datetime",
+          "level": 0
+        },
+        {
+          "line": 8,
+          "module": "re"
+        },
+        {
+          "line": 9,
+          "module": "fastapi",
+          "level": 0
+        },
+        {
+          "line": 10,
+          "module": "fastapi.responses",
+          "level": 0
+        },
+        {
+          "line": 12,
+          "module": "core_inventory_marketing_workflow",
+          "level": 1
+        },
+        {
+          "line": 13,
+          "module": "core_resident_inventory_api",
+          "level": 1
+        },
+        {
+          "line": 15,
+          "module": "core_inventory_marketing_workflow",
+          "level": 0
+        },
+        {
+          "line": 16,
+          "module": "core_resident_inventory_api",
+          "level": 0
+        }
+      ],
+      "excluded_main_guards": [],
+      "provenance": "Local exact source bytes matched locked root metadata2026-10-20; AST only, no product import."
+    }
+  ]
+}

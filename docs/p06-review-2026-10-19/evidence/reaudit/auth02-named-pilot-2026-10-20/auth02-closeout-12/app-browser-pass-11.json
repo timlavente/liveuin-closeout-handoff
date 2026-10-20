@@ -1,0 +1,75 @@
+{
+  "allowed_return_preserved": true,
+  "allowed_screen_passed": true,
+  "both_logout_controls_passed": true,
+  "candidate_manifest_sha256": "5b30d8e31f16395440062cd2dc417bb97b9ec246c5445b70eeaf3f07268b5177",
+  "canonical_profile_reload_passed": true,
+  "continuity_services": {
+    "liveuin-identity-public-prod.service": {
+      "pid": 3675726,
+      "start_monotonic": "3288788779292"
+    },
+    "liveuin-public-api.service": {
+      "pid": 296370,
+      "start_monotonic": "2290397558094"
+    },
+    "liveuin-public-preview-ui.service": {
+      "pid": 1041,
+      "start_monotonic": "10572259"
+    },
+    "ops-backend@liveuin.service": {
+      "pid": 3724514,
+      "start_monotonic": "3295188768165"
+    }
+  },
+  "continuity_sources": {
+    "/opt/liveuin-identity-public/current/deploy/core_identity_api.py": "30f6d81466d15fad9451445449682f359969b405e21a641a7cd4523ab863b5fd",
+    "/opt/liveuin-identity-public/current/deploy/core_identity_public.py": "8340f026f68f5048bbe2e5fc4744f17366dcf134730d4349213c549319630019",
+    "/opt/liveuin-identity-public/current/deploy/core_identity_release_admission.py": "fefc124fb49131510b5daa801d810608ff09e6c1bdccef54ea72bdf07a9b8c62",
+    "/opt/liveuin-identity-public/current/deploy/core_identity_session.py": "a3f4cedfc79003abebbdaacc12e59eb82086b0b6e5534ed08eb817a54989585c",
+    "/opt/liveuin-identity-public/current/deploy/core_identity_social.py": "44680d3685415ec4ce209851f2ffa52cbe207f72e487e80543000ef0d920b709",
+    "/opt/liveuin/deploy/core_customer_card_api.py": "cb04159dd5d6e5ddc13e19f1a2e9c7f41d0eff15591d1b61bb68d67d3a4efb91",
+    "/opt/liveuin/deploy/core_customer_card_contract.py": "7684c0a0ba9edacc51fb15df245e628e579f1c69ac30604ea31be21c8bd53d83",
+    "/opt/liveuin/deploy/core_customer_card_provider.py": "a2034f5d0990719d39cbf378c92a87e7b72011b31a99483ccb75cecab06ba2dc",
+    "/opt/liveuin/deploy/core_customer_card_service.py": "def3ce375d9d3adc769dc6501d5f5ce51bc081127ff875859b0d8a4abe190983",
+    "/opt/liveuin/deploy/core_customer_card_store.py": "b479055e65c9a571b2a3f86d4e893d1bc5c9fdc940929bd13597ff8d2339b175",
+    "/opt/liveuin/deploy/core_payment_rail.py": "20ca0cb4a6f4325047bb67da5ec7ecb3fe302cee80351f030a27079f71d64c44",
+    "/opt/liveuin/deploy/core_resident_bills_api.py": "97e3ff343daa1b5dcd977edb02b0cfe6049cbf3aefef81351880ffcb919a6c72",
+    "/opt/liveuin/deploy/core_resident_customer_scope.py": "da3049098f62c53faa134e5c24cc230e72ef69d7a6276688b7611d21d951e4fe",
+    "/opt/liveuin/deploy/core_resident_gateway.py": "676d3de8f87b3929ab13cd03759e58748419e4fb5548ca1209e4ce2069348210",
+    "/opt/liveuin/deploy/core_stripe_sandbox_api.py": "2eb20cb1dd95e48ce25df0844e838c458a218f0290518657bd8f2c66099f30c6",
+    "/opt/liveuin/ops_backend/app.py": "fcecabe419ce5aa080155f0e29e34eee79596d05f3838a6180dad2ce9795bbf2",
+    "/opt/liveuin/ops_backend/app/main.py": "b8f00791b71b11e93c72980ad31fa0eac3d18d0b03a0e4e4dd5f172620c85c2a",
+    "/opt/liveuin/public-home-preview.py": "e523924bac421433ad34ea6587353b0448bd42aeba950e27029d654ffb063099"
+  },
+  "evidence": {
+    "/Users/Vivian/Documents/Liveuin/docs/p06-review-2026-10-19/evidence/reaudit/auth02-named-pilot-2026-10-20/APP-ACTIVATION-BROWSER-10.json": "4972aa1c940e10437d9f2eb94afa207fcec9fe8f7dce888f5ab408ccefc71026",
+    "/Users/Vivian/Documents/Liveuin/docs/p06-review-2026-10-19/evidence/reaudit/auth02-named-pilot-2026-10-20/APP-BROWSER-LOGOUT-11.json": "5af581afc26fcd8def69e69ab69303f2cb77fb9e447ab102ae373449c7c1b3e3",
+    "/Users/Vivian/Documents/Liveuin/docs/p06-review-2026-10-19/evidence/reaudit/auth02-named-pilot-2026-10-20/APP-RETURN-CONTINUATION-11.json": "445f7f5f5aa0c59c334c126d1bd6675b0802ede62aca22e4cb84af0ecbc6bc47",
+    "/Users/Vivian/Documents/Liveuin/docs/p06-review-2026-10-19/evidence/reaudit/auth02-named-pilot-2026-10-20/APP-RETURN-CONTINUATION-11.md": "32dcafc403cd4a1c0799c05f00f202afb39a2d9c453a7e0a95b9a1682fd36370",
+    "/Users/Vivian/Documents/Liveuin/docs/p06-review-2026-10-19/evidence/reaudit/auth02-named-pilot-2026-10-20/RETENTION-APP-RETURN-CONTINUATION-11-MANIFEST.json": "d2ba218e51e1348b47967b5c689122693833c8c1a1f3a23d157c6ad9a8f38590",
+    "/private/tmp/liveuin-p06-auth02-20261020/account-map/PARENT-API-PROOF-08.json": "0fe24bd01adb3e6483df13b946907fdc9f11beac086d399966ab41507ede31e2",
+    "/private/tmp/liveuin-p06-auth02-20261020/frontend-readiness-11/backend-ready-gate-11.json": "bf0096fe1f94e039eea13c907138958c38cb8e85d85cc36a3d20b8e971f08022",
+    "/private/tmp/liveuin-p06-auth02-20261020/frontend-return-11/tests/active-candidate-delta.json": "2253489ed69adb4c314babdf6f965366465ec3921acd972c2f5d3928b8620436"
+  },
+  "imported_tenancies_used_or_contacted": false,
+  "named_account_signed_in": true,
+  "phase": "app_browser_pass",
+  "pilot_admission_closed": true,
+  "prepared_utc": "2026-10-20T08:24:08.672839+00:00",
+  "proof_scope": {
+    "admission": "Retained five denial checks with same member candidate and PID3675726; installer and public runner recheck exactsource/processcontinuity.",
+    "allowed_action": "Replace the reviewed public static entry only, then complete normal public-to-App browser handoff. Does not authorize opening public admission or live charging.",
+    "carried_forward_checks": "Actual wrong-password and LocalPro refusal from APP-ACTIVATION-BROWSER-10; actual account and profile-menu logout from APP-BROWSER-LOGOUT-11; exact stale signed-session/refresh refusal from PARENT-API-PROOF-08. Not represented as rerun inreturn11.",
+    "carry_forward_basis": "361candidatefiles identical; one JS changes only literal App-origin return normalization. Password, canonical projection, role validation, session and both logout implementations are byte-preserved. Return11 continuation/reload/bodylogout were actually rerun.",
+    "newly_executed_logout_metadata": "At08:18:09UTC one active canonical+refresh record each; after08:19:08 each active0, revoked5to6,total6 unchanged. Fixed synthetic parent only, no token read.",
+    "newly_executed_return11": "Actual normal browser: allowed App-absolute account return to Welcome; both visible links retain validated relative account return. Existing-account link clicked; correct named-parent password opens /tenant/account. Full reload shows Tenant/one profile. Body sign-out returns Welcome; private account reopen is refused with preserved return.",
+    "payment_limit": "Retained15:31UTC LiveUIN process-startup flag classification, same source/PID continuity; provider15 exactform-keychange reconciles the original classifier mismatch. Four reviewed live rails disabled, Coretestkey, legacyreference/noexternaldispatch; customer-card sandboxenabled. Not universal Pay readiness or a checkout/payment/refund proof.",
+    "remaining": "Actual public browser handoff and final AUTH02 issue freeze. Otherroles, case isolation, all frozen rows, P6 and ownerpublishing remain separate."
+  },
+  "public_access_switch_changed": false,
+  "public_live_charging_off": true,
+  "stale_session_refused": true,
+  "wrong_password_refused": true,
+  "wrong_role_refused": true
+}

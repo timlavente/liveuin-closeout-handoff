@@ -1,0 +1,8 @@
+{
+  "MainPID": "1298408",
+  "WorkingDirectory": "/opt/liveuin/ops_backend",
+  "FragmentPath": "/etc/systemd/system/ops-backend@liveuin.service",
+  "ExecStart": "{ path=/usr/local/sbin/liveuin-ops-backend-with-dsn-credential ; argv[]=/usr/local/sbin/liveuin-ops-backend-with-dsn-credential ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+  "ExecStartPre": "{ path=/bin/sh ; argv[]=/bin/sh -c set -eu; /opt/liveuin/ops_backend/bin/ensure_venv.sh ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }\n{ path=/bin/mkdir ; argv[]=/bin/mkdir -p /var/cache/ops-backend/pycache ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }\n{ path=/opt/liveuin/ops_backend/.venv/bin/python ; argv[]=/opt/liveuin/ops_backend/.venv/bin/python -m py_compile /opt/liveuin/ops_backend/app.py ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }\n{ path=/opt/liveuin/ops_backend/.venv/bin/python ; argv[]=/opt/liveuin/ops_backend/.venv/bin/python -m py_compile /opt/liveuin/ops_backend/app/main.py ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+  "ExecStartPost": ""
+}

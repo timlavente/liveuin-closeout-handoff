@@ -1,0 +1,25 @@
+{
+  "probe_sha256": "7337607dfbb0d90aed50499e74a48a9f40d8561b589ce66b95f53795e67c85b1",
+  "passed": 4,
+  "total": 4,
+  "checks": [
+    {
+      "name": "exact_sitecustomize_read",
+      "passed": true
+    },
+    {
+      "name": "exact_sitecustomize_write_denied",
+      "passed": true
+    },
+    {
+      "name": "sibling_file_denied",
+      "passed": true
+    },
+    {
+      "name": "other_python_version_denied",
+      "passed": true
+    }
+  ],
+  "production_execution": false,
+  "product_imports": false
+}

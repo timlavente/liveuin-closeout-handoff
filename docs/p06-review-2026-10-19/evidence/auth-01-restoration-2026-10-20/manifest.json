@@ -1,0 +1,167 @@
+{
+  "row": "AUTH-01",
+  "generated_at": "2026-10-19T16:43:56.622138+00:00",
+  "hydration_check": "All retained positive-size inputs read fully with allocated local blocks.",
+  "files": [
+    {
+      "path": "D1-CONTROLLER-REREVIEW-02.md",
+      "bytes": 1883,
+      "sha256": "bc96e26b01f3d43ae541759cff0088da35e3b8c29c579643cba3a1d0bd460bc1"
+    },
+    {
+      "path": "D1-CONTROLLER-REVIEW-01.md",
+      "bytes": 2529,
+      "sha256": "e05ba75f0e5d8a492375563294d3e408e1cec848a610651c6490ff5da001dd4c"
+    },
+    {
+      "path": "D1-DELIVERY-RESTORATION-REVIEW-01.md",
+      "bytes": 11318,
+      "sha256": "96eb963b93ae4cc5e05d7d8b3f7a2e21dd7bbeb3c70e72188e6b5e9e6df76376"
+    },
+    {
+      "path": "TEST-EVIDENCE-01.md",
+      "bytes": 4984,
+      "sha256": "a408a92d34bc796e68162af1805b039b8210c2b22b4a37bbd6546ba1fb9aced2"
+    },
+    {
+      "path": "auth01-payment-lock.json",
+      "bytes": 2832,
+      "sha256": "cb4764d1158e694b69b594ae1558769a4c9b9af9e6b3beb4eba495bfd9647edd"
+    },
+    {
+      "path": "auth01-restore-result.json",
+      "bytes": 2196,
+      "sha256": "dfc9b4ca542d49775e2ed5d1014b0817d49f1f1738a6fc67cb05f4e22deb9f44"
+    },
+    {
+      "path": "delivery-metadata.json",
+      "bytes": 767,
+      "sha256": "e8854b7a8eb9fc8f49a35ba4f372838ac10b6d5098a754086b0840e483ab4b99"
+    },
+    {
+      "path": "isolated-tests/result.json",
+      "bytes": 7087,
+      "sha256": "0ede0928a920e280bc5005459465f4e625bf0c22982b4dc7a7e0a1719fdb6237"
+    },
+    {
+      "path": "isolated-tests/run_tests.py",
+      "bytes": 14913,
+      "sha256": "1dfe82f03baa1df3a1cebb994d021264376299945c7966db995bc1254795af0c"
+    },
+    {
+      "path": "isolated-tests/source/core_access_service.py",
+      "bytes": 126386,
+      "sha256": "2afcc7539c68ab7c66ab2ccee2786b77e82561eabb8e92e47fb5cea8cdaee777"
+    },
+    {
+      "path": "isolated-tests/source/core_access_store.py",
+      "bytes": 49023,
+      "sha256": "6f5913db1768885444061d582bbbeef66d173ec80d9dbc3e517d3c97d935f170"
+    },
+    {
+      "path": "isolated-tests/source/core_adapter_replay_store.py",
+      "bytes": 7961,
+      "sha256": "d20920edb46c9569d900fbb5ec250afc1bdd8c8397368f5f33ad1f89f01cce97"
+    },
+    {
+      "path": "isolated-tests/source/core_adapter_secret_registry.py",
+      "bytes": 43392,
+      "sha256": "1d39dec2b75b07f70841ef6f57993fa697f47b1683502ffcc76dc8815c30736d"
+    },
+    {
+      "path": "isolated-tests/source/core_identity_api.py",
+      "bytes": 41141,
+      "sha256": "fcf8c612f2442ab05a8950523890806af7b89f88e9cbf801fcc5561ec1d6acc4"
+    },
+    {
+      "path": "isolated-tests/source/core_identity_auth_policy.py",
+      "bytes": 15601,
+      "sha256": "e5cc47ff7c1f117c39c4abb30c6b20ba8347d0253f91e1d28d9e3c5f1fd7826c"
+    },
+    {
+      "path": "isolated-tests/source/core_identity_google_oauth.py",
+      "bytes": 58470,
+      "sha256": "b708f7e27f6dc3991c771d62cff38bbd2c610e2de60ae18694c1e6def0d47156"
+    },
+    {
+      "path": "isolated-tests/source/core_identity_login.py",
+      "bytes": 23648,
+      "sha256": "f7f3d8b6fe5c52d4e6401afebda4f238b851261e64c83c129cb36095883c36fd"
+    },
+    {
+      "path": "isolated-tests/source/core_identity_login_store.py",
+      "bytes": 24266,
+      "sha256": "e8b369634c1875519e7883f439388f5b02a062849569fbb1a4663160baf95d94"
+    },
+    {
+      "path": "isolated-tests/source/core_identity_service.py",
+      "bytes": 44838,
+      "sha256": "8280891cd0d843124d7f6d4b71ed9d5655916d109f6c61630d8ba901310bd94a"
+    },
+    {
+      "path": "isolated-tests/source/core_identity_session.py",
+      "bytes": 71723,
+      "sha256": "11b7ab17300c3a2ea8a0294470f9872496c6e4f8308598edad97f680ea9fefdb"
+    },
+    {
+      "path": "isolated-tests/source/core_identity_session_store.py",
+      "bytes": 33212,
+      "sha256": "c0f2a07b7778aef761deee03b32adc61bfa257cb1edeae933416438508a265c3"
+    },
+    {
+      "path": "isolated-tests/source/core_identity_store.py",
+      "bytes": 63678,
+      "sha256": "8435560b88230df6737ff3dca8dc52bafd881dd7ebb01c3b961356ae9cf04f36"
+    },
+    {
+      "path": "isolated-tests/source/core_identity_workspace_access.py",
+      "bytes": 43368,
+      "sha256": "729531a7a562dd0fc7d53f300b2664d462593024163264230e188aba4ab6493d"
+    },
+    {
+      "path": "isolated-tests/source/core_service_secret_resolver.py",
+      "bytes": 7566,
+      "sha256": "bc4e858df0b42f47fc28019ba86d6d08ae5ed73002c0452b47fc53893e3c69ff"
+    },
+    {
+      "path": "isolated-tests/source-manifest.json",
+      "bytes": 5549,
+      "sha256": "eb26b8d6df2511cdea9a9d6e8e96c83d2b660de56ba168a3876a3a3c5db039ad"
+    },
+    {
+      "path": "otp-app-before.py",
+      "bytes": 5632,
+      "sha256": "24542a1052dda9723591e1e068c0a446183b643768cf6ccda134a4f2f8e7fe87"
+    },
+    {
+      "path": "otp-gateway-before.service",
+      "bytes": 501,
+      "sha256": "d2ecd65e7581c6aa019a56e637fdded337ffd4f720c826479371a85ff80bc272"
+    },
+    {
+      "path": "owner-ops-signed-in.jpg",
+      "bytes": 37714,
+      "sha256": "8af8efc290c0df90a3cd5035d99101189df9bdd9e9ac66131f46175edd7513e7"
+    },
+    {
+      "path": "owner-proof-readonly.py",
+      "bytes": 8945,
+      "sha256": "9db083967c690980a92d29a759698ed1654deedb132d993f2fc01e6fe95aa397"
+    },
+    {
+      "path": "owner-proof-result.json",
+      "bytes": 2289,
+      "sha256": "dcbe1e1bf720e4d43afe83d24190f64d119ac08048b04aad76106f6ffe5b70be"
+    },
+    {
+      "path": "restore-delivery.py",
+      "bytes": 9313,
+      "sha256": "885062ee08ce7707b735fbe7090c954730ce3f6121012601d1b806af8add278b"
+    },
+    {
+      "path": "source-fingerprints.json",
+      "bytes": 964,
+      "sha256": "eadf0da6730e158498c71d33477f8b816f5bc36ccefa9d234194afd7684b5669"
+    }
+  ]
+}

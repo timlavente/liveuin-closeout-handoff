@@ -1,0 +1,55 @@
+{
+  "authorization_changed_by_helper": false,
+  "canonical_ops_surface": true,
+  "challenge": {
+    "issued_at_utc": "2026-10-19T20:21:53+00:00",
+    "status": "verified",
+    "verified_at_utc": "2026-10-19T20:22:40+00:00",
+    "verified_in_browser_window": true
+  },
+  "credential_values_or_hashes_output": false,
+  "exact_challenge_match": true,
+  "existing_owner_role_and_scope_contract_preserved": true,
+  "expected_owner_workspace": true,
+  "historical_permissions_audit": false,
+  "membership": {
+    "status": "active",
+    "trusted_role": "ops",
+    "workspace": "liveuin"
+  },
+  "normal_code_delivery_observation_required": true,
+  "normal_factor_auth_method": true,
+  "observed_at_utc": "2026-10-19T20:22:59+00:00",
+  "owner_email_match": true,
+  "passed": true,
+  "pid": 3427360,
+  "pid_and_start_stable": true,
+  "product_modules_imported": false,
+  "read_only": true,
+  "reviewed_runtime_store_bindings_match": true,
+  "role_matches_membership": true,
+  "scope": "one named owner and exact delivered-factor challenge; role/workspace/status only",
+  "scopes_match_existing_role": true,
+  "service": "ops-backend@liveuin.service",
+  "session": {
+    "active": true,
+    "auth_method": "liveuin_login_challenge",
+    "expires_at_utc": "2026-10-20T20:22:40+00:00",
+    "issued_at_utc": "2026-10-19T20:22:40+00:00",
+    "role": "ops",
+    "scope_count": 19,
+    "status": "active",
+    "workspace": "liveuin"
+  },
+  "source_versions_match": {
+    "core_identity_api.py": true,
+    "core_identity_login.py": true,
+    "core_identity_login_store.py": true,
+    "core_identity_session.py": true,
+    "core_identity_session_store.py": true,
+    "core_identity_store.py": true,
+    "core_identity_workspace_access.py": true
+  },
+  "source_versions_unchanged": true,
+  "unrelated_rows_output": false
+}

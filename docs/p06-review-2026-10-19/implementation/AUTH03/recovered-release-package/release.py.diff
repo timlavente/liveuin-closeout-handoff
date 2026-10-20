@@ -1,0 +1,47 @@
+--- passed-AUTH02/release.py
++++ AUTH03/release.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""AUTH02 return fix: replace the current App alias; preserve that alias on recovery."""
++"""AUTH03 browser Google unavailability; recover to the passed AUTH02 release."""
+ import argparse
+ import contextlib
+ import datetime as dt
+@@ -17,7 +17,7 @@
+ import urllib.request
+ 
+ ROOT = Path(__file__).resolve().parent
+-SPEC_SHA = "a7c8b1f0cbbb840ec89f42e6cc18d62a91e87f1c7e24b15d9acb1d8446146c95"
++SPEC_SHA = "aed2435048570988db4fb90c4def6e630f71645a2f88a80d44ee104fb514be56"
+ 
+ 
+ class Stop(Exception):
+@@ -158,7 +158,7 @@
+     check_tree(ROOT / "payload", S["candidate_files"])
+     nginx_before = nginx_config()
+     backup = Path("/root/liveuin-closeout-backups") / (
+-        "AUTH02-FRONTEND-" + dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
++        "AUTH03-FRONTEND-" + dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+         + "-" + str(os.getpid()))
+     backup.mkdir(mode=0o700, parents=True)
+     current = Path(S["app_config"])
+@@ -283,7 +283,8 @@
+ def app_activate(state, args):
+     gate(args.gate, args.gate_sha256, "backend_ready_for_app",
+          ["backend_candidate_verified", "pilot_admission_closed",
+-          "logout_revocation_proven", "approved_named_account_ready", "public_live_charging_off"])
++          "logout_revocation_proven", "approved_named_account_ready", "public_live_charging_off",
++          "auth02_frozen", "google_browser_unavailable_approved"])
+     unchanged()
+     staged()
+     need(pointer_is(state["old_public_target"]), "public_pointer_already_changed")
+@@ -344,7 +345,8 @@
+     gate(args.gate, args.gate_sha256, "app_browser_pass",
+          ["wrong_password_refused", "named_account_signed_in", "canonical_profile_reload_passed",
+           "allowed_screen_passed", "allowed_return_preserved", "wrong_role_refused", "both_logout_controls_passed",
+-          "stale_session_refused", "pilot_admission_closed", "public_live_charging_off"])
++          "stale_session_refused", "pilot_admission_closed", "public_live_charging_off",
++          "google_notice_visible", "no_active_google_control"])
+     need(state.get("app_activated") is True, "app_activation_not_recorded")
+     unchanged()
+     staged()

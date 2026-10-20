@@ -1,0 +1,19 @@
+{
+  "evidence_id": "BROWSER-HANDOFF-06",
+  "reported_observation_time": "2026-10-20T15:21:00+08:00",
+  "observation_time_precision": "minute approximate",
+  "observed_by": "coordinating agent via CUA browser",
+  "status": "dummy_browser_form_passed",
+  "helper_sha256": "0feb19cf4f4020f7cb8896528b61b443abb5a791d1235f419494f2f60fb42177",
+  "fixture_sha256": "0c484113158b6cdd255cbce3ef87d19f745a63f1aa8175306544611560a0d0c1",
+  "dummy_code": "000000",
+  "mock_verification_calls": 1,
+  "mock_checkpoint_saves": 1,
+  "real_account_changed": false,
+  "external_api_called": false,
+  "real_parent_verification_proven": false,
+  "real_parent_checkpoint_reported_present_at_0722_utc": false,
+  "screenshot_required_caption": "Dummy-code browser compatibility test only; no real parent verification or production API call.",
+  "screenshot_must_include_diagnostic_banner": true,
+  "production_or_helper_changes_by_this_evidence_step": false
+}

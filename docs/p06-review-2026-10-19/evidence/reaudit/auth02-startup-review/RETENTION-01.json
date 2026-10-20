@@ -1,0 +1,68 @@
+{
+  "status": "startup review in progress; no activation",
+  "at_utc": "2026-10-19T19:11:57.453600+00:00",
+  "readable_full_size_positive_blocks": true,
+  "files": [
+    {
+      "path": "auth02-startup-metadata.json",
+      "bytes": 6709,
+      "sha256": "072f5588d130bd3f894d386dbc2471bbf26e591221c7dabbe8832c41a96994ed"
+    },
+    {
+      "path": "auth02-startup-declarations.json",
+      "bytes": 940634,
+      "sha256": "8a905e5a7c84cef38fa402bb02fee767757df931f90c3a3622b73ab18f63f123"
+    },
+    {
+      "path": "auth02-prestart-source.json",
+      "bytes": 31291,
+      "sha256": "84763f40ff475fd108ad200079ff789ba029135d9a41abf2e64d9b342e4b588c"
+    },
+    {
+      "path": "auth02-prestart-mode-v2.json",
+      "bytes": 15310,
+      "sha256": "2120f3ea47b29fb7febb899aa2dbc035f99bdbcb6d590d88031ff4a723088883"
+    },
+    {
+      "path": "auth02-restart-config-01.json",
+      "bytes": 326,
+      "sha256": "c8cdf8be6808fe9d65b23a407e341888699ae60772fc6ba0faca771d94321175"
+    },
+    {
+      "path": "startup-metadata-readonly.py",
+      "bytes": 2392,
+      "sha256": "2a9c6f37fd6bce01757795e22527f602450adc53a5a5234a1f10b9ff029a5995"
+    },
+    {
+      "path": "startup-declaration-readonly.py",
+      "bytes": 5900,
+      "sha256": "6be2df46455be4c4dbc1d8a8e72957b4f2de9878a4d85f85c78a537cb17df7ab"
+    },
+    {
+      "path": "prestart-mode-readonly-v2.py",
+      "bytes": 4959,
+      "sha256": "219f9a2fb314e64ad85e691c7a3c09c08704c0cb0598bdd2663cc6cfb59ceb7c"
+    },
+    {
+      "path": "STARTUP-REVIEW-01.md",
+      "bytes": 4315,
+      "sha256": "e4cc4ab06f8ad3bf4ddc7e134a87f02995605b76239567d8ed74590be2eb1844"
+    },
+    {
+      "path": "outside-import-scope.json",
+      "bytes": 14298,
+      "sha256": "e5fc90c921511b8fe9255f752a8e7dec713e2c0661530a21ddafbf611d73f2a9"
+    },
+    {
+      "path": "candidate-startup-delta.json",
+      "bytes": 567,
+      "sha256": "ac94ac39c3adeea097d8df12ac4ec8deb4af60922bc8196b9d42924129aa39f0"
+    },
+    {
+      "path": "unit-selected-metadata.json",
+      "bytes": 1261,
+      "sha256": "f59cde568599a86089f8e81fecc914403fec98c8ac85bffb56b6ad5f43e97910"
+    }
+  ],
+  "withdrawn_helper": "prestart-mode-readonly.py 94603... stalled in a lexical regex; interrupted safely; superseded by bounded linear v2; empty output not proof"
+}

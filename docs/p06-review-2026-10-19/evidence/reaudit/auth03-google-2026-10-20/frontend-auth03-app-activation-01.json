@@ -1,0 +1,104 @@
+{
+  "result": {
+    "status": "app_alias_active_browser_proof_required",
+    "app_config_sha256": "2a1a3edcada383615ad0bc082567519315e7788a682bee822e6fd79750676c4d",
+    "public_pointer_changed": false
+  },
+  "events": [
+    {
+      "phase": "activation",
+      "stage": "locked_backend_pins",
+      "status": "entered"
+    },
+    {
+      "phase": "activation",
+      "stage": "locked_backend_pins",
+      "status": "passed"
+    },
+    {
+      "phase": "activation",
+      "stage": "app_activation",
+      "status": "entered"
+    },
+    {
+      "phase": "activation",
+      "stage": "full_nginx_configuration_test",
+      "status": "entered"
+    },
+    {
+      "phase": "activation",
+      "stage": "full_nginx_configuration_test",
+      "status": "passed"
+    },
+    {
+      "phase": "activation",
+      "stage": "add_exact_app_alias",
+      "status": "entered"
+    },
+    {
+      "phase": "activation",
+      "stage": "add_exact_app_alias",
+      "status": "passed"
+    },
+    {
+      "phase": "activation",
+      "stage": "full_nginx_configuration_test",
+      "status": "entered"
+    },
+    {
+      "phase": "activation",
+      "stage": "full_nginx_configuration_test",
+      "status": "passed"
+    },
+    {
+      "phase": "activation",
+      "stage": "nginx_reload",
+      "status": "entered"
+    },
+    {
+      "phase": "activation",
+      "stage": "nginx_reload",
+      "status": "passed"
+    },
+    {
+      "phase": "activation",
+      "stage": "static_entry",
+      "status": "entered"
+    },
+    {
+      "phase": "activation",
+      "stage": "static_entry",
+      "status": "observed",
+      "attempt": 1,
+      "http": 200,
+      "bytes": 2332,
+      "sha256": "d64151e0728796b61d396cb8c38d00f7bd8dc9c563975b42aa5caad86b02e268",
+      "expected_sha256": "62ac4fcabd7e99e942fad05fec241d89e2c0654383f4afe3a83fd09ace1c8b95",
+      "no_store": true,
+      "old_baseline": true
+    },
+    {
+      "phase": "activation",
+      "stage": "static_entry",
+      "status": "observed",
+      "attempt": 2,
+      "http": 200,
+      "bytes": 2332,
+      "sha256": "62ac4fcabd7e99e942fad05fec241d89e2c0654383f4afe3a83fd09ace1c8b95",
+      "expected_sha256": "62ac4fcabd7e99e942fad05fec241d89e2c0654383f4afe3a83fd09ace1c8b95",
+      "no_store": true,
+      "old_baseline": false
+    },
+    {
+      "phase": "activation",
+      "stage": "static_entry",
+      "status": "passed"
+    },
+    {
+      "phase": "activation",
+      "stage": "app_activation",
+      "status": "passed"
+    }
+  ],
+  "no_auth_or_product_completion_claim": true
+}

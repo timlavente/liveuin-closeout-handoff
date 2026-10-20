@@ -1,0 +1,25 @@
+def _require_local_identity_preview(request: Request) -> None:
+    """Raw challenge endpoints are local development previews, never production login.
+
+    Real Ops/Host adapters retain their existing membership-bound service calls.
+    Neither forwarded headers, the request payload nor an unset environment can
+    enable this HTTP preview door.
+    """
+    import ipaddress
+    environments = {
+        str(os.getenv(name) or "").strip().lower()
+        for name in ("LIVEUIN_ENVIRONMENT", "ENVIRONMENT", "LIVEUIN_ENV")
+        if str(os.getenv(name) or "").strip()
+    }
+    allowed_environments = {"dev", "development", "test", "testing", "staging"}
+    allowed = bool(environments) and environments.issubset(allowed_environments)
+    host = str(request.url.hostname or "").lower()
+    client = str(request.client.host if request.client else "")
+    try:
+        local_client = ipaddress.ip_address(client).is_loopback
+    except ValueError:
+        local_client = False
+    if not (allowed and local_client and host in {"localhost", "127.0.0.1", "::1"}):
+        raise HTTPException(status_code=404, detail="not_found", headers={"Cache-Control": "no-store"})
+
+

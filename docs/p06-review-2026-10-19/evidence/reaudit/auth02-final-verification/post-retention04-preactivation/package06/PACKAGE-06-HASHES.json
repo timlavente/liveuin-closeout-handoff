@@ -1,0 +1,14 @@
+{
+  "archive": "/private/tmp/liveuin-p06-auth02-20261020/backend-06/deployment/auth02-9095-reviewed-06.tar",
+  "archive_sha256": "7f98821882455a05266f24957e15040f8492a2e9b25761248abc5953582180ca",
+  "archive_bytes": 2498560,
+  "manifest_sha256": "58cd328054a8dff231370a5ea0e73129db25722d887f891afe1637ba67a89c2e",
+  "staging_helper": "/private/tmp/liveuin-p06-auth02-20261020/backend-06/deployment/stage-reviewed-package-06.py",
+  "staging_helper_sha256": "67d98bfb3e2e2fe03605b44552f6edc0b1f78afcb12c8b0dfc66423c89a33dce",
+  "probe_sha256": "5ab6bbb50a5c3125678fa75c0d0236ce7e8d36645e130ddafddffbdecd38560d",
+  "packaged_file_count": 43,
+  "changed_payload_paths_vs05": [
+    "deployment/prestart-fastpath-probe.py"
+  ],
+  "no_production_changes_by_author": true
+}

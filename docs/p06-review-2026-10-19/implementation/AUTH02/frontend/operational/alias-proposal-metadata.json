@@ -1,0 +1,10 @@
+{
+  "candidate_manifest_sha256": "ab0eabe75d33b8218792eaa247ea2da6be1bd28d7776125d6928850a7bda9bcf",
+  "release_id": "auth02-2c3dd7ac316e7cbe",
+  "baseline_app_sha256": "dd2a557bd58adc7dc2bb823fa083f748a608039d9c7077d517e1283c9bf4013b",
+  "proposed_app_sha256": "d6e7afe4f451639ef28499774ff939bec9ddcb048ffaa4548e42c23027ad8637",
+  "diff_sha256": "e482f347eb8d188b5a22607df43946cd8d4ce1d79e81fa5d96abff6b19dbe4d8",
+  "app_html_sha256": "431419843f2f8696ef55426613a6e2aa8848e0fe6d613244ca9c36ec547716a8",
+  "alias_file": "/var/www/liveuin-auth02-releases/auth02-2c3dd7ac316e7cbe/app-entry.html",
+  "status": "Proposed local diff only; not uploaded or nginx-tested or activated"
+}

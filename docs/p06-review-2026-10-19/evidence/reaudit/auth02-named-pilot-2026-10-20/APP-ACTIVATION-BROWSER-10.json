@@ -1,0 +1,35 @@
+{
+  "evidence_id": "APP-ACTIVATION-BROWSER-10",
+  "observation_date_sgt": "2026-10-20",
+  "activation_status": "app_alias_active_browser_proof_required",
+  "app_config_sha256": "4a5f86ae39b5c8c25525a442674f58a4a55c78a9fa160c7567f3ede6ad41601d",
+  "public_pointer_changed": false,
+  "first_response": {
+    "http": 200,
+    "bytes": 2284,
+    "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e",
+    "no_store": false,
+    "exact_old_baseline": true
+  },
+  "second_response": {
+    "http": 200,
+    "bytes": 2332,
+    "sha256": "431419843f2f8696ef55426613a6e2aa8848e0fe6d613244ca9c36ec547716a8",
+    "no_store": true,
+    "exact_candidate": true
+  },
+  "actual_browser_reported_by": "coordinating agent",
+  "wrong_password_refused": true,
+  "correct_password_destination": "/tenant/account",
+  "reload_selected_profile": "Tenant",
+  "reload_profile_count": 1,
+  "localpro_route_refused": true,
+  "misleading_tenant_bottom_navigation": ["EARN", "TASKS", "PAYOUTS"],
+  "navigation_gap_assigned_to_existing_row": "AUTH06",
+  "navigation_fix_performed": false,
+  "both_browser_logout_controls_proven": false,
+  "family_case_completion_proven": false,
+  "public_frontend_activation_claimed": false,
+  "auth02_passed": false,
+  "public_access_opened": false
+}

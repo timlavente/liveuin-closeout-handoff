@@ -1,0 +1,41 @@
+{
+  "observed_at_utc": "2026-10-19T16:15:52.300451+00:00",
+  "source": "/private/tmp/liveuin-p06-audit-20261019/reaudit/auth-audit/nginx-auth-routing.json",
+  "routes": [
+    {
+      "file": "/etc/nginx/conf.d/app.liveuin.com.conf",
+      "sha256": "dd2a557bd58adc7dc2bb823fa083f748a608039d9c7077d517e1283c9bf4013b",
+      "line": 133,
+      "location": "location ^~ /api/core/identity/ {",
+      "next": {
+        "line": 134,
+        "directive": "proxy_pass http://127.0.0.1:9095;"
+      }
+    },
+    {
+      "file": "/etc/nginx/conf.d/host.liveuin.com.conf",
+      "sha256": "a79914852204b7507eaf88885ca882a09296701ce6ff31763d386964bbceba77",
+      "line": 119,
+      "location": "location ^~ /api/core/identity/ {",
+      "next": {
+        "line": 120,
+        "directive": "proxy_pass http://127.0.0.1:9095;"
+      }
+    },
+    {
+      "file": "/etc/nginx/conf.d/ops.liveuin.com.conf",
+      "sha256": "6bc41b661ff66ea3918194171dd1f3b9ab7dcf0f4cb93d7a1d272bd9979bc708",
+      "line": 588,
+      "location": "location ^~ /api/core/identity/ {",
+      "next": {
+        "line": 589,
+        "directive": "proxy_pass http://127.0.0.1:9095;"
+      }
+    }
+  ],
+  "operations": [
+    "POST /api/core/identity/login/challenges",
+    "POST /api/core/identity/login/challenges/{challenge_id}/verify"
+  ],
+  "proof_limit": "Configuration/source routing evidence, not live exploit or new challenge probe."
+}

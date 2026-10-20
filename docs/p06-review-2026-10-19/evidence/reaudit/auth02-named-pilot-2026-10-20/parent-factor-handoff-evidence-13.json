@@ -1,0 +1,18 @@
+{
+  "recorded_utc": "2026-10-20T05:32:16.759986+00:00",
+  "mode": "pending_owner_factor_handoff",
+  "named_synthetic_account": "timlavente+liveuin-test-parent@gmail.com",
+  "registration_http": 201,
+  "verification_expiry_iso": "2026-10-20T05:41:34Z",
+  "connected_mail_delivery_observed": true,
+  "connector_redacts_authentication_code": true,
+  "code_retrieved": false,
+  "local_form_url": "http://127.0.0.1:56383/",
+  "local_form_source_sha256": "cb75e2e40f0ec3647187bf3ad905a7ce26677b90af235c1469403faa790bd157",
+  "local_form_http": 200,
+  "no_store": true,
+  "cross_origin_post_refused": 403,
+  "browser_auth_proof_passed": false,
+  "public_activation": false,
+  "imported_tenancies_used_or_emailed": false
+}

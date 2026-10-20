@@ -1,0 +1,44 @@
+--- deployed/public_home_gateway.py
++++ candidate/public_home_gateway.py
+@@ -5,6 +5,7 @@
+ import json
+ import os
+ import time
++from fastapi import Request
+ from datetime import datetime, timezone
+ from pathlib import Path
+ from typing import Any, Dict, List, Optional, Set
+@@ -241,13 +242,13 @@
+         from . import public_pass_gateway
+         from .core_compliance_api import router as core_compliance_router
+         from .core_marketplace_api import public_router as public_marketplace_router
+-        from .home_api import router as public_home_router
++        from .home_api import router as public_home_router, install_r01_private_guard, r01_private_context
+     except ImportError:  # pragma: no cover - supports direct app-folder deployment.
+         import public_home_service as svc
+         import public_pass_gateway
+         from core_compliance_api import router as core_compliance_router
+         from core_marketplace_api import public_router as public_marketplace_router
+-        from home_api import router as public_home_router
++        from home_api import router as public_home_router, install_r01_private_guard, r01_private_context
+ 
+     app = FastAPI(
+         title="LiveUin Public Home API",
+@@ -261,6 +262,7 @@
+         allow_methods=["GET", "POST", "OPTIONS"],
+         allow_headers=["Content-Type", "X-Request-ID", "X-LiveUin-Api-Key", "X-LiveUIN-API-Key"],
+     )
++    install_r01_private_guard(app)
+     app.include_router(public_home_router)
+     app.include_router(public_marketplace_router)
+ 
+@@ -345,7 +347,8 @@
+         }
+ 
+     @app.get("/api/core/ops/liveuintest-rollout-status")
+-    def liveuintest_rollout_status() -> Dict[str, Any]:
++    def liveuintest_rollout_status(request: Request) -> Dict[str, Any]:
++        r01_private_context(request)
+         return page_route_rollout_status()
+ 
+     return app

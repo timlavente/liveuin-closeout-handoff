@@ -1,0 +1,147 @@
+{
+  "ok": true,
+  "scope": "Local pure guard-function and BPF-control-flow tests only; no Linux filter installed, no library/product import or network call",
+  "helper_sha256": "7df0f745dd874b19b30f535f01d46c4db4771248be9eac1cab504eabcf59d21a",
+  "tests": [
+    {
+      "test": "deny_socket.connect_0",
+      "passed": true
+    },
+    {
+      "test": "deny_sqlite3.connect_1",
+      "passed": true
+    },
+    {
+      "test": "deny_subprocess.Popen_2",
+      "passed": true
+    },
+    {
+      "test": "deny_os.remove_3",
+      "passed": true
+    },
+    {
+      "test": "deny_import_4",
+      "passed": true
+    },
+    {
+      "test": "deny_import_5",
+      "passed": true
+    },
+    {
+      "test": "deny_open_6",
+      "passed": true
+    },
+    {
+      "test": "deny_open_7",
+      "passed": true
+    },
+    {
+      "test": "deny_open_8",
+      "passed": true
+    },
+    {
+      "test": "deny_open_9",
+      "passed": true
+    },
+    {
+      "test": "allow_library_metadata_10",
+      "passed": true
+    },
+    {
+      "test": "allow_library_metadata_11",
+      "passed": true
+    },
+    {
+      "test": "allow_library_metadata_12",
+      "passed": true
+    },
+    {
+      "test": "x86_64_deny_socket_syscall_41",
+      "passed": true
+    },
+    {
+      "test": "x86_64_deny_socket_syscall_42",
+      "passed": true
+    },
+    {
+      "test": "x86_64_deny_socket_syscall_53",
+      "passed": true
+    },
+    {
+      "test": "x86_64_deny_socket_syscall_288",
+      "passed": true
+    },
+    {
+      "test": "x86_64_deny_socket_syscall_299",
+      "passed": true
+    },
+    {
+      "test": "x86_64_deny_socket_syscall_307",
+      "passed": true
+    },
+    {
+      "test": "x86_64_allow_nonnetwork_syscall_0",
+      "passed": true
+    },
+    {
+      "test": "x86_64_allow_nonnetwork_syscall_1",
+      "passed": true
+    },
+    {
+      "test": "x86_64_allow_nonnetwork_syscall_9",
+      "passed": true
+    },
+    {
+      "test": "x86_64_allow_nonnetwork_syscall_257",
+      "passed": true
+    },
+    {
+      "test": "x86_64_reject_wrong_arch",
+      "passed": true
+    },
+    {
+      "test": "aarch64_deny_socket_syscall_198",
+      "passed": true
+    },
+    {
+      "test": "aarch64_deny_socket_syscall_199",
+      "passed": true
+    },
+    {
+      "test": "aarch64_deny_socket_syscall_203",
+      "passed": true
+    },
+    {
+      "test": "aarch64_deny_socket_syscall_242",
+      "passed": true
+    },
+    {
+      "test": "aarch64_deny_socket_syscall_243",
+      "passed": true
+    },
+    {
+      "test": "aarch64_deny_socket_syscall_269",
+      "passed": true
+    },
+    {
+      "test": "aarch64_allow_nonnetwork_syscall_63",
+      "passed": true
+    },
+    {
+      "test": "aarch64_allow_nonnetwork_syscall_64",
+      "passed": true
+    },
+    {
+      "test": "aarch64_allow_nonnetwork_syscall_222",
+      "passed": true
+    },
+    {
+      "test": "aarch64_allow_nonnetwork_syscall_56",
+      "passed": true
+    },
+    {
+      "test": "aarch64_reject_wrong_arch",
+      "passed": true
+    }
+  ]
+}

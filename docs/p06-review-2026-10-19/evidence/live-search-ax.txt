@@ -1,0 +1,181 @@
+Browser tab: 1, Title: "Stay search | LiveUIN", URL: "https://liveuin.com/search".
+1 AXWebArea Stay search | LiveUIN, URL: liveuin.com/search
+	2 container root
+		3 container Notifications (F8)
+			4 content list
+		5 container Notifications alt+T
+		6 container
+			7 link Description: LiveUIN home, Value: liveuin.com/
+			8 container
+				9 link Description: Stay, Value: liveuin.com/stay
+				10 link Description: Grow, Value: liveuin.com/grow
+				11 link Description: Earn, Value: liveuin.com/earn
+				12 link Description: Explore, Value: liveuin.com/explore
+				13 link Description: How LiveUIN Works, Value: liveuin.com/how-it-works
+				14 link Description: Pricing, Value: liveuin.com/pricing
+				15 link Description: Trust, Value: liveuin.com/trust
+				16 link Description: Resources, Value: liveuin.com/guides
+			17 link Description: Switch language: 中文, Value: liveuin.com/cn/search
+			18 link Description: Log in, Value: liveuin.com/login
+			19 link Description: Get Started, Value: liveuin.com/start
+			20 text STAY SEARCH
+			21 heading Find a place that fits your move., Value: 1
+				22 text Find a place that fits your move.
+			23 text Compare the homes shown on LiveUIN by location, dates, terms, and the information available before you decide what to do next.
+			24 link Description: Back to Stay, Value: liveuin.com/stay
+			25 link Description: Browse cities, Value: liveuin.com/cities
+		26 container
+			27 text Example listings only. Availability, prices, ratings, and terms can change; check the details shown for the specific home before acting.
+			28 heading Homes to compare, Value: 2
+				29 text Homes to compare
+			30 text Start with the information available, then continue to the next Stay step when ready.
+			31 link Description: Explore Stay context →, Value: liveuin.com/explore
+			32 container
+				33 image Cozy Studio in Orchard
+				34 text VERIFIED OPERATOR
+				35 checkbox Description: Save Cozy Studio in Orchard, Value: 0
+					36 image
+			37 link Description: Cozy Studio in Orchard, Value: liveuin.com/stays/cozy-studio-orchard
+			38 container
+				39 text Orchard ,  Singapore
+			40 text 1  bed 1  bath 2  guests
+			41 text $98 / night
+			42 text Serviced apartment · 7+ nights
+			43 image
+			44 text 4.9  ( 128 )
+			45 link Description: View details, Value: liveuin.com/stays/cozy-studio-orchard
+			46 container
+				47 image Modern Co-living Room
+				48 text FAST BOOK
+				49 checkbox Description: Save Modern Co-living Room, Value: 0
+					50 image
+			51 link Description: Modern Co-living Room, Value: liveuin.com/stays/modern-coliving-bugis
+			52 container
+				53 text Bugis ,  Singapore
+			54 text 1  bed 1  bath 1  guests
+			55 text S$1,450 / month
+			56 text Room tenancy · 3+ months
+			57 image
+			58 text 4.8  ( 96 )
+			59 link Description: View details, Value: liveuin.com/stays/modern-coliving-bugis
+			60 container
+				61 image Bright Room with Balcony
+				62 text NEW
+				63 checkbox Description: Save Bright Room with Balcony, Value: 0
+					64 image
+			65 link Description: Bright Room with Balcony, Value: liveuin.com/stays/bright-room-balcony-tanjong-pagar
+			66 container
+				67 text Tanjong Pagar ,  Singapore
+			68 text 1  bed 1  bath 2  guests
+			69 text S$1,800 / month
+			70 text Room tenancy · 3+ months
+			71 image
+			72 text 4.7  ( 74 )
+			73 link Description: View details, Value: liveuin.com/stays/bright-room-balcony-tanjong-pagar
+			74 container
+				75 image Budget Bedspace
+				76 text POPULAR
+				77 checkbox Description: Save Budget Bedspace, Value: 0
+					78 image
+			79 link Description: Budget Bedspace, Value: liveuin.com/stays/budget-bedspace-geylang
+			80 container
+				81 text Geylang ,  Singapore
+			82 text 1  bed 1  bath 1  guests
+			83 text S$650 / month
+			84 text Bedspace tenancy · 3+ months
+			85 image
+			86 text 4.6  ( 203 )
+			87 link Description: View details, Value: liveuin.com/stays/budget-bedspace-geylang
+			88 container
+				89 image Waterfront Apartment
+				90 text VERIFIED LANDLORD
+				91 checkbox Description: Save Waterfront Apartment, Value: 0
+					92 image
+			93 link Description: Waterfront Apartment, Value: liveuin.com/stays/waterfront-apartment-marina-bay
+			94 container
+				95 text Marina Bay ,  Singapore
+			96 text 2  bed 2  bath 4  guests
+			97 text S$6,200 / month
+			98 text Whole-home tenancy · 12 months typical
+			99 image
+			100 text 4.9  ( 156 )
+			101 link Description: View details, Value: liveuin.com/stays/waterfront-apartment-marina-bay
+			102 container
+				103 image Studio near Universiti Malaya
+				104 text STUDENT PICK
+				105 checkbox Description: Save Studio near Universiti Malaya, Value: 0
+					106 image
+			107 link Description: Studio near Universiti Malaya, Value: liveuin.com/stays/studio-near-universiti-malaya
+			108 container
+				109 text Petaling Jaya ,  Kuala Lumpur
+			110 text 1  bed 1  bath 2  guests
+			111 text RM2,500 / month
+			112 text Long-term tenancy
+			113 image
+			114 text 4.8  ( 88 )
+			115 link Description: View details, Value: liveuin.com/stays/studio-near-universiti-malaya
+		116 container
+			117 image LiveUIN — Live smarter. Move freely.
+			118 text Live smarter. Move freely. LiveUIN connects Stay, Grow, and Earn through one clear platform, with Trust & Safety guidance before the next step.
+			119 link Description: Community, Value: liveuin.com/community
+			120 link Description: Partner network, Value: liveuin.com/partner
+			121 link Description: Video guides, Value: liveuin.com/guides
+			122 link Description: Support, Value: liveuin.com/help
+			123 link Description: News, Value: liveuin.com/blog
+			124 text Stay
+			125 content list
+				126 link Description: Stay with LiveUIN, Value: liveuin.com/stay
+				127 link Description: Search Homes, Value: liveuin.com/search
+				128 link Description: Stay support, Value: liveuin.com/help/stay
+				129 link Description: How It Works, Value: liveuin.com/how-it-works
+				130 link Description: Safety & Trust, Value: liveuin.com/trust
+				131 link Description: Support Center, Value: liveuin.com/help
+			132 text Grow
+			133 content list
+				134 link Description: Grow with LiveUIN, Value: liveuin.com/grow
+				135 link Description: Host, Value: liveuin.com/host
+				136 link Description: Operate, Value: liveuin.com/operate
+				137 link Description: Partner, Value: liveuin.com/partner
+				138 link Description: Connect, Value: liveuin.com/connect
+				139 link Description: Campus, Value: liveuin.com/campus
+				140 link Description: Enterprise, Value: liveuin.com/enterprise
+				141 link Description: Pricing, Value: liveuin.com/pricing
+			142 text Earn
+			143 content list
+				144 link Description: Earn with LiveUIN, Value: liveuin.com/earn
+				145 link Description: Eligibility, Value: liveuin.com/start?product=earn
+				146 link Description: Earn support, Value: liveuin.com/help/earn
+				147 link Description: Trust, Value: liveuin.com/trust
+				148 link Description: Help, Value: liveuin.com/help
+			149 text Explore
+			150 content list
+				151 link Description: Cities, Value: liveuin.com/explore
+				152 link Description: Cities Index, Value: liveuin.com/cities
+				153 link Description: Deals, Value: liveuin.com/deals
+				154 link Description: Services, Value: liveuin.com/services
+				155 link Description: Promotions, Value: liveuin.com/promotions
+				156 link Description: Community, Value: liveuin.com/community
+				157 link Description: Blog, Value: liveuin.com/blog
+				158 link Description: How It Works, Value: liveuin.com/how-it-works
+			159 text Company
+			160 content list
+				161 link Description: About LiveUIN, Value: liveuin.com/about
+				162 link Description: Careers, Value: liveuin.com/careers
+				163 link Description: News & Media, Value: liveuin.com/newsroom
+				164 link Description: Contact Us, Value: liveuin.com/contact
+				165 link Description: Investor Relations, Value: liveuin.com/investors
+			166 text Resources
+			167 content list
+				168 link Description: Status, Value: liveuin.com/status
+				169 link Description: Developers, Value: liveuin.com/developers
+				170 link Description: Help Center, Value: liveuin.com/help
+				171 link Description: Legal, Value: liveuin.com/legal
+			172 text © 2026 LiveUIN. All rights reserved.
+			173 link Description: Privacy notice status, Value: liveuin.com/legal/privacy
+			174 link Description: Terms status, Value: liveuin.com/legal/terms
+			175 link Description: Data-protection status, Value: liveuin.com/legal/data-protection
+			176 link Description: Cookie notice status, Value: liveuin.com/legal/cookies
+			177 link Description: Help, Value: liveuin.com/help
+			178 link Description: Legal, Value: liveuin.com/legal
+
+The focused UI element is 1 AXWebArea Stay search | LiveUIN, URL: liveuin.com/search

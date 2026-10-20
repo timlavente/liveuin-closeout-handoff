@@ -1,0 +1,14 @@
+{
+  "observed_at_sgt": "2026-10-19T23:17:07+08:00",
+  "method": "GET",
+  "url": "https://api.liveuin.com/api/core/admin/control-center",
+  "status": 0,
+  "effective_url": "https://api.liveuin.com/api/core/admin/control-center",
+  "tls_verify_result": "0",
+  "redirects": "0",
+  "curl_exit": 6,
+  "error": "curl: (6) Could not resolve host: api.liveuin.com",
+  "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_bytes": 0,
+  "body_saved": true
+}

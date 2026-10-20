@@ -1,0 +1,11 @@
+# Retention06 — AUTH02 older Identity API component proven
+
+Retained 2026-10-19T20:27:39.479147+00:00. The one-file9095 component is deployed as candidate a0834b412c06263d1ca593de67cc2514471cf4fdd7a83c860608be998fc65fcb, PID3427360. This append retains the exact final08 package manifest-listed source/helper/test files, version receipts, safe activation/startup/public-denial/payment-lock results, sanitized canonical owner proof, owner read-only helper and local safety tests, and the inspected fresh owner screenshot. Package files preserve their original preactivation status text; the later runtime and owner results establish the component result without rewriting the package.
+
+All eight public denials passed. Existing owner-session reload and fresh normal delivered-code sign-in passed. The owner kept ops/liveuin membership and the same19 scopes; no permission was granted. The screenshot shows the sample Ops Command shell and broadcast placeholder. It is authentication/session evidence only, not a completed staff desk, real resident population or command execution. No displayed action was submitted.
+
+The failed07 attempt and subsequent closed recovery remain retained in RETENTION05. They are not erased by the08 result. Root reported the cooperative deployment lock released after proof. AUTH02 remains open for cohort/member deployment, named test accounts and production logout; this does not pass R01, all roles, P6 or publication. Public live charging stays off and imported tenancies were not used or emailed.
+
+No private full configuration/probe result, credential value/hash, raw mail, real challenge identifier, customer record, fixture database, cache or tar archive is retained. Generic synthetic diagnostic markers in the exact denial test are not real challenge identifiers. Source and package digests refer to code/files, not credential values. Every copied source and durable file is readable with positive local blocks and matching SHA256. Earlier retention manifests are unchanged.
+
+The ecosystem boundary remains LiveUIN Core/Identity/Trust/Ops. Other mobile-task resident deployments are recorded inputs and preserved; they are not work delivered by this component. No sibling ownership or public-admission switch changed.

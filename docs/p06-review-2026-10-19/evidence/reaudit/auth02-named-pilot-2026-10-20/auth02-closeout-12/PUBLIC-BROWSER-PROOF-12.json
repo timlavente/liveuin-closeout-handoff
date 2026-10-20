@@ -1,0 +1,37 @@
+{
+  "status": "actual_public_browser_handoff_passed",
+  "date_singapore": "2026-10-20",
+  "observer": "coordinating agent through normal in-app browser; screenshot contents independently reviewed by evidence-retention agent",
+  "apex": [
+    "Normal reload https://liveuin.com/",
+    "Header Log in navigates to https://app.liveuin.com/auth/sign-in",
+    "Named synthetic parent's existing password accepted",
+    "Default /tenant/home remains NEEDS REVIEW because no active case",
+    "Known /tenant/account opens Tenant with one profile",
+    "Full account reload retains Tenant with one profile",
+    "Account profile-menu Sign out returns to Welcome"
+  ],
+  "www": [
+    "Normal navigation https://www.liveuin.com/ loads homepage",
+    "Header Log in navigates to App sign-in form"
+  ],
+  "after_logout": "Reopening App /tenant/account is refused to Welcome with validated return destination",
+  "public_browser_bypassed_edge": false,
+  "extra_otp_requested": false,
+  "private_browser_tokens_read": false,
+  "final_cleanup_snapshot": {
+    "observed_at_singapore": "2026-10-20T16:46:49.950453+08:00",
+    "canonical_and_refresh_each": {
+      "total": 7,
+      "active": 0,
+      "revoked": 7
+    },
+    "scope": "cleanup confirmation only, not a new standalone positive-before/after logout proof"
+  },
+  "server_revocation_evidence": "Earlier actual API stale-session/refresh denials and both browser-control positive canonical counts; same unchanged auth/session/logout code",
+  "family_case_proven": false,
+  "google_proven": false,
+  "all_named_roles_proven": false,
+  "p6_complete": false,
+  "public_opening": false
+}

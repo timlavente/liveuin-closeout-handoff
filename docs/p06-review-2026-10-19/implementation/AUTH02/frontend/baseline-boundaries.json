@@ -1,0 +1,207 @@
+{
+  "observed_at_utc": "2026-10-19T16:44:58.894Z",
+  "mode": "read_only_AST_inventory_no_candidate",
+  "files": [
+    {
+      "file": "index-DPZwxwE9.js",
+      "bytes": 857268,
+      "sha256": "2db8bfcb0aeecd9a975dde8192ca612f0d3f056d6c70e04173f5b4d27f4102fa",
+      "spans": [
+        {
+          "label": "mk",
+          "type": "VariableDeclarator",
+          "utf16_start": 153803,
+          "utf16_end": 153830,
+          "byte_start": 153803,
+          "byte_end": 153830,
+          "sha256": "f95a1db34f8a4bbfb6fcd2b5c3b286af7e2fcf415de41a46be910e2514cc9d61",
+          "source": "mk=function(e){return\"/\"+e}"
+        },
+        {
+          "label": "io",
+          "type": "FunctionDeclaration",
+          "utf16_start": 615541,
+          "utf16_end": 615596,
+          "byte_start": 677416,
+          "byte_end": 677471,
+          "sha256": "e6cb3c1d40e5c1f6665da713fadd20c05a6a8a37cfa6e6115ae9f84f2550a9d5",
+          "source": "function io(){Wt=null,bx(null);for(const e of N1)T1(e)}"
+        },
+        {
+          "label": "_x",
+          "type": "FunctionDeclaration",
+          "utf16_start": 615596,
+          "utf16_end": 615993,
+          "byte_start": 677471,
+          "byte_end": 677868,
+          "sha256": "a10bab13771daa011acf091393be59a38f775907186062d66ac7c554fa9c13a3",
+          "source": "function _x(e){const t=String(e.sessionId||\"\").trim(),n=Object.fromEntries(Object.entries(e.sessionHeaders||{}).filter(s=>!!(s[0]&&s[1]))),r=Number(e.expiresAt||0),o=String(e.credentialKind||\"liveuin_session\").trim()||\"liveuin_session\",i={...n,\"X-LiveUIN-Session-Id\":t};return!t||!Object.keys(i).length?(io(),null):(Wt={sessionId:t,sessionHeaders:i,expiresAt:r,credentialKind:o},bx(Wt),xx(Wt),Wt)}"
+        },
+        {
+          "label": "ha",
+          "type": "FunctionDeclaration",
+          "utf16_start": 616054,
+          "utf16_end": 616125,
+          "byte_start": 677929,
+          "byte_end": 678000,
+          "sha256": "5e772cf3ed3f697e7920f67a86aa81f321cddf2bfb46d5a937a98b65947c868d",
+          "source": "function ha(){var e;return((e=Sx())==null?void 0:e.sessionHeaders)||{}}"
+        },
+        {
+          "label": "bT",
+          "type": "FunctionDeclaration",
+          "utf16_start": 636288,
+          "utf16_end": 636818,
+          "byte_start": 698183,
+          "byte_end": 698713,
+          "sha256": "55ef858eac15130cc9bb3188e86897d6584137b15628ef1da1a6183405fbf546",
+          "source": "function bT(e){const t=$i(e.role);return e.authRequired||e.sessionState===\"auth_required\"||t!==\"tenant\"||!e.workspaceId?[]:[{profileKey:\"tenant\",label:Lx(\"tenant\"),workspaces:[{profileKey:\"tenant\",workspaceId:e.workspaceId,workspaceLabel:e.workspaceId,workspaceType:\"tenant_workspace\",entitlementStatus:e.sessionState===\"preview\"?\"authorized\":\"active\",allowedActions:e.scopes,defaultRoute:\"/tenant/home\",expiresAt:\"\",isDefault:!0}],defaultWorkspaceId:e.workspaceId,defaultRoute:\"/tenant/home\",source:\"tenant_bootstrap_fallback\"}]}"
+        },
+        {
+          "label": "hp",
+          "type": "FunctionDeclaration",
+          "utf16_start": 637500,
+          "utf16_end": 637861,
+          "byte_start": 699395,
+          "byte_end": 699756,
+          "sha256": "b4c7bd1959b8fd8c7e490e35921f9f85f5354e9e4b91c11c3d633f0df4083e62",
+          "source": "function hp(e){var o;const t=Array.isArray(e.entitlements)?e.entitlements.filter(i=>!!i&&typeof i==\"object\"):[],n=t.length?wT(t):bT(e.bootstrap),r=xT(n,e.requestedSelection,e.rememberedSelection);return{profiles:n,activeProfile:r.activeProfile,activeWorkspace:r.activeWorkspace,activeSelection:r.activeSelection,source:((o=n[0])==null?void 0:o.source)||\"none\"}}"
+        },
+        {
+          "label": "qx",
+          "type": "FunctionDeclaration",
+          "utf16_start": 693400,
+          "utf16_end": 695543,
+          "byte_start": 755299,
+          "byte_end": 757442,
+          "sha256": "7941263c02f919d50eb578770896f5b84ba1d0fab224105db5c812dba907a36d",
+          "source": "async function qx(){try{if(typeof fetch!=\"function\")return Me;Je()&&await Ix();const e=await et(\"/api/core/identity/session/resolve\",{method:\"POST\",body:JSON.stringify({})}),t=M(e.actor),n=py(t.display_name,t.account_label,t.name,t.actor_id)||(Ke()?Me.actorName:\"Resident member\"),r=String(t.actor_id||\"\"),o=String(t.role||(Ke()?Me.role:\"tenant\")),i=ve(t.scopes||e.scopes).map(w=>String(w)).filter(Boolean),s=M(e.access),l=ve(s.case_ids).map(w=>String(w)).filter(Boolean),c=ve(e.profile_entitlements||s.profile_entitlements||s.authorized_profiles||e.authorized_profiles).map(w=>M(w)),u=M(e.identity_session),h=!!u.resolved,p=!!(u.verified||u.credential_verified),m=String(u.credential_kind||\"none\"),_=h&&(p||m===\"upstream_access_context\")?\"resolved\":Ke()?\"preview\":\"auth_required\";return{accountId:String(t.account_id||t.person_id||t.actor_id||(_===\"preview\"?Me.accountId:\"\")),accountLabel:py(t.account_label,t.display_name,t.name,t.actor_id)||(_===\"preview\"?Me.accountLabel:\"LiveUIN member\"),workspaceId:String(e.workspace_id||Me.workspaceId),actorId:r||(_===\"preview\"?Me.actorId:\"\"),actorName:n||(_===\"preview\"?Me.actorName:\"Resident member\"),role:o,scopes:i.length?i:_===\"preview\"?Me.scopes:[],sourceFamily:String(e.source_family||Me.sourceFamily),countryCode:String(s.country_code||Me.countryCode),locale:String(s.locale||Me.locale),channel:String(s.channel||Me.channel),activeCaseId:String(s.active_case_id||l[0]||(_===\"preview\"?Me.activeCaseId:\"\")),caseIds:l.length?l:_===\"preview\"?Me.caseIds:[],sessionState:_,identityResolved:h,identityVerified:p,credentialKind:m,previewMode:_===\"preview\",authRequired:_===\"auth_required\",reasonCode:String(u.credential_validation||e.status||(_===\"preview\"?\"preview_mode\":\"identity_session_required\")),defaultProfileKey:String(s.default_profile_key||s.active_profile_key||t.active_profile_key||(_===\"preview\"?Me.defaultProfileKey:\"\")),defaultWorkspaceId:String(s.default_workspace_id||s.active_workspace_id||e.workspace_id||(_===\"preview\"?Me.defaultWorkspaceId:\"\")),profileEntitlements:c.length?c:_===\"preview\"?Me.profileEntitlements:[]}}catch(e){return Ke()?Me:XT(Fx(e,\"identity_session_required\"))}}"
+        },
+        {
+          "label": "Tj",
+          "type": "FunctionDeclaration",
+          "utf16_start": 725388,
+          "utf16_end": 732797,
+          "byte_start": 787292,
+          "byte_end": 794701,
+          "sha256": "2e41834066ab894b14c7476131cdaca557cea75c745f80a5f926e4fa02ff86bd",
+          "source": "function Tj({children:e,surface:t}){var va,dt,Hn,ga,wa;const n=yc(),r=ut(),o=Vi(),i=t===\"pass\"?\"pass\":\"holder\",s=Ej(r.pathname,r.search),[l,c]=d.useState(null),[u,h]=d.useState(\"idle\"),[p,m]=d.useState(\"\"),[f,_]=d.useState(\"\"),[w,x]=d.useState(\"\"),[g,y]=d.useState(()=>Ij()),b=Lr({queryKey:[\"resident-session-bootstrap\"],queryFn:qx,staleTime:6e4}),S=!!b.data,k=b.data||{accountId:\"\",accountLabel:\"Resident member\",workspaceId:$e,actorId:\"\",actorName:\"Resident member\",role:\"tenant\",scopes:[],sourceFamily:\"liveuin_core\",countryCode:\"SG\",locale:\"en-SG\",channel:\"\",activeCaseId:\"\",caseIds:[],sessionState:\"auth_required\",identityResolved:!1,identityVerified:!1,credentialKind:\"none\",previewMode:!1,authRequired:!1,reasonCode:\"bootstrap_loading\",defaultProfileKey:\"\",defaultWorkspaceId:\"\",profileEntitlements:[]},E=Lu({pathname:r.pathname,search:r.search,fallbackWorkspaceId:k.defaultWorkspaceId||k.workspaceId||$e}),L=hp({bootstrap:k,entitlements:k.profileEntitlements,requestedSelection:E,rememberedSelection:g}),P=((va=L.activeProfile)==null?void 0:va.profileKey)||$i(k.role)||\"tenant\",R=((dt=L.activeWorkspace)==null?void 0:dt.workspaceId)||k.defaultWorkspaceId||k.workspaceId||$e,T=k.workspaceId||R||$e,z=S&&(k.authRequired||!!w||P!==\"tenant\"),O=S&&P===\"tenant\"?s.caseId||(!s.bookingId&&!s.stayId?k.activeCaseId||(k.previewMode?Ze:\"\"):\"\"):\"\",W=Lr({queryKey:[\"resident-runtime\",T,O,s.bookingId,s.stayId,i],queryFn:()=>ij({workspaceId:T,viewerScope:i,caseId:O,bookingId:s.bookingId,stayId:s.stayId}),enabled:!z&&S&&!!(O||s.bookingId||s.stayId),staleTime:3e4}),U=W.data||Nu(R,i,s),V=P===\"tenant\"?U.caseId||(S&&k.previewMode&&!s.bookingId&&!s.stayId?s.caseId||k.activeCaseId||Ze:\"\"):\"\",G=U.workspaceId||T,Z=Lr({queryKey:[\"resident-case\",G,V],queryFn:()=>oj(V,G),enabled:!z&&S&&!!V,staleTime:6e4}),N=Lr({queryKey:[\"resident-finance-runtime\",G,V],queryFn:()=>sj(V,G),enabled:!z&&S&&!!V,staleTime:3e4}),j=Lr({queryKey:[\"resident-payments\",G,V],queryFn:()=>aj(V,G),enabled:!z&&S&&!!V,staleTime:3e4}),$=Lr({queryKey:[\"resident-pass\",G,V],queryFn:()=>lj(V,G),enabled:!z&&S&&t===\"pass\"&&!!V,staleTime:3e4}),te=[w,Ko(b.error)?\"identity_session_required\":\"\",Ko(W.error)?\"identity_session_required\":\"\",Ko(Z.error)?\"identity_session_required\":\"\",Ko(N.error)?\"identity_session_required\":\"\",Ko(j.error)?\"identity_session_required\":\"\",Ko($.error)?\"identity_session_required\":\"\"].find(Boolean)||\"\",F=te&&!k.previewMode?{...k,activeCaseId:\"\",caseIds:[],sessionState:\"auth_required\",identityVerified:!1,previewMode:!1,authRequired:!0,reasonCode:te}:k,oe=Lu({pathname:r.pathname,search:r.search,fallbackWorkspaceId:F.defaultWorkspaceId||F.workspaceId||$e}),J=hp({bootstrap:F,entitlements:F.profileEntitlements,requestedSelection:oe,rememberedSelection:g}),we=J.activeProfile,Ue=J.activeWorkspace,Q=(we==null?void 0:we.profileKey)||$i(F.role)||\"tenant\",Be=(Ue==null?void 0:Ue.workspaceId)||F.defaultWorkspaceId||F.workspaceId||$e,Sn=J.profiles.some(ee=>ee.profileKey===\"localpro\"),He=U.workspaceId||((Hn=Z.data)==null?void 0:Hn.workspaceId)||((ga=N.data)==null?void 0:ga.workspaceId)||((wa=j.data)==null?void 0:wa.workspaceId)||F.workspaceId||Be||T,Mt=Q===\"tenant\"?V:\"\",Xt=Q===\"tenant\"?Z.data||gy(He):gy(Be||He),kn=Q===\"tenant\"?N.data||U.financeRuntime:Nu(Be,i,s).financeRuntime,Bo=Q===\"tenant\"?j.data||wy(Mt,He):wy(\"\",Be),Xi=Q===\"tenant\"&&t===\"pass\"&&$.data||null,Ho=Q===\"tenant\"&&S&&(F.previewMode||Xt.caseId||F.caseIds.length)?Cj(F,Xt):[],qo=Q===\"localpro\"?String(new URLSearchParams(r.search).get(\"mission_id\")||\"\").trim():\"\",uo=Pj(t,F,s),ma={...Wx(Xt,l),permissionState:u,lastUpdatedAt:f,errorDetail:p};d.useEffect(()=>{if(typeof window>\"u\")return;const ee=ue=>{const Ee=ue.detail,Zt=String((Ee==null?void 0:Ee.reasonCode)||\"identity_session_required\");io(),x(Zt),n.invalidateQueries({queryKey:[\"resident-session-bootstrap\"]})};return window.addEventListener(fp,ee),()=>{window.removeEventListener(fp,ee)}},[n]),d.useEffect(()=>{F.sessionState===\"resolved\"&&w&&x(\"\")},[F.sessionState,w]),d.useEffect(()=>{if(!J.activeSelection){Pu(null);return}Pu(J.activeSelection),y(ee=>{var ue,Ee;return(ee==null?void 0:ee.profileKey)===((ue=J.activeSelection)==null?void 0:ue.profileKey)&&(ee==null?void 0:ee.workspaceId)===((Ee=J.activeSelection)==null?void 0:Ee.workspaceId)?ee:J.activeSelection})},[J.activeSelection]),d.useEffect(()=>{if(!S||F.authRequired||Q===\"tenant\")return;const ee=Lu({pathname:r.pathname,search:r.search,fallbackWorkspaceId:Be});if((ee==null?void 0:ee.profileKey)===Q&&ee.workspaceId===Be)return;const ue=Eu({profileKey:Q,workspaceId:Be,caseId:F.activeCaseId,missionId:qo,surface:t});o(ue,{replace:!0})},[qo,Q,Be,S,F.activeCaseId,F.authRequired,r.pathname,r.search,o,t]),d.useEffect(()=>{if(Q!==\"tenant\"||!U.caseId)return;const ee=yy(r.pathname,U.caseId),ue=new URLSearchParams(r.search);vy(ee)?ue.get(\"case_id\")!==U.caseId&&ue.set(\"case_id\",U.caseId):ue.has(\"case_id\")&&ue.delete(\"case_id\"),ue.get(\"workspace_id\")!==He&&ue.set(\"workspace_id\",He),ue.has(\"booking_id\")&&ue.delete(\"booking_id\"),ue.has(\"stay_id\")&&U.resolvedFrom!==\"stay_id\"&&ue.delete(\"stay_id\");const Ee=ue.toString(),Zt=r.search.startsWith(\"?\")?r.search.slice(1):r.search;ee===r.pathname&&Ee===Zt||o({pathname:ee,search:Ee?`?${Ee}`:\"\"},{replace:!0})},[Q,r.pathname,r.search,o,U.caseId,U.resolvedFrom,He]);const ho=ee=>{if(Q!==\"tenant\")return;const ue=yy(r.pathname,ee);if(t===\"pass\"){const Zt=Eu({profileKey:\"tenant\",workspaceId:He,caseId:ee,surface:t});o(ue===r.pathname?Zt:`${ue}?workspace_id=${encodeURIComponent(He)}`,{replace:!1});return}const Ee=new URLSearchParams(r.search);Ee.delete(\"booking_id\"),Ee.delete(\"stay_id\"),Ee.set(\"workspace_id\",He),vy(ue)?Ee.set(\"case_id\",ee):Ee.delete(\"case_id\"),o({pathname:ue,search:Ee.toString()?`?${Ee.toString()}`:\"\"},{replace:!1})},ya=ee=>{const ue=J.profiles.find(In=>In.profileKey===ee.profileKey),Ee=ue==null?void 0:ue.workspaces.find(In=>In.workspaceId===ee.workspaceId);if(!ue||!Ee)return;(ee.profileKey!==Q||ee.workspaceId!==Be)&&Nj(n),y(ee),Pu(ee);const Zt=Eu({profileKey:ee.profileKey,workspaceId:ee.workspaceId,caseId:ee.profileKey===\"tenant\"?Mt||F.activeCaseId:\"\",surface:t});o(Zt,{replace:!1})},Bn=async()=>{h(\"requesting\"),m(\"\");try{const ee=await kj();c(vj(ee.latitude,ee.longitude)),h(\"granted\"),_(new Date().toISOString())}catch(ee){const ue=ee instanceof Error?ee.message:\"geolocation_unavailable\";c(null),h(ue===\"geolocation_denied\"?\"denied\":ue===\"geolocation_unavailable\"?\"unavailable\":\"error\"),m(ue.replaceAll(\"_\",\" \")),_(new Date().toISOString())}},Uc=()=>{c(null),h(\"idle\"),m(\"\"),_(new Date().toISOString())};return a.jsx(Gx.Provider,{value:{surface:t,viewerScope:i,bootstrap:F,sessionState:F.sessionState,previewMode:F.previewMode,authRequired:F.authRequired,accountId:F.accountId,accountLabel:F.accountLabel,workspaceId:Q===\"tenant\"?He:Be||He,actorName:F.actorName,actorRole:Q===\"tenant\"?F.role:Q,authorizedProfiles:J.profiles,activeProfile:we,activeWorkspace:Ue,activeProfileKey:Q,activeWorkspaceId:Be,canAccessLocalpro:Sn,activeCaseId:Mt,activeCase:Xt,caseOptions:Ho,runtime:Q===\"tenant\"?U:Nu(Be,i,s),financeRuntime:kn,paymentStatus:Bo,passPayload:Xi,entryMode:uo,resolvedFrom:Q===\"tenant\"?U.resolvedFrom:\"\",requestedAnchor:s,nearbyContext:ma,isLoading:!F.authRequired&&(b.isLoading||S&&Q===\"tenant\"&&(W.isLoading||Z.isLoading||N.isLoading||j.isLoading||$.isLoading)),switchCase:ho,switchProfileWorkspace:ya,requestNearbyDeviceHint:Bn,clearNearbyDeviceHint:Uc},children:e})}"
+        },
+        {
+          "label": "Rj",
+          "type": "FunctionDeclaration",
+          "utf16_start": 733151,
+          "utf16_end": 735294,
+          "byte_start": 795055,
+          "byte_end": 797198,
+          "sha256": "224c1f065d32bbcbdde15a3d1fc1b53f02343ca70687a1dd5fba79ca881d4eb4",
+          "source": "function Rj({children:e}){const t=yc(),n=Kx(),r=n.authorizedProfiles.map(u=>u.profileKey).filter(u=>u===\"tenant\"||u===\"localpro\"),o=n.authRequired||n.sessionState===\"auth_required\"?null:{name:n.actorName||n.accountLabel||\"LiveUIN member\",email:\"\",roles:r},i=async(u,h)=>{var y,b,S;const p=String(u||\"\").trim().toLowerCase();if(!p||!h)throw new Error(\"Enter your email and password.\");const m=await Xl(\"/api/core/identity/login/challenges\",{method:\"POST\",headers:{\"Content-Type\":\"application/json\"},body:JSON.stringify({workspace_id:\"laijuzhu\",channel:\"liveuin_app\",surface:\"resident_app\",purpose:\"member_app\",role:\"member\",scopes:jj,email_hash:p,metadata:{source:\"native_lovable_sign_in\",raw_identifier_stored:!1}})}),f=String(((y=m.payload.one_time_challenge)==null?void 0:y.challenge_id)||\"\"),_=String(((b=m.payload.one_time_challenge)==null?void 0:b.verification_code)||\"\");if(!m.ok||!f||!_||!((S=m.payload.one_time_challenge)!=null&&S.local_preview_only))throw new Error(String(m.payload.detail||\"identity_login_challenge_failed\"));const w=await Xl(`/api/core/identity/login/challenges/${encodeURIComponent(f)}/verify`,{method:\"POST\",headers:{\"Content-Type\":\"application/json\"},body:JSON.stringify({workspace_id:\"laijuzhu\",verification_code:_})}),x=w.payload.one_time_credential,g=x?_x({sessionId:String(x.session_id||\"\"),sessionHeaders:x.session_headers||{},expiresAt:Number(x.expires_at||0),credentialKind:String(x.credential_kind||\"liveuin_session\")}):null;if(!w.ok||!g)throw new Error(String(w.payload.detail||\"identity_login_verification_failed\"));return await t.invalidateQueries({queryKey:[\"resident-session-bootstrap\"]}),{name:\"LiveUIN member\",email:p,roles:[\"tenant\",\"localpro\"]}},s=async()=>{throw new Error(\"Account access is available for approved LiveUIN accounts. Please sign in with the email connected to your profile.\")},l=async()=>{throw new Error(\"Google sign-in is available only for Google accounts already connected to LiveUIN.\")},c=()=>{io(),window.location.assign(\"/welcome\")};return a.jsx(Qx.Provider,{value:{user:o,hydrated:!n.isLoading,signIn:i,signUp:s,signInWithGoogle:l,signOut:c,addRole:()=>{}},children:e})}"
+        },
+        {
+          "label": "ZR",
+          "type": "VariableDeclarator",
+          "utf16_start": 757210,
+          "utf16_end": 757699,
+          "byte_start": 819114,
+          "byte_end": 819603,
+          "sha256": "5d0aaabe3bb742fe306724affd0f8b24cf804db5e686e58a78d2de8f53a7c62c",
+          "source": "ZR=()=>{const[e]=ZI(),t=e.get(\"role\")||\"\",n=e.get(\"return_to\")||e.get(\"returnTo\")||\"\";if([\"ops\",\"ops_manager\",\"super_admin\"].includes(t)||n.startsWith(\"/ops/\")){const i=new URLSearchParams;return t&&i.set(\"role\",t),i.set(\"return_to\",n||\"/ops/command\"),a.jsx(q,{replace:!0,to:`/ops/login?${i.toString()}`})}const o=t===\"host\"||t===\"owner\"||t===\"landlord\"?\"host\":t===\"partner\"||t===\"agent\"?\"partner\":t===\"connect\"||t===\"connector_admin\"?\"connect\":\"\";return o?a.jsx(JR,{role:o}):a.jsx($j,{})}"
+        },
+        {
+          "label": "lA",
+          "type": "FunctionDeclaration",
+          "utf16_start": 761959,
+          "utf16_end": 762096,
+          "byte_start": 823863,
+          "byte_end": 824000,
+          "sha256": "a1882f9199281ddb085b6c692cc20deb9a11e8bbcb616d3cb8503b9f9e9ee267",
+          "source": "function lA(){return a.jsx(Tj,{surface:\"resident\",children:a.jsx(Uj,{children:a.jsx(Rj,{children:a.jsx(Aj,{children:a.jsx(Bj,{})})})})})}"
+        }
+      ]
+    },
+    {
+      "file": "Login-Mh8o3oad.js",
+      "bytes": 430,
+      "sha256": "ec0c53900f58a800f0272015f882a5d11d62ddc267d239338201f9ee0a2e2d0e",
+      "spans": []
+    },
+    {
+      "file": "auth.sign-in-CQBkq3x9.js",
+      "bytes": 8873,
+      "sha256": "064b97ed8469f57975c884c5306d457917ce906128a88d4ac630d3895a21a1f7",
+      "spans": [
+        {
+          "label": "W",
+          "type": "FunctionDeclaration",
+          "utf16_start": 4408,
+          "utf16_end": 7714,
+          "byte_start": 4411,
+          "byte_end": 7733,
+          "sha256": "213cdf4f19191c803c6be837f8d242433b414b0b2d0534fa39641171c85baf18",
+          "source": "function W(){const{signIn:n,signInWithGoogle:a}=L(),{switchProfile:i}=S(),l=F(),[r,x]=o.useState(\"\"),[t,w]=o.useState(\"\"),[m,v]=o.useState(!1),[h,d]=o.useState(!1),[p,c]=o.useState(null),j=async s=>{if(s.preventDefault(),c(null),!r||!t){c(\"Enter your email and password.\");return}d(!0);try{const f=(await n(r,t)).roles[0]??\"tenant\";i(f),await l({to:f===\"tenant\"?\"/tenant/home\":\"/localpro/home\"})}catch(u){c(u instanceof Error?u.message:\"We couldn't sign you in. Check your details or use an approved LiveUIN access method.\")}finally{d(!1)}},y=async()=>{c(null),d(!0);try{const s=await a(\"tenant\");i(s.roles[0]??\"tenant\"),await l({to:\"/tenant/home\"})}catch(s){c(s instanceof Error?s.message:\"Google sign-in is available only for Google accounts already connected to LiveUIN.\")}finally{d(!1)}};return e.jsx(z,{title:\"Welcome back\",subtitle:\"Sign in to your LiveUIN account. One login for Tenant and LocalPro.\",footer:e.jsx(\"span\",{className:\"text-slate-600\",children:\"Access is available for approved LiveUIN accounts. Use the email connected to your profile.\"}),children:e.jsxs(\"form\",{onSubmit:j,className:\"space-y-4\",children:[e.jsx(g,{label:\"Email\",children:e.jsx(\"input\",{type:\"email\",autoComplete:\"email\",value:r,onChange:s=>x(s.target.value),placeholder:\"you@example.sg\",className:\"w-full h-12 rounded-2xl border border-slate-200 bg-white px-4 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:border-indigo-400\"})}),e.jsx(g,{label:\"Password\",right:e.jsx(I,{to:\"/auth/forgot-password\",className:\"text-xs text-indigo-600 font-semibold\",children:\"Forgot?\"}),children:e.jsxs(\"div\",{className:\"relative\",children:[e.jsx(\"input\",{type:m?\"text\":\"password\",autoComplete:\"current-password\",value:t,onChange:s=>w(s.target.value),placeholder:\"••••••••\",className:\"w-full h-12 rounded-2xl border border-slate-200 bg-white px-4 pr-11 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:border-indigo-400\"}),e.jsx(\"button\",{type:\"button\",onClick:()=>v(s=>!s),className:\"absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600\",\"aria-label\":m?\"Hide password\":\"Show password\",children:m?e.jsx(G,{className:\"w-4 h-4\"}):e.jsx(A,{className:\"w-4 h-4\"})})]})}),p?e.jsx(\"p\",{className:\"text-xs text-red-600\",children:p}):null,e.jsxs(\"button\",{type:\"submit\",disabled:h,className:\"w-full h-13 py-3.5 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-sora font-semibold text-base shadow-lg shadow-indigo-500/20 active:scale-[0.99] transition disabled:opacity-70 flex items-center justify-center gap-2\",children:[h?e.jsx(U,{className:\"w-4 h-4 animate-spin\"}):null,\"Sign in\"]}),e.jsxs(\"div\",{className:\"flex items-center gap-3 py-2\",children:[e.jsx(\"div\",{className:\"h-px bg-slate-200 flex-1\"}),e.jsx(\"span\",{className:\"text-[11px] uppercase tracking-wide text-slate-400 font-semibold\",children:\"or\"}),e.jsx(\"div\",{className:\"h-px bg-slate-200 flex-1\"})]}),e.jsxs(\"button\",{type:\"button\",onClick:y,disabled:h,className:\"w-full h-12 rounded-2xl border border-slate-200 bg-white text-sm font-semibold text-slate-800 flex items-center justify-center gap-2 hover:bg-slate-50 active:scale-[0.99] transition\",children:[e.jsx(O,{}),\"Continue with Google\"]})]})})}"
+        }
+      ]
+    },
+    {
+      "file": "AppAccount-HBgL4SnG.js",
+      "bytes": 5774,
+      "sha256": "7d92ed8199cf82335a3f02b6dc9bb746c2ec615b3dbb8bd620808fa089542b31",
+      "spans": [
+        {
+          "label": "W",
+          "type": "FunctionDeclaration",
+          "utf16_start": 670,
+          "utf16_end": 741,
+          "byte_start": 670,
+          "byte_end": 741,
+          "sha256": "e766117e517e55ba565319621f280563b8b0de27180af3440097d799e8e04476",
+          "source": "function W(){L(),typeof window<\"u\"&&window.location.assign(\"/welcome\")}"
+        }
+      ]
+    },
+    {
+      "file": "ResidentAppShell-CQOxnRFw.js",
+      "bytes": 24821,
+      "sha256": "32c543067b2dc28bb4b3346315fe490c1483f0a3a850ebce3fdc77c5942f89cd",
+      "spans": [
+        {
+          "label": "actual_profile_menu_signout",
+          "type": "ArrowFunctionExpression",
+          "utf16_start": 23914,
+          "utf16_end": 23954,
+          "byte_start": 23926,
+          "byte_end": 23966,
+          "sha256": "c20974eda56a4473a2a01b5eab6efaa37d2be30f2cf6ed39e2e4a027e6d59bcd",
+          "source": "()=>{window.location.assign(\"/welcome\")}"
+        }
+      ]
+    },
+    {
+      "file": "welcome-BD_1iI7g.js",
+      "bytes": 5632,
+      "sha256": "f7797270f42f4e63558159060d29c4d2ff39cde9bc664e81c719f87dbe3e84b3",
+      "spans": [
+        {
+          "label": "welcome_signin_link",
+          "type": "Literal",
+          "utf16_start": 4720,
+          "utf16_end": 4735,
+          "byte_start": 4727,
+          "byte_end": 4742,
+          "sha256": "2ba62adc31b2fac5f1903ce6d7dee2121de6b6ac6fcf26f18e5ca57ab9853baf",
+          "source": "\"/auth/sign-in\""
+        },
+        {
+          "label": "welcome_signin_link",
+          "type": "Literal",
+          "utf16_start": 5279,
+          "utf16_end": 5294,
+          "byte_start": 5286,
+          "byte_end": 5301,
+          "sha256": "2ba62adc31b2fac5f1903ce6d7dee2121de6b6ac6fcf26f18e5ca57ab9853baf",
+          "source": "\"/auth/sign-in\""
+        }
+      ]
+    }
+  ]
+}

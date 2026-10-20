@@ -1,0 +1,19 @@
+{
+  "component": "AUTH02-9095",
+  "read_only_configuration_check": true,
+  "service_actions": false,
+  "product_imports": false,
+  "secret_values_output": false,
+  "credential_digests_output": false,
+  "customer_database_opened": false,
+  "unset_environment_names": [
+    "DATABASE_URL",
+    "LIVEUIN_DB_DSN",
+    "OPS_DB_DSN",
+    "OPS_DB_URL"
+  ],
+  "unset_environment_rule_count": 4,
+  "manager_environment_variable_count": 2,
+  "status": "stopped_no_review",
+  "failure_code": "environment_property_unavailable"
+}

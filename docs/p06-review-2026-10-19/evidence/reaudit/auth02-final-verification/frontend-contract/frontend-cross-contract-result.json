@@ -1,0 +1,162 @@
+{
+  "ok": true,
+  "source_sha256": "12cae36a6d808676b28684c88ae36bd3449eb2730c8c8179a6e1bcbb3afa10ca",
+  "projection_source": "actual checksum-pinned 9098 candidate ASGI result after real fixture registration/code verification/profile/onboarding; no hand-authored base projection",
+  "tests": [
+    {
+      "test": "actual_canonical_onboarded_parent_projection_opens",
+      "passed": true,
+      "expected_open": true,
+      "actual_open": true,
+      "reason": "identity_session_resolved",
+      "role": "tenant",
+      "scopes": [
+        "tenant"
+      ]
+    },
+    {
+      "test": "wrong_account_binding_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "identity_session_not_verified",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "wrong_person_binding_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "identity_session_not_verified",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "public_profile_workspace_mismatch_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "approved_profile_required",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "rich_profile_account_mismatch_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "approved_profile_required",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "suspended_rich_profile_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "approved_profile_required",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "expired_rich_profile_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "approved_profile_required",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "wrong_profile_continuation_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "approved_profile_required",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "missing_tenant_actor_scope_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "selected_profile_authority_inconsistent",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "wrong_actor_scope_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "selected_profile_authority_inconsistent",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "elevated_actor_scope_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "selected_profile_authority_inconsistent",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "elevated_actor_role_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "selected_profile_authority_inconsistent",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "rich_profile_wrong_permissions_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "approved_profile_required",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "public_profile_wrong_permissions_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "approved_profile_required",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "wrong_active_profile_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "selected_profile_authority_inconsistent",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "wrong_active_workspace_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "selected_profile_authority_inconsistent",
+      "role": "",
+      "scopes": []
+    },
+    {
+      "test": "state_continuation_mismatch_closed",
+      "passed": true,
+      "expected_open": false,
+      "actual_open": false,
+      "reason": "approved_profile_required",
+      "role": "",
+      "scopes": []
+    }
+  ]
+}

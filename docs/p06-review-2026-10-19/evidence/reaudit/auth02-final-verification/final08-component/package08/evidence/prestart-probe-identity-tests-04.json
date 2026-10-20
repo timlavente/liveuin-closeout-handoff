@@ -1,0 +1,107 @@
+{
+  "probe_sha256": "f6318de6719959db2d224ea2485da11e6e46a2968fa5b2fb4cef33dcc7dbc601",
+  "passed": 24,
+  "total": 24,
+  "checks": [
+    {
+      "name": "observed_root_prestart_identity",
+      "passed": true
+    },
+    {
+      "name": "normal_service_identity",
+      "passed": true
+    },
+    {
+      "name": "normal_additional_group",
+      "passed": true
+    },
+    {
+      "name": "root_extra_group_outside_nss_closed",
+      "passed": true
+    },
+    {
+      "name": "dynamic_user_closed",
+      "passed": true
+    },
+    {
+      "name": "permissions_strict_boolean_0",
+      "passed": true
+    },
+    {
+      "name": "permissions_strict_boolean_1",
+      "passed": true
+    },
+    {
+      "name": "permissions_strict_boolean_2",
+      "passed": true
+    },
+    {
+      "name": "permissions_strict_boolean_3",
+      "passed": true
+    },
+    {
+      "name": "dynamic_strict_boolean",
+      "passed": true
+    },
+    {
+      "name": "exact_four_prestart_commands",
+      "passed": true
+    },
+    {
+      "name": "privilege_prefix_closed",
+      "passed": true
+    },
+    {
+      "name": "command_drift_closed",
+      "passed": true
+    },
+    {
+      "name": "missing_command_closed",
+      "passed": true
+    },
+    {
+      "name": "invalid_command_shape_closed",
+      "passed": true
+    },
+    {
+      "name": "normal_configured_login_defaults",
+      "passed": true
+    },
+    {
+      "name": "root_home_and_nologin_omitted",
+      "passed": true
+    },
+    {
+      "name": "empty_home_shell_omitted",
+      "passed": true
+    },
+    {
+      "name": "empty_home_suppresses_shell_per_source",
+      "passed": true
+    },
+    {
+      "name": "false_shell_omitted",
+      "passed": true
+    },
+    {
+      "name": "ambiguous_path_closed",
+      "passed": true
+    },
+    {
+      "name": "relative_path_closed",
+      "passed": true
+    },
+    {
+      "name": "guarded_child_unchanged_from_reviewed03",
+      "passed": true
+    },
+    {
+      "name": "parent_and_child_compile_without_execution",
+      "passed": true
+    }
+  ],
+  "production_calls": false,
+  "product_imports": false,
+  "child_probe_executed": false,
+  "existing_guard_suite": "35/35 on unchanged reviewed03 child; retained prestart-probe-local-guard-tests.json"
+}

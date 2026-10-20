@@ -1,0 +1,83 @@
+{
+  "component": "AUTH02-9095-public-denial",
+  "checked_at_utc": "2026-10-19T20:21:38.204226+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "url": "https://ops.liveuin.com/api/core/identity/login/challenges",
+      "method": "POST",
+      "body": "{}",
+      "expected_status": 404,
+      "status": 404,
+      "no_store": true,
+      "passed": true
+    },
+    {
+      "url": "https://ops.liveuin.com/api/core/identity/login/challenges/AUTH02-NONEXISTENT-DIAGNOSTIC/verify",
+      "method": "POST",
+      "body": "{}",
+      "expected_status": 404,
+      "status": 404,
+      "no_store": true,
+      "passed": true
+    },
+    {
+      "url": "https://app.liveuin.com/api/core/identity/login/challenges",
+      "method": "POST",
+      "body": "{}",
+      "expected_status": 404,
+      "status": 404,
+      "no_store": true,
+      "passed": true
+    },
+    {
+      "url": "https://app.liveuin.com/api/core/identity/login/challenges/AUTH02-NONEXISTENT-DIAGNOSTIC/verify",
+      "method": "POST",
+      "body": "{}",
+      "expected_status": 404,
+      "status": 404,
+      "no_store": true,
+      "passed": true
+    },
+    {
+      "url": "https://host.liveuin.com/api/core/identity/login/challenges",
+      "method": "POST",
+      "body": "{}",
+      "expected_status": 404,
+      "status": 404,
+      "no_store": true,
+      "passed": true
+    },
+    {
+      "url": "https://host.liveuin.com/api/core/identity/login/challenges/AUTH02-NONEXISTENT-DIAGNOSTIC/verify",
+      "method": "POST",
+      "body": "{}",
+      "expected_status": 404,
+      "status": 404,
+      "no_store": true,
+      "passed": true
+    },
+    {
+      "url": "https://ops.liveuin.com/api/ops/auth/request_code",
+      "method": "POST",
+      "body": "{}",
+      "expected_status": 403,
+      "status": 403,
+      "no_store": false,
+      "passed": true
+    },
+    {
+      "url": "https://ops.liveuin.com/api/ops/auth/verify-code",
+      "method": "POST",
+      "body": "{}",
+      "expected_status": 400,
+      "status": 400,
+      "no_store": false,
+      "passed": true
+    }
+  ],
+  "account_or_case_identifiers_sent": false,
+  "credentials_sent": false,
+  "response_bodies_saved": false,
+  "emails_requested": false
+}

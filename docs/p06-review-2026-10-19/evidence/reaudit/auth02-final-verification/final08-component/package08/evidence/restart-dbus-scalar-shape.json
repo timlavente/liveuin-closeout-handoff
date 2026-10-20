@@ -1,0 +1,12 @@
+{
+  "classifier_sha256": "0241740015c2bf6121fdca17c2d279f4b1f2a977ed22cd0bf7bf764b874b43e0",
+  "observed_by": "root normal SSH read-only",
+  "actual_PAMName_response": {
+    "type": "s",
+    "data": ""
+  },
+  "systemctl_PAMName_empty": true,
+  "production_shaped_test_passed": true,
+  "invalid_shapes_refused": 3,
+  "production_changes": false
+}

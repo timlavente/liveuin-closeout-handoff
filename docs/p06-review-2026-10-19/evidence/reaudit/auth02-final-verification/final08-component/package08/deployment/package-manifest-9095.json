@@ -1,0 +1,204 @@
+{
+  "component": "AUTH02-9095",
+  "package_revision": "08",
+  "status": "staged_runtime_preflight_probe_review_and_owner_proof_required",
+  "production_changed_by_author": false,
+  "scope": "One9095API file only; no9098/frontend/flags/accounts/roles/data mutation. Does not close wholeAUTH02.",
+  "excluded": "Runtime config/probe/restart-review and backups remain root-private; no caches, fixture stores, old probe copies or secret configuration packaged.",
+  "files": [
+    {
+      "path": "deployment/activate-9095.py",
+      "sha256": "fb39354f610dc6e74db369453945376d37d838c00fc88f098dfae123be0a4b45"
+    },
+    {
+      "path": "deployment/preflight-backup.py",
+      "sha256": "25c5d1f8b22dd81fcc4ea07818d784dc52b70cab62170c88a2df94b8d07abb87"
+    },
+    {
+      "path": "deployment/preflight-spec.json",
+      "sha256": "b2031d0b9cef4363fdd843b50830c4edea7b7ed45487ab2b2b956c8a4721ec96"
+    },
+    {
+      "path": "deployment/classify-restart-config.py",
+      "sha256": "3ba754475c7ec26516989474ab2f16bf7366e6952268a8863b2525c891fd61a2"
+    },
+    {
+      "path": "deployment/prestart-fastpath-probe.py",
+      "sha256": "5a58274e32813b467ab498c6f00ab821b774cff10c5d35f5ca9a6594fcce7544"
+    },
+    {
+      "path": "deployment/build-startup-verdict.py",
+      "sha256": "790a9d54e8afb785697334ae280d3b958abcd777237c62ee20260bb7141131ab"
+    },
+    {
+      "path": "deployment/direct-deploy-startup-ast.py",
+      "sha256": "639299407e9e13ba59c2d839f4100a08c4c784d4cb338e7bb017d34f3972c32b"
+    },
+    {
+      "path": "deployment/test-prestart-identity-local.py",
+      "sha256": "04733c682446a9ae57695246e87e6aa25819b3f2e084fc335093b623ea503aa9"
+    },
+    {
+      "path": "deployment/RESTART-REVIEW-PROCEDURE-01.md",
+      "sha256": "eac5aa6e8021077f4c6a79a7583fd3d4be94680d7cb8dcfc589edadcf41440bb"
+    },
+    {
+      "path": "deployment/AUTH02-9095-ACTIVATION-HANDOFF-01.md",
+      "sha256": "7cffa39ba958aaab37f7394e03d793bc95c5235548f3af2f2e95390078b43fe0"
+    },
+    {
+      "path": "candidate-9095/deploy/core_identity_api.py",
+      "sha256": "a0834b412c06263d1ca593de67cc2514471cf4fdd7a83c860608be998fc65fcb"
+    },
+    {
+      "path": "fallback-9095/deploy/core_identity_api.py",
+      "sha256": "aee0ce11a4ffe48242b18dbde4a67463409765d80f43f15a68c6d40facc6e143"
+    },
+    {
+      "path": "candidate-9095-manifest.json",
+      "sha256": "8409272a41b5c232f47b2fb9a2e045acb02aa9ba1912ba57425c45bddde4dd01"
+    },
+    {
+      "path": "fallback-9095-manifest.json",
+      "sha256": "20ec9579148702bc2bcf54399676cbd7206b8dc8bc86c4e25534ff80b8e69a8b"
+    },
+    {
+      "path": "README.md",
+      "sha256": "92a1e8e23dfe885cd76c035d09e7c1a44f3b35ae340ed2bdaf92ec221b448d02"
+    },
+    {
+      "path": "evidence/api-function-scope.json",
+      "sha256": "07f2997554428a22de7286709c987e8626a24f66d3ae29ac4532a7eb15d199b5"
+    },
+    {
+      "path": "deployment-tests/test_activation_faults.py",
+      "sha256": "a2ed8ebe117c910685a4ae8a9b1e80f4560139f2b4a054a327c5413a36b946fd"
+    },
+    {
+      "path": "deployment-tests/activation-fault-results.json",
+      "sha256": "cacad03ea8526bb2ccf16c007ba9ecb120fe58f7d8a27e0fd8d244c30af16a5f"
+    },
+    {
+      "path": "deployment-tests/test_restart_classifier.py",
+      "sha256": "65bcfedc41a469b698ff4283dd1cd98d00c31b0b42ae8fe300890a1c57225b68"
+    },
+    {
+      "path": "deployment-tests/restart-classifier-results.json",
+      "sha256": "405d6de1a144d2b3ee82844eafa6d55ec7a7619c1811362ab99ed3b12ee89fdb"
+    },
+    {
+      "path": "evidence/restart-env-parser-tests.json",
+      "sha256": "79995f1aabd97336bcdb02c46e69104d422eeb858aab70bfe403d06f7fbfd747"
+    },
+    {
+      "path": "evidence/restart-unset-tests.json",
+      "sha256": "2fedf92965c3c68538a84b015dc25dbc45acdd3cb2677a8232cd1ac351a983c6"
+    },
+    {
+      "path": "evidence/restart-dbus-scalar-shape.json",
+      "sha256": "a72cd37f1a97ffccad59f2f676aec4a7c2ca90e55da1809e457d8b629b1b3a90"
+    },
+    {
+      "path": "evidence/prestart-probe-identity-tests-04.json",
+      "sha256": "fc112765a2c93d1904deaab2e466b9fa884db438e39dcdf96c1f64f505f68449"
+    },
+    {
+      "path": "evidence/prestart-probe-local-guard-tests.json",
+      "sha256": "b53bac8f79ad42825c652329dd123f4668b31be4116b0332b569040df7080f82"
+    },
+    {
+      "path": "evidence/PRESTART-IDENTITY-REVIEW-04.md",
+      "sha256": "01d6c3a21b9cb6dd3e3ac7bd62995a5a26d4e7ac8b1e6d95b9f34044a9b8a869"
+    },
+    {
+      "path": "evidence/auth02-startup-declarations.json",
+      "sha256": "8a905e5a7c84cef38fa402bb02fee767757df931f90c3a3622b73ab18f63f123"
+    },
+    {
+      "path": "evidence/auth02-direct-deploy-startup-ast.json",
+      "sha256": "6a2036e4899de5a38a19eaeb606f926852b8f77bcc6f7f791c19cf0b8451988a"
+    },
+    {
+      "path": "evidence/auth02-concrete-startup-constructors.json",
+      "sha256": "6c95d0dd1c9354b78fda59a1303f0d47e6c37594ab915be07857ebf4326252e3"
+    },
+    {
+      "path": "evidence/auth02-prestart-source.json",
+      "sha256": "84763f40ff475fd108ad200079ff789ba029135d9a41abf2e64d9b342e4b588c"
+    },
+    {
+      "path": "evidence/auth02-prestart-mode-v2.json",
+      "sha256": "2120f3ea47b29fb7febb899aa2dbc035f99bdbcb6d590d88031ff4a723088883"
+    },
+    {
+      "path": "evidence/AUTH02-BOUNDED-STARTUP-REVIEW-01.md",
+      "sha256": "b022a181621d541330f2063b26698e6d449263a0c65563919607187d2d4d9da7"
+    },
+    {
+      "path": "evidence/direct-startup-ast-fixture.json",
+      "sha256": "648358fd43700862a3b23278996068d4820e71949ed4e8d207befd2c1dbf766e"
+    },
+    {
+      "path": "evidence/adapter-release-result.json",
+      "sha256": "c5ff6f29565987ce09b2c4bddeda324f0b07d5921def17935fca3cbf9b71585e"
+    },
+    {
+      "path": "evidence/ADAPTER-RELEASE-INDEPENDENT-01.md",
+      "sha256": "f2f8bf3a725b0617ab7031fe0fa1c5e31f5e480d40794801c60d3a20a7613ad9"
+    },
+    {
+      "path": "evidence/preview-release-result.json",
+      "sha256": "9fe9a8f7e4a3914246ec6a06438b12971d342f0d6a2116d3092d09dc704e3fac"
+    },
+    {
+      "path": "evidence/resident-87ff864-manifest.json",
+      "sha256": "91c3fb25ce80a570507b66aeae30817569fc5b0a5daef43ab17926a570f7c77b"
+    },
+    {
+      "path": "evidence/auth02-reconciliation-05-locked.json",
+      "sha256": "2bf0204fb778ef069b6116ca45674ce8a763206b2266beeea287cce69198dc11"
+    },
+    {
+      "path": "evidence/auth02-startup-declarations-05.json",
+      "sha256": "2b507ca0ff96e7fb4541e8da45d9129b4d8162ff9713d29300295ccdd843a8ad"
+    },
+    {
+      "path": "evidence/resident-actual-05-startup-ast.json",
+      "sha256": "d0f92ec7ac6272cc8511b018a6260c1ed9c03a8ad3c1240bbdf6b52d382057fb"
+    },
+    {
+      "path": "evidence/resident-webhook-followup-05.diff",
+      "sha256": "84927b1c0dda160d9214289bc948573949e464499e297be7ba554a14e8f51e66"
+    },
+    {
+      "path": "evidence/main-additive-mount-05.diff",
+      "sha256": "7f0d2fec3d12f2de927a1f6aa1141d3a9c947030f2ce544382c908b2eba19787"
+    },
+    {
+      "path": "evidence/RECONCILIATION-SOURCE-REVIEW-05.md",
+      "sha256": "3166f935aa23b224a5bca761a140d35c91b107c35de93e4450113dbdbbbd2b49"
+    },
+    {
+      "path": "deployment/PACKAGE-07-RECONCILIATION-ADDENDUM.md",
+      "sha256": "c57674178883bcf2f831498afff60e60538868230e63b4808b30225b80bc0ccf"
+    },
+    {
+      "path": "deployment/PACKAGE-08-CLOSED-BASELINE-ADDENDUM.md",
+      "sha256": "73044b6c1299fd3de49016ca5edc408b0584d62991517b3c8c412a5071f9a484"
+    },
+    {
+      "path": "evidence/activation-9095-result-07.json",
+      "sha256": "53a92b85bdcb62bd8fe2e2427532280c0f438cdcb20e5c6e6ae11d176cde0621"
+    },
+    {
+      "path": "evidence/closed-recovery-result-01.json",
+      "sha256": "7b0754461a52bff4ee9fd35e4993cf4bc5b95da423047860f2ceea60c1a8bccf"
+    },
+    {
+      "path": "evidence/recovery-wait-tests-01.json",
+      "sha256": "825520d0abfec47a887624b1064e1b6a8a186c2c8cc5570d97779d6db280084b"
+    }
+  ],
+  "reconciled_baseline_pid": 3424573,
+  "probe_revision_note": "Same runtime-proven probe behavior as07; only new controller/classifier version pins. Controller bounded argv wait corrected; starting API is proven closed fallback aee. Fresh gates and owner proof remain required."
+}

@@ -1,0 +1,14 @@
+{
+  "scope": "static baseline-to-candidate startup surface only; no imports",
+  "baseline_sha256": "fcf8c612f2442ab05a8950523890806af7b89f88e9cbf801fcc5561ec1d6acc4",
+  "candidate_sha256": "a0834b412c06263d1ca593de67cc2514471cf4fdd7a83c860608be998fc65fcb",
+  "non_function_module_statements_identical": true,
+  "existing_function_declarations_identical": true,
+  "added_function_names": [
+    "_require_local_identity_preview"
+  ],
+  "added_function_declaration_call_counts": {
+    "_require_local_identity_preview": 0
+  },
+  "production_imports_or_records": false
+}

@@ -1,0 +1,83 @@
+{
+  "safety": "GET only; no form body, no session creation, no auth",
+  "rows": [
+    {
+      "url": "https://liveuin.com/connect/checkout/sessions",
+      "method": "GET",
+      "observed_at_utc": "2026-10-19T15:37:59.823935+00:00",
+      "status": 200,
+      "final_url": "https://liveuin.com/connect/checkout/sessions",
+      "content_type": "text/html",
+      "allow": null,
+      "body_sha256": "92bca6d8a3f9451477463ee0c4e53c5c84e016f1fb8f1ea5bc7f7ec374ccd76c",
+      "bytes": 2651
+    },
+    {
+      "url": "https://www.liveuin.com/connect/checkout/sessions",
+      "method": "GET",
+      "observed_at_utc": "2026-10-19T15:37:59.827825+00:00",
+      "status": 200,
+      "final_url": "https://www.liveuin.com/connect/checkout/sessions",
+      "content_type": "text/html",
+      "allow": null,
+      "body_sha256": "92bca6d8a3f9451477463ee0c4e53c5c84e016f1fb8f1ea5bc7f7ec374ccd76c",
+      "bytes": 2651
+    },
+    {
+      "url": "https://api.liveuin.com/connect/checkout/sessions",
+      "method": "GET",
+      "observed_at_utc": "2026-10-19T15:37:59.829384+00:00",
+      "status": 404,
+      "final_url": "https://api.liveuin.com/connect/checkout/sessions",
+      "content_type": "application/json",
+      "allow": null,
+      "body_sha256": "37ec4665a8102d115ffd1ac20dae94c98b4dac64b0c1a68228aa2a531caeb35d",
+      "bytes": 22,
+      "body": "{\"detail\":\"Not Found\"}"
+    },
+    {
+      "url": "https://app.liveuin.com/connect/checkout/sessions",
+      "method": "GET",
+      "observed_at_utc": "2026-10-19T15:37:59.829999+00:00",
+      "status": 200,
+      "final_url": "https://app.liveuin.com/connect/checkout/sessions",
+      "content_type": "text/html",
+      "allow": null,
+      "body_sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e",
+      "bytes": 2284
+    },
+    {
+      "url": "https://host.liveuin.com/connect/checkout/sessions",
+      "method": "GET",
+      "observed_at_utc": "2026-10-19T15:37:59.831231+00:00",
+      "status": 200,
+      "final_url": "https://host.liveuin.com/connect/checkout/sessions",
+      "content_type": "text/html",
+      "allow": null,
+      "body_sha256": "510c86fddc95be8b3431d1be2531ccef91b0d85a9e0c42fb6709da97c2fca237",
+      "bytes": 2284
+    },
+    {
+      "url": "https://ops.liveuin.com/connect/checkout/sessions",
+      "method": "GET",
+      "observed_at_utc": "2026-10-19T15:37:59.831487+00:00",
+      "status": 200,
+      "final_url": "https://ops.liveuin.com/connect/checkout/sessions",
+      "content_type": "text/html",
+      "allow": null,
+      "body_sha256": "17026826916bbd332484a6abba8126ae34c72065fea59f53986dff6df601d65a",
+      "bytes": 2284
+    },
+    {
+      "url": "https://partner.liveuin.com/connect/checkout/sessions",
+      "method": "GET",
+      "observed_at_utc": "2026-10-19T15:37:59.832374+00:00",
+      "status": 200,
+      "final_url": "https://partner.liveuin.com/connect/checkout/sessions",
+      "content_type": "text/html",
+      "allow": null,
+      "body_sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e",
+      "bytes": 2284
+    }
+  ]
+}

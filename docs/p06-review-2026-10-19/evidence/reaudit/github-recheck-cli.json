@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-10-19 15:24:35 UTC",
+  "note": "Connector lookups returned404 for these private repos; authenticated CLI access succeeded. Do not interpret connector404 as deletion.",
+  "repositories": [
+    {
+      "default_branch": "main",
+      "full_name": "timlavente/liveuin-resident-app",
+      "pushed_at": "2026-10-18T14:07:57Z",
+      "size": 15031,
+      "visibility": "private"
+    },
+    {
+      "default_branch": "main",
+      "full_name": "timlavente/liveuin-visual-playground",
+      "pushed_at": "2026-10-02T04:56:57Z",
+      "size": 8369,
+      "visibility": "private"
+    }
+  ]
+}

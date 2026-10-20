@@ -1,0 +1,12 @@
+{
+  "archive": "/private/tmp/liveuin-p06-auth02-20261020/backend-05/deployment/auth02-9095-reviewed-05.tar",
+  "archive_sha256": "fc54ce2b0630857f2380bf81c13c8ad70375161f1ce324e6c3d90c3043aa4236",
+  "archive_bytes": 2498560,
+  "manifest_sha256": "a8f4166b3b0ecf0e248dc337a39719e51813a858bfff56a4959cf30a9fc28825",
+  "staging_helper": "/private/tmp/liveuin-p06-auth02-20261020/backend-05/deployment/stage-reviewed-package-05.py",
+  "staging_helper_sha256": "e16b339ded2f87132e83f117a3c958c25ec416504c3b9dab85b6b27380357d63",
+  "builder_sha256": "790a9d54e8afb785697334ae280d3b958abcd777237c62ee20260bb7141131ab",
+  "spec_sha256": "ccd910464d2b7d5135d4a0c3ca26bc4ea7e46d394f145996106cecc93dae91c8",
+  "packaged_file_count": 43,
+  "unchanged_six_implementation_hashes_verified": true
+}

@@ -1,0 +1,13 @@
+--- reviewed-04-main.py
++++ resident-87ff864-main.py
+@@ -597,3 +597,10 @@
+ # LIVEUIN_OWNER_MARKETING_PUBLICATION_V1
+ from deploy.core_marketing_publication_runtime import build_production_router
+ app.include_router(build_production_router())
++
++# LIVEUIN_RESIDENT_CUSTOMER_API_V1
++try:
++    from deploy.core_resident_gateway import install_resident_customer_routes
++    install_resident_customer_routes(app)
++except Exception as exc:
++    raise RuntimeError("Failed to mount LiveUIN resident customer API") from exc

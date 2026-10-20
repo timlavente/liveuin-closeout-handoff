@@ -1,0 +1,221 @@
+{
+  "retention_id": "RETENTION-FRONTEND-RECOVERY-08-PROVIDER-15",
+  "retained_at": "2026-10-20T15:44:55.438476+08:00",
+  "files": [
+    {
+      "file": "FRONTEND-APP-RECOVERY-08.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/frontend-release-09/FRONTEND-APP-RECOVERY-08.md",
+      "source_check": {
+        "bytes": 3443,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "26869b225b4e82aeb4e57c15f02f4b124cbc21735fc59e2e8084b4e20f0a4981",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 3443,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "26869b225b4e82aeb4e57c15f02f4b124cbc21735fc59e2e8084b4e20f0a4981",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "FRONTEND-APP-RECOVERY-08.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/frontend-release-09/FRONTEND-APP-RECOVERY-08.json",
+      "source_check": {
+        "bytes": 1231,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "09ba5c02163e8d978d17881e767fb7b045516eb9485885d906001b1ae0be3a60",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 1231,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "09ba5c02163e8d978d17881e767fb7b045516eb9485885d906001b1ae0be3a60",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "frontend-app-activation-08.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/frontend-release-09/frontend-app-activation-08.json",
+      "source_check": {
+        "bytes": 124,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "b98c7d82d448e8425924d195b1df3bb9c6f1a45b97568f1c72678d51920a5780",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 124,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "b98c7d82d448e8425924d195b1df3bb9c6f1a45b97568f1c72678d51920a5780",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "frontend-activation-08-log-summary.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/frontend-release-09/frontend-activation-08-log-summary.json",
+      "source_check": {
+        "bytes": 833,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "12b687696fca8bdebedb659518d2141e01e980d2731c383f0a0db2b6f2958793",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 833,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "12b687696fca8bdebedb659518d2141e01e980d2731c383f0a0db2b6f2958793",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "payment-lock-auth02-1531.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/frontend-release-09/payment-lock-auth02-1531.json",
+      "source_check": {
+        "bytes": 3697,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "c6b2eff258cbfcfa4ed480683242ab7dbaaaded64fa684a7e3a953b9769096f2",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 3697,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "c6b2eff258cbfcfa4ed480683242ab7dbaaaded64fa684a7e3a953b9769096f2",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "provider-review-15/PROVIDER-CHANGE-REVIEW-15.md",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend/reconciliation-15/PROVIDER-CHANGE-REVIEW-15.md",
+      "source_check": {
+        "bytes": 1869,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "0a7bbe66c2f52fc14eb293ae6ddd570d2b00beb18adfedccb443e2a2645684c0",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 1869,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "0a7bbe66c2f52fc14eb293ae6ddd570d2b00beb18adfedccb443e2a2645684c0",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "provider-review-15/provider-change-classification-15.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend/reconciliation-15/provider-change-classification-15.json",
+      "source_check": {
+        "bytes": 1488,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "61d72da40c53c4e92b3a6b9613ed1e8eac1858a9f428d09069208240815143c9",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 1488,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "61d72da40c53c4e92b3a6b9613ed1e8eac1858a9f428d09069208240815143c9",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "provider-review-15/provider-5945-to-a203.diff",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend/reconciliation-15/provider-5945-to-a203.diff",
+      "source_check": {
+        "bytes": 712,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "387f0960ab665bd9abfad4e40325eaa48c8e98774c19240bb7ebb78eabb7e84f",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 712,
+        "local_blocks": 8,
+        "dataless": false,
+        "sha256": "387f0960ab665bd9abfad4e40325eaa48c8e98774c19240bb7ebb78eabb7e84f",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    },
+    {
+      "file": "provider-review-15/core_customer_card_provider.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend/reconciliation-15/core_customer_card_provider.py",
+      "source_check": {
+        "bytes": 4735,
+        "local_blocks": 16,
+        "dataless": false,
+        "sha256": "a2034f5d0990719d39cbf378c92a87e7b72011b31a99483ccb75cecab06ba2dc",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "retained_check": {
+        "bytes": 4735,
+        "local_blocks": 16,
+        "dataless": false,
+        "sha256": "a2034f5d0990719d39cbf378c92a87e7b72011b31a99483ccb75cecab06ba2dc",
+        "extended_attribute_names": [
+          "com.apple.provenance"
+        ]
+      },
+      "byte_for_byte_equal": true
+    }
+  ],
+  "provider_source_matches_reviewed_actual_hash": true,
+  "original_payment_provider_mismatch_retained": true,
+  "old_response_body_hash_claimed": false,
+  "candidate_active_claimed": false,
+  "universal_payment_pass_claimed": false,
+  "private_or_customer_records_read": false,
+  "network_calls_by_retention_step": 0,
+  "existing_evidence_or_manifests_replaced": false
+}

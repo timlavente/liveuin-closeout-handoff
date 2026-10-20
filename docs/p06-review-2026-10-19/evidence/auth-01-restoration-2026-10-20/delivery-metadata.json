@@ -1,0 +1,27 @@
+{
+  "id": "1a155042f9dcb8f4",
+  "deliveredAt": "1792427699000",
+  "headers": [
+    {
+      "name": "Authentication-Results",
+      "value": "mx.google.com;       dkim=pass header.i=@liveuin.com header.s=mail header.b=IAqBg5DG;       spf=pass (google.com: domain of bounces-271123522-3893268324@ha.d.sender-sib.com designates 77.32.148.27 as permitted sender) smtp.mailfrom=bounces-271123522-3893268324@ha.d.sender-sib.com"
+    },
+    {
+      "name": "To",
+      "value": "<timlavente@gmail.com>"
+    },
+    {
+      "name": "Date",
+      "value": "Mon, 19 Oct 2026 16:34:59 GMT"
+    },
+    {
+      "name": "Subject",
+      "value": "LiveUIN verification code"
+    },
+    {
+      "name": "From",
+      "value": "<noreply@liveuin.com>"
+    }
+  ],
+  "codeSaved": false
+}

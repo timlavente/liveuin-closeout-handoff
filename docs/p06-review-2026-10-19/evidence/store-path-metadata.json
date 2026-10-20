@@ -1,0 +1,133 @@
+{
+  "store_path_metadata": [
+    {
+      "path": "/var/lib/liveuin/core-case-data",
+      "resolved_path": "/var/lib/liveuin/core-case-data",
+      "is_symlink": false,
+      "exists": true,
+      "device": 64514,
+      "inode": 1640227,
+      "mode": "0o42770"
+    },
+    {
+      "path": "/srv/liveuin/core-case-data",
+      "resolved_path": "/srv/liveuin/core-case-data",
+      "is_symlink": false,
+      "exists": true,
+      "device": 64514,
+      "inode": 44842,
+      "mode": "0o40755"
+    },
+    {
+      "path": "/var/lib/liveuin/core-inventory-data",
+      "resolved_path": "/var/lib/liveuin/core-inventory-data",
+      "is_symlink": false,
+      "exists": true,
+      "device": 64514,
+      "inode": 1640231,
+      "mode": "0o42770"
+    },
+    {
+      "path": "/srv/liveuin/core-inventory-data",
+      "resolved_path": "/srv/liveuin/core-inventory-data",
+      "is_symlink": false,
+      "exists": true,
+      "device": 64514,
+      "inode": 15594,
+      "mode": "0o40755"
+    },
+    {
+      "path": "/var/lib/liveuin/core-identity-data",
+      "resolved_path": "/var/lib/liveuin/core-identity-data",
+      "is_symlink": false,
+      "exists": true,
+      "device": 64514,
+      "inode": 1640230,
+      "mode": "0o42770"
+    },
+    {
+      "path": "/srv/liveuin/core-identity-data",
+      "resolved_path": "/srv/liveuin/core-identity-data",
+      "is_symlink": false,
+      "exists": true,
+      "device": 64514,
+      "inode": 45415,
+      "mode": "0o40770"
+    },
+    {
+      "path": "/var/lib/liveuin-ops-backend/core-demand-data",
+      "resolved_path": "/var/lib/liveuin-ops-backend/core-demand-data",
+      "is_symlink": false,
+      "exists": true,
+      "device": 64514,
+      "inode": 414,
+      "mode": "0o40750"
+    },
+    {
+      "path": "/srv/liveuin/core-demand-data",
+      "resolved_path": "/srv/liveuin/core-demand-data",
+      "is_symlink": false,
+      "exists": true,
+      "device": 64514,
+      "inode": 15262,
+      "mode": "0o40770"
+    }
+  ],
+  "identity_release_label": [
+    {
+      "line": 25,
+      "name": "COMMIT",
+      "value": "os.environ.get('LIVEUIN_DEPLOYED_COMMIT', 'unknown')"
+    }
+  ],
+  "identity_imports": [
+    {
+      "line": 9,
+      "statement": "from __future__ import annotations"
+    },
+    {
+      "line": 11,
+      "statement": "import os"
+    },
+    {
+      "line": 12,
+      "statement": "import uuid"
+    },
+    {
+      "line": 14,
+      "statement": "from fastapi import FastAPI, HTTPException, Request"
+    },
+    {
+      "line": 15,
+      "statement": "from fastapi.exceptions import RequestValidationError"
+    },
+    {
+      "line": 16,
+      "statement": "from fastapi.responses import JSONResponse"
+    },
+    {
+      "line": 18,
+      "statement": "from core_identity_api import router as identity_router"
+    },
+    {
+      "line": 19,
+      "statement": "from core_notification_api import router as notification_router"
+    },
+    {
+      "line": 20,
+      "statement": "import core_identity_social as identity_social"
+    },
+    {
+      "line": 21,
+      "statement": "import core_identity_account_deletion as account_deletion"
+    },
+    {
+      "line": 22,
+      "statement": "import core_identity_public as public_identity"
+    },
+    {
+      "line": 23,
+      "statement": "from p2a1_identity_route_contract import route_contract_status"
+    }
+  ]
+}

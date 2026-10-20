@@ -1,0 +1,393 @@
+{
+  "schema": "liveuin-resident-auth-freeze-v1",
+  "acceptance": {
+    "date": "2026-10-19",
+    "timezone": "Asia/Singapore",
+    "sourceCommit": "47f648baa35af2c8e320b4677f0a25ad69117cbd",
+    "documentationCommit": "011abd3779d1465b215e31864c5edc19e01d9b6e",
+    "bundleIdentifier": "com.liveuin.resident",
+    "version": "1.0",
+    "build": "4",
+    "environment": "production",
+    "acceptedBy": "Ern Hong Tan",
+    "confirmedJourneys": [
+      "Email arrived; reset and sign-in worked.",
+      "Apple opened my account and home.",
+      "Google opened my account and home."
+    ],
+    "scope": "Physically accepted email recovery/password sign-in, Apple sign-in, Google sign-in, and existing continuation into account/home."
+  },
+  "reference": {
+    "files": {
+      "src/main.native.tsx": "0c529d36f54871d3a1a6d7078273620f2be7711a1364d18b9191ecc476ecdcac",
+      "src/components/liveuin/AuthShell.tsx": "347980a97eb131163cb6059c0fdf3f2c9b82bf74e7441274c2fe798ddd592545",
+      "src/components/liveuin/AuthFeedback.tsx": "de0fd23e5d157b345e8de45d5a44876750edf068aa3670dd81d62def6dfc0ebb",
+      "src/components/resident/ResidentAppContext.tsx": "e690cf71f875e6a9188cd5852337634a43ac96bfd9749def80af1b3f51546f53",
+      "src/components/resident/ResidentNativeEntryBridge.tsx": "9a0c677b3058cfebc78a1a179b379ca1195be4dacf09a752121b4a76a47e9b65",
+      "src/components/resident/ResidentNativeRouteGate.tsx": "33ae67772c85c3681ee729ea16f59f0bacd0c09b1513e014b501e646aaf8a0c4",
+      "src/lib/auth-context.tsx": "0212f8ee18f42ee6f2be9508fcbeef00931a872bde7e72c742d945c4c57189ea",
+      "src/lib/nativeAuthLanding.ts": "572140da5d5d77e0420b32d52f9f54f0bcd938ff4ba0602037b88eb7edd7b8eb",
+      "src/lib/nativeFieldFocus.ts": "49cdfeb6619c5b1a3e7a36fe253c16095b46651b8e8d07392e1e21b48170b474",
+      "src/lib/mobileProfileScope.ts": "dadba990afeda26b3cfc2ae9fafcce926dbc3451d952490371790fa1554d501e",
+      "src/lib/profile-context.tsx": "fceaaa0b69db0cda7d6318a36094b752cf03cbbdfaccdf546b47e9f27e3eb109",
+      "src/lib/residentAuthBootstrap.ts": "db59c31fd59c611ccaa32f01ac13e97dea136c8321a268db10a866d7e8e0d2f8",
+      "src/lib/residentAuthRedirect.ts": "5ca83136fc6b6e85d71a24fc1fa4b658a0c86292523bcf300cab907431e9b3f5",
+      "src/lib/residentLogout.ts": "07f9fad8e64a550d3b689f59233f787241b9bbda41f51b9e1ba2727338080378",
+      "src/lib/residentNativeHttp.ts": "ebdd9f66da052e06c6b11116243c67d00d4384b71687f7c3c69589c6f3ddf5f1",
+      "src/lib/residentNativeLaunch.ts": "f295ef388d814b7d1d76ef10c9d21bf36b705a3e15fd3d659f2b1d959a2aeea4",
+      "src/lib/residentPasswordRules.ts": "8812038f1ba1d4b36f8d7edc744ef18c401a5ff37208649b8edd72ee86674ad0",
+      "src/lib/residentProfileAuthorization.ts": "893cfe8bf198de05c4df580b2237c4e19bdd7757308a1523d11a24918f040c3c",
+      "src/lib/residentSessionBridge.ts": "50879603949b9a8b0004b1b1edcc4af0dc060915b9cdb3278523f08131d83d9a",
+      "src/lib/residentSessionLifecycle.ts": "f28b9a6cc8b6bf3e5a1e3633d7c1e8b4e1e93855c6822cc6f174917b86b7c448",
+      "src/lib/residentSocialAuth.ts": "1c9d1043339865e4e4548a8f49742d23e54d3195326186867a7829da5f87f366",
+      "src/lib/residentSocialContinuation.ts": "9d58f8317273fa8546dbabc63d3f02eef1148c15db48cb46cd3bc63082b6ef32",
+      "src/lib/runtimeHost.ts": "f92c56f95413693b9c8acd35531d57c2851676fbe3324b8c0badd9359e9bd4bf",
+      "src/native-lovable/components/CompleteProfileForm.tsx": "f8bf738c60811733b99806facf3d94766d86c90af7dddb790caab3c5352abd4e",
+      "src/native-lovable/routes/auth.cancel-deletion.tsx": "d8d13d153f4fb97e2c2af18dddd4cd7c4e747d19eb5685613bc32103b6ccd26d",
+      "src/native-lovable/routes/auth.complete-profile.tsx": "a15c8f22276ba4eb5ba13f437d321ead692caa57506fa136e8d9450f0329330f",
+      "src/native-lovable/routes/auth.continue-tenant.tsx": "5360a8d396081940f168c59219533c6dca5b351af19975fcb13a5f0c266601e4",
+      "src/native-lovable/routes/auth.forgot-password.tsx": "a30880772f0441a10a3966147dd7400b9fdd4dad22990e3de3fc12a6d363141d",
+      "src/native-lovable/routes/auth.sign-in.tsx": "89b96405f3dab59adc2a53e04f6e88dbaf4f7878107cd8b7269010eb18ab9648",
+      "src/native-lovable/routes/auth.sign-up.tsx": "b32e8e85eb8b47326f39419fb150e05fccc8d84820127b2aa68dee394a3c8bac",
+      "capacitor.config.json": "71c8d86320048e2a9f0cda95bd9a195e410735e6ce8f9deb9e3666fbc907fb79",
+      "ios/App/App/AppDelegate.swift": "e8022f79e10291edf2ec963349775da4c6a000619ad37f9dc3756add3b8999b3",
+      "ios/App/App/Info.plist": "0b9628e25f938916b08bab3a30810cc220a0fa7760a5b965ce99f6fa38cbd14d",
+      "ios/App/App/App.entitlements": "fd542fdd3e2bfdb0c0cb030699d10a0cdfab87dbda3536e4235f29d1cb3ea63e"
+    },
+    "sections": {
+      "src/NativeApp.tsx": {
+        "appQueryClient": "7ca7e969aed1d491269c8a854469749b531be9ef4377d107bc4d99d3af22e641",
+        "RootRoute": "1930f4395bbc0c5f85a4060c0f229e52aa8232dddb236c736196ec84433f20c9",
+        "PublicNativeProviders": "2f1e08075e597969da91cd02a493cad134e679882f0f8866a15eb0474d92592f",
+        "PublicAuthProviders": "fbafa422baecd7ab79b3c5998813679456ac8427b39d81d32c076300cfdaffc2",
+        "ProtectedNativeProviders": "631bbe51421dcd9d582b7f9dd3c76920ae7dc5d0e87397c1266db724c76b3d52",
+        "SignedAppGate": "612c56a11d1f27897f4fe1a422bf6f55fc46d5cbae919717d7a24a24d9218bde",
+        "NativeProfileGate": "faccd79a6b8e38f3157bcbc81191a69b1f7545d369c28c1ec575802f1efda40e",
+        "requiredProfileForPath": "c82c92ca728f038abb39070043ba55f64e2111a9c2bc563603fde45abc4587bc",
+        "NativeLovableRoute": "25e5cc941100838d3a14be777821203e153dbcf815f719ab57b00d6d93814e9e",
+        "protectedLovableRoutes": "eb44696e02b3bbf4818156218c169e808922b8bdf81e61341333c1b60e6d1003",
+        "welcomeRoute": "94211f893c4b86e05be9e1497c92f5bc9f6e1196de658e97e323eac1896251e6",
+        "WelcomeComponent": "135c7b479391b16b251d88d089fd8d8fc44725e6f3e32e1a1dc23fc52960bd4f",
+        "authSignInRoute": "14d9f43d76ed222459d22a241153bd5e7877e43b3976a3a9ed703c20ee4e4f02",
+        "AuthSignInComponent": "e6a83492eb8844397e84ce5a1b619b9b9667041e263d664f2eccc7b26de5f607",
+        "publicAuthRoutes": "3690e75d175d1dacbf06543b24e8f6f74a1780a3daed21de63cbc3792c2f7266"
+      },
+      "src/lib/residentAppRuntime.ts": {
+        "RESIDENT_AUTH_REQUIRED_EVENT": "7025493e8d2458b3e79ee387cda4feaf0e2d47e34eab8d7cf879f13dc56aa171",
+        "isResidentAuthError": "5680e5adce5ece9f3ac5486c86b0fd491f474644cc3140ee38af46b51c487cb1",
+        "emitResidentAuthRequired": "30a7602992b971c8762c2d5dea92b54934ab1bbf8a26ea2f4c28e058534e8429",
+        "previewAllowed": "71628740bedd279119f76d2d4c0535daeddfc94b4b480670c70bc97b0247e7a1",
+        "errorDetail": "070767d81729f231886e66a60aabe45334efbd362216a413843fc10812ef3025",
+        "previewBootstrap": "8a1029ad7a3875b5af64806f4e5f51991ab8f96a5973b7bc81f83f798eee56f3",
+        "authBootstrap": "9ee80b2477ea3c5f11b65af42a6ea7816c1a0f8e631277bf9a0002a7148d2cb6",
+        "asObject": "49a8d42960d4ff98f9e3505a711cf72396ce9b0efbc17015574d99a246607f99",
+        "asList": "1526989f2efbf801a83cf1efeb3540e702948280587c281d8705c3049c25656e",
+        "residentFetchJson": "f369d5f7a97d5a7636cc546411d5c41d99757117c2fd9b0a273003b30ed3fa7b",
+        "looksLikeOpaqueIdentityLabel": "f4f60f1bd1bd1cc121c2daf022d1a2246bfc89e8a8df83e44a166951549b79d7",
+        "safeResidentIdentityLabel": "c0188771fe11338b477a423fee81dfd0434f26a2eedd47082d9d39e27c5a8486",
+        "fetchResidentSessionBootstrap": "d510b5b53a10c288a0107eb6bf826b77f40a03870e3ccedf4223e748705bf656"
+      },
+      "src/native-lovable/routeRegistry.tsx": {
+        "nativeLovableRoutes": "83ebd26bb2d6fd7c264424f52e580aeb5f8857af6c5b6b692fcef9fcbe7b6f3a"
+      }
+    },
+    "requiredImports": {
+      "src/NativeApp.tsx": [
+        "f4865145d9f0beea574eda9ca87036b6b9f170af680a0f1b0e7f579052f97231",
+        "4299346c1574a5236760fdef5af50664ab15eec0e0f0cd58c960c4d73be61426",
+        "ea873fcbe0f0168c91a1c1cad6d3c9564eba9d2bbfb50b962fa3fa57f671be73",
+        "835d99ffed5bb92a7de138c0920fb4d770b9df9d2ec07e31938c2c9b32b1891a",
+        "f6a59cf1f8bc0592c3797e1e996e422d23a7370696840ddcd5c03f928e447866",
+        "2f0d313708bb79d824f5558daa45fc0035d82fedaaaabe4781b8e9aa4e7b0e1e",
+        "cca96ad72f0a31db0c87bac5f153e4f12292fdeba902df595509a1ad42126b15",
+        "8ac5568fc0bd717990b7313c37e2e271413ab0801aef65509e774e10c9997a9e",
+        "602a98ed6bfc805059afd9f32befb7a8fc5e47eda9d05a726a6fca66e64b849e",
+        "af9539d1bf14c9e4de481b36bf20d40e2b82f550b7a0a2eb31b7b5d8891dd06e",
+        "82c97e4146c655935d7ba134418292cc831657a4048d72725be346a5b67e3a29",
+        "949509f31431181a3463fa7b3c51e33cf54de9b3b39b1ce8238d0cda3fab4dc9",
+        "7e57f7dd4b89d1f1ba014b5b4ad5a0eb6c9007ab3a981a71e60027496d38a77f",
+        "7b8b9289746c4d706f50ab498b599dde6a7eb856a7c1d85cc3e6f745e34a5fb8",
+        "11a6d7e473cff62a0da5fd1df9d3b3aed1f491483555c794cb97d11efb23b185",
+        "63a29eaea9f294156024611effd551aa35580d0459f0f78cc954f94945191058",
+        "d35ee2616f28e726af1fb3a72a233f97ed3f13d7975410b94c97132b4d030834",
+        "1c4d0db47027514e8efe7f501811ed358133ec8c1e4df705bc8c9255400d359f",
+        "3a63777a1193cd262f605eefcba1754409381c9853a64fc1b20d755101d37acc"
+      ],
+      "src/lib/residentAppRuntime.ts": [
+        "27c0b1a56e65aef8cf2d539e77e87731913a12be099ccb75b1483e6e8bcfcddf",
+        "c58cc992557bd768e9d4acf911a2ac05d7440ea003173d7fa7d7a9d57853840a",
+        "ef8ee2ab4ee4b34dc60b12ba82b9724b1a094e16a5d9670c494eb9d427c9020b",
+        "a0ffb6ba647449b899015ff2216d0783d65d865023e28cdf28244046b89efa52",
+        "a83ea2ecd7206910dbab2d3fc3da670ddc36295ac4d09d9125f5f2fae937274f"
+      ],
+      "src/native-lovable/routeRegistry.tsx": [
+        "ae8e57b5d2f7307f8c493b0f70641389649ff5c93220baea5b3bf2dcbde7ba8e",
+        "c6c4bf984ada4e8b04df63476565cb2e760ab28288ac326a25586106b011211d",
+        "f4d3cb8e9583325fb1b61fe7f6593452e2c80736a01f390c57ece4922266a51a",
+        "359b07e7fdd778d3dab81e95d34826123bf41073c26d2ca8cb6bfdb3e7701cff",
+        "b7a71cead94e045cc5e71748f6a35d0375e3140e3482da306e205acf9595b477",
+        "66bc606d8b21ef426373672f003c0d6c2ec8fb9b12506065cbe503e4675b8571",
+        "987e0a8ea414b47bca40258c048d7d8ce6a875e88acad36f666ae5a8a86fc326",
+        "ce68ca0d84cc887852e0e8f4b68c25a4f066b5e7be29cc34f4b7aed931b091d7",
+        "646f06e6ccdf18b7196a36d5074b3c7f9566863fe99826e2a07a48a80513aa08",
+        "0854209ac07e65d69a4ee752bb6bebf0a7b87748f4fd72d404137e132cae12e8",
+        "88214316c9598669789fed4027693c7c485f1553e4a952ee0bb15501640d8120",
+        "a868b744578993c998e345af8fb8717e694e70290daace1ec0a9f06e638d74d3",
+        "44946716819c94b620898f3a7044509b74e959acda9fa531306dd6afbf71d1ec",
+        "7dcbcbebe70f0c7a620076e96055671f11e336bffc62e3011d6936843cfc7178",
+        "4b47a5a4f7de41967adeddd3beb6f1f0e6752b1fe467c715495bd86ebd9e374a",
+        "0448fd3d3a78da200c11740bfe31b3b8d57512d652d788f878e41229eff3073a",
+        "085b140169f80d59f36eb709cbb92897e528bae2289c5a520e02fc638145e2a9",
+        "88ae51e44033d2c9412493de45a83cced96c6182cd0121fa7c8294746dce6dfe",
+        "a6719d0114323cab679c742cf2073cdd5ac932471cb57a2f7b7580db7d00f0a3",
+        "5c8a1a781f64871b037aa11b971fff0caed056635087abdb08f4204bbe4f6be7",
+        "46ea78c3cbeb7186456f7848cef7f95591e95f9c5a07e90ebf9497f1ccf9ac5b",
+        "146d43724b9cfbb8338bb98d10a41b18e1fd84399bffa49a0fea1155c30e6297",
+        "05a499227e3eca38bc75f3d789d5182329ce13279d4c2790efc0c45ed687d676",
+        "06fbe0fc5c74766aa5927a38cfb7e19cd3a65b2fea50ef0f985337031f60649a",
+        "1946d1750d268f68cdba25d18b5b615da1a3dab49440c327a1031b72009ce5a1",
+        "790942c48b3fdf34ea25f2e96a975a0b2dfa4ccb8b75a0fff2e6d8dcb3666ae6",
+        "31a8caec222bcec729d025c34ab1fd20df0876000cb2a2adbcd0730c41218c30",
+        "28cd519d3d6cc2e76b5000d00550bdf446c058c7d7a70e17086701b5e70c951f",
+        "3f0da230ab2eba05a0e98c43fc77c080159f916db6e38e2827ba900ec792119f",
+        "81ff30374ee61290b1fc23656ab4a05fa2e5d800a7f8c959e5bc55d841670ad1",
+        "6a664136c3f4eade5c5762f9bc281298e85cedbbb6d9b8b47cb316fe5216d378",
+        "e6d728201b12f7edbfd951fa004c7d5e5e9be9dabf8b07aa233bd13c10f91174",
+        "ea22271209f2b42f9a48354283a8688a901c3b2074087f51bd233f4fd5b1f6e0",
+        "b7824631063f38fc66332fd0b3e952841707de98e220daf7d43fde3d82575521",
+        "93acd901950929ec9367d567845855e2cf433accb2a09f6f86e6f251a65b8ded",
+        "15a80eb06c7f5e08c8070ea28a97606bb2eeb5fd08eff4aadf742cc36c8a8250",
+        "038ef350b1e1b60daf3bb5db9806f0cb9bb0e049c9983aa65e49ce08cc161425",
+        "e8896c6ea8d87f6918e5ce97964a72519b31d1e7ce4c86e0fe9ee166c732a3d6",
+        "45dce82d40dc7cb5000948cba8af87c78c1195925859b5a6f7cdf4598bc1a9b0",
+        "38856251736c67ffac7112bb66513c2926869fb87e8e70c68ec7b458b6abd840",
+        "c00fc5e18853df3d4c1bd454f91470cc06c178f7b748fc6b85f159d8a34d6456",
+        "9a76749d75bc75aff8da7480d303c3194ab66906c22aa6887adc5737634d163a",
+        "dde369676417f585bc37461922f86399a9d6f77ba31dd7cb69bce9d5fdd04379",
+        "29a457be09473d8268c41211b2841613aebf5c3a0184d3c4e23ab8512336d8ed",
+        "6f5627e3bbbb71c6f4a17d9e7e18ed888853449dee3983d5fb0959a26c1b0f44",
+        "68710a4428c4521ae60a235de294052acc1d68ccc67f0b5b678528a3150f4173",
+        "00db8bad361fb0114d0439893d419043e1cb5d8ab135caeaf19ee75efd12bae2",
+        "2e66b7ec66c23a143c0390f259818f25f60fa40a54e846d82ccbbb08f963e4ef",
+        "391e0601c604c18ca58f0823b6b98024bed56b67d1dd01b3c5f848677bc1a3c8",
+        "c0d9b1582928902e6c6c27c912c57c0937213bd316bfe3cdb2ab96afba66f7af",
+        "a0bd401dcbdf812eac5d79cb7e3f7a848549d7f493711ed4a3ee96934482b1ef",
+        "4e1ba47ec088f38ed8a351955af7b87727a0e316c8d7841ceff89c3b70e0a4c7",
+        "02b9634b30d3689afa69d5a1a3e87cbc2409841c5496d8b2777b79bd9b57fc95",
+        "bb90e3fdaaff0fd435f8297b13eeba29a51bdc077768baaee514c66793350dc1",
+        "e77ee1ea04bd108f3a71855bc129b5a2464688a903854b8108e71e78b40d9a14",
+        "63920c5eb3965d591f114b1f01fa6f26ac4ec1d8255268a5b01e4825bec463ea",
+        "5d6b4ea3542a79c816dcb05d971907634bab41faab660b813194a36a78b727d5",
+        "a054aacede39775283d1c559516e9c39c05bc7c777a94f9dc047a1b31443e7af",
+        "c84fff7dda8fdcc168b09aa9ba53a2a40f80a189af11218f5c6047eae34c2b16",
+        "c5e59481da601069c17be1126e9ed7d3d88b17fee911e8fd78a9f16108df0d90",
+        "81efa08a1d60fb7ba5b8badcf4eaafc66f95fcbdea7c1bb1e807f6d76cb7d060",
+        "5a2839721f5cd2ce290b2891fc5c5694a3006aa5bdf58f683fd16c99a233b112",
+        "dd59615feb596785bd26c9fe68cd0b021df4061fd4c8351f94466524f7b2cdd9",
+        "e991ebf172a69cf86c99e4a30d5bb8efe73723c63c4c507a6aeab33eea4e39e2",
+        "1f507bb3e06ff23380745cd04cbf26d1ad6f6323ad4b72396d763da71d305e14",
+        "81f7b85fef0ee47e2fa59e50904839ff3f8fb1b191f41fe987ce5581a0bbfcc2",
+        "33a2ca6c2d899bbc9d157e848d982b4846773edb2ed85dd645f2040bd221614a",
+        "7c78fe982197789646c4690d76258534767f2ee1bb9e3dc1493fa63f2e9f4163",
+        "b825eac7bdeeb71bc0f47670d6fd94454f7ecb5e5bea1ed794c932e46ba3eb45",
+        "1875df159647c4b4f0bebcdcf5d5d8fdef6a199bd51d5f49331d35df94ac3cce",
+        "9496cbff381c3ecff7af7ac043a3fbe5ca51096048541d4872dc49adf517f17a",
+        "7238a658de90d850545f221e65d037eec2c39f270e4e84f334e48595b8fa250b",
+        "3179aaaa07552f69913b78dd1592d7c3faece44dd9c326b12ec2c78973063d5e",
+        "816a094786fc96c0ccf4faff8915a024494bc48a60763f4785a3c4e7d6504597",
+        "2cc2d3d08435efab6606458e2dc82cab88f1be175649843a2b382c91077c1cd7",
+        "3d57729735487c764a188aaa14dc8d153aba3142a951c9b0a3f75de4700e1fe1",
+        "008bac557d6de5bbece8360f1ca5d256bc7f311f1878d1bfbcbf5e6e8bbd2fab",
+        "3e8df2d37aa2404849d246e9c8220da06d5c1eee3abb448d97ccbdd464442b5a",
+        "47f29f50962b9aebf15c939638b069ec6026006b6c3150a3554f811c9b12dba8",
+        "7390d140baa67eb7ba0caf9218ba062194a238d836728e55b75399a3a7171af8",
+        "40524a5be353954ab9b8b2e9eed4701e75c36f5421a309844db05765c4a7a66b",
+        "389e2f34e1b2d58f4ecf584b517702553a1bb072e20f244b9fba5ce8279190be",
+        "91dec7b4a61a6ff76e3afbdbf2a4876868797483fd8ecd75940574496a9c5545",
+        "4685730fa72f21aed04a15a1cce99292ce1a5614f55cbe47be80ba639c776cfc",
+        "104204e6702b61c1038e9cf7707f7eb6e59533af9d6463cbe1d17d99082ef775",
+        "892941dc45d911bbfdda0b1d00fe304cbd54c545688870dad5dbd6dbe92aa3b9",
+        "7f1b67810139ed916cae1659c49b34c8a03cb1641a9aa96291a28036fd1703d0",
+        "84995b94e49078f83a7a4a92d81f54bef307715101bf39850e1a6dfbf5c445d0",
+        "1a41211bb8d0cbd67ac126cce66151e098384b8969ccfa33995c4dc221f7f36f",
+        "6acad61a1c17fd2694713d736330b375a6aa64e3e533a1113c665faf3587eba0",
+        "a07d251b043b8752e8be7b10740d98b6b87ae25b6da20a6af76f7d408db067a6",
+        "5227ce753df3ce01bcd9c387fa65faa90ebd88ba8e17498cc6e836387d3f971d",
+        "19bbdf10abc7ce9d19e9683a4f45733663e33d2f03db34d65ae6ad60e07c827a",
+        "b5aa9f74f98d39e8b10eac4800932d4e96910ceec618a36484685038314d8cfb",
+        "65104dd5aa189bab4a2addfe23043bf2e7ab23f56ef7dfe585dc4fa641c56ffe",
+        "020b09a4dfb9acd8dfef3c1d19a9341454d7b4540ea0c12b0898577e6a9149fd",
+        "41d58ad7f5b69fd39943d7efbfdcefe1236fe40b068f1f670fd84e04e792d890",
+        "98246fc8817449ac1f2c488ff172cfc18a4240397da7908a949a0824974d43ff",
+        "0cc86de4a27e6b2910d09f47197c66ce13a6ff8b4d9d5d1f4744af899e9ebdba",
+        "742b3117a35dacf98229add0412249e81ef6c50777c560265568cf4f40f50c42",
+        "98fd1c8ef7179fd4ed566149d95151b7c338ecd56504850d4df2400cf84e80d0",
+        "ac7a538a568749436e901646d0629b523aeed328244422cec001a0914124064d"
+      ]
+    },
+    "routes": {
+      "/welcome": {
+        "component": "Route_welcome.options.component",
+        "imported": {
+          "module": "./routes/welcome",
+          "exported": "Route"
+        },
+        "source": "welcome",
+        "active": "true",
+        "mapping": "native-route"
+      },
+      "/auth/cancel-deletion": {
+        "component": "Route_auth_cancel_deletion.options.component",
+        "imported": {
+          "module": "./routes/auth.cancel-deletion",
+          "exported": "Route"
+        },
+        "source": "auth.cancel-deletion",
+        "active": "true",
+        "mapping": "native-route"
+      },
+      "/auth/complete-profile": {
+        "component": "Route_auth_complete_profile.options.component",
+        "imported": {
+          "module": "./routes/auth.complete-profile",
+          "exported": "Route"
+        },
+        "source": "auth.complete-profile",
+        "active": "true",
+        "mapping": "native-route"
+      },
+      "/auth/continue-tenant": {
+        "component": "Route_auth_continue_tenant.options.component",
+        "imported": {
+          "module": "./routes/auth.continue-tenant",
+          "exported": "Route"
+        },
+        "source": "auth.continue-tenant",
+        "active": "true",
+        "mapping": "native-route"
+      },
+      "/auth/forgot-password": {
+        "component": "Route_auth_forgot_password.options.component",
+        "imported": {
+          "module": "./routes/auth.forgot-password",
+          "exported": "Route"
+        },
+        "source": "auth.forgot-password",
+        "active": "true",
+        "mapping": "native-route"
+      },
+      "/auth/sign-in": {
+        "component": "Route_auth_sign_in.options.component",
+        "imported": {
+          "module": "./routes/auth.sign-in",
+          "exported": "Route"
+        },
+        "source": "auth.sign-in",
+        "active": "true",
+        "mapping": "native-route"
+      },
+      "/auth/sign-up": {
+        "component": "Route_auth_sign_up.options.component",
+        "imported": {
+          "module": "./routes/auth.sign-up",
+          "exported": "Route"
+        },
+        "source": "auth.sign-up",
+        "active": "true",
+        "mapping": "native-route"
+      },
+      "/tenant/home": {
+        "component": "Route_tenant_home.options.component",
+        "imported": {
+          "module": "./routes/tenant.home",
+          "exported": "Route"
+        },
+        "source": "tenant.home",
+        "active": "true",
+        "mapping": "native-route"
+      },
+      "/localpro/home": {
+        "component": "Route_localpro_home.options.component",
+        "imported": {
+          "module": "./routes/localpro.home",
+          "exported": "Route"
+        },
+        "source": "localpro.home",
+        "active": "true",
+        "mapping": "native-route"
+      },
+      "/landlord/home": {
+        "component": "Route_landlord_home.options.component",
+        "imported": {
+          "module": "./routes/landlord.home",
+          "exported": "Route"
+        },
+        "source": "landlord.home",
+        "active": "true",
+        "mapping": "native-route"
+      },
+      "/partner/home": {
+        "component": "Route_partner_home.options.component",
+        "imported": {
+          "module": "./routes/partner.home",
+          "exported": "Route"
+        },
+        "source": "partner.home",
+        "active": "true",
+        "mapping": "native-route"
+      },
+      "/operator/home": {
+        "component": "Route_operator_home.options.component",
+        "imported": {
+          "module": "./routes/operator.home",
+          "exported": "Route"
+        },
+        "source": "operator.home",
+        "active": "true",
+        "mapping": "native-route"
+      },
+      "/family/home": {
+        "component": "Route_family_home.options.component",
+        "imported": {
+          "module": "./routes/family.home",
+          "exported": "Route"
+        },
+        "source": "family.home",
+        "active": "true",
+        "mapping": "native-route"
+      }
+    },
+    "routeRegistryFilter": "f14220497edba594893107f6ce2272dafdc1a9ad7fae9a6495990f60e29b84eb",
+    "nativeRouting": {
+      "publicChildren": [
+        "40b98d4ec5bf049dc167655843a958cd0bfeb9f4becabd982ed058b5a8b6a398",
+        "baae4394e8d865861975f1578b696d5aa5259ab32bd1bd34bcb6f5c7e32ab2cb",
+        "ef997be839d8bc4a37522b26669c230e8d56398f905f4cfb5cc8f6477b9d535c",
+        "b53288a318bf8171e060e1d2f07b333e006946e56b8e3211195ae5a1afa75725"
+      ],
+      "protectedOpening": "14e1e5d899695883e86045b987787512065324d58fe8fdce7f5f0a8af5a11bfc",
+      "protectedChildren": [
+        "20656ba9b0f049c7360fa723767f214c20f798d880975a29409cffa972414ed6",
+        "e27ed9fef76a721c06353d72a49ab3fa7409166d8b8e7d1069a9615ac749ed40",
+        "5a32f3a5cf8b25f63844aa598ba8726191d5f4f158c471249d8bc128ff6beed5"
+      ]
+    },
+    "css": {
+      "html[data-liveuin-native-app-only],html[data-liveuin-native-app-only] body,html[data-liveuin-native-app-only] #root": "342364e29e0b2cb53e520fb05ddfb912e8f7d7d8cb0d16b03b8b2706b3e2d9ce",
+      "html[data-liveuin-native-app-only] *": "1c2f0ec93c4e39213caef773fa5c6c867b7be6e78f537a6ccafbab6f577f4539",
+      "html[data-liveuin-native-app-only=\"true\"],html[data-liveuin-native-app-only=\"true\"] body": "9264f0e54cee16f1730096b97d0c6f4f25afc59f90fd98b28d97bdc89bf8cda3",
+      "html[data-liveuin-native-app-only=\"true\"] #root": "b1c2fcd48e2f5ea9fa5941d7d3043edbcad22b29e9e401c70aa85fe35331bd40",
+      "html[data-liveuin-native-app-only=\"true\"] [data-auth-shell],html[data-liveuin-native-app-only=\"true\"] [data-auth-layout]": "bfc05a2b590cbc9b44feee0a567402d6360b206d60a4bb62bc9784fac1245b46",
+      "html[data-liveuin-native-app-only=\"true\"] input,html[data-liveuin-native-app-only=\"true\"] textarea,html[data-liveuin-native-app-only=\"true\"] select": "325d52f462b81e251ca03d4c047c6c2c246eda3a314f317e2eaa368e0b46af5c"
+    }
+  },
+  "notes": [
+    "Captured from committed accepted source 47f648b, independently of later feature work or documentation commits.",
+    "The historical 20260921 baseline is retained unchanged. This source-only freeze does not assert generated payload or installed-binary parity.",
+    "Dedicated auth/session/profile sources, native identity configuration, accepted auth/home bindings, native auth CSS, and existing signed-in boundaries are protected.",
+    "New imports and route maps inside the existing protected branch, additional route-registry entries, and unrelated feature CSS are allowed.",
+    "This guard records the three user-confirmed journeys only; it does not claim a new test of logout, deep-link return, profile completion, or unrelated journeys.",
+    "Production server settings and secrets are not stored in this manifest. Their separate accepted cutover evidence remains in PROGRESS-GROK-BUILD.md.",
+    "Do not recapture this freeze merely to make feature changes pass. Auth changes require an explicit reviewed replacement acceptance."
+  ]
+}

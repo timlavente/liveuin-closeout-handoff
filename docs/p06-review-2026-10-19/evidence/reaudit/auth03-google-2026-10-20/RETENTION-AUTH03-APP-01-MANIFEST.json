@@ -1,0 +1,92 @@
+{
+  "status": "app_proof_retained_public_pending",
+  "files": [
+    {
+      "file": "AUTH03-APP-PROOF-01.md",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/evidence/AUTH03-APP-PROOF-01.md",
+      "bytes": 3885,
+      "sha256": "a55f230825cdbb6e36e39a23dc6dbc1b06ba9c539ef27fb032305772ac50c5fe",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "AUTH03-APP-BROWSER-PROOF-01.json",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/evidence/AUTH03-APP-BROWSER-PROOF-01.json",
+      "bytes": 1603,
+      "sha256": "607dffc47825f219647a15d516f87feaac7048a847e287ecd2e73dd9d3b8e0d7",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "APP-BROWSER-ROOT-OBSERVATION-01.json",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/public-gate/APP-BROWSER-ROOT-OBSERVATION-01.json",
+      "bytes": 2405,
+      "sha256": "a18e74ad3b816d827f9696ea577dc42e5f44c5f1cda65d7413eb3868ef5dfde5",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "frontend-auth03-app-activation-01.json",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/evidence/frontend-auth03-app-activation-01.json",
+      "bytes": 2531,
+      "sha256": "9580a53b3dddef324d28d1f25a5f641ec85d2eaf7469d32fa95a12c904071d2a",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "app-google-unavailable-01.png",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/browser-proof/app-google-unavailable-01.png",
+      "bytes": 40849,
+      "sha256": "d5e4962270f5e721ab8d380c9cd7c069d5ca9c3012055d4f439e10840bb76241",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "app-parent-return-reload-01.png",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/browser-proof/app-parent-return-reload-01.png",
+      "bytes": 37608,
+      "sha256": "ad9371b65d7dd0cd2bb568796d626db05d5fee48afd4f78b4c9f7d5d5b4fad0f",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "app-logout-refused-01.png",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/browser-proof/app-logout-refused-01.png",
+      "bytes": 56684,
+      "sha256": "307b5fdd51b73745d44a5937978dc0d2ff4d0047289d181ca09c61487ba6981c",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "candidate-manifest.json",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/frontend/candidate-manifest.json",
+      "bytes": 142110,
+      "sha256": "785bfec58a76aeeea01484814285d6a43a1d7783a0c4a5c0d2156f1d25b57793",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "package-manifest.json",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/release/package-manifest.json",
+      "bytes": 76564,
+      "sha256": "3d20846d5c80e253cf6f60b6a499b12dfeb30a60bfedd8b2a1ea11282b5d3ce3",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "active-delta-results.json",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/frontend/tests/active-delta-results.json",
+      "bytes": 545,
+      "sha256": "f88fda2e12eacd52f9dee7978420be01194904d0584e130a2ae454222915b4b7",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "backend-ready-gate-auth03-01.json",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/readiness/backend-ready-gate-auth03-01.json",
+      "bytes": 6063,
+      "sha256": "16a61321e26a041f0e765c0fa066df8878648cfdc266a615bb322e31512a0d62",
+      "hydrated_and_identical": true
+    },
+    {
+      "file": "RELEASE-README.md",
+      "source": "/private/tmp/liveuin-p06-auth03-20261020/release/README.md",
+      "bytes": 4135,
+      "sha256": "91a49aff7ecb1763c079e3e05733262274075f8d3d75beaa3f392c571d293e9f",
+      "hydrated_and_identical": true
+    }
+  ],
+  "hydration_check": "Complete readable bytes; local blocks; not dataless; xattr names checked; source/destination SHA-256 identical.",
+  "auth03_frozen": false,
+  "private_credentials_retained": false
+}

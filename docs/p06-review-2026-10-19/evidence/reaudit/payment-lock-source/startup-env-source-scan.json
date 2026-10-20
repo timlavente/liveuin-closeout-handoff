@@ -1,0 +1,80 @@
+{
+  "observed_at_utc": "2026-10-19T16:05:31.709214+00:00",
+  "safety": "Static source parse only; no application imports, environment files, keys, stores or requests. Output contains names, line numbers and source hashes only.",
+  "files": [
+    {
+      "path": "/opt/liveuin/ops_backend/db.py",
+      "read_limit": "PermissionError"
+    },
+    {
+      "path": "/opt/liveuin/ops_backend/auth_api.py",
+      "sha256": "160bb208fbd4681eaa5d6d6ab514a67e236019ac48d52efc68eafe5b6f4a3584",
+      "relevant_nodes": [],
+      "dotenv_text_present": false
+    },
+    {
+      "path": "/opt/liveuin/ops_backend/auth_email_otp.py",
+      "read_limit": "PermissionError"
+    },
+    {
+      "path": "/opt/liveuin/ops_backend/ui_nav_api.py",
+      "read_limit": "PermissionError"
+    },
+    {
+      "path": "/opt/liveuin/ops_backend/autopilot_executor.py",
+      "read_limit": "PermissionError"
+    },
+    {
+      "path": "/opt/liveuin/deploy/__init__.py",
+      "read_limit": "FileNotFoundError"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_payment_store.py",
+      "sha256": "0d00439e6337b56203d7e7989aecb9713162047ad0eda4022706d777393d8ba2",
+      "relevant_nodes": [],
+      "dotenv_text_present": false
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_runtime_store.py",
+      "sha256": "a727a9d051a7cdfcb7a0f03b9318d4ca525eb9f13d75b0e0bce7b776612f7895",
+      "relevant_nodes": [],
+      "dotenv_text_present": false
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_service_secret_resolver.py",
+      "sha256": "bc4e858df0b42f47fc28019ba86d6d08ae5ed73002c0452b47fc53893e3c69ff",
+      "relevant_nodes": [],
+      "dotenv_text_present": false
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_identity_session.py",
+      "sha256": "11b7ab17300c3a2ea8a0294470f9872496c6e4f8308598edad97f680ea9fefdb",
+      "relevant_nodes": [],
+      "dotenv_text_present": false
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_payment_provider_adapter.py",
+      "sha256": "5417205e70b1ac806eea5a381325aec4a10f27a03e77db6d80337839f27705a9",
+      "relevant_nodes": [],
+      "dotenv_text_present": false
+    },
+    {
+      "path": "/opt/liveuin/deploy/home_api.py",
+      "sha256": "cab022b1055df93e27328fa74813d8ae043bb1cc387562255eed0d9b68471172",
+      "relevant_nodes": [
+        {
+          "line": 38,
+          "kind": "os.environ.setdefault",
+          "name": "LIVEUIN_PUBLIC_CMS_SQLITE_PATH"
+        }
+      ],
+      "dotenv_text_present": false
+    },
+    {
+      "path": "/opt/liveuin/deploy/public_home_gateway.py",
+      "sha256": "67f4befdd7dbccc34bcaa79050b6c990cd3df33349ee4369f7da9838810f6fac",
+      "relevant_nodes": [],
+      "dotenv_text_present": false
+    }
+  ]
+}

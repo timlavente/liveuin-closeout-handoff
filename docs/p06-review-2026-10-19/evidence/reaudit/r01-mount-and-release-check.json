@@ -1,0 +1,40 @@
+{
+  "source_scans": [
+    {
+      "path": "/opt/liveuin/ops_backend/app.py",
+      "matches": [
+        {
+          "line": 27,
+          "text": "from fastapi.middleware.cors import CORSMiddleware"
+        },
+        {
+          "line": 76,
+          "text": "app.add_middleware("
+        }
+      ]
+    }
+  ],
+  "readable_deployment_helpers": [
+    {
+      "path": "/usr/local/sbin/prod-promote",
+      "sha256": "df36677c9fc0a6a52354767c8c2b2463fe771fc7c5c7521e47ee6c17c03cb8ef",
+      "bytes": 919,
+      "service_references": []
+    },
+    {
+      "path": "/usr/local/sbin/prod-canary",
+      "read_limit": "PermissionError"
+    },
+    {
+      "path": "/usr/local/sbin/prod-show",
+      "sha256": "f09a2985bda78bbfcae11dad8da01498f473fc93db0110aa9576ee96a8065f7e",
+      "bytes": 781,
+      "service_references": [
+        {
+          "line": 14,
+          "text": "| awk 'BEGIN{IGNORECASE=1} /^x-prodrouter-/{print}' \\"
+        }
+      ]
+    }
+  ]
+}

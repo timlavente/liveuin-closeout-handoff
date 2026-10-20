@@ -1,0 +1,68 @@
+{
+  "retained_at_utc": "2026-10-20T05:33:52.039256+00:00",
+  "scope": "actual member retry13, bounded mobile/Google/payment classification, exact executed source and sanitized pending parent handoff; no private-parent files",
+  "status": "AUTH02 active; member candidate PID3675726; parent/browser proof pending; frontend inert",
+  "hydration": "All sources and retained files fully readable with positive blocks and verified size/SHA-256",
+  "files": [
+    {
+      "path": "member-retry-13.json",
+      "bytes": 801,
+      "sha256": "cb62d430b02497c92ca144778167de3d858927d7f4dcbbbd35bc91e7280ad218",
+      "source": "liveuin-hk:/tmp/liveuin-r01-access-check-20261020/member-retry-13.json"
+    },
+    {
+      "path": "mobile-addition-classification-13.json",
+      "bytes": 1361,
+      "sha256": "1f4974d06f8619f892048d4d166e673be81214664a5e74ec0e1dd522a8a6df77",
+      "source": "liveuin-hk:/tmp/liveuin-r01-access-check-20261020/mobile-addition-classification-13.json"
+    },
+    {
+      "path": "google-web-presence-13.json",
+      "bytes": 2753,
+      "sha256": "dcdc7a2c9ce984b0e7e27cfc05dd3738d697c85fdcdf65e4b563192e0f93e677",
+      "source": "liveuin-hk:/tmp/liveuin-r01-access-check-20261020/google-web-presence-13.json"
+    },
+    {
+      "path": "payment-lock-after-member-13.json",
+      "bytes": 3696,
+      "sha256": "1028d0cf30c82adb3915e0aa533123e0601ad4cdb49b9d6489822c95a90e4a9c",
+      "source": "liveuin-hk:/tmp/liveuin-r01-access-check-20261020/payment-lock-after-member-13.json"
+    },
+    {
+      "path": "activation-13/MEMBER-ACTIVATION-13-ACTUAL.md",
+      "bytes": 2291,
+      "sha256": "f87f26a6e2ab18ba9b0ab9ec319f4527b83d4c8b7a41d0f8971596a9b4174fd5",
+      "source": "local source-author actual execution note"
+    },
+    {
+      "path": "activation-13/evidence/actual-executed-retry-member-admission-13.py",
+      "bytes": 9480,
+      "sha256": "00ba41f14120b99b07c2658663f2c27d418f42137c80167e336094ec1c07002d",
+      "source": "exact source read back from executed server runner"
+    },
+    {
+      "path": "activation-13/evidence/member-retry-13-actual-00ba41.json",
+      "bytes": 801,
+      "sha256": "cb62d430b02497c92ca144778167de3d858927d7f4dcbbbd35bc91e7280ad218",
+      "source": "source-author retained actual result"
+    },
+    {
+      "path": "parent-factor-handoff-evidence-13.json",
+      "bytes": 715,
+      "sha256": "3f74e641bda8ebf4766cd06926d5b052636e8fc14def3a7034df3b7a4849ffae",
+      "source": "sanitized local factor handoff metadata; no code"
+    },
+    {
+      "path": "parent-lifecycle-evidence-through-registration-13.jsonl",
+      "bytes": 266,
+      "sha256": "028f424966b0a0e82475abbf38a65e48bdd671e7e06bcab8908744b8120fb436",
+      "source": "sanitized lifecycle snapshot; registration only"
+    },
+    {
+      "path": "NAMED-PILOT-WORKING-EVIDENCE-02.md",
+      "bytes": 5244,
+      "sha256": "ed7598e39fdb8f43c54eb2ccc1290b4e2508b62c3dfb06b609ce89aac523408e",
+      "source": "additive working note"
+    }
+  ]
+}

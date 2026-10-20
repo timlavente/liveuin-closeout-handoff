@@ -1,0 +1,4 @@
+HTTP/2 200 
+server: nginx/1.24.0
+date: Mon, 19 Oct 2026 15:23:03 GMT
+content-type: application/json

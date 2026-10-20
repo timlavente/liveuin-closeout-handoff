@@ -1,0 +1,37 @@
+{
+  "observed_at_utc": "2026-10-20T07:33:35.498892+00:00",
+  "ops_pid": 3724514,
+  "ops_active": true,
+  "need_daemon_reload": false,
+  "old_sha256": "5945fd77f52036844b5921b71b07f44cc652f77e67ce40bd25f77ebd90d4dd87",
+  "actual_sha256": "a2034f5d0990719d39cbf378c92a87e7b72011b31a99483ccb75cecab06ba2dc",
+  "source_semantic_delta": {
+    "function": "StripeTestCards.create_setup",
+    "changed_constant_count": 1,
+    "old_key": "payment_method_types[]",
+    "new_key": "allowed_payment_method_types[]",
+    "all_other_ast_identical": true
+  },
+  "actual_related_source_sha256": {
+    "core_customer_card_service.py": "def3ce375d9d3adc769dc6501d5f5ce51bc081127ff875859b0d8a4abe190983",
+    "core_customer_card_api.py": "cb04159dd5d6e5ddc13e19f1a2e9c7f41d0eff15591d1b61bb68d67d3a4efb91"
+  },
+  "lock_relevance": {
+    "requires_sk_test_unchanged": true,
+    "fixed_stripe_origin_and_endpoints_unchanged": true,
+    "no_charge_or_paymentintent_method_added": true,
+    "livemode_false_response_check_unchanged": true,
+    "exact_card_response_allowlist_unchanged": true,
+    "public_live_payment_lock_weakened_by_this_delta": false
+  },
+  "not_proven": [
+    "Endive functional acceptance",
+    "test-card checkout completion",
+    "live charge or refund",
+    "platform-wide payment closure beyond the separately reviewed routes and runtime flags"
+  ],
+  "production_mutations": false,
+  "provider_api_called": false,
+  "credential_values_read": false,
+  "customer_records_read": false
+}

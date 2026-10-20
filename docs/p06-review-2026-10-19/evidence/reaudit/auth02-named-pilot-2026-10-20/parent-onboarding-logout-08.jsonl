@@ -1,0 +1,2 @@
+{"time_utc": "2026-10-20T07:32:17.352935+00:00", "method": "POST", "route": "/api/core/identity/logout", "http": 200, "ok": true, "status": "identity_session_logged_out", "error_code": null, "next_action": null, "revoked": true, "authorized_profiles": []}
+{"time_utc": "2026-10-20T07:32:17.629575+00:00", "method": "POST", "route": "/api/core/identity/session/resolve", "http": 403, "ok": false, "status": null, "error_code": "identity_session_revoked", "next_action": "retry_or_contact_support", "revoked": null, "authorized_profiles": []}

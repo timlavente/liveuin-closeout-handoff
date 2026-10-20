@@ -1,0 +1,15 @@
+{
+  "source_sha256": "0feb19cf4f4020f7cb8896528b61b443abb5a791d1235f419494f2f60fb42177",
+  "passed": 3,
+  "failed": 0,
+  "checks": [
+    "concurrent POST returns plain busy response and verifies only once",
+    "body timeout calls no API and releases verification lock",
+    "idle preconnection cannot block concurrent GET"
+  ],
+  "external_network_blocked": true,
+  "ephemeral_loopback_fixture_only": true,
+  "product_imports": false,
+  "private_checkpoint_read": false,
+  "real_factor_used": false
+}

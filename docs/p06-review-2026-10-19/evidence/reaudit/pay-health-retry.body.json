@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "version": "0.9.0-staging",
+  "stripe_mode": "test",
+  "live_enabled": false,
+  "refund_executor_enabled": false,
+  "db_ok": true,
+  "db_backend": "sqlite",
+  "schema_version": 18,
+  "schema_latest": 18,
+  "warning": "TEST MODE ONLY (Stripe test keys; live mode locked off)."
+}

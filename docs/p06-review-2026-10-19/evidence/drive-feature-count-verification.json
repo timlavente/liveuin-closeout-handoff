@@ -1,0 +1,40 @@
+{
+  "snapshot": "2026-10-06",
+  "overview": {
+    "canonical_features": 120,
+    "backend_status_counts": {
+      "Backend partial": 113,
+      "Done": 3,
+      "Backend planned": 4
+    },
+    "implementation_counts": {
+      "Partial / local evidence": 113,
+      "Done locally": 3,
+      "Planned": 4
+    },
+    "production_evidence_count": 0,
+    "explicit_production_approvals": 0,
+    "external_beta": "HOLD_BETA_ONBOARDING",
+    "beta_tracker_refreshed": "2026-10-06T09:02:19+08:00",
+    "additional_tracked_workstreams": 18,
+    "tracking_rows": 138
+  },
+  "actual_backend_status_counts": {
+    "Backend partial": 113,
+    "Done": 3,
+    "Backend planned": 4
+  },
+  "notes": [
+    "No completion percentage is inferred from local status labels. \u201cDone\u201d is limited to the stated local/system scope.",
+    "F23/F24/F53 backend Done does not confer F120 production approval.",
+    "F120 readiness register has an empty evidence_by_feature object, zero approved IDs, and last_reviewed=null. This means no approval is recorded there, not that every feature has zero implementation or no narrow live runtime.",
+    "2026-09-26 promotion matrix cites 48/48 test-ready routes, 9 production-promoted routes and 37 test-ready/not-live routes. These are different populations; 9+37=46, not 48. Two route dispositions require reconciliation. Do not convert routes into feature completion.",
+    "Latest beta tracker explicitly holds onboarding until all F01\u2013F120 have feature-level production evidence and explicit approval.",
+    "The main tracker header is dated 15 Sep although checkpoints run to 2 Oct. Individual feature rows can lag later scoped evidence.",
+    "The 26 Sep ambition synthesis calls DemandRequest/pairing planned/production-gated, while the detailed module tracker documents local private runtime. Record local partial plus production-gated and preserve this staleness note.",
+    "The Listing Media Engine constitution supersedes the old L1 primary workflow framing; earlier Decision Passport and proof ownership boundaries still apply.",
+    "No fresh production probes or test suites were executed for this documentation snapshot. Source assertions are dated evidence, not newly verified runtime.",
+    "WS01\u2013WS18 are document-local tracking IDs for named extensions, cross-cutting workflows and programmes. They overlap F01\u2013F120 and must not be represented as 18 additional independent feature approvals.",
+    "Listing Media Engine WS06 uses the latest inspected 30 Sep steady-state continuation HOLD. The older 20 Aug RC1 and 24 Aug RC3 dark-runtime records are historical stages. RealHomes production-origin availability failed while accepted Core/source invariants passed."
+  ]
+}

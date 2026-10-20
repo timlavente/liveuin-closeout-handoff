@@ -1,0 +1,75 @@
+{
+  "checked_at": "2026-10-19T16:15:59.285412+00:00",
+  "mode": "read_only_no_mail_no_customer_database_no_logs",
+  "uid_is_root": true,
+  "ops_service": {
+    "MainPID": "1298408",
+    "Result": "success",
+    "ExecMainExitTimestamp": "n/a",
+    "ExecMainCode": "0",
+    "ExecMainStatus": "0",
+    "Id": "ops-backend@liveuin.service",
+    "LoadState": "loaded",
+    "ActiveState": "active",
+    "SubState": "running",
+    "FragmentPath": "/etc/systemd/system/ops-backend@liveuin.service"
+  },
+  "gateway_service": {
+    "MainPID": "0",
+    "Result": "success",
+    "ExecMainExitTimestamp": "Fri 2026-10-09 00:06:05 +08",
+    "ExecMainCode": "2",
+    "ExecMainStatus": "15",
+    "Id": "otp-gateway.service",
+    "LoadState": "loaded",
+    "ActiveState": "inactive",
+    "SubState": "dead",
+    "FragmentPath": "/etc/systemd/system/otp-gateway.service"
+  },
+  "file_fingerprints": [
+    {
+      "path": "/etc/systemd/system/otp-gateway.service",
+      "sha256": "d2ecd65e7581c6aa019a56e637fdded337ffd4f720c826479371a85ff80bc272",
+      "bytes": 501,
+      "mode": "0o644",
+      "uid": 0
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/82-identity-otp-gateway.conf",
+      "sha256": "6746a5b8da9cf9965ae1730ee67ba3fc5cbdd1fe4d32af5ccfc962534a9a9609",
+      "bytes": 136,
+      "mode": "0o644",
+      "uid": 0
+    },
+    {
+      "path": "/opt/liveuin/otp_service/app.py",
+      "sha256": "24542a1052dda9723591e1e068c0a446183b643768cf6ccda134a4f2f8e7fe87",
+      "bytes": 5632,
+      "mode": "0o644",
+      "uid": 1001
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_identity_api.py",
+      "sha256": "fcf8c612f2442ab05a8950523890806af7b89f88e9cbf801fcc5561ec1d6acc4",
+      "bytes": 41141,
+      "mode": "0o644",
+      "uid": 501
+    }
+  ],
+  "expected_ops_process": true,
+  "effective_presence": {
+    "OTP_GATEWAY_URL": true,
+    "OTP_INTERNAL_TOKEN": true
+  },
+  "gateway_binding": {
+    "scheme": "http",
+    "host": "127.0.0.1",
+    "port": 9094,
+    "root_path": true,
+    "userinfo_present": false,
+    "query_present": false,
+    "fragment_present": false
+  },
+  "tcp_9094": "ConnectionRefusedError",
+  "classification": "configured_gateway_unreachable"
+}

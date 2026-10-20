@@ -1,0 +1,61 @@
+{
+  "status": "app_return_continuation_passed_auth02_still_open",
+  "date_singapore": "2026-10-20",
+  "browser_observer": "coordinating agent through actual browser",
+  "browser_path": [
+    "signed-out App /tenant/account with allowed absolute return destination",
+    "Welcome existing-account link",
+    "sign-in with retained relative return",
+    "normal password sign-in to /tenant/account",
+    "reload: Tenant, one profile",
+    "account-button sign-out to Welcome",
+    "private account reopening refused"
+  ],
+  "screenshots_independently_viewed": true,
+  "app_config_sha256": "949256d02fa4e26ba69e013cb717551c2e0fac7b16d9c80151632962b3f39a0b",
+  "app_entry_sha256": "d64151e0728796b61d396cb8c38d00f7bd8dc9c563975b42aa5caad86b02e268",
+  "namespace": "auth02-34c8511dd5a2a5ad",
+  "public_pointer_changed": false,
+  "logout_counts": {
+    "before_singapore": "2026-10-20T16:18:09.995108+08:00",
+    "after_singapore": "2026-10-20T16:19:08.765505+08:00",
+    "canonical_sessions_and_refresh_each": {
+      "total_before_and_after": 6,
+      "active_before": 1,
+      "active_after": 0,
+      "revoked_before": 5,
+      "revoked_after": 6
+    }
+  },
+  "carried_forward_checks": [
+    {
+      "proof": "APP-ACTIVATION-BROWSER-10.md",
+      "checks": [
+        "wrong password",
+        "canonical reload",
+        "LocalPro refusal"
+      ]
+    },
+    {
+      "proof": "APP-BROWSER-LOGOUT-11.md",
+      "checks": [
+        "account-button logout",
+        "profile-menu logout"
+      ]
+    }
+  ],
+  "carry_forward_basis": "Return11 changes only allowed App absolute-return normalization; auth/session/logout code is unchanged. The recorded return11 browser sequence and account-button logout were newly executed; other checks are not represented as rerun.",
+  "pending": [
+    "published public login activation and actual public-to-App handoff",
+    "final AUTH02 issue freeze"
+  ],
+  "not_proven": [
+    "family case",
+    "all named roles",
+    "R01",
+    "payments readiness",
+    "P6",
+    "public opening"
+  ],
+  "private_credentials_or_account_identifiers_retained": false
+}

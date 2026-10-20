@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://ops.liveuin.com/api/core/payments/rails",
+    "method": "GET",
+    "observed_at_utc": "2026-10-19T15:39:02.930277+00:00",
+    "status": 401,
+    "content_type": "application/json",
+    "body": "{\"detail\":\"identity_session_required\"}"
+  },
+  {
+    "url": "https://ops.liveuin.com/api/core/payments/status",
+    "method": "GET",
+    "observed_at_utc": "2026-10-19T15:39:02.933110+00:00",
+    "status": 401,
+    "content_type": "application/json",
+    "body": "{\"detail\":\"identity_session_required\"}"
+  },
+  {
+    "url": "https://api.liveuin.com/api/core/payments/rails",
+    "method": "GET",
+    "observed_at_utc": "2026-10-19T15:39:02.933545+00:00",
+    "status": 404,
+    "content_type": "application/json",
+    "body": "{\"detail\":\"Not Found\"}"
+  }
+]

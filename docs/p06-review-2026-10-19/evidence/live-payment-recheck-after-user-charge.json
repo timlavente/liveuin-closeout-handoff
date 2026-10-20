@@ -1,0 +1,56 @@
+{
+  "purpose": "Read-only recheck after user-reported one-dollar real-card payment; no payment/session/refund actions",
+  "observations": [
+    {
+      "observed_at_sgt": "2026-10-19T19:43:18+08:00",
+      "url": "https://pay.igema.space/healthz",
+      "http_status": 200,
+      "response_headers": {
+        "server": "nginx/1.24.0",
+        "date": "Mon, 19 Oct 2026 11:43:18 GMT",
+        "content-type": "application/json"
+      },
+      "curl_exit": 0,
+      "error": "",
+      "health": {
+        "ok": true,
+        "version": "0.9.0-staging",
+        "stripe_mode": "test",
+        "live_enabled": false,
+        "refund_executor_enabled": false,
+        "db_ok": true,
+        "db_backend": "sqlite",
+        "schema_version": 18,
+        "schema_latest": 18,
+        "warning": "TEST MODE ONLY (Stripe test keys; live mode locked off).",
+        "airwallex": {
+          "mode": "demo",
+          "routing_enabled": false,
+          "live_enabled": false
+        }
+      }
+    },
+    {
+      "observed_at_sgt": "2026-10-19T19:43:18+08:00",
+      "url": "https://www.liveuin.com/api/core/inventory/marketing-publications/listing_ef55a13993724d8e8d1201cb",
+      "http_status": 200,
+      "response_headers": {
+        "date": "Mon, 19 Oct 2026 11:43:18 GMT",
+        "content-type": "application/json",
+        "server": "cloudflare",
+        "cache-control": "no-store"
+      },
+      "curl_exit": 0,
+      "error": "",
+      "public_flags": {
+        "version": 1,
+        "state": "accepting_offers",
+        "offer_submission_enabled": true,
+        "instant_booking_enabled": false,
+        "payment_enabled": false,
+        "hold_enabled": false
+      }
+    }
+  ],
+  "limitation": "These published settings do not prove or disprove the reported transaction, a different merchant/path, a temporary earlier setting, or a payment completed after the original audit."
+}

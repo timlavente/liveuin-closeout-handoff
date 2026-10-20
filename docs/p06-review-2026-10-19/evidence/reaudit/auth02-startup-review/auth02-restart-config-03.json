@@ -1,0 +1,65 @@
+{
+  "component": "AUTH02-9095",
+  "read_only_configuration_check": true,
+  "service_actions": false,
+  "product_imports": false,
+  "secret_values_output": false,
+  "credential_digests_output": false,
+  "customer_database_opened": false,
+  "unset_environment_names": [
+    "DATABASE_URL",
+    "LIVEUIN_DB_DSN",
+    "OPS_DB_DSN",
+    "OPS_DB_URL"
+  ],
+  "unset_environment_rule_count": 4,
+  "manager_environment_variable_count": 2,
+  "pre_wrapper_prestart": {
+    "enums": {
+      "ENSURE_VENV_REBUILD": {
+        "configured": false,
+        "effective_classification": "auto"
+      },
+      "ENSURE_VENV_APP_IMPORT": {
+        "configured": false,
+        "effective_classification": "auto"
+      },
+      "ENSURE_VENV_WRITE_FREEZE": {
+        "configured": false,
+        "effective_classification": "0"
+      },
+      "ENSURE_VENV_COMPILEALL": {
+        "configured": false,
+        "effective_classification": "1"
+      }
+    },
+    "path_bindings": {
+      "BACKEND_DIR": {
+        "override_present": false,
+        "matches_expected_or_unset": true
+      },
+      "VENV_DIR": {
+        "override_present": false,
+        "matches_expected_or_unset": true
+      },
+      "REQ_FILE": {
+        "override_present": false,
+        "matches_expected_or_unset": true
+      },
+      "PY_SYS": {
+        "override_present": false,
+        "matches_expected_or_unset": true
+      }
+    },
+    "imports_match_default": true,
+    "dsn_variable_list_matches_default": true,
+    "any_default_dsn_nonempty_before_wrapper": false
+  },
+  "credential_bytes_read_in_memory": true,
+  "configured_environment_names_checked": 250,
+  "different_environment_names": [],
+  "configured_credentials_equal_loaded": true,
+  "credential_bindings_checked": 13,
+  "status": "configuration_equal_startup_verdict_still_required",
+  "pid": 1298408
+}

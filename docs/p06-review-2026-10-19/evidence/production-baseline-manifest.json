@@ -1,0 +1,860 @@
+{
+  "observed_at_utc": "2026-10-19T12:03:51.629213+00:00",
+  "host_alias": "liveuin-hk",
+  "ssh_user": "liveuin",
+  "safety": "Metadata/source hashes only. No database opened. No secret values or process environment read. No remote writes.",
+  "services": [
+    {
+      "MainPID": "296370",
+      "ExecStart": "{ path=/usr/bin/python3 ; argv[]=/usr/bin/python3 -m uvicorn deploy.public_home_gateway:app --host 127.0.0.1 --port 9080 --proxy-headers --app-dir /opt/liveuin ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+      "EnvironmentFiles": "/etc/liveuin/public-home.env (ignore_errors=no)",
+      "WorkingDirectory": "/opt/liveuin",
+      "User": "liveuin",
+      "Group": "liveuin",
+      "Id": "liveuin-public-api.service",
+      "ActiveState": "active",
+      "SubState": "running",
+      "FragmentPath": "/etc/systemd/system/liveuin-public-api.service",
+      "DropInPaths": "/etc/systemd/system/liveuin-public-api.service.d/35-media-document-credentials.conf /etc/systemd/system/liveuin-public-api.service.d/50-liveuin-pass-core.conf /etc/systemd/system/liveuin-public-api.service.d/99-deploy-public-home.conf /etc/systemd/system/liveuin-public-api.service.d/public-home.conf",
+      "unit": "liveuin-public-api.service",
+      "actual_process_argv": "/usr/bin/python3 -m uvicorn deploy.public_home_gateway:app --host 127.0.0.1 --port 9080 --proxy-headers --app-dir /opt/liveuin"
+    },
+    {
+      "MainPID": "1298408",
+      "ExecStart": "{ path=/usr/local/sbin/liveuin-ops-backend-with-dsn-credential ; argv[]=/usr/local/sbin/liveuin-ops-backend-with-dsn-credential ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+      "EnvironmentFiles": "/etc/liveuin/listing-media-engine-candidates/liveuin-listing-media-engine-phase1-rc3-20260822-production.env (ignore_errors=yes)",
+      "WorkingDirectory": "/opt/liveuin/ops_backend",
+      "User": "liveuin_ops",
+      "Group": "liveuin_ops",
+      "Id": "ops-backend@liveuin.service",
+      "ActiveState": "active",
+      "SubState": "running",
+      "FragmentPath": "/etc/systemd/system/ops-backend@liveuin.service",
+      "DropInPaths": "/etc/systemd/system/ops-backend@liveuin.service.d/20-liveuin-secret-credentials.conf /etc/systemd/system/ops-backend@liveuin.service.d/20-smart-inventory-state.conf /etc/systemd/system/ops-backend@liveuin.service.d/30-runtime-user-liveuin-ops.conf /etc/systemd/system/ops-backend@liveuin.service.d/30-service-api-key-credential.conf /etc/systemd/system/ops-backend@liveuin.service.d/35-media-document-credentials.conf /etc/systemd/system/ops-backend@liveuin.service.d/40-inventory-api-key-credential.conf /etc/systemd/system/ops-backend@liveuin.service.d/40-smart-inventory-push-token.conf /etc/systemd/system/ops-backend@liveuin.service.d/50-host-workspace.conf /etc/systemd/system/ops-backend@liveuin.service.d/50-liveuin-pass-core.conf /etc/systemd/system/ops-backend@liveuin.service.d/50-provenance-review-read-projection.conf /etc/systemd/system/ops-backend@liveuin.service.d/60-l0-internal-operating-spine.conf /etc/systemd/system/ops-backend@liveuin.service.d/70-liveuin-connector-adapter.conf /etc/systemd/system/ops-backend@liveuin.service.d/70-liveuin-core-pass-data.conf /etc/systemd/system/ops-backend@liveuin.service.d/71-liveuin-core-srv-state.conf /etc/systemd/system/ops-backend@liveuin.service.d/72-finance-ledger-workbench.conf /etc/systemd/system/ops-backend@liveuin.service.d/73-liveuin-core-demand-data.conf /etc/systemd/system/ops-backend@liveuin.service.d/75-stripe-sandbox-webhook.conf /etc/systemd/system/ops-backend@liveuin.service.d/76-stripe-sandbox-api-key.conf /etc/systemd/system/ops-backend@liveuin.service.d/77-liveuin-core-vendor-data.conf /etc/systemd/system/ops-backend@liveuin.service.d/80-ai-provider-credentials.conf /etc/systemd/system/ops-backend@liveuin.service.d/80-listing-media-engine-preflight.conf /etc/systemd/system/ops-backend@liveuin.service.d/81-listing-media-connector-identity.conf /etc/systemd/system/ops-backend@liveuin.service.d/82-ai-provider-egress-proxy.conf /etc/systemd/system/ops-backend@liveuin.service.d/82-identity-otp-gateway.conf /etc/systemd/system/ops-backend@liveuin.service.d/90-listing-media-engine-rc3-dark-runtime.conf /etc/systemd/system/ops-backend@liveuin.service.d/91-listing-media-l1-guard-runtime.conf /etc/systemd/system/ops-backend@liveuin.service.d/95-liveuin-dsn-credential.conf /etc/systemd/system/ops-backend@liveuin.service.d/96-country-context-credential.conf /etc/systemd/system/ops-backend@liveuin.service.d/97-account-deletion-identity.conf",
+      "unit": "ops-backend@liveuin.service",
+      "actual_process_argv": "/opt/liveuin/ops_backend/.venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 9095 --proxy-headers --forwarded-allow-ips=* --timeout-keep-alive 65"
+    },
+    {
+      "MainPID": "296387",
+      "ExecStart": "{ path=/opt/liveuin/ops_backend/.venv/bin/python ; argv[]=/opt/liveuin/ops_backend/.venv/bin/python -m uvicorn deploy.ops_command_gateway:app --host 127.0.0.1 --port 9083 --proxy-headers ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+      "EnvironmentFiles": "/etc/liveuin/ops-command.env (ignore_errors=no)",
+      "WorkingDirectory": "/opt/liveuin",
+      "User": "liveuin",
+      "Group": "liveuin",
+      "Id": "liveuin-ops-command.service",
+      "ActiveState": "active",
+      "SubState": "running",
+      "FragmentPath": "/etc/systemd/system/liveuin-ops-command.service",
+      "DropInPaths": "/etc/systemd/system/liveuin-ops-command.service.d/30-service-api-key-credential.conf /etc/systemd/system/liveuin-ops-command.service.d/40-runtime-path.conf",
+      "unit": "liveuin-ops-command.service",
+      "actual_process_argv": "/opt/liveuin/ops_backend/.venv/bin/python -m uvicorn deploy.ops_command_gateway:app --host 127.0.0.1 --port 9083 --proxy-headers"
+    },
+    {
+      "MainPID": "2662668",
+      "ExecStart": "{ path=/opt/liveuin-identity-public/current/.venv/bin/python ; argv[]=/opt/liveuin-identity-public/current/.venv/bin/python -m uvicorn prod_app:app --host 127.0.0.1 --port 9098 --proxy-headers --forwarded-allow-ips=127.0.0.1 --timeout-keep-alive 30 ; ignore_errors=no ; start_time=[Mon 2026-10-19 00:36:13 +08] ; stop_time=[n/a] ; pid=2662668 ; code=(null) ; status=0/0 }",
+      "EnvironmentFiles": "/etc/liveuin/identity-public-prod-secrets.env (ignore_errors=no)",
+      "WorkingDirectory": "/opt/liveuin-identity-public/current",
+      "User": "liveuin_ops",
+      "Group": "liveuin_ops",
+      "Id": "liveuin-identity-public-prod.service",
+      "ActiveState": "active",
+      "SubState": "running",
+      "FragmentPath": "/etc/systemd/system/liveuin-identity-public-prod.service",
+      "DropInPaths": "/etc/systemd/system/liveuin-identity-public-prod.service.d/zzzz-production-provider-consolidation.conf",
+      "unit": "liveuin-identity-public-prod.service",
+      "actual_process_argv": "/opt/liveuin-identity-public/current/.venv/bin/python -m uvicorn prod_app:app --host 127.0.0.1 --port 9098 --proxy-headers --forwarded-allow-ips=127.0.0.1 --timeout-keep-alive 30"
+    }
+  ],
+  "files": [
+    {
+      "path": "/etc/nginx/conf.d/api.liveuin.com.conf",
+      "resolved_path": "/etc/nginx/conf.d/api.liveuin.com.conf",
+      "bytes": 2545,
+      "sha256": "c088f9a2150268557db7732da0e0f6a6b3e41212ad370b8a9c2931ef07c2b677",
+      "mtime_utc": "2026-09-03T10:53:07.943299+00:00"
+    },
+    {
+      "path": "/etc/nginx/conf.d/app.liveuin.com.conf",
+      "resolved_path": "/etc/nginx/conf.d/app.liveuin.com.conf",
+      "bytes": 9302,
+      "sha256": "dd2a557bd58adc7dc2bb823fa083f748a608039d9c7077d517e1283c9bf4013b",
+      "mtime_utc": "2026-10-18T16:36:12.602981+00:00"
+    },
+    {
+      "path": "/etc/nginx/conf.d/host.liveuin.com.conf",
+      "resolved_path": "/etc/nginx/conf.d/host.liveuin.com.conf",
+      "bytes": 8429,
+      "sha256": "a79914852204b7507eaf88885ca882a09296701ce6ff31763d386964bbceba77",
+      "mtime_utc": "2026-10-02T09:04:22.254848+00:00"
+    },
+    {
+      "path": "/etc/nginx/conf.d/liveuin.com.conf",
+      "resolved_path": "/etc/nginx/conf.d/liveuin.com.conf",
+      "bytes": 12988,
+      "sha256": "fd56cd248bfc7354b0d86c6dbe2f76a181e27e80090dd96b1822cda603eb1d34",
+      "mtime_utc": "2026-10-16T15:10:13.400648+00:00"
+    },
+    {
+      "path": "/etc/nginx/conf.d/ops.liveuin.com.conf",
+      "resolved_path": "/etc/nginx/conf.d/ops.liveuin.com.conf",
+      "bytes": 31554,
+      "sha256": "6bc41b661ff66ea3918194171dd1f3b9ab7dcf0f4cb93d7a1d272bd9979bc708",
+      "mtime_utc": "2026-10-08T15:07:54.321482+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/liveuin-identity-public-prod.service",
+      "resolved_path": "/etc/systemd/system/liveuin-identity-public-prod.service",
+      "bytes": 2672,
+      "sha256": "703140f3a2f3ed0ae90dd46e3f7d465e253be54be72a4c28e658491541bda38c",
+      "mtime_utc": "2026-10-16T14:51:08.668819+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/liveuin-identity-public-prod.service.d/zzzz-production-provider-consolidation.conf",
+      "resolved_path": "/etc/systemd/system/liveuin-identity-public-prod.service.d/zzzz-production-provider-consolidation.conf",
+      "read_limit": "PermissionError"
+    },
+    {
+      "path": "/etc/systemd/system/liveuin-ops-command.service",
+      "resolved_path": "/etc/systemd/system/liveuin-ops-command.service",
+      "bytes": 451,
+      "sha256": "1cb4671ed709efabd0c56c10b28554aa3d3b5209dfc3c379379e83d6117e9cac",
+      "mtime_utc": "2026-06-01T08:03:26.275083+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/liveuin-ops-command.service.d/30-service-api-key-credential.conf",
+      "resolved_path": "/etc/systemd/system/liveuin-ops-command.service.d/30-service-api-key-credential.conf",
+      "bytes": 136,
+      "sha256": "57f9f092e5ab25d1de65227a7341977f4f32aac7036a0c3901084a1069aff392",
+      "mtime_utc": "2026-07-15T22:48:35.991030+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/liveuin-ops-command.service.d/40-runtime-path.conf",
+      "resolved_path": "/etc/systemd/system/liveuin-ops-command.service.d/40-runtime-path.conf",
+      "bytes": 160,
+      "sha256": "817df7766c434c181e1566792aaf4f5a0d0a88ec45b518865092657e7ab79ef4",
+      "mtime_utc": "2026-07-15T22:51:14.973483+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/liveuin-public-api.service",
+      "resolved_path": "/etc/systemd/system/liveuin-public-api.service",
+      "bytes": 526,
+      "sha256": "9497ebadb696db01361318f99113bfa880e70568d5c4ce77d1b8f00b98dbcff4",
+      "mtime_utc": "2026-04-30T05:08:51.127130+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/liveuin-public-api.service.d/35-media-document-credentials.conf",
+      "resolved_path": "/etc/systemd/system/liveuin-public-api.service.d/35-media-document-credentials.conf",
+      "bytes": 260,
+      "sha256": "8cf0a1c9d9cb19f8decd9ec032e5553c685cf388e4ac836b1d423460f2cc46a3",
+      "mtime_utc": "2026-07-16T01:53:49.193691+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/liveuin-public-api.service.d/50-liveuin-pass-core.conf",
+      "resolved_path": "/etc/systemd/system/liveuin-public-api.service.d/50-liveuin-pass-core.conf",
+      "bytes": 95,
+      "sha256": "4dfddd7f16b526d1e661268d682826ae365294c54b28bbb0275909f9abc74f20",
+      "mtime_utc": "2026-05-28T11:39:48.514813+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/liveuin-public-api.service.d/99-deploy-public-home.conf",
+      "resolved_path": "/etc/systemd/system/liveuin-public-api.service.d/99-deploy-public-home.conf",
+      "bytes": 188,
+      "sha256": "be7e84570487f7b13957e0ab0139534ac1092692b68950a8862e88f4ac8cd7d0",
+      "mtime_utc": "2026-06-18T22:51:05.849443+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/liveuin-public-api.service.d/public-home.conf",
+      "resolved_path": "/etc/systemd/system/liveuin-public-api.service.d/public-home.conf",
+      "bytes": 55,
+      "sha256": "bfb12af704e2d7a4c362ac7749f7624f96636f5f0b49ccdd743f7cfd1e2c7d00",
+      "mtime_utc": "2026-05-28T08:33:42.764634+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service",
+      "bytes": 1911,
+      "sha256": "9b143931021a1b931fc3269623186270fb55e9ded49ac386d4680b916990d4c0",
+      "mtime_utc": "2026-03-16T06:33:20.986958+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/20-liveuin-secret-credentials.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/20-liveuin-secret-credentials.conf",
+      "bytes": 294,
+      "sha256": "9e05ca8be666ffc488ef5b8e146444d23d269a34b7d5484f4e8bc9109e0ef102",
+      "mtime_utc": "2026-07-15T22:06:02.411921+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/20-smart-inventory-state.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/20-smart-inventory-state.conf",
+      "bytes": 655,
+      "sha256": "daf6d3a95c26d7e1bed04541b8e2db259f96369fc5c5049299255c39bcbf00f9",
+      "mtime_utc": "2026-05-02T15:05:29.267557+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/30-runtime-user-liveuin-ops.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/30-runtime-user-liveuin-ops.conf",
+      "bytes": 442,
+      "sha256": "c6d340947aebe058b28b5a44423238c0bb38f67ed3404f04d8d2cf246c353d25",
+      "mtime_utc": "2026-05-02T16:07:46.491296+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/30-service-api-key-credential.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/30-service-api-key-credential.conf",
+      "bytes": 158,
+      "sha256": "c419d35f6c75b8c8b2cf51090ce5457392ecab9b8d564f6a4274ba002ffd6e5b",
+      "mtime_utc": "2026-07-15T22:48:35.995030+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/35-media-document-credentials.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/35-media-document-credentials.conf",
+      "bytes": 260,
+      "sha256": "8cf0a1c9d9cb19f8decd9ec032e5553c685cf388e4ac836b1d423460f2cc46a3",
+      "mtime_utc": "2026-07-16T01:53:49.197691+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/40-inventory-api-key-credential.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/40-inventory-api-key-credential.conf",
+      "bytes": 193,
+      "sha256": "c84a48bf4426d376a01f00444ee363cdfd15fd7f8f3a1803b5399645e8f75ce3",
+      "mtime_utc": "2026-09-03T11:47:39.635756+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/40-smart-inventory-push-token.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/40-smart-inventory-push-token.conf",
+      "bytes": 498,
+      "sha256": "42e3fdc00c0a0e873ed0362fd143f4bb9403e22ca06c1d3b39a68b5d6dbf27b4",
+      "mtime_utc": "2026-05-02T16:37:15.006049+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/50-host-workspace.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/50-host-workspace.conf",
+      "bytes": 58,
+      "sha256": "4d9bb5fd8b85c045d8d8bd8367a2abee31d66fffddf0feea7a9909c90463ea88",
+      "mtime_utc": "2026-09-16T08:52:54.085163+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/50-liveuin-pass-core.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/50-liveuin-pass-core.conf",
+      "bytes": 188,
+      "sha256": "6622409996eda97d940b829c4400a6c51e4b686dd77456a60e0e10b83e41bed2",
+      "mtime_utc": "2026-05-28T11:39:48.518813+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/50-provenance-review-read-projection.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/50-provenance-review-read-projection.conf",
+      "bytes": 68,
+      "sha256": "dcc1fac1115508efca9fc78b818786dc82eb471d1795d8d223769ad5968f1b98",
+      "mtime_utc": "2026-09-08T08:19:26.622976+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/60-l0-internal-operating-spine.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/60-l0-internal-operating-spine.conf",
+      "bytes": 72,
+      "sha256": "24a38a43a88ec9f236360f6c2d117bc1f09a44906684297f3d8b270407601e4c",
+      "mtime_utc": "2026-06-12T08:58:15.470495+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/70-liveuin-connector-adapter.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/70-liveuin-connector-adapter.conf",
+      "bytes": 156,
+      "sha256": "b53b4eccc8da5c33b716eaf89a47bb5c6037f1e9c16d20e885a001af0b9cc935",
+      "mtime_utc": "2026-08-11T11:41:36.749770+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/70-liveuin-core-pass-data.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/70-liveuin-core-pass-data.conf",
+      "bytes": 356,
+      "sha256": "1f0666ada101c19041b87905d5b131dad55ea090a81a5abc20986c58817a7ce9",
+      "mtime_utc": "2026-06-14T07:39:01.822419+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/71-liveuin-core-srv-state.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/71-liveuin-core-srv-state.conf",
+      "bytes": 247,
+      "sha256": "ab743a01a841a69ad90520353d06cf96e59132cc448733edb5afa50d2f9e1734",
+      "mtime_utc": "2026-06-14T07:41:31.308994+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/72-finance-ledger-workbench.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/72-finance-ledger-workbench.conf",
+      "bytes": 59,
+      "sha256": "7fdf4dde117ab369cabfaf1da692edcc627e4a8a213e517a1f034946b707145c",
+      "mtime_utc": "2026-06-16T18:26:07.060203+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/73-liveuin-core-demand-data.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/73-liveuin-core-demand-data.conf",
+      "bytes": 277,
+      "sha256": "01bba92d2134ec251b2b90f82ceb555a720c695c9895907bc5decb053090f42b",
+      "mtime_utc": "2026-06-20T15:23:23.873047+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/75-stripe-sandbox-webhook.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/75-stripe-sandbox-webhook.conf",
+      "bytes": 112,
+      "sha256": "46519ff8cccd2c5892d2a1817b84c6a305c47d47237d502e0f109a927e346317",
+      "mtime_utc": "2026-07-17T12:08:46.772498+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/76-stripe-sandbox-api-key.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/76-stripe-sandbox-api-key.conf",
+      "bytes": 86,
+      "sha256": "739a957599eb64e258cfd54839395ed9ec703b1697db15d34aa5f2309afd71e5",
+      "mtime_utc": "2026-07-17T12:40:21.670005+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/77-liveuin-core-vendor-data.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/77-liveuin-core-vendor-data.conf",
+      "bytes": 238,
+      "sha256": "4999c9673c95e35e356893904ba60962b7025f3875f3f769832f01cdc802f8c4",
+      "mtime_utc": "2026-08-06T15:24:53.719320+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/80-ai-provider-credentials.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/80-ai-provider-credentials.conf",
+      "bytes": 599,
+      "sha256": "7116bbb7bfe445302dc21b789098f210920c25dd268b07eea4c477532cb82878",
+      "mtime_utc": "2026-09-21T11:10:47.822467+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/80-listing-media-engine-preflight.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/80-listing-media-engine-preflight.conf",
+      "bytes": 222,
+      "sha256": "2baf6ae79505e5a91d7fff18ebf8ee9165add44d70ee54407f88aefc3a6def9e",
+      "mtime_utc": "2026-08-21T06:50:06.621465+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/81-listing-media-connector-identity.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/81-listing-media-connector-identity.conf",
+      "bytes": 116,
+      "sha256": "d4ec7429797d638c138d399a0ec37f77a67bb924d6afefb212c96f846775dfd9",
+      "mtime_utc": "2026-08-21T09:43:37.289201+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/82-ai-provider-egress-proxy.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/82-ai-provider-egress-proxy.conf",
+      "bytes": 154,
+      "sha256": "bc4505b69d961e0eb447a8ff09e14e6ef5af86c7b199dc916f6bc00abedbd58a",
+      "mtime_utc": "2026-09-15T11:37:07.076066+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/82-identity-otp-gateway.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/82-identity-otp-gateway.conf",
+      "bytes": 136,
+      "sha256": "6746a5b8da9cf9965ae1730ee67ba3fc5cbdd1fe4d32af5ccfc962534a9a9609",
+      "mtime_utc": "2026-09-11T07:47:23.471166+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/90-listing-media-engine-rc3-dark-runtime.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/90-listing-media-engine-rc3-dark-runtime.conf",
+      "read_limit": "PermissionError"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/91-listing-media-l1-guard-runtime.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/91-listing-media-l1-guard-runtime.conf",
+      "bytes": 203,
+      "sha256": "4024916bf46c71cb7e419ef8f3a4457f7843d713d9cc4b7906e236965388e667",
+      "mtime_utc": "2026-09-11T11:06:19.763473+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/95-liveuin-dsn-credential.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/95-liveuin-dsn-credential.conf",
+      "bytes": 244,
+      "sha256": "44f65d985228c1a0e5bd47d70a1312c67f099c99ff58a44b381c51c3e84df4e1",
+      "mtime_utc": "2026-09-11T15:47:26.579732+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/96-country-context-credential.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/96-country-context-credential.conf",
+      "bytes": 120,
+      "sha256": "341bd1e3a87ad11daaa47aaff48f80ec67c1e29087b1687849b807da46be4952",
+      "mtime_utc": "2026-09-15T11:37:07.076169+00:00"
+    },
+    {
+      "path": "/etc/systemd/system/ops-backend@liveuin.service.d/97-account-deletion-identity.conf",
+      "resolved_path": "/etc/systemd/system/ops-backend@liveuin.service.d/97-account-deletion-identity.conf",
+      "bytes": 253,
+      "sha256": "8a49e1237a3c98fe8296235e46e3f98a6fce6aa52b2055e50b74f7100196dc84",
+      "mtime_utc": "2026-10-16T15:24:35.199588+00:00"
+    },
+    {
+      "path": "/opt/liveuin-identity-public/current/prod_app.py",
+      "resolved_path": "/opt/liveuin-identity-public/releases/20261016-1e9dca6/prod_app.py",
+      "bytes": 4931,
+      "sha256": "6311c28a8b20d2a30423a9e299d97f114670f6a106d6aa9f1888617a9a157f11",
+      "mtime_utc": "2026-10-16T10:08:30.651609+00:00"
+    },
+    {
+      "path": "/opt/liveuin/deploy/admin_control_service.py",
+      "resolved_path": "/opt/liveuin/deploy/admin_control_service.py",
+      "bytes": 41206,
+      "sha256": "f9e45c0525c954a54594f1179d6803ef606436d551d3fce3bdd72c4175ca1d94",
+      "mtime_utc": "2026-07-02T16:30:07.677918+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/admin_control_service.py",
+      "local_sha256": "f9e45c0525c954a54594f1179d6803ef606436d551d3fce3bdd72c4175ca1d94",
+      "local_comparison": "identical"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_adapter_replay_postgres_store.py",
+      "resolved_path": "/opt/liveuin/deploy/core_adapter_replay_postgres_store.py",
+      "bytes": 10442,
+      "sha256": "56a4986293608eeef2b08937c68d1e733b405f1c454c3720fa130c4ed8053ea2",
+      "mtime_utc": "2026-07-16T01:05:15.110095+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/core_adapter_replay_postgres_store.py",
+      "local_sha256": "56a4986293608eeef2b08937c68d1e733b405f1c454c3720fa130c4ed8053ea2",
+      "local_comparison": "identical"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_adapter_replay_store.py",
+      "resolved_path": "/opt/liveuin/deploy/core_adapter_replay_store.py",
+      "bytes": 7961,
+      "sha256": "d20920edb46c9569d900fbb5ec250afc1bdd8c8397368f5f33ad1f89f01cce97",
+      "mtime_utc": "2026-08-21T10:58:23.501899+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/core_adapter_replay_store.py",
+      "local_sha256": "d20920edb46c9569d900fbb5ec250afc1bdd8c8397368f5f33ad1f89f01cce97",
+      "local_comparison": "identical"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_case_api.py",
+      "resolved_path": "/opt/liveuin/deploy/core_case_api.py",
+      "bytes": 17171,
+      "sha256": "7df17a7a919ac4e87d1e6519838abe5ef29e30e3bd35e4a7a1c9568d3deecb8c",
+      "mtime_utc": "2026-09-02T07:44:10.173257+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/core_case_api.py",
+      "local_sha256": "b5e77508fe58cb96961e945171eac7d900087608587232d244014ce65ca6c422",
+      "local_comparison": "different"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_case_service.py",
+      "resolved_path": "/opt/liveuin/deploy/core_case_service.py",
+      "bytes": 38243,
+      "sha256": "8406fae85543a34acce17f56c9c6c59889b0dbb68b414d3292ca602d86344342",
+      "mtime_utc": "2026-07-18T15:40:36.519517+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/core_case_service.py",
+      "local_sha256": "f928f919e422f69f4f3a43dae09060f6e5905aff015b2a2f7566c7e7ce863629",
+      "local_comparison": "different"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_case_store.py",
+      "resolved_path": "/opt/liveuin/deploy/core_case_store.py",
+      "bytes": 9316,
+      "sha256": "2eaeb52ad5cedda5c9bc013ac7fe41564c81395a929b6e33ffbcd8a03b401ade",
+      "mtime_utc": "2026-07-25T07:28:50.304650+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/core_case_store.py",
+      "local_sha256": "0cc07a133b5e85b9a4091c6f3b7813d0dac9c252b851ff778c6e79baf6a3008a",
+      "local_comparison": "different"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_demand_store.py",
+      "resolved_path": "/opt/liveuin/deploy/core_demand_store.py",
+      "bytes": 61277,
+      "sha256": "6712721c219aaff276da3b81cbc04126a4e55f252d9e89f6e051985118f5c3be",
+      "mtime_utc": "2026-07-21T07:42:48.211421+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/core_demand_store.py",
+      "local_sha256": "858a5b1e8876f09a438957cfaf0cfa0833d850f22e86925046315da9f4307605",
+      "local_comparison": "different"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_identity_store.py",
+      "resolved_path": "/opt/liveuin/deploy/core_identity_store.py",
+      "bytes": 63678,
+      "sha256": "8435560b88230df6737ff3dca8dc52bafd881dd7ebb01c3b961356ae9cf04f36",
+      "mtime_utc": "2026-09-22T09:43:21.297078+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/core_identity_store.py",
+      "local_sha256": "e2d6a27294f96cee65dab74630331bb3164519abf223fdc1e2723023b31d9473",
+      "local_comparison": "different"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_inventory_store.py",
+      "resolved_path": "/opt/liveuin/deploy/core_inventory_store.py",
+      "bytes": 148575,
+      "sha256": "7426dc1aa1b0a24c6eea95638f355070f6676088ff3fe5ed4c6261c98addadb6",
+      "mtime_utc": "2026-09-24T09:57:16.028486+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/core_inventory_store.py",
+      "local_sha256": "7f82ab6d1409602be331f4f1537e6a0f851f919058c2a8bf13177d573f0aaddb",
+      "local_comparison": "different"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_marketing_offer_api.py",
+      "resolved_path": "/opt/liveuin/deploy/core_marketing_offer_api.py",
+      "bytes": 3737,
+      "sha256": "9fd192f7a44ba3520d6d24849a080ab359580ae3d7aced89bf0785f518e3dd1c",
+      "mtime_utc": "2026-10-01T11:21:12.469037+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/core_marketing_offer_api.py",
+      "local_sha256": "9fd192f7a44ba3520d6d24849a080ab359580ae3d7aced89bf0785f518e3dd1c",
+      "local_comparison": "identical"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_marketing_publication_runtime.py",
+      "resolved_path": "/opt/liveuin/deploy/core_marketing_publication_runtime.py",
+      "bytes": 17662,
+      "sha256": "0383e287e3e925b1ce8d2366ed348ef29b2ccc8cab6224b1834e9d49803e6026",
+      "mtime_utc": "2026-10-01T11:21:12.473037+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/core_marketing_publication_runtime.py",
+      "local_sha256": "0383e287e3e925b1ce8d2366ed348ef29b2ccc8cab6224b1834e9d49803e6026",
+      "local_comparison": "identical"
+    },
+    {
+      "path": "/opt/liveuin/deploy/home_api.py",
+      "resolved_path": "/opt/liveuin/deploy/home_api.py",
+      "bytes": 30224,
+      "sha256": "cab022b1055df93e27328fa74813d8ae043bb1cc387562255eed0d9b68471172",
+      "mtime_utc": "2026-07-30T15:07:25.828421+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/home_api.py",
+      "local_sha256": "f7bf3536bed2fc5f3b4a187f2c771e168d5ca855ebf8ace7027baf6f225a3dee",
+      "local_comparison": "different"
+    },
+    {
+      "path": "/opt/liveuin/deploy/ops_command_api.py",
+      "resolved_path": "/opt/liveuin/deploy/ops_command_api.py",
+      "bytes": 3105,
+      "sha256": "48eac8e6c44b61b4b3fe08c454e1af8bde5722078d0172bda8502a9953e3e1d1",
+      "mtime_utc": "2026-05-29T08:29:02.661600+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/ops_command_api.py",
+      "local_sha256": "48eac8e6c44b61b4b3fe08c454e1af8bde5722078d0172bda8502a9953e3e1d1",
+      "local_comparison": "identical"
+    },
+    {
+      "path": "/opt/liveuin/deploy/ops_command_gateway.py",
+      "resolved_path": "/opt/liveuin/deploy/ops_command_gateway.py",
+      "bytes": 1872,
+      "sha256": "de48662bcc1be71ee822519b67c2f3a7235264af4028e75628353e639cdb4b44",
+      "mtime_utc": "2026-07-15T22:43:36.830435+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/ops_command_gateway.py",
+      "local_sha256": "de48662bcc1be71ee822519b67c2f3a7235264af4028e75628353e639cdb4b44",
+      "local_comparison": "identical"
+    },
+    {
+      "path": "/opt/liveuin/deploy/ops_command_service.py",
+      "resolved_path": "/opt/liveuin/deploy/ops_command_service.py",
+      "bytes": 54213,
+      "sha256": "25706af2a8030220a1402db20f9144d4df2fdea97549f757ba00eed38a5ec50b",
+      "mtime_utc": "2026-07-15T22:34:13.662981+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/ops_command_service.py",
+      "local_sha256": "25706af2a8030220a1402db20f9144d4df2fdea97549f757ba00eed38a5ec50b",
+      "local_comparison": "identical"
+    },
+    {
+      "path": "/opt/liveuin/deploy/public_home_gateway.py",
+      "resolved_path": "/opt/liveuin/deploy/public_home_gateway.py",
+      "bytes": 15319,
+      "sha256": "67f4befdd7dbccc34bcaa79050b6c990cd3df33349ee4369f7da9838810f6fac",
+      "mtime_utc": "2026-07-31T12:28:08.319694+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/public_home_gateway.py",
+      "local_sha256": "b52fe97a8aad7519f7e043256f13baf5ae95e7b7ba3a0df3ea380f97c0f80bd5",
+      "local_comparison": "different"
+    },
+    {
+      "path": "/opt/liveuin/deploy/public_home_postgres_store.py",
+      "resolved_path": "/opt/liveuin/deploy/public_home_postgres_store.py",
+      "bytes": 24785,
+      "sha256": "76176b81974529878f5bec30bbdaba5eadd3f8ff659ad00f2d31f0d04971a16d",
+      "mtime_utc": "2026-07-01T17:12:39.254681+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/public_home_postgres_store.py",
+      "local_sha256": "76176b81974529878f5bec30bbdaba5eadd3f8ff659ad00f2d31f0d04971a16d",
+      "local_comparison": "identical"
+    },
+    {
+      "path": "/opt/liveuin/deploy/public_home_service.py",
+      "resolved_path": "/opt/liveuin/deploy/public_home_service.py",
+      "bytes": 114364,
+      "sha256": "9fe7c3cad3efae914853bd8f3891474f81f1b8931a3d74151edcd6efb036207b",
+      "mtime_utc": "2026-07-01T17:13:48.840511+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/public_home_service.py",
+      "local_sha256": "9fe7c3cad3efae914853bd8f3891474f81f1b8931a3d74151edcd6efb036207b",
+      "local_comparison": "identical"
+    },
+    {
+      "path": "/opt/liveuin/deploy/public_home_store.py",
+      "resolved_path": "/opt/liveuin/deploy/public_home_store.py",
+      "bytes": 32527,
+      "sha256": "e109c4dea977229ba73b3dee009e1e78cdf900d6107d07778017fb2efa5da87e",
+      "mtime_utc": "2026-07-01T17:07:02.409640+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/public_home_store.py",
+      "local_sha256": "e109c4dea977229ba73b3dee009e1e78cdf900d6107d07778017fb2efa5da87e",
+      "local_comparison": "identical"
+    },
+    {
+      "path": "/opt/liveuin/deploy/public_status_service.py",
+      "resolved_path": "/opt/liveuin/deploy/public_status_service.py",
+      "bytes": 24010,
+      "sha256": "a1f9cc984a52c987e6f9e2ceab3f1a5ece5d97b5e6db42c37f00ed5b5cffa7d2",
+      "mtime_utc": "2026-07-02T16:26:44.586613+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/deploy/public_status_service.py",
+      "local_sha256": "a1f9cc984a52c987e6f9e2ceab3f1a5ece5d97b5e6db42c37f00ed5b5cffa7d2",
+      "local_comparison": "identical"
+    },
+    {
+      "path": "/opt/liveuin/ops_backend/app.py",
+      "resolved_path": "/opt/liveuin/ops_backend/app.py",
+      "bytes": 414964,
+      "sha256": "fcecabe419ce5aa080155f0e29e34eee79596d05f3838a6180dad2ce9795bbf2",
+      "mtime_utc": "2026-09-28T11:57:43.680821+00:00",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/ops_backend/app.py",
+      "local_comparison": "FileNotFoundError"
+    },
+    {
+      "path": "/opt/liveuin/ops_backend/app/main.py",
+      "resolved_path": "/opt/liveuin/ops_backend/app/main.py",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/ops_backend/app/main.py",
+      "local_comparison": "FileNotFoundError",
+      "ordinary_read_limit": "PermissionError",
+      "sha256": "e843d45640ddfc58e8a2957ea50726c17fe8be4056b9023f2c887648493423da",
+      "bytes": 22405,
+      "read_method": "sudo -n /usr/bin/rsync remote sender; remote source read only; no remote write"
+    },
+    {
+      "path": "/opt/liveuin/ops_backend/db.py",
+      "resolved_path": "/opt/liveuin/ops_backend/db.py",
+      "read_limit": "PermissionError",
+      "local_comparison_path": "/Users/Vivian/Documents/Liveuin/ops_backend/db.py",
+      "local_comparison": "FileNotFoundError"
+    },
+    {
+      "path": "/usr/local/sbin/liveuin-ops-backend-with-dsn-credential",
+      "resolved_path": "/usr/local/sbin/liveuin-ops-backend-with-dsn-credential",
+      "bytes": 775,
+      "sha256": "c4530a73cc60d4f3caa7c6d734b017cda6dbb0e34a2b12a27349136b75b5327b",
+      "mtime_utc": "2026-09-15T11:37:07.075907+00:00"
+    }
+  ],
+  "selected_config_bindings": [
+    {
+      "source": "/etc/systemd/system/ops-backend@liveuin.service.d/73-liveuin-core-demand-data.conf",
+      "line": 4,
+      "name": "LIVEUIN_CORE_DEMAND_DATA_DIR",
+      "value": "/var/lib/liveuin-ops-backend/core-demand-data",
+      "evidence_level": "configured unit directive; process env not inspected"
+    }
+  ],
+  "git_metadata": [
+    {
+      "path": "/opt/liveuin",
+      "resolved_path": "/opt/liveuin",
+      "direct_git_metadata_exists": false
+    },
+    {
+      "path": "/opt/liveuin/ops_backend",
+      "resolved_path": "/opt/liveuin/ops_backend",
+      "direct_git_metadata_exists": false
+    },
+    {
+      "path": "/opt/liveuin-identity-public/current",
+      "resolved_path": "/opt/liveuin-identity-public/releases/20261016-1e9dca6",
+      "direct_git_metadata_exists": false
+    }
+  ],
+  "store_source_declarations": [
+    {
+      "path": "/opt/liveuin/deploy/core_case_store.py",
+      "selected_declarations": [
+        {
+          "line": 13,
+          "text": "configured = os.getenv(\"LIVEUIN_CORE_CASE_DATA_DIR\", \"\").strip()"
+        },
+        {
+          "line": 17,
+          "text": "return Path(__file__).resolve().parents[1] / \"outputs\" / \"core-case-data\""
+        },
+        {
+          "line": 21,
+          "text": "configured = os.getenv(\"LIVEUIN_CORE_CASE_SQLITE_PATH\", \"\").strip()"
+        },
+        {
+          "line": 25,
+          "text": "return data_dir() / \"liveuin-core-case.sqlite3\""
+        },
+        {
+          "line": 50,
+          "text": "conn = sqlite3.connect(target)"
+        }
+      ]
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_inventory_store.py",
+      "selected_declarations": [
+        {
+          "line": 13,
+          "text": "configured = os.getenv(\"LIVEUIN_CORE_INVENTORY_DATA_DIR\", \"\").strip()"
+        },
+        {
+          "line": 17,
+          "text": "return Path(__file__).resolve().parents[1] / \"outputs\" / \"core-inventory-data\""
+        },
+        {
+          "line": 21,
+          "text": "configured = os.getenv(\"LIVEUIN_CORE_INVENTORY_SQLITE_PATH\", \"\").strip()"
+        },
+        {
+          "line": 25,
+          "text": "return data_dir() / \"liveuin-core-inventory.sqlite3\""
+        },
+        {
+          "line": 68,
+          "text": "conn = sqlite3.connect(target, isolation_level=None)"
+        }
+      ]
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_demand_store.py",
+      "selected_declarations": [
+        {
+          "line": 18,
+          "text": "configured = os.getenv(\"LIVEUIN_CORE_DEMAND_DATA_DIR\", \"\").strip()"
+        },
+        {
+          "line": 22,
+          "text": "return Path(__file__).resolve().parents[1] / \"outputs\" / \"core-demand-data\""
+        },
+        {
+          "line": 26,
+          "text": "configured = os.getenv(\"LIVEUIN_CORE_DEMAND_SQLITE_PATH\", \"\").strip()"
+        },
+        {
+          "line": 30,
+          "text": "return data_dir() / \"liveuin-core-demand.sqlite3\""
+        },
+        {
+          "line": 53,
+          "text": "conn = sqlite3.connect(target, timeout=30)"
+        },
+        {
+          "line": 81,
+          "text": "conn = sqlite3.connect(target, timeout=30)"
+        }
+      ]
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_identity_store.py",
+      "selected_declarations": [
+        {
+          "line": 13,
+          "text": "configured = os.getenv(\"LIVEUIN_CORE_IDENTITY_DATA_DIR\", \"\").strip()"
+        },
+        {
+          "line": 21,
+          "text": "configured = os.getenv(\"LIVEUIN_CORE_IDENTITY_SQLITE_PATH\", \"\").strip()"
+        },
+        {
+          "line": 25,
+          "text": "return data_dir() / \"liveuin-core-identity.sqlite3\""
+        },
+        {
+          "line": 51,
+          "text": "conn = sqlite3.connect(target)"
+        }
+      ]
+    },
+    {
+      "path": "/opt/liveuin/deploy/public_home_store.py",
+      "selected_declarations": [
+        {
+          "line": 32,
+          "text": "return store_driver() in {\"postgres\", \"postgresql\"}"
+        },
+        {
+          "line": 36,
+          "text": "configured = os.getenv(\"LIVEUIN_PUBLIC_HOME_DATA_DIR\", \"\").strip()"
+        },
+        {
+          "line": 40,
+          "text": "return Path(__file__).resolve().parents[1] / \"outputs\" / \"home-api-data\""
+        },
+        {
+          "line": 44,
+          "text": "configured = os.getenv(\"LIVEUIN_PUBLIC_HOME_SQLITE_PATH\", \"\").strip()"
+        },
+        {
+          "line": 48,
+          "text": "return data_dir() / \"public-home.sqlite3\""
+        },
+        {
+          "line": 70,
+          "text": "conn = sqlite3.connect(target)"
+        }
+      ]
+    },
+    {
+      "path": "/opt/liveuin/deploy/public_home_postgres_store.py",
+      "selected_declarations": [
+        {
+          "line": 34,
+          "text": "import psycopg"
+        },
+        {
+          "line": 36,
+          "text": "return \"psycopg\", psycopg"
+        },
+        {
+          "line": 41,
+          "text": "import psycopg2"
+        },
+        {
+          "line": 43,
+          "text": "return \"psycopg2\", psycopg2"
+        },
+        {
+          "line": 45,
+          "text": "raise RuntimeError(\"Postgres store requires psycopg or psycopg2\") from exc"
+        }
+      ]
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_adapter_replay_store.py",
+      "selected_declarations": [
+        {
+          "line": 59,
+          "text": "return store_driver() in {\"postgres\", \"postgresql\"}"
+        },
+        {
+          "line": 89,
+          "text": "\"shared_replay_store\": driver in {\"postgres\", \"postgresql\"},"
+        }
+      ]
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_adapter_replay_postgres_store.py",
+      "selected_declarations": [
+        {
+          "line": 41,
+          "text": "import psycopg"
+        },
+        {
+          "line": 43,
+          "text": "return \"psycopg\", psycopg"
+        },
+        {
+          "line": 48,
+          "text": "import psycopg2"
+        },
+        {
+          "line": 50,
+          "text": "return \"psycopg2\", psycopg2"
+        },
+        {
+          "line": 52,
+          "text": "raise RuntimeError(\"Postgres adapter replay store requires psycopg or psycopg2\") from exc"
+        }
+      ]
+    }
+  ],
+  "protected_entry_source_read": {
+    "remote_path": "/opt/liveuin/ops_backend/app/main.py",
+    "local_evidence_path": "/private/tmp/liveuin-p06-audit-20261019/baseline-closeout/ops-main.py",
+    "bytes": 22405,
+    "sha256": "e843d45640ddfc58e8a2957ea50726c17fe8be4056b9023f2c887648493423da",
+    "method": "sudo -n /usr/bin/rsync remote sender; remote source read only; no remote write"
+  },
+  "scope_limits": [
+    "On-disk exact file baseline, not a complete reproducible Git release or in-memory Python fingerprint",
+    "Selected configured store paths do not prove final effective process bindings",
+    "No secret values, process environment, database rows, customer records or imported tenancies read",
+    "Identity release directory name is not independently verified Git provenance"
+  ],
+  "related_evidence": [
+    "BASELINE-CLOSEOUT-01.md",
+    "store-bindings-and-identity.json",
+    "store-path-metadata.json",
+    "../github-source-evidence.json"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "component": "AUTH02-member-one-file-retry",
+  "public_launch": false,
+  "provider_flags_changed": false,
+  "accounts_or_grants_created": false,
+  "database_restore": false,
+  "ops_pid_observed_and_verified": 3669871,
+  "reviewed_mobile_addition_preserved": true,
+  "status": "candidate_active_normal_browser_proof_pending",
+  "previous_pid": 3662305,
+  "recovery_required": true,
+  "pid": 3675726,
+  "checks": {
+    "raw_create": {
+      "status": 404,
+      "no_store": true
+    },
+    "raw_verify": {
+      "status": 404,
+      "no_store": true
+    },
+    "outsider_registration": {
+      "status": 403,
+      "no_store": true
+    },
+    "outsider_password": {
+      "status": 403,
+      "no_store": true
+    },
+    "unsigned_resolve": {
+      "status": 403,
+      "no_store": true
+    }
+  }
+}

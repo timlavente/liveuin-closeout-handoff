@@ -1,0 +1,54 @@
+{
+  "observed_utc": "2026-10-20T07:32:10.563479+00:00",
+  "status": "api_proof_pass_browser_and_cases_still_unproven",
+  "checks": [
+    {
+      "step": "wrong_password_refused",
+      "http": 401,
+      "passed": true,
+      "no_store": true
+    },
+    {
+      "step": "correct_password_authenticated",
+      "http": 200,
+      "passed": true,
+      "no_store": true
+    },
+    {
+      "step": "exact_parent_canonical_projection",
+      "http": 200,
+      "passed": true,
+      "no_store": true
+    },
+    {
+      "step": "signed_parent_ops_refused",
+      "http": 401,
+      "passed": true,
+      "no_store": true,
+      "policy_403_observed": false
+    },
+    {
+      "step": "server_logout_and_refresh_revoked",
+      "http": 200,
+      "passed": true,
+      "no_store": true
+    },
+    {
+      "step": "logged_out_session_refused",
+      "http": 403,
+      "passed": true,
+      "no_store": true
+    },
+    {
+      "step": "logged_out_refresh_refused",
+      "http": 401,
+      "passed": true,
+      "no_store": true
+    }
+  ],
+  "test_sessions_left_unconfirmed": 0,
+  "browser_proof": false,
+  "case_isolation_proof": false,
+  "onboarding_logout_proven": true,
+  "onboarding_logout_utc": "2026-10-20T07:32:17.629575+00:00"
+}

@@ -1,0 +1,54 @@
+{
+  "observed_at_utc": "2026-10-19T15:34:17.182116+00:00",
+  "scope": "source only; no runtime environment, credentials or database opened",
+  "files": [
+    {
+      "path": "/opt/liveuin/deploy/core_payment_api.py",
+      "sha256": "160343272ba1a1f31b6d22bd1355b685abe3f70b3d978638f79d11d76853ed63",
+      "size": 22502,
+      "local_source": "/private/tmp/liveuin-p06-audit-20261019/reaudit/payment-lock-source/core_payment_api.py"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_payment_service.py",
+      "sha256": "f8611eb165f8b09cca4624aebb7f3369273486244e1bd8c0b004259394469054",
+      "size": 191861,
+      "local_source": "/private/tmp/liveuin-p06-audit-20261019/reaudit/payment-lock-source/core_payment_service.py"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_payment_rail.py",
+      "sha256": "20ca0cb4a6f4325047bb67da5ec7ecb3fe302cee80351f030a27079f71d64c44",
+      "size": 6678,
+      "local_source": "/private/tmp/liveuin-p06-audit-20261019/reaudit/payment-lock-source/core_payment_rail.py"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_stripe_sandbox_api.py",
+      "sha256": "2eb20cb1dd95e48ce25df0844e838c458a218f0290518657bd8f2c66099f30c6",
+      "size": 4448,
+      "local_source": "/private/tmp/liveuin-p06-audit-20261019/reaudit/payment-lock-source/core_stripe_sandbox_api.py"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_marketing_publication_runtime.py",
+      "sha256": "0383e287e3e925b1ce8d2366ed348ef29b2ccc8cab6224b1834e9d49803e6026",
+      "size": 17662,
+      "local_source": "/private/tmp/liveuin-p06-audit-20261019/reaudit/payment-lock-source/core_marketing_publication_runtime.py"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_booking_api.py",
+      "sha256": "fc5ff2709274892ea1b4b7acb9e5658ea8c469259c764188f1c9019bacd1dc0c",
+      "size": 5973,
+      "local_source": "/private/tmp/liveuin-p06-audit-20261019/reaudit/payment-lock-source/core_booking_api.py"
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_booking_service.py",
+      "sha256": "9d433b9de5de52a7d73716b07610f775effc5f25597f742bd686d170d499e693",
+      "size": 36717,
+      "local_source": "/private/tmp/liveuin-p06-audit-20261019/reaudit/payment-lock-source/core_booking_service.py"
+    },
+    {
+      "path": "/opt/liveuin/ops_backend/app.py",
+      "sha256": "fcecabe419ce5aa080155f0e29e34eee79596d05f3838a6180dad2ce9795bbf2",
+      "size": 414964,
+      "local_source": "/private/tmp/liveuin-p06-audit-20261019/reaudit/payment-lock-source/app.py"
+    }
+  ]
+}

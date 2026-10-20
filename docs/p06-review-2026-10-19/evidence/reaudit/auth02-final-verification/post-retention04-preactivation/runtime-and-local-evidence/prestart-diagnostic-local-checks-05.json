@@ -1,0 +1,30 @@
+{
+  "sha256": "affeb8109e61f6488e2570a852b99da75dbaf12d69915aa6de961f76c596c981",
+  "passed": 5,
+  "total": 5,
+  "checks": [
+    {
+      "expected_class": "known_pycache_library",
+      "passed": true
+    },
+    {
+      "expected_class": "known_pycache_library",
+      "passed": true
+    },
+    {
+      "expected_class": "known_pycache_other",
+      "passed": true
+    },
+    {
+      "expected_class": "other",
+      "passed": true
+    },
+    {
+      "name": "private_path_excluded_from_console_summary",
+      "passed": true
+    }
+  ],
+  "production_execution": false,
+  "policy_relaxed": false,
+  "test_path_model": "Linux canonical paths; no actual file opens"
+}

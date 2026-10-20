@@ -1,0 +1,28 @@
+{
+  "status": "stopped",
+  "events": [
+    {
+      "stage": "locked_backend_continuity",
+      "passed": true
+    },
+    {
+      "stage": "original_public_pointer_recovery",
+      "status": "entered"
+    },
+    {
+      "stage": "original_public_pointer_recovery",
+      "status": "passed"
+    }
+  ],
+  "exceptions": [
+    {
+      "type": "Stop",
+      "reason": "public_activation_failed_old_pointer_restored"
+    },
+    {
+      "type": "HTTPError",
+      "http": 403
+    }
+  ],
+  "no_auth_or_product_completion_claim": true
+}

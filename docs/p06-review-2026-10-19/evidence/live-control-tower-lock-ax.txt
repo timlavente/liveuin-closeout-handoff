@@ -1,0 +1,31 @@
+Browser tab: 1, Title: "LiveUIN Ops sign-in", URL: "https://ops.liveuin.com/ops/login?return_to=/ops/control-tower".
+1 AXWebArea LiveUIN Ops sign-in, URL: ops.liveuin.com/ops/login?return_to=/ops/control-tower
+	2 container root
+		3 container Notifications (F8)
+			4 content list
+		5 container Notifications alt+T
+		6 container
+			7 text LIVEUIN PRIVATE WORKSPACE
+			8 heading Open the governed Ops workspace., Value: 1
+				9 text Open the governed Ops workspace.
+			10 text One Core Identity gate for Command, Control Tower, reviews, and approved internal tools. AI Studio remains a protected destination inside Ops.
+			11 text LIVEUIN CORE IDENTITY
+			12 heading Ops sign-in, Value: 2
+				13 text Ops sign-in
+			14 text The backend validates the account, workspace, and role. Selecting a role here never grants access.
+			15 container
+				16 text Approved Ops email
+				17 text field (settable) Approved Ops email
+			18 container
+				19 text Requested access: ops
+			20 container
+				21 text Challenge ID
+				22 text field (settable) Challenge ID
+			23 container
+				24 text One-time code
+				25 text field (settable) One-time code
+			26 button Request code
+			27 text Use an account already provisioned for the private LiveUIN Ops workspace.
+			28 text Protected internal surface. No public account access.
+
+The focused UI element is 1 AXWebArea LiveUIN Ops sign-in, URL: ops.liveuin.com/ops/login?return_to=/ops/control-tower

@@ -1,0 +1,390 @@
+[
+  {
+    "path": "/api/core/public-cms/blog/posts",
+    "method": "router.get",
+    "line": 342,
+    "function": "core_public_cms_blog_posts",
+    "args": [
+      "request",
+      "site",
+      "host",
+      "status",
+      "category",
+      "q",
+      "limit"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "Query",
+      "Query",
+      "Query",
+      "Query",
+      "Query",
+      "_load_preview_module",
+      "_site_slug",
+      "_raise_if_error",
+      "preview.load_public_blog_posts"
+    ]
+  },
+  {
+    "path": "/api/core/public-cms/blog/posts/{slug}",
+    "method": "router.get",
+    "line": 365,
+    "function": "core_public_cms_blog_post",
+    "args": [
+      "request",
+      "slug",
+      "site",
+      "host",
+      "status"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "Query",
+      "Query",
+      "_load_preview_module",
+      "_site_slug",
+      "_raise_if_error",
+      "preview.get_public_blog_post"
+    ]
+  },
+  {
+    "path": "/api/core/public-cms/pages",
+    "method": "router.get",
+    "line": 379,
+    "function": "core_public_cms_pages",
+    "args": [
+      "request",
+      "site",
+      "host",
+      "status",
+      "route"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "Query",
+      "Query",
+      "Query",
+      "JSONResponse"
+    ]
+  },
+  {
+    "path": "/api/core/public-cms/blog/posts/draft",
+    "method": "router.post",
+    "line": 393,
+    "function": "core_public_cms_blog_post_draft",
+    "args": [
+      "request",
+      "payload"
+    ],
+    "calls": [
+      "router.post",
+      "Body",
+      "_load_preview_module",
+      "_site_slug_from_payload",
+      "_raise_if_error",
+      "isinstance",
+      "payload.get",
+      "HTTPException",
+      "preview.upsert_public_blog_post",
+      "payload.get",
+      "_request_meta"
+    ]
+  },
+  {
+    "path": "/api/core/public-cms/blog/posts/publish",
+    "method": "router.post",
+    "line": 406,
+    "function": "core_public_cms_blog_post_publish",
+    "args": [
+      "request",
+      "payload"
+    ],
+    "calls": [
+      "router.post",
+      "Body",
+      "_load_preview_module",
+      "_site_slug_from_payload",
+      "_raise_if_error",
+      "isinstance",
+      "payload.get",
+      "HTTPException",
+      "preview.upsert_public_blog_post",
+      "payload.get",
+      "_request_meta"
+    ]
+  },
+  {
+    "path": "/api/core/public-cms/blog/posts/restore",
+    "method": "router.post",
+    "line": 419,
+    "function": "core_public_cms_blog_post_restore",
+    "args": [
+      "request",
+      "payload"
+    ],
+    "calls": [
+      "router.post",
+      "Body",
+      "_load_preview_module",
+      "_site_slug_from_payload",
+      "preview.public_theme_normalize_site_slug",
+      "_raise_if_error",
+      "HTTPException",
+      "int",
+      "int",
+      "preview.restore_public_blog_post_revision",
+      "payload.get",
+      "payload.get",
+      "payload.get",
+      "payload.get",
+      "_request_meta"
+    ]
+  },
+  {
+    "path": "/api/core/public-cms/pages/draft",
+    "method": "router.post",
+    "line": 448,
+    "function": "core_public_cms_page_draft",
+    "args": [
+      "request",
+      "payload"
+    ],
+    "calls": [
+      "router.post",
+      "Body",
+      "_load_preview_module",
+      "_site_slug_from_payload",
+      "_raise_if_error",
+      "isinstance",
+      "payload.get",
+      "HTTPException",
+      "preview.upsert_public_cms_page",
+      "payload.get",
+      "_request_meta"
+    ]
+  },
+  {
+    "path": "/api/core/public-cms/pages/publish",
+    "method": "router.post",
+    "line": 461,
+    "function": "core_public_cms_page_publish",
+    "args": [
+      "request",
+      "payload"
+    ],
+    "calls": [
+      "router.post",
+      "Body",
+      "_load_preview_module",
+      "_site_slug_from_payload",
+      "_raise_if_error",
+      "isinstance",
+      "payload.get",
+      "HTTPException",
+      "preview.upsert_public_cms_page",
+      "payload.get",
+      "_request_meta"
+    ]
+  },
+  {
+    "path": "/api/core/public-cms/pages/restore",
+    "method": "router.post",
+    "line": 474,
+    "function": "core_public_cms_page_restore",
+    "args": [
+      "request",
+      "payload"
+    ],
+    "calls": [
+      "router.post",
+      "Body",
+      "_load_preview_module",
+      "_site_slug_from_payload",
+      "preview.normalize_path_for_public_router",
+      "_raise_if_error",
+      "str",
+      "int",
+      "int",
+      "preview.restore_public_cms_page_revision",
+      "payload.get",
+      "payload.get",
+      "payload.get",
+      "payload.get",
+      "_request_meta"
+    ]
+  },
+  {
+    "path": "/api/core/admin/control-center",
+    "method": "router.get",
+    "line": 729,
+    "function": "admin_control_summary",
+    "args": [
+      "workspace_id"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "admin_svc.admin_control_summary"
+    ]
+  },
+  {
+    "path": "/api/core/admin/control-center/users",
+    "method": "router.get",
+    "line": 736,
+    "function": "admin_control_users",
+    "args": [
+      "workspace_id"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "admin_svc.admin_control_users"
+    ]
+  },
+  {
+    "path": "/api/core/admin/control-center/roles",
+    "method": "router.get",
+    "line": 743,
+    "function": "admin_control_roles",
+    "args": [
+      "workspace_id"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "admin_svc.admin_control_roles"
+    ]
+  },
+  {
+    "path": "/api/core/admin/control-center/audit",
+    "method": "router.get",
+    "line": 750,
+    "function": "admin_control_audit",
+    "args": [
+      "workspace_id",
+      "limit"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "Query",
+      "admin_svc.admin_control_audit"
+    ]
+  },
+  {
+    "path": "/api/core/admin/control-center/retention",
+    "method": "router.get",
+    "line": 758,
+    "function": "admin_control_retention",
+    "args": [
+      "workspace_id"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "admin_svc.admin_control_retention"
+    ]
+  },
+  {
+    "path": "/api/core/admin/control-center/settings",
+    "method": "router.get",
+    "line": 765,
+    "function": "admin_control_settings",
+    "args": [
+      "workspace_id"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "admin_svc.admin_control_settings"
+    ]
+  },
+  {
+    "path": "/api/core/admin/control-center/developers",
+    "method": "router.get",
+    "line": 772,
+    "function": "admin_control_developers",
+    "args": [
+      "workspace_id"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "admin_svc.admin_control_developers"
+    ]
+  },
+  {
+    "path": "/api/core/developers/portal",
+    "method": "router.get",
+    "line": 779,
+    "function": "developer_portal_summary",
+    "args": [
+      "workspace_id"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "developer_svc.developer_portal_summary"
+    ]
+  },
+  {
+    "path": "/api/core/developers/portal/docs",
+    "method": "router.get",
+    "line": 786,
+    "function": "developer_portal_docs",
+    "args": [
+      "workspace_id"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "developer_svc.developer_portal_docs"
+    ]
+  },
+  {
+    "path": "/api/core/developers/portal/webhooks",
+    "method": "router.get",
+    "line": 793,
+    "function": "developer_portal_webhooks",
+    "args": [
+      "workspace_id"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "developer_svc.developer_portal_webhooks"
+    ]
+  },
+  {
+    "path": "/api/core/developers/portal/sandbox",
+    "method": "router.get",
+    "line": 800,
+    "function": "developer_portal_sandbox",
+    "args": [
+      "workspace_id"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "developer_svc.developer_portal_sandbox"
+    ]
+  },
+  {
+    "path": "/api/core/developers/portal/limits",
+    "method": "router.get",
+    "line": 807,
+    "function": "developer_portal_limits",
+    "args": [
+      "workspace_id"
+    ],
+    "calls": [
+      "router.get",
+      "Query",
+      "developer_svc.developer_portal_limits"
+    ]
+  }
+]

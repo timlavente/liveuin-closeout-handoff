@@ -1,0 +1,55 @@
+{
+  "component": "AUTH02-9095",
+  "started_at_utc": "2026-10-19T20:21:15.998469+00:00",
+  "accounts_created": false,
+  "emails_requested": false,
+  "flags_changed": false,
+  "database_restored": false,
+  "public_access_opened": false,
+  "entry_prestart_probe": {
+    "passed": true,
+    "no_product_import": true,
+    "no_dependency_install": true
+  },
+  "candidate_prestart_probe": {
+    "passed": true,
+    "no_product_import": true,
+    "no_dependency_install": true
+  },
+  "negative_checks": {
+    "healthz": {
+      "status": 200,
+      "ok": true,
+      "detail": null,
+      "no_store": false
+    },
+    "raw_create": {
+      "status": 404,
+      "ok": false,
+      "detail": "not_found",
+      "no_store": true
+    },
+    "raw_verify": {
+      "status": 404,
+      "ok": false,
+      "detail": "not_found",
+      "no_store": true
+    },
+    "empty_request": {
+      "status": 403,
+      "ok": false,
+      "detail": "browser_sign_in_unavailable",
+      "no_store": false
+    },
+    "empty_verify": {
+      "status": 400,
+      "ok": false,
+      "detail": "challenge_id_required",
+      "no_store": false
+    }
+  },
+  "status": "candidate_negative_checks_passed_owner_proof_pending",
+  "pid": 3427360,
+  "backup_directory": "/root/liveuin-closeout-backups/AUTH02-20261019T202116Z-3427110",
+  "candidate_sha256": "a0834b412c06263d1ca593de67cc2514471cf4fdd7a83c860608be998fc65fcb"
+}

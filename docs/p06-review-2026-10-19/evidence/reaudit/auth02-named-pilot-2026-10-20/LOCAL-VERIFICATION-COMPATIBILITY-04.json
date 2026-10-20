@@ -1,0 +1,21 @@
+{
+  "observed_utc": "2026-10-20T07:05:15.362684+00:00",
+  "source_sha256": "817889aa9d967eed7dc158a7cbfe93e3cb8959986bfbeac05d2da73a3ee95f51",
+  "change": "same-origin Referrer-Policy; registration-bound private stable CSRF; clear refusal states.",
+  "strict_host_origin_csrf_retained": true,
+  "local_get_checks": {
+    "/": 200,
+    "/verify": 200
+  },
+  "stale_form_refused_with_fresh_form": true,
+  "live_verification_api_called_by_diagnostic": false,
+  "test_artifacts": {
+    "parent-handoff-compat-tests.json": "698a68a9b559357a1a32de97141c5e2d7f15f460f886303922238fea1205becb",
+    "HANDOFF-ORIGIN-REVIEW-01.md": "35d9467c782ce4758eee924dbec740a1345d56adf10a82febceebeb7b668f0a4"
+  },
+  "browser_success_not_claimed": true,
+  "parent_verification_pending": true,
+  "product_servers_changed": false,
+  "public_live_charging_changed": false,
+  "imported_tenancies_used_or_emailed": false
+}

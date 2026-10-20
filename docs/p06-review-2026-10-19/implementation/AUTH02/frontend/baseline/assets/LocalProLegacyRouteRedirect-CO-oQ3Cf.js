@@ -1,0 +1,1 @@
+import{i as t,j as r,aV as s}from"./index-DPZwxwE9.js";function n({mission:e=!1}){const{jobId:o}=t(),a=e&&o?`/localpro/home?mission_id=${encodeURIComponent(o)}`:"/localpro/home";return r.jsx(s,{replace:!0,to:a})}export{n as L};

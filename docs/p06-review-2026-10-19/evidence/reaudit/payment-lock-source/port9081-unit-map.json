@@ -1,0 +1,11 @@
+[
+  {
+    "path": "/etc/systemd/system/liveuin-public-preview-ui.service",
+    "safe_directives": [
+      "Description=LiveUin Public Preview UI Shell",
+      "WorkingDirectory=/opt/liveuin",
+      "User=root"
+    ],
+    "python_modules": []
+  }
+]

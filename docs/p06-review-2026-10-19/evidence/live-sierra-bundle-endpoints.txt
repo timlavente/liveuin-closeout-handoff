@@ -1,0 +1,29 @@
+ense found in the
+ * LICENSE file in the root directory of this source tree.
+ */var xd=z,je=yd;function k(e){for(var t="https://reactjs.org/docs/error-decoder.html?invariant="+e,n=1;n<arguments.length;n++)t+="&args[]="+encodeURIComponent(arguments[n]);return"Minified React error #"+e+"; visit "+t+" for the full message or use the non-minified dev environment for full 
+
+ saved before trying again.",n.status)}if(!n.ok)throw new er(Mm[r.detail]||Im(n.status),n.status);return r}const Nl=e=>"/api/core/inventory/marketing-publications/"+encodeURIComponent(e),Yc=(e,t)=>Nl(e)+"/media/"+encodeURIComponent(t),ai=e=>"S$"+e.toLocaleString("en-SG"),ci=e=>new Date(e+"T12:00:00").toLocaleDateString("en-SG",{day:"numeric",month:"long",year:"numeric
+
+.jsxs("div",{className:"publication-width flex h-20 items-center gap-4",children:[c.jsx("a",{href:e?"/host/onboarding":"https://www.liveuin.com/","aria-label":e?"LiveUIN Host home":"LiveUIN home",className:"shrink-0",children:c.jsx("img",{src:Tm,alt:"LiveUIN",className:"h-7 w-auto sm:h-8"})}),c.jsx("span",{className:"hidden border-l border-border pl-4 text-[11px] font
+
+-2 text-xs",children:[c.jsx(Uc,{className:"h-3.5 w-3.5"}),"Private"]})]}):c.jsxs(c.Fragment,{children:[c.jsx("a",{href:"https://www.liveuin.com/search",className:"hidden text-sm text-muted-foreground sm:block",children:"Explore homes"}),c.jsx(ie,{asChild:!0,className:wt,children:c.jsxs("a",{href:"#application",children:["Request to book",c.jsx(Ac,{})]})})]})})]})})}fu
+
+,j]=z.useState(!0),[D,T]=z.useState(""),te=d&&(s===null||o.trim().toLowerCase()===s);async function O(){try{N(await Re("/api/core/demand/rental-self?listing_id="+encodeURIComponent(e.listing_id)))}catch(U){if(!(U instanceof er&&U.status===404))throw U}}z.useEffect(()=>{let U=!0;return(async()=>{try{if(await Re("/api/core/demand/rental-auth/session"),!U)return;h(!0),a(
+
+)))}catch(U){if(!(U instanceof er&&U.status===404))throw U}}z.useEffect(()=>{let U=!0;return(async()=>{try{if(await Re("/api/core/demand/rental-auth/session"),!U)return;h(!0),a("You’re signed in. Enter the email address you used to sign in."),await O()}catch(Q){U&&!(Q instanceof er&&Q.status===401)&&T(Ht(Q))}finally{U&&j(!1)}})(),()=>{U=!1}},[e.listing_id]);async func
+
+eventDefault(),!te||C||D||S)return;const Q=new FormData(U.currentTarget);await _e("submit",async()=>{const We=await Re("/api/core/demand/rental-offers",{listing_id:e.listing_id,offer:{listing_version:e.version,proposed_monthly_rent:Number(r),move_in:Q.get("move_in"),lease_months:Number(Q.get("lease_months")),occupants:Number(Q.get("occupants")),display_name:Q.get("nam
+
+-full rounded-xl",disabled:!!y||C||!o.trim(),onClick:()=>_e("code",async()=>{const U=o.trim().toLowerCase(),Q=await Re("/api/core/demand/rental-auth/request",{email:U,listing_id:e.listing_id});m({id:Q.challenge_id,email:U}),a("We’ve sent you a sign-in code. Check your inbox or spam folder.")}),children:[c.jsx(Op,{}),y==="code"?"Sending code…":"Send sign-in code"]}),g&
+
+),c.jsx(ie,{type:"button",className:wt+" w-full",disabled:!!y||x.length!==6,onClick:()=>_e("verify",async()=>{await Re("/api/core/demand/rental-auth/verify",{challenge_id:g.id,code:x,listing_id:e.listing_id}),u(g.email),h(!0),m(null),w(""),a("Email verified. You can now send your rental request."),j(!0);try{await O(),T("")}catch(U){T(Ht(U))}finally{j(!1)}}),children:y
+
+t-hero text-white",children:c.jsxs("div",{className:"publication-width pb-10 pt-7 sm:pb-12",children:[c.jsxs("a",{href:"https://www.liveuin.com/search",className:"inline-flex items-center gap-2 text-xs text-white/65",children:[c.jsx(jp,{className:"h-3.5 w-3.5"}),"Explore homes"]}),c.jsx("p",{className:"mt-7 text-xs font-semibold uppercase tracking-[.18em] text-[hsl(va
+
+h,g]=z.useState(""),[m,x]=z.useState(!1);async function w(a){if(s(""),!a.listing_id){o([]);return}try{const p=await Re("/api/core/demand/rental-offers?listing_id="+encodeURIComponent(a.listing_id));o(p.items)}catch(p){o(null),s(Ht(p))}}async function y(){const a=await Re("/api/core/inventory/marketing-owner");t(a),document.title="Your listing · LiveUIN Host",await w(a
+
+sting_id="+encodeURIComponent(a.listing_id));o(p.items)}catch(p){o(null),s(Ht(p))}}async function y(){const a=await Re("/api/core/inventory/marketing-owner");t(a),document.title="Your listing · LiveUIN Host",await w(a)}z.useEffect(()=>{y().catch(a=>r(Ht(a)))},[]);async function P(a,p){g(a),d("");try{await p()}catch(v){d(Ht(v))}finally{g("")}}if(!e)return c.jsx(Kc,{own
+
+-auto whitespace-normal rounded-xl",variant:"outline",disabled:!!h,onClick:()=>P(a.lead_passport_id,async()=>{await Re("/api/core/demand/rental-offers/"+encodeURIComponent(a.lead_passport_id)+"/review",{decision:N,version:a.offer.version}),await w(e)}),children:C},N))})]},a.lead_passport_id)})})})]})]}),c.jsxs("aside",{className:"min-w-0 space-y-6",children:[c.jsxs(xt
+
+.jsxs(ie,{className:wt+" mt-5 h-auto w-full whitespace-normal",disabled:!!h,onClick:()=>P("publish",async()=>{await Re("/api/core/inventory/marketing-publications",{submission_id:e.submission_id,terms:e.terms,public_media_ids:e.public_media_ids}),await y()}),children:["Publish listing",c.jsx(is,{})]}),f&&c.jsx(ie,{variant:"outline",className:"mt-5 w-full rounded-xl",d

@@ -1,0 +1,3230 @@
+{
+  "purpose": "Audit evidence and document QA; not production release or proof of completion",
+  "date_singapore": "2026-10-19",
+  "updated_at": "2026-10-20T04:28:14.791731+08:00",
+  "hydration_check": "All positive-size retained files readable with positive local blocks and full SHA256 reads. Historical zero-byte HTTP bodies remain recorded failed initial network reads, retained with successful retries.",
+  "files": [
+    {
+      "path": "evidence/README.md",
+      "bytes": 3382,
+      "local_blocks": 8,
+      "sha256": "7ea01c2f31dc98250ed52138cf426bea7dcce04ce8b02204288a4c62992879e4"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/D1-CONTROLLER-REREVIEW-02.md",
+      "bytes": 1883,
+      "local_blocks": 8,
+      "sha256": "bc96e26b01f3d43ae541759cff0088da35e3b8c29c579643cba3a1d0bd460bc1"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/D1-CONTROLLER-REVIEW-01.md",
+      "bytes": 2529,
+      "local_blocks": 8,
+      "sha256": "e05ba75f0e5d8a492375563294d3e408e1cec848a610651c6490ff5da001dd4c"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/D1-DELIVERY-RESTORATION-REVIEW-01.md",
+      "bytes": 11318,
+      "local_blocks": 24,
+      "sha256": "96eb963b93ae4cc5e05d7d8b3f7a2e21dd7bbeb3c70e72188e6b5e9e6df76376"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/TEST-EVIDENCE-01.md",
+      "bytes": 4984,
+      "local_blocks": 16,
+      "sha256": "a408a92d34bc796e68162af1805b039b8210c2b22b4a37bbd6546ba1fb9aced2"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/auth01-payment-lock.json",
+      "bytes": 2832,
+      "local_blocks": 8,
+      "sha256": "cb4764d1158e694b69b594ae1558769a4c9b9af9e6b3beb4eba495bfd9647edd"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/auth01-restore-result.json",
+      "bytes": 2196,
+      "local_blocks": 8,
+      "sha256": "dfc9b4ca542d49775e2ed5d1014b0817d49f1f1738a6fc67cb05f4e22deb9f44"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/delivery-metadata.json",
+      "bytes": 767,
+      "local_blocks": 8,
+      "sha256": "e8854b7a8eb9fc8f49a35ba4f372838ac10b6d5098a754086b0840e483ab4b99"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/result.json",
+      "bytes": 7087,
+      "local_blocks": 16,
+      "sha256": "0ede0928a920e280bc5005459465f4e625bf0c22982b4dc7a7e0a1719fdb6237"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/run_tests.py",
+      "bytes": 14913,
+      "local_blocks": 32,
+      "sha256": "1dfe82f03baa1df3a1cebb994d021264376299945c7966db995bc1254795af0c"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_access_service.py",
+      "bytes": 126386,
+      "local_blocks": 248,
+      "sha256": "2afcc7539c68ab7c66ab2ccee2786b77e82561eabb8e92e47fb5cea8cdaee777"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_access_store.py",
+      "bytes": 49023,
+      "local_blocks": 96,
+      "sha256": "6f5913db1768885444061d582bbbeef66d173ec80d9dbc3e517d3c97d935f170"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_adapter_replay_store.py",
+      "bytes": 7961,
+      "local_blocks": 16,
+      "sha256": "d20920edb46c9569d900fbb5ec250afc1bdd8c8397368f5f33ad1f89f01cce97"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_adapter_secret_registry.py",
+      "bytes": 43392,
+      "local_blocks": 88,
+      "sha256": "1d39dec2b75b07f70841ef6f57993fa697f47b1683502ffcc76dc8815c30736d"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_identity_api.py",
+      "bytes": 41141,
+      "local_blocks": 88,
+      "sha256": "fcf8c612f2442ab05a8950523890806af7b89f88e9cbf801fcc5561ec1d6acc4"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_identity_auth_policy.py",
+      "bytes": 15601,
+      "local_blocks": 32,
+      "sha256": "e5cc47ff7c1f117c39c4abb30c6b20ba8347d0253f91e1d28d9e3c5f1fd7826c"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_identity_google_oauth.py",
+      "bytes": 58470,
+      "local_blocks": 120,
+      "sha256": "b708f7e27f6dc3991c771d62cff38bbd2c610e2de60ae18694c1e6def0d47156"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_identity_login.py",
+      "bytes": 23648,
+      "local_blocks": 48,
+      "sha256": "f7f3d8b6fe5c52d4e6401afebda4f238b851261e64c83c129cb36095883c36fd"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_identity_login_store.py",
+      "bytes": 24266,
+      "local_blocks": 48,
+      "sha256": "e8b369634c1875519e7883f439388f5b02a062849569fbb1a4663160baf95d94"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_identity_service.py",
+      "bytes": 44838,
+      "local_blocks": 88,
+      "sha256": "8280891cd0d843124d7f6d4b71ed9d5655916d109f6c61630d8ba901310bd94a"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_identity_session.py",
+      "bytes": 71723,
+      "local_blocks": 144,
+      "sha256": "11b7ab17300c3a2ea8a0294470f9872496c6e4f8308598edad97f680ea9fefdb"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_identity_session_store.py",
+      "bytes": 33212,
+      "local_blocks": 72,
+      "sha256": "c0f2a07b7778aef761deee03b32adc61bfa257cb1edeae933416438508a265c3"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_identity_store.py",
+      "bytes": 63678,
+      "local_blocks": 128,
+      "sha256": "8435560b88230df6737ff3dca8dc52bafd881dd7ebb01c3b961356ae9cf04f36"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_identity_workspace_access.py",
+      "bytes": 43368,
+      "local_blocks": 88,
+      "sha256": "729531a7a562dd0fc7d53f300b2664d462593024163264230e188aba4ab6493d"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source/core_service_secret_resolver.py",
+      "bytes": 7566,
+      "local_blocks": 16,
+      "sha256": "bc4e858df0b42f47fc28019ba86d6d08ae5ed73002c0452b47fc53893e3c69ff"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/isolated-tests/source-manifest.json",
+      "bytes": 5549,
+      "local_blocks": 16,
+      "sha256": "eb26b8d6df2511cdea9a9d6e8e96c83d2b660de56ba168a3876a3a3c5db039ad"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/manifest.json",
+      "bytes": 5672,
+      "local_blocks": 16,
+      "sha256": "9ae5e1b67e01de7d70c331245240eb4b414a5e97c5e4b404a782100deac30e64"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/otp-app-before.py",
+      "bytes": 5632,
+      "local_blocks": 16,
+      "sha256": "24542a1052dda9723591e1e068c0a446183b643768cf6ccda134a4f2f8e7fe87"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/otp-gateway-before.service",
+      "bytes": 501,
+      "local_blocks": 8,
+      "sha256": "d2ecd65e7581c6aa019a56e637fdded337ffd4f720c826479371a85ff80bc272"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/owner-ops-signed-in.jpg",
+      "bytes": 37714,
+      "local_blocks": 80,
+      "sha256": "8af8efc290c0df90a3cd5035d99101189df9bdd9e9ac66131f46175edd7513e7"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/owner-proof-readonly.py",
+      "bytes": 8945,
+      "local_blocks": 24,
+      "sha256": "9db083967c690980a92d29a759698ed1654deedb132d993f2fc01e6fe95aa397"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/owner-proof-result.json",
+      "bytes": 2289,
+      "local_blocks": 8,
+      "sha256": "dcbe1e1bf720e4d43afe83d24190f64d119ac08048b04aad76106f6ffe5b70be"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/restore-delivery.py",
+      "bytes": 9313,
+      "local_blocks": 24,
+      "sha256": "885062ee08ce7707b735fbe7090c954730ce3f6121012601d1b806af8add278b"
+    },
+    {
+      "path": "evidence/auth-01-restoration-2026-10-20/source-fingerprints.json",
+      "bytes": 964,
+      "local_blocks": 8,
+      "sha256": "eadf0da6730e158498c71d33477f8b816f5bc36ccefa9d234194afd7684b5669"
+    },
+    {
+      "path": "evidence/auth-check-2026-10-20/OTP-CAUSE-CONFIRMED-01.md",
+      "bytes": 2106,
+      "local_blocks": 8,
+      "sha256": "c5be2f57e6ff4adc019676a2dd7663aaed04cff15dfdca58801d62866f4c056a"
+    },
+    {
+      "path": "evidence/auth-check-2026-10-20/OTP-CAUSE-READONLY-01.md",
+      "bytes": 4125,
+      "local_blocks": 16,
+      "sha256": "9451a8d81585cd8ad0baf5ebc043ea60cf0e282ecece73f068e0fd3f7dce6b46"
+    },
+    {
+      "path": "evidence/auth-check-2026-10-20/classify-otp-runtime-readonly.py",
+      "bytes": 4311,
+      "local_blocks": 16,
+      "sha256": "d41eb71e281360517b5bc56b2d988ffd94a0c357b08bef736ad4a52a65789b58"
+    },
+    {
+      "path": "evidence/auth-check-2026-10-20/otp-runtime-classification.json",
+      "bytes": 2197,
+      "local_blocks": 8,
+      "sha256": "fb929e03c7eff23043fe5d28b5977e14bfb6ed9b360634bcf20ac2a7baa6b7e1"
+    },
+    {
+      "path": "evidence/auth-check-2026-10-20/otp-service-metadata.json",
+      "bytes": 2663,
+      "local_blocks": 8,
+      "sha256": "9c7f42f99806e09e091dd071acc4decd438e19e6623f57c3caca243f6f18e191"
+    },
+    {
+      "path": "evidence/drive-audit-findings.md",
+      "bytes": 14461,
+      "local_blocks": 32,
+      "sha256": "77f13a51fa6cf4e8d34de896e50696133346a6d0d9577cc7fa7db0331036d680"
+    },
+    {
+      "path": "evidence/drive-feature-count-verification.json",
+      "bytes": 2729,
+      "local_blocks": 8,
+      "sha256": "731242c6abedb68f6bb9adaf73fb9e510d9fb620608cf753f161e6c7282ba2e0"
+    },
+    {
+      "path": "evidence/github-source-evidence.json",
+      "bytes": 27761,
+      "local_blocks": 56,
+      "sha256": "1b24faea596d3a5b886e314591f38ed9d710c55af74a9324065a38f6d8844da1"
+    },
+    {
+      "path": "evidence/live-00.body",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "evidence/live-00.headers",
+      "bytes": 1415,
+      "local_blocks": 8,
+      "sha256": "987539db60083372c03793c17123812b66fb2e9382c896288fa40b899a70adf6"
+    },
+    {
+      "path": "evidence/live-00.meta.json",
+      "bytes": 10579,
+      "local_blocks": 24,
+      "sha256": "4fdad18eb80b75c3949d18d0307c959972101450d99d548509add1f4b79b5477"
+    },
+    {
+      "path": "evidence/live-01.body",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "evidence/live-01.headers",
+      "bytes": 1423,
+      "local_blocks": 8,
+      "sha256": "5560f8d18ba6974ebf8994ebea5435ae908917e4647743e4236dd5baa8965c9d"
+    },
+    {
+      "path": "evidence/live-01.meta.json",
+      "bytes": 10594,
+      "local_blocks": 24,
+      "sha256": "7d299fdd00461b41e0832095d9a4b444c1f398814bbd70bc080dbfbf3103f764"
+    },
+    {
+      "path": "evidence/live-02.body",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "evidence/live-02.headers",
+      "bytes": 1417,
+      "local_blocks": 8,
+      "sha256": "9af3d0c8fbf4a5a218e9097de68f7836301c29bc9abac3c27c2fa7c902908786"
+    },
+    {
+      "path": "evidence/live-02.meta.json",
+      "bytes": 10606,
+      "local_blocks": 24,
+      "sha256": "e9ac835158387a17f194aa51d2bd2d9f7b5c5f3d6d5fdea48575b50e04973919"
+    },
+    {
+      "path": "evidence/live-03.body",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "evidence/live-03.headers",
+      "bytes": 1413,
+      "local_blocks": 8,
+      "sha256": "d47692af118ffa48f0d2a8acb94c3881e987fb8284b754fff65e4227c0ef5a3d"
+    },
+    {
+      "path": "evidence/live-03.meta.json",
+      "bytes": 10597,
+      "local_blocks": 24,
+      "sha256": "ea15dc65537510c3cbfc52933a7394136b873ab2764969cb52be3391c806c542"
+    },
+    {
+      "path": "evidence/live-04.body",
+      "bytes": 638,
+      "local_blocks": 8,
+      "sha256": "f30c71379be2c6e799c634bfdfce8e737b401887b40e351ba23d3be0150fefe8"
+    },
+    {
+      "path": "evidence/live-04.headers",
+      "bytes": 1718,
+      "local_blocks": 8,
+      "sha256": "9d25f79f238434ca07a61dc8aca69a88ca9b5c0965ecaac4816724af8c10a91d"
+    },
+    {
+      "path": "evidence/live-04.meta.json",
+      "bytes": 10761,
+      "local_blocks": 24,
+      "sha256": "ed3030d8882d439fb4c9090d5e71090a3d7256125f64464aef6241020f1cd021"
+    },
+    {
+      "path": "evidence/live-05.body",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "evidence/live-05.headers",
+      "bytes": 2065,
+      "local_blocks": 8,
+      "sha256": "1751c7fb87c7f6f6067f9e7f520fd4d2df53cc3cf65064046376c4a366d6b1eb"
+    },
+    {
+      "path": "evidence/live-05.meta.json",
+      "bytes": 17404,
+      "local_blocks": 40,
+      "sha256": "f9734738c8e4e7561f9979a1df4a0c3b4dbfc2c0b4894773b5bd5e2209a68c43"
+    },
+    {
+      "path": "evidence/live-06.body",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "510c86fddc95be8b3431d1be2531ccef91b0d85a9e0c42fb6709da97c2fca237"
+    },
+    {
+      "path": "evidence/live-06.headers",
+      "bytes": 2073,
+      "local_blocks": 8,
+      "sha256": "b4cb26bfa488e18155636e25658c84ff5df5c30ada8b6a9f1017bf95309ba3a9"
+    },
+    {
+      "path": "evidence/live-06.meta.json",
+      "bytes": 17418,
+      "local_blocks": 40,
+      "sha256": "616a3176f4bea0e9630d550e41c375edf644c64fa9376eea0a796aac7026f3b1"
+    },
+    {
+      "path": "evidence/live-07.body",
+      "bytes": 2334,
+      "local_blocks": 8,
+      "sha256": "38a252d874a4118bda87230534b7b7c36b89cefd9822e10f920bb887565b5a5d"
+    },
+    {
+      "path": "evidence/live-07.headers",
+      "bytes": 516,
+      "local_blocks": 8,
+      "sha256": "afaa30e5d97c200eef359eda9741cdcd374320306902d133e3d2ff2173fecd54"
+    },
+    {
+      "path": "evidence/live-07.meta.json",
+      "bytes": 17400,
+      "local_blocks": 40,
+      "sha256": "d0e76691ef9866282d076aa4a163744ef638ef0b1c01b279363285230f50885f"
+    },
+    {
+      "path": "evidence/live-08.body",
+      "bytes": 22,
+      "local_blocks": 8,
+      "sha256": "37ec4665a8102d115ffd1ac20dae94c98b4dac64b0c1a68228aa2a531caeb35d"
+    },
+    {
+      "path": "evidence/live-08.headers",
+      "bytes": 240,
+      "local_blocks": 8,
+      "sha256": "0463c42d5e12e43dd3c5735173b189f30585cb967d116a0516b09148e45b6297"
+    },
+    {
+      "path": "evidence/live-08.meta.json",
+      "bytes": 17378,
+      "local_blocks": 40,
+      "sha256": "1d0ad78814961d094e3262144ce4c16a94c99614b9dc9ee586acb529dfec9a2b"
+    },
+    {
+      "path": "evidence/live-09.body",
+      "bytes": 103,
+      "local_blocks": 8,
+      "sha256": "1f80fe78881b21654ce9235248ca2c272bd44061f662ba9c2d67e06738dd3459"
+    },
+    {
+      "path": "evidence/live-09.headers",
+      "bytes": 241,
+      "local_blocks": 8,
+      "sha256": "c0a33d58f0c35e8833f2dbad3820ebf6f13b9ea358de23fd069341686703102c"
+    },
+    {
+      "path": "evidence/live-09.meta.json",
+      "bytes": 17416,
+      "local_blocks": 40,
+      "sha256": "b23644a0391d15378df39a338daf3691ddfd80ed7a2aa855d1f7538f7f1e0a22"
+    },
+    {
+      "path": "evidence/live-10.body",
+      "bytes": 49571,
+      "local_blocks": 104,
+      "sha256": "2b6ce57ef3fa9cac543c61b522accb12240ff75ec6fbf355997548745ef967b9"
+    },
+    {
+      "path": "evidence/live-10.headers",
+      "bytes": 243,
+      "local_blocks": 8,
+      "sha256": "df61e6a447f7cba6b5392c9e52acfde096460c292e21ab30a5f3289330b7f451"
+    },
+    {
+      "path": "evidence/live-10.meta.json",
+      "bytes": 17433,
+      "local_blocks": 40,
+      "sha256": "2c7e4565398bf9426a6090ba3baf7335003b7412be9c47cfb7f3d4b53e2df532"
+    },
+    {
+      "path": "evidence/live-11.body",
+      "bytes": 371,
+      "local_blocks": 8,
+      "sha256": "37300733374d27b1d6db14f15b8471bd0d143df71d2792c06fdc17af7abb01fb"
+    },
+    {
+      "path": "evidence/live-11.headers",
+      "bytes": 172,
+      "local_blocks": 8,
+      "sha256": "de06e9f10866f3a1ccd05882a053a5d5fd68e370cbeebb0497dfda01c7028491"
+    },
+    {
+      "path": "evidence/live-11.meta.json",
+      "bytes": 13881,
+      "local_blocks": 32,
+      "sha256": "08a088829e386802fffe70ad2ca9ebe172d32a17e86dc18ffebb4b14fecae6b4"
+    },
+    {
+      "path": "evidence/live-12.headers",
+      "bytes": 0,
+      "local_blocks": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/live-12.meta.json",
+      "bytes": 1783,
+      "local_blocks": 8,
+      "sha256": "ad1f1a269b9c15f803372962c9ba5c811dffee57f42441084cc27fc5673367a6"
+    },
+    {
+      "path": "evidence/live-api-0.body",
+      "bytes": 21,
+      "local_blocks": 8,
+      "sha256": "e41656eb2ba6c6293bf6dd928e5a88cdbc50535cab661c1969e0f598e497ed62"
+    },
+    {
+      "path": "evidence/live-api-0.headers",
+      "bytes": 249,
+      "local_blocks": 8,
+      "sha256": "49c213024683d0c2e9472d25ec66b3d8ab952e038740baeaca85f23b611e908f"
+    },
+    {
+      "path": "evidence/live-api-0.meta.json",
+      "bytes": 17457,
+      "local_blocks": 40,
+      "sha256": "c6177a97a876c7bf7e8bf3f2d7cb4b97e359fa5ee48746c937b241984d303101"
+    },
+    {
+      "path": "evidence/live-api-1.body",
+      "bytes": 21,
+      "local_blocks": 8,
+      "sha256": "e41656eb2ba6c6293bf6dd928e5a88cdbc50535cab661c1969e0f598e497ed62"
+    },
+    {
+      "path": "evidence/live-api-1.headers",
+      "bytes": 249,
+      "local_blocks": 8,
+      "sha256": "49c213024683d0c2e9472d25ec66b3d8ab952e038740baeaca85f23b611e908f"
+    },
+    {
+      "path": "evidence/live-api-1.meta.json",
+      "bytes": 17508,
+      "local_blocks": 40,
+      "sha256": "df43432e1a0bbafc1731d4cc3b0fcd2e30a6d064e4e19031ff2ab4400a5f2819"
+    },
+    {
+      "path": "evidence/live-api-2.body",
+      "bytes": 21,
+      "local_blocks": 8,
+      "sha256": "e41656eb2ba6c6293bf6dd928e5a88cdbc50535cab661c1969e0f598e497ed62"
+    },
+    {
+      "path": "evidence/live-api-2.headers",
+      "bytes": 249,
+      "local_blocks": 8,
+      "sha256": "49c213024683d0c2e9472d25ec66b3d8ab952e038740baeaca85f23b611e908f"
+    },
+    {
+      "path": "evidence/live-api-2.meta.json",
+      "bytes": 17459,
+      "local_blocks": 40,
+      "sha256": "03892df3d7e701f793825ac322bb886e6705dd40a787c84611fb5953d3448509"
+    },
+    {
+      "path": "evidence/live-api-3.body",
+      "bytes": 1746,
+      "local_blocks": 8,
+      "sha256": "8e09f16b412944122c5dd1c79b192261bc6c2b1189661b7a57c239b8160af451"
+    },
+    {
+      "path": "evidence/live-api-3.headers",
+      "bytes": 242,
+      "local_blocks": 8,
+      "sha256": "80ca99ee165dac9490725111f5bc7c5f27b7f5eac78cef404817ca7a3fe8de66"
+    },
+    {
+      "path": "evidence/live-api-3.meta.json",
+      "bytes": 17461,
+      "local_blocks": 40,
+      "sha256": "b375adcba317d7fd1fdb38c098f49e037674c991297464832c8e78c35f79ad13"
+    },
+    {
+      "path": "evidence/live-api-status-liveuin.body",
+      "bytes": 21,
+      "local_blocks": 8,
+      "sha256": "e41656eb2ba6c6293bf6dd928e5a88cdbc50535cab661c1969e0f598e497ed62"
+    },
+    {
+      "path": "evidence/live-api-status-liveuin.headers",
+      "bytes": 249,
+      "local_blocks": 8,
+      "sha256": "8dde5e8bdb5d39e411cbb4af701e5bbdda6b3e415d4999b90b276dd1c590fd4f"
+    },
+    {
+      "path": "evidence/live-api-status-liveuin.meta.json",
+      "bytes": 17551,
+      "local_blocks": 40,
+      "sha256": "2375bb737fa6d3816f4580e7f4110698433f81b8674cbdd119fef678915da525"
+    },
+    {
+      "path": "evidence/live-api-summary.json",
+      "bytes": 2738,
+      "local_blocks": 8,
+      "sha256": "09cd81838ee70bb7910271ddf3efefd74b9358884b350a9609861ab2b5bc9845"
+    },
+    {
+      "path": "evidence/live-app-entry-ax.txt",
+      "bytes": 1060,
+      "local_blocks": 8,
+      "sha256": "728a5b0f326e21f60e9e3bbeb7dcbbd59513ac9fd6fdd475ac6b37e9e3d465a5"
+    },
+    {
+      "path": "evidence/live-app-signin-ax.txt",
+      "bytes": 1120,
+      "local_blocks": 8,
+      "sha256": "7268aa91b35d260f4319325991516b7e97e9b59d9c4f542debedf5be2ea156c5"
+    },
+    {
+      "path": "evidence/live-audit-report.md",
+      "bytes": 17887,
+      "local_blocks": 40,
+      "sha256": "8f122f8caf64cb47d51da60c255950f2d3fe5fc8919850eba7c90aeac42e95f7"
+    },
+    {
+      "path": "evidence/live-control-tower-lock-ax.txt",
+      "bytes": 1428,
+      "local_blocks": 8,
+      "sha256": "1860342f7d7b1261d3130e2060119c38142fb270dcd00af23c5b1ab6560c288b"
+    },
+    {
+      "path": "evidence/live-evidence-sha256.txt",
+      "bytes": 9594,
+      "local_blocks": 24,
+      "sha256": "c39a5edc18a2839a97f5ec4cb3fdc209bf2927743db393eb74b5f5e540b7a791"
+    },
+    {
+      "path": "evidence/live-host-entry-ax.txt",
+      "bytes": 1111,
+      "local_blocks": 8,
+      "sha256": "032487f79a967321a5484430ed99cbc7e4d76895db3df63c54b26db91fbb9169"
+    },
+    {
+      "path": "evidence/live-host-finance-lock-ax.txt",
+      "bytes": 1102,
+      "local_blocks": 8,
+      "sha256": "3d4910f1e48c86d71e0f33d4570702aef8b0b31e25c6f1c102a24108de63be65"
+    },
+    {
+      "path": "evidence/live-http-redirect-0.headers",
+      "bytes": 592,
+      "local_blocks": 8,
+      "sha256": "f355c07402c6724d03be42a2711f00b294f320207fa7c9c274484813cb7a3835"
+    },
+    {
+      "path": "evidence/live-http-redirect-1.headers",
+      "bytes": 606,
+      "local_blocks": 8,
+      "sha256": "7fdbc065874c142f46fdae5601b9c8c04af44059660659fd301db1e360532a72"
+    },
+    {
+      "path": "evidence/live-http-redirect-2.headers",
+      "bytes": 282,
+      "local_blocks": 8,
+      "sha256": "252059d0a2f434ee9573ce4c1dce41873fca0ecbace9b1d227bed1d656dbdc49"
+    },
+    {
+      "path": "evidence/live-http-redirect-3.headers",
+      "bytes": 288,
+      "local_blocks": 8,
+      "sha256": "c59a60fa9961c72a47fcf9330a102e5274a0ddaa7ec6ff09cc29d32e85ed7f70"
+    },
+    {
+      "path": "evidence/live-http-redirect-4.headers",
+      "bytes": 273,
+      "local_blocks": 8,
+      "sha256": "e3f714844989437324e4e86a2e2c8dfce1a914d36cd198ddb02c2f22314ae489"
+    },
+    {
+      "path": "evidence/live-http-redirect-5.headers",
+      "bytes": 272,
+      "local_blocks": 8,
+      "sha256": "378d5499522ba2649a392e1de0e3f5f183ab1e83657628f4f761a7fb5fb4c77c"
+    },
+    {
+      "path": "evidence/live-http-redirect-6.headers",
+      "bytes": 199,
+      "local_blocks": 8,
+      "sha256": "2a7764a7accec23612eadf8d2407ce1f82fdc6fcc8b4e4669164a39f7511e6b6"
+    },
+    {
+      "path": "evidence/live-http-redirect-summary.json",
+      "bytes": 945,
+      "local_blocks": 8,
+      "sha256": "b5021d0e970db9738c32547060529ce967710f64917f2ceee592b7286768bbcb"
+    },
+    {
+      "path": "evidence/live-http-summary.json",
+      "bytes": 4010,
+      "local_blocks": 8,
+      "sha256": "704f9f14c2d83f1197cac77b5a00f186d6ec3189d328f7f4b0585dddb5bc600a"
+    },
+    {
+      "path": "evidence/live-old-host-finance-handoff-ax.txt",
+      "bytes": 1102,
+      "local_blocks": 8,
+      "sha256": "3d4910f1e48c86d71e0f33d4570702aef8b0b31e25c6f1c102a24108de63be65"
+    },
+    {
+      "path": "evidence/live-ops-entry-ax.txt",
+      "bytes": 1341,
+      "local_blocks": 8,
+      "sha256": "08e7c60baa96349f5f1cdeea5da04ce426b8156f0cc77713d6148c8b18f9149b"
+    },
+    {
+      "path": "evidence/live-ops-payments-lock-ax.txt",
+      "bytes": 1413,
+      "local_blocks": 8,
+      "sha256": "3e02b3b81eb47b1b81e5d9a3f9925fee7f90ab43358945f7c97164ecc423e69f"
+    },
+    {
+      "path": "evidence/live-partner-0.body",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "evidence/live-partner-0.headers",
+      "bytes": 1359,
+      "local_blocks": 8,
+      "sha256": "ea0a4b99c1c5df7ef331b18859dd0a0e328877c86c3805b57a3f4db58cbfbfed"
+    },
+    {
+      "path": "evidence/live-partner-0.meta.json",
+      "bytes": 17453,
+      "local_blocks": 40,
+      "sha256": "ce27de5e6849f49bb923be2f34e367fbd0473854e2e95585e419b5a5f24b17b5"
+    },
+    {
+      "path": "evidence/live-partner-1.body",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "evidence/live-partner-1.headers",
+      "bytes": 2098,
+      "local_blocks": 8,
+      "sha256": "27fa6d679939fff83d49f0677cc6d58580debc8b9d854cfcbde065a0642293af"
+    },
+    {
+      "path": "evidence/live-partner-1.meta.json",
+      "bytes": 17455,
+      "local_blocks": 40,
+      "sha256": "01f4695e0d2ee431d879a9feb4e49f319c8b2a96390030567075d276c65a30c7"
+    },
+    {
+      "path": "evidence/live-partner-http-summary.json",
+      "bytes": 395,
+      "local_blocks": 8,
+      "sha256": "c92254178febac1bd65045d182fc57efd8505a16833488731341143d517c04ba"
+    },
+    {
+      "path": "evidence/live-partner-login-scrape.json",
+      "bytes": 2290,
+      "local_blocks": 8,
+      "sha256": "edf6be2c7de4c9ac4b0c4016547fa24c6f0b0eaa95c69fa6f975e44835b35950"
+    },
+    {
+      "path": "evidence/live-partner-login-scrape.md",
+      "bytes": 380,
+      "local_blocks": 8,
+      "sha256": "2213b63be23c65cc32e94d754016327a69eb521c1403d719e3887426939a1707"
+    },
+    {
+      "path": "evidence/live-partner-scrape.json",
+      "bytes": 2121,
+      "local_blocks": 8,
+      "sha256": "7dd4280348658d5cdf05f2dc5f453975485761b016d7badbe0391ed4df7e38e7"
+    },
+    {
+      "path": "evidence/live-partner-scrape.md",
+      "bytes": 217,
+      "local_blocks": 8,
+      "sha256": "c109616ce58ca8024f919df2eefbfef345131845dba2ea2d754137b81bbac31e"
+    },
+    {
+      "path": "evidence/live-partner-tls-dns.json",
+      "bytes": 245,
+      "local_blocks": 8,
+      "sha256": "fad3d47e511e987b8fa211228be87bf4819ad6c0d587be8b2c014385815e41ca"
+    },
+    {
+      "path": "evidence/live-payment-recheck-after-user-charge.json",
+      "bytes": 1881,
+      "local_blocks": 8,
+      "sha256": "5f7580d5175dd543f08c502b6210b3101622c957d32911d6f059a521455b693d"
+    },
+    {
+      "path": "evidence/live-pricing-scrape.md",
+      "bytes": 4504,
+      "local_blocks": 16,
+      "sha256": "a2c5d8132c103cf02f20ed27118d2b920e5c474c03374c9c9852713e2c886796"
+    },
+    {
+      "path": "evidence/live-sample-checkout-ax.txt",
+      "bytes": 9895,
+      "local_blocks": 24,
+      "sha256": "6213e1418962bb4f85bba7456dfeed783711f070c14a3d29477000dcbb2b7544"
+    },
+    {
+      "path": "evidence/live-sample-detail-ax.txt",
+      "bytes": 5315,
+      "local_blocks": 16,
+      "sha256": "a02901c74b18f69541e11b2e5d8e688f41248edce0b31bc4dca8d973d3e16353"
+    },
+    {
+      "path": "evidence/live-scrape-0.json",
+      "bytes": 6359,
+      "local_blocks": 16,
+      "sha256": "a6a1dd3c8ea74a164b96866d9d3c2c8ceaf5b639e81520a8b683d9c4275df640"
+    },
+    {
+      "path": "evidence/live-scrape-1.json",
+      "bytes": 6765,
+      "local_blocks": 16,
+      "sha256": "06bcc2c71637be573bb9e8fcfab51ba57c754390d27a9ffa67b51cc2a234f43a"
+    },
+    {
+      "path": "evidence/live-scrape-2.json",
+      "bytes": 4694,
+      "local_blocks": 16,
+      "sha256": "c3c7dcea6aa29c55b1158427dab2a19f63fc3f12e3b55db3ffb4f6543b47b817"
+    },
+    {
+      "path": "evidence/live-scrape-3.json",
+      "bytes": 7579,
+      "local_blocks": 16,
+      "sha256": "2872c0973409747f13edb872572ba57b82b607973442607dcdecd7f805397ff5"
+    },
+    {
+      "path": "evidence/live-search-ax.txt",
+      "bytes": 8707,
+      "local_blocks": 24,
+      "sha256": "514a826198034211edea939895db2efd960d1208c91a5e2b48200f646b8b99be"
+    },
+    {
+      "path": "evidence/live-search-scrape.md",
+      "bytes": 5678,
+      "local_blocks": 16,
+      "sha256": "9ec4334d0bbf1b89141d96a3a565ce4d9cfdfc38741756afc062109fdf34ec60"
+    },
+    {
+      "path": "evidence/live-search.jpg",
+      "bytes": 232875,
+      "local_blocks": 456,
+      "sha256": "24fea2aaec86688eebf324cfb4c662bb1791b0b38fdea91a838e7616b8edd9a9"
+    },
+    {
+      "path": "evidence/live-sierra-api-summary.json",
+      "bytes": 2222,
+      "local_blocks": 8,
+      "sha256": "09dba21c34eeda8b900211faf162c510bb1000d4167246f4940f07cad3a3940a"
+    },
+    {
+      "path": "evidence/live-sierra-auth.body",
+      "bytes": 36,
+      "local_blocks": 8,
+      "sha256": "bc721b2b3bace3c571d23ff0fdda74d512f95c39a5c0941857d352b79df5c53b"
+    },
+    {
+      "path": "evidence/live-sierra-auth.headers",
+      "bytes": 1462,
+      "local_blocks": 8,
+      "sha256": "92cd6dc2393cab3fb31663869a1e1295d18bdec045567dc6bb5104d02af1aa2d"
+    },
+    {
+      "path": "evidence/live-sierra-auth.meta.json",
+      "bytes": 10746,
+      "local_blocks": 24,
+      "sha256": "ce770b2cfddd55526ac3cbf787d2d6b06cdf15633c82838640f9e920ee23fa20"
+    },
+    {
+      "path": "evidence/live-sierra-ax.txt",
+      "bytes": 343,
+      "local_blocks": 8,
+      "sha256": "0b4bae5ba68c90d41c6122122a51a8fcb69a56c91a3b355d4245394dbe405014"
+    },
+    {
+      "path": "evidence/live-sierra-bundle-endpoints.txt",
+      "bytes": 5214,
+      "local_blocks": 16,
+      "sha256": "d94d3a453fdc52e2d8f0b2504521a5462c74757f898b9c48d8aae49ca54bb281"
+    },
+    {
+      "path": "evidence/live-sierra-bundle.headers",
+      "bytes": 913,
+      "local_blocks": 8,
+      "sha256": "cadb50776d7b580abb5b4100899982f218f2d386bd25745b7a958016a6d38f7a"
+    },
+    {
+      "path": "evidence/live-sierra-publication.body",
+      "bytes": 1685,
+      "local_blocks": 8,
+      "sha256": "4e3cf86554d79598bc18890780ab8675229867619b9b5051ed1a491d2e2c0387"
+    },
+    {
+      "path": "evidence/live-sierra-publication.headers",
+      "bytes": 1464,
+      "local_blocks": 8,
+      "sha256": "c9d40e1c955db3e66cfceba78cfe41cf68b3863b03db1cb21cc33daf27ae5a9e"
+    },
+    {
+      "path": "evidence/live-sierra-publication.meta.json",
+      "bytes": 10913,
+      "local_blocks": 24,
+      "sha256": "f72c230a50b956b9f0b49f115af04b28b975eb932b5db3066adb6eae542bfa1f"
+    },
+    {
+      "path": "evidence/live-sierra-scrape.md",
+      "bytes": 3991,
+      "local_blocks": 8,
+      "sha256": "202dfe7267234687a155f439d80aa4e929fa1d1966f0f6894fa195355678d30a"
+    },
+    {
+      "path": "evidence/live-sierra.jpg",
+      "bytes": 226532,
+      "local_blocks": 448,
+      "sha256": "bb98b0f7960c8cacdf5144bc12748c7e5b8897b7b3b2cdc581147930da5fd1fc"
+    },
+    {
+      "path": "evidence/live-status-ax.txt",
+      "bytes": 6520,
+      "local_blocks": 16,
+      "sha256": "d52b9c5d326659f26a84d8723fe1d25e3da2a62070e0a3a15e78708e1ce08838"
+    },
+    {
+      "path": "evidence/live-stay-scrape.md",
+      "bytes": 4591,
+      "local_blocks": 16,
+      "sha256": "b99ae1e1cdf71820a72827638ef7ce4054141b031f18a46a6cdf8eee3f69c9b2"
+    },
+    {
+      "path": "evidence/live-tls-dns.json",
+      "bytes": 4860,
+      "local_blocks": 16,
+      "sha256": "260996e108113fdbeb3d369e62caa228cd04baa4065edd9159797af256065221"
+    },
+    {
+      "path": "evidence/local-source-fingerprints.json",
+      "bytes": 4148,
+      "local_blocks": 16,
+      "sha256": "48e07e952f8899587caf8e570473af36d00bd855c4a70af3ee181bcc5453eeff"
+    },
+    {
+      "path": "evidence/owner-clarifications-2026-10-19.md",
+      "bytes": 5607,
+      "local_blocks": 16,
+      "sha256": "38d65f9f6103fbcb12a1c12d34fc262a4bbaad5a5c23483fa69c3ea75b0a7828"
+    },
+    {
+      "path": "evidence/payment-deployed-fingerprints.json",
+      "bytes": 2652,
+      "local_blocks": 8,
+      "sha256": "0355aa68f0c5a0d46db567dfba71cc0f7276d632cb17e011aaebb47580076128"
+    },
+    {
+      "path": "evidence/payment-local-fingerprints.json",
+      "bytes": 2148,
+      "local_blocks": 8,
+      "sha256": "d78254ea8b6ae34a4db9a8b2a5705673b524b66b833a68568630e3378e2bff82"
+    },
+    {
+      "path": "evidence/payment-matrix-audit.md",
+      "bytes": 8397,
+      "local_blocks": 24,
+      "sha256": "c329b8b225482902f806c09b1881b44504e6d01085470eadc4774f5a7528ea01"
+    },
+    {
+      "path": "evidence/payment-pay-health.json",
+      "bytes": 479,
+      "local_blocks": 8,
+      "sha256": "e7b1cc06d4b8dd4ae0b6f666cb2deb91cff0114c7bed6ba47890df5173d76ab5"
+    },
+    {
+      "path": "evidence/production-baseline-closeout.md",
+      "bytes": 8116,
+      "local_blocks": 16,
+      "sha256": "37c873d1d9f1494f42d4ae3057037eb441d9d689fa3b8d50f59a40475a4ee7d4"
+    },
+    {
+      "path": "evidence/production-baseline-manifest.json",
+      "bytes": 43078,
+      "local_blocks": 88,
+      "sha256": "5c53c0d4ebea755edf8bc0e33b9dd57a7cc789594b355cddf43391ea5b66f124"
+    },
+    {
+      "path": "evidence/reaudit/AUTH-CONSISTENCY-AUDIT-01.md",
+      "bytes": 11495,
+      "local_blocks": 24,
+      "sha256": "53b2f5ffc6cebc8c851c74e42cb518c7e2bd0ad6893dc1abc82bf01c5333e1a8"
+    },
+    {
+      "path": "evidence/reaudit/AUTH-REPAIR-MAPPING-01.md",
+      "bytes": 16286,
+      "local_blocks": 32,
+      "sha256": "d0615c2ae4d7e09505dff5692a50341b85d63c28680475bcc7d504dad7b6ffa6"
+    },
+    {
+      "path": "evidence/reaudit/LEGAL-DOCUMENT-ENTRY-CHECK-01.md",
+      "bytes": 3264,
+      "local_blocks": 8,
+      "sha256": "c2684bf752691b96729375e98de0e78040d91f4ea5c88f6b43c1614458a7b795"
+    },
+    {
+      "path": "evidence/reaudit/PAYMENT-LOCK-RUNTIME-CHECK-01.md",
+      "bytes": 7920,
+      "local_blocks": 16,
+      "sha256": "c93024f718f3029babb8d2da3752f6f93e832a26382546aac6ed615d93f8d048"
+    },
+    {
+      "path": "evidence/reaudit/PUBLIC-CHARGE-LOCK-INVENTORY-01.md",
+      "bytes": 10950,
+      "local_blocks": 24,
+      "sha256": "76684360f4de2a99e2bfd7ad420afde485e16afd00aa5feab2a10bf89fcd6ac8"
+    },
+    {
+      "path": "evidence/reaudit/R01-ADMIN-ACCESS-CHECK-01.md",
+      "bytes": 2998,
+      "local_blocks": 8,
+      "sha256": "46916da0045121ef728ba7d2d2fc01cc84968dd6403e162cc4da56e5381d9330"
+    },
+    {
+      "path": "evidence/reaudit/R01-DEPLOYMENT-RECOVERY-PROCEDURE-01.md",
+      "bytes": 12058,
+      "local_blocks": 24,
+      "sha256": "31ff5449d9cbdf51088b86efa8f02062c331b62c453c88936d719f1d9d7ae5b1"
+    },
+    {
+      "path": "evidence/reaudit/R01-ENTRY-REAUDIT-01.md",
+      "bytes": 16936,
+      "local_blocks": 40,
+      "sha256": "b89050c9318930761c45a7b584d3c577432a54ad11fc17505373bfb5e8eb9e37"
+    },
+    {
+      "path": "evidence/reaudit/R01-IDENTITY-PROBE-AND-DELIVERY-TRACE-01.md",
+      "bytes": 6943,
+      "local_blocks": 16,
+      "sha256": "30b3e5e2572fce4828cda2d5594e8f3d1d7b40afec3d22c599fe957cdcd7f52d"
+    },
+    {
+      "path": "evidence/reaudit/RE-AUDIT-LIVE-SURFACES.md",
+      "bytes": 8214,
+      "local_blocks": 24,
+      "sha256": "08ad5f5cda6836ff40d62e134f8862ae72a7ce014c727e2a9cba3da625c710f0"
+    },
+    {
+      "path": "evidence/reaudit/REAUDIT-PLAN-CHECK-01.md",
+      "bytes": 10340,
+      "local_blocks": 24,
+      "sha256": "29319f3f2c3ed655da896d24df72111744fa26f3f908c4615de7aa8e070404f5"
+    },
+    {
+      "path": "evidence/reaudit/SHA256SUMS.txt",
+      "bytes": 6718,
+      "local_blocks": 16,
+      "sha256": "d081246f96963b9cc5244ce21b2f2bbe08f9806e58375ff0de88f6bcde12d1d5"
+    },
+    {
+      "path": "evidence/reaudit/admin-connection-metadata.json",
+      "bytes": 1359,
+      "local_blocks": 8,
+      "sha256": "ba25f181ce27eecabb709a31177e8f7c1cfafc698e0e04659e1e40e88a6b5ead"
+    },
+    {
+      "path": "evidence/reaudit/api-health-retry.body",
+      "bytes": 103,
+      "local_blocks": 8,
+      "sha256": "a59e5997237cd2b211327a0c33ca097569e9ffbcd4e223669f3083eb1c544c47"
+    },
+    {
+      "path": "evidence/reaudit/api-health-retry.headers.txt",
+      "bytes": 178,
+      "local_blocks": 8,
+      "sha256": "77b15b82448a8a6ad4120fe36cce21848b673e5e3ea94c4248284b4ef635d22f"
+    },
+    {
+      "path": "evidence/reaudit/api-health.body",
+      "bytes": 0,
+      "local_blocks": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/reaudit/api-health.headers.txt",
+      "bytes": 1,
+      "local_blocks": 8,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "evidence/reaudit/api-health.meta.json",
+      "bytes": 444,
+      "local_blocks": 8,
+      "sha256": "75900c5eeffd9d187bde2415173758529f6447af792a418a55ee2546a48d3c9a"
+    },
+    {
+      "path": "evidence/reaudit/app-entry.body",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "evidence/reaudit/app-entry.headers.txt",
+      "bytes": 510,
+      "local_blocks": 8,
+      "sha256": "e3a835534dabb4387d754750ac8fbbb3d1448517f489dd230f24bccca946c2b8"
+    },
+    {
+      "path": "evidence/reaudit/app-entry.meta.json",
+      "bytes": 391,
+      "local_blocks": 8,
+      "sha256": "85ac689ef2af02a2f46e668c761004faf2a2992a5bbfe81e1501d5cbadc34b22"
+    },
+    {
+      "path": "evidence/reaudit/app-rendered.json",
+      "bytes": 2298,
+      "local_blocks": 8,
+      "sha256": "f385278eda3496f59da7db4fb4d2232a6cbf98339102b0273e103ce981878d76"
+    },
+    {
+      "path": "evidence/reaudit/app-rendered.md",
+      "bytes": 341,
+      "local_blocks": 8,
+      "sha256": "70ca3d232e6f98fb4f4c4ee4eb2484ed88cc938e7b771ae13f6571695e054e9c"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/bundle-2.js",
+      "bytes": 857268,
+      "local_blocks": 1680,
+      "sha256": "2db8bfcb0aeecd9a975dde8192ca612f0d3f056d6c70e04173f5b4d27f4102fa"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/bundle-3.js",
+      "bytes": 831102,
+      "local_blocks": 1624,
+      "sha256": "095faa1491b4f1861fecc10ac46e98fad1df3ac69da8ef98dc4574d38dce57ac"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/bundle-4.js",
+      "bytes": 898203,
+      "local_blocks": 1760,
+      "sha256": "cf52d5eac5bc895d94972c56552cb7d72c40e292d1f16b40e87356d5424e15ef"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/bundle-5.js",
+      "bytes": 857268,
+      "local_blocks": 1680,
+      "sha256": "2db8bfcb0aeecd9a975dde8192ca612f0d3f056d6c70e04173f5b4d27f4102fa"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/bundle-summary.json",
+      "bytes": 2101,
+      "local_blocks": 8,
+      "sha256": "753efbb7e314542315eb80afda9c7b36ab706566fb5ca33356359dbb65fefb1b"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/chunk-0.js",
+      "bytes": 857268,
+      "local_blocks": 1680,
+      "sha256": "2db8bfcb0aeecd9a975dde8192ca612f0d3f056d6c70e04173f5b4d27f4102fa"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/chunk-1.js",
+      "bytes": 857268,
+      "local_blocks": 1680,
+      "sha256": "2db8bfcb0aeecd9a975dde8192ca612f0d3f056d6c70e04173f5b4d27f4102fa"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/chunk-10.js",
+      "bytes": 4721,
+      "local_blocks": 16,
+      "sha256": "a7120ee4384788f6aa779679ee7acd43554a338d53fa949bfd4af419e617a32a"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/chunk-11.js",
+      "bytes": 8873,
+      "local_blocks": 24,
+      "sha256": "e3e8ab74663b1ab6c08bb5116843e9fb09f295708a669c629e8c05d1016d94ec"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/chunk-2.js",
+      "bytes": 430,
+      "local_blocks": 8,
+      "sha256": "ec0c53900f58a800f0272015f882a5d11d62ddc267d239338201f9ee0a2e2d0e"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/chunk-3.js",
+      "bytes": 4683,
+      "local_blocks": 16,
+      "sha256": "09f8d0955330d35b7e2c93a6480999f1eb1386ddb69110141da20a233b140e0c"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/chunk-4.js",
+      "bytes": 8873,
+      "local_blocks": 24,
+      "sha256": "064b97ed8469f57975c884c5306d457917ce906128a88d4ac630d3895a21a1f7"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/chunk-5.js",
+      "bytes": 430,
+      "local_blocks": 8,
+      "sha256": "f593b1899679f71739b9b781d5c8a69abfd2a98e63d8d5bf6b7098cb8202f138"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/chunk-6.js",
+      "bytes": 4727,
+      "local_blocks": 16,
+      "sha256": "0213462689b85540633effa6744bf16c2ea4574e8fa011bb79929919df5e3ded"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/chunk-7.js",
+      "bytes": 8873,
+      "local_blocks": 24,
+      "sha256": "6fb1d49859153f31d890620ab3934b18462013ab83fc79dd9f7312637bfa22f4"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/chunk-8.js",
+      "bytes": 430,
+      "local_blocks": 8,
+      "sha256": "25e3c73c5023ebf71fe1dabaa360b5c3e773961e8236e22f9aea25dc08744816"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/chunk-9.js",
+      "bytes": 5907,
+      "local_blocks": 16,
+      "sha256": "270243cc0f6badd5b9943ffa751f6a4284a4e2163342d9e2a3f483be54ca75a7"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/chunk-summary.json",
+      "bytes": 3962,
+      "local_blocks": 8,
+      "sha256": "08dc8336a4b83bd5b0bfd564e510cfba587dfebc61b8ad8c607ee6ca4205b606"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/core_identity_api.py",
+      "bytes": 41141,
+      "local_blocks": 88,
+      "sha256": "fcf8c612f2442ab05a8950523890806af7b89f88e9cbf801fcc5561ec1d6acc4"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/core_identity_login.py",
+      "bytes": 23648,
+      "local_blocks": 48,
+      "sha256": "f7f3d8b6fe5c52d4e6401afebda4f238b851261e64c83c129cb36095883c36fd"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/entry-0.html",
+      "bytes": 2651,
+      "local_blocks": 8,
+      "sha256": "92bca6d8a3f9451477463ee0c4e53c5c84e016f1fb8f1ea5bc7f7ec374ccd76c"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/entry-1.html",
+      "bytes": 2651,
+      "local_blocks": 8,
+      "sha256": "92bca6d8a3f9451477463ee0c4e53c5c84e016f1fb8f1ea5bc7f7ec374ccd76c"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/entry-2.html",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/entry-3.html",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "510c86fddc95be8b3431d1be2531ccef91b0d85a9e0c42fb6709da97c2fca237"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/entry-4.html",
+      "bytes": 2334,
+      "local_blocks": 8,
+      "sha256": "38a252d874a4118bda87230534b7b7c36b89cefd9822e10f920bb887565b5a5d"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/entry-5.html",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/entry-6.html",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/entry-7.html",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/entry-summary.json",
+      "bytes": 3149,
+      "local_blocks": 8,
+      "sha256": "748910bc0fc989e15362f9bf6b8114f74bcece4b2666bddec17ff040c6b6bc72"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/identity-route-source.json",
+      "bytes": 68896,
+      "local_blocks": 136,
+      "sha256": "e48c505bedb283f3e5c7e5f80769745820c463bec21ac20e2f4be4f4d5151367"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/nginx-auth-routing.json",
+      "bytes": 62176,
+      "local_blocks": 128,
+      "sha256": "cd518c49a055ce3f4b0b165e4dc8b32bd0bf084db696c4d4dc02712041fcd7d4"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/routed-auth-evidence.json",
+      "bytes": 20687,
+      "local_blocks": 48,
+      "sha256": "3558497728cf03adff5a7b15e531f8ff093105e23356c3fa42811c60bd6f99d7"
+    },
+    {
+      "path": "evidence/reaudit/auth-audit/workspace-guard-excerpts.json",
+      "bytes": 5918,
+      "local_blocks": 16,
+      "sha256": "14661e08e685976c5681400fff7647206b43c998511e8ad8f3792c2d3ecf136b"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/9098-source-metadata.json",
+      "bytes": 2774,
+      "local_blocks": 8,
+      "sha256": "20d35159345a1e505387321727f7eeadbaa4c96cbb0473fe5b5245d7bf07e2d4"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/auth-runtime-classify.py",
+      "bytes": 2196,
+      "local_blocks": 8,
+      "sha256": "22c3176aa406085ce85f36e75887423f5be06db22ada870e4bff325d6e65ca05"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/auth-runtime-compatibility-readonly.py",
+      "bytes": 12780,
+      "local_blocks": 32,
+      "sha256": "e2ffbcb45e55e27b8107732b4e0f0e43c8007c08940b01c5b71f7e9da9574de7"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/auth02-runtime-compatibility.json",
+      "bytes": 9247,
+      "local_blocks": 24,
+      "sha256": "207d201aa6231c25a0b795b6c9283cb91659a29c7c372c4bbd1921da44816e26"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/backend-git-lineage.json",
+      "bytes": 3989,
+      "local_blocks": 8,
+      "sha256": "70eca6f3699d6e82d5df9b0fa4f8f7d75d259dff8abffeb4e8fbe4321534ac76"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/core_identity_api.py",
+      "bytes": 39837,
+      "local_blocks": 80,
+      "sha256": "35cb1b2ed434eec9bce941eb0f4a6642d28a88ffb005cbec8cd4d4662f436132"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/core_identity_browser_auth.py",
+      "bytes": 4936,
+      "local_blocks": 16,
+      "sha256": "c63fd51c97785be51aa9c8dda8dd2af42ea59bcf80862dc6f57e63a20b7b36ce"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/core_identity_public.py",
+      "bytes": 83871,
+      "local_blocks": 168,
+      "sha256": "11077e9fed401168683d5c8c31117dd2a57bd5f403ed6cfa379f58ad55f8a1b8"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/core_identity_public_store.py",
+      "bytes": 77673,
+      "local_blocks": 152,
+      "sha256": "98414fa04c72281edca3f399a40c1c2e731e1a367f7a74b794fcf09d60b908d4"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/core_identity_session.py",
+      "bytes": 75655,
+      "local_blocks": 152,
+      "sha256": "cfaf971913f6a49960f5cc54c8877641cc5db1b00de4c42fa8259c673cc82f7e"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/core_identity_session_store.py",
+      "bytes": 33212,
+      "local_blocks": 72,
+      "sha256": "c0f2a07b7778aef761deee03b32adc61bfa257cb1edeae933416438508a265c3"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/core_identity_social.py",
+      "bytes": 45917,
+      "local_blocks": 96,
+      "sha256": "d181bcadd104229ca04eb941fb745a7dab209387bfefebfea3009d7b88994903"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/deployed-ui-lineage.json",
+      "bytes": 2389,
+      "local_blocks": 8,
+      "sha256": "6d4433d3ecb031001eded61aec39abd8c98972bd5b40a80c9e7111f490a2c454"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/github-WorkspaceSignIn.tsx",
+      "bytes": 6724,
+      "local_blocks": 16,
+      "sha256": "4d922648a4468367ae3e2097e8afe94677b094abe4af0b1678602f327fa33757"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/github-auth-context.tsx",
+      "bytes": 23805,
+      "local_blocks": 48,
+      "sha256": "296a61fb02180be8e2604252fee55a7fba071969eef8bad2ab7dac67c038a21b"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/github-auth.sign-in.tsx",
+      "bytes": 12608,
+      "local_blocks": 32,
+      "sha256": "fbe4feb865033c016b52656979ddf03a054ef91f6a18ddd394444e760a86ce15"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/github-resident-lineage.json",
+      "bytes": 1162,
+      "local_blocks": 8,
+      "sha256": "2eef42df10396ddfb709c830bdea95f0e3b74c75fd74295ee3ddde170e5cf126"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/github-residentSocialAuth.ts",
+      "bytes": 6110,
+      "local_blocks": 16,
+      "sha256": "b01890782d9201832b9c40b934ad3359f10b3a85dffdf9fa14b85c20ffa7f7ac"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/local-source-lineage.json",
+      "bytes": 3764,
+      "local_blocks": 8,
+      "sha256": "aa61e7696599d5dbddc5734ab8645269e33484eec78ab4277674d572efc97a74"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/p2a1_identity_route_contract.py",
+      "bytes": 5760,
+      "local_blocks": 16,
+      "sha256": "0baa131a29739067ae479d6fa5c9f3fb0d5e816c920bf33548b8aa27e2ab6b3a"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/prod-source-metadata.json",
+      "bytes": 276,
+      "local_blocks": 8,
+      "sha256": "2d2428692d4809eadfa92f91e172c45f4c8ce21f969e6468f6e669713c850e6c"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/prod_app.py",
+      "bytes": 4931,
+      "local_blocks": 16,
+      "sha256": "6311c28a8b20d2a30423a9e299d97f114670f6a106d6aa9f1888617a9a157f11"
+    },
+    {
+      "path": "evidence/reaudit/auth-repair-map/runtime-nonsecret.json",
+      "bytes": 1623,
+      "local_blocks": 8,
+      "sha256": "c8c5dbd17f13ccc896e8e00d5e5cda55f7556f7b8ecc0eb9de8019abd1ab2f09"
+    },
+    {
+      "path": "evidence/reaudit/auth02-browser/BROWSER-SMOKE-01.md",
+      "bytes": 2891,
+      "local_blocks": 8,
+      "sha256": "67ecfb3939f102e616a642a94c9169850bbd9f19d360664484e7ce6442215750"
+    },
+    {
+      "path": "evidence/reaudit/auth02-browser/BROWSER-SMOKE-02.md",
+      "bytes": 2267,
+      "local_blocks": 8,
+      "sha256": "3191f24b809d78cb1f4913aca23babfcd85be09cdf2297d0348fd6637b48a0f6"
+    },
+    {
+      "path": "evidence/reaudit/auth02-browser/fixture-NOT-DEPLOYABLE.json",
+      "bytes": 623,
+      "local_blocks": 8,
+      "sha256": "a5968ade9d328820c4ec5176000b153e17fd84f90d7247b5673a5809c4732bcd"
+    },
+    {
+      "path": "evidence/reaudit/auth02-browser/fixture-status-after-browser.json",
+      "bytes": 953,
+      "local_blocks": 8,
+      "sha256": "0798af9ef556f2516eaa1bcd61a94e26e0e98959bdc7916d5497af7221d0d383"
+    },
+    {
+      "path": "evidence/reaudit/auth02-browser/fixture-status-final-browser.json",
+      "bytes": 893,
+      "local_blocks": 8,
+      "sha256": "3f01d67b574309fb0a259dac712f72e507971790b8f85229fa2b1a454a3b1bce"
+    },
+    {
+      "path": "evidence/reaudit/auth02-browser/signed-out-final-local.jpg",
+      "bytes": 64559,
+      "local_blocks": 128,
+      "sha256": "19bf68f37c8b30a5b7f23577f19f11ae07ff4215fc79e67d545e8c1b378b0c9f"
+    },
+    {
+      "path": "evidence/reaudit/auth02-browser/signed-out-local.jpg",
+      "bytes": 64563,
+      "local_blocks": 128,
+      "sha256": "1aba22d12bd788e8519d8e49eb3b698a975ef0430d6a9796c528f963b62f8deb"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/RETENTION-01.json",
+      "bytes": 7870,
+      "local_blocks": 16,
+      "sha256": "0c4909c6e05480934c756d1cbb533265894073012ea935cdbd042598a7c3976c"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/RETENTION-02.json",
+      "bytes": 9157,
+      "local_blocks": 24,
+      "sha256": "053a746fadd057135ae4062ba154df01d7ba80b02662ce124df3978a23bf8aca"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/RETENTION-03.json",
+      "bytes": 9543,
+      "local_blocks": 24,
+      "sha256": "6c282002bffb5e10d1d51f3262e41920da85c8e12aa19b50809edde3c84a0cad"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/RETENTION-04.json",
+      "bytes": 14875,
+      "local_blocks": 32,
+      "sha256": "bfa07ed118d2c2dd496ef9641e6d08b4890d8a8008d5487b12b00888c5fd51ee"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/RETENTION-05-NOTE.md",
+      "bytes": 1929,
+      "local_blocks": 8,
+      "sha256": "027c18f8b760cba2c618fa97461d81bf9703c55191b0980748e3d971519d781b"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/RETENTION-05.json",
+      "bytes": 26778,
+      "local_blocks": 56,
+      "sha256": "5d9768cbbddd27327e12c580b1b5e1a333c6e2be0a0b7d6393f7da9fdc78456d"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/RETENTION-06.json",
+      "bytes": 24879,
+      "local_blocks": 56,
+      "sha256": "aa9ebea3b8c169407cc2db23c68cfa8c44d8d0bfb3aec373f85ed88b6fd58d59"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/RETENTION-PROBE-03.json",
+      "bytes": 624,
+      "local_blocks": 8,
+      "sha256": "c5cc6871cc55a0b894e3ebdfe662d4538abb4d0bb61763d9add986aa689f6052"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/activation-fault-results.json",
+      "bytes": 7156,
+      "local_blocks": 16,
+      "sha256": "2e458999e60061ae3aa5a2658565b7df06cf1970bca8e2366cb6ec12802c91fb"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/activation07-incident/INCIDENT-STAGING-NOTE.md",
+      "bytes": 2674,
+      "local_blocks": 8,
+      "sha256": "517b208505c3b5a906a69934c56085733ee5306e7a837d4e4e8f3e54fb3ca728"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/activation07-incident/RETENTION-INCIDENT-07.json",
+      "bytes": 3778,
+      "local_blocks": 8,
+      "sha256": "5d1d72128d51e033ac5e8e052c3900bfb3a030a90dfd91f3a02eb828b1116d63"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/activation07-incident/activation-9095-result-07.json",
+      "bytes": 732,
+      "local_blocks": 8,
+      "sha256": "53a92b85bdcb62bd8fe2e2427532280c0f438cdcb20e5c6e6ae11d176cde0621"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/activation07-incident/package07/PACKAGE-07-HASHES.json",
+      "bytes": 843,
+      "local_blocks": 8,
+      "sha256": "af7cf8706a778e0cb2005ee656de7659a369180991a82acc1893805adb78a148"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/activation07-incident/package07/PACKAGE-07-RECONCILIATION-ADDENDUM.md",
+      "bytes": 1700,
+      "local_blocks": 8,
+      "sha256": "c57674178883bcf2f831498afff60e60538868230e63b4808b30225b80bc0ccf"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/activation07-incident/package07/activate-9095.py",
+      "bytes": 18405,
+      "local_blocks": 40,
+      "sha256": "af8508ff6057133cdc8d4c6829d18faf07871ec9d6fa5d8726a525afcaa1106b"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/activation07-incident/package07/candidate-9095-manifest.json",
+      "bytes": 351,
+      "local_blocks": 8,
+      "sha256": "8409272a41b5c232f47b2fb9a2e045acb02aa9ba1912ba57425c45bddde4dd01"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/activation07-incident/package07/fallback-9095-manifest.json",
+      "bytes": 322,
+      "local_blocks": 8,
+      "sha256": "20ec9579148702bc2bcf54399676cbd7206b8dc8bc86c4e25534ff80b8e69a8b"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/activation07-incident/package07/package-manifest-9095.json",
+      "bytes": 7442,
+      "local_blocks": 16,
+      "sha256": "8019023d6f981118c622fb9ee6839e29480b8b9fcd183078838f3b119336fc86"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/activation07-incident/package07/preflight-spec.json",
+      "bytes": 9923,
+      "local_blocks": 24,
+      "sha256": "ccd910464d2b7d5135d4a0c3ca26bc4ea7e46d394f145996106cecc93dae91c8"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/activation07-incident/package07/prestart-fastpath-probe.py",
+      "bytes": 25169,
+      "local_blocks": 56,
+      "sha256": "5a534ffae6f10edd348ff8d24b6ac7cf4212336fa066578f5bdda7e8711a3846"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/activation07-incident/package07/stage-reviewed-package-07.py",
+      "bytes": 1434,
+      "local_blocks": 8,
+      "sha256": "6d95bc3838cbdcaa43d56f54bb8bcc1a34aceccd9b33b5de6574d6b886b51e4a"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/adapter/result.json",
+      "bytes": 11171,
+      "local_blocks": 24,
+      "sha256": "c5ff6f29565987ce09b2c4bddeda324f0b07d5921def17935fca3cbf9b71585e"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/adapter/run_tests.py",
+      "bytes": 24270,
+      "local_blocks": 48,
+      "sha256": "a5cc4610732507dbefe8f3f4b6137555c7f337f1ffb6f282cc86eefb74e9cdb5"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/adapter/source-manifest.json",
+      "bytes": 5721,
+      "local_blocks": 16,
+      "sha256": "3bd789a7eb7d3f46af64c04fd0172e83af4c8b1e0d6461babdedf0c2fa227ac6"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/backend-admission/admission-tests.log",
+      "bytes": 3520,
+      "local_blocks": 8,
+      "sha256": "d3dcb02eb339976fba7d88525a3747915b4a48c1a3d8af95d10d5a97affce09b"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/backend-admission/test_admission.py",
+      "bytes": 14671,
+      "local_blocks": 32,
+      "sha256": "6b598dfd25d62d4c0b95a6c6ab910412ee70d579587095f5c57f65c06b230691"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/backend-contract/result.json",
+      "bytes": 20540,
+      "local_blocks": 48,
+      "sha256": "3ebe53773e9fcbbc122718cd625f2eaa4ffb837c5bf58b768de10689865f6002"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/backend-contract/run_contract.py",
+      "bytes": 25372,
+      "local_blocks": 56,
+      "sha256": "aa41b2ab75a97e748d0360161031d9f57a6cd9a1e3d948f5777663144015301b"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/backend-contract/source-manifest.json",
+      "bytes": 2662,
+      "local_blocks": 8,
+      "sha256": "f37545ff1f64c366526de0d9c47d5db6dc5f73485b27272beebff50ede87ce30"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/classifier-final/restart-classifier-results.json",
+      "bytes": 1529,
+      "local_blocks": 8,
+      "sha256": "bbbfefffdedd4925424d0abb7a215215a4341f809caeb18957c47b74f4b7ae73"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/classifier-final/test_restart_classifier.py",
+      "bytes": 4711,
+      "local_blocks": 16,
+      "sha256": "0b266f234bf5535bd774b85904532b909d91df0c3dd14a6165b9d1bcdb9652fd"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/classifier-scalar-final/restart-classifier-results.json",
+      "bytes": 1529,
+      "local_blocks": 8,
+      "sha256": "405d6de1a144d2b3ee82844eafa6d55ec7a7619c1811362ab99ed3b12ee89fdb"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/classifier-scalar-final/test_restart_classifier.py",
+      "bytes": 4707,
+      "local_blocks": 16,
+      "sha256": "65bcfedc41a469b698ff4283dd1cd98d00c31b0b42ae8fe300890a1c57225b68"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/closed-recovery01/RECOVERY-STAGING-NOTE.md",
+      "bytes": 1814,
+      "local_blocks": 8,
+      "sha256": "308952a45fa837c2e3d3df921a50b56a3b054f151a637fe5cc059771a2b42c28"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/closed-recovery01/RETENTION-RECOVERY-01.json",
+      "bytes": 1141,
+      "local_blocks": 8,
+      "sha256": "dc512895658c595c6cb2d8971c1a3f75f5e1027b57febec24f8c2271427dd165"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/closed-recovery01/closed-recovery-result-01.json",
+      "bytes": 1162,
+      "local_blocks": 8,
+      "sha256": "7b0754461a52bff4ee9fd35e4993cf4bc5b95da423047860f2ceea60c1a8bccf"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/closed-recovery01/owner-existing-session-after-recovery.jpg",
+      "bytes": 39300,
+      "local_blocks": 80,
+      "sha256": "1e9216edf83cd45e6be10693b3e44ac4335ff657aff465ae06dbb3da9855708f"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/closed-recovery01/recover-wrapper-wait-01.py",
+      "bytes": 1532,
+      "local_blocks": 8,
+      "sha256": "8907ce81c8499f4d0e47652837afe14b245736a4a8ebf3f4fbcfe511b776c8ac"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/controller-fastpath-final/activation-fault-results.json",
+      "bytes": 9703,
+      "local_blocks": 24,
+      "sha256": "2c8e7b8a61413edb5e8ad7e73e14db95be2bcbe37b5113a109ce86e8a6d24244"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/controller-fastpath-final/test_activation_faults.py",
+      "bytes": 18627,
+      "local_blocks": 40,
+      "sha256": "a2ed8ebe117c910685a4ae8a9b1e80f4560139f2b4a054a327c5413a36b946fd"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/controller-final/activation-fault-results.json",
+      "bytes": 7441,
+      "local_blocks": 16,
+      "sha256": "d2513d14ebd6beded5c4a8469c389ae5754fdcb2dc52efa2e069b712c8aa5096"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/controller-final/test_activation_faults.py",
+      "bytes": 16855,
+      "local_blocks": 40,
+      "sha256": "aa86f2bf8f426151c0801afa4e0cab8174947694945adffa5316963f952bd592"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/RETENTION06-NOTE.md",
+      "bytes": 2260,
+      "local_blocks": 8,
+      "sha256": "3e2d1271bb49349a5c4c959ea5dda463557626831f03a0f6f6b3cb0d479d6f3b"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/owner-proof/OWNER-BROWSER-OBSERVATION-08.md",
+      "bytes": 1224,
+      "local_blocks": 8,
+      "sha256": "370edad18c5620cdb56cccc9d802925a5918b45f3e14f47df5daa9e35458aba2"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/owner-proof/owner-proof-local-tests-02.json",
+      "bytes": 520,
+      "local_blocks": 8,
+      "sha256": "1213d6bf006251924e23e6e7c455660261ff67dc3c12e3a8b4f2d98aea2f37f2"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/owner-proof/owner-proof-readonly-02.py",
+      "bytes": 11465,
+      "local_blocks": 24,
+      "sha256": "264c126b0e4fb84f59b228b4b0f8c32ddd9a5a464204c7dfe1695848b8853bf6"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/README.md",
+      "bytes": 9829,
+      "local_blocks": 24,
+      "sha256": "92a1e8e23dfe885cd76c035d09e7c1a44f3b35ae340ed2bdaf92ec221b448d02"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/candidate-9095/deploy/core_identity_api.py",
+      "bytes": 44386,
+      "local_blocks": 88,
+      "sha256": "a0834b412c06263d1ca593de67cc2514471cf4fdd7a83c860608be998fc65fcb"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/candidate-9095-manifest.json",
+      "bytes": 351,
+      "local_blocks": 8,
+      "sha256": "8409272a41b5c232f47b2fb9a2e045acb02aa9ba1912ba57425c45bddde4dd01"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/AUTH02-9095-ACTIVATION-HANDOFF-01.md",
+      "bytes": 9088,
+      "local_blocks": 24,
+      "sha256": "7cffa39ba958aaab37f7394e03d793bc95c5235548f3af2f2e95390078b43fe0"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/PACKAGE-07-RECONCILIATION-ADDENDUM.md",
+      "bytes": 1700,
+      "local_blocks": 8,
+      "sha256": "c57674178883bcf2f831498afff60e60538868230e63b4808b30225b80bc0ccf"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/PACKAGE-08-CLOSED-BASELINE-ADDENDUM.md",
+      "bytes": 2086,
+      "local_blocks": 8,
+      "sha256": "73044b6c1299fd3de49016ca5edc408b0584d62991517b3c8c412a5071f9a484"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/PACKAGE-08-HASHES.json",
+      "bytes": 1108,
+      "local_blocks": 8,
+      "sha256": "4f0fd0c4b6151af3e2ebff1dff1532512517e9009759e3ef1052110d6f66423e"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/RESTART-REVIEW-PROCEDURE-01.md",
+      "bytes": 6206,
+      "local_blocks": 16,
+      "sha256": "eac5aa6e8021077f4c6a79a7583fd3d4be94680d7cb8dcfc589edadcf41440bb"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/activate-9095.py",
+      "bytes": 18434,
+      "local_blocks": 40,
+      "sha256": "fb39354f610dc6e74db369453945376d37d838c00fc88f098dfae123be0a4b45"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/build-startup-verdict.py",
+      "bytes": 5977,
+      "local_blocks": 16,
+      "sha256": "790a9d54e8afb785697334ae280d3b958abcd777237c62ee20260bb7141131ab"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/classify-restart-config.py",
+      "bytes": 14398,
+      "local_blocks": 32,
+      "sha256": "3ba754475c7ec26516989474ab2f16bf7366e6952268a8863b2525c891fd61a2"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/direct-deploy-startup-ast.py",
+      "bytes": 4610,
+      "local_blocks": 16,
+      "sha256": "639299407e9e13ba59c2d839f4100a08c4c784d4cb338e7bb017d34f3972c32b"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/package-manifest-9095.json",
+      "bytes": 8106,
+      "local_blocks": 16,
+      "sha256": "403e97cbc90893402427dfd304358271d619c23babb452a1a20ff2f33aece21b"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/preflight-backup.py",
+      "bytes": 17623,
+      "local_blocks": 40,
+      "sha256": "25c5d1f8b22dd81fcc4ea07818d784dc52b70cab62170c88a2df94b8d07abb87"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/preflight-spec.json",
+      "bytes": 9923,
+      "local_blocks": 24,
+      "sha256": "b2031d0b9cef4363fdd843b50830c4edea7b7ed45487ab2b2b956c8a4721ec96"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/prestart-fastpath-probe.py",
+      "bytes": 25169,
+      "local_blocks": 56,
+      "sha256": "5a58274e32813b467ab498c6f00ab821b774cff10c5d35f5ca9a6594fcce7544"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/stage-reviewed-package-08.py",
+      "bytes": 1434,
+      "local_blocks": 8,
+      "sha256": "728f390dbe94081da2ff394db726d7876e2c467e99d770f1148dbdc73065f96f"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment/test-prestart-identity-local.py",
+      "bytes": 4998,
+      "local_blocks": 16,
+      "sha256": "04733c682446a9ae57695246e87e6aa25819b3f2e084fc335093b623ea503aa9"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment-tests/activation-fault-results.json",
+      "bytes": 9707,
+      "local_blocks": 24,
+      "sha256": "cacad03ea8526bb2ccf16c007ba9ecb120fe58f7d8a27e0fd8d244c30af16a5f"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment-tests/restart-classifier-results.json",
+      "bytes": 1529,
+      "local_blocks": 8,
+      "sha256": "405d6de1a144d2b3ee82844eafa6d55ec7a7619c1811362ab99ed3b12ee89fdb"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment-tests/test_activation_faults.py",
+      "bytes": 18627,
+      "local_blocks": 40,
+      "sha256": "a2ed8ebe117c910685a4ae8a9b1e80f4560139f2b4a054a327c5413a36b946fd"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/deployment-tests/test_restart_classifier.py",
+      "bytes": 4707,
+      "local_blocks": 16,
+      "sha256": "65bcfedc41a469b698ff4283dd1cd98d00c31b0b42ae8fe300890a1c57225b68"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/ADAPTER-RELEASE-INDEPENDENT-01.md",
+      "bytes": 2299,
+      "local_blocks": 8,
+      "sha256": "f2f8bf3a725b0617ab7031fe0fa1c5e31f5e480d40794801c60d3a20a7613ad9"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/AUTH02-BOUNDED-STARTUP-REVIEW-01.md",
+      "bytes": 3485,
+      "local_blocks": 8,
+      "sha256": "b022a181621d541330f2063b26698e6d449263a0c65563919607187d2d4d9da7"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/PRESTART-IDENTITY-REVIEW-04.md",
+      "bytes": 2524,
+      "local_blocks": 8,
+      "sha256": "01d6c3a21b9cb6dd3e3ac7bd62995a5a26d4e7ac8b1e6d95b9f34044a9b8a869"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/RECONCILIATION-SOURCE-REVIEW-05.md",
+      "bytes": 5050,
+      "local_blocks": 16,
+      "sha256": "3166f935aa23b224a5bca761a140d35c91b107c35de93e4450113dbdbbbd2b49"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/RETRY-08-INDEPENDENT-REVIEW.json",
+      "bytes": 856,
+      "local_blocks": 8,
+      "sha256": "342e1ed66afc6858dc4adaab8e4f76f04e4708b3438ebbef86ddf7b9146be696"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/activation-9095-result-07.json",
+      "bytes": 732,
+      "local_blocks": 8,
+      "sha256": "53a92b85bdcb62bd8fe2e2427532280c0f438cdcb20e5c6e6ae11d176cde0621"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/adapter-release-result.json",
+      "bytes": 11171,
+      "local_blocks": 24,
+      "sha256": "c5ff6f29565987ce09b2c4bddeda324f0b07d5921def17935fca3cbf9b71585e"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/api-function-scope.json",
+      "bytes": 1211,
+      "local_blocks": 8,
+      "sha256": "07f2997554428a22de7286709c987e8626a24f66d3ae29ac4532a7eb15d199b5"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/auth02-concrete-startup-constructors.json",
+      "bytes": 3952,
+      "local_blocks": 8,
+      "sha256": "6c95d0dd1c9354b78fda59a1303f0d47e6c37594ab915be07857ebf4326252e3"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/auth02-direct-deploy-startup-ast.json",
+      "bytes": 221863,
+      "local_blocks": 440,
+      "sha256": "6a2036e4899de5a38a19eaeb606f926852b8f77bcc6f7f791c19cf0b8451988a"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/auth02-prestart-mode-v2.json",
+      "bytes": 15310,
+      "local_blocks": 32,
+      "sha256": "2120f3ea47b29fb7febb899aa2dbc035f99bdbcb6d590d88031ff4a723088883"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/auth02-prestart-source.json",
+      "bytes": 31291,
+      "local_blocks": 64,
+      "sha256": "84763f40ff475fd108ad200079ff789ba029135d9a41abf2e64d9b342e4b588c"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/auth02-reconciliation-05-locked.json",
+      "bytes": 10200,
+      "local_blocks": 24,
+      "sha256": "2bf0204fb778ef069b6116ca45674ce8a763206b2266beeea287cce69198dc11"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/auth02-startup-declarations-05.json",
+      "bytes": 914067,
+      "local_blocks": 1792,
+      "sha256": "2b507ca0ff96e7fb4541e8da45d9129b4d8162ff9713d29300295ccdd843a8ad"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/auth02-startup-declarations.json",
+      "bytes": 940634,
+      "local_blocks": 1840,
+      "sha256": "8a905e5a7c84cef38fa402bb02fee767757df931f90c3a3622b73ab18f63f123"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/closed-recovery-result-01.json",
+      "bytes": 1162,
+      "local_blocks": 8,
+      "sha256": "7b0754461a52bff4ee9fd35e4993cf4bc5b95da423047860f2ceea60c1a8bccf"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/direct-startup-ast-fixture.json",
+      "bytes": 318,
+      "local_blocks": 8,
+      "sha256": "648358fd43700862a3b23278996068d4820e71949ed4e8d207befd2c1dbf766e"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/main-additive-mount-05.diff",
+      "bytes": 516,
+      "local_blocks": 8,
+      "sha256": "7f0d2fec3d12f2de927a1f6aa1141d3a9c947030f2ce544382c908b2eba19787"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/prestart-probe-identity-tests-04.json",
+      "bytes": 2239,
+      "local_blocks": 8,
+      "sha256": "fc112765a2c93d1904deaab2e466b9fa884db438e39dcdf96c1f64f505f68449"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/prestart-probe-local-guard-tests.json",
+      "bytes": 2997,
+      "local_blocks": 8,
+      "sha256": "b53bac8f79ad42825c652329dd123f4668b31be4116b0332b569040df7080f82"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/preview-release-result.json",
+      "bytes": 12386,
+      "local_blocks": 32,
+      "sha256": "9fe9a8f7e4a3914246ec6a06438b12971d342f0d6a2116d3092d09dc704e3fac"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/recovery-wait-tests-01.json",
+      "bytes": 1273,
+      "local_blocks": 8,
+      "sha256": "825520d0abfec47a887624b1064e1b6a8a186c2c8cc5570d97779d6db280084b"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/resident-87ff864-manifest.json",
+      "bytes": 11019,
+      "local_blocks": 24,
+      "sha256": "91c3fb25ce80a570507b66aeae30817569fc5b0a5daef43ab17926a570f7c77b"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/resident-actual-05-startup-ast.json",
+      "bytes": 18338,
+      "local_blocks": 40,
+      "sha256": "d0f92ec7ac6272cc8511b018a6260c1ed9c03a8ad3c1240bbdf6b52d382057fb"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/resident-webhook-followup-05.diff",
+      "bytes": 2144,
+      "local_blocks": 8,
+      "sha256": "84927b1c0dda160d9214289bc948573949e464499e297be7ba554a14e8f51e66"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/restart-dbus-scalar-shape.json",
+      "bytes": 346,
+      "local_blocks": 8,
+      "sha256": "a72cd37f1a97ffccad59f2f676aec4a7c2ca90e55da1809e457d8b629b1b3a90"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/restart-env-parser-tests.json",
+      "bytes": 221,
+      "local_blocks": 8,
+      "sha256": "79995f1aabd97336bcdb02c46e69104d422eeb858aab70bfe403d06f7fbfd747"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/evidence/restart-unset-tests.json",
+      "bytes": 271,
+      "local_blocks": 8,
+      "sha256": "2fedf92965c3c68538a84b015dc25dbc45acdd3cb2677a8232cd1ac351a983c6"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/fallback-9095/deploy/core_identity_api.py",
+      "bytes": 33442,
+      "local_blocks": 72,
+      "sha256": "aee0ce11a4ffe48242b18dbde4a67463409765d80f43f15a68c6d40facc6e143"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/package08/fallback-9095-manifest.json",
+      "bytes": 322,
+      "local_blocks": 8,
+      "sha256": "20ec9579148702bc2bcf54399676cbd7206b8dc8bc86c4e25534ff80b8e69a8b"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/runtime/activation-9095-result-08.json",
+      "bytes": 1389,
+      "local_blocks": 8,
+      "sha256": "9e8095d0d64ef8e6d05713f30184b4437aa1a8b0212eae16c6439cf93cd9835d"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/runtime/owner-canonical-proof-after-08.json",
+      "bytes": 1804,
+      "local_blocks": 8,
+      "sha256": "445ec8c1f575a7c98b99567abd0eabb48e110349a9048e979df086f027f874eb"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/runtime/owner-fresh-signin-after-08.jpg",
+      "bytes": 86546,
+      "local_blocks": 176,
+      "sha256": "dc947fa3fab66857c9209eb37da82c9d9146de80210f938147cdd75344067300"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/runtime/payment-lock-after-08.json",
+      "bytes": 3698,
+      "local_blocks": 8,
+      "sha256": "46050f7334dbcc139764619e75ae223b4ce2bbbe5658c9e9fd502e3b07c89a93"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/runtime/prestart-summary-08.json",
+      "bytes": 3578,
+      "local_blocks": 8,
+      "sha256": "650af95a47c10190e72e0657848d63579175046650b41eec94bb84498742964c"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/final08-component/runtime/public-denial-after-08.json",
+      "bytes": 2196,
+      "local_blocks": 8,
+      "sha256": "dea69335b31a67146df6a2c55cf9ad6286e28c6417ac221c3b83e7ed44b762d6"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/frontend-contract/actual-tenant-projection.json",
+      "bytes": 6865,
+      "local_blocks": 16,
+      "sha256": "1ff7d9e60f1393644c0a9941f5e4c213d109e0ee14aecf213ed8cfff4e035d5c"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/frontend-contract/frontend-auth02-runtime-reviewed.js",
+      "bytes": 20312,
+      "local_blocks": 40,
+      "sha256": "12cae36a6d808676b28684c88ae36bd3449eb2730c8c8179a6e1bcbb3afa10ca"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/frontend-contract/frontend-cross-contract-result.json",
+      "bytes": 4247,
+      "local_blocks": 16,
+      "sha256": "173be05ada89c127960d686557b3937ab51b690da990bae752704d1c913cfd29"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/frontend-contract/test_projection.cjs",
+      "bytes": 2972,
+      "local_blocks": 8,
+      "sha256": "1e36b6cddbd9f1c765fef255d73311fb1dccb5248046e94304cb1d170a6fbdbf"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/frontend-local/baseline-provenance-results.json",
+      "bytes": 382,
+      "local_blocks": 8,
+      "sha256": "2c1b7fa15ad91255461c762a8171755a1684e702a3ea1275fe02c2d5467f4bbb"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/frontend-local/graph-results.json",
+      "bytes": 383,
+      "local_blocks": 8,
+      "sha256": "88764fc804b6b14054fa2e8bc96ae958a5d9bc03e9c8ad2fba07bcb85c60b75a"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/frontend-local/graph.mjs",
+      "bytes": 2859,
+      "local_blocks": 8,
+      "sha256": "80e728ae359afbc635aa7c81d06985d7019795438e06bb546dee7f64bde73cdf"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/frontend-local/reproducibility-results.json",
+      "bytes": 326,
+      "local_blocks": 8,
+      "sha256": "a54e3142edf4562ab8e71f1cdd7fe92bd3ac00116bc65e5ca8824515cf06d74f"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/frontend-local/reproducibility.py",
+      "bytes": 2094,
+      "local_blocks": 8,
+      "sha256": "f5b606909cee783df1c836500b3ee15dfa60738ed7fc6bd134feb0099a88b540"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/frontend-local/runtime-results.json",
+      "bytes": 2605,
+      "local_blocks": 8,
+      "sha256": "af33b6d5b422420291fa92e9f81cae5d272a6692d0a9c62a470fe6fec7a17239"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/frontend-local/runtime.mjs",
+      "bytes": 17278,
+      "local_blocks": 40,
+      "sha256": "1b8b5a613bd44afb056f3c9494d8fdfdd706469a08d5a0c36c1af6e0492f3081"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/RETENTION-STAGING-01.json",
+      "bytes": 16150,
+      "local_blocks": 32,
+      "sha256": "ab658eb022b6a82ad09f02e591b2c2cd9807e11c8dbdc5a961096a4518e71d31"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/RETENTION-STAGING-NOTE.md",
+      "bytes": 4052,
+      "local_blocks": 8,
+      "sha256": "ad3ad143c6fa0a430f7f0c4170870202018d7e2bd4783109858ca1208da52363"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/package05/AUTH02-9095-ACTIVATION-HANDOFF-01.md",
+      "bytes": 9088,
+      "local_blocks": 24,
+      "sha256": "7cffa39ba958aaab37f7394e03d793bc95c5235548f3af2f2e95390078b43fe0"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/package05/PACKAGE-05-HASHES.json",
+      "bytes": 783,
+      "local_blocks": 8,
+      "sha256": "d5e13cb60bb0ca82e10b848c8403ade1945592a6c9d3eb7563e01cbbcbd36091"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/package05/RESTART-REVIEW-PROCEDURE-01.md",
+      "bytes": 6206,
+      "local_blocks": 16,
+      "sha256": "eac5aa6e8021077f4c6a79a7583fd3d4be94680d7cb8dcfc589edadcf41440bb"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/package05/build-startup-verdict.py",
+      "bytes": 5977,
+      "local_blocks": 16,
+      "sha256": "790a9d54e8afb785697334ae280d3b958abcd777237c62ee20260bb7141131ab"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/package05/package-manifest-9095.json",
+      "bytes": 7082,
+      "local_blocks": 16,
+      "sha256": "a8f4166b3b0ecf0e248dc337a39719e51813a858bfff56a4959cf30a9fc28825"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/package05/preflight-spec.json",
+      "bytes": 9923,
+      "local_blocks": 24,
+      "sha256": "ccd910464d2b7d5135d4a0c3ca26bc4ea7e46d394f145996106cecc93dae91c8"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/package05/stage-reviewed-package-05.py",
+      "bytes": 1434,
+      "local_blocks": 8,
+      "sha256": "e16b339ded2f87132e83f117a3c958c25ec416504c3b9dab85b6b27380357d63"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/package06/PACKAGE-06-HASHES.json",
+      "bytes": 766,
+      "local_blocks": 8,
+      "sha256": "0ce5520344a02e611016c5740ff239da08616f22a7441599f6442f8cfcb461f2"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/package06/package-manifest-9095.json",
+      "bytes": 7286,
+      "local_blocks": 16,
+      "sha256": "58cd328054a8dff231370a5ea0e73129db25722d887f891afe1637ba67a89c2e"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/package06/prestart-fastpath-probe.py",
+      "bytes": 22655,
+      "local_blocks": 48,
+      "sha256": "5ab6bbb50a5c3125678fa75c0d0236ce7e8d36645e130ddafddffbdecd38560d"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/package06/stage-reviewed-package-06.py",
+      "bytes": 1434,
+      "local_blocks": 8,
+      "sha256": "67d98bfb3e2e2fe03605b44552f6edc0b1f78afcb12c8b0dfc66423c89a33dce"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/payment-boundary04/PAYMENT-BOUNDARY-REVIEW-04.md",
+      "bytes": 5462,
+      "local_blocks": 16,
+      "sha256": "fa90a404fcb4f3bad388e0e28b8fdade8f5266fdceb64dd08a5939eaf52589e0"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/payment-boundary04/source-provenance.json",
+      "bytes": 2478,
+      "local_blocks": 8,
+      "sha256": "465c1a09305026f47a0bc2e07e881e12b093538f0bd4620774ed0a1ec36a6e11"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/payment-boundary05/card-api-followup.diff",
+      "bytes": 2198,
+      "local_blocks": 8,
+      "sha256": "19b892b01be48e5523034eabcafe5b8807cbe024f8f08de01bf4a4544d04c5df"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/payment-boundary05/core_customer_card_api.py",
+      "bytes": 8041,
+      "local_blocks": 16,
+      "sha256": "cb04159dd5d6e5ddc13e19f1a2e9c7f41d0eff15591d1b61bb68d67d3a4efb91"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/payment-boundary05/review.json",
+      "bytes": 881,
+      "local_blocks": 8,
+      "sha256": "74527a527d35cec10e482efbabe55efe6d34e81aa959b4d3ca82aee7259d2d9d"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/reconciliation/RECONCILIATION-SOURCE-REVIEW-05.md",
+      "bytes": 5050,
+      "local_blocks": 16,
+      "sha256": "3166f935aa23b224a5bca761a140d35c91b107c35de93e4450113dbdbbbd2b49"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/reconciliation/auth02-startup-declarations-05.json",
+      "bytes": 914067,
+      "local_blocks": 1792,
+      "sha256": "2b507ca0ff96e7fb4541e8da45d9129b4d8162ff9713d29300295ccdd843a8ad"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/reconciliation/main-additive-mount.diff",
+      "bytes": 516,
+      "local_blocks": 8,
+      "sha256": "7f0d2fec3d12f2de927a1f6aa1141d3a9c947030f2ce544382c908b2eba19787"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/reconciliation/resident-87ff864-manifest.json",
+      "bytes": 11019,
+      "local_blocks": 24,
+      "sha256": "91c3fb25ce80a570507b66aeae30817569fc5b0a5daef43ab17926a570f7c77b"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/reconciliation/resident-actual-05-startup-ast.json",
+      "bytes": 18338,
+      "local_blocks": 40,
+      "sha256": "d0f92ec7ac6272cc8511b018a6260c1ed9c03a8ad3c1240bbdf6b52d382057fb"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/reconciliation/resident-webhook-followup-05.diff",
+      "bytes": 2144,
+      "local_blocks": 8,
+      "sha256": "84927b1c0dda160d9214289bc948573949e464499e297be7ba554a14e8f51e66"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/reconciliation/source-review-metadata.json",
+      "bytes": 642,
+      "local_blocks": 8,
+      "sha256": "919c1593dc89ded48bce4b21a10f31b0ea2db3f46432a74d33182a4f9ae79057"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/reviewed-helpers/payment-lock-classify-05.py",
+      "bytes": 13946,
+      "local_blocks": 32,
+      "sha256": "750e7970937626002714756f1da7e67e13788f6e02b0f6d64ebcea736aaf511c"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/reviewed-helpers/prestart-fastpath-trial-ldconfig.py",
+      "bytes": 25169,
+      "local_blocks": 56,
+      "sha256": "5a534ffae6f10edd348ff8d24b6ac7cf4212336fa066578f5bdda7e8711a3846"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/reviewed-helpers/prestart-fastpath-trial.py",
+      "bytes": 22989,
+      "local_blocks": 48,
+      "sha256": "7337607dfbb0d90aed50499e74a48a9f40d8561b589ce66b95f53795e67c85b1"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/reviewed-helpers/prestart-fastpath-write-diagnostic.py",
+      "bytes": 23618,
+      "local_blocks": 48,
+      "sha256": "fa12b1f09aca37b2d656143113b48d3f278281cf250df8f5fb1f811ec9c4b649"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/runtime-and-local-evidence/auth02-payment-lock-before-05.json",
+      "bytes": 3698,
+      "local_blocks": 8,
+      "sha256": "025a6fce6ef78e0e01d281001e264859a3a32145eb4eb5aa7a1e85c3d9aaa031"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/runtime-and-local-evidence/auth02-prestart-diagnostic-summary-05.json",
+      "bytes": 652,
+      "local_blocks": 8,
+      "sha256": "cc8e2b0a67ecca51b792f4506fabe531ea1fa50251fefa9006107acfa10dd7b5"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/runtime-and-local-evidence/auth02-prestart-summary-05.json",
+      "bytes": 548,
+      "local_blocks": 8,
+      "sha256": "81ccc76794b2e2038694e5178382c494bd9c48df614212feec81f7da1948d2c5"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/runtime-and-local-evidence/auth02-prestart-summary-06.json",
+      "bytes": 636,
+      "local_blocks": 8,
+      "sha256": "4ce51a3b7b69d7c7f986e15f649718a7c61b9afe1b21e18c40f27385a35b3dad"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/runtime-and-local-evidence/auth02-prestart-trial-summary-06.json",
+      "bytes": 1295,
+      "local_blocks": 8,
+      "sha256": "ce9e46de5f4a1c0df02c6045fdea08412a559bb488eedc7ff5653437adecc710"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/runtime-and-local-evidence/auth02-reconciliation-05-locked.json",
+      "bytes": 10200,
+      "local_blocks": 24,
+      "sha256": "2bf0204fb778ef069b6116ca45674ce8a763206b2266beeea287cce69198dc11"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/runtime-and-local-evidence/auth02-reconciliation-05.json",
+      "bytes": 10200,
+      "local_blocks": 24,
+      "sha256": "ff94a0279daa7724cb86b8aca4d93d194ffa3aa76597b86c162810d6cf7ad2a7"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/runtime-and-local-evidence/payment-lock-classifier-05-local-tests.json",
+      "bytes": 1446,
+      "local_blocks": 8,
+      "sha256": "1f5d3be624c5aedd33af78e632f7c8859a0a5e67b700770721cf77e129657ce7"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/runtime-and-local-evidence/prestart-diagnostic-local-checks-05.json",
+      "bytes": 666,
+      "local_blocks": 8,
+      "sha256": "c84b4f2f62932427f0c0029067c428d21b3817c849002cd099404dcabde54b6f"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/runtime-and-local-evidence/prestart-ldconfig-summary-06.json",
+      "bytes": 3578,
+      "local_blocks": 8,
+      "sha256": "650af95a47c10190e72e0657848d63579175046650b41eec94bb84498742964c"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/runtime-and-local-evidence/prestart-ldconfig-trial-tests.json",
+      "bytes": 1736,
+      "local_blocks": 8,
+      "sha256": "cf24ffa4b59147ffc51e4d4b0f8f613bac7b442aff8c5a7fe38f7c30ed518c3b"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/runtime-and-local-evidence/prestart-pycache-tests-06.json",
+      "bytes": 1196,
+      "local_blocks": 8,
+      "sha256": "b392dcd8b4a50d351766ffc3eca47bc3bab2b98f83ca3badd3a096467ea5266e"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/runtime-and-local-evidence/prestart-sitecustomize-trial-tests.json",
+      "bytes": 507,
+      "local_blocks": 8,
+      "sha256": "88a5d732d6241c6d73fdfb5a1e490dcf2ca6454bc7860d0b3d04a1a29cb6657e"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/post-retention04-preactivation/runtime-and-local-evidence/prestart-write-diagnostic-summary-06.json",
+      "bytes": 1465,
+      "local_blocks": 8,
+      "sha256": "eded02d88069f60a153f2eff086924ee9bfa4b975e8a49b18fc05c51b77ba6c3"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/preview-guard/candidate-9095-manifest.json",
+      "bytes": 351,
+      "local_blocks": 8,
+      "sha256": "8409272a41b5c232f47b2fb9a2e045acb02aa9ba1912ba57425c45bddde4dd01"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/preview-guard/preview-guard-result.json",
+      "bytes": 12386,
+      "local_blocks": 32,
+      "sha256": "9fe9a8f7e4a3914246ec6a06438b12971d342f0d6a2116d3092d09dc704e3fac"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/preview-guard/test_preview_guard.py",
+      "bytes": 6827,
+      "local_blocks": 16,
+      "sha256": "e1661d78b3115d1aa3ab9289e8cd00d646be15bc73aceff3a5da0ab375c2a142"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/runtime-probe-03/prestart-fastpath-summary-03.json",
+      "bytes": 270,
+      "local_blocks": 8,
+      "sha256": "4730cad34573e6fa066fffd009bd793108afde7fd7fc62131b10cdfaf5ca6d53"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/startup-final04/deployment/build-startup-verdict.py",
+      "bytes": 5846,
+      "local_blocks": 16,
+      "sha256": "575083ec67ddf01bee265dc2219a3ffbf1c5907bf94ec68311118752a86be4d2"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/startup-final04/deployment/direct-deploy-startup-ast.py",
+      "bytes": 4610,
+      "local_blocks": 16,
+      "sha256": "639299407e9e13ba59c2d839f4100a08c4c784d4cb338e7bb017d34f3972c32b"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/startup-final04/deployment/prestart-fastpath-probe-reviewed03.py",
+      "bytes": 17839,
+      "local_blocks": 40,
+      "sha256": "7df0f745dd874b19b30f535f01d46c4db4771248be9eac1cab504eabcf59d21a"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/startup-final04/deployment/prestart-fastpath-probe.py",
+      "bytes": 21530,
+      "local_blocks": 48,
+      "sha256": "f6318de6719959db2d224ea2485da11e6e46a2968fa5b2fb4cef33dcc7dbc601"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/startup-final04/deployment/startup-declaration-readonly.py",
+      "bytes": 5900,
+      "local_blocks": 16,
+      "sha256": "6be2df46455be4c4dbc1d8a8e72957b4f2de9878a4d85f85c78a537cb17df7ab"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/startup-final04/deployment/test-prestart-identity-local.py",
+      "bytes": 4998,
+      "local_blocks": 16,
+      "sha256": "04733c682446a9ae57695246e87e6aa25819b3f2e084fc335093b623ea503aa9"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/startup-final04/evidence/AUTH02-BOUNDED-STARTUP-REVIEW-01.md",
+      "bytes": 3485,
+      "local_blocks": 8,
+      "sha256": "b022a181621d541330f2063b26698e6d449263a0c65563919607187d2d4d9da7"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/startup-final04/evidence/PRESTART-IDENTITY-REVIEW-04.md",
+      "bytes": 2524,
+      "local_blocks": 8,
+      "sha256": "01d6c3a21b9cb6dd3e3ac7bd62995a5a26d4e7ac8b1e6d95b9f34044a9b8a869"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/startup-final04/evidence/auth02-concrete-startup-constructors.json",
+      "bytes": 3952,
+      "local_blocks": 8,
+      "sha256": "6c95d0dd1c9354b78fda59a1303f0d47e6c37594ab915be07857ebf4326252e3"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/startup-final04/evidence/auth02-direct-deploy-startup-ast.json",
+      "bytes": 221863,
+      "local_blocks": 440,
+      "sha256": "6a2036e4899de5a38a19eaeb606f926852b8f77bcc6f7f791c19cf0b8451988a"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/startup-final04/evidence/auth02-startup-declarations.json",
+      "bytes": 940634,
+      "local_blocks": 1840,
+      "sha256": "8a905e5a7c84cef38fa402bb02fee767757df931f90c3a3622b73ab18f63f123"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/startup-final04/evidence/direct-startup-ast-fixture.json",
+      "bytes": 318,
+      "local_blocks": 8,
+      "sha256": "648358fd43700862a3b23278996068d4820e71949ed4e8d207befd2c1dbf766e"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/startup-final04/evidence/prestart-probe-identity-tests-04.json",
+      "bytes": 2239,
+      "local_blocks": 8,
+      "sha256": "fc112765a2c93d1904deaab2e466b9fa884db438e39dcdf96c1f64f505f68449"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/startup-final04/evidence/prestart-probe-local-guard-tests.json",
+      "bytes": 2997,
+      "local_blocks": 8,
+      "sha256": "b53bac8f79ad42825c652329dd123f4668b31be4116b0332b569040df7080f82"
+    },
+    {
+      "path": "evidence/reaudit/auth02-final-verification/test_activation_faults.py",
+      "bytes": 16328,
+      "local_blocks": 32,
+      "sha256": "7182e61dafa758298c48854bbd854df40280343a1cf945eb1b41d7848c6dd42d"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/CONFIGURATION-CHECK-03.md",
+      "bytes": 1471,
+      "local_blocks": 8,
+      "sha256": "ba4490964e655d6e060c339fab20b544d6babeb6036a63e5650080c8930b5f9c"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/RETENTION-01.json",
+      "bytes": 2289,
+      "local_blocks": 8,
+      "sha256": "a3f767dca888810f68956bac93d7e698afbe09a75a72a4d75205df3117a703bc"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/RETENTION-CONFIG-03.json",
+      "bytes": 612,
+      "local_blocks": 8,
+      "sha256": "7aef66e5b5dea86b44cd493e86f19cbe74502cdcd7d56f628ef8286839609751"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/STARTUP-REVIEW-01.md",
+      "bytes": 4315,
+      "local_blocks": 16,
+      "sha256": "e4cc4ab06f8ad3bf4ddc7e134a87f02995605b76239567d8ed74590be2eb1844"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/auth02-prestart-mode-v2.json",
+      "bytes": 15310,
+      "local_blocks": 32,
+      "sha256": "2120f3ea47b29fb7febb899aa2dbc035f99bdbcb6d590d88031ff4a723088883"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/auth02-prestart-source.json",
+      "bytes": 31291,
+      "local_blocks": 64,
+      "sha256": "84763f40ff475fd108ad200079ff789ba029135d9a41abf2e64d9b342e4b588c"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/auth02-restart-config-01.json",
+      "bytes": 326,
+      "local_blocks": 8,
+      "sha256": "c8cdf8be6808fe9d65b23a407e341888699ae60772fc6ba0faca771d94321175"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/auth02-restart-config-02.json",
+      "bytes": 518,
+      "local_blocks": 8,
+      "sha256": "902ebd7099b03ffe85c3287d2ebbcab082aa4da8d9a1b20ab8703f8068f07dd1"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/auth02-restart-config-03.json",
+      "bytes": 1822,
+      "local_blocks": 8,
+      "sha256": "7cd8e0e42566971121a732b6f1d48391b0b0ffb55b425f025b494aa7a628dfcf"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/auth02-startup-declarations.json",
+      "bytes": 940634,
+      "local_blocks": 1840,
+      "sha256": "8a905e5a7c84cef38fa402bb02fee767757df931f90c3a3622b73ab18f63f123"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/auth02-startup-metadata.json",
+      "bytes": 6709,
+      "local_blocks": 16,
+      "sha256": "072f5588d130bd3f894d386dbc2471bbf26e591221c7dabbe8832c41a96994ed"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/candidate-startup-delta.json",
+      "bytes": 567,
+      "local_blocks": 8,
+      "sha256": "ac94ac39c3adeea097d8df12ac4ec8deb4af60922bc8196b9d42924129aa39f0"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/outside-import-scope.json",
+      "bytes": 14298,
+      "local_blocks": 32,
+      "sha256": "e5fc90c921511b8fe9255f752a8e7dec713e2c0661530a21ddafbf611d73f2a9"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/prestart-mode-readonly-v2.py",
+      "bytes": 4959,
+      "local_blocks": 16,
+      "sha256": "219f9a2fb314e64ad85e691c7a3c09c08704c0cb0598bdd2663cc6cfb59ceb7c"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/prestart-source-readonly-executed.py",
+      "bytes": 3869,
+      "local_blocks": 8,
+      "sha256": "49ede569083efc04aea3f5459de36b48e05c3c5e81f687841695f7ae4fa3749f"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/startup-declaration-readonly.py",
+      "bytes": 5900,
+      "local_blocks": 16,
+      "sha256": "6be2df46455be4c4dbc1d8a8e72957b4f2de9878a4d85f85c78a537cb17df7ab"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/startup-metadata-readonly.py",
+      "bytes": 2392,
+      "local_blocks": 8,
+      "sha256": "2a9c6f37fd6bce01757795e22527f602450adc53a5a5234a1f10b9ff029a5995"
+    },
+    {
+      "path": "evidence/reaudit/auth02-startup-review/unit-selected-metadata.json",
+      "bytes": 1261,
+      "local_blocks": 8,
+      "sha256": "f59cde568599a86089f8e81fecc914403fec98c8ac85bffb56b6ad5f43e97910"
+    },
+    {
+      "path": "evidence/reaudit/control-center-api-retry.body",
+      "bytes": 21,
+      "local_blocks": 8,
+      "sha256": "e41656eb2ba6c6293bf6dd928e5a88cdbc50535cab661c1969e0f598e497ed62"
+    },
+    {
+      "path": "evidence/reaudit/control-center-api-retry.headers.txt",
+      "bytes": 187,
+      "local_blocks": 8,
+      "sha256": "54e4ad7eecde649d5d10a09190e486ba3bcf86ab4ad3eecc936c6b72f08aeb50"
+    },
+    {
+      "path": "evidence/reaudit/control-center-api.body",
+      "bytes": 0,
+      "local_blocks": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/reaudit/control-center-api.headers.txt",
+      "bytes": 1,
+      "local_blocks": 8,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "evidence/reaudit/control-center-api.meta.json",
+      "bytes": 484,
+      "local_blocks": 8,
+      "sha256": "9c6f9ddd37b2f3196dbb3c4f8e1bbcd2a4b3acb9ff46793b1f3fd0c9c264f51e"
+    },
+    {
+      "path": "evidence/reaudit/docx-review07-qa.json",
+      "bytes": 1913,
+      "local_blocks": 8,
+      "sha256": "e9cfc0223c7f8ca7b0b0ffe725ed2f6c9af229fa0012e3abe44075f52f020d2e"
+    },
+    {
+      "path": "evidence/reaudit/frontend-provenance/FRONTEND-RELEASE-PROVENANCE-01.md",
+      "bytes": 8855,
+      "local_blocks": 24,
+      "sha256": "48a5e023eaa4bb61d3a0d6c63974ea938c09bd77547fc0246cb92ce27b54b67c"
+    },
+    {
+      "path": "evidence/reaudit/frontend-provenance/active-manifest-comparison.json",
+      "bytes": 355,
+      "local_blocks": 8,
+      "sha256": "db175ba752a8ed79121f12b9df3a30983934f2e6d35f10471b961c365e426cf2"
+    },
+    {
+      "path": "evidence/reaudit/frontend-provenance/auth02-ast-boundaries.json",
+      "bytes": 24206,
+      "local_blocks": 48,
+      "sha256": "4fee8e5791cfc134bb01ec3c0091af49aaee6184d5ede654b27e93fdae90b698"
+    },
+    {
+      "path": "evidence/reaudit/frontend-provenance/local-source-provenance.json",
+      "bytes": 6906,
+      "local_blocks": 16,
+      "sha256": "5e3a4f289d07ae3b65b2e91339c66eefacd62a53f0eb9bd0a70a72fdaef058e3"
+    },
+    {
+      "path": "evidence/reaudit/frontend-provenance/production-webroot-provenance.json",
+      "bytes": 67225,
+      "local_blocks": 136,
+      "sha256": "fd2adbee8f8b6e5250257b4faf81b30a43c0564f75194e222c31a115a3fca636"
+    },
+    {
+      "path": "evidence/reaudit/github-recheck-cli.json",
+      "bytes": 611,
+      "local_blocks": 8,
+      "sha256": "dbd5dae380660162ae264e49de55ad81de2ca4b81b356dd1128ff2cf34cb0793"
+    },
+    {
+      "path": "evidence/reaudit/github-recheck.json",
+      "bytes": 12493,
+      "local_blocks": 32,
+      "sha256": "330637da8d472b29f3c86b6377f7cf06d2a47819fc2fa91aa2bc16bd96daa9f6"
+    },
+    {
+      "path": "evidence/reaudit/host-entry-retry.body",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "510c86fddc95be8b3431d1be2531ccef91b0d85a9e0c42fb6709da97c2fca237"
+    },
+    {
+      "path": "evidence/reaudit/host-entry-retry.headers.txt",
+      "bytes": 391,
+      "local_blocks": 8,
+      "sha256": "545f7a823ec87dfa41eccbd61f22682603cdca1126363c77200fd4e096af145c"
+    },
+    {
+      "path": "evidence/reaudit/host-entry.body",
+      "bytes": 0,
+      "local_blocks": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/reaudit/host-entry.headers.txt",
+      "bytes": 1,
+      "local_blocks": 8,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "evidence/reaudit/host-entry.meta.json",
+      "bytes": 428,
+      "local_blocks": 8,
+      "sha256": "33f0cfc014dffd8551986557afe41fa1af376d8bdaca6931be29de247ea64a3b"
+    },
+    {
+      "path": "evidence/reaudit/host-rendered.json",
+      "bytes": 2274,
+      "local_blocks": 8,
+      "sha256": "99b2932af38c192121fdd7766c591f1073c52f2994e84f947b64bb14f4439557"
+    },
+    {
+      "path": "evidence/reaudit/host-rendered.md",
+      "bytes": 332,
+      "local_blocks": 8,
+      "sha256": "6792b560e90ded3cffdd1645bce860480de823d69ff5a4e05beb2b7ada54d9d1"
+    },
+    {
+      "path": "evidence/reaudit/http-retry-summary.json",
+      "bytes": 5702,
+      "local_blocks": 16,
+      "sha256": "b4e617909deb37bb6300c80f48fb8fe160fde02af2de9ce6cac51c723135d5f7"
+    },
+    {
+      "path": "evidence/reaudit/http-summary.json",
+      "bytes": 5730,
+      "local_blocks": 16,
+      "sha256": "d4a213298cfe4a97f948311a6eb3689176ec87a61efa2010eacca56e8b8bafcc"
+    },
+    {
+      "path": "evidence/reaudit/ops-entry-retry.body",
+      "bytes": 2334,
+      "local_blocks": 8,
+      "sha256": "38a252d874a4118bda87230534b7b7c36b89cefd9822e10f920bb887565b5a5d"
+    },
+    {
+      "path": "evidence/reaudit/ops-entry-retry.headers.txt",
+      "bytes": 272,
+      "local_blocks": 8,
+      "sha256": "b300fc3e900ce141634ba6977d9899411911d49e92a448bc0da158fb884981a1"
+    },
+    {
+      "path": "evidence/reaudit/ops-entry.body",
+      "bytes": 0,
+      "local_blocks": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/reaudit/ops-entry.headers.txt",
+      "bytes": 1,
+      "local_blocks": 8,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "evidence/reaudit/ops-entry.meta.json",
+      "bytes": 425,
+      "local_blocks": 8,
+      "sha256": "486f58d3e5ee51246146921d9abfde66d50890f582872e624ab9a1e36679fb74"
+    },
+    {
+      "path": "evidence/reaudit/ops-rendered.json",
+      "bytes": 2445,
+      "local_blocks": 8,
+      "sha256": "a5c1af459aa6deb9cd068da60cc7ed1946a049debc4c9f917ee88681cad27894"
+    },
+    {
+      "path": "evidence/reaudit/ops-rendered.md",
+      "bytes": 556,
+      "local_blocks": 8,
+      "sha256": "9b64c2c524285fa6a458b21ec94e5fcc0773a41f9ae2daca615ed2f6cab703f0"
+    },
+    {
+      "path": "evidence/reaudit/pay-health-retry.body.json",
+      "bytes": 295,
+      "local_blocks": 8,
+      "sha256": "7deb973f801c19c8a629ae48abd88d7309557f51b49e47d52c905e24e238b651"
+    },
+    {
+      "path": "evidence/reaudit/pay-health-retry.headers.txt",
+      "bytes": 99,
+      "local_blocks": 8,
+      "sha256": "c885122b1c65ed5ed03ea89bf80992454340033b47923132c36150bc50e07f17"
+    },
+    {
+      "path": "evidence/reaudit/pay-health.headers.txt",
+      "bytes": 1,
+      "local_blocks": 8,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "evidence/reaudit/pay-health.meta.json",
+      "bytes": 441,
+      "local_blocks": 8,
+      "sha256": "bd97e3bae921db97ff6572f9d2a9fc38fe95c96b6314ae674b287ed98338e73f"
+    },
+    {
+      "path": "evidence/reaudit/payment-lock-classification.json",
+      "bytes": 2832,
+      "local_blocks": 8,
+      "sha256": "a294148591e177ed358a1178e8492c60642f60141ad9d3e6bd9e318cb865f4e0"
+    },
+    {
+      "path": "evidence/reaudit/payment-lock-classify.py",
+      "bytes": 11995,
+      "local_blocks": 24,
+      "sha256": "5770559c614ba0eaad53667d62d33a2997a6f2471848452d0d32ea4665b68316"
+    },
+    {
+      "path": "evidence/reaudit/payment-lock-source/connect-route-get-probes.json",
+      "bytes": 3084,
+      "local_blocks": 8,
+      "sha256": "8c8f17eb55dd2b554ddb3298d025c454f50fd69ef4ad3c9b4ac058e124254444"
+    },
+    {
+      "path": "evidence/reaudit/payment-lock-source/core-mode-anonymous-probes.json",
+      "bytes": 788,
+      "local_blocks": 8,
+      "sha256": "babf59a91802be7614966778c259bd830b4843b7ab0080bd245faf91d58ee0eb"
+    },
+    {
+      "path": "evidence/reaudit/payment-lock-source/deployed-source.json",
+      "bytes": 745553,
+      "local_blocks": 1464,
+      "sha256": "a581d3c1342e440c30afe45bbcec7d8e640caa456c105e5029f6318ccee24f90"
+    },
+    {
+      "path": "evidence/reaudit/payment-lock-source/fingerprints.json",
+      "bytes": 2500,
+      "local_blocks": 8,
+      "sha256": "ca2c899d6226cfaa3e6cfbf06ea3707f26163dbae4b9eabbed8f5d505a362077"
+    },
+    {
+      "path": "evidence/reaudit/payment-lock-source/gateway-supplement.json",
+      "bytes": 81948,
+      "local_blocks": 168,
+      "sha256": "2c7055e2b3de84c4385edbf590526f469ed3b19d12996011ad7cbea68d55e297"
+    },
+    {
+      "path": "evidence/reaudit/payment-lock-source/nginx-routing.json",
+      "bytes": 50023,
+      "local_blocks": 104,
+      "sha256": "3be86d34dfd7fc767a3a8a06615bf28b7006a884b5dc3f22d761e5b3c31dd120"
+    },
+    {
+      "path": "evidence/reaudit/payment-lock-source/nonsecret-config-mode-classifications.json",
+      "bytes": 4817,
+      "local_blocks": 16,
+      "sha256": "fb69df2adf783d1fbe9ca0d76dff3d50cbc29b340cc1781191a04de98e758d55"
+    },
+    {
+      "path": "evidence/reaudit/payment-lock-source/payment-routes.json",
+      "bytes": 18786,
+      "local_blocks": 40,
+      "sha256": "fbd621ae2decbc821ddd855456eab5a68f8dc10b80109210726695ed7a8a056b"
+    },
+    {
+      "path": "evidence/reaudit/payment-lock-source/port9081-unit-map.json",
+      "bytes": 248,
+      "local_blocks": 8,
+      "sha256": "c391dc55adb5261319ad54b74a1ddf71584a9ffe9c12ef77451d8909dbdb3889"
+    },
+    {
+      "path": "evidence/reaudit/payment-lock-source/preview-source.json",
+      "bytes": 591288,
+      "local_blocks": 1160,
+      "sha256": "52a55fc636869facf124cbe9846664eb8a8e8dd466dddcd590ea6b1b63d3e1b9"
+    },
+    {
+      "path": "evidence/reaudit/payment-lock-source/routing-supplement.json",
+      "bytes": 9778,
+      "local_blocks": 24,
+      "sha256": "cc9c78342cb77b86602d9085b77ebc4fe0ca19f29087dc06fd72830de5ce3bdd"
+    },
+    {
+      "path": "evidence/reaudit/payment-lock-source/startup-env-source-scan.json",
+      "bytes": 2686,
+      "local_blocks": 8,
+      "sha256": "e9ed9ef7bd7a388f1e8b98cb714a7ba58545bb281ac226c20089d9ce827395a3"
+    },
+    {
+      "path": "evidence/reaudit/pricing-rendered.json",
+      "bytes": 6359,
+      "local_blocks": 16,
+      "sha256": "8acbfdfc9d1d7b0da4f53383e3238d9f02523412ee1770f3c023d0148adba000"
+    },
+    {
+      "path": "evidence/reaudit/pricing-rendered.md",
+      "bytes": 4504,
+      "local_blocks": 16,
+      "sha256": "a2c5d8132c103cf02f20ed27118d2b920e5c474c03374c9c9852713e2c886796"
+    },
+    {
+      "path": "evidence/reaudit/public-gateway-core-route-inventory.json",
+      "bytes": 8024,
+      "local_blocks": 16,
+      "sha256": "f9872f8d16d5ef52acbb7caddecb96c513c146a991921fbe77b43f1cc7747af7"
+    },
+    {
+      "path": "evidence/reaudit/public-pricing-page.body",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "evidence/reaudit/public-pricing-page.headers.txt",
+      "bytes": 227,
+      "local_blocks": 8,
+      "sha256": "e653a3ce005970024922e04eab55ad3f14edd6e675f5ef162275f94b20a059f6"
+    },
+    {
+      "path": "evidence/reaudit/public-pricing-page.meta.json",
+      "bytes": 388,
+      "local_blocks": 8,
+      "sha256": "3a1f9d96d3ec9bb4e3f9959282522eeff362dd7b2ffe25589f7396acf63c5165"
+    },
+    {
+      "path": "evidence/reaudit/public-search-api-retry.body",
+      "bytes": 21,
+      "local_blocks": 8,
+      "sha256": "e41656eb2ba6c6293bf6dd928e5a88cdbc50535cab661c1969e0f598e497ed62"
+    },
+    {
+      "path": "evidence/reaudit/public-search-api-retry.headers.txt",
+      "bytes": 187,
+      "local_blocks": 8,
+      "sha256": "54e4ad7eecde649d5d10a09190e486ba3bcf86ab4ad3eecc936c6b72f08aeb50"
+    },
+    {
+      "path": "evidence/reaudit/public-search-api.body",
+      "bytes": 0,
+      "local_blocks": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/reaudit/public-search-api.headers.txt",
+      "bytes": 1,
+      "local_blocks": 8,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "evidence/reaudit/public-search-api.meta.json",
+      "bytes": 461,
+      "local_blocks": 8,
+      "sha256": "7f253bf9257dfc43386683ce23c33988d00876dee5bcf4398a390c40b748e590"
+    },
+    {
+      "path": "evidence/reaudit/public-search-page.body",
+      "bytes": 2284,
+      "local_blocks": 8,
+      "sha256": "415bfcdbd60ef8124e8a2fb480669324fb89b90752d4f0f458be5f8fb0eea15e"
+    },
+    {
+      "path": "evidence/reaudit/public-search-page.headers.txt",
+      "bytes": 227,
+      "local_blocks": 8,
+      "sha256": "e653a3ce005970024922e04eab55ad3f14edd6e675f5ef162275f94b20a059f6"
+    },
+    {
+      "path": "evidence/reaudit/public-search-page.meta.json",
+      "bytes": 386,
+      "local_blocks": 8,
+      "sha256": "8acac95abb00d53f115b653215ef5cbd5d275814dda232898297e2574d13b1a6"
+    },
+    {
+      "path": "evidence/reaudit/public-status-api-retry.body",
+      "bytes": 21,
+      "local_blocks": 8,
+      "sha256": "e41656eb2ba6c6293bf6dd928e5a88cdbc50535cab661c1969e0f598e497ed62"
+    },
+    {
+      "path": "evidence/reaudit/public-status-api-retry.headers.txt",
+      "bytes": 187,
+      "local_blocks": 8,
+      "sha256": "54e4ad7eecde649d5d10a09190e486ba3bcf86ab4ad3eecc936c6b72f08aeb50"
+    },
+    {
+      "path": "evidence/reaudit/public-status-api.body",
+      "bytes": 0,
+      "local_blocks": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/reaudit/public-status-api.headers.txt",
+      "bytes": 1,
+      "local_blocks": 8,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "evidence/reaudit/public-status-api.meta.json",
+      "bytes": 460,
+      "local_blocks": 8,
+      "sha256": "68751b57b711f7ddeea1a29fe8aa4859668de8bb64f0f051f17ffd4d3a9501b6"
+    },
+    {
+      "path": "evidence/reaudit/r01-activation-access-check.json",
+      "bytes": 915,
+      "local_blocks": 8,
+      "sha256": "5fbe8b98f4ed9d4edd372fb48b7651d1996ec39562373cd973ecfd31900f135c"
+    },
+    {
+      "path": "evidence/reaudit/r01-existing-policy-source.json",
+      "bytes": 14739,
+      "local_blocks": 32,
+      "sha256": "ab8c35a9698cd0a07ab97dd2acb6cefcd5b823bd9cab062e7bc7c22cc61a859a"
+    },
+    {
+      "path": "evidence/reaudit/r01-mount-and-release-check.json",
+      "bytes": 956,
+      "local_blocks": 8,
+      "sha256": "519d99af0bc84a0effb4f9e8ee361b78c43945ab8387dec801b35ea85de0ca16"
+    },
+    {
+      "path": "evidence/reaudit/r01-pass-route-guard-source.json",
+      "bytes": 2361,
+      "local_blocks": 8,
+      "sha256": "91f68578a1ab6772d8a8e7a21392c934853e61847bcbde3e31520534c31fa732"
+    },
+    {
+      "path": "evidence/reaudit/r01-proposed-protected-routes.json",
+      "bytes": 9515,
+      "local_blocks": 24,
+      "sha256": "fa772759b9f018c4b807c1134bb97ae22ce8e3f483ec4e9f6f6d6ec398273818"
+    },
+    {
+      "path": "evidence/reaudit/r01-runtime-openapi-metadata.json",
+      "bytes": 175923,
+      "local_blocks": 344,
+      "sha256": "96a7c9a05aa86f23d8c7362f81c1bdaaeef46a953ef41d6adb37bf5d2aaff7a5"
+    },
+    {
+      "path": "evidence/reaudit/r01-runtime-package-versions.json",
+      "bytes": 259,
+      "local_blocks": 8,
+      "sha256": "90312f67a2864a980cad234ee207787efe420be75bae2d246a3674510e5419f7"
+    },
+    {
+      "path": "evidence/reaudit/r01-service-access-metadata.json",
+      "bytes": 6626,
+      "local_blocks": 16,
+      "sha256": "6e17817eafe19f40940173e4e107ec00e6b7fa64b87072c458003b5ef774b6ce"
+    },
+    {
+      "path": "evidence/reaudit/r01-source-baseline.json",
+      "bytes": 8022,
+      "local_blocks": 16,
+      "sha256": "35381a0e63213a6075e55359838dc596a21b70cdc710a0a43408eadbc4967350"
+    },
+    {
+      "path": "evidence/reaudit/rendered-summary.json",
+      "bytes": 3218,
+      "local_blocks": 8,
+      "sha256": "8715bf9f76094ed7ae64cfd8fc202f6d83d278590a8e9388d23259b002ee4802"
+    },
+    {
+      "path": "evidence/reaudit/sample-detail-rendered.json",
+      "bytes": 5531,
+      "local_blocks": 16,
+      "sha256": "247c0dfd204b58fa4ef2b243bea452dc7a5419b1f14307693758a0f1138b511e"
+    },
+    {
+      "path": "evidence/reaudit/sample-detail-rendered.md",
+      "bytes": 3525,
+      "local_blocks": 8,
+      "sha256": "a066c33cf62234ce6855ba246274a4412b2b8b5141dc6cb8e5eca2490be3820e"
+    },
+    {
+      "path": "evidence/reaudit/search-rendered.json",
+      "bytes": 7579,
+      "local_blocks": 16,
+      "sha256": "828cc58115e882bd1f5c72ca4b9acb0ccfaab653f309b08351ec4a316a6c56a3"
+    },
+    {
+      "path": "evidence/reaudit/search-rendered.md",
+      "bytes": 5678,
+      "local_blocks": 16,
+      "sha256": "9ec4334d0bbf1b89141d96a3a565ce4d9cfdfc38741756afc062109fdf34ec60"
+    },
+    {
+      "path": "evidence/reaudit/sierra-page.body",
+      "bytes": 638,
+      "local_blocks": 8,
+      "sha256": "f30c71379be2c6e799c634bfdfce8e737b401887b40e351ba23d3be0150fefe8"
+    },
+    {
+      "path": "evidence/reaudit/sierra-page.headers.txt",
+      "bytes": 266,
+      "local_blocks": 8,
+      "sha256": "90cacdb998dfd7c231645e4224d35e2d5a7fe6990ac1ef12f117650cbdde3068"
+    },
+    {
+      "path": "evidence/reaudit/sierra-page.meta.json",
+      "bytes": 457,
+      "local_blocks": 8,
+      "sha256": "228dea3795cee9edb2a69ccd6a7ef6683f34b0bb8db1fdc659cc3a89107a147c"
+    },
+    {
+      "path": "evidence/reaudit/sierra-publication-retry.body",
+      "bytes": 1685,
+      "local_blocks": 8,
+      "sha256": "4e3cf86554d79598bc18890780ab8675229867619b9b5051ed1a491d2e2c0387"
+    },
+    {
+      "path": "evidence/reaudit/sierra-publication-retry.headers.txt",
+      "bytes": 194,
+      "local_blocks": 8,
+      "sha256": "026f12e8c1934d02e535c679e4c7cbe4bb5192da0613cabe3063ea6b44b3e75c"
+    },
+    {
+      "path": "evidence/reaudit/sierra-publication.body",
+      "bytes": 0,
+      "local_blocks": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/reaudit/sierra-publication.headers.txt",
+      "bytes": 1,
+      "local_blocks": 8,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "evidence/reaudit/sierra-publication.meta.json",
+      "bytes": 603,
+      "local_blocks": 8,
+      "sha256": "1699642cf6337ed0409bd97a5f38d8b7315faeca5e957204c20dc3934406c84b"
+    },
+    {
+      "path": "evidence/reaudit/sierra-rendered.json",
+      "bytes": 4694,
+      "local_blocks": 16,
+      "sha256": "043467187c32b1e2a20735b0022a792900c6a463768bef7921b29b7842bdb04d"
+    },
+    {
+      "path": "evidence/reaudit/sierra-rendered.md",
+      "bytes": 3991,
+      "local_blocks": 8,
+      "sha256": "202dfe7267234687a155f439d80aa4e929fa1d1966f0f6894fa195355678d30a"
+    },
+    {
+      "path": "evidence/runtime-routing-and-scope-evidence.txt",
+      "bytes": 9575,
+      "local_blocks": 24,
+      "sha256": "8c61a8243b5f8a0223f7b09a01e4be17ac4a387d2444001d826f3d29832c92df"
+    },
+    {
+      "path": "evidence/server-readonly-evidence.txt",
+      "bytes": 8587,
+      "local_blocks": 24,
+      "sha256": "f8ff9b948bd6aa1061165df03785a5a7ac9b5de38d5249a66688505de252e071"
+    },
+    {
+      "path": "evidence/source-boundary-report.md",
+      "bytes": 19238,
+      "local_blocks": 40,
+      "sha256": "7ce299d4f011c8468bd7d3eb529e35fd9dccd1118dea1d53773b2dbaa2ccc1e7"
+    },
+    {
+      "path": "evidence/store-bindings-and-identity.json",
+      "bytes": 9471,
+      "local_blocks": 24,
+      "sha256": "0289c6d2bd5eb7c04faa7aa5ad65f3bed7587baa995d6a1514a1e46e7c4ed59c"
+    },
+    {
+      "path": "evidence/store-path-metadata.json",
+      "bytes": 3329,
+      "local_blocks": 8,
+      "sha256": "611056f24e43feae5498cb329ec2d511b286a65e90399242e6bcf4bd15ab4b80"
+    }
+  ]
+}

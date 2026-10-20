@@ -1,0 +1,9 @@
+{
+  "status": "bounded_independent_review_clear",
+  "runner_sha256": "bc562d1910a6db000f7b6645bb62ae9565ff75640e6d921923c52830158ce932",
+  "reviewed_at_utc": "2026-10-20T08:38:27.199200+00:00",
+  "author_checks_reviewed": 10,
+  "changes": "Origin-only strict TLS/hash verifier; unique result filename; mandatory edge browser proof labels",
+  "unchanged": "Proof gate/source/PID/locks/pointer mutation and original recovery",
+  "reviewer_production_actions": false
+}

@@ -1,0 +1,19 @@
+Browser tab: 1, Title: "LiveUIN | Housing and living, made clearer", URL: "https://app.liveuin.com/welcome?role=member&returnTo=https%3A%2F%2Fapp.liveuin.com%2Ftenant%2Fhome".
+1 AXWebArea LiveUIN | Housing and living, made clearer, URL: app.liveuin.com/welcome?role=member&returnTo=https%3A%2F%2Fapp.liveuin.com%2Ftenant%2Fhome
+	2 container root
+		3 container Notifications (F8)
+			4 content list
+		5 container Notifications alt+T
+		6 container
+			7 text GLOBAL LIVING INFRASTRUCTURE
+			8 text LIVE
+			9 image
+			10 image
+			11 text IN LIVE IN SG · UK · US · UAE · AU · JP · +more
+			18 heading Belong Anywhere., Value: 1
+			14 text One account for your home, your work, and every move in between.
+			15 container
+				16 link Description: Get Started, Value: app.liveuin.com/auth/sign-in
+				17 link Description: I already have an account, Value: app.liveuin.com/auth/sign-in
+
+The focused UI element is 1 AXWebArea LiveUIN | Housing and living, made clearer, URL: app.liveuin.com/welcome?role=member&returnTo=https%3A%2F%2Fapp.liveuin.com%2Ftenant%2Fhome

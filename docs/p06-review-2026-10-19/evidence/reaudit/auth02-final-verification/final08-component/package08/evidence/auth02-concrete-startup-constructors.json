@@ -1,0 +1,82 @@
+{
+  "read_only_source": true,
+  "product_imported": false,
+  "files": [
+    {
+      "path": "/opt/liveuin/deploy/core_inventory_marketing_workflow.py",
+      "sha256": "d9c0083f2f8b803a33f3b08afee7e442df776cdfd0f58e70a0d4f85bfaae7363",
+      "definitions": [
+        {
+          "name": "MarketingWorkflow.__init__",
+          "line": 97,
+          "sanitized_source": "def __init__(self, database, evidence_resolver, clock=time.time):\n    (self.database, self.evidence_resolver, self.clock) = (str(database), evidence_resolver, clock)"
+        }
+      ]
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_demand_rental_offer_workflow.py",
+      "sha256": "2710df828727b624f8206f90dab1e2a1314ce839eda7091d2620a006e7a98711",
+      "definitions": [
+        {
+          "name": "RentalOfferWorkflow.__init__",
+          "line": 21,
+          "sanitized_source": "def __init__(self, demand_database, marketing, clock=time.time):\n    (self.database, self.marketing, self.clock) = (str(demand_database), marketing, clock)"
+        }
+      ]
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_inventory_store.py",
+      "sha256": "7426dc1aa1b0a24c6eea95638f355070f6676088ff3fe5ed4c6261c98addadb6",
+      "definitions": [
+        {
+          "name": "data_dir",
+          "line": 12,
+          "sanitized_source": "def data_dir() -> Path:\n    configured = os.getenv('<string>', '<string>').strip()\n    if configured:\n        return Path(configured).expanduser().resolve()\n    return Path(__file__).resolve().parents[1] / '<string>' / '<string>'"
+        },
+        {
+          "name": "sqlite_path",
+          "line": 20,
+          "sanitized_source": "def sqlite_path() -> Path:\n    configured = os.getenv('<string>', '<string>').strip()\n    if configured:\n        return Path(configured).expanduser().resolve()\n    return data_dir() / '<string>'"
+        }
+      ]
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_demand_store.py",
+      "sha256": "6712721c219aaff276da3b81cbc04126a4e55f252d9e89f6e051985118f5c3be",
+      "definitions": [
+        {
+          "name": "data_dir",
+          "line": 17,
+          "sanitized_source": "def data_dir() -> Path:\n    configured = os.getenv('<string>', '<string>').strip()\n    if configured:\n        return Path(configured).expanduser().resolve()\n    return Path(__file__).resolve().parents[1] / '<string>' / '<string>'"
+        },
+        {
+          "name": "sqlite_path",
+          "line": 25,
+          "sanitized_source": "def sqlite_path() -> Path:\n    configured = os.getenv('<string>', '<string>').strip()\n    if configured:\n        return Path(configured).expanduser().resolve()\n    return data_dir() / '<string>'"
+        }
+      ]
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_media_capture_store.py",
+      "sha256": "7c983a4da081ac86a0dc92c3700ee8ba0a1120ccbc04fd5a58bab840986389de",
+      "definitions": [
+        {
+          "name": "data_dir",
+          "line": 16,
+          "sanitized_source": "def data_dir() -> Path:\n    configured = os.getenv('<string>', '<string>').strip()\n    if configured:\n        return Path(configured).expanduser().resolve()\n    media_dir = os.getenv('<string>', '<string>').strip()\n    if media_dir:\n        return Path(media_dir).expanduser().resolve()\n    return Path(__file__).resolve().parents[1] / '<string>' / '<string>'"
+        }
+      ]
+    },
+    {
+      "path": "/opt/liveuin/deploy/core_marketing_publication_runtime.py",
+      "sha256": "0383e287e3e925b1ce8d2366ed348ef29b2ccc8cab6224b1834e9d49803e6026",
+      "definitions": [
+        {
+          "name": "SourceEvidence.__init__",
+          "line": 56,
+          "sanitized_source": "def __init__(self, instruction_loader, capture_reader, capture_fingerprint, media_root):\n    (self.loader, self.reader, self.capture_hash) = (instruction_loader, capture_reader, capture_fingerprint)\n    self.media_root = Path(media_root).resolve()"
+        }
+      ]
+    }
+  ]
+}

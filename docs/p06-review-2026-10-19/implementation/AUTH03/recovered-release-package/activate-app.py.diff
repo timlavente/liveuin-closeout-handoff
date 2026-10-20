@@ -1,0 +1,73 @@
+--- passed-AUTH02/activate-app-return-11.py
++++ AUTH03/activate-app.py
+@@ -16,11 +16,11 @@
+ import urllib.error
+ import urllib.request
+ 
+-ROOT = Path("/root/liveuin-auth02-frontend-20261020-11")
+-RELEASE_SHA = "4bd7d691e3236176a47878f36bc77fb40f77357871afaa1276851008a1ba6a30"
+-OUTPUT = Path("/tmp/liveuin-r01-access-check-20261020/frontend-app-return-11.json")
++ROOT = Path("/root/liveuin-auth03-frontend-20261020-01")
++RELEASE_SHA = "599c047e4bc8650bae0556da7c98bfa354123a90d9f5143923f5a3ec93caaa19"
++OUTPUT = Path("/tmp/liveuin-r01-access-check-20261020/frontend-auth03-app-activation-01.json")
+ PROVIDER = Path("/opt/liveuin/deploy/core_customer_card_provider.py")
+-OLD_ENTRY_SHA = "431419843f2f8696ef55426613a6e2aa8848e0fe6d613244ca9c36ec547716a8"
++OLD_ENTRY_SHA = "d64151e0728796b61d396cb8c38d00f7bd8dc9c563975b42aa5caad86b02e268"
+ READINESS_SECONDS = 8.0
+ PROVIDER_SHA = "a2034f5d0990719d39cbf378c92a87e7b72011b31a99483ccb75cecab06ba2dc"
+ 
+@@ -31,16 +31,20 @@
+ 
+ 
+ def current_backend_pins():
+-    for unit, pid in [
+-        ("liveuin-identity-public-prod.service", "3675726"),
+-        ("ops-backend@liveuin.service", "3724514"),
+-    ]:
+-        actual = subprocess.check_output(
+-            ["systemctl", "show", unit, "--property=MainPID", "--value"], text=True
+-        ).strip()
+-        require(actual == pid, "backend_pid_changed")
+-    require(hashlib.sha256(PROVIDER.read_bytes()).hexdigest() == PROVIDER_SHA,
+-            "provider_source_changed")
++    gate = BACKEND_PROOF
++    for unit, expected in gate["continuity_services"].items():
++        raw = subprocess.check_output([
++            "systemctl", "show", unit, "--property=MainPID", "--property=ActiveState",
++            "--property=NeedDaemonReload", "--property=ExecMainStartTimestampMonotonic"
++        ], text=True, timeout=5)
++        actual = dict(line.split("=", 1) for line in raw.splitlines() if "=" in line)
++        require(int(actual["MainPID"]) == expected["pid"]
++             and actual["ExecMainStartTimestampMonotonic"] == expected["start_monotonic"]
++             and actual["ActiveState"] == "active" and actual["NeedDaemonReload"] == "no",
++             "backend_continuity_changed")
++    for path, expected in gate["continuity_sources"].items():
++        require(hashlib.sha256(Path(path).read_bytes()).hexdigest() == expected,
++             "reviewed_source_changed")
+ 
+ 
+ def safe_chain(exc, stop_class):
+@@ -176,7 +180,6 @@
+     require(os.geteuid() == 0, "root_required")
+     require(hashlib.sha256((ROOT / "release.py").read_bytes()).hexdigest() == RELEASE_SHA,
+             "release_helper_changed")
+-    current_backend_pins()
+     with os.fdopen(os.open(args.gate, os.O_RDONLY | os.O_NOFOLLOW), "rb") as handle:
+         info = os.fstat(handle.fileno())
+         require(stat.S_ISREG(info.st_mode) and info.st_uid == 0
+@@ -184,11 +187,15 @@
+         raw = handle.read(100_001)
+     require(len(raw) <= 100_000 and hashlib.sha256(raw).hexdigest() == args.gate_sha256,
+             "backend_gate_changed")
++    global BACKEND_PROOF
+     proof = json.loads(raw)
++    BACKEND_PROOF = proof
++    current_backend_pins()
+     require(proof["phase"] == "backend_ready_for_app", "wrong_gate_phase")
+     require(all(proof[k] is True for k in [
+         "backend_candidate_verified", "pilot_admission_closed", "logout_revocation_proven",
+         "approved_named_account_ready", "public_live_charging_off",
++        "auth02_frozen", "google_browser_unavailable_approved",
+     ]), "backend_proof_incomplete")
+     spec = importlib.util.spec_from_file_location("reviewed_frontend_release", ROOT / "release.py")
+     m = importlib.util.module_from_spec(spec)

@@ -1,0 +1,13 @@
+{
+  "component": "AUTH02-member-9098",
+  "public_launch": false,
+  "provider_flags_changed": false,
+  "accounts_or_grants_created": false,
+  "customer_database_restore": false,
+  "previous_pid": 2662668,
+  "status": "activation_stopped",
+  "recovery_required": true,
+  "failure_code": "protected_file_type_invalid",
+  "recovery_failure": "protected_file_type_invalid",
+  "member_service_stopped": true
+}

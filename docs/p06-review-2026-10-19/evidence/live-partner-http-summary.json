@@ -1,0 +1,18 @@
+[
+  {
+    "url": "http://partner.liveuin.com",
+    "status": 200,
+    "effective_url": "https://partner.liveuin.com/partner/dashboard",
+    "redirects": 1,
+    "tls_verify": 0,
+    "error": ""
+  },
+  {
+    "url": "https://partner.liveuin.com",
+    "status": 200,
+    "effective_url": "https://partner.liveuin.com/partner/dashboard",
+    "redirects": 1,
+    "tls_verify": 0,
+    "error": ""
+  }
+]

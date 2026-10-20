@@ -1,0 +1,30 @@
+{
+  "version": "closed-recovery01-staging01",
+  "created_at_utc": "2026-10-19T20:19:13.434228+00:00",
+  "status": "closed fallback active; new sign-in held; AUTH02 incomplete",
+  "prior_incident_manifest_sha256": "5d1d72128d51e033ac5e8e052c3900bfb3a030a90dfd91f3a02eb828b1116d63",
+  "selected_file_count": 3,
+  "files": [
+    {
+      "path": "closed-recovery-result-01.json",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/backend/evidence/closed-recovery-result-01.json",
+      "bytes": 1162,
+      "sha256": "7b0754461a52bff4ee9fd35e4993cf4bc5b95da423047860f2ceea60c1a8bccf",
+      "local_blocks": 8
+    },
+    {
+      "path": "recover-wrapper-wait-01.py",
+      "source": "/private/tmp/liveuin-p06-auth02-20261020/recovery/recover-wrapper-wait-01.py",
+      "bytes": 1532,
+      "sha256": "8907ce81c8499f4d0e47652837afe14b245736a4a8ebf3f4fbcfe511b776c8ac",
+      "local_blocks": 8
+    },
+    {
+      "path": "RECOVERY-STAGING-NOTE.md",
+      "source": "authored recovery staging note",
+      "bytes": 1814,
+      "sha256": "308952a45fa837c2e3d3df921a50b56a3b054f151a637fe5cc059771a2b42c28",
+      "local_blocks": 8
+    }
+  ]
+}

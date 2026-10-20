@@ -1,0 +1,10 @@
+{
+  "observed_metadata_utc": "2026-10-19T19:36:10.344266+00:00",
+  "current_pid_in_root_metadata": 3403267,
+  "api_sha256": "cb04159dd5d6e5ddc13e19f1a2e9c7f41d0eff15591d1b61bb68d67d3a4efb91",
+  "root_metadata_sha256": "ff94a0279daa7724cb86b8aca4d93d194ffa3aa76597b86c162810d6cf7ad2a7",
+  "helper05_sha256": "750e7970937626002714756f1da7e67e13788f6e02b0f6d64ebcea736aaf511c",
+  "old_helper_unchanged_sha256": "5770559c614ba0eaad53667d62d33a2997a6f2471848452d0d32ea4665b68316",
+  "change_scope": "Dedicated customer-setup webhook purpose and strict matched registry context/source checks. No change to sandbox exact enable condition, test key validation, provider dispatch or money-charge capability.",
+  "runtime_limit": "Fresh05 helper has not been executed by this reviewer. Root must match result Ops PID to activation evidence and inspect all source/process classifications."
+}

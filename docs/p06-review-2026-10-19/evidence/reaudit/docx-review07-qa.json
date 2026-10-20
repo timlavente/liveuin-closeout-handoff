@@ -1,0 +1,37 @@
+{
+  "artifact": "/Users/Vivian/Documents/Liveuin/docs/p06-review-2026-10-19/LiveUIN P06 Revised Plan 19 Oct 2026.docx",
+  "sha256": "6d548f02f845334b0901f21f10e3b32135bec442f5bd12fbe85373f1773f7443",
+  "bytes": 54137,
+  "render_directory": "/private/tmp/liveuin-p06-audit-20261019/docx-work/render-review07-final",
+  "page_count": 11,
+  "visual_qa": "All 11 final Review07 page PNGs visually inspected at original resolution. No clipping, split table rows, overlap, missing glyphs, blank pages or footer crowding. Pages 3, 8 and 11 retain clear footer separation. Final DOCX and rendered output match.",
+  "checks": {
+    "eleven_rendered_pages": true,
+    "ordered_queue_R01_to_R24": true,
+    "all_five_accounts": true,
+    "review_07_label": true,
+    "frozen_authority_linked": true,
+    "frozen_file_unchanged": true,
+    "strict_frozen_order": true,
+    "no_missing_local_links": true,
+    "accepted_payment_amendment_linked": true,
+    "commercial_page_unchanged": true,
+    "R01_exact_21_operations": true,
+    "staged_only_no_pass_claim": true,
+    "legal_authority_before_real_action": true,
+    "exact_signature_evidence": true,
+    "invoice_refund_records": true,
+    "no_old_payment_blocker": true,
+    "no_live_money_pass_claim": true,
+    "ecosystem_boundary_retained": true
+  },
+  "hyperlink_count": 25,
+  "missing_local_links": [],
+  "reviewed_at": "2026-10-19T23:39:56.307249+08:00",
+  "renderer": "Bundled render_docx.py and bundled soffice override only; no desktop LibreOffice.",
+  "limitations": [
+    "Plan frozen; only R01 staged work started. No product row has passed and no production repair is claimed.",
+    "Sandbox and non-charging Stripe readiness proofs remain to execute. No actual live capture, authenticated live payment event or real refund is claimed.",
+    "Commercial ACCEPT and publish control remain separate; original attachment and frozen MD/manifest untouched."
+  ]
+}

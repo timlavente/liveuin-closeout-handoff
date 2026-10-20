@@ -1,0 +1,4249 @@
+{
+  "observed_at_utc": "2026-10-19T15:33:16.000116+00:00",
+  "purpose": "Read only runtime OpenAPI path/method metadata. No business endpoints requested, no customer records, no credentials.",
+  "services": [
+    {
+      "port": 9080,
+      "url": "http://127.0.0.1:9080/openapi.json",
+      "http_status": 200,
+      "title": "LiveUin Public Home API",
+      "version": "liveuin-public-home-v4",
+      "operations": [
+        {
+          "path": "/api/public/site-theme",
+          "method": "GET",
+          "operation_id": "public_site_theme_api_public_site_theme_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/page",
+          "method": "GET",
+          "operation_id": "public_page_api_public_page_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/blog",
+          "method": "GET",
+          "operation_id": "public_blog_api_public_blog_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/blog/{slug}",
+          "method": "GET",
+          "operation_id": "public_blog_post_api_public_blog__slug__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/blog/posts",
+          "method": "GET",
+          "operation_id": "core_public_cms_blog_posts_api_core_public_cms_blog_posts_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/blog/posts/{slug}",
+          "method": "GET",
+          "operation_id": "core_public_cms_blog_post_api_core_public_cms_blog_posts__slug__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/pages",
+          "method": "GET",
+          "operation_id": "core_public_cms_pages_api_core_public_cms_pages_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/blog/posts/draft",
+          "method": "POST",
+          "operation_id": "core_public_cms_blog_post_draft_api_core_public_cms_blog_posts_draft_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/blog/posts/publish",
+          "method": "POST",
+          "operation_id": "core_public_cms_blog_post_publish_api_core_public_cms_blog_posts_publish_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/blog/posts/restore",
+          "method": "POST",
+          "operation_id": "core_public_cms_blog_post_restore_api_core_public_cms_blog_posts_restore_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/pages/draft",
+          "method": "POST",
+          "operation_id": "core_public_cms_page_draft_api_core_public_cms_pages_draft_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/pages/publish",
+          "method": "POST",
+          "operation_id": "core_public_cms_page_publish_api_core_public_cms_pages_publish_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/pages/restore",
+          "method": "POST",
+          "operation_id": "core_public_cms_page_restore_api_core_public_cms_pages_restore_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/home/bootstrap",
+          "method": "GET",
+          "operation_id": "public_home_bootstrap_api_public_home_bootstrap_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/listings",
+          "method": "GET",
+          "operation_id": "public_listings_api_public_listings_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/deals",
+          "method": "GET",
+          "operation_id": "public_deals_api_public_deals_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/deals/report",
+          "method": "GET",
+          "operation_id": "public_deal_report_api_public_deals_report_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/areas",
+          "method": "GET",
+          "operation_id": "public_areas_api_public_areas_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/tools",
+          "method": "GET",
+          "operation_id": "public_tools_api_public_tools_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/growth/status",
+          "method": "GET",
+          "operation_id": "public_growth_status_api_public_growth_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/status",
+          "method": "GET",
+          "operation_id": "public_status_summary_api_public_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/status/components",
+          "method": "GET",
+          "operation_id": "public_status_components_api_public_status_components_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/status/incidents",
+          "method": "GET",
+          "operation_id": "public_status_incidents_api_public_status_incidents_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/status/maintenance",
+          "method": "GET",
+          "operation_id": "public_status_maintenance_api_public_status_maintenance_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/status/postmortems",
+          "method": "GET",
+          "operation_id": "public_status_postmortems_api_public_status_postmortems_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/trust",
+          "method": "GET",
+          "operation_id": "public_trust_summary_api_public_trust_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/trust/safety",
+          "method": "GET",
+          "operation_id": "public_trust_safety_api_public_trust_safety_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/trust/verification",
+          "method": "GET",
+          "operation_id": "public_trust_verification_api_public_trust_verification_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/trust/refunds",
+          "method": "GET",
+          "operation_id": "public_trust_refunds_api_public_trust_refunds_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/trust/policies",
+          "method": "GET",
+          "operation_id": "public_trust_policies_api_public_trust_policies_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/help",
+          "method": "GET",
+          "operation_id": "public_help_summary_api_public_help_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/help/routing",
+          "method": "GET",
+          "operation_id": "public_help_routing_api_public_help_routing_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/help/billing",
+          "method": "GET",
+          "operation_id": "public_help_billing_api_public_help_billing_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/help/emergency",
+          "method": "GET",
+          "operation_id": "public_help_emergency_api_public_help_emergency_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/cn",
+          "method": "GET",
+          "operation_id": "public_china_summary_api_public_cn_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/cn/share-cards",
+          "method": "GET",
+          "operation_id": "public_china_share_cards_api_public_cn_share_cards_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/cn/agents",
+          "method": "GET",
+          "operation_id": "public_china_agents_api_public_cn_agents_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/cn/auth",
+          "method": "GET",
+          "operation_id": "public_china_auth_api_public_cn_auth_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/admin/control-center",
+          "method": "GET",
+          "operation_id": "admin_control_summary_api_core_admin_control_center_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/admin/control-center/users",
+          "method": "GET",
+          "operation_id": "admin_control_users_api_core_admin_control_center_users_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/admin/control-center/roles",
+          "method": "GET",
+          "operation_id": "admin_control_roles_api_core_admin_control_center_roles_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/admin/control-center/audit",
+          "method": "GET",
+          "operation_id": "admin_control_audit_api_core_admin_control_center_audit_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/admin/control-center/retention",
+          "method": "GET",
+          "operation_id": "admin_control_retention_api_core_admin_control_center_retention_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/admin/control-center/settings",
+          "method": "GET",
+          "operation_id": "admin_control_settings_api_core_admin_control_center_settings_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/admin/control-center/developers",
+          "method": "GET",
+          "operation_id": "admin_control_developers_api_core_admin_control_center_developers_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/developers/portal",
+          "method": "GET",
+          "operation_id": "developer_portal_summary_api_core_developers_portal_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/developers/portal/docs",
+          "method": "GET",
+          "operation_id": "developer_portal_docs_api_core_developers_portal_docs_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/developers/portal/webhooks",
+          "method": "GET",
+          "operation_id": "developer_portal_webhooks_api_core_developers_portal_webhooks_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/developers/portal/sandbox",
+          "method": "GET",
+          "operation_id": "developer_portal_sandbox_api_core_developers_portal_sandbox_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/developers/portal/limits",
+          "method": "GET",
+          "operation_id": "developer_portal_limits_api_core_developers_portal_limits_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/partners/{partner_slug}/stays",
+          "method": "GET",
+          "operation_id": "public_partner_stays_api_public_partners__partner_slug__stays_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/partners/{partner_slug}/match-intake",
+          "method": "POST",
+          "operation_id": "public_partner_match_intake_api_public_partners__partner_slug__match_intake_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/search",
+          "method": "POST",
+          "operation_id": "public_search_api_public_search_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/events",
+          "method": "POST",
+          "operation_id": "public_events_api_public_events_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/deals/{deal_id}/claim",
+          "method": "POST",
+          "operation_id": "public_deal_claim_api_public_deals__deal_id__claim_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/deals/{deal_id}/contact",
+          "method": "POST",
+          "operation_id": "public_deal_contact_api_public_deals__deal_id__contact_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/deals/{deal_id}/share",
+          "method": "POST",
+          "operation_id": "public_deal_share_api_public_deals__deal_id__share_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/reservations/quote",
+          "method": "POST",
+          "operation_id": "public_reservation_quote_api_public_reservations_quote_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/igema/consultations",
+          "method": "POST",
+          "operation_id": "public_igema_consultations_api_public_igema_consultations_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/landlords/watchlist",
+          "method": "POST",
+          "operation_id": "public_landlord_watchlist_api_public_landlords_watchlist_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/tools/yield-calculator",
+          "method": "POST",
+          "operation_id": "public_yield_calculator_api_public_tools_yield_calculator_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/invite/stakeholders",
+          "method": "POST",
+          "operation_id": "public_stakeholder_invite_api_public_invite_stakeholders_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/marketplace/offers",
+          "method": "GET",
+          "operation_id": "public_marketplace_offers_api_public_marketplace_offers_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/marketplace/offers/{offer_id}",
+          "method": "GET",
+          "operation_id": "public_marketplace_offer_detail_api_public_marketplace_offers__offer_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/pass/status",
+          "method": "GET",
+          "operation_id": "_status_api_pass_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/pass/{case_id}",
+          "method": "GET",
+          "operation_id": "_get_pass_api_pass__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/v1/health",
+          "method": "GET",
+          "operation_id": "health_v1_health_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/public/home/status",
+          "method": "GET",
+          "operation_id": "public_home_status_api_public_home_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/liveuintest-rollout-status",
+          "method": "GET",
+          "operation_id": "liveuintest_rollout_status_api_core_ops_liveuintest_rollout_status_get",
+          "declared_security": "not declared"
+        }
+      ],
+      "operation_count": 69,
+      "contract_operations": [],
+      "r01_family_operations": [
+        {
+          "path": "/api/core/public-cms/blog/posts",
+          "method": "GET",
+          "operation_id": "core_public_cms_blog_posts_api_core_public_cms_blog_posts_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/blog/posts/{slug}",
+          "method": "GET",
+          "operation_id": "core_public_cms_blog_post_api_core_public_cms_blog_posts__slug__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/pages",
+          "method": "GET",
+          "operation_id": "core_public_cms_pages_api_core_public_cms_pages_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/blog/posts/draft",
+          "method": "POST",
+          "operation_id": "core_public_cms_blog_post_draft_api_core_public_cms_blog_posts_draft_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/blog/posts/publish",
+          "method": "POST",
+          "operation_id": "core_public_cms_blog_post_publish_api_core_public_cms_blog_posts_publish_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/blog/posts/restore",
+          "method": "POST",
+          "operation_id": "core_public_cms_blog_post_restore_api_core_public_cms_blog_posts_restore_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/pages/draft",
+          "method": "POST",
+          "operation_id": "core_public_cms_page_draft_api_core_public_cms_pages_draft_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/pages/publish",
+          "method": "POST",
+          "operation_id": "core_public_cms_page_publish_api_core_public_cms_pages_publish_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/public-cms/pages/restore",
+          "method": "POST",
+          "operation_id": "core_public_cms_page_restore_api_core_public_cms_pages_restore_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/admin/control-center",
+          "method": "GET",
+          "operation_id": "admin_control_summary_api_core_admin_control_center_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/admin/control-center/users",
+          "method": "GET",
+          "operation_id": "admin_control_users_api_core_admin_control_center_users_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/admin/control-center/roles",
+          "method": "GET",
+          "operation_id": "admin_control_roles_api_core_admin_control_center_roles_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/admin/control-center/audit",
+          "method": "GET",
+          "operation_id": "admin_control_audit_api_core_admin_control_center_audit_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/admin/control-center/retention",
+          "method": "GET",
+          "operation_id": "admin_control_retention_api_core_admin_control_center_retention_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/admin/control-center/settings",
+          "method": "GET",
+          "operation_id": "admin_control_settings_api_core_admin_control_center_settings_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/admin/control-center/developers",
+          "method": "GET",
+          "operation_id": "admin_control_developers_api_core_admin_control_center_developers_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/developers/portal",
+          "method": "GET",
+          "operation_id": "developer_portal_summary_api_core_developers_portal_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/developers/portal/docs",
+          "method": "GET",
+          "operation_id": "developer_portal_docs_api_core_developers_portal_docs_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/developers/portal/webhooks",
+          "method": "GET",
+          "operation_id": "developer_portal_webhooks_api_core_developers_portal_webhooks_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/developers/portal/sandbox",
+          "method": "GET",
+          "operation_id": "developer_portal_sandbox_api_core_developers_portal_sandbox_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/developers/portal/limits",
+          "method": "GET",
+          "operation_id": "developer_portal_limits_api_core_developers_portal_limits_get",
+          "declared_security": "not declared"
+        }
+      ]
+    },
+    {
+      "port": 9095,
+      "url": "http://127.0.0.1:9095/openapi.json",
+      "http_status": 200,
+      "title": "LiveUin Ops Backend (staging)",
+      "version": "0.1.0",
+      "operations": [
+        {
+          "path": "/api/ops/auth/request-code",
+          "method": "POST",
+          "operation_id": "request_code_api_ops_auth_request_code_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/logout",
+          "method": "GET",
+          "operation_id": "auth_logout_get_api_ops_auth_logout_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/logout",
+          "method": "POST",
+          "operation_id": "auth_logout_api_ops_auth_logout_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/providers",
+          "method": "GET",
+          "operation_id": "list_auth_providers_api_ops_auth_providers_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/providers/toggle",
+          "method": "POST",
+          "operation_id": "toggle_auth_provider_api_ops_auth_providers_toggle_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/whoami",
+          "method": "GET",
+          "operation_id": "auth_whoami_api_ops_auth_whoami_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/whoami",
+          "method": "HEAD",
+          "operation_id": "whoami_api_ops_auth_whoami_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/tenants",
+          "method": "GET",
+          "operation_id": "list_tenants_api_ops_auth_tenants_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/tenants",
+          "method": "POST",
+          "operation_id": "create_tenant_api_ops_auth_tenants_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/tenancies",
+          "method": "GET",
+          "operation_id": "list_tenancies_api_ops_auth_tenancies_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/tenancies",
+          "method": "POST",
+          "operation_id": "create_tenancy_api_ops_auth_tenancies_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/nav-config",
+          "method": "GET",
+          "operation_id": "get_nav_config_api_ops_auth_nav_config_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/nav-config",
+          "method": "POST",
+          "operation_id": "update_nav_config_api_ops_auth_nav_config_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/brand-config",
+          "method": "GET",
+          "operation_id": "brand_config_api_ops_auth_brand_config_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/brand-config",
+          "method": "POST",
+          "operation_id": "update_brand_config_api_ops_auth_brand_config_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/theme-config",
+          "method": "POST",
+          "operation_id": "update_theme_config_api_ops_auth_theme_config_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/tenants/export.csv",
+          "method": "GET",
+          "operation_id": "export_tenants_csv_api_ops_auth_tenants_export_csv_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/tenancies/export.csv",
+          "method": "GET",
+          "operation_id": "export_tenancies_csv_api_ops_auth_tenancies_export_csv_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/email_otp/start",
+          "method": "POST",
+          "operation_id": "start_email_otp_api_ops_email_otp_start_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/email_otp/login",
+          "method": "POST",
+          "operation_id": "email_otp_login_api_ops_email_otp_login_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/ui/nav",
+          "method": "GET",
+          "operation_id": "ui_nav_api_ops_ui_nav_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/feature/anti_runaway_financial_system/status",
+          "method": "GET",
+          "operation_id": "get_anti_runaway_financial_system_status_feature_anti_runaway_financial_system_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/feature/payment_escrow_flow/status",
+          "method": "GET",
+          "operation_id": "get_payment_escrow_flow_status_feature_payment_escrow_flow_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/feature/tenant_reputation_graph/status",
+          "method": "GET",
+          "operation_id": "get_tenant_reputation_graph_status_feature_tenant_reputation_graph_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/feature/anti_runaway_financial_system/healthz",
+          "method": "GET",
+          "operation_id": "_healthz_feature_anti_runaway_financial_system_healthz_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/feature/payment_escrow_flow/healthz",
+          "method": "GET",
+          "operation_id": "_healthz_feature_payment_escrow_flow_healthz_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/feature/tenant_reputation_graph/healthz",
+          "method": "GET",
+          "operation_id": "_healthz_feature_tenant_reputation_graph_healthz_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/tenant-reputation/graph/status",
+          "method": "GET",
+          "operation_id": "tenant_reputation_graph_status_api_tenant_reputation_graph_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/autopilot/ops/migrations/sql",
+          "method": "POST",
+          "operation_id": "api_autopilot_ops_migrations_sql_api_autopilot_ops_migrations_sql_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/scan/ui",
+          "method": "GET",
+          "operation_id": "api_scan_ui_api_scan_ui_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/scan/ui",
+          "method": "POST",
+          "operation_id": "api_scan_ui_api_scan_ui_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/autopilot/healthz",
+          "method": "GET",
+          "operation_id": "autopilot_healthz_api_autopilot_healthz_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/autopilot/apply",
+          "method": "POST",
+          "operation_id": "autopilot_apply_api_autopilot_apply_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/autopilot/stage",
+          "method": "POST",
+          "operation_id": "autopilot_stage_api_autopilot_stage_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/autopilot/promote",
+          "method": "POST",
+          "operation_id": "autopilot_promote_api_autopilot_promote_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/autopilot/actions",
+          "method": "GET",
+          "operation_id": "autopilot_list_actions_api_autopilot_actions_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/autopilot/logs",
+          "method": "GET",
+          "operation_id": "autopilot_logs_api_autopilot_logs_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/agent/ops/code-task",
+          "method": "POST",
+          "operation_id": "agent_ops_code_task_api_agent_ops_code_task_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/reputation/{tenant_ref}",
+          "method": "GET",
+          "operation_id": "get_tenant_reputation_api_ops_reputation__tenant_ref__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/reputation/{tenant_ref}",
+          "method": "POST",
+          "operation_id": "upsert_tenant_reputation_api_ops_reputation__tenant_ref__post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/reputation/summary",
+          "method": "GET",
+          "operation_id": "get_tenant_reputation_summary_api_ops_reputation_summary_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/healthz",
+          "method": "GET",
+          "operation_id": "healthz_healthz_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/healthz",
+          "method": "GET",
+          "operation_id": "ops_healthz_api_ops_healthz_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/smart-inventory/push",
+          "method": "POST",
+          "operation_id": "smart_inventory_push_api_ops_smart_inventory_push_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/smart-inventory/feed",
+          "method": "GET",
+          "operation_id": "smart_inventory_feed_api_ops_smart_inventory_feed_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/example",
+          "method": "GET",
+          "operation_id": "ops_example_api_ops_example_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/plan-v2/features-intel",
+          "method": "POST",
+          "operation_id": "plan_v2_features_intel_api_plan_v2_features_intel_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/plan-v2/router",
+          "method": "POST",
+          "operation_id": "plan_v2_router_api_plan_v2_router_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/plan-v2/endpoints",
+          "method": "POST",
+          "operation_id": "plan_v2_endpoints_api_plan_v2_endpoints_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/plan-v2/schema",
+          "method": "POST",
+          "operation_id": "plan_v2_schema_api_plan_v2_schema_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/plan-v2/full-stack",
+          "method": "POST",
+          "operation_id": "plan_v2_full_stack_api_plan_v2_full_stack_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/plan-v2/generate",
+          "method": "POST",
+          "operation_id": "plan_v2_generate_api_plan_v2_generate_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/session",
+          "method": "GET",
+          "operation_id": "session_api_ops_auth_session_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/connect/schema/sql",
+          "method": "GET",
+          "operation_id": "connect_schema_sql_api_ops_connect_schema_sql_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/connector/setup/issue",
+          "method": "POST",
+          "operation_id": "connector_setup_issue_api_ops_connector_setup_issue_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/connector/setup/exchange",
+          "method": "POST",
+          "operation_id": "liveuin_connector_setup_exchange_api_ops_connector_setup_exchange_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/onboarding/requests",
+          "method": "POST",
+          "operation_id": "connect_onboarding_request_connect_onboarding_requests_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/checkout/sessions",
+          "method": "POST",
+          "operation_id": "connect_create_checkout_session_connect_checkout_sessions_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/checkout/sessions",
+          "method": "GET",
+          "operation_id": "connect_checkout_sessions_connect_checkout_sessions_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/checkout/session/{checkout_id}",
+          "method": "GET",
+          "operation_id": "liveuin_connect_sandbox_checkout_page_checkout_session__checkout_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/checkout/session/{checkout_id}/simulate/{outcome}",
+          "method": "POST",
+          "operation_id": "liveuin_connect_sandbox_checkout_simulate_checkout_session__checkout_id__simulate__outcome__post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/billing/webhooks",
+          "method": "POST",
+          "operation_id": "liveuin_connect_billing_webhooks_connect_billing_webhooks_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/room-passports/status",
+          "method": "GET",
+          "operation_id": "connect_room_passport_status_connect_room_passports_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/room-passports/status",
+          "method": "POST",
+          "operation_id": "connect_room_passport_upsert_connect_room_passports_status_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/cases/{pass_id}",
+          "method": "GET",
+          "operation_id": "connect_family_case_connect_cases__pass_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/passes/{pass_id}",
+          "method": "GET",
+          "operation_id": "connect_family_case_connect_passes__pass_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/cases",
+          "method": "POST",
+          "operation_id": "connect_passes_upsert_connect_cases_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/passes",
+          "method": "POST",
+          "operation_id": "connect_passes_upsert_connect_passes_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/cases/{pass_id}/events",
+          "method": "POST",
+          "operation_id": "connect_pass_events_connect_cases__pass_id__events_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/passes/{pass_id}/events",
+          "method": "POST",
+          "operation_id": "connect_pass_events_connect_passes__pass_id__events_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/payment/status",
+          "method": "GET",
+          "operation_id": "liveuin_connect_payment_status_connect_payment_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/wechat/website-qr",
+          "method": "GET",
+          "operation_id": "auth_wechat_website_qr_api_ops_auth_wechat_website_qr_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/wechat/website-qr/callback",
+          "method": "GET",
+          "operation_id": "auth_wechat_website_qr_callback_api_ops_auth_wechat_website_qr_callback_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/wechat/exchange",
+          "method": "POST",
+          "operation_id": "auth_wechat_identity_exchange_api_ops_auth_wechat_exchange_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/wechat/status",
+          "method": "GET",
+          "operation_id": "auth_wechat_status_api_ops_auth_wechat_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/wechat",
+          "method": "GET",
+          "operation_id": "auth_wechat_api_ops_auth_wechat_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/wechat",
+          "method": "POST",
+          "operation_id": "auth_wechat_post_api_ops_auth_wechat_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/wechat",
+          "method": "HEAD",
+          "operation_id": "auth_wechat_head_api_ops_auth_wechat_head",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/wechat/oauth",
+          "method": "GET",
+          "operation_id": "auth_wechat_oauth_api_ops_auth_wechat_oauth_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/wechat/bridge/callback",
+          "method": "GET",
+          "operation_id": "auth_wechat_bridge_callback_api_ops_auth_wechat_bridge_callback_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/debug_cookie",
+          "method": "GET",
+          "operation_id": "debug_cookie_api_ops_auth_debug_cookie_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/dashboard/summary",
+          "method": "GET",
+          "operation_id": "dashboard_summary_api_ops_dashboard_summary_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/tenant/{entity_id}",
+          "method": "GET",
+          "operation_id": "get_tenant_reputation_api_tenant__entity_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/tenant/{entity_id}",
+          "method": "PUT",
+          "operation_id": "update_tenant_reputation_api_tenant__entity_id__put",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/tenant/{entity_id}",
+          "method": "DELETE",
+          "operation_id": "delete_tenant_reputation_api_tenant__entity_id__delete",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/pricing/{entity_id}",
+          "method": "GET",
+          "operation_id": "get_pricing_experiment_api_pricing__entity_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/pricing/{entity_id}",
+          "method": "PUT",
+          "operation_id": "update_pricing_experiment_api_pricing__entity_id__put",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/pricing/{entity_id}",
+          "method": "DELETE",
+          "operation_id": "delete_pricing_experiment_api_pricing__entity_id__delete",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/risk",
+          "method": "GET",
+          "operation_id": "list_risk_models_api_risk_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/risk",
+          "method": "POST",
+          "operation_id": "create_risk_model_api_risk_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/risk/{entity_id}",
+          "method": "GET",
+          "operation_id": "get_risk_model_api_risk__entity_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/risk/{entity_id}",
+          "method": "PUT",
+          "operation_id": "update_risk_model_api_risk__entity_id__put",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/risk/{entity_id}",
+          "method": "DELETE",
+          "operation_id": "delete_risk_model_api_risk__entity_id__delete",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops",
+          "method": "GET",
+          "operation_id": "list_ops_audit_logs_api_ops_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops",
+          "method": "POST",
+          "operation_id": "create_ops_audit_log_api_ops_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/{entity_id}",
+          "method": "GET",
+          "operation_id": "get_ops_audit_log_api_ops__entity_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/{entity_id}",
+          "method": "PUT",
+          "operation_id": "update_ops_audit_log_api_ops__entity_id__put",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/{entity_id}",
+          "method": "DELETE",
+          "operation_id": "delete_ops_audit_log_api_ops__entity_id__delete",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/tenant",
+          "method": "POST",
+          "operation_id": "create_tenant_reputation_api_tenant_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/tenant",
+          "method": "GET",
+          "operation_id": "list_tenant_reputation_api_tenant_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/pricing",
+          "method": "POST",
+          "operation_id": "create_pricing_experiment_api_pricing_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/pricing",
+          "method": "GET",
+          "operation_id": "list_pricing_experiments_api_pricing_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ai/readiness/status",
+          "method": "GET",
+          "operation_id": "core_ai_readiness_status_route_api_core_ai_readiness_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ai/reviews",
+          "method": "GET",
+          "operation_id": "core_ai_reviews_route_api_core_ai_reviews_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ai/status",
+          "method": "GET",
+          "operation_id": "core_ai_status_api_core_ai_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ai/gap-closure",
+          "method": "GET",
+          "operation_id": "core_ai_gap_closure_api_core_ai_gap_closure_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/spine/status",
+          "method": "GET",
+          "operation_id": "core_ops_spine_status_api_core_ops_spine_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/spine/queue",
+          "method": "GET",
+          "operation_id": "core_ops_spine_queue_api_core_ops_spine_queue_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/spine/cases/{case_id}",
+          "method": "GET",
+          "operation_id": "core_ops_spine_case_api_core_ops_spine_cases__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/spine/cases/{case_id}/parent-safe-preview",
+          "method": "GET",
+          "operation_id": "core_ops_spine_parent_safe_preview_api_core_ops_spine_cases__case_id__parent_safe_preview_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/auth/google/start",
+          "method": "GET",
+          "operation_id": "liveuin_public_google_auth_start_auth_google_start_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/connect/public/access-requests",
+          "method": "POST",
+          "operation_id": "connect_public_access_request_api_ops_connect_public_access_requests_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/webhooks",
+          "method": "POST",
+          "operation_id": "connect_webhooks_connect_webhooks_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/google",
+          "method": "GET",
+          "operation_id": "core_identity_google_start_api_ops_auth_google_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/google",
+          "method": "POST",
+          "operation_id": "ops_google_auth_start_post_api_ops_auth_google_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/google",
+          "method": "HEAD",
+          "operation_id": "ops_google_auth_start_head_api_ops_auth_google_head",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/connect/admin/session",
+          "method": "GET",
+          "operation_id": "connect_admin_session_status_api_ops_connect_admin_session_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/connect/admin/workspaces",
+          "method": "GET",
+          "operation_id": "connect_admin_workspaces_api_ops_connect_admin_workspaces_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/connect/admin/workspaces",
+          "method": "POST",
+          "operation_id": "connect_admin_save_workspace_api_ops_connect_admin_workspaces_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/connect/admin/setup-tokens",
+          "method": "GET",
+          "operation_id": "connect_admin_setup_tokens_api_ops_connect_admin_setup_tokens_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/connect/admin/setup-tokens",
+          "method": "POST",
+          "operation_id": "connect_admin_create_setup_token_api_ops_connect_admin_setup_tokens_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/connect/admin/access-requests",
+          "method": "GET",
+          "operation_id": "connect_admin_access_requests_api_ops_connect_admin_access_requests_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/connect/admin/checkout-sessions",
+          "method": "GET",
+          "operation_id": "connect_admin_checkout_sessions_api_ops_connect_admin_checkout_sessions_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/connect/admin/checkout-sessions",
+          "method": "POST",
+          "operation_id": "connect_admin_create_checkout_session_api_ops_connect_admin_checkout_sessions_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/connect/admin/access-requests/{request_id}/actions",
+          "method": "POST",
+          "operation_id": "connect_admin_access_request_action_api_ops_connect_admin_access_requests__request_id__actions_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/install/exchange",
+          "method": "POST",
+          "operation_id": "connect_install_exchange_connect_install_exchange_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/workspace/config",
+          "method": "GET",
+          "operation_id": "connect_workspace_config_connect_workspace_config_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/entitlements",
+          "method": "GET",
+          "operation_id": "connect_entitlements_connect_entitlements_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/usage",
+          "method": "GET",
+          "operation_id": "connect_usage_connect_usage_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/listings-preview/sync-summary",
+          "method": "GET",
+          "operation_id": "connect_inventory_sync_summary_connect_listings_preview_sync_summary_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/domains/status",
+          "method": "GET",
+          "operation_id": "connect_domain_verify_connect_domains_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/domain/status",
+          "method": "GET",
+          "operation_id": "connect_domain_verify_connect_domain_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/domains/verify",
+          "method": "POST",
+          "operation_id": "connect_domain_verify_connect_domains_verify_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/domain/verify",
+          "method": "POST",
+          "operation_id": "connect_domain_verify_connect_domain_verify_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/listings",
+          "method": "GET",
+          "operation_id": "connect_listings_connect_listings_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/insights/partner-display",
+          "method": "GET",
+          "operation_id": "connect_partner_display_insights_connect_insights_partner_display_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/leads",
+          "method": "POST",
+          "operation_id": "connect_leads_connect_leads_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/leads",
+          "method": "GET",
+          "operation_id": "connect_leads_list_connect_leads_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/distribution/status",
+          "method": "GET",
+          "operation_id": "connect_distribution_status_connect_distribution_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/events",
+          "method": "POST",
+          "operation_id": "connect_events_connect_events_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/qr-links",
+          "method": "POST",
+          "operation_id": "connect_qr_links_connect_qr_links_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/qr-links",
+          "method": "GET",
+          "operation_id": "connect_qr_links_list_connect_qr_links_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/share-links",
+          "method": "POST",
+          "operation_id": "connect_share_links_connect_share_links_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/share-links",
+          "method": "GET",
+          "operation_id": "connect_share_links_list_connect_share_links_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/demand/status",
+          "method": "GET",
+          "operation_id": "connect_demand_status_connect_demand_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/demand/intakes",
+          "method": "POST",
+          "operation_id": "connect_demand_intake_create_connect_demand_intakes_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/demand/runs",
+          "method": "POST",
+          "operation_id": "connect_demand_run_create_connect_demand_runs_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/demand/lead-passports",
+          "method": "POST",
+          "operation_id": "connect_demand_lead_passport_create_connect_demand_lead_passports_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/connect/trust/status",
+          "method": "GET",
+          "operation_id": "connect_trust_status_connect_trust_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/access/status",
+          "method": "GET",
+          "operation_id": "core_access_status_api_core_access_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/access/participant-grants",
+          "method": "POST",
+          "operation_id": "core_access_participant_grant_create_api_core_access_participant_grants_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/access/participant-grants",
+          "method": "GET",
+          "operation_id": "core_access_participant_grants_api_core_access_participant_grants_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/access/participant-grants/evaluate",
+          "method": "POST",
+          "operation_id": "core_access_participant_grant_evaluate_api_core_access_participant_grants_evaluate_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/cases/status",
+          "method": "GET",
+          "operation_id": "core_case_status_api_core_cases_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/cases",
+          "method": "POST",
+          "operation_id": "core_case_upsert_api_core_cases_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/cases/{case_id}",
+          "method": "GET",
+          "operation_id": "core_case_get_api_core_cases__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/cases/{case_id}/shortlist",
+          "method": "POST",
+          "operation_id": "core_case_shortlist_update_api_core_cases__case_id__shortlist_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/pass/status",
+          "method": "GET",
+          "operation_id": "core_pass_status_api_pass_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/pass/{case_id}",
+          "method": "GET",
+          "operation_id": "core_pass_get_api_pass__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/status",
+          "method": "GET",
+          "operation_id": "core_identity_status_api_core_identity_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/auth-policy/status",
+          "method": "GET",
+          "operation_id": "core_identity_auth_policy_status_api_core_identity_auth_policy_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/google/status",
+          "method": "GET",
+          "operation_id": "core_identity_google_status_api_ops_auth_google_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/google/callback",
+          "method": "GET",
+          "operation_id": "core_identity_google_callback_api_ops_auth_google_callback_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/links",
+          "method": "POST",
+          "operation_id": "core_identity_link_api_core_identity_links_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/resolve",
+          "method": "GET",
+          "operation_id": "core_identity_resolve_api_core_identity_resolve_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/persons/{person_id}",
+          "method": "GET",
+          "operation_id": "core_identity_person_api_core_identity_persons__person_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/persons/{person_id}/primestay-guest-projection",
+          "method": "GET",
+          "operation_id": "core_identity_primestay_guest_projection_api_core_identity_persons__person_id__primestay_guest_projection_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/continuity/provider-link",
+          "method": "POST",
+          "operation_id": "core_identity_continuity_provider_link_api_core_identity_continuity_provider_link_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/continuity/merge",
+          "method": "POST",
+          "operation_id": "core_identity_continuity_merge_api_core_identity_continuity_merge_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/continuity/split",
+          "method": "POST",
+          "operation_id": "core_identity_continuity_split_api_core_identity_continuity_split_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/continuity/unlink",
+          "method": "POST",
+          "operation_id": "core_identity_continuity_unlink_api_core_identity_continuity_unlink_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/continuity/quarantine",
+          "method": "POST",
+          "operation_id": "core_identity_continuity_quarantine_api_core_identity_continuity_quarantine_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/continuity/recover",
+          "method": "POST",
+          "operation_id": "core_identity_continuity_recover_api_core_identity_continuity_recover_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/continuity/decisions",
+          "method": "GET",
+          "operation_id": "core_identity_continuity_decisions_api_core_identity_continuity_decisions_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/login/status",
+          "method": "GET",
+          "operation_id": "core_identity_login_status_api_core_identity_login_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/request_code",
+          "method": "POST",
+          "operation_id": "ops_auth_request_code_compat_api_ops_auth_request_code_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/ops/auth/verify-code",
+          "method": "POST",
+          "operation_id": "ops_auth_verify_code_compat_api_ops_auth_verify_code_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/workspace-access/status",
+          "method": "GET",
+          "operation_id": "core_identity_workspace_access_status_api_core_identity_workspace_access_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/workspaces/host-pilot",
+          "method": "POST",
+          "operation_id": "core_identity_host_pilot_workspace_provision_api_core_identity_workspaces_host_pilot_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/workspace-memberships",
+          "method": "GET",
+          "operation_id": "core_identity_workspace_memberships_api_core_identity_workspace_memberships_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/workspace-memberships",
+          "method": "POST",
+          "operation_id": "core_identity_workspace_membership_grant_api_core_identity_workspace_memberships_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/workspace-invites",
+          "method": "GET",
+          "operation_id": "core_identity_workspace_invites_api_core_identity_workspace_invites_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/workspace-invites",
+          "method": "POST",
+          "operation_id": "core_identity_workspace_invite_api_core_identity_workspace_invites_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/profile-authorizations",
+          "method": "GET",
+          "operation_id": "core_identity_profile_authorizations_api_core_identity_profile_authorizations_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/profile-authorizations/tenant/sync",
+          "method": "POST",
+          "operation_id": "core_identity_tenant_profile_authorization_sync_api_core_identity_profile_authorizations_tenant_sync_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/profile-authorizations/localpro/sync",
+          "method": "POST",
+          "operation_id": "core_identity_localpro_profile_authorization_sync_api_core_identity_profile_authorizations_localpro_sync_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/profile-authorizations/{entitlement_id}/transition",
+          "method": "POST",
+          "operation_id": "core_identity_profile_authorization_transition_api_core_identity_profile_authorizations__entitlement_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/login/challenges",
+          "method": "POST",
+          "operation_id": "core_identity_login_create_api_core_identity_login_challenges_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/login/challenges",
+          "method": "GET",
+          "operation_id": "core_identity_login_list_api_core_identity_login_challenges_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/login/challenges/{challenge_id}/verify",
+          "method": "POST",
+          "operation_id": "core_identity_login_verify_api_core_identity_login_challenges__challenge_id__verify_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/login/challenges/{challenge_id}/cancel",
+          "method": "POST",
+          "operation_id": "core_identity_login_cancel_api_core_identity_login_challenges__challenge_id__cancel_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/session/status",
+          "method": "GET",
+          "operation_id": "core_identity_session_status_api_core_identity_session_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/session/resolve",
+          "method": "POST",
+          "operation_id": "core_identity_session_resolve_api_core_identity_session_resolve_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/session/issue",
+          "method": "POST",
+          "operation_id": "core_identity_session_issue_api_core_identity_session_issue_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/session/revoke",
+          "method": "POST",
+          "operation_id": "core_identity_session_revoke_api_core_identity_session_revoke_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/logout",
+          "method": "POST",
+          "operation_id": "core_identity_logout_api_core_identity_logout_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/credentials",
+          "method": "GET",
+          "operation_id": "core_identity_credentials_api_core_identity_credentials_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/api-keys",
+          "method": "POST",
+          "operation_id": "core_identity_api_keys_issue_api_core_identity_api_keys_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/api-keys/revoke",
+          "method": "POST",
+          "operation_id": "core_identity_api_keys_revoke_api_core_identity_api_keys_revoke_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/api-keys/rotate",
+          "method": "POST",
+          "operation_id": "core_identity_api_keys_rotate_api_core_identity_api_keys_rotate_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/status",
+          "method": "GET",
+          "operation_id": "core_inventory_status_api_core_inventory_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/offers",
+          "method": "GET",
+          "operation_id": "core_inventory_offers_api_core_inventory_offers_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/offers",
+          "method": "POST",
+          "operation_id": "core_inventory_offer_upsert_api_core_inventory_offers_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/source-imports",
+          "method": "POST",
+          "operation_id": "core_inventory_source_import_api_core_inventory_source_imports_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/source-imports/{source_record_id}/history",
+          "method": "GET",
+          "operation_id": "core_inventory_source_import_history_api_core_inventory_source_imports__source_record_id__history_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/listing-mappings/preview",
+          "method": "POST",
+          "operation_id": "core_inventory_listing_mapping_preview_api_core_inventory_listing_mappings_preview_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/listing-mappings",
+          "method": "POST",
+          "operation_id": "core_inventory_listing_mapping_create_api_core_inventory_listing_mappings_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/listing-mappings/{mapping_id}",
+          "method": "GET",
+          "operation_id": "core_inventory_listing_mapping_get_api_core_inventory_listing_mappings__mapping_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/listing-mappings/{mapping_id}/replace",
+          "method": "POST",
+          "operation_id": "core_inventory_listing_mapping_replace_api_core_inventory_listing_mappings__mapping_id__replace_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/listing-mappings/{mapping_id}/revoke",
+          "method": "POST",
+          "operation_id": "core_inventory_listing_mapping_revoke_api_core_inventory_listing_mappings__mapping_id__revoke_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/listing-mappings/{mapping_id}/handoffs",
+          "method": "POST",
+          "operation_id": "core_inventory_listing_handoff_issue_api_core_inventory_listing_mappings__mapping_id__handoffs_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/listing-handoffs/issue-for-origin",
+          "method": "POST",
+          "operation_id": "core_inventory_listing_handoff_issue_for_origin_api_core_inventory_listing_handoffs_issue_for_origin_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/listing-handoffs/resolve",
+          "method": "POST",
+          "operation_id": "core_inventory_listing_handoff_resolve_api_core_inventory_listing_handoffs_resolve_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/offers/{unit_id}",
+          "method": "GET",
+          "operation_id": "core_inventory_offer_get_api_core_inventory_offers__unit_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/staging",
+          "method": "GET",
+          "operation_id": "core_inventory_staging_api_core_inventory_staging_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/sync-runs",
+          "method": "GET",
+          "operation_id": "core_inventory_sync_runs_api_core_inventory_sync_runs_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/sync-runs/{sync_run_id}",
+          "method": "GET",
+          "operation_id": "core_inventory_sync_run_get_api_core_inventory_sync_runs__sync_run_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/migration-status",
+          "method": "GET",
+          "operation_id": "core_inventory_migration_status_api_core_inventory_migration_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/staging/{staging_id}",
+          "method": "GET",
+          "operation_id": "core_inventory_staging_get_api_core_inventory_staging__staging_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/staging/{staging_id}/review",
+          "method": "POST",
+          "operation_id": "core_inventory_staging_review_api_core_inventory_staging__staging_id__review_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/reconciliation",
+          "method": "GET",
+          "operation_id": "core_inventory_reconciliation_api_core_inventory_reconciliation_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/reconciliation/dispositions",
+          "method": "POST",
+          "operation_id": "core_inventory_reconciliation_disposition_record_api_core_inventory_reconciliation_dispositions_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/reconciliation/dispositions",
+          "method": "GET",
+          "operation_id": "core_inventory_reconciliation_disposition_list_api_core_inventory_reconciliation_dispositions_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/reconciliation/resolutions",
+          "method": "POST",
+          "operation_id": "core_inventory_reconciliation_resolution_record_api_core_inventory_reconciliation_resolutions_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/reconciliation/resolutions",
+          "method": "GET",
+          "operation_id": "core_inventory_reconciliation_resolution_list_api_core_inventory_reconciliation_resolutions_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/rooms/{unit_id}/hold",
+          "method": "POST",
+          "operation_id": "core_inventory_hold_create_api_core_inventory_rooms__unit_id__hold_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/offers/{unit_id}/hold",
+          "method": "POST",
+          "operation_id": "core_inventory_hold_create_api_core_inventory_offers__unit_id__hold_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/holds/{hold_id}/release",
+          "method": "POST",
+          "operation_id": "core_inventory_hold_release_api_core_inventory_holds__hold_id__release_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/holds/{hold_id}/book",
+          "method": "POST",
+          "operation_id": "core_inventory_hold_book_api_core_inventory_holds__hold_id__book_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/intelligence/status",
+          "method": "GET",
+          "operation_id": "core_intelligence_status_api_core_intelligence_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/intelligence/events",
+          "method": "GET",
+          "operation_id": "core_intelligence_events_api_core_intelligence_events_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/intelligence/search",
+          "method": "GET",
+          "operation_id": "core_intelligence_search_get_api_core_intelligence_search_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/intelligence/market/demand-pulse",
+          "method": "GET",
+          "operation_id": "core_intelligence_demand_pulse_api_core_intelligence_market_demand_pulse_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/intelligence/sources",
+          "method": "GET",
+          "operation_id": "core_intelligence_sources_api_core_intelligence_sources_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/provenance-reviews",
+          "method": "GET",
+          "operation_id": "core_inventory_provenance_review_list_api_core_inventory_provenance_reviews_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/trust/status",
+          "method": "GET",
+          "operation_id": "core_trust_status_api_core_trust_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/trust/room-passports",
+          "method": "POST",
+          "operation_id": "core_trust_room_passport_upsert_api_core_trust_room_passports_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/trust/room-passports/{passport_id}",
+          "method": "GET",
+          "operation_id": "core_trust_room_passport_get_api_core_trust_room_passports__passport_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/trust/rooms/{room_id}/passport",
+          "method": "GET",
+          "operation_id": "core_trust_room_passport_get_by_room_api_core_trust_rooms__room_id__passport_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/trust/room-passports/{passport_id}/evidence",
+          "method": "POST",
+          "operation_id": "core_trust_room_passport_evidence_api_core_trust_room_passports__passport_id__evidence_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/trust/room-passports/{passport_id}/review",
+          "method": "POST",
+          "operation_id": "core_trust_room_passport_review_api_core_trust_room_passports__passport_id__review_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/trust/room-passports/{passport_id}/candidate-evidence",
+          "method": "POST",
+          "operation_id": "core_trust_candidate_evidence_submit_api_core_trust_room_passports__passport_id__candidate_evidence_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/trust/candidate-evidence/{candidate_id}/review",
+          "method": "POST",
+          "operation_id": "core_trust_candidate_evidence_review_api_core_trust_candidate_evidence__candidate_id__review_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/trust/evidence",
+          "method": "POST",
+          "operation_id": "core_trust_g23_evidence_record_api_core_trust_evidence_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/trust/evidence/{evidence_id}/reviews",
+          "method": "POST",
+          "operation_id": "core_trust_g23_evidence_review_api_core_trust_evidence__evidence_id__reviews_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/trust/inventory/{inventory_id}/verification-state/reconcile",
+          "method": "POST",
+          "operation_id": "core_trust_g23_inventory_verification_reconcile_api_core_trust_inventory__inventory_id__verification_state_reconcile_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/trust/inventory/{inventory_id}/verification-state/current",
+          "method": "GET",
+          "operation_id": "core_trust_g23_inventory_verification_current_api_core_trust_inventory__inventory_id__verification_state_current_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/trust/room-passports/{passport_id}/public",
+          "method": "GET",
+          "operation_id": "core_trust_room_passport_public_api_trust_room_passports__passport_id__public_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/pass/room-passports/{passport_id}",
+          "method": "GET",
+          "operation_id": "core_trust_room_passport_pass_api_pass_room_passports__passport_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/pass/{case_id}/room-passports/{passport_id}",
+          "method": "GET",
+          "operation_id": "core_trust_room_passport_pass_for_case_api_pass__case_id__room_passports__passport_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/production-change-requests",
+          "method": "POST",
+          "operation_id": "create_p4_change_request_api_core_ops_production_change_requests_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/production-change-requests/{change_request_id}",
+          "method": "GET",
+          "operation_id": "get_p4_change_request_api_core_ops_production_change_requests__change_request_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/production-change-requests/{change_request_id}/decision",
+          "method": "POST",
+          "operation_id": "decide_p4_change_request_api_core_ops_production_change_requests__change_request_id__decision_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions/{submission_id}/solo-review",
+          "method": "GET",
+          "operation_id": "get_solo_review_api_core_media_partner_submissions__submission_id__solo_review_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions/{submission_id}/solo-review",
+          "method": "POST",
+          "operation_id": "approve_solo_review_api_core_media_partner_submissions__submission_id__solo_review_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/status",
+          "method": "GET",
+          "operation_id": "core_media_status_api_core_media_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/assets",
+          "method": "POST",
+          "operation_id": "core_media_asset_register_api_core_media_assets_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions",
+          "method": "POST",
+          "operation_id": "core_media_partner_submission_create_api_core_media_partner_submissions_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions",
+          "method": "GET",
+          "operation_id": "core_media_partner_submission_list_api_core_media_partner_submissions_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions/{submission_id}",
+          "method": "GET",
+          "operation_id": "core_media_partner_submission_get_api_core_media_partner_submissions__submission_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions/{submission_id}/sources/{source_id}/preview",
+          "method": "GET",
+          "operation_id": "core_media_partner_submission_source_preview_api_core_media_partner_submissions__submission_id__sources__source_id__preview_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions/{submission_id}/video-frames",
+          "method": "POST",
+          "operation_id": "core_media_partner_submission_video_frames_api_core_media_partner_submissions__submission_id__video_frames_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions/{submission_id}/video-frames/{candidate_id}/preview",
+          "method": "GET",
+          "operation_id": "core_media_partner_submission_video_frame_preview_api_core_media_partner_submissions__submission_id__video_frames__candidate_id__preview_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions/{submission_id}/assets/{slot}",
+          "method": "POST",
+          "operation_id": "core_media_partner_submission_upload_api_core_media_partner_submissions__submission_id__assets__slot__post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions/{submission_id}/compile",
+          "method": "POST",
+          "operation_id": "core_media_partner_submission_compile_api_core_media_partner_submissions__submission_id__compile_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions/{submission_id}/draft",
+          "method": "POST",
+          "operation_id": "core_media_partner_submission_draft_save_api_core_media_partner_submissions__submission_id__draft_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions/{submission_id}/candidate",
+          "method": "POST",
+          "operation_id": "core_media_partner_submission_candidate_api_core_media_partner_submissions__submission_id__candidate_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions/{submission_id}/draft/transform",
+          "method": "POST",
+          "operation_id": "core_media_partner_submission_copy_transform_api_core_media_partner_submissions__submission_id__draft_transform_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions/{submission_id}/handoff",
+          "method": "POST",
+          "operation_id": "core_media_partner_submission_handoff_api_core_media_partner_submissions__submission_id__handoff_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/partner-submissions/{submission_id}/review",
+          "method": "POST",
+          "operation_id": "core_media_partner_submission_review_api_core_media_partner_submissions__submission_id__review_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs",
+          "method": "POST",
+          "operation_id": "core_media_operator_job_create_api_core_media_operator_jobs_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs",
+          "method": "GET",
+          "operation_id": "core_media_operator_job_list_api_core_media_operator_jobs_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs/{job_id}",
+          "method": "GET",
+          "operation_id": "core_media_operator_job_get_api_core_media_operator_jobs__job_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs/{job_id}/assets/{slot}",
+          "method": "POST",
+          "operation_id": "core_media_operator_job_upload_api_core_media_operator_jobs__job_id__assets__slot__post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs/{job_id}/process",
+          "method": "POST",
+          "operation_id": "core_media_operator_job_process_api_core_media_operator_jobs__job_id__process_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs/{job_id}/resolve-fixable",
+          "method": "POST",
+          "operation_id": "core_media_operator_job_resolve_fixable_api_core_media_operator_jobs__job_id__resolve_fixable_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs/{job_id}/operator-resolutions",
+          "method": "POST",
+          "operation_id": "core_media_operator_job_resolve_choices_api_core_media_operator_jobs__job_id__operator_resolutions_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs/{job_id}/media-selection",
+          "method": "POST",
+          "operation_id": "core_media_operator_job_save_selection_api_core_media_operator_jobs__job_id__media_selection_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs/{job_id}/video-selection",
+          "method": "POST",
+          "operation_id": "core_media_operator_job_save_video_selection_api_core_media_operator_jobs__job_id__video_selection_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs/{job_id}/review",
+          "method": "POST",
+          "operation_id": "core_media_operator_job_review_api_core_media_operator_jobs__job_id__review_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs/{job_id}/durable-pack",
+          "method": "POST",
+          "operation_id": "core_media_operator_job_durable_pack_api_core_media_operator_jobs__job_id__durable_pack_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs/{job_id}/durable-pack",
+          "method": "GET",
+          "operation_id": "core_media_operator_job_durable_pack_get_api_core_media_operator_jobs__job_id__durable_pack_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs/{job_id}/listing-draft-assignment",
+          "method": "POST",
+          "operation_id": "core_media_operator_job_listing_draft_assignment_api_core_media_operator_jobs__job_id__listing_draft_assignment_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs/{job_id}/listing-draft-assignment",
+          "method": "GET",
+          "operation_id": "core_media_operator_job_listing_draft_assignment_get_api_core_media_operator_jobs__job_id__listing_draft_assignment_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/realhomes-projections/operability",
+          "method": "GET",
+          "operation_id": "core_media_realhomes_projection_operability_api_core_media_realhomes_projections_operability_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/realhomes-projections/checkout",
+          "method": "POST",
+          "operation_id": "core_media_realhomes_projection_checkout_api_core_media_realhomes_projections_checkout_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/realhomes-projections/{projection_id}/claim",
+          "method": "POST",
+          "operation_id": "core_media_realhomes_projection_claim_api_core_media_realhomes_projections__projection_id__claim_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/packs/{pack_id}/assets/{asset_id}/bytes",
+          "method": "GET",
+          "operation_id": "core_media_realhomes_projection_bytes_api_core_media_packs__pack_id__assets__asset_id__bytes_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/realhomes-projections/{projection_id}/complete",
+          "method": "POST",
+          "operation_id": "core_media_realhomes_projection_complete_api_core_media_realhomes_projections__projection_id__complete_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/realhomes-projections/{projection_id}/retry",
+          "method": "POST",
+          "operation_id": "core_media_realhomes_projection_retry_api_core_media_realhomes_projections__projection_id__retry_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/realhomes-projections/{projection_id}",
+          "method": "GET",
+          "operation_id": "core_media_realhomes_projection_get_api_core_media_realhomes_projections__projection_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/operator-jobs/{job_id}/previews/{asset_id}",
+          "method": "GET",
+          "operation_id": "core_media_operator_job_preview_api_core_media_operator_jobs__job_id__previews__asset_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/capture-intakes",
+          "method": "POST",
+          "operation_id": "core_media_capture_intake_create_api_core_media_capture_intakes_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/capture-intakes",
+          "method": "GET",
+          "operation_id": "core_media_capture_intake_list_api_core_media_capture_intakes_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/capture-intakes/{capture_id}",
+          "method": "GET",
+          "operation_id": "core_media_capture_intake_get_api_core_media_capture_intakes__capture_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/capture-intakes/{capture_id}/resolve-identity",
+          "method": "POST",
+          "operation_id": "core_media_capture_intake_resolve_identity_api_core_media_capture_intakes__capture_id__resolve_identity_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/capture-intakes/{capture_id}/prepare-handoff",
+          "method": "POST",
+          "operation_id": "core_media_capture_intake_prepare_handoff_api_core_media_capture_intakes__capture_id__prepare_handoff_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/founder-sandbox/tasks/{task_id}/images/{slot}",
+          "method": "POST",
+          "operation_id": "core_media_founder_sandbox_image_upload_api_core_media_founder_sandbox_tasks__task_id__images__slot__post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/founder-sandbox/tasks/{task_id}/uploads",
+          "method": "GET",
+          "operation_id": "core_media_founder_sandbox_uploads_api_core_media_founder_sandbox_tasks__task_id__uploads_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/paid-pilot/tasks/{task_id}/images/{slot}",
+          "method": "POST",
+          "operation_id": "core_media_paid_pilot_image_upload_api_core_media_paid_pilot_tasks__task_id__images__slot__post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/paid-pilot/tasks/{task_id}/uploads",
+          "method": "GET",
+          "operation_id": "core_media_paid_pilot_uploads_api_core_media_paid_pilot_tasks__task_id__uploads_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/paid-pilot/purge-expired",
+          "method": "POST",
+          "operation_id": "core_media_paid_pilot_purge_expired_api_core_media_paid_pilot_purge_expired_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/founder-sandbox/assets/{asset_id}/content",
+          "method": "GET",
+          "operation_id": "core_media_founder_sandbox_asset_content_api_core_media_founder_sandbox_assets__asset_id__content_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/paid-pilot/assets/{asset_id}/content",
+          "method": "GET",
+          "operation_id": "core_media_paid_pilot_asset_content_api_core_media_paid_pilot_assets__asset_id__content_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/assets/{asset_id}",
+          "method": "GET",
+          "operation_id": "core_media_asset_get_api_core_media_assets__asset_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/entitlements",
+          "method": "POST",
+          "operation_id": "core_media_entitlement_create_api_core_media_entitlements_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/media/entitlements/{entitlement_id}",
+          "method": "GET",
+          "operation_id": "core_media_entitlement_get_api_core_media_entitlements__entitlement_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/pass/{case_id}/media-access",
+          "method": "POST",
+          "operation_id": "core_media_pass_access_api_pass__case_id__media_access_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/media/grants/{grant_id}/resolve",
+          "method": "GET",
+          "operation_id": "core_media_grant_resolve_api_media_grants__grant_id__resolve_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ai/studio/capabilities",
+          "method": "GET",
+          "operation_id": "capability_list_api_core_ai_studio_capabilities_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ai/studio/capabilities",
+          "method": "POST",
+          "operation_id": "capability_create_api_core_ai_studio_capabilities_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ai/studio/providers",
+          "method": "GET",
+          "operation_id": "provider_status_api_core_ai_studio_providers_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ai/studio/providers/{provider_id}/credentials",
+          "method": "POST",
+          "operation_id": "provider_save_api_core_ai_studio_providers__provider_id__credentials_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ai/studio/providers/{provider_id}/test",
+          "method": "POST",
+          "operation_id": "provider_test_api_core_ai_studio_providers__provider_id__test_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ai/studio/providers/{provider_id}/disconnect",
+          "method": "POST",
+          "operation_id": "provider_disconnect_api_core_ai_studio_providers__provider_id__disconnect_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/country-context/status",
+          "method": "GET",
+          "operation_id": "country_context_status_api_core_country_context_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/country-context/records",
+          "method": "GET",
+          "operation_id": "country_context_records_api_core_country_context_records_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/country-context/snapshots",
+          "method": "POST",
+          "operation_id": "country_context_snapshot_create_api_core_country_context_snapshots_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/viewing/status",
+          "method": "GET",
+          "operation_id": "core_viewing_status_api_core_viewing_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/viewing/slots",
+          "method": "POST",
+          "operation_id": "core_viewing_slot_upsert_api_core_viewing_slots_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/viewing/slots",
+          "method": "GET",
+          "operation_id": "core_viewing_slots_api_core_viewing_slots_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/viewing/slots/{slot_id}",
+          "method": "GET",
+          "operation_id": "core_viewing_slot_get_api_core_viewing_slots__slot_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/viewing/reservations",
+          "method": "POST",
+          "operation_id": "core_viewing_reservation_create_api_core_viewing_reservations_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/viewing/reservations/{reservation_id}",
+          "method": "GET",
+          "operation_id": "core_viewing_reservation_get_api_core_viewing_reservations__reservation_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/viewing/reservations/{reservation_id}/transition",
+          "method": "POST",
+          "operation_id": "core_viewing_reservation_transition_api_core_viewing_reservations__reservation_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/viewing/self-views",
+          "method": "POST",
+          "operation_id": "core_operator_self_view_create_api_core_viewing_self_views_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/viewing/self-views/{self_view_id}",
+          "method": "GET",
+          "operation_id": "core_operator_self_view_get_api_core_viewing_self_views__self_view_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/viewing/self-views/{self_view_id}/actions",
+          "method": "POST",
+          "operation_id": "core_operator_self_view_action_api_core_viewing_self_views__self_view_id__actions_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/pass/{case_id}/viewings",
+          "method": "POST",
+          "operation_id": "core_viewing_pass_reservation_create_api_pass__case_id__viewings_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/booking/status",
+          "method": "GET",
+          "operation_id": "core_booking_status_api_core_booking_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/booking/bookings",
+          "method": "GET",
+          "operation_id": "core_booking_list_api_core_booking_bookings_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/booking/bookings",
+          "method": "POST",
+          "operation_id": "core_booking_create_api_core_booking_bookings_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/booking/bookings/{booking_id}",
+          "method": "GET",
+          "operation_id": "core_booking_get_api_core_booking_bookings__booking_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/booking/bookings/{booking_id}/deposit",
+          "method": "POST",
+          "operation_id": "core_booking_deposit_intent_api_core_booking_bookings__booking_id__deposit_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/booking/bookings/{booking_id}/transition",
+          "method": "POST",
+          "operation_id": "core_booking_transition_api_core_booking_bookings__booking_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/pass/{case_id}/bookings",
+          "method": "POST",
+          "operation_id": "core_booking_pass_create_api_pass__case_id__bookings_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/status",
+          "method": "GET",
+          "operation_id": "core_payment_status_api_core_payments_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/provider-edge/status",
+          "method": "GET",
+          "operation_id": "core_payment_provider_edge_status_api_core_payments_provider_edge_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/rails",
+          "method": "GET",
+          "operation_id": "core_payment_rails_api_core_payments_rails_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/price-books",
+          "method": "GET",
+          "operation_id": "core_payment_price_book_list_api_core_payments_price_books_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/price-books",
+          "method": "POST",
+          "operation_id": "core_payment_price_book_create_api_core_payments_price_books_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/validation-overrides",
+          "method": "GET",
+          "operation_id": "core_payment_validation_override_list_api_core_payments_validation_overrides_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/validation-overrides",
+          "method": "POST",
+          "operation_id": "core_payment_validation_override_create_api_core_payments_validation_overrides_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/validation-records",
+          "method": "GET",
+          "operation_id": "core_payment_validation_record_list_api_core_payments_validation_records_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/validation-records/{validation_id}/reconcile",
+          "method": "POST",
+          "operation_id": "core_payment_validation_reconcile_api_core_payments_validation_records__validation_id__reconcile_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/provider-webhooks/stripe",
+          "method": "POST",
+          "operation_id": "core_payment_stripe_webhook_api_core_payments_provider_webhooks_stripe_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/provider-webhooks/hitpay",
+          "method": "POST",
+          "operation_id": "core_payment_hitpay_webhook_api_core_payments_provider_webhooks_hitpay_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/provider-webhooks/wechat-pay",
+          "method": "POST",
+          "operation_id": "core_payment_wechat_pay_webhook_api_core_payments_provider_webhooks_wechat_pay_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/provider-webhooks/alipay",
+          "method": "POST",
+          "operation_id": "core_payment_alipay_webhook_api_core_payments_provider_webhooks_alipay_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/payers",
+          "method": "POST",
+          "operation_id": "core_payment_payer_create_api_core_payments_payers_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/bills",
+          "method": "POST",
+          "operation_id": "core_payment_bill_create_api_core_payments_bills_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/bills",
+          "method": "GET",
+          "operation_id": "core_payment_bill_list_api_core_payments_bills_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/bills/{bill_id}",
+          "method": "GET",
+          "operation_id": "core_payment_bill_get_api_core_payments_bills__bill_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/intents",
+          "method": "POST",
+          "operation_id": "core_payment_intent_create_api_core_payments_intents_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/intents/{intent_id}/provider-event",
+          "method": "POST",
+          "operation_id": "core_payment_provider_event_api_core_payments_intents__intent_id__provider_event_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/intents/{intent_id}/stripe/sandbox-payment-intent",
+          "method": "POST",
+          "operation_id": "core_payment_stripe_sandbox_intent_api_core_payments_intents__intent_id__stripe_sandbox_payment_intent_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/stripe/sandbox/igema-account",
+          "method": "POST",
+          "operation_id": "core_payment_igema_sandbox_account_api_core_payments_stripe_sandbox_igema_account_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/stripe/sandbox/provider-accounts",
+          "method": "GET",
+          "operation_id": "core_payment_stripe_sandbox_provider_accounts_api_core_payments_stripe_sandbox_provider_accounts_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/refunds",
+          "method": "GET",
+          "operation_id": "core_payment_refund_list_api_core_payments_refunds_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/refunds",
+          "method": "POST",
+          "operation_id": "core_payment_refund_request_api_core_payments_refunds_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/refunds/{refund_id}/transition",
+          "method": "POST",
+          "operation_id": "core_payment_refund_transition_api_core_payments_refunds__refund_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/risk/cases/{case_id}",
+          "method": "GET",
+          "operation_id": "core_payment_risk_case_api_core_payments_risk_cases__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/risk/signals",
+          "method": "POST",
+          "operation_id": "core_payment_risk_signal_api_core_payments_risk_signals_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/risk/{risk_id}/review",
+          "method": "POST",
+          "operation_id": "core_payment_risk_review_api_core_payments_risk__risk_id__review_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/cases/{case_id}",
+          "method": "GET",
+          "operation_id": "core_payment_case_status_api_core_payments_cases__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/properties/{property_id}",
+          "method": "GET",
+          "operation_id": "core_payment_property_status_api_core_payments_properties__property_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/properties/{property_id}/documents",
+          "method": "GET",
+          "operation_id": "core_payment_property_documents_api_core_payments_properties__property_id__documents_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/properties/{property_id}/receipts",
+          "method": "GET",
+          "operation_id": "core_payment_property_receipts_api_core_payments_properties__property_id__receipts_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/properties/{property_id}/refunds",
+          "method": "GET",
+          "operation_id": "core_payment_property_refunds_api_core_payments_properties__property_id__refunds_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/payments/exceptions",
+          "method": "GET",
+          "operation_id": "core_payment_exceptions_api_core_payments_exceptions_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/status",
+          "method": "GET",
+          "operation_id": "core_ledger_status_api_core_ledger_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/brands/status",
+          "method": "GET",
+          "operation_id": "core_ledger_brand_status_api_core_ledger_brands_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/brands",
+          "method": "GET",
+          "operation_id": "core_ledger_brands_api_core_ledger_brands_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/brands/{workspace_id}",
+          "method": "GET",
+          "operation_id": "core_ledger_brand_api_core_ledger_brands__workspace_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/accounts",
+          "method": "POST",
+          "operation_id": "core_ledger_account_create_api_core_ledger_accounts_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/accounts",
+          "method": "GET",
+          "operation_id": "core_ledger_accounts_api_core_ledger_accounts_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/pilot-payout-commitments",
+          "method": "POST",
+          "operation_id": "core_ledger_pilot_payout_commitment_create_api_core_ledger_pilot_payout_commitments_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/pilot-payout-commitments/{task_id}/transition",
+          "method": "POST",
+          "operation_id": "core_ledger_pilot_payout_commitment_transition_api_core_ledger_pilot_payout_commitments__task_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/batches",
+          "method": "POST",
+          "operation_id": "core_ledger_batch_create_api_core_ledger_batches_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/batches",
+          "method": "GET",
+          "operation_id": "core_ledger_batches_api_core_ledger_batches_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/settlement-batches",
+          "method": "POST",
+          "operation_id": "core_ledger_settlement_batch_create_api_core_ledger_settlement_batches_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/settlement-batches",
+          "method": "GET",
+          "operation_id": "core_ledger_settlement_batches_api_core_ledger_settlement_batches_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/batches/{batch_id}",
+          "method": "GET",
+          "operation_id": "core_ledger_batch_api_core_ledger_batches__batch_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/settlement-batches/{batch_id}",
+          "method": "GET",
+          "operation_id": "core_ledger_settlement_batch_api_core_ledger_settlement_batches__batch_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/batches/{batch_id}/post",
+          "method": "POST",
+          "operation_id": "core_ledger_batch_post_api_core_ledger_batches__batch_id__post_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/settlement-batches/{batch_id}/transition",
+          "method": "POST",
+          "operation_id": "core_ledger_settlement_batch_transition_api_core_ledger_settlement_batches__batch_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/exports",
+          "method": "POST",
+          "operation_id": "core_ledger_export_create_api_core_ledger_exports_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/exports",
+          "method": "GET",
+          "operation_id": "core_ledger_exports_api_core_ledger_exports_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/exports/{export_id}",
+          "method": "GET",
+          "operation_id": "core_ledger_export_api_core_ledger_exports__export_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/payout-reports/status",
+          "method": "GET",
+          "operation_id": "core_ledger_payout_report_status_api_core_ledger_payout_reports_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/payout-reports",
+          "method": "GET",
+          "operation_id": "core_ledger_payout_reports_api_core_ledger_payout_reports_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/payout-reports/{report_id}",
+          "method": "GET",
+          "operation_id": "core_ledger_payout_report_api_core_ledger_payout_reports__report_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/cases/{case_id}",
+          "method": "GET",
+          "operation_id": "core_ledger_case_api_core_ledger_cases__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/properties/{property_id}",
+          "method": "GET",
+          "operation_id": "core_ledger_property_api_core_ledger_properties__property_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/properties/{property_id}/exports",
+          "method": "GET",
+          "operation_id": "core_ledger_property_exports_api_core_ledger_properties__property_id__exports_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/finance/properties/{property_id}/pack",
+          "method": "GET",
+          "operation_id": "core_finance_property_pack_api_core_finance_properties__property_id__pack_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/bank-connections",
+          "method": "POST",
+          "operation_id": "core_ledger_bank_connection_create_api_core_ledger_bank_connections_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/bank-connections",
+          "method": "GET",
+          "operation_id": "core_ledger_bank_connections_api_core_ledger_bank_connections_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/bank-connections/{connection_id}",
+          "method": "GET",
+          "operation_id": "core_ledger_bank_connection_api_core_ledger_bank_connections__connection_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/bank-connections/{connection_id}/sync",
+          "method": "POST",
+          "operation_id": "core_ledger_bank_connection_sync_api_core_ledger_bank_connections__connection_id__sync_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/bank-transactions",
+          "method": "GET",
+          "operation_id": "core_ledger_bank_transactions_api_core_ledger_bank_transactions_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/reconciliation/matches",
+          "method": "GET",
+          "operation_id": "core_ledger_reconciliation_matches_api_core_ledger_reconciliation_matches_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/reconciliation/exceptions",
+          "method": "GET",
+          "operation_id": "core_ledger_reconciliation_exceptions_api_core_ledger_reconciliation_exceptions_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/reconciliation/close-runs",
+          "method": "GET",
+          "operation_id": "core_ledger_reconciliation_close_runs_api_core_ledger_reconciliation_close_runs_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/reconciliation/close-runs",
+          "method": "POST",
+          "operation_id": "core_ledger_reconciliation_close_run_create_api_core_ledger_reconciliation_close_runs_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/reconciliation/close-runs/{run_id}",
+          "method": "GET",
+          "operation_id": "core_ledger_reconciliation_close_run_api_core_ledger_reconciliation_close_runs__run_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/reconciliation/close-runs/{run_id}/corrections",
+          "method": "POST",
+          "operation_id": "core_ledger_reconciliation_close_correction_api_core_ledger_reconciliation_close_runs__run_id__corrections_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/reconciliation/matches/{match_id}/confirm",
+          "method": "POST",
+          "operation_id": "core_ledger_reconciliation_confirm_api_core_ledger_reconciliation_matches__match_id__confirm_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/reconciliation/matches/{match_id}/reject",
+          "method": "POST",
+          "operation_id": "core_ledger_reconciliation_reject_api_core_ledger_reconciliation_matches__match_id__reject_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ledger/reconciliation/manual-match",
+          "method": "POST",
+          "operation_id": "core_ledger_reconciliation_manual_match_api_core_ledger_reconciliation_manual_match_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/status",
+          "method": "GET",
+          "operation_id": "core_verification_status_api_core_verification_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/cross-check/status",
+          "method": "GET",
+          "operation_id": "core_verification_cross_check_status_api_core_verification_cross_check_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/cross-check/cases/{case_id}",
+          "method": "GET",
+          "operation_id": "core_verification_cross_check_case_api_core_verification_cross_check_cases__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/evidence-locker/status",
+          "method": "GET",
+          "operation_id": "core_verification_evidence_locker_status_api_core_verification_evidence_locker_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/evidence-locker/exports",
+          "method": "GET",
+          "operation_id": "core_verification_evidence_locker_exports_api_core_verification_evidence_locker_exports_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/evidence-locker/cases/{case_id}/export",
+          "method": "GET",
+          "operation_id": "core_verification_evidence_locker_case_export_api_core_verification_evidence_locker_cases__case_id__export_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/trust-badges/status",
+          "method": "GET",
+          "operation_id": "core_verification_trust_badge_status_api_core_verification_trust_badges_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/trust-badges/{case_id}",
+          "method": "GET",
+          "operation_id": "core_verification_trust_badge_case_api_core_verification_trust_badges__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/trust/verified-properties/{case_id}/badge",
+          "method": "GET",
+          "operation_id": "core_verification_public_trust_badge_api_trust_verified_properties__case_id__badge_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/floorplans/status",
+          "method": "GET",
+          "operation_id": "core_verification_floorplan_status_api_core_verification_floorplans_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/floorplans/{case_id}",
+          "method": "GET",
+          "operation_id": "core_verification_floorplan_case_api_core_verification_floorplans__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/trust/verified-properties/{case_id}/floorplan-label",
+          "method": "GET",
+          "operation_id": "core_verification_public_floorplan_label_api_trust_verified_properties__case_id__floorplan_label_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/profiles",
+          "method": "POST",
+          "operation_id": "core_verification_profile_create_api_core_verification_profiles_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/profiles/{profile_id}",
+          "method": "GET",
+          "operation_id": "core_verification_profile_get_api_core_verification_profiles__profile_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/profiles/{profile_id}/evidence",
+          "method": "POST",
+          "operation_id": "core_verification_evidence_create_api_core_verification_profiles__profile_id__evidence_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/profiles/{profile_id}/review",
+          "method": "POST",
+          "operation_id": "core_verification_profile_review_api_core_verification_profiles__profile_id__review_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/profiles/{profile_id}/provider-callback",
+          "method": "POST",
+          "operation_id": "core_verification_provider_callback_api_core_verification_profiles__profile_id__provider_callback_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/cases/{case_id}",
+          "method": "GET",
+          "operation_id": "core_verification_case_summary_api_core_verification_cases__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/verification/review-queue",
+          "method": "GET",
+          "operation_id": "core_verification_review_queue_api_core_verification_review_queue_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/tickets/status",
+          "method": "GET",
+          "operation_id": "core_ops_ticket_status_api_core_ops_tickets_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/tickets",
+          "method": "GET",
+          "operation_id": "core_ops_ticket_list_api_core_ops_tickets_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/tickets",
+          "method": "POST",
+          "operation_id": "core_ops_ticket_create_api_core_ops_tickets_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/tickets/{ticket_id}",
+          "method": "GET",
+          "operation_id": "core_ops_ticket_get_api_core_ops_tickets__ticket_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/tickets/{ticket_id}/transition",
+          "method": "POST",
+          "operation_id": "core_ops_ticket_transition_api_core_ops_tickets__ticket_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/support/status",
+          "method": "GET",
+          "operation_id": "core_support_status_api_core_support_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/support/requests",
+          "method": "GET",
+          "operation_id": "core_support_requests_api_core_support_requests_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/support/requests",
+          "method": "POST",
+          "operation_id": "core_support_request_create_api_core_support_requests_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/support/requests/{request_id}",
+          "method": "GET",
+          "operation_id": "core_support_request_detail_api_core_support_requests__request_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/support/profiles",
+          "method": "POST",
+          "operation_id": "core_support_profile_upsert_api_core_support_profiles_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/support/requests/{request_id}/transition",
+          "method": "POST",
+          "operation_id": "core_support_request_transition_api_core_support_requests__request_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/identity/account-deletion",
+          "method": "POST",
+          "operation_id": "core_identity_account_deletion_api_core_identity_account_deletion_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/founder-sandbox/bootstrap",
+          "method": "POST",
+          "operation_id": "core_founder_sandbox_bootstrap_api_core_ops_founder_sandbox_bootstrap_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/founder-sandbox/validation-cycle/approve",
+          "method": "POST",
+          "operation_id": "core_founder_sandbox_validation_cycle_approve_api_core_ops_founder_sandbox_validation_cycle_approve_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/founder-sandbox/validation-cycle/status",
+          "method": "GET",
+          "operation_id": "core_founder_sandbox_validation_cycle_status_api_core_ops_founder_sandbox_validation_cycle_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/founder-sandbox/evidence-keys/register",
+          "method": "POST",
+          "operation_id": "core_founder_sandbox_evidence_key_register_api_core_ops_founder_sandbox_evidence_keys_register_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/founder-sandbox/evidence-keys/{key_id}/revoke",
+          "method": "POST",
+          "operation_id": "core_founder_sandbox_evidence_key_revoke_api_core_ops_founder_sandbox_evidence_keys__key_id__revoke_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/founder-sandbox/evidence/review",
+          "method": "POST",
+          "operation_id": "core_founder_sandbox_evidence_review_api_core_ops_founder_sandbox_evidence_review_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/founder-sandbox/recovery-hold/reconcile",
+          "method": "POST",
+          "operation_id": "core_founder_sandbox_recovery_hold_reconcile_api_core_ops_founder_sandbox_recovery_hold_reconcile_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/founder-sandbox/report",
+          "method": "GET",
+          "operation_id": "core_founder_sandbox_report_api_core_ops_founder_sandbox_report_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/founder-sandbox/board",
+          "method": "GET",
+          "operation_id": "core_founder_sandbox_board_api_core_ops_founder_sandbox_board_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/founder-sandbox/tickets/{ticket_id}/transition",
+          "method": "POST",
+          "operation_id": "core_founder_sandbox_ticket_transition_api_core_ops_founder_sandbox_tickets__ticket_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/founder-sandbox/retention-status",
+          "method": "GET",
+          "operation_id": "core_founder_sandbox_retention_status_api_core_ops_founder_sandbox_retention_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/founder-sandbox/reset",
+          "method": "POST",
+          "operation_id": "core_founder_sandbox_reset_api_core_ops_founder_sandbox_reset_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/tasks/status",
+          "method": "GET",
+          "operation_id": "core_ops_task_status_api_core_ops_tasks_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/tasks",
+          "method": "GET",
+          "operation_id": "core_ops_task_list_api_core_ops_tasks_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/tasks",
+          "method": "POST",
+          "operation_id": "core_ops_task_create_api_core_ops_tasks_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/tasks/{task_id}",
+          "method": "GET",
+          "operation_id": "core_ops_task_get_api_core_ops_tasks__task_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/tasks/{task_id}/transition",
+          "method": "POST",
+          "operation_id": "core_ops_task_transition_api_core_ops_tasks__task_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/tasks/{task_id}/proof",
+          "method": "POST",
+          "operation_id": "core_ops_task_proof_api_core_ops_tasks__task_id__proof_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/tasks/{task_id}/proof-review",
+          "method": "POST",
+          "operation_id": "core_ops_task_proof_review_api_core_ops_tasks__task_id__proof_review_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/vendor-claims/{claim_id}/review",
+          "method": "POST",
+          "operation_id": "core_ops_vendor_claim_review_api_core_ops_vendor_claims__claim_id__review_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/resolution/status",
+          "method": "GET",
+          "operation_id": "core_resolution_status_api_core_ops_resolution_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/resolution/maintenance-intakes",
+          "method": "POST",
+          "operation_id": "core_resolution_maintenance_intake_api_core_ops_resolution_maintenance_intakes_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/resolution/dispute-intakes",
+          "method": "POST",
+          "operation_id": "core_resolution_dispute_intake_api_core_ops_resolution_dispute_intakes_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/resolution/intakes",
+          "method": "GET",
+          "operation_id": "core_resolution_intake_list_api_core_ops_resolution_intakes_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/resolution/intakes/{intake_id}",
+          "method": "GET",
+          "operation_id": "core_resolution_intake_get_api_core_ops_resolution_intakes__intake_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/resolution/dispute-packs",
+          "method": "POST",
+          "operation_id": "core_resolution_dispute_pack_create_api_core_ops_resolution_dispute_packs_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/resolution/dispute-packs",
+          "method": "GET",
+          "operation_id": "core_resolution_dispute_pack_list_api_core_ops_resolution_dispute_packs_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/resolution/dispute-packs/{dispute_pack_id}",
+          "method": "GET",
+          "operation_id": "core_resolution_dispute_pack_get_api_core_ops_resolution_dispute_packs__dispute_pack_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/resolution/dispute-packs/{dispute_pack_id}/evidence",
+          "method": "POST",
+          "operation_id": "core_resolution_dispute_pack_evidence_api_core_ops_resolution_dispute_packs__dispute_pack_id__evidence_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/resolution/playbooks",
+          "method": "POST",
+          "operation_id": "core_resolution_playbook_create_api_core_ops_resolution_playbooks_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/resolution/playbooks",
+          "method": "GET",
+          "operation_id": "core_resolution_playbook_list_api_core_ops_resolution_playbooks_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/resolution/playbooks/{playbook_id}",
+          "method": "GET",
+          "operation_id": "core_resolution_playbook_get_api_core_ops_resolution_playbooks__playbook_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/resolution/playbooks/{playbook_id}/transition",
+          "method": "POST",
+          "operation_id": "core_resolution_playbook_transition_api_core_ops_resolution_playbooks__playbook_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/resolution/cases/{case_id}",
+          "method": "GET",
+          "operation_id": "core_resolution_case_api_core_ops_resolution_cases__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/move-in/status",
+          "method": "GET",
+          "operation_id": "core_movein_status_api_core_move_in_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/move-in/readiness-cards",
+          "method": "POST",
+          "operation_id": "core_movein_readiness_card_upsert_api_core_move_in_readiness_cards_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/move-in/readiness-cards",
+          "method": "GET",
+          "operation_id": "core_movein_readiness_card_list_api_core_move_in_readiness_cards_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/move-in/readiness-cards/{card_id}",
+          "method": "GET",
+          "operation_id": "core_movein_readiness_card_get_api_core_move_in_readiness_cards__card_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/move-in/readiness-cards/{card_id}/transition",
+          "method": "POST",
+          "operation_id": "core_movein_readiness_card_transition_api_core_move_in_readiness_cards__card_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/move-in/cases/{case_id}",
+          "method": "GET",
+          "operation_id": "core_movein_case_api_core_move_in_cases__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/lifecycle/status",
+          "method": "GET",
+          "operation_id": "core_lifecycle_status_api_core_lifecycle_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/lifecycle/check-ins",
+          "method": "POST",
+          "operation_id": "core_lifecycle_checkin_create_api_core_lifecycle_check_ins_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/lifecycle/reviews",
+          "method": "POST",
+          "operation_id": "core_lifecycle_review_create_api_core_lifecycle_reviews_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/lifecycle/records",
+          "method": "GET",
+          "operation_id": "core_lifecycle_records_api_core_lifecycle_records_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/lifecycle/records/{record_id}",
+          "method": "GET",
+          "operation_id": "core_lifecycle_record_get_api_core_lifecycle_records__record_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/lifecycle/records/{record_id}/transition",
+          "method": "POST",
+          "operation_id": "core_lifecycle_record_transition_api_core_lifecycle_records__record_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/lifecycle/cases/{case_id}",
+          "method": "GET",
+          "operation_id": "core_lifecycle_case_api_core_lifecycle_cases__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/improvement/status",
+          "method": "GET",
+          "operation_id": "core_improvement_status_api_core_ops_improvement_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/improvement/snapshots",
+          "method": "POST",
+          "operation_id": "core_improvement_snapshot_generate_api_core_ops_improvement_snapshots_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/improvement/snapshots",
+          "method": "GET",
+          "operation_id": "core_improvement_snapshots_api_core_ops_improvement_snapshots_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/improvement/snapshots/{snapshot_id}",
+          "method": "GET",
+          "operation_id": "core_improvement_snapshot_get_api_core_ops_improvement_snapshots__snapshot_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/improvement/snapshots/{snapshot_id}/transition",
+          "method": "POST",
+          "operation_id": "core_improvement_snapshot_transition_api_core_ops_improvement_snapshots__snapshot_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/improvement/cases/{case_id}",
+          "method": "GET",
+          "operation_id": "core_improvement_case_api_core_ops_improvement_cases__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/improvement/operators/{operator_id}",
+          "method": "GET",
+          "operation_id": "core_improvement_operator_api_core_ops_improvement_operators__operator_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/remediation/status",
+          "method": "GET",
+          "operation_id": "core_remediation_status_api_core_ops_remediation_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/remediation/holdbacks",
+          "method": "POST",
+          "operation_id": "core_remediation_holdback_create_api_core_ops_remediation_holdbacks_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/remediation/holdbacks",
+          "method": "GET",
+          "operation_id": "core_remediation_holdbacks_api_core_ops_remediation_holdbacks_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/remediation/holdbacks/{holdback_id}",
+          "method": "GET",
+          "operation_id": "core_remediation_holdback_api_core_ops_remediation_holdbacks__holdback_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/remediation/holdbacks/{holdback_id}/transition",
+          "method": "POST",
+          "operation_id": "core_remediation_holdback_transition_api_core_ops_remediation_holdbacks__holdback_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/remediation/entries",
+          "method": "POST",
+          "operation_id": "core_remediation_entry_create_api_core_ops_remediation_entries_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/remediation/entries",
+          "method": "GET",
+          "operation_id": "core_remediation_entries_api_core_ops_remediation_entries_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/remediation/entries/{entry_id}",
+          "method": "GET",
+          "operation_id": "core_remediation_entry_api_core_ops_remediation_entries__entry_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/remediation/entries/{entry_id}/transition",
+          "method": "POST",
+          "operation_id": "core_remediation_entry_transition_api_core_ops_remediation_entries__entry_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/remediation/cases/{case_id}",
+          "method": "GET",
+          "operation_id": "core_remediation_case_api_core_ops_remediation_cases__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/remediation/properties/{property_id}",
+          "method": "GET",
+          "operation_id": "core_remediation_property_api_core_ops_remediation_properties__property_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/ops/remediation/operators/{operator_id}",
+          "method": "GET",
+          "operation_id": "core_remediation_operator_api_core_ops_remediation_operators__operator_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/analytics/status",
+          "method": "GET",
+          "operation_id": "core_analytics_status_api_core_analytics_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/analytics/proof-loop",
+          "method": "GET",
+          "operation_id": "core_analytics_proof_loop_api_core_analytics_proof_loop_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/analytics/retention/status",
+          "method": "GET",
+          "operation_id": "core_analytics_retention_status_api_core_analytics_retention_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/analytics/retention/policies",
+          "method": "GET",
+          "operation_id": "core_analytics_retention_policies_api_core_analytics_retention_policies_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/analytics/retention/policies/{module}",
+          "method": "GET",
+          "operation_id": "core_analytics_retention_policy_api_core_analytics_retention_policies__module__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/analytics/operators",
+          "method": "GET",
+          "operation_id": "core_analytics_operators_api_core_analytics_operators_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/analytics/cases/{case_id}",
+          "method": "GET",
+          "operation_id": "core_analytics_case_api_core_analytics_cases__case_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/status",
+          "method": "GET",
+          "operation_id": "core_demand_status_api_core_demand_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/channel-capture/status",
+          "method": "GET",
+          "operation_id": "core_demand_channel_capture_status_api_core_demand_channel_capture_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/channel-capture/sources",
+          "method": "GET",
+          "operation_id": "core_demand_channel_capture_sources_api_core_demand_channel_capture_sources_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/channel-capture/sources/{channel}",
+          "method": "GET",
+          "operation_id": "core_demand_channel_capture_source_api_core_demand_channel_capture_sources__channel__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/channel-capture/callbacks/{channel}",
+          "method": "POST",
+          "operation_id": "core_demand_channel_callback_api_core_demand_channel_capture_callbacks__channel__post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/intakes",
+          "method": "POST",
+          "operation_id": "core_demand_intake_create_api_core_demand_intakes_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/media-packs",
+          "method": "POST",
+          "operation_id": "core_demand_media_pack_create_api_core_demand_media_packs_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/runs",
+          "method": "POST",
+          "operation_id": "core_demand_run_create_api_core_demand_runs_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/runs",
+          "method": "GET",
+          "operation_id": "core_demand_run_list_api_core_demand_runs_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/runs/{run_id}",
+          "method": "GET",
+          "operation_id": "core_demand_run_get_api_core_demand_runs__run_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/runs/{run_id}/ai-session",
+          "method": "POST",
+          "operation_id": "core_demand_ai_session_create_api_core_demand_runs__run_id__ai_session_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/runs/{run_id}/content-pack",
+          "method": "POST",
+          "operation_id": "core_demand_content_pack_create_api_core_demand_runs__run_id__content_pack_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/listing-assist",
+          "method": "POST",
+          "operation_id": "core_demand_listing_assist_api_core_demand_listing_assist_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/listing-assists",
+          "method": "GET",
+          "operation_id": "core_demand_listing_assist_list_api_core_demand_listing_assists_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/listing-assists/{listing_assist_id}",
+          "method": "GET",
+          "operation_id": "core_demand_listing_assist_get_api_core_demand_listing_assists__listing_assist_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/listing-assists/{listing_assist_id}/review",
+          "method": "POST",
+          "operation_id": "core_demand_listing_assist_review_api_core_demand_listing_assists__listing_assist_id__review_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/runs/{run_id}/content-packs",
+          "method": "GET",
+          "operation_id": "core_demand_run_content_pack_list_api_core_demand_runs__run_id__content_packs_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/content-packs/{content_pack_id}",
+          "method": "GET",
+          "operation_id": "core_demand_content_pack_get_api_core_demand_content_packs__content_pack_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/content-packs/{content_pack_id}/review",
+          "method": "POST",
+          "operation_id": "core_demand_content_pack_review_api_core_demand_content_packs__content_pack_id__review_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/runs/{run_id}/preflight",
+          "method": "POST",
+          "operation_id": "core_demand_run_preflight_api_core_demand_runs__run_id__preflight_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/runs/{run_id}/share-pack",
+          "method": "POST",
+          "operation_id": "core_demand_share_pack_create_api_core_demand_runs__run_id__share_pack_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/lead-passports",
+          "method": "POST",
+          "operation_id": "core_demand_lead_passport_create_api_core_demand_lead_passports_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/requests",
+          "method": "POST",
+          "operation_id": "core_demand_request_create_api_core_demand_requests_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/requests",
+          "method": "GET",
+          "operation_id": "core_demand_request_list_api_core_demand_requests_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/requests/{demand_request_id}",
+          "method": "GET",
+          "operation_id": "core_demand_request_get_api_core_demand_requests__demand_request_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/requests/{demand_request_id}/verify",
+          "method": "POST",
+          "operation_id": "core_demand_request_verify_api_core_demand_requests__demand_request_id__verify_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/requests/{demand_request_id}/expire",
+          "method": "POST",
+          "operation_id": "core_demand_request_expire_api_core_demand_requests__demand_request_id__expire_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/requests/{demand_request_id}/close",
+          "method": "POST",
+          "operation_id": "core_demand_request_close_api_core_demand_requests__demand_request_id__close_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/requests/{demand_request_id}/attribution/correct",
+          "method": "POST",
+          "operation_id": "core_demand_request_attribution_correct_api_core_demand_requests__demand_request_id__attribution_correct_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/requests/{demand_request_id}/attribution/dispute",
+          "method": "POST",
+          "operation_id": "core_demand_request_attribution_dispute_api_core_demand_requests__demand_request_id__attribution_dispute_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/requests/{demand_request_id}/spine-evidence",
+          "method": "GET",
+          "operation_id": "core_demand_request_spine_evidence_api_core_demand_requests__demand_request_id__spine_evidence_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/requests/{demand_request_id}/pairings/generate",
+          "method": "POST",
+          "operation_id": "core_demand_pairings_generate_api_core_demand_requests__demand_request_id__pairings_generate_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/requests/{demand_request_id}/pairings",
+          "method": "GET",
+          "operation_id": "core_demand_pairings_list_api_core_demand_requests__demand_request_id__pairings_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/requests/{demand_request_id}/supply-state",
+          "method": "GET",
+          "operation_id": "core_demand_supply_state_get_api_core_demand_requests__demand_request_id__supply_state_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/requests/{demand_request_id}/supply-state/reconcile",
+          "method": "POST",
+          "operation_id": "core_demand_supply_state_reconcile_api_core_demand_requests__demand_request_id__supply_state_reconcile_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/policy-decisions",
+          "method": "POST",
+          "operation_id": "core_demand_policy_decision_upsert_api_core_demand_policy_decisions_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/policy-decisions/{policy_decision_id}",
+          "method": "GET",
+          "operation_id": "core_demand_policy_decision_get_api_core_demand_policy_decisions__policy_decision_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/policy-decisions/{policy_decision_id}/audit",
+          "method": "GET",
+          "operation_id": "core_demand_policy_decision_audit_api_core_demand_policy_decisions__policy_decision_id__audit_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/quality/metrics/reconcile",
+          "method": "POST",
+          "operation_id": "core_demand_quality_metrics_reconcile_api_core_demand_quality_metrics_reconcile_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/quality/metrics",
+          "method": "GET",
+          "operation_id": "core_demand_quality_metrics_list_api_core_demand_quality_metrics_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/quality/metrics/{metric_result_id}",
+          "method": "GET",
+          "operation_id": "core_demand_quality_metric_get_api_core_demand_quality_metrics__metric_result_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/quality/metrics/{metric_result_id}/audit",
+          "method": "GET",
+          "operation_id": "core_demand_quality_metric_audit_api_core_demand_quality_metrics__metric_result_id__audit_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/pairings/{pairing_id}",
+          "method": "GET",
+          "operation_id": "core_demand_pairing_get_api_core_demand_pairings__pairing_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/pairings/{pairing_id}/explanations",
+          "method": "GET",
+          "operation_id": "core_demand_pairing_explanations_api_core_demand_pairings__pairing_id__explanations_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/pairings/{pairing_id}/explanations/override",
+          "method": "POST",
+          "operation_id": "core_demand_pairing_explanation_override_api_core_demand_pairings__pairing_id__explanations_override_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/pairings/{pairing_id}/shortlist",
+          "method": "POST",
+          "operation_id": "core_demand_pairing_shortlist_api_core_demand_pairings__pairing_id__shortlist_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/pairings/{pairing_id}/reject",
+          "method": "POST",
+          "operation_id": "core_demand_pairing_reject_api_core_demand_pairings__pairing_id__reject_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/pairings/{pairing_id}/accept",
+          "method": "POST",
+          "operation_id": "core_demand_pairing_accept_api_core_demand_pairings__pairing_id__accept_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/routing-rules",
+          "method": "GET",
+          "operation_id": "core_demand_routing_rules_api_core_demand_routing_rules_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/routing-rules",
+          "method": "POST",
+          "operation_id": "core_demand_routing_rule_upsert_api_core_demand_routing_rules_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/lead-passports/{lead_passport_id}/assign",
+          "method": "POST",
+          "operation_id": "core_demand_lead_assign_api_core_demand_lead_passports__lead_passport_id__assign_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/operator-queue",
+          "method": "GET",
+          "operation_id": "core_demand_operator_queue_api_core_demand_operator_queue_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/operator-queue/{queue_item_id}",
+          "method": "GET",
+          "operation_id": "core_demand_operator_queue_get_api_core_demand_operator_queue__queue_item_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/operator-queue/{queue_item_id}/transition",
+          "method": "POST",
+          "operation_id": "core_demand_operator_queue_transition_api_core_demand_operator_queue__queue_item_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/localpro-eligibility",
+          "method": "GET",
+          "operation_id": "core_vendor_localpro_eligibility_api_core_vendor_localpro_eligibility_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/payout-account",
+          "method": "GET",
+          "operation_id": "core_vendor_localpro_payout_account_api_core_vendor_payout_account_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/payout-account/setup-request",
+          "method": "POST",
+          "operation_id": "core_vendor_localpro_payout_account_setup_request_api_core_vendor_payout_account_setup_request_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/status",
+          "method": "GET",
+          "operation_id": "core_vendor_status_api_core_vendor_status_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/dashboard",
+          "method": "GET",
+          "operation_id": "core_vendor_dashboard_api_core_vendor_dashboard_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/profile",
+          "method": "GET",
+          "operation_id": "core_vendor_profile_api_core_vendor_profile_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/profile",
+          "method": "POST",
+          "operation_id": "core_vendor_profile_upsert_api_core_vendor_profile_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/onboarding",
+          "method": "GET",
+          "operation_id": "core_vendor_onboarding_api_core_vendor_onboarding_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/jobs",
+          "method": "GET",
+          "operation_id": "core_vendor_jobs_api_core_vendor_jobs_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/jobs/{job_id}",
+          "method": "GET",
+          "operation_id": "core_vendor_job_api_core_vendor_jobs__job_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/jobs/{job_id}/access",
+          "method": "GET",
+          "operation_id": "core_vendor_job_access_api_core_vendor_jobs__job_id__access_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/jobs/{job_id}/accept",
+          "method": "POST",
+          "operation_id": "core_vendor_job_accept_api_core_vendor_jobs__job_id__accept_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/jobs/{job_id}/transition",
+          "method": "POST",
+          "operation_id": "core_vendor_job_transition_api_core_vendor_jobs__job_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/jobs/{job_id}/checklist",
+          "method": "POST",
+          "operation_id": "core_vendor_job_checklist_api_core_vendor_jobs__job_id__checklist_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/jobs/{job_id}/issues",
+          "method": "POST",
+          "operation_id": "core_vendor_job_issue_api_core_vendor_jobs__job_id__issues_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/jobs/{job_id}/proof",
+          "method": "POST",
+          "operation_id": "core_vendor_job_proof_api_core_vendor_jobs__job_id__proof_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/jobs/{job_id}/claims",
+          "method": "GET",
+          "operation_id": "core_vendor_job_claims_api_core_vendor_jobs__job_id__claims_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/jobs/{job_id}/claims",
+          "method": "POST",
+          "operation_id": "core_vendor_job_claim_create_api_core_vendor_jobs__job_id__claims_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/claims",
+          "method": "GET",
+          "operation_id": "core_vendor_claims_api_core_vendor_claims_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/offers",
+          "method": "GET",
+          "operation_id": "core_vendor_offers_api_core_vendor_offers_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/offers",
+          "method": "POST",
+          "operation_id": "core_vendor_offer_upsert_api_core_vendor_offers_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/service-requests",
+          "method": "GET",
+          "operation_id": "core_vendor_service_requests_api_core_vendor_service_requests_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/service-requests",
+          "method": "POST",
+          "operation_id": "core_vendor_service_request_create_api_core_vendor_service_requests_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/service-requests/{request_id}",
+          "method": "GET",
+          "operation_id": "core_vendor_service_request_api_core_vendor_service_requests__request_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/service-requests/{request_id}/transition",
+          "method": "POST",
+          "operation_id": "core_vendor_service_request_transition_api_core_vendor_service_requests__request_id__transition_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/service-requests/{request_id}/dispute",
+          "method": "POST",
+          "operation_id": "core_vendor_service_request_dispute_api_core_vendor_service_requests__request_id__dispute_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/earnings",
+          "method": "GET",
+          "operation_id": "core_vendor_earnings_api_core_vendor_earnings_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/payouts",
+          "method": "GET",
+          "operation_id": "core_vendor_payouts_api_core_vendor_payouts_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/compliance",
+          "method": "GET",
+          "operation_id": "core_vendor_compliance_api_core_vendor_compliance_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/vendor/compliance",
+          "method": "POST",
+          "operation_id": "core_vendor_compliance_upsert_api_core_vendor_compliance_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/internal/ops/mail/readiness",
+          "method": "GET",
+          "operation_id": "mail_readiness_status_internal_ops_mail_readiness_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/internal/ops/mail/readiness/history",
+          "method": "GET",
+          "operation_id": "mail_readiness_history_internal_ops_mail_readiness_history_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/internal/ops/mail/readiness/collect",
+          "method": "POST",
+          "operation_id": "mail_readiness_collect_internal_ops_mail_readiness_collect_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/marketing-publications",
+          "method": "POST",
+          "operation_id": "publish_api_core_inventory_marketing_publications_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/marketing-publications/{listing_id}",
+          "method": "GET",
+          "operation_id": "listing_api_core_inventory_marketing_publications__listing_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/marketing-publications/{listing_id}/pause",
+          "method": "POST",
+          "operation_id": "pause_api_core_inventory_marketing_publications__listing_id__pause_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/rental-offers",
+          "method": "POST",
+          "operation_id": "submit_api_core_demand_rental_offers_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/rental-offers",
+          "method": "GET",
+          "operation_id": "inbox_api_core_demand_rental_offers_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/rental-offers/{lead_id}",
+          "method": "GET",
+          "operation_id": "read_offer_api_core_demand_rental_offers__lead_id__get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/rental-offers/{lead_id}/review",
+          "method": "POST",
+          "operation_id": "review_api_core_demand_rental_offers__lead_id__review_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/inventory/marketing-owner",
+          "method": "GET",
+          "operation_id": "owner_status_api_core_inventory_marketing_owner_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/rental-auth/request",
+          "method": "POST",
+          "operation_id": "request_code_api_core_demand_rental_auth_request_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/rental-auth/verify",
+          "method": "POST",
+          "operation_id": "verify_code_api_core_demand_rental_auth_verify_post",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/rental-auth/session",
+          "method": "GET",
+          "operation_id": "auth_status_api_core_demand_rental_auth_session_get",
+          "declared_security": "not declared"
+        },
+        {
+          "path": "/api/core/demand/rental-self",
+          "method": "GET",
+          "operation_id": "own_application_api_core_demand_rental_self_get",
+          "declared_security": "not declared"
+        }
+      ],
+      "operation_count": 613,
+      "contract_operations": [],
+      "r01_family_operations": []
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"time_utc": "2026-10-20T05:26:36.373128+00:00", "method": "POST", "route": "/api/core/identity/registrations", "http": 201, "ok": true, "status": "registration_started", "error_code": null, "next_action": "verify_email", "revoked": null, "authorized_profiles": []}

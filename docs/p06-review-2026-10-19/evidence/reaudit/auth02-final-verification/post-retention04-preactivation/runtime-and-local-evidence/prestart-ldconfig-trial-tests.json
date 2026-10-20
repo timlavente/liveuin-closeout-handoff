@@ -1,0 +1,86 @@
+{
+  "probe_sha256": "5a534ffae6f10edd348ff8d24b6ac7cf4212336fa066578f5bdda7e8711a3846",
+  "passed": 19,
+  "total": 19,
+  "checks": [
+    {
+      "name": "exact_dev_null_sink",
+      "passed": true
+    },
+    {
+      "name": "dev_null_create_denied",
+      "passed": true
+    },
+    {
+      "name": "dev_null_truncate_denied",
+      "passed": true
+    },
+    {
+      "name": "regular_file_not_device_denied",
+      "passed": true
+    },
+    {
+      "name": "other_device_number_denied",
+      "passed": true
+    },
+    {
+      "name": "other_file_write_denied",
+      "passed": true
+    },
+    {
+      "name": "exact_pinned_ldconfig_query",
+      "passed": true
+    },
+    {
+      "name": "ldconfig_mutating_args_denied",
+      "passed": true
+    },
+    {
+      "name": "ldconfig_extra_environment_denied",
+      "passed": true
+    },
+    {
+      "name": "ldconfig_other_working_dir_denied",
+      "passed": true
+    },
+    {
+      "name": "other_executable_denied",
+      "passed": true
+    },
+    {
+      "name": "binary_digest_drift_denied",
+      "passed": true
+    },
+    {
+      "name": "binary_symlink_drift_denied",
+      "passed": true
+    },
+    {
+      "name": "arbitrary_posix_spawn_denied",
+      "passed": true
+    },
+    {
+      "name": "network_guard_unchanged",
+      "passed": true
+    },
+    {
+      "name": "database_guard_unchanged",
+      "passed": true
+    },
+    {
+      "name": "product_import_guard_unchanged",
+      "passed": true
+    },
+    {
+      "name": "blocked_read_diagnostic_json",
+      "passed": true
+    },
+    {
+      "name": "blocked_write_diagnostic_json",
+      "passed": true
+    }
+  ],
+  "production_calls": false,
+  "probe_or_subprocess_executed": false,
+  "device_or_binary_opened": false
+}

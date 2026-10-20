@@ -1,0 +1,3 @@
+Browser tab: 1, Title: "The Sierra · Furnished 3-bedroom home · LiveUIN", URL: "https://www.liveuin.com/stays/listing_ef55a13993724d8e8d1201cb".
+There has been no change in the accessibility tree.
+The focused UI element is 1 AXWebArea The Sierra · Furnished 3-bedroom home · LiveUIN, URL: liveuin.com/stays/listing_ef55a13993724d8e8d1201cb

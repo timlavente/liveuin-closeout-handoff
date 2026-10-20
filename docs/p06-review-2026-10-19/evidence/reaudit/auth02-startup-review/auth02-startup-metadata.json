@@ -1,0 +1,316 @@
+{
+  "mode": "source_read_only_no_product_imports",
+  "files": [
+    {
+      "path": "/opt/liveuin/ops_backend/auth_email_otp.py",
+      "sha256": "af88ee21f11cb524eb4f65d6a14f27af1bfc7057c5d134332338e5df5cc66be9",
+      "top_level_calls": [
+        {
+          "line": 12,
+          "function": "APIRouter"
+        },
+        {
+          "line": 15,
+          "function": "os.getenv(...).rstrip"
+        },
+        {
+          "line": 15,
+          "function": "os.getenv"
+        }
+      ],
+      "top_level_imports": [
+        {
+          "line": 1,
+          "module": "os"
+        },
+        {
+          "line": 2,
+          "module": "json"
+        },
+        {
+          "line": 3,
+          "module": "urllib.request"
+        },
+        {
+          "line": 4,
+          "module": "urllib.error"
+        },
+        {
+          "line": 6,
+          "module": "fastapi"
+        },
+        {
+          "line": 7,
+          "module": "pydantic"
+        },
+        {
+          "line": 9,
+          "module": "auth_db"
+        },
+        {
+          "line": 10,
+          "module": "session_utils"
+        }
+      ],
+      "startup_hooks": [],
+      "selected_registration_functions": []
+    },
+    {
+      "path": "/opt/liveuin/ops_backend/ui_nav_api.py",
+      "sha256": "18b85e05f291c4ad94839812813167f3f396b59fa1f25bd29455e35fb664652d",
+      "top_level_calls": [
+        {
+          "line": 4,
+          "function": "APIRouter"
+        }
+      ],
+      "top_level_imports": [
+        {
+          "line": 1,
+          "module": "fastapi"
+        },
+        {
+          "line": 2,
+          "module": "auth_db"
+        }
+      ],
+      "startup_hooks": [],
+      "selected_registration_functions": []
+    },
+    {
+      "path": "/opt/liveuin/ops_backend/autopilot_executor.py",
+      "sha256": "32cafa07895ee0100c6101c53499a332a6c08c1c9f49d7f1e66bfe08a04b1379",
+      "top_level_calls": [
+        {
+          "line": 22,
+          "function": "Path"
+        },
+        {
+          "line": 23,
+          "function": "Path"
+        },
+        {
+          "line": 24,
+          "function": "Path"
+        },
+        {
+          "line": 30,
+          "function": "Path"
+        },
+        {
+          "line": 32,
+          "function": "Path"
+        },
+        {
+          "line": 708,
+          "function": "apply_staged_actions"
+        },
+        {
+          "line": 709,
+          "function": "print"
+        },
+        {
+          "line": 709,
+          "function": "json.dumps"
+        }
+      ],
+      "top_level_imports": [
+        {
+          "line": 16,
+          "module": "json"
+        },
+        {
+          "line": 17,
+          "module": "subprocess"
+        },
+        {
+          "line": 18,
+          "module": "datetime"
+        },
+        {
+          "line": 19,
+          "module": "pathlib"
+        },
+        {
+          "line": 20,
+          "module": "typing"
+        }
+      ],
+      "startup_hooks": [],
+      "selected_registration_functions": []
+    },
+    {
+      "path": "/opt/liveuin/ops_backend/api_aliases.py",
+      "sha256": "3468d5ccb49088ed03188e679b9096cd6fec1c4c7add5ddccfdacf71aaa81cd1",
+      "top_level_calls": [
+        {
+          "line": 15,
+          "function": "dataclass"
+        }
+      ],
+      "top_level_imports": [
+        {
+          "line": 1,
+          "module": "__future__"
+        },
+        {
+          "line": 3,
+          "module": "json"
+        },
+        {
+          "line": 4,
+          "module": "os"
+        },
+        {
+          "line": 5,
+          "module": "re"
+        },
+        {
+          "line": 6,
+          "module": "dataclasses"
+        },
+        {
+          "line": 7,
+          "module": "pathlib"
+        },
+        {
+          "line": 8,
+          "module": "typing"
+        },
+        {
+          "line": 10,
+          "module": "fastapi"
+        },
+        {
+          "line": 11,
+          "module": "fastapi.responses"
+        },
+        {
+          "line": 12,
+          "module": "starlette.status"
+        }
+      ],
+      "startup_hooks": [],
+      "selected_registration_functions": [
+        {
+          "line": 123,
+          "function": "register_alias_routers",
+          "calls": [
+            {
+              "line": 130,
+              "function": "_load_alias_specs"
+            },
+            {
+              "line": 134,
+              "function": "APIRouter"
+            },
+            {
+              "line": 164,
+              "function": "router.add_api_route"
+            },
+            {
+              "line": 167,
+              "function": "list"
+            },
+            {
+              "line": 172,
+              "function": "app.include_router"
+            },
+            {
+              "line": 176,
+              "function": "len"
+            }
+          ],
+          "imports": []
+        }
+      ]
+    },
+    {
+      "path": "/opt/liveuin/ops_backend/app/autopilot_generated/__init__.py",
+      "sha256": "5509239e42542c088cd86bb8e13bd99fe1183ad72d5ba8a377a6d95e97bf8b6d",
+      "top_level_calls": [],
+      "top_level_imports": [
+        {
+          "line": 6,
+          "module": "fastapi"
+        },
+        {
+          "line": 8,
+          "module": "."
+        },
+        {
+          "line": 9,
+          "module": "."
+        },
+        {
+          "line": 10,
+          "module": "."
+        },
+        {
+          "line": 15,
+          "module": "."
+        },
+        {
+          "line": 20,
+          "module": "."
+        }
+      ],
+      "startup_hooks": [],
+      "selected_registration_functions": [
+        {
+          "line": 26,
+          "function": "register_autopilot_routers",
+          "calls": [
+            {
+              "line": 33,
+              "function": "getattr"
+            },
+            {
+              "line": 35,
+              "function": "app.include_router"
+            }
+          ],
+          "imports": []
+        }
+      ]
+    },
+    {
+      "path": "/opt/liveuin/ops_backend/db.py",
+      "sha256": "bf5eb1dfa74d67287039f77561ea4c78d34c1f1874e8d27e6ca933a83d92e6c4",
+      "top_level_calls": [
+        {
+          "line": 7,
+          "function": "os.getenv"
+        },
+        {
+          "line": 8,
+          "function": "os.getenv"
+        },
+        {
+          "line": 9,
+          "function": "os.getenv"
+        },
+        {
+          "line": 14,
+          "function": "RuntimeError"
+        }
+      ],
+      "top_level_imports": [
+        {
+          "line": 1,
+          "module": "os"
+        },
+        {
+          "line": 2,
+          "module": "psycopg2"
+        },
+        {
+          "line": 3,
+          "module": "psycopg2"
+        }
+      ],
+      "startup_hooks": [],
+      "selected_registration_functions": []
+    }
+  ]
+}

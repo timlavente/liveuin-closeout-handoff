@@ -1,0 +1,636 @@
+{
+  "ok": true,
+  "baseline_contract_completed": true,
+  "fixture_projection": {
+    "ok": true,
+    "schema_version": "liveuin-core-identity-session-v1",
+    "phase": "phase27-identity-credential-issuer-contract",
+    "status": "identity_session_resolved",
+    "canonical_owner": "LiveUIN Identity",
+    "workspace_id": "auth02-isolated-public",
+    "actor": {
+      "actor_id": "per_5a389cc032974555",
+      "role": "tenant",
+      "scopes": [
+        "tenant"
+      ],
+      "active_profile_key": "tenant",
+      "active_workspace_id": "auth02-isolated-public",
+      "account_id": "acct_1bb1027a6b934262804a",
+      "person_id": "per_5a389cc032974555",
+      "display_name": "test.parent \u2014 synthetic fixture"
+    },
+    "display_name": "test.parent \u2014 synthetic fixture",
+    "account_id": "acct_1bb1027a6b934262804a",
+    "person_id": "per_5a389cc032974555",
+    "profile_entitlements": [
+      {
+        "entitlement_id": "ent_tenant_acct_1bb1027a6b934262804a",
+        "account_id": "acct_1bb1027a6b934262804a",
+        "person_id": "per_5a389cc032974555",
+        "profile_key": "tenant",
+        "workspace_id": "auth02-isolated-public",
+        "workspace_label": "auth02-isolated-public",
+        "workspace_type": "workspace",
+        "status": "active",
+        "subject_id": "per_5a389cc032974555",
+        "subject_role": "tenant",
+        "allowed_actions": [
+          "tenant"
+        ],
+        "default_route": "/app/member",
+        "route_restrictions": [],
+        "effective_from": 0,
+        "effective_to": 0,
+        "expires_at": "",
+        "is_default": true,
+        "metadata": {
+          "localpro_authorization_issued": false,
+          "source": "public_onboarding"
+        }
+      }
+    ],
+    "source_family": "liveuin_core",
+    "idempotency_key": "",
+    "identity_session": {
+      "resolved": true,
+      "credential_kind": "liveuin_session",
+      "credential_hint": "lus_3...776a",
+      "credential_hash": "334930e58141078987fd7301c7595b05e132c0d9043268713fa1056f47ebf85e",
+      "credential_validation": "signed_session_verified_store_active",
+      "verified": true,
+      "credential_store_status": "active",
+      "credential_key_id": "",
+      "credential_policy_version": "",
+      "public_identity_session": true,
+      "public_account_id": "acct_1bb1027a6b934262804a",
+      "bridge_only": false,
+      "safe_headers": {
+        "x-liveuin-workspace-id": "auth02-isolated-public",
+        "x-liveuin-actor-id": "per_5a389cc032974555",
+        "x-liveuin-role": "member",
+        "x-liveuin-scopes": "identity.session,tenant",
+        "x-liveuin-session-id": "[redacted]",
+        "x-liveuin-session-issued-at": "1792435596",
+        "x-liveuin-auth-method": "public_tenant_onboarding",
+        "x-liveuin-session-signature": "[redacted]"
+      },
+      "raw_secret_echoed": false
+    },
+    "access": {
+      "workspace_id": "auth02-isolated-public",
+      "actor": {
+        "actor_id": "per_5a389cc032974555",
+        "role": "tenant",
+        "scopes": [
+          "tenant"
+        ],
+        "active_profile_key": "tenant",
+        "active_workspace_id": "auth02-isolated-public",
+        "account_id": "acct_1bb1027a6b934262804a",
+        "person_id": "per_5a389cc032974555",
+        "display_name": "test.parent \u2014 synthetic fixture"
+      },
+      "scopes": [
+        "tenant"
+      ],
+      "account_id": "acct_1bb1027a6b934262804a",
+      "person_id": "per_5a389cc032974555",
+      "profile_entitlements": [
+        {
+          "entitlement_id": "ent_tenant_acct_1bb1027a6b934262804a",
+          "account_id": "acct_1bb1027a6b934262804a",
+          "person_id": "per_5a389cc032974555",
+          "profile_key": "tenant",
+          "workspace_id": "auth02-isolated-public",
+          "workspace_label": "auth02-isolated-public",
+          "workspace_type": "workspace",
+          "status": "active",
+          "subject_id": "per_5a389cc032974555",
+          "subject_role": "tenant",
+          "allowed_actions": [
+            "tenant"
+          ],
+          "default_route": "/app/member",
+          "route_restrictions": [],
+          "effective_from": 0,
+          "effective_to": 0,
+          "expires_at": "",
+          "is_default": true,
+          "metadata": {
+            "localpro_authorization_issued": false,
+            "source": "public_onboarding"
+          }
+        }
+      ],
+      "default_profile_key": "tenant",
+      "default_workspace_id": "auth02-isolated-public",
+      "active_profile_key": "tenant",
+      "active_workspace_id": "auth02-isolated-public",
+      "source_family": "liveuin_core",
+      "idempotency_key": "",
+      "context": {
+        "identity_session_schema": "liveuin-core-identity-session-v1",
+        "identity_session_phase": "phase27-identity-credential-issuer-contract",
+        "identity_resolved_at": "2026-10-19T18:46:37Z",
+        "credential_kind": "liveuin_session",
+        "credential_hash": "334930e58141078987fd7301c7595b05e132c0d9043268713fa1056f47ebf85e",
+        "credential_hint": "lus_3...776a",
+        "credential_validation": "signed_session_verified_store_active",
+        "credential_verified": true,
+        "credential_store_status": "active",
+        "credential_key_id": "",
+        "credential_policy_version": "",
+        "public_identity_session": true,
+        "public_account_id": "acct_1bb1027a6b934262804a",
+        "bridge_only": false,
+        "channel_role": "",
+        "method": "POST",
+        "route": "/api/core/identity/session/resolve",
+        "request_ip": "127.0.0.1"
+      }
+    },
+    "boundary": {
+      "surface": "Core API gateway, Admin, Connect handoff, channel bridge, and adapter request context",
+      "layer": "identity/session context resolver",
+      "owner": "LiveUIN Identity",
+      "access_role": "Normalizes actor, role, scopes, workspace, source family, and idempotency context before Core Access policy evaluation.",
+      "wechat_role": "Identity/OAuth/message-delivery bridge only; WeChat context does not grant product-write authority.",
+      "connector_role": "Connector API keys identify handoff transport; connector records do not become product truth.",
+      "secret_policy": "Raw sessions, API keys, bearer tokens, openids, and unionids are never echoed; only hashes/hints are returned."
+    },
+    "profile_state": "tenant_active",
+    "account_state": "tenant_active",
+    "email_verification_state": "verified",
+    "profile_completion_state": "complete",
+    "tenant_entitlement_state": "active",
+    "localpro_application_state": "not_started",
+    "localpro_authorization_state": "not_issued",
+    "authorized_profiles": [
+      {
+        "entitlement_id": "ent_tenant_acct_1bb1027a6b934262804a",
+        "workspace_id": "auth02-isolated-public",
+        "account_id": "acct_1bb1027a6b934262804a",
+        "person_id": "per_5a389cc032974555",
+        "profile_key": "tenant",
+        "subject_id": "per_5a389cc032974555",
+        "subject_role": "tenant",
+        "status": "active",
+        "is_default": true,
+        "permissions": [
+          "tenant"
+        ],
+        "route_restrictions": []
+      }
+    ],
+    "next_action": "tenant_home",
+    "continuation": {
+      "state": "tenant_active",
+      "next_action": "tenant_home",
+      "route": "/tenant/home",
+      "label": "Continue to LiveUIN"
+    }
+  },
+  "run_at_utc": "2026-10-19T18:46:37Z",
+  "tests": [
+    {
+      "test": "registration_switch_false_denies_before_delivery",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 503
+    },
+    {
+      "test": "cohort_missing_denies_before_account_or_email",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "malformed_or_mismatched_cohort_denies_0",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "malformed_or_mismatched_cohort_denies_1",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "malformed_or_mismatched_cohort_denies_2",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "malformed_or_mismatched_cohort_denies_3",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "malformed_or_mismatched_cohort_denies_4",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "malformed_or_mismatched_cohort_denies_5",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "malformed_or_mismatched_cohort_denies_6",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "malformed_or_mismatched_cohort_denies_7",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "noncohort_registration_denied_without_account_or_delivery",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "real_registration_contract_creates_pending_fixture",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 201,
+      "error": null
+    },
+    {
+      "test": "test_sink_only_no_raw_code_in_response",
+      "passed": true,
+      "stop_immediately_on_failure": true
+    },
+    {
+      "test": "idempotent_registration_does_not_resend",
+      "passed": true,
+      "stop_immediately_on_failure": true
+    },
+    {
+      "test": "unverified_account_cannot_password_login",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "incorrect_code_refused",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "removed_pending_identity_cannot_verify_or_resend",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "verify_status": 403,
+      "resend_status": 403
+    },
+    {
+      "test": "code_verified_without_manual_verified_store_write",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 200,
+      "error": null
+    },
+    {
+      "test": "reused_registration_code_refused",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 409
+    },
+    {
+      "test": "registration_session_explicit_logout_revokes_refresh",
+      "passed": true,
+      "stop_immediately_on_failure": true
+    },
+    {
+      "test": "wrong_and_unknown_password_credentials_refused",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 401
+    },
+    {
+      "test": "real_password_signin_success",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 200,
+      "error": null
+    },
+    {
+      "test": "reload_resolves_same_member_in_configured_workspace",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 200,
+      "role": "member",
+      "workspace": "auth02-isolated-public"
+    },
+    {
+      "test": "no_tenant_staff_case_or_host_grant_needed",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "scopes": [
+        "identity.session"
+      ],
+      "profile_state": "profile_incomplete"
+    },
+    {
+      "test": "second_resolve_preserves_account_person",
+      "passed": true,
+      "stop_immediately_on_failure": true
+    },
+    {
+      "test": "member_refused_identity_admin_operation",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "client_workspace_role_cannot_override_verified_identity",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "removed_cohort_cannot_signin_bootstrap_refresh_or_onboard",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "statuses": [
+        403,
+        403,
+        403,
+        403,
+        403,
+        403
+      ]
+    },
+    {
+      "test": "admission_denials_do_not_grant_or_complete_profile",
+      "passed": true,
+      "stop_immediately_on_failure": true
+    },
+    {
+      "test": "explicit_header_logout_revokes_server_session_and_refresh",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 200
+    },
+    {
+      "test": "logged_out_explicit_session_and_refresh_cannot_restore",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "resolve_status": 403,
+      "refresh_status": 401
+    },
+    {
+      "test": "signed_out_bootstrap_denied",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403
+    },
+    {
+      "test": "cookie_only_session_resolves_before_logout",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 200
+    },
+    {
+      "test": "cookie_only_logout_must_revoke_refresh",
+      "passed": true,
+      "stop_immediately_on_failure": false,
+      "logout_status": 200,
+      "session_revoked": true,
+      "refresh_revoked_count": 1,
+      "old_session_status": 403,
+      "refresh_status": 401,
+      "refresh_result": "session_refresh_invalid"
+    },
+    {
+      "test": "active_session_revoke_failure_must_not_ack_logout",
+      "passed": true,
+      "stop_immediately_on_failure": false,
+      "injected_failure": "session credential store returned no revocation for known active fixture",
+      "logout_status": 503,
+      "logout_ack": null,
+      "revoked": null,
+      "remaining_session_status": 200
+    },
+    {
+      "test": "refresh_storage_exception_does_not_ack_success",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 500
+    },
+    {
+      "test": "already_absent_session_logout_idempotent",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 200
+    },
+    {
+      "test": "admitted_named_fixture_can_complete_normal_tenant_onboarding",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "profile_status": 200,
+      "onboarding_status": 200
+    },
+    {
+      "test": "normal_onboarding_scopes_tenant_only_no_admin",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 200,
+      "role": "tenant",
+      "scopes": [
+        "tenant"
+      ]
+    },
+    {
+      "test": "silent_refresh_revocation_failure_cannot_ack_logout",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 500
+    },
+    {
+      "test": "verified_noncohort_provider_subject_cannot_create_account",
+      "passed": true,
+      "stop_immediately_on_failure": true,
+      "status": 403,
+      "error": "pilot_admission_required"
+    },
+    {
+      "test": "production_rejects_test_sink",
+      "passed": true,
+      "stop_immediately_on_failure": true
+    },
+    {
+      "test": "isolation_no_network_or_external_files",
+      "passed": true,
+      "stop_immediately_on_failure": true
+    }
+  ],
+  "failure": null,
+  "source_manifest_sha256": "f37545ff1f64c366526de0d9c47d5db6dc5f73485b27272beebff50ede87ce30",
+  "python": "3.13.3",
+  "dependency_versions": {
+    "bcrypt": "5.0.0",
+    "fastapi": "0.148.0",
+    "httpx": "0.28.1",
+    "starlette": "1.9.0"
+  },
+  "selected_api_functions": [
+    {
+      "file": "core_identity_api.py",
+      "function": "_request_meta",
+      "start_line": 42,
+      "end_line": 49,
+      "ast_sha256": "6d656f5112f3ba1b3ea47379578af5f78615ebc6e77b8d32a6ceafa147fb9026"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "_request_context",
+      "start_line": 52,
+      "end_line": 58,
+      "ast_sha256": "b210794f5f893409340a5d16d7cb30fb64d3a51f7bc1885d1207489e94400603"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "_raise_if_error",
+      "start_line": 68,
+      "end_line": 74,
+      "ast_sha256": "535cb6f91eb3bd50f8b7326047e69e93d6b12a58ffb42cc430bebf1fae9cd804"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "_public_http",
+      "start_line": 77,
+      "end_line": 93,
+      "ast_sha256": "3b4fb77d1e7367dae78100102a6bfdfead984e3d3650db0fff5b0ef5a855c671"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "_public_call",
+      "start_line": 96,
+      "end_line": 100,
+      "ast_sha256": "44087638931b6513d97880a785915743445a064d416f8759740ae81ad0a7cbf7"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "_require_authenticated_identity",
+      "start_line": 120,
+      "end_line": 136,
+      "ast_sha256": "674eb8b80e5a6d8cc7b4fbc7a3afa1dfa0d0e3b2a289cb8558a1ca9bf7fbc1cb"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "_require_identity_admin",
+      "start_line": 288,
+      "end_line": 318,
+      "ast_sha256": "270647b88f07a5810a4b8708721bae629d1e9b788b85b13a6b42d4af5d6a5785"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "core_identity_public_registration",
+      "start_line": 793,
+      "end_line": 798,
+      "ast_sha256": "54ddeaee7bcfa4a84c8ef7a83cc1cf786177c041145de877c16fd288ed393c7a"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "core_identity_public_registration_verify",
+      "start_line": 802,
+      "end_line": 808,
+      "ast_sha256": "b1b7feee791ca93e04fd8120e511c9b383f7622c4d7b3a76f48015ba2984b881"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "core_identity_public_registration_resend",
+      "start_line": 812,
+      "end_line": 818,
+      "ast_sha256": "dbf8f7adb91a9e3b74f2ed9bfb67309ab206b35f29726c9d73104b9c3e707667"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "core_identity_public_password_sign_in",
+      "start_line": 822,
+      "end_line": 827,
+      "ast_sha256": "565098f4742e5b1c35d66eb358aa0a3c64bf6ba406dfbc3d7baefe6547e3923d"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "core_identity_public_session_refresh",
+      "start_line": 899,
+      "end_line": 904,
+      "ast_sha256": "f004fac945cd3c3a2016cf333f9bf490c3c7039faf5596391e0848ac42becba0"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "core_identity_public_onboarding_status",
+      "start_line": 908,
+      "end_line": 910,
+      "ast_sha256": "117d1fe2b151c0077b30b3a9c7d5df1bdd1f581bd58139050e02cf823da7ff68"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "core_identity_public_profile",
+      "start_line": 914,
+      "end_line": 919,
+      "ast_sha256": "7ab73057a75a52c5f2b332cb0f2ff95f5181f13bc8ca114669adaf6b5f3e8bed"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "core_identity_public_onboarding_complete",
+      "start_line": 923,
+      "end_line": 925,
+      "ast_sha256": "81e398404639b54c3f179de0c86f60e518e61b49ec9e06143b28df2d44172ea0"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "core_identity_session_resolve",
+      "start_line": 935,
+      "end_line": 982,
+      "ast_sha256": "3a3c974110fce5760a8a67c5d79479689ca3df8f15478ef3eebdb97be3ff5c35"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "core_identity_session_issue",
+      "start_line": 986,
+      "end_line": 991,
+      "ast_sha256": "4aae7de2feb2abf5218405c22808f8d250d97e80baa29da9779b1c3fab91fea2"
+    },
+    {
+      "file": "core_identity_api.py",
+      "function": "core_identity_logout",
+      "start_line": 1004,
+      "end_line": 1018,
+      "ast_sha256": "4bbf9ff9a3ca48942d0ed0739f7bafac8de3e99e3a761517641cc572ad306e31"
+    }
+  ],
+  "isolation": {
+    "network_attempts": 0,
+    "blocked_external_files": 0,
+    "sqlite_connections": 307,
+    "database_paths": [
+      "/private/tmp/liveuin-p06-audit-20261019/reaudit/auth02-contract-tests/candidate-closed-entry-run/auth02-fixture-zok5p76v/identity.sqlite3",
+      "/private/tmp/liveuin-p06-audit-20261019/reaudit/auth02-contract-tests/candidate-closed-entry-run/auth02-fixture-zok5p76v/public.sqlite3",
+      "/private/tmp/liveuin-p06-audit-20261019/reaudit/auth02-contract-tests/candidate-closed-entry-run/auth02-fixture-zok5p76v/session.sqlite3"
+    ],
+    "production_records_used": false,
+    "live_email_sent": false,
+    "http_transport": "in-process ASGI only",
+    "manual_verified_record_write": false
+  },
+  "limits": [
+    "Local exact deployed-source contract; not a browser or live runtime pass.",
+    "Admission cohort contains local fixture identities only; no production config/account activity.",
+    "Dependencies recorded; local runtime is not claimed identical to server."
+  ]
+}

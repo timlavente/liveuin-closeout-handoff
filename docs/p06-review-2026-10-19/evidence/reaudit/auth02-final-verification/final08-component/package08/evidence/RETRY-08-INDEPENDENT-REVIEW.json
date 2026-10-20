@@ -1,0 +1,19 @@
+{
+  "status": "independent_delta_review_pass",
+  "controller_exact_changes": [
+    "baseline closed fallback aee0ce\u2026",
+    "retry process_argv_drift within existing20-second loop; final checks unchanged"
+  ],
+  "spec_changes": [
+    "current9095PID3424573",
+    "9095baseline source closedfallbackaee0ce\u2026"
+  ],
+  "classifier_and_probe_changes": "hash pins only",
+  "preserved": {
+    "candidate-9095/deploy/core_identity_api.py": "a0834b412c06263d1ca593de67cc2514471cf4fdd7a83c860608be998fc65fcb",
+    "fallback-9095/deploy/core_identity_api.py": "aee0ce11a4ffe48242b18dbde4a67463409765d80f43f15a68c6d40facc6e143",
+    "deployment/preflight-backup.py": "25c5d1f8b22dd81fcc4ea07818d784dc52b70cab62170c88a2df94b8d07abb87"
+  },
+  "production_actions": false,
+  "scope": "No auth policy change; runtime freshgates and owner proof remain required."
+}

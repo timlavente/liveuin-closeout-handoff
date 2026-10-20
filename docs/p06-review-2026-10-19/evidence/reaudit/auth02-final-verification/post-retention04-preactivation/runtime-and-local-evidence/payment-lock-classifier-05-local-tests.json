@@ -1,0 +1,75 @@
+{
+  "helper_sha256": "750e7970937626002714756f1da7e67e13788f6e02b0f6d64ebcea736aaf511c",
+  "checks": [
+    {
+      "name": "absent",
+      "passed": true,
+      "result": {
+        "present": false,
+        "enabled_exact_true": false
+      }
+    },
+    {
+      "name": "exact_true",
+      "passed": true,
+      "result": {
+        "present": true,
+        "enabled_exact_true": true
+      }
+    },
+    {
+      "name": "uppercase",
+      "passed": true,
+      "result": {
+        "present": true,
+        "enabled_exact_true": false
+      }
+    },
+    {
+      "name": "leading_space",
+      "passed": true,
+      "result": {
+        "present": true,
+        "enabled_exact_true": false
+      }
+    },
+    {
+      "name": "trailing_space",
+      "passed": true,
+      "result": {
+        "present": true,
+        "enabled_exact_true": false
+      }
+    },
+    {
+      "name": "digit",
+      "passed": true,
+      "result": {
+        "present": true,
+        "enabled_exact_true": false
+      }
+    },
+    {
+      "name": "empty",
+      "passed": true,
+      "result": {
+        "present": true,
+        "enabled_exact_true": false
+      }
+    },
+    {
+      "name": "false",
+      "passed": true,
+      "result": {
+        "present": true,
+        "enabled_exact_true": false
+      }
+    }
+  ],
+  "passed": 8,
+  "total": 8,
+  "source_only_compile_passed": true,
+  "main_executed": false,
+  "production_calls": false,
+  "credential_reads": false
+}
