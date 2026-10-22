@@ -1,0 +1,79 @@
+name: Handoff & Audit
+description: Use this for work researched or bulk-built elsewhere, then audited and integrated by Grok Bot.
+title: "[Handoff] "
+labels: ["needs-bot-audit"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Handoff Protocol
+        Research or bulk build is done outside the Bot. Grok Bot runs the audit and does final integration or live changes.
+
+  - type: dropdown
+    id: work_type
+    attributes:
+      label: Work Type
+      options:
+        - Research
+        - Bulk Build
+        - Surgical / Live Change
+        - Standing Duty
+    validations:
+      required: true
+
+  - type: textarea
+    id: spec
+    attributes:
+      label: Spec / Acceptance Criteria
+      description: Clear description of what "done" looks like.
+      placeholder: |
+        - User can do X
+        - Data is persisted
+        - Auth / permissions are correct
+        - Critical path works
+    validations:
+      required: true
+
+  - type: input
+    id: drive_link
+    attributes:
+      label: Google Drive Link (if any)
+      description: Link to research doc, spec, or related files
+      placeholder: "https://docs.google.com/..."
+
+  - type: textarea
+    id: pr_or_branch
+    attributes:
+      label: PR or Branch (for bulk builds)
+      placeholder: "PR #123 or branch feature/xyz"
+
+  - type: checkboxes
+    id: audit_checklist
+    attributes:
+      label: Audit Checklist (Bot fills this)
+      options:
+        - label: Spec & acceptance criteria met
+        - label: Auth / permissions correct
+        - label: Persistence works
+        - label: Integrations / webhooks OK (or cleanly stubbed)
+        - label: Routes / navigation correct
+        - label: No test / dummy data left
+        - label: Critical path smoke test passed
+        - label: No hardcoded secrets
+        - label: Rollback path exists
+        - label: Changelog entry prepared
+
+  - type: textarea
+    id: bot_notes
+    attributes:
+      label: Bot Audit Notes
+      description: Filled by Grok Bot after review
+
+  - type: dropdown
+    id: decision
+    attributes:
+      label: Final Decision
+      options:
+        - Approve for merge / live integration
+        - Request changes
+        - Escalate to human
